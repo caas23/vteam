@@ -3,8 +3,6 @@ import { getCities } from '../../../db/cities.js';
 import { getUsers } from '../../../db/users.js';
 import bikeManager from "../../../bike-logic/bikeManager.js"
 import bike from '../../../bike-logic/bike.js';
-import { fixDb } from '../../../db/collections.js';
-
 
 const router = express.Router();
 
@@ -20,12 +18,6 @@ router.get("/", async (req, res) => {
         }
     }
     res.json(routes);
-});
-
-router.get("/fix/db", async (req, res) => {
-    await fixDb();
-    console.log(result);
-    res.json(result);
 });
 
 // GET /cities
