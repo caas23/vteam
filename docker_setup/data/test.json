@@ -1,0 +1,20 @@
+{
+    "bikes": [
+        {
+            "id": 1,
+            "location": "här",
+            "battery": 60,
+            "in_use": true,
+            "in_service": false,
+            "fast": true
+        },
+        {
+            "id": 2,
+            "location": "där",
+            "battery": 100,
+            "in_use": false,
+            "in_service": false,
+            "fast": true
+        }
+    ]
+}

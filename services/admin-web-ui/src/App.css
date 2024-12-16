@@ -1,0 +1,44 @@
+/* Här finns all global styling, t. ex. generella typografival */
+
+@import "./styles/variables.css";
+
+* {
+  font-family: var(--main-font);
+  color: var(--color-black);
+}
+
+::selection {
+  color: #fff;
+  background-color: var(--color-green-lighter);
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: var(--color-green-lightest);
+}
+
+h1 {
+  font-family: var(--h1-font);
+  font-size: 2.5em;
+  color: var(--color-green-primary);
+  text-shadow: 1.25px 1.25px #000;
+}
+
+h2 {
+  font-weight: 200;
+  font-size: 2em;
+}
+
+p {
+  font-weight: 300;
+  font-size: 1.5em;
+}
+
+.main {
+  flex: 1;
+  margin: auto;
+  padding: 3em 1em;
+  width: 80%;
+}

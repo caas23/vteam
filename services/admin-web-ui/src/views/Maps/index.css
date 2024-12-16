@@ -1,0 +1,24 @@
+.city-list {
+	list-style: none;
+    font-size: 1.4em;
+}
+
+.city-list li {
+	margin: 0.5em 0;
+}
+
+.city-list li {
+	color: var(--color-black);
+}
+
+.city-list li:hover {
+    cursor: pointer;
+    
+    /* om vi vill följa hover-mönstret i menyn */
+    width: fit-content;
+    margin-bottom: -4px;
+	border-bottom: 4px solid var(--color-green-primary);
+    
+    /* alternativ hover-effekt */
+    /* color: var(--color-green-primary); */
+}

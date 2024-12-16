@@ -1,0 +1,40 @@
+networks:
+  vteam:
+
+services:
+  server:
+    image: eckepecke/vteam-server:1.0
+    container_name: "server"
+    ports:
+      - 8080:8080
+    volumes:
+      - "./data/:/data"
+    networks:
+      - vteam
+  customer_webbclient:
+    image: eckepecke/customer-webbclient:1.0
+    container_name: "customer_webbclient"
+    stdin_open: true
+    networks:
+      - vteam
+    links:
+      - server:server
+    command: /bin/bash
+  customer_mobileclient:
+    image: eckepecke/customer-mobileclient:1.0
+    container_name: "customer_mobileclient"
+    stdin_open: true
+    networks:
+      - vteam
+    links:
+      - server:server
+    command: /bin/bash
+  admin_webbclient:
+    image: eckepecke/admin-webbclient:1.0
+    container_name: "admin_webbclient"
+    stdin_open: true
+    networks:
+      - vteam
+    links:
+      - server:server
+    command: /bin/bash

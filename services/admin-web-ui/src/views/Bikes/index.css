@@ -1,0 +1,48 @@
+.bike-list {
+	list-style: none;
+    font-size: 1.4em;
+    min-height: 225px;
+}
+
+.bike-list li {
+	margin: 0.5em 0;
+}
+
+.bike-list li {
+	color: var(--color-black);
+}
+
+.bike-list li:hover {
+    cursor: pointer;
+    
+    /* om vi vill följa hover-mönstret i menyn */
+    width: fit-content;
+    margin-bottom: -4px;
+	border-bottom: 4px solid var(--color-green-primary);
+    
+    /* alternativ hover-effekt */
+    /* color: var(--color-green-primary); */
+}
+
+.bike-list li.li-last-bike:hover {
+    margin-bottom: 7px;
+}
+
+.add-bike-btn {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 2em;
+    padding: 0.5em 1.25em;
+    font-size: 1em;
+    background-color: var(--color-green-primary);
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 0 var(--color-gray);
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--color-green-dark)
+    }
+}
+

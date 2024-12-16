@@ -1,0 +1,12 @@
+.add-bike-map {
+    width: 100%;
+    height: 400px;
+}
+
+.no-map-selected {
+    margin-top: 0.75em;
+    border: 1px dashed var(--color-green-primary);
+    display: block;
+    text-align: center;
+    padding-top: 18vh;
+}
