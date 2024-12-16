@@ -1,0 +1,18 @@
+.wrapper {
+    display: flex;
+    gap: 2em;
+
+}
+
+.scooter-graphic {
+    img {
+        width: 100%;
+    }
+    width: 200px;
+}
+.text-section {
+	width: 60%;
+	display: flex;
+	flex-direction: column;
+	gap: 1em;
+}

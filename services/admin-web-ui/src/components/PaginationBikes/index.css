@@ -1,0 +1,26 @@
+.page-number {
+    display: inline-block;
+    text-align: center;
+    width: 50px;
+}
+
+.prev-next {
+    width: 50px;
+    padding: 0.25em;
+    background-color: var(--color-green-primary);
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 0 var(--color-gray);
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--color-green-dark)
+    }
+    
+    &:disabled {
+        background-color: var(--color-gray);
+        cursor: auto;
+    }
+}
+

@@ -1,0 +1,18 @@
+/* Tillfällig lösning för att undvika att sidan "hoppar" pga scrollbaren */
+/* html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+  
+html::-webkit-scrollbar {
+    display: none;
+} */
+
+/* alternativ att vi har en lite mer costum scrollbar
+    och låter den vara synlig hela tiden */
+html {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    /* scrollbar-width: thin; */
+    scrollbar-color: var(--color-green-dark) var(--color-green-darkest);
+}

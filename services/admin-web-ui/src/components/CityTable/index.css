@@ -1,0 +1,54 @@
+.city-table {
+  border-collapse: collapse;
+  width: 100%;
+
+  & th, td {
+    text-align: left;
+    font-size: 1.5em;
+    padding: 8px;
+  }
+
+  & th {
+    font-weight: 400;
+    border-bottom: 2px solid var(--color-green-primary);
+  }
+
+  & td {
+    font-weight: 300;
+  }
+}
+
+.city-table span.show-hide:hover,
+.city-table span.more-details a:hover {
+  cursor: pointer;
+  color: var(--color-green-primary);
+}
+  
+.city-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.1em;
+  border-left: 2px solid var(--color-green-primary);
+  padding: 0 0 0.15em 0.25em;
+  margin-bottom: 0.5em;
+
+  & span {
+    font-size: 16px;
+    font-weight: 350;
+    color: #000;
+    width: 100%;
+  }
+}
+
+.sub-list div {
+  margin-left: 0.5em;
+
+  & .sub-level-arrow {
+    color: var(--color-green-primary);
+    font-size: 16px;
+  }
+}
+
+.spacing {
+  margin-left: 0.5em;
+}
