@@ -78,9 +78,9 @@ const addStationsToCities = async () => {
 
         await clearCityStations();
 
-        await updateCityStations('lund', parkingLund.data, chargingLund.data);
-        await updateCityStations('solna', parkingSolna.data, chargingSolna.data);
-        await updateCityStations('skelleftea', parkingSkelleftea.data, chargingSkelleftea.data);
+        await updateCityStations('lund', parkingLund, chargingLund);
+        await updateCityStations('solna', parkingSolna, chargingSolna);
+        await updateCityStations('skelleftea', parkingSkelleftea, chargingSkelleftea);
     } catch (error) {
         console.error('Error adding stations:', error);
     } finally {
