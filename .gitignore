@@ -1,3 +1,4 @@
 # Secrets
 services/rest-api/.env
 services/admin-web-ui/.env
+services/db/.env
