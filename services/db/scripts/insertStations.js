@@ -90,8 +90,13 @@ const addStationsToCities = async () => {
 
 const clearCityStations = async () => {
     try {
+      const chargingCollection = getCollection('charging_station');
+      await chargingCollection.deleteMany({});
+
+      const parkingCollection = getCollection('parking_zone');
+      await parkingCollection.deleteMany({});
+      
       const cityCollection = getCollection('cities');
-  
       await cityCollection.updateMany(
         {},
         {
