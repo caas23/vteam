@@ -7,9 +7,19 @@ export const getCollection = (name) => {
 }
 
 // Get all collections
-export const getAllCollections = () => {
+export const getAllCollections = async () => {
   const db = getDatabase();
-  return db.collections();
+  const collections = await db.listCollections().toArray();
+  return collections.map(collection => collection.name);
+}
+
+export const fixDb = async () => {
+  try {
+    const db = getDatabase();
+
+  } catch (error) {
+    console.error('Error creating collection:', error);
+  }
 }
 
 // Search in collection
