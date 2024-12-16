@@ -1,2 +1,2 @@
-# avec-user-web-ui
-*User's admin/history interface.*
+# Vteam user
+*User web interface.*

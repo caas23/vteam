@@ -1,2 +1,2 @@
-# avec-admin-web-ui
-*Admin user interface.*
+# Vteam admin
+*Admin web interface.*

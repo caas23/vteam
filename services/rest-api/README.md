@@ -1,2 +1,2 @@
-# avec-rest-api
+# Vteam API
 *RESTful Express/Node API.*
