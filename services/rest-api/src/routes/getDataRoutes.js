@@ -1,16 +1,17 @@
 import express from 'express';
-import { getCities } from '../../../db/cities.js';
+import { getChargingStations, getCities, getParkingZones } from '../../../db/cities.js';
 import { getUsers } from '../../../db/users.js';
 import bikeManager from "../../../bike-logic/bikeManager.js"
 import bike from '../../../bike-logic/bike.js';
 
 const router = express.Router();
 
-// GET /bikes
 router.get("/", async (req, res) => {
     const routes = {
         "Available routes": {
             "/all/cities": "get all cities",
+            "/all/charging": "get all charging stations",
+            "/all/parking": "get all parking zones",
             "/allbikes": "get all bikes",
             "/all/bikes/pagination": "get 5 bikes at a time for pagination",
             "/users": "get all users",
@@ -20,9 +21,18 @@ router.get("/", async (req, res) => {
     res.json(routes);
 });
 
-// GET /cities
 router.get("/all/cities", async (req, res) => {
     const result = await getCities();
+    res.json(result);
+});
+
+router.get("/all/charging", async (req, res) => {
+    const result = await getChargingStations();
+    res.json(result);
+});
+
+router.get("/all/parking", async (req, res) => {
+    const result = await getParkingZones();
     res.json(result);
 });
 
