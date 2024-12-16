@@ -5,10 +5,15 @@ let db;
 const connectToDatabase = async (uri) => {
   const client = new MongoClient(uri);
 
-  await client.connect();
-  db = client.db();
-
-  console.log('Connected to database');
+  try {
+    await client.connect();
+    db = client.db();
+    console.log('Connected to database');
+    return client;
+  } catch (error) {
+    console.error('Error connecting to database:', error);
+    throw error;
+  }
 };
 
 const getDatabase = () => {
