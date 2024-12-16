@@ -12,7 +12,7 @@ router.get("/", async (req, res) => {
             "/all/cities": "get all cities",
             "/all/charging": "get all charging stations",
             "/all/parking": "get all parking zones",
-            "/allbikes": "get all bikes",
+            "/all/bikes": "get all bikes",
             "/all/bikes/pagination": "get 5 bikes at a time for pagination",
             "/users": "get all users",
             "/one/bike": "get one bike using its bike_id",
