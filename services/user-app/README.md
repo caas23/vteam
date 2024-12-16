@@ -1,2 +1,2 @@
-# avec-user-app
-*Frontend of the user's mobile app.*
+# Vteam app
+*User mobile app.*

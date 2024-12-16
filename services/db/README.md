@@ -1,2 +1,2 @@
-# avec-db
-*Database functionality.*
+# Vteam database
+*Database for vteam.*

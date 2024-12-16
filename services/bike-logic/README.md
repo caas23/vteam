@@ -1,2 +1,2 @@
-# avec-bike-logic
-*System logic of a rental bike.*
+# Vteam bike
+*System logic for bikes.*
