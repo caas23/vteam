@@ -1,7 +1,5 @@
-// import database from "../db/db.js"
 import { getCollection } from "../db/collections.js"
 import { getCities } from "../db/cities.js"
-
 import bike from "./bike.js"
 
 // skapa bike_id för varje ny cykel som läggs till
@@ -9,7 +7,8 @@ const generateBikeId = async () => {
     const counterCollection = getCollection("bike_id_counter")
     const counter = await counterCollection.findOneAndUpdate(
         { _id: "counter" },
-        { $inc: { counter_value: 1 } }
+        { $inc: { counter_value: 1 } },
+        { returnDocument: 'after' }
     );
     return `B${counter.counter_value.toString().padStart(3, "0")}`;
 };
@@ -39,36 +38,36 @@ const bikeManager = {
         }
     },
 
-    createManyBikes: async function createManyBikes(bikeArray, cityObject) {
-        let bikeCollection = getCollection("bikes");
+    // createManyBikes: async function createManyBikes(bikeArray, cityObject) {
+    //     let bikeCollection = getCollection("bikes");
 
-        // Map through the array of bikes and prepare multiple bike documents
-        const newBikes = bikeArray.map((bike) => ({
-            speed: bike.speed,
-            location: bike.location,
-            city_id: bike.city_id,
-            city_name: bike.city_name,
-            status: {
-                available: bike.available,
-                battery_level: bike.battery_level,
-                in_service: bike.in_service,
-            }
-        }));
+    //     // Map through the array of bikes and prepare multiple bike documents
+    //     const newBikes = bikeArray.map((bike) => ({
+    //         speed: bike.speed,
+    //         location: bike.location,
+    //         city_id: bike.city_id,
+    //         city_name: bike.city_name,
+    //         status: {
+    //             available: bike.available,
+    //             battery_level: bike.battery_level,
+    //             in_service: bike.in_service,
+    //         }
+    //     }));
 
-        try {
-            // Insert multiple bikes
-            let result = await bikeCollection.insertMany(newBikes);
-            // if (result.ok) {
-            //     // I am not sure bikes attribute in city is that useful
-            //     result = cityManager.addNewBikes(newBikes, data.city_id);
-            // }
+    //     try {
+    //         // Insert multiple bikes
+    //         let result = await bikeCollection.insertMany(newBikes);
+    //         // if (result.ok) {
+    //         //     // I am not sure bikes attribute in city is that useful
+    //         //     result = cityManager.addNewBikes(newBikes, data.city_id);
+    //         // }
 
-            return result;
-        } catch (e) {
-            console.error("Error creating multiple new bikes:", e.message || e);
-            throw new Error("Failed to add many bikes to bike collection.");
-        }
-    },
+    //         return result;
+    //     } catch (e) {
+    //         console.error("Error creating multiple new bikes:", e.message || e);
+    //         throw new Error("Failed to add many bikes to bike collection.");
+    //     }
+    // },
 
     getAllBikes: async function getAllBikes() {
         let collection = getCollection("bikes");

@@ -1,16 +1,31 @@
 import express from 'express';
 import { getCities } from '../../../db/cities.js';
-import { getBikes } from '../../../db/bikes.js';
+import { getUsers } from '../../db/users.js';
 import bikeManager from "../../../bike-logic/bikeManager.js"
 import bike from '../../../bike-logic/bike.js';
+import { fixDb } from '../../../db/collections.js';
 
 
 const router = express.Router();
 
 // GET /bikes
 router.get("/", async (req, res) => {
+    const routes = {
+        "Available routes": {
+            "/all/cities": "get all cities",
+            "/allbikes": "get all bikes",
+            "/all/bikes/pagination": "get 5 bikes at a time for pagination",
+            "/users": "get all users",
+            "/one/bike": "get one bike using its bike_id",
+        }
+    }
+    res.json(routes);
+});
 
-    res.json("hej getData routes");
+router.get("/fix/db", async (req, res) => {
+    await fixDb();
+    console.log(result);
+    res.json(result);
 });
 
 // GET /cities
@@ -21,7 +36,6 @@ router.get("/all/cities", async (req, res) => {
 
 router.get("/all/bikes", async (req, res) => {
     const result = await bikeManager.getAllBikes();
-
     res.json(result);
 });
 
@@ -47,17 +61,24 @@ router.get("/all/bikes/pagination", async (req, res) => {
     }
 });
 
-router.post("/all/bikes/in/city", async (req, res) => {
-    // fake post variable
-    let city = req.body.city;
-    city = "Lund";
-    console.log(city);
-
-    const result = await bikeManager.getAllBikesInCity(city);
-    console.log("hello");
-
+app.get("/users", async (req, res) => {
+    const result = await getUsers();
     res.json(result);
 });
+
+
+// ???
+// router.post("/all/bikes/in/city", async (req, res) => {
+//     // fake post variable
+//     let city = req.body.city;
+//     city = "Lund";
+//     console.log(city);
+
+//     const result = await bikeManager.getAllBikesInCity(city);
+//     console.log("hello");
+
+//     res.json(result);
+// });
 
 // har lagt in denna lite temporärt för enkelhetens skull
 router.get("/one/bike/", async (req, res) => {
