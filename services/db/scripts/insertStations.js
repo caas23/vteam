@@ -18,20 +18,17 @@ const loadData = async (filePath) => {
 };
 
 const insertStation = async (stations, type) => {
-    const collection = getCollection(type === 'charging' ? 'charging_station' : 'parking_zone');
-    const insertData = stations.map(station => ({
-      _id: station.id,
-      coordinates: station.coordinates,
-    }));
-  
-    // för att undvika problem med duplicate_key
-    for (const station of insertData) {
-        await collection.updateOne(
-            { _id: station._id },
-            { $setOnInsert: { _id: station._id, coordinates: station.coordinates } },
-            { upsert: true }
-        );
+  const collection = getCollection(type === 'charging' ? 'charging_station' : 'parking_zone');
+
+  const inserts = stations.map(station => ({
+    updateOne: {
+      filter: { _id: station.id },
+      update: { $setOnInsert: { _id: station.id, coordinates: station.coordinates } },
+      upsert: true,
     }
+  }));
+
+  await collection.bulkWrite(inserts);
 };
 
 const updateCityStations = async (cityName, parkingStations, chargingStations) => {
