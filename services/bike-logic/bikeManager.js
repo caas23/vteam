@@ -1,5 +1,5 @@
 import { getCollection } from "../db/collections.js"
-import { getCities } from "../db/cities.js"
+import { city } from "../db/cities.js";
 import bike from "./bike.js"
 
 // skapa bike_id för varje ny cykel som läggs till
@@ -117,26 +117,23 @@ const bikeManager = {
         }
     },
 
-    // Not yet refactored
     getAllBikesInCity: async function getAllBikesInCity(cityName) {
         try {
-            const cities = await getCities();
-            const city = cities.find(city => city.name.toLowerCase() === cityName.toLowerCase());
-
-
-            if (!city) {
-                console.error(`City '${cityName}' not found.`);
-                throw new Error(`City '${cityName}' not found.`);
+            const bikeCollection = getCollection('bikes');
+    
+            const bikes = await bikeCollection.find({ city_name: cityName }).toArray();
+    
+            if (!bikes) {
+                console.error(`No bikes found in '${cityName}'.`);
+                throw new Error(`No bikes found in '${cityName}'`);
             }
     
-            // Return the bikes for the found city
-            return city.bikes;
+            return bikes || [];
         } catch (e) {
-            console.error(`Failed to retrive bikes from ${cityName}.`, e.message || e);
-            throw new Error(`Failed to retrive bikes from ${cityName}.`);
+            console.error(`Failed to retrieve bikes in ${cityName}.`, e.message || e);
+            throw new Error(`Failed to retrieve bikes in ${cityName}.`);
         }
     },
-
         // Not yet refactored
     startBike: async function startBike(bikeId) {
         // For now this only makes the bike unavailable 
@@ -170,7 +167,7 @@ const bikeManager = {
 
     //maybe this should be elsewhere?
     findCityId: async function findCityId(cityName) {
-        let cities = await getCities();
+        let cities = await city.getCities();
         const city = cities.find(city => city.name === cityName);
         return city._id
     }
