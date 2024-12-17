@@ -9,24 +9,23 @@ const RowDetails: React.FC<RowItemProps> = ({ item }) => {
     man trycka på någon knapp för att visa fler, eller dölja alla från början och 
     endast visa om man väljer att öppna en dropdown/popup eller dylikt */
 
-  console.log(item)
   // bike
-  if ("status" in item) {
+  if ("bike_id" in item) {
     return (
       <div className="city-row">
-          <span><strong>Bike #{item._id}</strong></span>
+          <span><strong>Bike #{item.bike_id}</strong></span>
           <span>Status: {item.status.in_service ? "In Service" : item.status.available ? "Available" : "Occupied"}</span>
-          <span>Position: [{item.location.join(", ")}]</span>
-          <span className="more-details"><a href={`/bike/${item._id}`}>View more details</a></span>
+          <span>Location: [{item.location.join(", ")}]</span>
+          <span className="more-details"><a href={`/bike/${item.bike_id}`}>View more details</a></span>
       </div>
     );
   }
 
   // station
-  if ("plugs" in item) {
+  if ("charging_id" in item) {
     return (
       <div className="city-row">
-        <span><strong>Station #{item._id}</strong></span>
+        <span><strong>Station #{item.charging_id}</strong></span>
         <span>
           Area:
             {item.area.map((coordinatePair, index) => (
@@ -50,10 +49,10 @@ const RowDetails: React.FC<RowItemProps> = ({ item }) => {
   }
 
   // parking
-  if ("area" in item && !("plugs" in item)) {
+  if ("parking_id" in item) {
     return (
       <div className="city-row">
-        <span><strong>Zone #{item._id}</strong></span>
+        <span><strong>Zone #{item.parking_id}</strong></span>
         <span>
           Area:
             {item.area.map((coordinatePair, index) => (
@@ -67,10 +66,10 @@ const RowDetails: React.FC<RowItemProps> = ({ item }) => {
   }
 
   // rules
-  if ("description" in item) {
+  if ("rule_id" in item) {
     return (
       <div className="city-row">
-        <span><strong>Rule #{item._id}</strong></span>
+        <span><strong>Rule #{item.rule_id}</strong></span>
         <span>Description: {item.description}</span>
       </div>
     );

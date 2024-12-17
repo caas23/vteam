@@ -1,7 +1,6 @@
 interface Bike {
   _id: string;
   location: [number, number];
-  cityId: string;
   city_name: string;
   speed: number;
   status: {
@@ -10,10 +9,12 @@ interface Bike {
     in_service: boolean;
   };
   completed_trips: string[];
-}
+  bike_id: string;
+} 
 
 interface ChargingStation {
   _id: string;
+  charging_id: string;
   area: number[][];
   plugs: {
     id: number;
@@ -23,11 +24,13 @@ interface ChargingStation {
 
 interface ParkingZone {
   _id: string;
+  parking_id: string;
   area: number[][];
 }
 
 interface Rule {
   _id: string;
+  rule_id: string;
   description: string;
 }
 
