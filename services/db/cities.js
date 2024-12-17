@@ -15,3 +15,8 @@ export const getParkingZones = async () => {
   return cities;
 };
 
+export const getRules = async () => {
+  const cities = await getCollection('city_rules').find().toArray();
+  return cities;
+};
+
