@@ -19,14 +19,27 @@ const loadData = async (filePath) => {
 
 const insertStation = async (stations, type) => {
   const collection = getCollection(type === 'charging' ? 'charging_station' : 'parking_zone');
-
-  const inserts = stations.map(station => ({
-    updateOne: {
-      filter: { _id: station.id },
-      update: { $setOnInsert: { _id: station.id, coordinates: station.coordinates } },
-      upsert: true,
-    }
-  }));
+  let inserts;
+  
+  if (type === 'parking') {
+    inserts = stations.map(station => ({
+      updateOne: {
+        filter: { [`${type}_id`]: station.id },
+        update: { $setOnInsert: { area: station.area, [`${type}_id`]: station.id } },
+        upsert: true,
+      }
+    }));
+  }
+  
+  if (type === 'charging') {
+    inserts = stations.map(station => ({
+      updateOne: {
+        filter: { [`${type}_id`]: station.id },
+        update: { $setOnInsert: { area: station.area, [`${type}_id`]: station.id, plugs: station.plugs } },
+        upsert: true,
+      }
+    }));
+  }
 
   await collection.bulkWrite(inserts);
 };
@@ -51,7 +64,7 @@ const updateCityStations = async (cityName, parkingStations, chargingStations) =
         }
       }
     );
-    console.log(`Added stations for ${cityName}`);
+    // console.log(`Added stations for ${cityName}`);
   } catch (error) {
     console.error(`Error adding stations to ${cityName}:`, error);
   }
@@ -104,7 +117,7 @@ const clearCityStations = async () => {
         }
       );
   
-      console.log('Cleared stations for all cities');
+      // console.log('Cleared stations for all cities');
     } catch (error) {
       console.error('Error clearing stations:', error);
     }

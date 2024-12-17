@@ -11,7 +11,7 @@ const connectToDatabase = async (uri) => {
     // vteam eller test
     db = client.db("vteam");
     
-    console.log('Connected to database');
+    // console.log('Connected to database');
     return client;
   } catch (error) {
     console.error('Error connecting to database:', error);

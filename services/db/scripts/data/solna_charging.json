@@ -1,47 +1,82 @@
 [
     {
-        "coordinates": [
+        "area": [
             [59.3729, 18.0056],
             [59.3732, 18.0060],
             [59.3728, 18.0063],
             [59.3726, 18.0058],
             [59.3729, 18.0056]
+        ],
+        "plugs": [
+            {"id": "CP026", "available": true},
+            {"id": "CP027", "available": true},
+            {"id": "CP029", "available": true},
+            {"id": "CP029", "available": true},
+            {"id": "CP030", "available": true}
         ]
     },
     {
-        "coordinates": [
+        "area": [
             [59.3584, 17.9971],
             [59.3586, 17.9975],
             [59.3582, 17.9978],
             [59.3580, 17.9973],
             [59.3584, 17.9971]
+        ],
+        "plugs": [
+            {"id": "CP031", "available": true},
+            {"id": "CP032", "available": true},
+            {"id": "CP033", "available": true},
+            {"id": "CP034", "available": true},
+            {"id": "CP035", "available": true}
         ]
     },
     {
-        "coordinates": [
+        "area": [
             [59.3628, 17.9994],
             [59.3630, 17.9998],
             [59.3626, 18.0001],
             [59.3624, 17.9996],
             [59.3628, 17.9994]
+        ],
+        "plugs": [
+            {"id": "CP036", "available": true},
+            {"id": "CP037", "available": true},
+            {"id": "CP039", "available": true},
+            {"id": "CP039", "available": true},
+            {"id": "CP040", "available": true}
         ]
     },
     {
-        "coordinates": [
+        "area": [
             [59.3724, 18.0506],
             [59.3727, 18.0510],
             [59.3723, 18.0513],
             [59.3721, 18.0508],
             [59.3724, 18.0506]
+        ],
+        "plugs": [
+            {"id": "CP041", "available": true},
+            {"id": "CP042", "available": true},
+            {"id": "CP043", "available": true},
+            {"id": "CP044", "available": true},
+            {"id": "CP045", "available": true}
         ]
     },
     {
-        "coordinates": [
+        "area": [
             [59.3526, 17.9943],
             [59.3528, 17.9947],
             [59.3524, 17.9950],
             [59.3522, 17.9945],
             [59.3526, 17.9943]
+        ],
+        "plugs": [
+            {"id": "CP046", "available": true},
+            {"id": "CP047", "available": true},
+            {"id": "CP049", "available": true},
+            {"id": "CP049", "available": true},
+            {"id": "CP050", "available": true}
         ]
     }
 ]

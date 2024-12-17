@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import dotenv from 'dotenv';
 import { connectToDatabase } from '../db.js';
 import { getCollection } from '../collections.js';
-import { resetUserIdCounter, generateUserId } from './handleUserId.js';
+import { resetUserIdCounter, generateUserId } from './helpers/handleUserId.js';
 
 dotenv.config({ path: '../.env' });
 const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.yjhm6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
@@ -33,7 +33,7 @@ const addUsers = async () => {
         
         const userCollection = getCollection('users');
         const result = await userCollection.insertMany(users);
-        console.log(`Added ${result.insertedCount} users.`);
+        // console.log(`Added ${result.insertedCount} users.`);
 
     } catch (error) {
         console.error('Error adding users:', error);
@@ -48,7 +48,7 @@ const clearUsers = async () => {
       const userCollection = getCollection('users');
       await userCollection.deleteMany({});
   
-      console.log('All users cleared');
+      // console.log('All users cleared');
     } catch (error) {
       console.error('Error clearing users:', error);
     }

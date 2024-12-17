@@ -22,7 +22,7 @@ const addCities = async () => {
         const collection = getCollection('cities');
         await collection.insertMany(cities);
   
-        console.log('Added new cities');
+        // console.log('Added new cities');
     } catch (error) {
         console.error('Error adding cities:', error);
     } finally {
@@ -35,7 +35,7 @@ const clearCities = async () => {
       const cityCollection = getCollection('cities');
       await cityCollection.deleteMany({});
         
-      console.log('Cleared all cities');
+      // console.log('Cleared all cities');
     } catch (error) {
       console.error('Error clearing cities:', error);
     }
