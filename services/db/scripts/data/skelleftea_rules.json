@@ -1,14 +1,11 @@
 [
     {
-        "_id": "R001",
-        "description": "Rule#1 for Skellefteå."
+        "description": "Rule #1 for Skellefteå."
     },
     {
-        "_id": "R002",
-        "description": "Rule#2 for Skellefteå"
+        "description": "Rule #2 for Skellefteå"
     },
     {
-        "_id": "R003",
-        "description": "Rule#3 for Skellefteå"
+        "description": "Rule #3 for Skellefteå"
     }
 ]

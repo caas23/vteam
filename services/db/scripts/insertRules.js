@@ -15,32 +15,18 @@ const loadData = async (filePath) => {
 };
 
 const insertRules = async (rules) => {
-	const collection = getCollection('city_rules');
-	const inserts = rules.map(rule => ({
-	  updateOne: {
-		filter: { _id: rule.id },
-		update: { $setOnInsert: { _id: rule.id, description: rule.description } },
-		upsert: true,
-	  }
-	}));
-  
-	await collection.bulkWrite(inserts);
+  const collection = getCollection('city_rules');
+  const inserts = rules.map(rule => ({
+    insertOne: { document: { rule_id: rule.id, description: rule.description } }
+  }));
+  await collection.bulkWrite(inserts);
 };
 
-const updateCityRules = async (cityName, rules) => {
-  try {
-    const cityCollection = getCollection('cities');
-    const ruleIds = rules.map(rule => rule.id);
-	
-	await cityCollection.updateOne(
-		{ name: cityName },
-		{ $set: { rules: ruleIds } }
-	);
 
-  	console.log(`Updated rules for ${cityName}`);
-  } catch (error) {
-    console.error(`Error adding rules to ${cityName}:`, error);
-  }
+const updateCityRules = async (cityName, ruleIds) => {
+  const cityCollection = getCollection('cities');
+  await cityCollection.updateOne({ name: cityName }, { $set: { rules: ruleIds } });
+  // console.log(`Updated rules for ${cityName}`);
 };
 
 const addRulesToCities = async () => {
@@ -54,19 +40,19 @@ const addRulesToCities = async () => {
         const rulesSolna = await loadData("./data/solna_rules.json");
         const rulesSkelleftea = await loadData("./data/skelleftea_rules.json");
         
-		await clearCityRules();
+        await clearCityRules();
 
-		const lundRulesId = await addUniqueId(rulesLund);
-		const solnaRulesId = await addUniqueId(rulesSolna);
-		const skellefteaRulesId = await addUniqueId(rulesSkelleftea);
+        const lundRulesId = await addUniqueId(rulesLund);
+        const solnaRulesId = await addUniqueId(rulesSolna);
+        const skellefteaRulesId = await addUniqueId(rulesSkelleftea);
 
-		await insertRules(lundRulesId);
-		await insertRules(solnaRulesId);
-		await insertRules(skellefteaRulesId);
+        await insertRules(lundRulesId);
+        await insertRules(solnaRulesId);
+        await insertRules(skellefteaRulesId);
 
-        await updateCityRules('lund', lundRulesId);
-        await updateCityRules('solna', solnaRulesId);
-        await updateCityRules('skelleftea', skellefteaRulesId);
+        await updateCityRules('lund', lundRulesId.map(rule => rule.id));
+        await updateCityRules('solna', solnaRulesId.map(rule => rule.id));
+        await updateCityRules('skelleftea', skellefteaRulesId.map(rule => rule.id));
     } catch (error) {
         console.error('Error adding rules:', error);
     } finally {
@@ -75,19 +61,16 @@ const addRulesToCities = async () => {
 };
 
 const clearCityRules = async () => {
-    try {     
-      const cityCollection = getCollection('cities');
-      await cityCollection.updateMany(
-        {},
-        {
-          $set: { rules: [] }
-        }
-      );
-  
-      console.log('Cleared rules for all cities');
-    } catch (error) {
-      console.error('Error clearing rules:', error);
-    }
+  try {
+    const cityCollection = getCollection('cities');
+    await cityCollection.updateMany({}, { $set: { rules: [] } });
+
+    const rulesCollection = getCollection('city_rules');
+    await rulesCollection.deleteMany({});
+    // console.log('Cleared rules for all cities');
+  } catch (error) {
+    console.error('Error clearing rules:', error);
+  }
 };
 
 addRulesToCities();

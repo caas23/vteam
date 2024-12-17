@@ -1,14 +1,11 @@
 [
     {
-        "_id": "R001",
-        "description": "Rule#1 for Solna."
+        "description": "Rule #1 for Solna."
     },
     {
-        "_id": "R002",
-        "description": "Rule#2 for Solna"
+        "description": "Rule #2 for Solna"
     },
     {
-        "_id": "R003",
-        "description": "Rule#3 for Solna"
+        "description": "Rule #3 for Solna"
     }
 ]
