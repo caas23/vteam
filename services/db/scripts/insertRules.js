@@ -2,7 +2,7 @@ import fs from 'fs/promises';
 import dotenv from 'dotenv';
 import { connectToDatabase } from '../db.js';
 import { getCollection } from '../collections.js';
-import { resetRuleIdCounter, addUniqueId } from './handleRuleId.js';
+import { resetRuleIdCounter, addUniqueId } from './helpers/handleRuleId.js';
 
 dotenv.config({ path: '../.env' });
 const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.yjhm6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;

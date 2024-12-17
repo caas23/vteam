@@ -1,4 +1,4 @@
-import { getCollection } from '../collections.js';
+import { getCollection } from '../../collections.js';
 
 export const resetUserIdCounter = async () => {
     try {
