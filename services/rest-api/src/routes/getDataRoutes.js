@@ -1,5 +1,5 @@
 import express from 'express';
-import { getChargingStations, getCities, getParkingZones, getRules } from '../../../db/cities.js';
+import { city } from '../../../db/cities.js';
 import { getOneUser, getUsers } from '../../../db/users.js';
 import bikeManager from "../../../bike-logic/bikeManager.js"
 import bike from '../../../bike-logic/bike.js';
@@ -23,22 +23,40 @@ router.get("/", async (req, res) => {
 });
 
 router.get("/all/cities", async (req, res) => {
-    const result = await getCities();
+    const result = await city.getCities();
     res.json(result);
 });
 
 router.get("/all/charging", async (req, res) => {
-    const result = await getChargingStations();
+    const result = await city.getChargingStations();
+    res.json(result);
+});
+
+router.get("/all/charging/in/city", async (req, res) => {
+    const cityName = req.query.city;
+    const result = await city.getChargingStationsByCity(cityName);
     res.json(result);
 });
 
 router.get("/all/parking", async (req, res) => {
-    const result = await getParkingZones();
+    const result = await city.getParkingZones();
+    res.json(result);
+});
+
+router.get("/all/parking/in/city", async (req, res) => {
+    const cityName = req.query.city;
+    const result = await city.getParkingZonesByCity(cityName);
     res.json(result);
 });
 
 router.get("/all/rules", async (req, res) => {
-    const result = await getRules();
+    const result = await city.getRules();
+    res.json(result);
+});
+
+router.get("/all/rules/in/city", async (req, res) => {
+    const cityName = req.query.city;
+    const result = await city.getRulesByCity(cityName);
     res.json(result);
 });
 
@@ -80,24 +98,22 @@ router.get("/one/user", async (req, res) => {
     res.json(result);
 });
 
+router.get("/all/bikes/in/city", async (req, res) => {
+    const city = req.query.city;
+    const result = await bikeManager.getAllBikesInCity(city);
+    res.json(result);
+});
 
-// ???
-// router.post("/all/bikes/in/city", async (req, res) => {
-//     // fake post variable
-//     let city = req.body.city;
-//     city = "Lund";
-//     console.log(city);
-
-//     const result = await bikeManager.getAllBikesInCity(city);
-//     console.log("hello");
-
-//     res.json(result);
-// });
-
-// har lagt in denna lite temporärt för enkelhetens skull
 router.get("/one/bike/", async (req, res) => {
     const bike_id = req.query.bike_id;
     const result = await bike.reportState(bike_id);
+
+    res.json(result);
+});
+
+router.get("/one/city/", async (req, res) => {
+    const city_name = req.query.city;
+    const result = await city.getOneCity(city_name);
 
     res.json(result);
 });
