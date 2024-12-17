@@ -59,12 +59,12 @@ const AddBikeMap: React.FC<MapProps> = ({ availableZones, handleMarkerClick }) =
           const center = calculateCentroid(zone.area);
           return (
             <Marker
-              key={zone._id}
+              key={zone.parking_id}
               icon={parkingZoneMarker}
               position={center}
-              eventHandlers={{ click: () => handleMarkerClick(zone._id) }}
+              eventHandlers={{ click: () => handleMarkerClick(zone.parking_id) }}
             >
-              <Popup>{zone._id}</Popup>
+              <Popup>{zone.parking_id}</Popup>
             </Marker>
           );
         })}

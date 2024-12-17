@@ -9,8 +9,9 @@ const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cl
 
 // Skript för att lägga till/återställa parkerings- och laddstationer
 // i Lund, Solna och Skellefteå. Varje stad har fem stationer av vardera sort.
-// Varje station är placerad på så sätt att den INTE blockerar vägar/ligger på
-// byggnader/i vattnet eller andra icke-logiska platser.
+// Varje station bör optimalt vara placerad på så sätt att den INTE blockerar vägar/ligger på
+// byggnader/i vattnet eller andra icke-logiska platser. Justeras i mån av tid.
+// https://geojson.io/ <-- rita ut polygoner för mer precisa stationsplaceringar.
 
 const loadData = async (filePath) => {
   const stations = await fs.readFile(filePath, 'utf8');

@@ -1,5 +1,5 @@
 interface ParkingZone {
-  _id: string;
+  parking_id: string;
   area: [number, number][];
 }
 
@@ -15,15 +15,14 @@ interface Bike {
   completed_trips: string[];
 }
 
-// inte fullständigt, har bara lagt in
-// de delar som behövts under testning av 
-// formuläret för att addera en cykel
 interface City {
   _id: string;
   name: string;
-  parking_zones: string[];
+  display_name: string;
   bikes: string[];
   charging_stations: string[];
+  parking_zones: string[];
+  rules: string[];
 }
 
 interface FormData {
@@ -45,7 +44,7 @@ interface HandleParkingProps {
 }
 
 interface HandleMarkerProps {
-  zoneId: string,
+  parking_id: string,
   setFormData: React.Dispatch<React.SetStateAction<FormData>>
 }
 

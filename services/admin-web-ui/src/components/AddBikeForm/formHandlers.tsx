@@ -1,7 +1,7 @@
-import { cityData, parkingZoneData } from "../AddBike/tempParkingZoneData"; // ska bytas ut så fort det finns fakstisk data för parkeringszoner
-import { HandleCityProps, HandleParkingProps, HandleMarkerProps } from "./interfaces";
+import { ParkingZone, HandleCityProps, HandleParkingProps, HandleMarkerProps } from "./interfaces";
+import { fetchCityProps } from "../../fetchModels/fetchCityProps";
 
-const handleCityChange = ({
+const handleCityChange = async ({
   e,
   formData,
   setFormData,
@@ -10,18 +10,21 @@ const handleCityChange = ({
   const cityName = e.target.value;
   setFormData({ ...formData, cityName, parkingZone: "" });
 
-  // hämta och sätt zoner för given city
-  const selectedCity = cityData.find((city) => city.name === cityName);
-  const zones = selectedCity
-  ? selectedCity.parking_zones.map((zoneId) => {
-      return {
-        _id: zoneId,
-        area: parkingZoneData.find((zone) => zone._id === zoneId)?.area || [],
-      };
-    })
-  : [];
-  setAvailableZones(zones);
+
+  try {
+    const parkingZones = await fetchCityProps(cityName, "parking");
+    const zones = parkingZones.map((zone: ParkingZone) => ({
+      parking_id: zone.parking_id,
+      area: zone.area,
+      
+    }));
+    setAvailableZones(zones);
+
+  } catch (error) {
+    console.error("City or parking zone could not be fetched", error);
+  }
 };
+
 
 // uppdatera selectad zon baserat på val i dropdownen
 const handleParkingZoneChange = ({
@@ -34,10 +37,10 @@ const handleParkingZoneChange = ({
 
 // uppdatera selectad zon baserat på klickad markör på kartan
 const handleMarkerClick = ({
-  zoneId,
+  parking_id,
   setFormData,
 }: HandleMarkerProps) => {
-  setFormData((prevFormData) => ({ ...prevFormData, parkingZone: zoneId }));
+  setFormData((prevFormData) => ({ ...prevFormData, parkingZone: parking_id }));
 };
 
 export {

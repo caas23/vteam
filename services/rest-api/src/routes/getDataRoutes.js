@@ -45,7 +45,14 @@ router.get("/all/parking", async (req, res) => {
 
 router.get("/all/parking/in/city", async (req, res) => {
     const cityName = req.query.city;
-    const result = await city.getParkingZonesByCity(cityName);
+    let result;
+    console.log(cityName)
+
+    if (/^[A-Z]/.test(cityName.split("")[0])) {
+        result = await city.getParkingZonesByDisplayCity(cityName)
+        return res.json(result);
+    } 
+    result = await city.getParkingZonesByCity(cityName);
     res.json(result);
 });
 
@@ -113,8 +120,13 @@ router.get("/one/bike/", async (req, res) => {
 
 router.get("/one/city/", async (req, res) => {
     const city_name = req.query.city;
-    const result = await city.getOneCity(city_name);
+    let result;
 
+    if (/^[A-Z]/.test(city_name.split("")[0])) {
+        result = await city.getOneDisplayCity(city_name)
+        return res.json(result);
+    } 
+    result = await city.getOneCity(city_name);
     res.json(result);
 });
 
