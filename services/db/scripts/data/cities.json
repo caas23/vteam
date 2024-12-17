@@ -1,0 +1,26 @@
+[
+    {
+        "name": "lund",
+        "display_name": "Lund",
+        "bikes": [],
+        "charging_stations": [],
+        "parking_zones": [],
+        "rules": []
+    },
+    {
+        "name": "solna",
+        "display_name": "Solna",
+        "bikes": [],
+        "charging_stations": [],
+        "parking_zones": [],
+        "rules": []
+    },
+    {
+        "name": "skelleftea",
+        "display_name": "Skellefteå",
+        "bikes": [],
+        "charging_stations": [],
+        "parking_zones": [],
+        "rules": []
+    }
+]
