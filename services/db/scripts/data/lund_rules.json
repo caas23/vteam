@@ -1,0 +1,14 @@
+[
+    {
+        "_id": "R001",
+        "description": "Rule#1 for Lund."
+    },
+    {
+        "_id": "R002",
+        "description": "Rule#2 for Lund"
+    },
+    {
+        "_id": "R003",
+        "description": "Rule#3 for Lund"
+    }
+]
