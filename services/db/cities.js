@@ -13,6 +13,11 @@ export const city = {
     return result;
   },
   
+  getOneDisplayCity: async (city) => {
+    const result = await getCollection('cities').findOne({ display_name: city });
+    return result;
+  },
+  
   getChargingStations: async () => {
     const result = await getCollection('charging_station').find().toArray();
     return result;
@@ -45,6 +50,21 @@ export const city = {
   
   getParkingZonesByCity: async (city) => {
     const result = await getCollection('cities').findOne({ name: city });
+    const parkingZoneIds = result.parking_zones;
+
+    if (!parkingZoneIds || parkingZoneIds.length === 0) {
+      return [];
+    }
+
+    const parkingZones = await getCollection('parking_zone').find({
+      parking_id: { $in: parkingZoneIds }
+    }).toArray();
+
+    return parkingZones;
+  },
+  
+  getParkingZonesByDisplayCity: async (city) => {
+    const result = await getCollection('cities').findOne({ display_name: city });
     const parkingZoneIds = result.parking_zones;
 
     if (!parkingZoneIds || parkingZoneIds.length === 0) {

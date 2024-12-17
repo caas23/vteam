@@ -1,10 +1,11 @@
-import React, { useState } from "react";
-import { ParkingZone, FormData } from "./interfaces";
-import { cityData } from "../AddBike/tempParkingZoneData";
+import React, { useState, useEffect } from "react";
+import { City, ParkingZone, FormData } from "./interfaces";
 import "./index.css";
 import { handleCityChange, handleParkingZoneChange, handleMarkerClick } from "./formHandlers";
 import AddBikeMap from "../AddBikeMap";
 import { fetchAddbikeToCity } from "../../fetchModels/fetchAddbikeToCity";
+import { fetchCityProps } from "../../fetchModels/fetchCityProps";
+import { fetchCities } from "../../fetchModels/fetchCities";
 
 const AddBikeForm: React.FC = () => {
   // data som sätts i formuläret
@@ -13,19 +14,44 @@ const AddBikeForm: React.FC = () => {
     parkingZone: "",
   });
 
-  // tillgängliga zoner för vald stad
+  const [cities, setCities] = useState<City[]>([]);
   const [availableZones, setAvailableZones] = useState<ParkingZone[]>([]);
+
+  useEffect(() => {
+    const fetchAndSetCities = async () => {
+      try {
+        const result = await fetchCities();
+        setCities(result);
+      } catch (error) {
+        console.error("Failed to fetch cities:", error);
+      }
+    };
+    fetchAndSetCities();
+  }, []);
+
+  useEffect(() => {
+    if (formData.cityName) {
+      const fetchAndSetParkingZones = async () => {
+        try {
+          const parkingZones = await fetchCityProps(formData.cityName, "parking");
+          setAvailableZones(parkingZones);
+        } catch (error) {
+          console.error("Could not fetch parking zones:", error);
+        }
+      };
+      fetchAndSetParkingZones();
+    }
+  }, [formData.cityName]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const { cityName, parkingZone } = formData;
 
-    const selectedCity = cityData.find((city) => city.name === cityName);
-    const selectedZone = availableZones.find((zone) => zone._id === parkingZone);
+    const selectedZone = availableZones.find((zone) => zone.parking_id === parkingZone);
 
     const newBike = {
       location: selectedZone?.area?.[0] || [0, 0],
-      city_name: selectedCity?.name || "",
+      city_name: cityName,
       speed: 0,
       status: {
         available: true,
@@ -36,7 +62,7 @@ const AddBikeForm: React.FC = () => {
     };
 
     try {
-      const result = await fetchAddbikeToCity(newBike, selectedCity?.name || "");
+      const result = await fetchAddbikeToCity(newBike, cityName);
       console.log("Bike added:", result);
       alert("Bike added");
     } catch {
@@ -62,9 +88,9 @@ const AddBikeForm: React.FC = () => {
             required
           >
             <option value="" disabled>Choose city ...</option>
-            {cityData.map((city) => (
-              <option key={city.name} value={city.name}>
-                {city.name}
+            {cities.map((city) => (
+              <option key={city.name} value={city.display_name}>
+                {city.display_name}
               </option>
             ))}
           </select>
@@ -83,8 +109,8 @@ const AddBikeForm: React.FC = () => {
           >
             <option value="" disabled>Choose zone ...</option>
             {availableZones.map((zone) => (
-              <option key={zone._id} value={zone._id}>
-                {zone._id}
+              <option key={zone.parking_id} value={zone.parking_id}>
+                {zone.parking_id}
               </option>
             ))}
           </select>
@@ -109,7 +135,7 @@ const AddBikeForm: React.FC = () => {
         <AddBikeMap
           availableZones={availableZones}
           // handlern ligger i separat fil
-          handleMarkerClick={(zoneId) => handleMarkerClick({zoneId, setFormData})}
+          handleMarkerClick={(parking_id) => handleMarkerClick({parking_id, setFormData})}
         />
       )}
     </div>
