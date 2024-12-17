@@ -1,45 +1,73 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./index.css";
 import CityTable from "../CityTable";
-
-// för test
-import { tempDataBikes } from "./tempBikeData";
-import { tempDataCharging } from "./tempChargingStationData";
-import { tempDataParking } from "./tempParkingZoneData";
-import { tempDataRules } from "./tempRulesData";
+import { Bike, ChargingStation, City as CityInteface, ParkingZone, Rules } from "./interfaces";
+import { fetchCityProps } from "../../fetchModels/fetchCityProps";
+import { fetchOneCity } from "../../fetchModels/fetchOneCity";
 
 const City: React.FC = () => {
   const { city } = useParams<{ city: string }>();
+	const [currentCity, setCurrentCity] = useState<CityInteface | null>(null);
+	const [bikes, setBikes] = useState<Bike[]>([]);
+	const [chargingStations, setChargingStations] = useState<ChargingStation[]>([]);
+	const [parkingZones, setParkingZones] = useState<ParkingZone[]>([]);
+	const [rules, setRules] = useState<Rules[]>([]);
 
-  // ett sätt att bibehålla å, ä och ö när vi skriver ut stadens namn,
-	// nackdel: behöva lägga in städer manuellt, fördel: smidig lösning
-	// får fundera på bra lösning senare när db kommer in i bilden
-  const cityNameDisplay: { [key: string]: string } = {
-    lund: "Lund",
-    solna: "Solna",
-    skelleftea: "Skellefteå",
-  };
 
-  useEffect(() => {
-    document.title = `City ${city ? cityNameDisplay[city] : ""} - Avec`;
-  }, [city]);
+	useEffect(() => {	
+		const fetchAndSetCity = async () => {
+			const result = await fetchOneCity(city ? city : "");
+			setCurrentCity(result);
+		};
+		fetchAndSetCity();
+	}, [city]);
 
-  const BikesInCity = tempDataBikes.filter(data => data.city_name.toLowerCase() === city)
+	useEffect(() => {
+		// hämta nuvaranda stad innan resten av datan hämtas
+		if (!currentCity) return;
 
-  const tableRows = [
-    { category: "Bikes", count: BikesInCity.length, data: BikesInCity },
-    { category: "Charging Stations", count: tempDataCharging.length, data: tempDataCharging },
-    { category: "Parking Zones", count: tempDataParking.length, data: tempDataParking },
-    { category: "Rules", count: tempDataRules.length, data: tempDataRules },
-  ];
+		document.title = `City ${currentCity.display_name} - Avec`;
 
-  return (
-    <div>
-      <h1>{city ? cityNameDisplay[city] : ""}</h1>
-      <CityTable rows={tableRows} />
-    </div>
-  );
+		const fetchAndSetBikes = async () => {
+			const result = await fetchCityProps(currentCity ? currentCity.display_name : "", "bikes");
+			setBikes(result);
+		};
+		
+		const fetchAndSetCharging = async () => {
+			const result = await fetchCityProps(city ? city : "", "charging");
+			setChargingStations(result);
+		};
+		
+		const fetchAndSetParking = async () => {
+			const result = await fetchCityProps(city ? city : "", "parking");
+			setParkingZones(result);
+		};
+		
+		const fetchAndSetRules = async () => {
+			const result = await fetchCityProps(city ? city : "", "rules");
+			setRules(result);
+		};
+		
+		fetchAndSetBikes();
+		fetchAndSetCharging();
+		fetchAndSetParking();
+		fetchAndSetRules();
+	}, [currentCity]);
+
+	const tableRows = [
+		{ category: "Bikes", count: bikes.length, data: bikes },
+		{ category: "Charging Stations", count: chargingStations.length, data: chargingStations },
+		{ category: "Parking Zones", count: parkingZones.length, data: parkingZones },
+		{ category: "Rules", count: rules.length, data: rules },
+	];
+
+	return (
+		<div>
+		<h1>{currentCity ? currentCity.display_name : ""}</h1>
+		<CityTable rows={tableRows} />
+		</div>
+	);
 };
 
 export default City;

@@ -23,6 +23,15 @@
   cursor: pointer;
   color: var(--color-green-primary);
 }
+
+.city-table .disabled {
+  pointer-events: none;
+  color: var(--color-gray);
+
+  & span {
+    color: var(--color-gray)
+  }
+}
   
 .city-row {
   display: flex;

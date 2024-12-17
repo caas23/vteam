@@ -13,10 +13,12 @@ const TableRow: React.FC<CityTableRowProps> = ({
   return (
     <>
       <tr className={isSelected ? "selected-row" : ""}>
-        <td>{row.category}</td>
-        <td>{row.count}</td>
-        <td onClick={() => toggleDetails(rowIndex)}>
-          <span className="show-hide">{isSelected ? "Hide" : "Show"}</span>
+        <td className={row.count === 0 ? "disabled" : ""}>{row.category}</td>
+        <td className={row.count === 0 ? "disabled" : ""}>{row.count}</td>
+        <td 
+          className={row.count === 0 ? "disabled" : ""}
+          onClick={() => toggleDetails(rowIndex)}>
+          <span className="show-hide">{row.count === 0 ? "None" : isSelected ? "Hide" : "Show"}</span>
         </td>
       </tr>
       {isSelected && <ShowRowDetails data={row.data} />}

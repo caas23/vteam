@@ -1,17 +1,24 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
+import { City } from "./interfaces";
+import { fetchCities } from "../../fetchModels/fetchCities";
+
 
 const Cities: React.FC = () => {
+	const [cities, setCities] = useState<City[]>([]);
+
 	useEffect(() => {
 		document.title = "Cities - Avec";
+
+		const fetchAndSetCities = async () => {
+			const result = await fetchCities();
+			setCities(result);
+			};
+		
+			fetchAndSetCities();
 	}, []);
-	
-	const cities = [
-		{ name: "Lund", route: "lund" },
-		{ name: "Solna", route: "solna" },
-		{ name: "Skellefteå", route: "skelleftea" },
-	];
+
 	const navigate = useNavigate();
 
 	const displayCity = (city: string) => {
@@ -24,11 +31,11 @@ const Cities: React.FC = () => {
       	<ul className="city-list">
 			{cities.map((city, index) => (
 				<li 
-					key={city.route}
-					onClick={() => displayCity(city.route)}
+					key={city._id}
+					onClick={() => displayCity(city.name)}
 					className={index === cities.length - 1 ? "li-last-city" : ""}
 				>
-            		{city.name}
+            		{city.display_name}
           		</li>
         	))}
       	</ul>
