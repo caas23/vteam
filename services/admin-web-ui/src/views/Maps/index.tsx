@@ -1,22 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./index.css";
+import { City } from "./interfaces";
+import { fetchCities } from "../../fetchModels/fetchCities";
+
 
 const Maps: React.FC = () => {
+	const [cities, setCities] = useState<City[]>([]);
+
 	useEffect(() => {
 		document.title = "Maps - Avec";
+
+		const fetchAndSetCities = async () => {
+			const result = await fetchCities();
+			setCities(result);
+			};
+		
+			fetchAndSetCities();
 	}, []);
 	
-	// ett sätt att bibehålla å, ä och ö när vi skriver ut stadens namn,
-	// nackdel: behöva lägga in städer manuellt, fördel: smidig lösning
-	// får fundera på bra lösning senare när db kommer in i bilden
-	const cities = [
-		{ name: "Lund", route: "lund" },
-		{ name: "Solna", route: "solna" },
-		{ name: "Skellefteå", route: "skelleftea" },
-	];
 	const navigate = useNavigate();
-
 
 	const displayCityMap = (city: string) => {
 		navigate(`/map/${city}`);
@@ -27,8 +30,8 @@ const Maps: React.FC = () => {
 		<h1>Maps</h1>
       	<ul className="city-list">
 			{cities.map((city) => (
-				<li key={city.route} onClick={() => displayCityMap(city.route)}>
-            		{city.name}
+				<li key={city._id} onClick={() => displayCityMap(city.name)}>
+            		{city.display_name}
           		</li>
         	))}
       	</ul>
