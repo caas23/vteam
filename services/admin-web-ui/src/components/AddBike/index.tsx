@@ -7,7 +7,6 @@ const AddBike: React.FC = () => {
     document.title = `Add bike - Avec`;
   }, []);
 
-
   return (
     <div>
       <h1>Add bike</h1>

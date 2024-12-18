@@ -2,18 +2,17 @@ import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./index.css";
 import CityTable from "../CityTable";
-import { Bike, ChargingStation, City as CityInteface, ParkingZone, Rules } from "./interfaces";
+import { Bike, ChargingStation, City as CityInterface, ParkingZone, Rules } from "./interfaces";
 import { fetchCityProps } from "../../fetchModels/fetchCityProps";
 import { fetchOneCity } from "../../fetchModels/fetchOneCity";
 
 const City: React.FC = () => {
-  const { city } = useParams<{ city: string }>();
-	const [currentCity, setCurrentCity] = useState<CityInteface | null>(null);
+  	const { city } = useParams<{ city: string }>();
+	const [currentCity, setCurrentCity] = useState<CityInterface | null>(null);
 	const [bikes, setBikes] = useState<Bike[]>([]);
 	const [chargingStations, setChargingStations] = useState<ChargingStation[]>([]);
 	const [parkingZones, setParkingZones] = useState<ParkingZone[]>([]);
 	const [rules, setRules] = useState<Rules[]>([]);
-
 
 	useEffect(() => {	
 		const fetchAndSetCity = async () => {

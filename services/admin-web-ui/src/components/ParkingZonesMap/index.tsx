@@ -1,42 +1,13 @@
-import React, { useEffect } from "react";
-import { MapContainer, TileLayer, Marker, Popup, useMap } from "react-leaflet";
+import React from "react";
+import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import L from "leaflet";
 import "./index.css";
-import { ParkingZone, MapProps } from "./interfaces";
+import ShowParkingZones from "../ParkingZones";
+import { MapProps } from "./interfaces";
 import parkingIcon from "/src/assets/parking-spot.png";
+import { calculateCentroid } from "../Calculations";
 
-const ShowParkingZones: React.FC<{ zones: ParkingZone[] }> = ({ zones }) => {
-  const map = useMap();
-
-  // justera kartvy beroende på vald stad
-  // så att alla zoner syns i vyn
-  useEffect(() => {
-    if (zones.length > 0) {
-      const bounds = L.latLngBounds(zones.flatMap((zone) => zone.area));
-      map.fitBounds(bounds, {
-        padding: [50, 50],
-      });
-    }
-  }, [zones, map]);
-
-  return null;
-};
-
-// ta fram polygonens geometriska centrum
-const calculateCentroid = (area: [number, number][]): [number, number] => {
-  let x = 0;
-  let y = 0;
-  let n = area.length;
-
-  for (let i = 0; i < n; i++) {
-    x += area[i][0];
-    y += area[i][1];
-  }
-
-  return [x / n, y / n];
-};
-
-const AddBikeMap: React.FC<MapProps> = ({ availableZones, handleMarkerClick }) => {
+const ParkingZonesMap: React.FC<MapProps> = ({ availableZones, handleMarkerClick }) => {
   const parkingZoneMarker = L.icon({
 		iconUrl: parkingIcon,
 		iconSize: [30, 30],
@@ -45,7 +16,7 @@ const AddBikeMap: React.FC<MapProps> = ({ availableZones, handleMarkerClick }) =
 	});
 
   return (
-    <div className="add-bike-map">
+    <div className="parking-zones-map">
       <MapContainer
         center={[0, 0]}
         zoom={2}
@@ -73,4 +44,4 @@ const AddBikeMap: React.FC<MapProps> = ({ availableZones, handleMarkerClick }) =
     );
 };
 
-export default AddBikeMap;
+export default ParkingZonesMap;
