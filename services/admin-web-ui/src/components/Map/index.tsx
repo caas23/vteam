@@ -3,6 +3,12 @@ import { useParams } from "react-router-dom";
 import { MapContainer, Marker, Popup, TileLayer, GeoJSON } from "react-leaflet";
 import L from "leaflet";
 import scooterIcon from "/src/assets/scooter-pin.png";
+import ShowParkingZones from "../ParkingZones";
+import ShowChargingStations from "../ChargingStations";
+import { City as CityInterface, ParkingZone, ChargingStation } from "./interfaces";
+import { fetchOneCity } from "../../fetchModels/fetchOneCity";
+import { fetchCityProps } from "../../fetchModels/fetchCityProps";
+import { calculateCentroid } from "../Calculations";
 import chargingIcon from "/src/assets/charging-station.png";
 import parkingIcon from "/src/assets/parking-spot.png";
 import "./index.css";
@@ -10,17 +16,11 @@ import "./index.css";
 
 const Map: React.FC = () => {
 	const { city } = useParams<{ city: string }>();
+	const [currentCity, setCurrentCity] = useState<CityInterface | null>(null);
 	const [cityBorders, setCityBorders] = useState<any>(null);
 	const [cityCenter, setCityCenter] = useState<[number, number] | null>(null);
-
-	// ett sätt att bibehålla å, ä och ö när vi skriver ut stadens namn,
-	// nackdel: behöva lägga in städer manuellt, fördel: smidig lösning
-	// får fundera på bra lösning senare när db kommer in i bilden
-	const cityNameDisplay: { [key: string]: string } = {
-		lund: "Lund",
-		solna: "Solna",
-		skelleftea: "Skellefteå",
-	};
+	const [availableZones, setAvailableZones] = useState<ParkingZone[]>([]);
+	const [availableStations, setAvailableStations] = useState<ChargingStation[]>([]);
 
 	const scooterMarker = L.icon({
 		iconUrl: scooterIcon,
@@ -29,7 +29,6 @@ const Map: React.FC = () => {
 		popupAnchor: [0, -40],
 	});
 
-	// Ikoner för laddstationer och parkeringar att använda när vi är redo
 	const chargingStationMarker = L.icon({
 		iconUrl: chargingIcon,
 		iconSize: [30, 30],
@@ -37,15 +36,46 @@ const Map: React.FC = () => {
 		popupAnchor: [1, -20],
 	});
 
-	const parkingSpotMarker = L.icon({
+	const parkingZoneMarker = L.icon({
 		iconUrl: parkingIcon,
 		iconSize: [30, 30],
 		iconAnchor: [15, 30],
 		popupAnchor: [1, -20],
 	});
 
+	useEffect(() => {	
+		const fetchAndSetCity = async () => {
+			const result = await fetchOneCity(city ? city : "");
+			setCurrentCity(result);
+		};
+		fetchAndSetCity();
+
+		const fetchAndSetParkingZones = async () => {
+		try {
+			const parkingZones = await fetchCityProps(city ? city : "", "parking");
+			setAvailableZones(parkingZones);
+		} catch (error) {
+			console.error("Could not fetch parking zones:", error);
+		}
+		};
+		fetchAndSetParkingZones();
+		
+		const fetchAndSetChargingStations = async () => {
+		try {
+			const chargingStations = await fetchCityProps(city ? city : "", "charging");
+			setAvailableStations(chargingStations);
+		} catch (error) {
+			console.error("Could not fetch charging stations:", error);
+		}
+		};
+		fetchAndSetChargingStations();
+	}, [city]);
+
 	useEffect(() => {
-		document.title = city ? `Map ${cityNameDisplay[city]} - Avec` : 'Map - Avec';
+		// hämta nuvaranda stad innan resten av datan hämtas
+		if (!currentCity) return;
+
+		document.title = `Map ${currentCity.display_name} - Avec`;
 
 		const fetchCityBorders = async (cityName: string) => {
 			try {
@@ -71,7 +101,7 @@ const Map: React.FC = () => {
 		
 		city ? fetchCityBorders(city) : "";
 
-	}, [city]);
+	}, [currentCity]);
 
 	// för att hinna hämta cityCenter och
 	// få kartan centrerad kring önskat område.
@@ -80,7 +110,7 @@ const Map: React.FC = () => {
   	if (!cityCenter) {
 		return (
 			<div>
-				<h1>{city ? cityNameDisplay[city] : ""}</h1>
+				<h1>{currentCity ? currentCity.display_name : ""}</h1>
 				<p className="map-loading-msg">Loading map ...</p>
 			</div>
 		);
@@ -88,12 +118,38 @@ const Map: React.FC = () => {
 
 	return (
 		<div>
-			<h1>{city ? cityNameDisplay[city] : ""}</h1>
-			<MapContainer center={cityCenter} zoom={12}>
+			<h1>{currentCity ? currentCity.display_name : ""}</h1>
+			<MapContainer center={cityCenter}>
 				<TileLayer
 					attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 				/>
+		        <ShowParkingZones zones={availableZones} />
+				{availableZones.map((zone) => {
+					const center = calculateCentroid(zone.area);
+					return (
+					<Marker
+						key={zone.parking_id}
+						icon={parkingZoneMarker}
+						position={center}
+					>
+						<Popup>{zone.parking_id}</Popup>
+					</Marker>
+					);
+				})}
+		        <ShowChargingStations stations={availableStations} />
+				{availableStations.map((station) => {
+					const center = calculateCentroid(station.area);
+					return (
+					<Marker
+						key={station.charging_id}
+						icon={chargingStationMarker}
+						position={center}
+					>
+						<Popup>{station.charging_id}</Popup>
+					</Marker>
+					);
+				})}
 				{cityBorders && (
 					<GeoJSON
 						data={cityBorders}

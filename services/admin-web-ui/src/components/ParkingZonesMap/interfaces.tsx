@@ -3,19 +3,11 @@ interface ParkingZone {
   area: [number, number][];
 }
 
-interface FormData {
-  cityName: string;
-  parkingZone: string;
-}
-
 interface MapProps {
   availableZones: ParkingZone[];
   handleMarkerClick: (zoneId: string) => void;
 }
 
-
 export type {
-  ParkingZone,
-  FormData,
   MapProps
 };

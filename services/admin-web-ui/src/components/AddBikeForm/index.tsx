@@ -1,21 +1,18 @@
 import React, { useState, useEffect } from "react";
 import { City, ParkingZone, FormData } from "./interfaces";
 import "./index.css";
-import { handleCityChange, handleParkingZoneChange, handleMarkerClick } from "./formHandlers";
-import AddBikeMap from "../AddBikeMap";
+import ParkingZonesMap from "../ParkingZonesMap";
 import { fetchAddbikeToCity } from "../../fetchModels/fetchAddbikeToCity";
-import { fetchCityProps } from "../../fetchModels/fetchCityProps";
 import { fetchCities } from "../../fetchModels/fetchCities";
+import { fetchCityProps } from "../../fetchModels/fetchCityProps";
 
 const AddBikeForm: React.FC = () => {
-  // data som sätts i formuläret
+  const [cities, setCities] = useState<City[]>([]);
+  const [availableZones, setAvailableZones] = useState<ParkingZone[]>([]);
   const [formData, setFormData] = useState<FormData>({
     cityName: "",
     parkingZone: "",
   });
-
-  const [cities, setCities] = useState<City[]>([]);
-  const [availableZones, setAvailableZones] = useState<ParkingZone[]>([]);
 
   useEffect(() => {
     const fetchAndSetCities = async () => {
@@ -42,6 +39,19 @@ const AddBikeForm: React.FC = () => {
       fetchAndSetParkingZones();
     }
   }, [formData.cityName]);
+
+  const handleCityChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    const cityName = e.target.value;
+    setFormData({ ...formData, cityName, parkingZone: "" });
+  };
+
+  const handleParkingZoneChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setFormData({ ...formData, parkingZone: e.target.value });
+  };
+
+  const handleMarkerClick = (parking_id: string) => {
+    setFormData((prev) => ({ ...prev, parkingZone: parking_id }));
+  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -83,8 +93,7 @@ const AddBikeForm: React.FC = () => {
             id="cityName"
             name="cityName"
             value={formData.cityName}
-            // handlern ligger i separat fil
-            onChange={(e) => handleCityChange({e, formData, setFormData, setAvailableZones})}
+            onChange={handleCityChange}
             required
           >
             <option value="" disabled>Choose city ...</option>
@@ -102,8 +111,7 @@ const AddBikeForm: React.FC = () => {
             id="parkingZone"
             name="parkingZone"
             value={formData.parkingZone}
-            // handlern ligger i separat fil
-            onChange={(e) => handleParkingZoneChange({e, formData, setFormData})}
+            onChange={handleParkingZoneChange}
             disabled={!formData.cityName}
             required
           >
@@ -126,16 +134,15 @@ const AddBikeForm: React.FC = () => {
       </form>
 
       {!formData.cityName ? (
-        <div className="add-bike-map no-map-selected">
-          <p className="message">
+        <div className="no-map-selected">
+          <p>
             Choose a city to display available parking zones ...
           </p>
         </div>
       ) : (
-        <AddBikeMap
+        <ParkingZonesMap
           availableZones={availableZones}
-          // handlern ligger i separat fil
-          handleMarkerClick={(parking_id) => handleMarkerClick({parking_id, setFormData})}
+          handleMarkerClick={handleMarkerClick}
         />
       )}
     </div>

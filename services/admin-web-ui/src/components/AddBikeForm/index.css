@@ -41,3 +41,13 @@
     }
 }
 
+.no-map-selected {
+    width: 100%;
+    height: 400px;
+    margin-top: 0.75em;
+    border: 1px dashed var(--color-green-primary);
+    display: block;
+    text-align: center;
+    padding-top: 18vh;
+}
+

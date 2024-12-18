@@ -30,30 +30,9 @@ interface FormData {
   parkingZone: string;
 }
 
-interface HandleCityProps {
-  e: React.ChangeEvent<HTMLSelectElement>;
-  formData: FormData;
-  setFormData: React.Dispatch<React.SetStateAction<FormData>>;
-  setAvailableZones: React.Dispatch<React.SetStateAction<ParkingZone[]>>;
-}
-
-interface HandleParkingProps {
-  e: React.ChangeEvent<HTMLSelectElement>,
-  formData: FormData,
-  setFormData: React.Dispatch<React.SetStateAction<FormData>>
-}
-
-interface HandleMarkerProps {
-  parking_id: string,
-  setFormData: React.Dispatch<React.SetStateAction<FormData>>
-}
-
 export type {
   ParkingZone,
   Bike,
   City,
-  FormData,
-  HandleCityProps,
-  HandleParkingProps,
-  HandleMarkerProps
+  FormData
 };
