@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { MapContainer, Marker, Popup, TileLayer, GeoJSON } from "react-leaflet";
+// import MarkerClusterGroup from "react-leaflet-markercluster";
 import L from "leaflet";
-import scooterIcon from "/src/assets/scooter-pin.png";
+// import scooterIcon from "/src/assets/scooter-pin.png";
 import ShowParkingZones from "../ParkingZones";
 import ShowChargingStations from "../ChargingStations";
 import { City as CityInterface, ParkingZone, ChargingStation } from "./interfaces";
@@ -22,12 +23,12 @@ const Map: React.FC = () => {
 	const [availableZones, setAvailableZones] = useState<ParkingZone[]>([]);
 	const [availableStations, setAvailableStations] = useState<ChargingStation[]>([]);
 
-	const scooterMarker = L.icon({
-		iconUrl: scooterIcon,
-		iconSize: [50, 50],
-		iconAnchor: [25, 50],
-		popupAnchor: [0, -40],
-	});
+	// const scooterMarker = L.icon({
+	// 	iconUrl: scooterIcon,
+	// 	iconSize: [50, 50],
+	// 	iconAnchor: [25, 50],
+	// 	popupAnchor: [0, -40],
+	// });
 
 	const chargingStationMarker = L.icon({
 		iconUrl: chargingIcon,
@@ -150,6 +151,35 @@ const Map: React.FC = () => {
 					</Marker>
 					);
 				})}
+
+				{/* <MarkerClusterGroup>
+				{availableZones.map((zone) => {
+					const center = calculateCentroid(zone.area);
+					return (
+					<Marker
+						key={zone.parking_id}
+						icon={parkingZoneMarker}
+						position={center}
+					>
+						<Popup>{zone.parking_id}</Popup>
+					</Marker>
+					);
+				})}
+
+				{availableStations.map((station) => {
+					const center = calculateCentroid(station.area);
+					return (
+					<Marker
+						key={station.charging_id}
+						icon={chargingStationMarker}
+						position={center}
+					>
+						<Popup>{station.charging_id}</Popup>
+					</Marker>
+					);
+				})}
+				</MarkerClusterGroup> */}
+
 				{cityBorders && (
 					<GeoJSON
 						data={cityBorders}
@@ -160,13 +190,13 @@ const Map: React.FC = () => {
 						}}
 					/>
 				)};
-				<Marker position={cityCenter} icon={scooterMarker}>
+				{/* <Marker position={cityCenter} icon={scooterMarker}>
 					<Popup>
 						Vi kan använda popups som dessa för <br />
 						cyklar, laddstationer och parkeringar. <br />
 						Men med custom ikoner för vardera del.
 					</Popup>
-				</Marker>
+				</Marker> */}
 			</MapContainer>
 		</div>
 	);
