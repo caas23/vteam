@@ -25,7 +25,7 @@ interface Bike {
 interface ChargingStation {
     _id: string;
     charging_id: string;
-    area: number[][];
+    area: [number, number][];
     plugs: {
       id: number;
       available: boolean;
@@ -35,7 +35,7 @@ interface ChargingStation {
 interface ParkingZone {
     _id: string;
     parking_id: string;
-    area: number[][];
+    area: [number, number][];
 }
 
 interface Rules {

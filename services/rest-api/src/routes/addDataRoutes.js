@@ -37,6 +37,65 @@ router.post("/city", async (req, res) => {
     res.json(result);
 });
 
+router.put("/update/parking", async (req, res) => {
+    const updatedZone = req.body;
+    const parkingCollection = getCollection("parking_zone");
+    const result = await parkingCollection.updateOne(
+        { parking_id: updatedZone.parking_id },
+        {
+          $set: { area: updatedZone.area },
+        }
+    );
+    res.json(result);
+});
+
+router.put("/update/charging", async (req, res) => {
+    const updatedStation = req.body;
+    const cityCollection = getCollection("charging_station");
+    const result = await cityCollection.updateOne(
+        { charing_id: updatedStation.charing_id },
+        {
+          $set: { area: updatedStation.area },
+        }
+    );
+
+    res.json(result);
+});
+
+router.put("/update/rule", async (req, res) => {
+    const updatedRule = req.body;
+    const ruleCollection = getCollection("city_rules");
+    const result = await ruleCollection.updateOne(
+        { rule_id: updatedRule.rule_id },
+        {
+            $set: { description: updatedRule.description },
+        }
+    );
+
+    res.json(result);
+});
+
+router.delete("/delete/:type/:id", async (req, res) => {
+    const { type, id } = req.params;
+    const collections = {
+        charging: "charging_station",
+        parking: "parking_zone",
+        rule: "city_rules",
+    };
+
+    const collectionName = collections[type];
+    try {
+        const collection = getCollection(collectionName);
+        const result = await collection.deleteOne({ [`${type}_id`]: id });
+
+        res.json(result);
+    } catch (error) {
+        console.error(`Error deleting ${type}:`, error);
+        res.status(500).json({ error: "An error occurred while deleting the item." });
+    }
+});
+
+
 // räcker för att lägga till cykel i city
 // och vice versa
 router.post("/bike/to/city", async (req, res) => {

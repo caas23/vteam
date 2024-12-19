@@ -11,8 +11,11 @@
     --color-gray: #A3A6B1;
     --color-gray-light: #D2D5DA;
     --color-gray-lighter: #EEF0F1;
+    --color-gray-dark: #7f8083;
     --color-black: #2F2F2F;
     --color-red: #f50c0c;
+    --color-red-dark: #dd1b1b;
+    --color-red-darker:#ad1515;
     
     --h1-font: 'Fugaz One', sans-serif;
     --main-font: 'Oswald', 'Inter', Arial, sans-serif;
