@@ -72,7 +72,7 @@ const AddBikeForm: React.FC = () => {
     };
 
     try {
-      const result = await fetchAddbikeToCity(newBike, cityName);
+      const result = await fetchAddbikeToCity(newBike);
       console.log("Bike added:", result);
       alert("Bike added");
     } catch {
