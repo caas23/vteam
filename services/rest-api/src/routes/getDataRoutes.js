@@ -106,7 +106,7 @@ router.get("/all/users/pagination", async (req, res) => {
     const skip = (page - 1) * limit;
   
     // om sökord finns används inbyggda regex och case-insensitive för att söka i db
-    const filter = search ? { bike_id: { $regex: search, $options: "i" } } : {};
+    const filter = search ? { user_id: { $regex: search, $options: "i" } } : {};
 
     try {
       const users = await getUsersPagination(filter, skip, limit);
