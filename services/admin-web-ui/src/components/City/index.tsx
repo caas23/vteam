@@ -61,10 +61,33 @@ const City: React.FC = () => {
 		{ category: "Rules", count: rules.length, data: rules },
 	];
 
+	// för att uppdatera tabellen så fort något raderas, utan sidomladdning
+	const handleDelete = (category: string, id: string) => {
+		switch (category) {
+		  case "Bikes":
+			setBikes((prevBikes) => prevBikes.filter((bike) => bike.bike_id !== id));
+			break;
+		  case "Charging Stations":
+			setChargingStations((prevStations) => prevStations.filter((station) => station.charging_id !== id));
+			break;
+		  case "Parking Zones":
+			setParkingZones((prevZones) => prevZones.filter((zone) => zone.parking_id !== id));
+			break;
+		  case "Rules":
+			setRules((prevRules) => prevRules.filter((rule) => rule.rule_id !== id));
+			break;
+		  default:
+			break;
+		}
+	};
+
 	return (
 		<div>
 		<h1>{currentCity ? currentCity.display_name : ""}</h1>
-		<CityTable rows={tableRows} />
+		<CityTable
+			rows={tableRows} 
+			onDelete={handleDelete}
+		/>
 		</div>
 	);
 };

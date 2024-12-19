@@ -15,7 +15,7 @@ interface Bike {
 interface ChargingStation {
   _id: string;
   charging_id: string;
-  area: number[][];
+  area: [number, number][];
   plugs: {
     id: number;
     available: boolean;
@@ -25,7 +25,7 @@ interface ChargingStation {
 interface ParkingZone {
   _id: string;
   parking_id: string;
-  area: number[][];
+  area: [number, number][];
 }
 
 interface Rule {
@@ -44,6 +44,7 @@ interface CityTableRow {
 
 interface RowItemProps {
   item: Bike | ChargingStation | ParkingZone | Rule;
+  onDelete: (category: string, id: string) => void;
 }
 
 interface CityTableRowProps {
@@ -51,14 +52,17 @@ interface CityTableRowProps {
   rowIndex: number;
   selectedRow: number | null;
   toggleDetails: (index: number) => void;
+  onDelete: (category: string, id: string) => void;
 }
 
 interface CityTableProps {
   rows: CityTableRow[];
+  onDelete: (category: string, id: string) => void;
 }
 
 interface CityShowRowDetailsProps {
   data: CityTableRow['data'];
+  onDelete: (category: string, id: string) => void;
 }
 
 export type {

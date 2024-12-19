@@ -61,3 +61,66 @@
 .spacing {
   margin-left: 0.5em;
 }
+
+span.edit {
+  text-decoration: underline;
+  margin-left: 0.25em;
+  color: var(--color-blue-primary);
+  &::before {
+    content: "Edit";
+    color: var(--color-blue-primary);
+    font-size: 1em;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.edit-area {
+  display: block;
+  color: var(--color-blue-darkest);
+  width: 300px;
+  height: 140px;
+  border: 2px solid var(--color-blue-primary);
+  padding: 0.25em;
+
+  &.one-line {
+    height: 70px;
+  }
+}
+
+.edit-btn {
+  display: inline-block;
+  width: 95px;
+  text-decoration: none;
+  margin-top: 0.25em;
+  padding: 0.25em 0.75em;
+  background-color: var(--color-blue-primary);
+  color: #eee;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px 0 var(--color-gray);
+  margin-right: 0.5em;
+
+  &:hover {
+      cursor: pointer;
+      background-color: var(--color-blue-dark)
+  }
+
+  &.gray {
+    background-color: var(--color-gray);
+  }
+  
+  &.gray:hover {
+    background-color: var(--color-gray-dark);
+  }
+
+  &.red {
+    background-color: var(--color-red-dark);
+  }
+  
+  &.red:hover {
+    background-color: var(--color-red-darker);
+  }
+}
