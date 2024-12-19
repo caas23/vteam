@@ -3,9 +3,9 @@ import { useNavigate } from "react-router-dom";
 import "./index.css";
 import { Bike } from "./interfaces";
 import { fetchBikesPagination } from "../../fetchModels/fetchBikesPagination";
-import Pagination from "../../components/PaginationBikes";
-import { usePagination } from "../../components/PaginationBikes/usePagination";
-import SearchBikes from "../../components/SearchBikes";
+import Pagination from "../../components/Pagination";
+import { usePagination } from "../../components/Pagination/usePagination";
+import SearchList from "../../components/SearchList";
 
 const Bikes: React.FC = () => {
 	const {
@@ -13,7 +13,7 @@ const Bikes: React.FC = () => {
 	  totalPages,
 	  searchQuery,
 	  setTotalPages,
-	  handleBikeSearch,
+	  handleListSearch,
 	  showNextPage,
 	  showPrevPage,
 	} = usePagination();
@@ -41,17 +41,17 @@ const Bikes: React.FC = () => {
 	  <div>
 		<h1>Bikes</h1>
   
-		<SearchBikes
+		<SearchList
 			searchQuery={searchQuery}
-			bikeSearchInput={handleBikeSearch} 
+			searchInput={handleListSearch} 
 		/>
   
-		<ul className="bike-list">
+		<ul className="pagination-list">
 		  {bikes.map((bike, index) => (
 			<li
 			  key={bike._id}
 			  onClick={() => displayBike(bike.bike_id)}
-			  className={index === bikes.length - 1 ? "li-last-bike" : ""}
+			  className={index === bikes.length - 1 ? "li-last-in-list" : ""}
 			>
 			  {bike.bike_id}
 			</li>
@@ -65,7 +65,7 @@ const Bikes: React.FC = () => {
 		  prevPage={showPrevPage}
 		/>
   
-		<a href="/bikes/add" className="add-bike-btn">
+		<a href="/bikes/add" className="add-btn">
 		  Add new bike
 		</a>
 	  </div>

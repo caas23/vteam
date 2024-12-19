@@ -4,14 +4,14 @@ import "./index.css";
 
 const SearchInput: React.FC<SearchProps> = ({ 
   searchQuery, 
-  bikeSearchInput 
+  searchInput 
 }) => {
   return (
-    <div className="search-bike">
+    <div className="search">
       <input
         placeholder="Search ..."
         value={searchQuery}
-        onChange={bikeSearchInput}
+        onChange={searchInput}
       />
     </div>
   );

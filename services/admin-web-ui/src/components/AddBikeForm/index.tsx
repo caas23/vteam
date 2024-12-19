@@ -125,7 +125,7 @@ const AddBikeForm: React.FC = () => {
         </div>
 
         <button
-          className="add-bike-btn"
+          className="add-btn"
           type="submit"
           disabled={!validForm}
         >

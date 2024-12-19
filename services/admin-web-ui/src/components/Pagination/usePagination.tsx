@@ -5,7 +5,7 @@ export const usePagination = () => {
   const [totalPages, setTotalPages] = useState<number>(1);
   const [searchQuery, setSearchQuery] = useState<string>("");
 
-  const handleBikeSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleListSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
     setCurrentPage(1); // för att få rätt numrering vid sökning
   };
@@ -29,7 +29,7 @@ export const usePagination = () => {
     setTotalPages,
     searchQuery,
     setSearchQuery,
-    handleBikeSearch,
+    handleListSearch,
     showNextPage,
     showPrevPage,
   };
