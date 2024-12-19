@@ -1,14 +1,14 @@
-import { Bike } from "../components/AddBikeForm/interfaces";
+import { City } from "../components/AddCityForm/interfaces";
 
-export const fetchAddbikeToCity = async (bike: Bike) => {
+export const fetchAddCity = async (city: City) => {
     try {
-      const response = await fetch("http://localhost:1337/add/bike/to/city", {
+      const response = await fetch("http://localhost:1337/add/city", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          bike
+          city
         }),
     });
   

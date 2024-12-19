@@ -39,7 +39,9 @@ const Cities: React.FC = () => {
           		</li>
         	))}
       	</ul>
-		<p>Add new city (not implemented yet)</p>
+		  <a href="/cities/add" className="add-btn">
+		  Add new city
+		</a>
     </div>
   );
 };

@@ -19,16 +19,17 @@ router.get("/", async (req, res) => {
 router.post("/city", async (req, res) => {
     
     // req.body.city förväntas innehålla name och display_name
-    // cyklar, parkeringar och laddstationer är optionella
+    // parkeringar, laddstationer cyklar och regler adderas 
+    // i ett senare skede (från city/:city vyn)
     const city = req.body.city;
-    console.log(city)
 
     const addCity = {
         name: city.name,
         display_name: city.display_name,
-        bikes: city.bikes ? city.bikes : [], //bättre sätt att sköta detta?
-        charging_stations: city.charging_stations ? city.charging_stations : [], //bättre sätt att sköta detta?
-        parking_zones: city.parking_zones ? city.parking_zones : [], //bättre sätt att sköta detta?
+        bikes: [],
+        charging_stations: [],
+        parking_zones: [],
+        rules: [],
 
     }
     const cityCollection = getCollection("cities");

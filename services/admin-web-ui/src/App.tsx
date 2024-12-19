@@ -5,6 +5,7 @@ import Footer from "./components/Footer";
 import AddBike from "./components/AddBike";
 import Bike from "./components/Bike";
 import City from "./components/City";
+import AddCity from "./components/AddCity";
 import Map from "./components/Map";
 import Trip from "./components/Trip";
 import Home from "./views/Home";
@@ -26,6 +27,7 @@ function App() {
           <Route path="/bikes/add" element={<AddBike />} />
           <Route path="/bike/:bike" element={<Bike />} />
           <Route path="/cities" element={<Cities />} />
+          <Route path="/cities/add" element={<AddCity />} />
           <Route path="/city/:city" element={<City />} />
           <Route path="/maps" element={<Maps />} />
           <Route path="/map/:city" element={<Map />} />
