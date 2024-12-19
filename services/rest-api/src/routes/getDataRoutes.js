@@ -1,6 +1,6 @@
 import express from 'express';
 import { city } from '../../../db/cities.js';
-import { getOneUser, getUsers } from '../../../db/users.js';
+import { countUsersPagination, getOneUser, getUsers, getUsersPagination } from '../../../db/users.js';
 import bikeManager from "../../../bike-logic/bikeManager.js"
 import bike from '../../../bike-logic/bike.js';
 
@@ -96,6 +96,28 @@ router.get("/all/bikes/pagination", async (req, res) => {
 router.get("/all/users", async (req, res) => {
     const result = await getUsers();
     res.json(result);
+});
+
+// för /users-vyn i admin
+router.get("/all/users/pagination", async (req, res) => {
+    const page = req.query.page || 1;
+    const search = req.query.search || "";
+    const limit = 5; // visa 5 användare i taget
+    const skip = (page - 1) * limit;
+  
+    // om sökord finns används inbyggda regex och case-insensitive för att söka i db
+    const filter = search ? { bike_id: { $regex: search, $options: "i" } } : {};
+
+    try {
+      const users = await getUsersPagination(filter, skip, limit);
+      const totalUsers = await countUsersPagination(filter); // totala antal användare baserat på sökning
+      const totalPages = Math.ceil(totalUsers / limit);
+  
+      res.json({ users, totalPages });
+    } catch (error) {
+      console.error("Error fetching users:", error);
+      res.status(500).send("Error fetching users");
+    }
 });
 
 router.get("/one/user", async (req, res) => {

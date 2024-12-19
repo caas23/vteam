@@ -1,4 +1,4 @@
-.search-bike input {
+.search input {
     width: 150px;
     padding: 0.25em;
     font-size: 1em;
@@ -7,7 +7,7 @@
     background-color: #f9f9f9;
 }
     
-.search-bike input:focus {
+.search input:focus {
     border-color: var(--color-blue-light);
     outline: none;
 }

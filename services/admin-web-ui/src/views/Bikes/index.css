@@ -1,18 +1,18 @@
-.bike-list {
+.pagination-list {
 	list-style: none;
     font-size: 1.4em;
     min-height: 225px;
 }
 
-.bike-list li {
+.pagination-list li {
 	margin: 0.5em 0;
 }
 
-.bike-list li {
+.pagination-list li {
 	color: var(--color-black);
 }
 
-.bike-list li:hover {
+.pagination-list li:hover {
     cursor: pointer;
     
     /* om vi vill följa hover-mönstret i menyn */
@@ -24,11 +24,11 @@
     /* color: var(--color-blue-primary); */
 }
 
-.bike-list li.li-last-bike:hover {
+.pagination-list li.li-last-in-list:hover {
     margin-bottom: 7px;
 }
 
-.add-bike-btn {
+.add-btn {
     display: inline-block;
     text-decoration: none;
     margin-top: 2em;

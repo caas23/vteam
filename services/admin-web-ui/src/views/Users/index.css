@@ -1,0 +1,48 @@
+.pagination-list {
+	list-style: none;
+    font-size: 1.4em;
+    min-height: 225px;
+}
+
+.pagination-list li {
+	margin: 0.5em 0;
+}
+
+.pagination-list li {
+	color: var(--color-black);
+}
+
+.pagination-list li:hover {
+    cursor: pointer;
+    
+    /* om vi vill följa hover-mönstret i menyn */
+    width: fit-content;
+    margin-bottom: -4px;
+	border-bottom: 4px solid var(--color-blue-primary);
+    
+    /* alternativ hover-effekt */
+    /* color: var(--color-blue-primary); */
+}
+
+.pagination-list li.li-last-in-list:hover {
+    margin-bottom: 7px;
+}
+
+.add-btn {
+    display: inline-block;
+    text-decoration: none;
+    margin-top: 2em;
+    padding: 0.5em 1.25em;
+    font-size: 1em;
+    background-color: var(--color-blue-primary);
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 0 var(--color-gray);
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--color-blue-dark)
+    }
+}
+

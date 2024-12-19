@@ -4,7 +4,7 @@ import MarkerClusterGroup from "react-leaflet-markercluster";
 import L from "leaflet";
 import { Bike } from "./interfaces";
 import scooterIcon from "/src/assets/scooter-pin-blue.png";
-import clusterIcon from "/src/assets/multiple-scooter-pin-blue.png"; // byt mot en cluster icon
+import clusterIcon from "/src/assets/multiple-scooter-pin-blue.png";
 
 const ShowBikes: React.FC<{ bikes: Bike[] }> = ({ bikes }) => {
   const bikeMarker = L.icon({

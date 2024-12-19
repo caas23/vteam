@@ -31,7 +31,7 @@
         display: none;
     }
 
-    .add-bike-btn {
+    .add-btn {
         margin-top: 0;
 
         &:disabled {
