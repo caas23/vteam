@@ -6,6 +6,7 @@ interface ParkingZone {
 interface MapProps {
   availableZones: ParkingZone[];
   handleMarkerClick: (zoneId: string) => void;
+  city: string;
 }
 
 export type {

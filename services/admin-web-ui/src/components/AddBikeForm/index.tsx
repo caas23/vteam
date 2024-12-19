@@ -141,8 +141,10 @@ const AddBikeForm: React.FC = () => {
         </div>
       ) : (
         <ParkingZonesMap
+          key={formData.cityName}
           availableZones={availableZones}
           handleMarkerClick={handleMarkerClick}
+          city={formData.cityName}
         />
       )}
     </div>

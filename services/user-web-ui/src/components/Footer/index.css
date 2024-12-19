@@ -1,11 +1,11 @@
 .footer {
     width: 100%;
     min-height: 100px;
-    background-color: var(--color-green-darkest);
+    background-color: var(--color-blue-darkest);
     padding: 1em;
 
     p {
-        color: var(--color-green-light);
+        color: var(--color-blue-light);
         font-size: 0.8em;
         text-align: center;
         margin-top: 2em;
@@ -35,12 +35,12 @@
             margin-left: 1em;
             a {
                 font-size: 1em;
-                color: var(--color-green-primary);
+                color: var(--color-blue-primary);
                 text-decoration: none;
             }
 
             a:hover {
-                color: var(--color-green-light);
+                color: var(--color-blue-light);
             }
         }
     }
