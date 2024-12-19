@@ -5,10 +5,14 @@ import ParkingZonesMap from "../ParkingZonesMap";
 import { fetchAddbikeToCity } from "../../fetchModels/fetchAddbikeToCity";
 import { fetchCities } from "../../fetchModels/fetchCities";
 import { fetchCityProps } from "../../fetchModels/fetchCityProps";
+import AlertMessage from "../AlertMessage";
+
 
 const AddBikeForm: React.FC = () => {
   const [cities, setCities] = useState<City[]>([]);
   const [availableZones, setAvailableZones] = useState<ParkingZone[]>([]);
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertBox, setAlertBox] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     cityName: "",
     parkingZone: "",
@@ -74,9 +78,11 @@ const AddBikeForm: React.FC = () => {
     try {
       const result = await fetchAddbikeToCity(newBike);
       console.log("Bike added:", result);
-      alert("Bike added");
+      setAlertMessage("A new bike has been added.");
     } catch {
-      alert("Error adding bike, no bike was added.");
+      setAlertMessage("Error adding bike, no bike was added.");
+    } finally {
+			setAlertBox(true);
     }
   };
 
@@ -147,6 +153,12 @@ const AddBikeForm: React.FC = () => {
           city={formData.cityName}
         />
       )}
+
+      <AlertMessage
+				boxOpen={alertBox}
+				onClose={() => setAlertBox(false)}
+				message={alertMessage}
+			/>
     </div>
   );
 };

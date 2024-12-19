@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { FormData } from "./interfaces";
 import "./index.css";
 import { fetchAddCity } from "../../fetchModels/fetchAddCity";
+import AlertMessage from "../AlertMessage";
 
 const AddCityForm: React.FC = () => {
+  const [alertMessage, setAlertMessage] = useState("");
+  const [alertBox, setAlertBox] = useState(false);
   const [formData, setFormData] = useState<FormData>({
     name: "",
     display_name: "",
@@ -35,9 +38,11 @@ const AddCityForm: React.FC = () => {
     try {
       const result = await fetchAddCity(newCity);
       console.log("City added:", result);
-      alert("City added");
+      setAlertMessage("A new city has been added.");
     } catch {
-      alert("Error adding city, no city was added.");
+      setAlertMessage("Error adding city, no city was added.");
+    } finally {
+      setAlertBox(true)
     }
   };
 
@@ -159,6 +164,11 @@ const AddCityForm: React.FC = () => {
           Add City
         </button>
       </form>
+      <AlertMessage
+				boxOpen={alertBox}
+				onClose={() => setAlertBox(false)}
+				message={alertMessage}
+			/>
     </div>
   );
 };

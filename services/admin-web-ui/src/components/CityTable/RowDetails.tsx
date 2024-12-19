@@ -234,10 +234,10 @@ const RowDetails: React.FC<RowItemProps> = ({ item, onDelete }) => {
 			/>
 
 			<AlertMessage
-        boxOpen={alertBox}
-        onClose={() => setAlertBox(false)}
-        message={alertMessage}
-      />
+				boxOpen={alertBox}
+				onClose={() => setAlertBox(false)}
+				message={alertMessage}
+			/>
 		</div>
 		);
   	}
