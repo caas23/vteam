@@ -12,6 +12,8 @@ import Bikes from "./views/Bikes";
 import Cities from "./views/Cities";
 import Maps from "./views/Maps";
 import Users from "./views/Users";
+import User from "./components/User";
+
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
           <Route path="/map/:city" element={<Map />} />
           <Route path="/trip/:trip" element={<Trip />} />
           <Route path="/users" element={<Users />} />
+          <Route path="/user/:user" element={<User />} />
+
         </Routes>
       </main>
       <Footer />
