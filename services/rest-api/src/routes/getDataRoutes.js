@@ -46,7 +46,6 @@ router.get("/all/parking", async (req, res) => {
 router.get("/all/parking/in/city", async (req, res) => {
     const cityName = req.query.city;
     let result;
-    console.log(cityName)
 
     if (/^[A-Z]/.test(cityName.split("")[0])) {
         result = await city.getParkingZonesByDisplayCity(cityName)

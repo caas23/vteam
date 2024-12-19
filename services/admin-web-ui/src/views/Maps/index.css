@@ -17,8 +17,8 @@
     /* om vi vill följa hover-mönstret i menyn */
     width: fit-content;
     margin-bottom: -4px;
-	border-bottom: 4px solid var(--color-green-primary);
+	border-bottom: 4px solid var(--color-blue-primary);
     
     /* alternativ hover-effekt */
-    /* color: var(--color-green-primary); */
+    /* color: var(--color-blue-primary); */
 }

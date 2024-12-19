@@ -7,7 +7,7 @@ const Header: React.FC = () => {
 			<div className="header-wrapper">
 				<div className="logo">
 					<a href="/">
-						<img src="src/assets/avec-logo.svg" alt="Logo" />
+						<img src="src/assets/avec-logo-blue.png" alt="Logo" />
 					</a>
 				</div>
 				<nav className="navigation">

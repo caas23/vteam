@@ -1,17 +1,12 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { MapContainer, Marker, Popup, TileLayer, GeoJSON } from "react-leaflet";
-// import MarkerClusterGroup from "react-leaflet-markercluster";
-import L from "leaflet";
-// import scooterIcon from "/src/assets/scooter-pin.png";
+import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
 import ShowParkingZones from "../ParkingZones";
 import ShowChargingStations from "../ChargingStations";
-import { City as CityInterface, ParkingZone, ChargingStation } from "./interfaces";
+import ShowBikes from "../Bikes";
+import { City as CityInterface, ParkingZone, ChargingStation, Bike } from "./interfaces";
 import { fetchOneCity } from "../../fetchModels/fetchOneCity";
 import { fetchCityProps } from "../../fetchModels/fetchCityProps";
-import { calculateCentroid } from "../Calculations";
-import chargingIcon from "/src/assets/charging-station.png";
-import parkingIcon from "/src/assets/parking-spot.png";
 import "./index.css";
 
 
@@ -22,27 +17,7 @@ const Map: React.FC = () => {
 	const [cityCenter, setCityCenter] = useState<[number, number] | null>(null);
 	const [availableZones, setAvailableZones] = useState<ParkingZone[]>([]);
 	const [availableStations, setAvailableStations] = useState<ChargingStation[]>([]);
-
-	// const scooterMarker = L.icon({
-	// 	iconUrl: scooterIcon,
-	// 	iconSize: [50, 50],
-	// 	iconAnchor: [25, 50],
-	// 	popupAnchor: [0, -40],
-	// });
-
-	const chargingStationMarker = L.icon({
-		iconUrl: chargingIcon,
-		iconSize: [30, 30],
-		iconAnchor: [15, 30],
-		popupAnchor: [1, -20],
-	});
-
-	const parkingZoneMarker = L.icon({
-		iconUrl: parkingIcon,
-		iconSize: [30, 30],
-		iconAnchor: [15, 30],
-		popupAnchor: [1, -20],
-	});
+	const [bikesInCity, setBikesInCity] = useState<Bike[]>([]);
 
 	useEffect(() => {	
 		const fetchAndSetCity = async () => {
@@ -70,6 +45,7 @@ const Map: React.FC = () => {
 		}
 		};
 		fetchAndSetChargingStations();
+		
 	}, [city]);
 
 	useEffect(() => {
@@ -102,6 +78,17 @@ const Map: React.FC = () => {
 		
 		city ? fetchCityBorders(city) : "";
 
+
+		const fetchAndSetBikes = async () => {
+			try {
+				const bikes = await fetchCityProps(currentCity ? currentCity.display_name : "", "bikes");
+				setBikesInCity(bikes);
+			} catch (error) {
+				console.error("Could not fetch bikes:", error);
+			}
+			};
+			fetchAndSetBikes();
+
 	}, [currentCity]);
 
 	// för att hinna hämta cityCenter och
@@ -120,37 +107,14 @@ const Map: React.FC = () => {
 	return (
 		<div>
 			<h1>{currentCity ? currentCity.display_name : ""}</h1>
-			<MapContainer center={cityCenter}>
+			<MapContainer center={cityCenter} zoom={12}>
 				<TileLayer
 					attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 					url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
 				/>
 		        <ShowParkingZones zones={availableZones} />
-				{availableZones.map((zone) => {
-					const center = calculateCentroid(zone.area);
-					return (
-					<Marker
-						key={zone.parking_id}
-						icon={parkingZoneMarker}
-						position={center}
-					>
-						<Popup>{zone.parking_id}</Popup>
-					</Marker>
-					);
-				})}
 		        <ShowChargingStations stations={availableStations} />
-				{availableStations.map((station) => {
-					const center = calculateCentroid(station.area);
-					return (
-					<Marker
-						key={station.charging_id}
-						icon={chargingStationMarker}
-						position={center}
-					>
-						<Popup>{station.charging_id}</Popup>
-					</Marker>
-					);
-				})}
+				<ShowBikes bikes={bikesInCity} />
 
 				{/* <MarkerClusterGroup>
 				{availableZones.map((zone) => {
@@ -184,19 +148,12 @@ const Map: React.FC = () => {
 					<GeoJSON
 						data={cityBorders}
 						style={{
-							color: "#1A4D30", // --color-green-darker
+							color: "#1A4D30", // --color-blue-darker
 							weight: 1.5,
 							fillOpacity: 0.0,
 						}}
 					/>
 				)};
-				{/* <Marker position={cityCenter} icon={scooterMarker}>
-					<Popup>
-						Vi kan använda popups som dessa för <br />
-						cyklar, laddstationer och parkeringar. <br />
-						Men med custom ikoner för vardera del.
-					</Popup>
-				</Marker> */}
 			</MapContainer>
 		</div>
 	);

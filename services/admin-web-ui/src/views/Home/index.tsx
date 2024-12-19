@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import "./index.css";
-import scooterIcon from "/src/assets/scooter-icon.png";
+import scooterIcon from "/src/assets/scooter-icon-blue.png";
 
 const Home: React.FC = () => {
 	useEffect(() => {

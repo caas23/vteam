@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     gap: 0.1em;
-    border-left: 2px solid var(--color-green-primary);
+    border-left: 2px solid var(--color-blue-primary);
     padding: 0 0 0.15em 0.25em;
     margin-bottom: 0.5em;
   
@@ -16,5 +16,5 @@
 
 .more-details a:hover {
     cursor: pointer;
-    color: var(--color-green-primary);
+    color: var(--color-blue-primary);
 }

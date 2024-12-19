@@ -7,7 +7,7 @@
 .prev-next {
     width: 50px;
     padding: 0.25em;
-    background-color: var(--color-green-primary);
+    background-color: var(--color-blue-primary);
     color: #eee;
     border: none;
     border-radius: 5px;
@@ -15,7 +15,7 @@
 
     &:hover {
         cursor: pointer;
-        background-color: var(--color-green-dark)
+        background-color: var(--color-blue-dark)
     }
     
     &:disabled {

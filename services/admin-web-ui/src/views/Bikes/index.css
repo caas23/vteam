@@ -18,10 +18,10 @@
     /* om vi vill följa hover-mönstret i menyn */
     width: fit-content;
     margin-bottom: -4px;
-	border-bottom: 4px solid var(--color-green-primary);
+	border-bottom: 4px solid var(--color-blue-primary);
     
     /* alternativ hover-effekt */
-    /* color: var(--color-green-primary); */
+    /* color: var(--color-blue-primary); */
 }
 
 .bike-list li.li-last-bike:hover {
@@ -34,7 +34,7 @@
     margin-top: 2em;
     padding: 0.5em 1.25em;
     font-size: 1em;
-    background-color: var(--color-green-primary);
+    background-color: var(--color-blue-primary);
     color: #eee;
     border: none;
     border-radius: 5px;
@@ -42,7 +42,7 @@
 
     &:hover {
         cursor: pointer;
-        background-color: var(--color-green-dark)
+        background-color: var(--color-blue-dark)
     }
 }
 

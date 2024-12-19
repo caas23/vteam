@@ -10,7 +10,7 @@
 
   & th {
     font-weight: 400;
-    border-bottom: 2px solid var(--color-green-primary);
+    border-bottom: 2px solid var(--color-blue-primary);
   }
 
   & td {
@@ -21,7 +21,7 @@
 .city-table span.show-hide:hover,
 .city-table span.more-details a:hover {
   cursor: pointer;
-  color: var(--color-green-primary);
+  color: var(--color-blue-primary);
 }
 
 .city-table .disabled {
@@ -37,7 +37,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 0.1em;
-  border-left: 2px solid var(--color-green-primary);
+  border-left: 2px solid var(--color-blue-primary);
   padding: 0 0 0.15em 0.25em;
   margin-bottom: 0.5em;
 
@@ -53,7 +53,7 @@
   margin-left: 0.5em;
 
   & .sub-level-arrow {
-    color: var(--color-green-primary);
+    color: var(--color-blue-primary);
     font-size: 16px;
   }
 }
