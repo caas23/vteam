@@ -26,7 +26,7 @@ const City: React.FC = () => {
 		// hämta nuvaranda stad innan resten av datan hämtas
 		if (!currentCity) return;
 
-		document.title = `City ${currentCity.display_name} - Avec`;
+		document.title = `City ${currentCity.display_name} - Solo Scoot`;
 
 		const fetchAndSetBikes = async () => {
 			const result = await fetchCityProps(currentCity ? currentCity.display_name : "", "bikes");

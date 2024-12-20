@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 
 const RideHistory: React.FC = () => {
 	useEffect(() => {
-		document.title = "Ride History - Avec";
+		document.title = "Ride History - Solo Scoot";
 }, []);
 	return (
 		<div>

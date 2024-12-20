@@ -4,7 +4,7 @@ import AddCityForm from "../AddCityForm";
 const AddBike: React.FC = () => {
 
   useEffect(() => {
-    document.title = `Add city - Avec`;
+    document.title = `Add city - Solo Scoot`;
   }, []);
 
   return (

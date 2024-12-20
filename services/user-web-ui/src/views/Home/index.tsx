@@ -4,7 +4,7 @@ import scooterIcon from "/src/assets/scooter-icon.png";
 
 const Home: React.FC = () => {
 	useEffect(() => {
-		document.title = "Home - Avec";
+		document.title = "Home - Solo Scoot";
 }, []);
     return (
         <div className="wrapper">
@@ -12,7 +12,7 @@ const Home: React.FC = () => {
                 <h1>When you can't wait to go there.</h1>
                 <h2>
                     If riding where you're going instead of waiting for the bus sounds like your kind of
-                    thing, Avec is for you.
+                    thing, Solo Scoot is for you.
                 </h2>
                 <p>This is a little scooter service, you know.</p>
             </div>

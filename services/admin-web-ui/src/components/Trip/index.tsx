@@ -11,7 +11,7 @@ const Trip: React.FC = () => {
 
 
   useEffect(() => {
-    document.title = `Trip ${trip} - Avec`;
+    document.title = `Trip ${trip} - Solo Scoot`;
 
     const fetchAndSetTrip = async () => {
           const result = await fetchOneTrip(trip ? trip : "");

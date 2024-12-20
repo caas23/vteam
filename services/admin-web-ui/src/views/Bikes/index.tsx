@@ -22,7 +22,7 @@ const Bikes: React.FC = () => {
 	const navigate = useNavigate();
   
 	useEffect(() => {
-	  document.title = "Bikes - Avec";
+	  document.title = "Bikes - Solo Scoot";
   
 	  const fetchAndSetBikes = async () => {
 		const result = await fetchBikesPagination(currentPage, searchQuery);

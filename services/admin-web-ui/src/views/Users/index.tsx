@@ -22,7 +22,7 @@ const Users: React.FC = () => {
 	const navigate = useNavigate();
   
 	useEffect(() => {
-	  document.title = "Users - Avec";
+	  document.title = "Users - Solo Scoot";
   
 	  const fetchAndSetUsers = async () => {
 		const result = await fetchUsersPagination(currentPage, searchQuery);

@@ -4,7 +4,7 @@ import AddBikeForm from "../AddBikeForm";
 const AddBike: React.FC = () => {
 
   useEffect(() => {
-    document.title = `Add bike - Avec`;
+    document.title = `Add bike - Solo Scoot`;
   }, []);
 
   return (

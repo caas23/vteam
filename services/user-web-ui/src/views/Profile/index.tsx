@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const RideHistory: React.FC = () => {
 	useEffect(() => {
-		document.title = "Profile - Avec";
+		document.title = "Profile - Solo Scoot";
 }, []);
 	return (
 		<div>
