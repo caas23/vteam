@@ -144,7 +144,20 @@ const RowDetails: React.FC<RowItemProps> = ({ item, onDelete }) => {
 				<button className="edit-btn gray" onClick={handleCancelClick}>Cancel</button>
 			</div>
 			) : (
-				<span>Area: {readOnlyArea(submittedData.area)}</span>
+				<div>
+					<span>Area: {readOnlyArea(submittedData.area)}</span>
+					<span>Plugs: {item.plugs.length}
+						<span className="sub-list">
+						{item.plugs.map((plug, index) => (
+							<div key={index}>
+							<span className="sub-level-arrow">&#8618; </span> 
+								Plug #{plug.id}: {plug.available ? "Available" : "Occupied"}
+							</div>
+						))}
+						</span>
+					</span>
+				</div>
+
 			)}
 			<ConfirmDelete
 				boxOpen={confirmBox}
