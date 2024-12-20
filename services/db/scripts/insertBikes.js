@@ -35,7 +35,7 @@ const addBikes = async () => {
         
         const BikeCollection = getCollection('bikes');
         const result = await BikeCollection.insertMany(allBikes);
-        console.log(`Added ${result.insertedCount} bikes.`);
+        // console.log(`Added ${result.insertedCount} bikes.`);
 
     } catch (error) {
         console.error('Error adding bikes:', error);
