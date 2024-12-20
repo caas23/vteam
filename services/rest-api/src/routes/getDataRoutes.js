@@ -3,10 +3,12 @@ import { city } from '../../../db/cities.js';
 import { countUsersPagination, getOneUser, getUsers, getUsersPagination } from '../../../db/users.js';
 import bikeManager from "../../../bike-logic/bikeManager.js"
 import bike from '../../../bike-logic/bike.js';
+import { getCollection } from '../../../db/collections.js';
 
 const router = express.Router();
 
 router.get("/", async (req, res) => {
+    // uppdatera denna med alla routes
     const routes = {
         "Available routes": {
             "/all/cities": "get all cities",
@@ -148,6 +150,11 @@ router.get("/one/city/", async (req, res) => {
         return res.json(result);
     } 
     result = await city.getOneCity(city_name);
+    res.json(result);
+});
+
+router.get("/all/trips", async (req, res) => {
+    const result = await getCollection('trips').find().toArray();
     res.json(result);
 });
 

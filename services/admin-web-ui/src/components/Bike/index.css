@@ -18,3 +18,9 @@
     cursor: pointer;
     color: var(--color-blue-primary);
 }
+
+.edit-btn.bike {
+  margin-top: 0.75em;
+  padding: 0.5em;
+  width: 100px;
+}

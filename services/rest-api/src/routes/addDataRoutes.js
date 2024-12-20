@@ -95,6 +95,19 @@ router.delete("/delete/:type/:id", async (req, res) => {
     }
 });
 
+router.delete("/bike/delete/:bike_id", async (req, res) => {
+    const bike_id = req.params.bike_id;
+
+    try {
+        const result = await bikeManager.deleteBike(bike_id);
+
+        res.json(result);
+    } catch (error) {
+        console.error(`Error deleting bike with id ${bike_id}:`, error);
+        res.status(500).json({ error: "An error occurred while deleting the bike." });
+    }
+});
+
 
 // räcker för att lägga till cykel i city
 // och vice versa

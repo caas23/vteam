@@ -9,10 +9,8 @@ router.get("/", async (req, res) => {
     res.json("hej service routes");
 });
 
-router.post("/bike", async (req, res) => {
+router.put("/bike", async (req, res) => {
     let bikeId = req.body.bike_id;
-    // Fake bike id:
-    // bikeId = "B001";
     const result = await bikeManager.bikeToService(bikeId);
 
     res.json(result);
