@@ -1,14 +1,31 @@
 import React , { useEffect, useState } from "react";
-import { MapContainer, CircleMarker, Popup, TileLayer, Polyline } from "react-leaflet";
+import { MapContainer, Marker, Popup, TileLayer, Polyline } from "react-leaflet";
+import L from "leaflet";
 import polyline from "@mapbox/polyline";
 import { TripMapProps } from "./interfaces";
+import startMarker from "/src/assets/start-location.png";
+import endMarker from "/src/assets/end-location.png";
+
 
 const TripMap: React.FC<TripMapProps> = ({ startLocation, endLocation, FetchedDistance }) => {
     const [route, setRoute] = useState<[number, number][]>([]);
+
     const mapCenter: [number, number] = [
         (startLocation[0] + endLocation[0]) / 2,
         (startLocation[1] + endLocation[1]) / 2,
     ];
+
+    const startLocationMarker = L.icon({
+        iconUrl: startMarker,
+        iconSize: [40, 40],
+        popupAnchor: [0, -5],
+    });
+    
+    const endLocationMarker = L.icon({
+        iconUrl: endMarker,
+        iconSize: [40, 40],
+        popupAnchor: [0, -5],
+    });
 
     const API_KEY = import.meta.env.VITE_API_KEY;
 
@@ -78,30 +95,24 @@ const TripMap: React.FC<TripMapProps> = ({ startLocation, endLocation, FetchedDi
             attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
             />
-            <CircleMarker 
-            center={startLocation}
-            radius={10}
-            color="green"
-            weight={2}
-            fillColor="green"
-            fillOpacity={0.6}>
+            <Marker
+            position={startLocation}
+            icon={startLocationMarker}
+
+            >
                 <Popup>Start location</Popup>
-            </CircleMarker>
-            <CircleMarker 
-            center={endLocation}
-            radius={10}
-            color="red"
-            weight={2}
-            fillColor="red"
-            fillOpacity={0.6}>
+            </Marker>
+            <Marker
+            position={endLocation}
+            icon={endLocationMarker}
+            >
                 <Popup>End location</Popup>
-            </CircleMarker>
+            </Marker>
             {route.length > 0 && (
                 <Polyline
                 positions={route}
-                color="blue"
+                color="#2E6DAE"
                 weight={4}
-                opacity={0.6}
                 />
             )}
         </MapContainer>

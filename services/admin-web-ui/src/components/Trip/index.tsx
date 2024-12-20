@@ -1,25 +1,32 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import "./index.css";
 import TripDetails from "./TripDetails";
-import { tempDataTrips } from "./tempTripData";
+import { Trip as TripInterface } from "./interfaces";
+import { fetchOneTrip } from "../../fetchModels/fetchOneTrip";
 
 const Trip: React.FC = () => {
-  const { trip: tripId } = useParams<{ trip: string }>();
+  const { trip } = useParams<{ trip: string }>();
+	const [currentTrip, setCurrentTrip] = useState<TripInterface | null>(null);
+
 
   useEffect(() => {
-    document.title = `Trip ${tripId} - Avec`;
-  }, [tripId]);
+    document.title = `Trip ${trip} - Avec`;
 
-  const tripData = tempDataTrips.find((trip) => trip._id === tripId);
+    const fetchAndSetTrip = async () => {
+          const result = await fetchOneTrip(trip ? trip : "");
+          setCurrentTrip(result[0]);
+        };
+        fetchAndSetTrip();
+  }, [trip]);
 
   return (
     <div>
-      <h1>Trip {tripId}</h1>
-      {tripData ? (
-        <TripDetails data={tripData} />
+      <h1>Trip {trip}</h1>
+      {currentTrip ? (
+        <TripDetails data={currentTrip} />
       ) : (
-        <p>No data related to trip <i>{tripId}</i> was found.</p>
+        <p>No data related to trip <i>{trip}</i> was found.</p>
       )}
     </div>
   );
