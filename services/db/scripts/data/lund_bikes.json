@@ -1,0 +1,8502 @@
+[
+    {
+        "location": [
+            55.70009460695721,
+            13.172525477072233
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T001",
+            "T002"
+        ]
+    },
+    {
+        "location": [
+            55.689004874683995,
+            13.209049432486006
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T003",
+            "T004"
+        ]
+    },
+    {
+        "location": [
+            55.69510349246041,
+            13.163731155108655
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T005",
+            "T006"
+        ]
+    },
+    {
+        "location": [
+            55.711357198314744,
+            13.231638634591077
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T007",
+            "T008"
+        ]
+    },
+    {
+        "location": [
+            55.69004974060065,
+            13.235228035755988
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T009",
+            "T010"
+        ]
+    },
+    {
+        "location": [
+            55.712679192145494,
+            13.234900666515323
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T011",
+            "T012"
+        ]
+    },
+    {
+        "location": [
+            55.68828136012536,
+            13.19197142163121
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T013",
+            "T014"
+        ]
+    },
+    {
+        "location": [
+            55.71719062832843,
+            13.191515743691443
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T015",
+            "T016"
+        ]
+    },
+    {
+        "location": [
+            55.70137149098579,
+            13.224394884882653
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T017",
+            "T018"
+        ]
+    },
+    {
+        "location": [
+            55.728695675216805,
+            13.19374335424239
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T019",
+            "T020"
+        ]
+    },
+    {
+        "location": [
+            55.72639933490731,
+            13.203448319709471
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T021",
+            "T022"
+        ]
+    },
+    {
+        "location": [
+            55.72252162008453,
+            13.225856941496625
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T023",
+            "T024"
+        ]
+    },
+    {
+        "location": [
+            55.72286919017846,
+            13.177513121192968
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T025",
+            "T026"
+        ]
+    },
+    {
+        "location": [
+            55.710569860202376,
+            13.18280492846198
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T027",
+            "T028"
+        ]
+    },
+    {
+        "location": [
+            55.718281614177016,
+            13.224228812339923
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T029",
+            "T030"
+        ]
+    },
+    {
+        "location": [
+            55.70066301914931,
+            13.254889983955856
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T031",
+            "T032"
+        ]
+    },
+    {
+        "location": [
+            55.68926499311645,
+            13.219917679574845
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T033",
+            "T034"
+        ]
+    },
+    {
+        "location": [
+            55.7113489564682,
+            13.205570111842471
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T035",
+            "T036"
+        ]
+    },
+    {
+        "location": [
+            55.695256606053334,
+            13.216607494607857
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T037",
+            "T038"
+        ]
+    },
+    {
+        "location": [
+            55.68939428028747,
+            13.256659807957456
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T039",
+            "T040"
+        ]
+    },
+    {
+        "location": [
+            55.72203251624053,
+            13.17988123729187
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T041",
+            "T042"
+        ]
+    },
+    {
+        "location": [
+            55.730310828097245,
+            13.168149411757028
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T043",
+            "T044"
+        ]
+    },
+    {
+        "location": [
+            55.723059810988524,
+            13.1526365396213
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T045",
+            "T046"
+        ]
+    },
+    {
+        "location": [
+            55.69374963096153,
+            13.258543186673052
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T047",
+            "T048"
+        ]
+    },
+    {
+        "location": [
+            55.73600378060914,
+            13.25321333737174
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T049",
+            "T050"
+        ]
+    },
+    {
+        "location": [
+            55.720020493639645,
+            13.237732333316163
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T051",
+            "T052"
+        ]
+    },
+    {
+        "location": [
+            55.73053324474522,
+            13.16964704531734
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T053",
+            "T054"
+        ]
+    },
+    {
+        "location": [
+            55.68754003041039,
+            13.209152398726486
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T055",
+            "T056"
+        ]
+    },
+    {
+        "location": [
+            55.7130303148385,
+            13.205637787358988
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T057",
+            "T058"
+        ]
+    },
+    {
+        "location": [
+            55.710445719704076,
+            13.189548094483609
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T059",
+            "T060"
+        ]
+    },
+    {
+        "location": [
+            55.72422670186606,
+            13.166477004276114
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T061",
+            "T062"
+        ]
+    },
+    {
+        "location": [
+            55.69145464590121,
+            13.251787091133814
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T063",
+            "T064"
+        ]
+    },
+    {
+        "location": [
+            55.71151899806777,
+            13.18252418768031
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T065",
+            "T066"
+        ]
+    },
+    {
+        "location": [
+            55.69020717401486,
+            13.252217716048186
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T067",
+            "T068"
+        ]
+    },
+    {
+        "location": [
+            55.722961732147326,
+            13.177709037300327
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T069",
+            "T070"
+        ]
+    },
+    {
+        "location": [
+            55.70911158391849,
+            13.171637564468947
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T071",
+            "T072"
+        ]
+    },
+    {
+        "location": [
+            55.72055118767216,
+            13.16681961526144
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T073",
+            "T074"
+        ]
+    },
+    {
+        "location": [
+            55.733192843155386,
+            13.252576002473518
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T075",
+            "T076"
+        ]
+    },
+    {
+        "location": [
+            55.73068019574148,
+            13.241966538414934
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T077",
+            "T078"
+        ]
+    },
+    {
+        "location": [
+            55.70558799021457,
+            13.184471680076486
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T079",
+            "T080"
+        ]
+    },
+    {
+        "location": [
+            55.71774172099386,
+            13.18380611049645
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T081",
+            "T082"
+        ]
+    },
+    {
+        "location": [
+            55.738114098562036,
+            13.247919858931182
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T083",
+            "T084"
+        ]
+    },
+    {
+        "location": [
+            55.70264814601404,
+            13.211788951244497
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T085",
+            "T086"
+        ]
+    },
+    {
+        "location": [
+            55.695672808909585,
+            13.220038635919733
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T087",
+            "T088"
+        ]
+    },
+    {
+        "location": [
+            55.71740139487908,
+            13.241472141100337
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T089",
+            "T090"
+        ]
+    },
+    {
+        "location": [
+            55.703098398083924,
+            13.167770703027667
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T091",
+            "T092"
+        ]
+    },
+    {
+        "location": [
+            55.69022096087614,
+            13.218119461579054
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T093",
+            "T094"
+        ]
+    },
+    {
+        "location": [
+            55.70621174650257,
+            13.213870067670516
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T095",
+            "T096"
+        ]
+    },
+    {
+        "location": [
+            55.7145331836512,
+            13.15032477009723
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T097",
+            "T098"
+        ]
+    },
+    {
+        "location": [
+            55.721729333823646,
+            13.18913467875769
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T099",
+            "T100"
+        ]
+    },
+    {
+        "location": [
+            55.691908790470386,
+            13.241056173638324
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T101",
+            "T102"
+        ]
+    },
+    {
+        "location": [
+            55.7088006037669,
+            13.1600176490077
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T103",
+            "T104"
+        ]
+    },
+    {
+        "location": [
+            55.70584478800391,
+            13.233442019614477
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T105",
+            "T106"
+        ]
+    },
+    {
+        "location": [
+            55.700581590219834,
+            13.169750467187063
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T107",
+            "T108"
+        ]
+    },
+    {
+        "location": [
+            55.70703333958298,
+            13.154288571436577
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T109",
+            "T110"
+        ]
+    },
+    {
+        "location": [
+            55.70564211837481,
+            13.244655791499058
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T111",
+            "T112"
+        ]
+    },
+    {
+        "location": [
+            55.71466961060637,
+            13.181526163585199
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T113",
+            "T114"
+        ]
+    },
+    {
+        "location": [
+            55.69196331453064,
+            13.201943624136065
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T115",
+            "T116"
+        ]
+    },
+    {
+        "location": [
+            55.69567889156442,
+            13.178923542394255
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T117",
+            "T118"
+        ]
+    },
+    {
+        "location": [
+            55.71354200168141,
+            13.161094808985892
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T119",
+            "T120"
+        ]
+    },
+    {
+        "location": [
+            55.68084692342098,
+            13.185952638165693
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T121",
+            "T122"
+        ]
+    },
+    {
+        "location": [
+            55.722290774163135,
+            13.24186251367995
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T123",
+            "T124"
+        ]
+    },
+    {
+        "location": [
+            55.68604848128035,
+            13.204117666450948
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T125",
+            "T126"
+        ]
+    },
+    {
+        "location": [
+            55.683115971732285,
+            13.202778807697005
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T127",
+            "T128"
+        ]
+    },
+    {
+        "location": [
+            55.728330072459784,
+            13.207524855179107
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T129",
+            "T130"
+        ]
+    },
+    {
+        "location": [
+            55.705065055992506,
+            13.24427117469308
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T131",
+            "T132"
+        ]
+    },
+    {
+        "location": [
+            55.68634943106065,
+            13.183579471774568
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T133",
+            "T134"
+        ]
+    },
+    {
+        "location": [
+            55.72984807263015,
+            13.158606067432938
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T135",
+            "T136"
+        ]
+    },
+    {
+        "location": [
+            55.7170599432742,
+            13.237081334439743
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T137",
+            "T138"
+        ]
+    },
+    {
+        "location": [
+            55.70634861569477,
+            13.204834569723966
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T139",
+            "T140"
+        ]
+    },
+    {
+        "location": [
+            55.71958699674629,
+            13.185268388811489
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T141",
+            "T142"
+        ]
+    },
+    {
+        "location": [
+            55.69933867055767,
+            13.25750737386636
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T143",
+            "T144"
+        ]
+    },
+    {
+        "location": [
+            55.730223662770456,
+            13.165807201249676
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T145",
+            "T146"
+        ]
+    },
+    {
+        "location": [
+            55.691245573465196,
+            13.171506905152896
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T147",
+            "T148"
+        ]
+    },
+    {
+        "location": [
+            55.71651288218583,
+            13.230528095278284
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T149",
+            "T150"
+        ]
+    },
+    {
+        "location": [
+            55.7039519941686,
+            13.153296120845571
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T151",
+            "T152"
+        ]
+    },
+    {
+        "location": [
+            55.68905080834068,
+            13.24335644356929
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T153",
+            "T154"
+        ]
+    },
+    {
+        "location": [
+            55.71030711852371,
+            13.152429048553985
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T155",
+            "T156"
+        ]
+    },
+    {
+        "location": [
+            55.70007172443057,
+            13.250644634990921
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T157",
+            "T158"
+        ]
+    },
+    {
+        "location": [
+            55.72880689400776,
+            13.197227151284888
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T159",
+            "T160"
+        ]
+    },
+    {
+        "location": [
+            55.72579094118509,
+            13.165850875514645
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T161",
+            "T162"
+        ]
+    },
+    {
+        "location": [
+            55.689360007964886,
+            13.187031836772707
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T163",
+            "T164"
+        ]
+    },
+    {
+        "location": [
+            55.71628767584602,
+            13.161835304423409
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T165",
+            "T166"
+        ]
+    },
+    {
+        "location": [
+            55.72183763085624,
+            13.181627990936596
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T167",
+            "T168"
+        ]
+    },
+    {
+        "location": [
+            55.710270527474265,
+            13.21711508390176
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T169",
+            "T170"
+        ]
+    },
+    {
+        "location": [
+            55.69665386817023,
+            13.172348775384394
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T171",
+            "T172"
+        ]
+    },
+    {
+        "location": [
+            55.72096535761871,
+            13.19628054915196
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T173",
+            "T174"
+        ]
+    },
+    {
+        "location": [
+            55.702127165075446,
+            13.166338645694802
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T175",
+            "T176"
+        ]
+    },
+    {
+        "location": [
+            55.70966640683159,
+            13.208331874990582
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T177",
+            "T178"
+        ]
+    },
+    {
+        "location": [
+            55.71969401061088,
+            13.213742472948793
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T179",
+            "T180"
+        ]
+    },
+    {
+        "location": [
+            55.718910863073724,
+            13.198728941157167
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T181",
+            "T182"
+        ]
+    },
+    {
+        "location": [
+            55.706925655849496,
+            13.183858210833742
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T183",
+            "T184"
+        ]
+    },
+    {
+        "location": [
+            55.71278647886053,
+            13.154421836533288
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T185",
+            "T186"
+        ]
+    },
+    {
+        "location": [
+            55.71058912277915,
+            13.210530258464514
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T187",
+            "T188"
+        ]
+    },
+    {
+        "location": [
+            55.68716027514094,
+            13.197652489093654
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T189",
+            "T190"
+        ]
+    },
+    {
+        "location": [
+            55.7136936487012,
+            13.150599935772739
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T191",
+            "T192"
+        ]
+    },
+    {
+        "location": [
+            55.729646825956706,
+            13.243446352349139
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T193",
+            "T194"
+        ]
+    },
+    {
+        "location": [
+            55.706206817871845,
+            13.150179329209438
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T195",
+            "T196"
+        ]
+    },
+    {
+        "location": [
+            55.69176364115872,
+            13.217998520511935
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T197",
+            "T198"
+        ]
+    },
+    {
+        "location": [
+            55.68884019836762,
+            13.211284946052894
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T199",
+            "T200"
+        ]
+    },
+    {
+        "location": [
+            55.72508375335719,
+            13.225573971796058
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T201",
+            "T202"
+        ]
+    },
+    {
+        "location": [
+            55.695111839588236,
+            13.21511424119814
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T203",
+            "T204"
+        ]
+    },
+    {
+        "location": [
+            55.68779905658097,
+            13.201065975077277
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T205",
+            "T206"
+        ]
+    },
+    {
+        "location": [
+            55.6963279158297,
+            13.162975167664362
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T207",
+            "T208"
+        ]
+    },
+    {
+        "location": [
+            55.71076658094227,
+            13.190306860439094
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T209",
+            "T210"
+        ]
+    },
+    {
+        "location": [
+            55.73021578690873,
+            13.17150815520148
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T211",
+            "T212"
+        ]
+    },
+    {
+        "location": [
+            55.726925497421405,
+            13.178101145647531
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T213",
+            "T214"
+        ]
+    },
+    {
+        "location": [
+            55.6949482938461,
+            13.220422452534162
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T215",
+            "T216"
+        ]
+    },
+    {
+        "location": [
+            55.71338057509957,
+            13.172784409891573
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T217",
+            "T218"
+        ]
+    },
+    {
+        "location": [
+            55.69782609436739,
+            13.242487772093613
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T219",
+            "T220"
+        ]
+    },
+    {
+        "location": [
+            55.69588393362918,
+            13.226270842195891
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T221",
+            "T222"
+        ]
+    },
+    {
+        "location": [
+            55.72093268288824,
+            13.17733876700435
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T223",
+            "T224"
+        ]
+    },
+    {
+        "location": [
+            55.72847299480475,
+            13.241087576230845
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T225",
+            "T226"
+        ]
+    },
+    {
+        "location": [
+            55.71881542863912,
+            13.186204079279428
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T227",
+            "T228"
+        ]
+    },
+    {
+        "location": [
+            55.719120929860956,
+            13.235595908210948
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T229",
+            "T230"
+        ]
+    },
+    {
+        "location": [
+            55.69694819611836,
+            13.164049437739541
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T231",
+            "T232"
+        ]
+    },
+    {
+        "location": [
+            55.70447600127038,
+            13.175068765309348
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T233",
+            "T234"
+        ]
+    },
+    {
+        "location": [
+            55.719369330124664,
+            13.22869203179424
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T235",
+            "T236"
+        ]
+    },
+    {
+        "location": [
+            55.70628316085039,
+            13.250884088377912
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T237",
+            "T238"
+        ]
+    },
+    {
+        "location": [
+            55.69665232453991,
+            13.218548845098828
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T239",
+            "T240"
+        ]
+    },
+    {
+        "location": [
+            55.70856962934089,
+            13.232963743570156
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T241",
+            "T242"
+        ]
+    },
+    {
+        "location": [
+            55.69404239951813,
+            13.167444920644188
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T243",
+            "T244"
+        ]
+    },
+    {
+        "location": [
+            55.708312603967286,
+            13.212762899127236
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T245",
+            "T246"
+        ]
+    },
+    {
+        "location": [
+            55.69155627700895,
+            13.250948004142
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T247",
+            "T248"
+        ]
+    },
+    {
+        "location": [
+            55.72472825730736,
+            13.194155043892506
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T249",
+            "T250"
+        ]
+    },
+    {
+        "location": [
+            55.72744624993515,
+            13.208611427911364
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T251",
+            "T252"
+        ]
+    },
+    {
+        "location": [
+            55.700214332507294,
+            13.158554683473858
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T253",
+            "T254"
+        ]
+    },
+    {
+        "location": [
+            55.72658544209619,
+            13.219941837445997
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T255",
+            "T256"
+        ]
+    },
+    {
+        "location": [
+            55.710892785429394,
+            13.172354050250892
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T257",
+            "T258"
+        ]
+    },
+    {
+        "location": [
+            55.73890814250385,
+            13.24764118909212
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T259",
+            "T260"
+        ]
+    },
+    {
+        "location": [
+            55.70134651299206,
+            13.22425048418466
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T261",
+            "T262"
+        ]
+    },
+    {
+        "location": [
+            55.727950958457605,
+            13.231185352900956
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T263",
+            "T264"
+        ]
+    },
+    {
+        "location": [
+            55.715981508601544,
+            13.205770126836118
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T265",
+            "T266"
+        ]
+    },
+    {
+        "location": [
+            55.69455656447286,
+            13.18671201052045
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T267",
+            "T268"
+        ]
+    },
+    {
+        "location": [
+            55.69536505284234,
+            13.18925070437905
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T269",
+            "T270"
+        ]
+    },
+    {
+        "location": [
+            55.73124169475323,
+            13.193239678978353
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T271",
+            "T272"
+        ]
+    },
+    {
+        "location": [
+            55.68457228269242,
+            13.214195746875777
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T273",
+            "T274"
+        ]
+    },
+    {
+        "location": [
+            55.71874510509607,
+            13.236554437100185
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T275",
+            "T276"
+        ]
+    },
+    {
+        "location": [
+            55.730824177510456,
+            13.261384043787224
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T277",
+            "T278"
+        ]
+    },
+    {
+        "location": [
+            55.730702395667734,
+            13.240212695815734
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T279",
+            "T280"
+        ]
+    },
+    {
+        "location": [
+            55.71475929950871,
+            13.196595279696828
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T281",
+            "T282"
+        ]
+    },
+    {
+        "location": [
+            55.732973915244614,
+            13.246765127664228
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T283",
+            "T284"
+        ]
+    },
+    {
+        "location": [
+            55.71236494699378,
+            13.202294388894748
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T285",
+            "T286"
+        ]
+    },
+    {
+        "location": [
+            55.68968500487775,
+            13.182180665716361
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T287",
+            "T288"
+        ]
+    },
+    {
+        "location": [
+            55.69961757943887,
+            13.188255507518537
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T289",
+            "T290"
+        ]
+    },
+    {
+        "location": [
+            55.72089868007295,
+            13.223031616607123
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T291",
+            "T292"
+        ]
+    },
+    {
+        "location": [
+            55.72161508304951,
+            13.158869953756236
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T293",
+            "T294"
+        ]
+    },
+    {
+        "location": [
+            55.70208123827292,
+            13.222189595636292
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T295",
+            "T296"
+        ]
+    },
+    {
+        "location": [
+            55.726330329959595,
+            13.190942241540332
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T297",
+            "T298"
+        ]
+    },
+    {
+        "location": [
+            55.6835478840236,
+            13.171532659440837
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T299",
+            "T300"
+        ]
+    },
+    {
+        "location": [
+            55.7251374921558,
+            13.252777466835465
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T301",
+            "T302"
+        ]
+    },
+    {
+        "location": [
+            55.71759228962323,
+            13.23229722560019
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T303",
+            "T304"
+        ]
+    },
+    {
+        "location": [
+            55.71413494009782,
+            13.180924194947536
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T305",
+            "T306"
+        ]
+    },
+    {
+        "location": [
+            55.731339966929646,
+            13.195821667043026
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T307",
+            "T308"
+        ]
+    },
+    {
+        "location": [
+            55.72390518688853,
+            13.19893007401432
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T309",
+            "T310"
+        ]
+    },
+    {
+        "location": [
+            55.723988317499185,
+            13.2194240829546
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T311",
+            "T312"
+        ]
+    },
+    {
+        "location": [
+            55.73704208519248,
+            13.252789820098842
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T313",
+            "T314"
+        ]
+    },
+    {
+        "location": [
+            55.712643164507845,
+            13.222651012266077
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T315",
+            "T316"
+        ]
+    },
+    {
+        "location": [
+            55.68418311710795,
+            13.186507931526526
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T317",
+            "T318"
+        ]
+    },
+    {
+        "location": [
+            55.713296638423635,
+            13.155585474491568
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T319",
+            "T320"
+        ]
+    },
+    {
+        "location": [
+            55.732745514047025,
+            13.175071764344827
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T321",
+            "T322"
+        ]
+    },
+    {
+        "location": [
+            55.69921018513503,
+            13.204235105498105
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T323",
+            "T324"
+        ]
+    },
+    {
+        "location": [
+            55.71400694473964,
+            13.192150495323725
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T325",
+            "T326"
+        ]
+    },
+    {
+        "location": [
+            55.713865945117384,
+            13.238423859456551
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T327",
+            "T328"
+        ]
+    },
+    {
+        "location": [
+            55.70072599866903,
+            13.224596662150537
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T329",
+            "T330"
+        ]
+    },
+    {
+        "location": [
+            55.69662215040008,
+            13.225599400543793
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T331",
+            "T332"
+        ]
+    },
+    {
+        "location": [
+            55.707552118541294,
+            13.209545243773823
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T333",
+            "T334"
+        ]
+    },
+    {
+        "location": [
+            55.715599201608484,
+            13.222501966840552
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T335",
+            "T336"
+        ]
+    },
+    {
+        "location": [
+            55.70086293518194,
+            13.239940294888596
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T337",
+            "T338"
+        ]
+    },
+    {
+        "location": [
+            55.70788909095229,
+            13.184740182273798
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T339",
+            "T340"
+        ]
+    },
+    {
+        "location": [
+            55.714366163605796,
+            13.168253226852984
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T341",
+            "T342"
+        ]
+    },
+    {
+        "location": [
+            55.71050874899278,
+            13.212893365859074
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T343",
+            "T344"
+        ]
+    },
+    {
+        "location": [
+            55.69751250025852,
+            13.160060158283661
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T345",
+            "T346"
+        ]
+    },
+    {
+        "location": [
+            55.69731060610552,
+            13.199306016818445
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T347",
+            "T348"
+        ]
+    },
+    {
+        "location": [
+            55.69420475939196,
+            13.184205281678109
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T349",
+            "T350"
+        ]
+    },
+    {
+        "location": [
+            55.72453622731236,
+            13.183265490454092
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T351",
+            "T352"
+        ]
+    },
+    {
+        "location": [
+            55.712873075665904,
+            13.154216955899248
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T353",
+            "T354"
+        ]
+    },
+    {
+        "location": [
+            55.713296086717385,
+            13.183073471794591
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T355",
+            "T356"
+        ]
+    },
+    {
+        "location": [
+            55.72777375894209,
+            13.149656401804892
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T357",
+            "T358"
+        ]
+    },
+    {
+        "location": [
+            55.703488438508025,
+            13.238323583559632
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T359",
+            "T360"
+        ]
+    },
+    {
+        "location": [
+            55.715893517684215,
+            13.167527063378751
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T361",
+            "T362"
+        ]
+    },
+    {
+        "location": [
+            55.702604752963104,
+            13.18727510656524
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T363",
+            "T364"
+        ]
+    },
+    {
+        "location": [
+            55.70256882906152,
+            13.191342186093895
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T365",
+            "T366"
+        ]
+    },
+    {
+        "location": [
+            55.68484094658487,
+            13.17238449441591
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T367",
+            "T368"
+        ]
+    },
+    {
+        "location": [
+            55.6932690227071,
+            13.18967258554757
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T369",
+            "T370"
+        ]
+    },
+    {
+        "location": [
+            55.72332504787056,
+            13.17458166117571
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T371",
+            "T372"
+        ]
+    },
+    {
+        "location": [
+            55.700127434007044,
+            13.223852834097505
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T373",
+            "T374"
+        ]
+    },
+    {
+        "location": [
+            55.72853782615892,
+            13.157232950641076
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T375",
+            "T376"
+        ]
+    },
+    {
+        "location": [
+            55.702496464618584,
+            13.164882217367978
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T377",
+            "T378"
+        ]
+    },
+    {
+        "location": [
+            55.723947425264114,
+            13.186757549342548
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T379",
+            "T380"
+        ]
+    },
+    {
+        "location": [
+            55.73032462443996,
+            13.155361140650802
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T381",
+            "T382"
+        ]
+    },
+    {
+        "location": [
+            55.6958157399641,
+            13.157129293723157
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T383",
+            "T384"
+        ]
+    },
+    {
+        "location": [
+            55.717514644368734,
+            13.158818134477945
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T385",
+            "T386"
+        ]
+    },
+    {
+        "location": [
+            55.72042443740013,
+            13.210566077591544
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T387",
+            "T388"
+        ]
+    },
+    {
+        "location": [
+            55.72644037928389,
+            13.253939931476287
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T389",
+            "T390"
+        ]
+    },
+    {
+        "location": [
+            55.69035060849645,
+            13.201565242726131
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T391",
+            "T392"
+        ]
+    },
+    {
+        "location": [
+            55.724335171085734,
+            13.183933263860228
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T393",
+            "T394"
+        ]
+    },
+    {
+        "location": [
+            55.71643923880197,
+            13.162316516813275
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T395",
+            "T396"
+        ]
+    },
+    {
+        "location": [
+            55.73717930252202,
+            13.255309618387017
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T397",
+            "T398"
+        ]
+    },
+    {
+        "location": [
+            55.692777471195654,
+            13.257135954084438
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T399",
+            "T400"
+        ]
+    },
+    {
+        "location": [
+            55.73305005144797,
+            13.1659972714532
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T401",
+            "T402"
+        ]
+    },
+    {
+        "location": [
+            55.69114447469391,
+            13.18453967789484
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T403",
+            "T404"
+        ]
+    },
+    {
+        "location": [
+            55.689259191738785,
+            13.183708541824407
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T405",
+            "T406"
+        ]
+    },
+    {
+        "location": [
+            55.70600048311463,
+            13.218488910825194
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T407",
+            "T408"
+        ]
+    },
+    {
+        "location": [
+            55.7145429008419,
+            13.230801901748011
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T409",
+            "T410"
+        ]
+    },
+    {
+        "location": [
+            55.703547112736956,
+            13.14620725050586
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T411",
+            "T412"
+        ]
+    },
+    {
+        "location": [
+            55.704871991219576,
+            13.24173323161009
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T413",
+            "T414"
+        ]
+    },
+    {
+        "location": [
+            55.6887478582407,
+            13.172200365405883
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T415",
+            "T416"
+        ]
+    },
+    {
+        "location": [
+            55.714345947318876,
+            13.170022740863267
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T417",
+            "T418"
+        ]
+    },
+    {
+        "location": [
+            55.71619341126945,
+            13.205911110523957
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T419",
+            "T420"
+        ]
+    },
+    {
+        "location": [
+            55.71438904934043,
+            13.19151041958716
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T421",
+            "T422"
+        ]
+    },
+    {
+        "location": [
+            55.70201876503647,
+            13.223240392623184
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T423",
+            "T424"
+        ]
+    },
+    {
+        "location": [
+            55.73900570862716,
+            13.251597409823148
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T425",
+            "T426"
+        ]
+    },
+    {
+        "location": [
+            55.69955075446471,
+            13.195977871107154
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T427",
+            "T428"
+        ]
+    },
+    {
+        "location": [
+            55.69739330274324,
+            13.228757713848145
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T429",
+            "T430"
+        ]
+    },
+    {
+        "location": [
+            55.69121701114903,
+            13.202092719639186
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T431",
+            "T432"
+        ]
+    },
+    {
+        "location": [
+            55.6818599414021,
+            13.176929929710559
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T433",
+            "T434"
+        ]
+    },
+    {
+        "location": [
+            55.73030091382143,
+            13.171787610864857
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T435",
+            "T436"
+        ]
+    },
+    {
+        "location": [
+            55.72310592848887,
+            13.183567537829498
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T437",
+            "T438"
+        ]
+    },
+    {
+        "location": [
+            55.706950545379456,
+            13.17416697243184
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T439",
+            "T440"
+        ]
+    },
+    {
+        "location": [
+            55.712696411683964,
+            13.167009850000845
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T441",
+            "T442"
+        ]
+    },
+    {
+        "location": [
+            55.70266622332837,
+            13.21551007879125
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T443",
+            "T444"
+        ]
+    },
+    {
+        "location": [
+            55.68241958523687,
+            13.189729617765837
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T445",
+            "T446"
+        ]
+    },
+    {
+        "location": [
+            55.68906221217461,
+            13.172120552887538
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T447",
+            "T448"
+        ]
+    },
+    {
+        "location": [
+            55.697509518753776,
+            13.237585622802017
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T449",
+            "T450"
+        ]
+    },
+    {
+        "location": [
+            55.72587599075203,
+            13.153490484990328
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T451",
+            "T452"
+        ]
+    },
+    {
+        "location": [
+            55.7315403746713,
+            13.195990577668223
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T453",
+            "T454"
+        ]
+    },
+    {
+        "location": [
+            55.7232104850968,
+            13.220636631071512
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T455",
+            "T456"
+        ]
+    },
+    {
+        "location": [
+            55.72602515172058,
+            13.220029885311764
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T457",
+            "T458"
+        ]
+    },
+    {
+        "location": [
+            55.712430649138426,
+            13.178064742549813
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T459",
+            "T460"
+        ]
+    },
+    {
+        "location": [
+            55.687136076871965,
+            13.231056870302828
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T461",
+            "T462"
+        ]
+    },
+    {
+        "location": [
+            55.69636937185769,
+            13.228154531188585
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T463",
+            "T464"
+        ]
+    },
+    {
+        "location": [
+            55.709581702278214,
+            13.22072539743776
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T465",
+            "T466"
+        ]
+    },
+    {
+        "location": [
+            55.68548899228525,
+            13.170669037350999
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T467",
+            "T468"
+        ]
+    },
+    {
+        "location": [
+            55.69598678955716,
+            13.202163133297447
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T469",
+            "T470"
+        ]
+    },
+    {
+        "location": [
+            55.718909994921276,
+            13.171022224651988
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T471",
+            "T472"
+        ]
+    },
+    {
+        "location": [
+            55.70140459324607,
+            13.212626304125457
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T473",
+            "T474"
+        ]
+    },
+    {
+        "location": [
+            55.690941168171406,
+            13.251664396743882
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T475",
+            "T476"
+        ]
+    },
+    {
+        "location": [
+            55.708720519442565,
+            13.148794119121582
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T477",
+            "T478"
+        ]
+    },
+    {
+        "location": [
+            55.704686231076614,
+            13.149097260754658
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T479",
+            "T480"
+        ]
+    },
+    {
+        "location": [
+            55.695875616706616,
+            13.233330940478941
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T481",
+            "T482"
+        ]
+    },
+    {
+        "location": [
+            55.71412583325262,
+            13.232507185621236
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T483",
+            "T484"
+        ]
+    },
+    {
+        "location": [
+            55.683842011887805,
+            13.199825627957424
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T485",
+            "T486"
+        ]
+    },
+    {
+        "location": [
+            55.69788207713267,
+            13.258525901534002
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T487",
+            "T488"
+        ]
+    },
+    {
+        "location": [
+            55.6919915040588,
+            13.253640087328632
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T489",
+            "T490"
+        ]
+    },
+    {
+        "location": [
+            55.72424689772221,
+            13.172152770541372
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T491",
+            "T492"
+        ]
+    },
+    {
+        "location": [
+            55.71687745525717,
+            13.204013318504627
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T493",
+            "T494"
+        ]
+    },
+    {
+        "location": [
+            55.7041608200931,
+            13.208201700863036
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T495",
+            "T496"
+        ]
+    },
+    {
+        "location": [
+            55.7014205117118,
+            13.182400095261347
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T497",
+            "T498"
+        ]
+    },
+    {
+        "location": [
+            55.70992236219516,
+            13.18107267014288
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T499",
+            "T500"
+        ]
+    },
+    {
+        "location": [
+            55.69202419193405,
+            13.163965214071398
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T501",
+            "T502"
+        ]
+    },
+    {
+        "location": [
+            55.68961603993682,
+            13.195355939849172
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T503",
+            "T504"
+        ]
+    },
+    {
+        "location": [
+            55.723839494792664,
+            13.189914374855274
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T505",
+            "T506"
+        ]
+    },
+    {
+        "location": [
+            55.70536698016338,
+            13.14529220374447
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T507",
+            "T508"
+        ]
+    },
+    {
+        "location": [
+            55.71463349691229,
+            13.211271966321178
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T509",
+            "T510"
+        ]
+    },
+    {
+        "location": [
+            55.72583815466333,
+            13.222354100481004
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T511",
+            "T512"
+        ]
+    },
+    {
+        "location": [
+            55.70554629808698,
+            13.230278922787663
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T513",
+            "T514"
+        ]
+    },
+    {
+        "location": [
+            55.70116116878605,
+            13.16176735943616
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T515",
+            "T516"
+        ]
+    },
+    {
+        "location": [
+            55.69138626394265,
+            13.220918663671084
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T517",
+            "T518"
+        ]
+    },
+    {
+        "location": [
+            55.708577591355834,
+            13.19422577379098
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T519",
+            "T520"
+        ]
+    },
+    {
+        "location": [
+            55.722913893161575,
+            13.222835405433168
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T521",
+            "T522"
+        ]
+    },
+    {
+        "location": [
+            55.71851248806572,
+            13.229371702328011
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T523",
+            "T524"
+        ]
+    },
+    {
+        "location": [
+            55.711033076599236,
+            13.245059624381305
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T525",
+            "T526"
+        ]
+    },
+    {
+        "location": [
+            55.715300151508586,
+            13.1546880765663
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T527",
+            "T528"
+        ]
+    },
+    {
+        "location": [
+            55.70852662854237,
+            13.157834470088963
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T529",
+            "T530"
+        ]
+    },
+    {
+        "location": [
+            55.69249235971701,
+            13.189467942150488
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T531",
+            "T532"
+        ]
+    },
+    {
+        "location": [
+            55.72356465328942,
+            13.215707772928335
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T533",
+            "T534"
+        ]
+    },
+    {
+        "location": [
+            55.71866863522054,
+            13.168190238896981
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T535",
+            "T536"
+        ]
+    },
+    {
+        "location": [
+            55.707912579349305,
+            13.22050695273113
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T537",
+            "T538"
+        ]
+    },
+    {
+        "location": [
+            55.7229346673177,
+            13.253547394104654
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T539",
+            "T540"
+        ]
+    },
+    {
+        "location": [
+            55.729912272458925,
+            13.201052484467901
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T541",
+            "T542"
+        ]
+    },
+    {
+        "location": [
+            55.7277902490863,
+            13.228833329683452
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T543",
+            "T544"
+        ]
+    },
+    {
+        "location": [
+            55.71471763040839,
+            13.226156844996414
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T545",
+            "T546"
+        ]
+    },
+    {
+        "location": [
+            55.70361328342303,
+            13.24824784093337
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T547",
+            "T548"
+        ]
+    },
+    {
+        "location": [
+            55.71368723905359,
+            13.16305106223267
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T549",
+            "T550"
+        ]
+    },
+    {
+        "location": [
+            55.69750236873877,
+            13.197660182638618
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T551",
+            "T552"
+        ]
+    },
+    {
+        "location": [
+            55.71280040972556,
+            13.173397398236524
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T553",
+            "T554"
+        ]
+    },
+    {
+        "location": [
+            55.70156320987588,
+            13.250967180682643
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T555",
+            "T556"
+        ]
+    },
+    {
+        "location": [
+            55.71568249907909,
+            13.159918959928143
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T557",
+            "T558"
+        ]
+    },
+    {
+        "location": [
+            55.709869180647864,
+            13.19969195237849
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T559",
+            "T560"
+        ]
+    },
+    {
+        "location": [
+            55.70088072191585,
+            13.23294746391886
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T561",
+            "T562"
+        ]
+    },
+    {
+        "location": [
+            55.68797052379095,
+            13.236027982477225
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T563",
+            "T564"
+        ]
+    },
+    {
+        "location": [
+            55.697654941218225,
+            13.234435014896421
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T565",
+            "T566"
+        ]
+    },
+    {
+        "location": [
+            55.711108786020226,
+            13.193837316041472
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T567",
+            "T568"
+        ]
+    },
+    {
+        "location": [
+            55.72635177038885,
+            13.186839456336726
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T569",
+            "T570"
+        ]
+    },
+    {
+        "location": [
+            55.7224477620226,
+            13.187307542124087
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T571",
+            "T572"
+        ]
+    },
+    {
+        "location": [
+            55.70737126712066,
+            13.156814758254338
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T573",
+            "T574"
+        ]
+    },
+    {
+        "location": [
+            55.72099032780103,
+            13.190800150762039
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T575",
+            "T576"
+        ]
+    },
+    {
+        "location": [
+            55.72718369133799,
+            13.181231903922976
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T577",
+            "T578"
+        ]
+    },
+    {
+        "location": [
+            55.70932656856584,
+            13.174716233382584
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T579",
+            "T580"
+        ]
+    },
+    {
+        "location": [
+            55.71238072389734,
+            13.197464671154933
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T581",
+            "T582"
+        ]
+    },
+    {
+        "location": [
+            55.69684998445072,
+            13.18221764141552
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T583",
+            "T584"
+        ]
+    },
+    {
+        "location": [
+            55.73197488646354,
+            13.178142665118436
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T585",
+            "T586"
+        ]
+    },
+    {
+        "location": [
+            55.68077310087639,
+            13.18220204342224
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T587",
+            "T588"
+        ]
+    },
+    {
+        "location": [
+            55.70997242197409,
+            13.213573856124667
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T589",
+            "T590"
+        ]
+    },
+    {
+        "location": [
+            55.68565793074487,
+            13.182168883530283
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T591",
+            "T592"
+        ]
+    },
+    {
+        "location": [
+            55.68696312903486,
+            13.23654472041848
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T593",
+            "T594"
+        ]
+    },
+    {
+        "location": [
+            55.69141380476072,
+            13.204060484799374
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T595",
+            "T596"
+        ]
+    },
+    {
+        "location": [
+            55.73247798034304,
+            13.242834353385415
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T597",
+            "T598"
+        ]
+    },
+    {
+        "location": [
+            55.703876792752304,
+            13.18673345200274
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T599",
+            "T600"
+        ]
+    },
+    {
+        "location": [
+            55.68888571838896,
+            13.205754328721685
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T601",
+            "T602"
+        ]
+    },
+    {
+        "location": [
+            55.68900448407822,
+            13.212380667316951
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T603",
+            "T604"
+        ]
+    },
+    {
+        "location": [
+            55.69835451787577,
+            13.248794510846691
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T605",
+            "T606"
+        ]
+    },
+    {
+        "location": [
+            55.71615657671209,
+            13.158064304424604
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T607",
+            "T608"
+        ]
+    },
+    {
+        "location": [
+            55.7005112662436,
+            13.175760730496114
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T609",
+            "T610"
+        ]
+    },
+    {
+        "location": [
+            55.698523056386314,
+            13.210527336258197
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T611",
+            "T612"
+        ]
+    },
+    {
+        "location": [
+            55.700431653419216,
+            13.222367265809389
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T613",
+            "T614"
+        ]
+    },
+    {
+        "location": [
+            55.72440633482013,
+            13.250047025678054
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T615",
+            "T616"
+        ]
+    },
+    {
+        "location": [
+            55.733945655851585,
+            13.186433314897531
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T617",
+            "T618"
+        ]
+    },
+    {
+        "location": [
+            55.67988419907341,
+            13.18002244471444
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T619",
+            "T620"
+        ]
+    },
+    {
+        "location": [
+            55.711137651616625,
+            13.1647280640706
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T621",
+            "T622"
+        ]
+    },
+    {
+        "location": [
+            55.70141661001791,
+            13.169799760376016
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T623",
+            "T624"
+        ]
+    },
+    {
+        "location": [
+            55.71325472352187,
+            13.214998412957412
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T625",
+            "T626"
+        ]
+    },
+    {
+        "location": [
+            55.70820346830826,
+            13.149992420595344
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T627",
+            "T628"
+        ]
+    },
+    {
+        "location": [
+            55.70701173938842,
+            13.156188380006927
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T629",
+            "T630"
+        ]
+    },
+    {
+        "location": [
+            55.71068576380697,
+            13.230121482148856
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T631",
+            "T632"
+        ]
+    },
+    {
+        "location": [
+            55.70401330565525,
+            13.223090296012876
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T633",
+            "T634"
+        ]
+    },
+    {
+        "location": [
+            55.687821810801964,
+            13.243527018038463
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T635",
+            "T636"
+        ]
+    },
+    {
+        "location": [
+            55.718418126791875,
+            13.230340512434562
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T637",
+            "T638"
+        ]
+    },
+    {
+        "location": [
+            55.71041324106376,
+            13.179428494920979
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T639",
+            "T640"
+        ]
+    },
+    {
+        "location": [
+            55.70659097785308,
+            13.184397368489773
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T641",
+            "T642"
+        ]
+    },
+    {
+        "location": [
+            55.72257403057769,
+            13.151610869098104
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T643",
+            "T644"
+        ]
+    },
+    {
+        "location": [
+            55.72165093608337,
+            13.192391986546172
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T645",
+            "T646"
+        ]
+    },
+    {
+        "location": [
+            55.706455728704874,
+            13.243143111325043
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T647",
+            "T648"
+        ]
+    },
+    {
+        "location": [
+            55.69072760964364,
+            13.181090549375636
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T649",
+            "T650"
+        ]
+    },
+    {
+        "location": [
+            55.71330661394642,
+            13.24282539341305
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T651",
+            "T652"
+        ]
+    },
+    {
+        "location": [
+            55.690588604355554,
+            13.224010308116858
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T653",
+            "T654"
+        ]
+    },
+    {
+        "location": [
+            55.72281999424998,
+            13.195017026576437
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T655",
+            "T656"
+        ]
+    },
+    {
+        "location": [
+            55.70483901957591,
+            13.196468329283118
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T657",
+            "T658"
+        ]
+    },
+    {
+        "location": [
+            55.694539397630095,
+            13.23123487957574
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T659",
+            "T660"
+        ]
+    },
+    {
+        "location": [
+            55.69006913180497,
+            13.212182690834455
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T661",
+            "T662"
+        ]
+    },
+    {
+        "location": [
+            55.72371747129049,
+            13.251652533421252
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T663",
+            "T664"
+        ]
+    },
+    {
+        "location": [
+            55.72254964392165,
+            13.23284880496361
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T665",
+            "T666"
+        ]
+    },
+    {
+        "location": [
+            55.700131686430915,
+            13.179931268175814
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T667",
+            "T668"
+        ]
+    },
+    {
+        "location": [
+            55.703784928820966,
+            13.191385285340884
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T669",
+            "T670"
+        ]
+    },
+    {
+        "location": [
+            55.72248787110982,
+            13.177263822243486
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T671",
+            "T672"
+        ]
+    },
+    {
+        "location": [
+            55.70284549255947,
+            13.203244230213063
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T673",
+            "T674"
+        ]
+    },
+    {
+        "location": [
+            55.71119368361659,
+            13.211672293147862
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T675",
+            "T676"
+        ]
+    },
+    {
+        "location": [
+            55.70033685269562,
+            13.158903969516809
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T677",
+            "T678"
+        ]
+    },
+    {
+        "location": [
+            55.725832585292224,
+            13.201617179887004
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T679",
+            "T680"
+        ]
+    },
+    {
+        "location": [
+            55.69302313967086,
+            13.174984142791914
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T681",
+            "T682"
+        ]
+    },
+    {
+        "location": [
+            55.69458276330935,
+            13.250919073402022
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T683",
+            "T684"
+        ]
+    },
+    {
+        "location": [
+            55.72762455621177,
+            13.242660113080271
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T685",
+            "T686"
+        ]
+    },
+    {
+        "location": [
+            55.68740752314207,
+            13.229972404850423
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T687",
+            "T688"
+        ]
+    },
+    {
+        "location": [
+            55.72501687788869,
+            13.217429710090713
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T689",
+            "T690"
+        ]
+    },
+    {
+        "location": [
+            55.70354978557542,
+            13.225716151797995
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T691",
+            "T692"
+        ]
+    },
+    {
+        "location": [
+            55.70398151908081,
+            13.140638797195793
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T693",
+            "T694"
+        ]
+    },
+    {
+        "location": [
+            55.71277366151799,
+            13.235763139377164
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T695",
+            "T696"
+        ]
+    },
+    {
+        "location": [
+            55.68418086461891,
+            13.213850859060182
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T697",
+            "T698"
+        ]
+    },
+    {
+        "location": [
+            55.72001527951367,
+            13.212781450558557
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T699",
+            "T700"
+        ]
+    },
+    {
+        "location": [
+            55.6896415872372,
+            13.230986502678226
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T701",
+            "T702"
+        ]
+    },
+    {
+        "location": [
+            55.69938933203447,
+            13.19052412716943
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T703",
+            "T704"
+        ]
+    },
+    {
+        "location": [
+            55.702751105466874,
+            13.25297747115997
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T705",
+            "T706"
+        ]
+    },
+    {
+        "location": [
+            55.72302961308605,
+            13.25504191473315
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T707",
+            "T708"
+        ]
+    },
+    {
+        "location": [
+            55.70180135235334,
+            13.208197626375368
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T709",
+            "T710"
+        ]
+    },
+    {
+        "location": [
+            55.73049438565051,
+            13.164031076223857
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T711",
+            "T712"
+        ]
+    },
+    {
+        "location": [
+            55.69540117473055,
+            13.248155163521899
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T713",
+            "T714"
+        ]
+    },
+    {
+        "location": [
+            55.72782680869595,
+            13.205193443545422
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T715",
+            "T716"
+        ]
+    },
+    {
+        "location": [
+            55.725468971961654,
+            13.187600179988754
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T717",
+            "T718"
+        ]
+    },
+    {
+        "location": [
+            55.73201347350363,
+            13.163666014547536
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T719",
+            "T720"
+        ]
+    },
+    {
+        "location": [
+            55.687819864187695,
+            13.236364987732774
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T721",
+            "T722"
+        ]
+    },
+    {
+        "location": [
+            55.70375122671966,
+            13.252866727737857
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T723",
+            "T724"
+        ]
+    },
+    {
+        "location": [
+            55.683364489973464,
+            13.186831457991817
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T725",
+            "T726"
+        ]
+    },
+    {
+        "location": [
+            55.70647961615298,
+            13.176996260193208
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T727",
+            "T728"
+        ]
+    },
+    {
+        "location": [
+            55.722943389982994,
+            13.187532055568937
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T729",
+            "T730"
+        ]
+    },
+    {
+        "location": [
+            55.72889020290942,
+            13.259904056304821
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T731",
+            "T732"
+        ]
+    },
+    {
+        "location": [
+            55.71941280464353,
+            13.218306887417846
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T733",
+            "T734"
+        ]
+    },
+    {
+        "location": [
+            55.70336920536862,
+            13.180000551212688
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T735",
+            "T736"
+        ]
+    },
+    {
+        "location": [
+            55.70254611423968,
+            13.200818316184716
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T737",
+            "T738"
+        ]
+    },
+    {
+        "location": [
+            55.68938398601946,
+            13.189787872279567
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T739",
+            "T740"
+        ]
+    },
+    {
+        "location": [
+            55.72212540496191,
+            13.196571217216048
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T741",
+            "T742"
+        ]
+    },
+    {
+        "location": [
+            55.69609399303572,
+            13.22787663575112
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T743",
+            "T744"
+        ]
+    },
+    {
+        "location": [
+            55.68616586110025,
+            13.229571426888954
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T745",
+            "T746"
+        ]
+    },
+    {
+        "location": [
+            55.7064444776509,
+            13.189997075870265
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T747",
+            "T748"
+        ]
+    },
+    {
+        "location": [
+            55.69344983822875,
+            13.18265823401408
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T749",
+            "T750"
+        ]
+    },
+    {
+        "location": [
+            55.68898393754323,
+            13.235337787734707
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T751",
+            "T752"
+        ]
+    },
+    {
+        "location": [
+            55.699280195485834,
+            13.235781501050932
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T753",
+            "T754"
+        ]
+    },
+    {
+        "location": [
+            55.68701522748706,
+            13.203480323214094
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T755",
+            "T756"
+        ]
+    },
+    {
+        "location": [
+            55.719404960509884,
+            13.213360247448787
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T757",
+            "T758"
+        ]
+    },
+    {
+        "location": [
+            55.71877066365612,
+            13.225476386150776
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T759",
+            "T760"
+        ]
+    },
+    {
+        "location": [
+            55.730533215126286,
+            13.172391337308422
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T761",
+            "T762"
+        ]
+    },
+    {
+        "location": [
+            55.69341285465576,
+            13.236922320071864
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T763",
+            "T764"
+        ]
+    },
+    {
+        "location": [
+            55.69391704603417,
+            13.173512427457517
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T765",
+            "T766"
+        ]
+    },
+    {
+        "location": [
+            55.68764520423707,
+            13.201273422516218
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T767",
+            "T768"
+        ]
+    },
+    {
+        "location": [
+            55.730263942841084,
+            13.24207769267071
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T769",
+            "T770"
+        ]
+    },
+    {
+        "location": [
+            55.69282515465957,
+            13.173698623820382
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T771",
+            "T772"
+        ]
+    },
+    {
+        "location": [
+            55.727437209337886,
+            13.20936249994857
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T773",
+            "T774"
+        ]
+    },
+    {
+        "location": [
+            55.708520766590844,
+            13.239849595973972
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T775",
+            "T776"
+        ]
+    },
+    {
+        "location": [
+            55.70261298197712,
+            13.223131386957833
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T777",
+            "T778"
+        ]
+    },
+    {
+        "location": [
+            55.69492510186682,
+            13.227710657175372
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T779",
+            "T780"
+        ]
+    },
+    {
+        "location": [
+            55.72880559456584,
+            13.172654790110085
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T781",
+            "T782"
+        ]
+    },
+    {
+        "location": [
+            55.70409330836134,
+            13.218496209051793
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T783",
+            "T784"
+        ]
+    },
+    {
+        "location": [
+            55.72295331220533,
+            13.24557043591268
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T785",
+            "T786"
+        ]
+    },
+    {
+        "location": [
+            55.73636618187104,
+            13.251556983290442
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T787",
+            "T788"
+        ]
+    },
+    {
+        "location": [
+            55.712116105543814,
+            13.15634710087082
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T789",
+            "T790"
+        ]
+    },
+    {
+        "location": [
+            55.71125197475429,
+            13.17529880288404
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T791",
+            "T792"
+        ]
+    },
+    {
+        "location": [
+            55.70263234405924,
+            13.231419862584472
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T793",
+            "T794"
+        ]
+    },
+    {
+        "location": [
+            55.6859244410184,
+            13.211887988518757
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T795",
+            "T796"
+        ]
+    },
+    {
+        "location": [
+            55.695049161682256,
+            13.254567015341943
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T797",
+            "T798"
+        ]
+    },
+    {
+        "location": [
+            55.700113804195986,
+            13.221727572101416
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T799",
+            "T800"
+        ]
+    },
+    {
+        "location": [
+            55.68075681146829,
+            13.180875997491837
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T801",
+            "T802"
+        ]
+    },
+    {
+        "location": [
+            55.72538625869405,
+            13.172289615945173
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T803",
+            "T804"
+        ]
+    },
+    {
+        "location": [
+            55.68675877000752,
+            13.243976418360083
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T805",
+            "T806"
+        ]
+    },
+    {
+        "location": [
+            55.71429345433697,
+            13.16660970844177
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T807",
+            "T808"
+        ]
+    },
+    {
+        "location": [
+            55.7010334113812,
+            13.22917981845649
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T809",
+            "T810"
+        ]
+    },
+    {
+        "location": [
+            55.72393771890158,
+            13.240553132229342
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T811",
+            "T812"
+        ]
+    },
+    {
+        "location": [
+            55.720970796232834,
+            13.189277517927135
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T813",
+            "T814"
+        ]
+    },
+    {
+        "location": [
+            55.724220635177176,
+            13.198934070028601
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T815",
+            "T816"
+        ]
+    },
+    {
+        "location": [
+            55.723873692581535,
+            13.16742543845865
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T817",
+            "T818"
+        ]
+    },
+    {
+        "location": [
+            55.6958227583932,
+            13.230974549938086
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T819",
+            "T820"
+        ]
+    },
+    {
+        "location": [
+            55.729740565949484,
+            13.16183532968446
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T821",
+            "T822"
+        ]
+    },
+    {
+        "location": [
+            55.715858609862664,
+            13.200272128903757
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T823",
+            "T824"
+        ]
+    },
+    {
+        "location": [
+            55.68921456798414,
+            13.19873354106291
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T825",
+            "T826"
+        ]
+    },
+    {
+        "location": [
+            55.691493095511746,
+            13.238460891346401
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T827",
+            "T828"
+        ]
+    },
+    {
+        "location": [
+            55.72126584653812,
+            13.192244440210299
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T829",
+            "T830"
+        ]
+    },
+    {
+        "location": [
+            55.7033190741682,
+            13.158258814569962
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T831",
+            "T832"
+        ]
+    },
+    {
+        "location": [
+            55.689442999958345,
+            13.205666905801408
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T833",
+            "T834"
+        ]
+    },
+    {
+        "location": [
+            55.68979308425988,
+            13.171997259705188
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T835",
+            "T836"
+        ]
+    },
+    {
+        "location": [
+            55.7108372192565,
+            13.221163546983075
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T837",
+            "T838"
+        ]
+    },
+    {
+        "location": [
+            55.69971099798723,
+            13.226893195097821
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T839",
+            "T840"
+        ]
+    },
+    {
+        "location": [
+            55.70591872766598,
+            13.207396460903533
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T841",
+            "T842"
+        ]
+    },
+    {
+        "location": [
+            55.694347093502316,
+            13.199809091621606
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T843",
+            "T844"
+        ]
+    },
+    {
+        "location": [
+            55.68615955795428,
+            13.235808296537051
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T845",
+            "T846"
+        ]
+    },
+    {
+        "location": [
+            55.72152618057592,
+            13.219198826049437
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T847",
+            "T848"
+        ]
+    },
+    {
+        "location": [
+            55.728048114540506,
+            13.156882297853668
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T849",
+            "T850"
+        ]
+    },
+    {
+        "location": [
+            55.69537743875088,
+            13.211000993801479
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T851",
+            "T852"
+        ]
+    },
+    {
+        "location": [
+            55.688261041966655,
+            13.217048012243689
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T853",
+            "T854"
+        ]
+    },
+    {
+        "location": [
+            55.729572484109056,
+            13.187267517242221
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T855",
+            "T856"
+        ]
+    },
+    {
+        "location": [
+            55.699929561277244,
+            13.173282666481004
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T857",
+            "T858"
+        ]
+    },
+    {
+        "location": [
+            55.72508828641389,
+            13.180467234563363
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T859",
+            "T860"
+        ]
+    },
+    {
+        "location": [
+            55.703651600952234,
+            13.179349105443745
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T861",
+            "T862"
+        ]
+    },
+    {
+        "location": [
+            55.70520195857539,
+            13.15512827271251
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T863",
+            "T864"
+        ]
+    },
+    {
+        "location": [
+            55.71526600850317,
+            13.22933655895509
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T865",
+            "T866"
+        ]
+    },
+    {
+        "location": [
+            55.684652842217474,
+            13.205024134522644
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T867",
+            "T868"
+        ]
+    },
+    {
+        "location": [
+            55.7185795199526,
+            13.233367787386486
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T869",
+            "T870"
+        ]
+    },
+    {
+        "location": [
+            55.72575390009507,
+            13.250814201803939
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T871",
+            "T872"
+        ]
+    },
+    {
+        "location": [
+            55.73281209733285,
+            13.257609690865054
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T873",
+            "T874"
+        ]
+    },
+    {
+        "location": [
+            55.725369129898255,
+            13.198654062729794
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T875",
+            "T876"
+        ]
+    },
+    {
+        "location": [
+            55.72978584795473,
+            13.247263159853436
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T877",
+            "T878"
+        ]
+    },
+    {
+        "location": [
+            55.68646459761254,
+            13.189917320462508
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T879",
+            "T880"
+        ]
+    },
+    {
+        "location": [
+            55.70712948558116,
+            13.21555933946813
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T881",
+            "T882"
+        ]
+    },
+    {
+        "location": [
+            55.70660734802494,
+            13.185055729557192
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T883",
+            "T884"
+        ]
+    },
+    {
+        "location": [
+            55.69333249706957,
+            13.208671426131772
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T885",
+            "T886"
+        ]
+    },
+    {
+        "location": [
+            55.699478656617224,
+            13.222482519548066
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T887",
+            "T888"
+        ]
+    },
+    {
+        "location": [
+            55.716748147474306,
+            13.212657979666645
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T889",
+            "T890"
+        ]
+    },
+    {
+        "location": [
+            55.68971370408406,
+            13.232097163930892
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T891",
+            "T892"
+        ]
+    },
+    {
+        "location": [
+            55.702030030648665,
+            13.233937359856567
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T893",
+            "T894"
+        ]
+    },
+    {
+        "location": [
+            55.713754169455676,
+            13.211260909576476
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T895",
+            "T896"
+        ]
+    },
+    {
+        "location": [
+            55.698734012095606,
+            13.202846066880733
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T897",
+            "T898"
+        ]
+    },
+    {
+        "location": [
+            55.71497906328011,
+            13.21278506996477
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T899",
+            "T900"
+        ]
+    },
+    {
+        "location": [
+            55.72602927086638,
+            13.243504350062857
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T901",
+            "T902"
+        ]
+    },
+    {
+        "location": [
+            55.700899301945576,
+            13.254248448977378
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T903",
+            "T904"
+        ]
+    },
+    {
+        "location": [
+            55.703678419056146,
+            13.226806772723235
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T905",
+            "T906"
+        ]
+    },
+    {
+        "location": [
+            55.69404431262594,
+            13.226926791224605
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T907",
+            "T908"
+        ]
+    },
+    {
+        "location": [
+            55.68889480522049,
+            13.194608430748737
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T909",
+            "T910"
+        ]
+    },
+    {
+        "location": [
+            55.72629094637776,
+            13.210242808279151
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T911",
+            "T912"
+        ]
+    },
+    {
+        "location": [
+            55.72263847655132,
+            13.220699300546107
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T913",
+            "T914"
+        ]
+    },
+    {
+        "location": [
+            55.70451347553854,
+            13.224415849476541
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T915",
+            "T916"
+        ]
+    },
+    {
+        "location": [
+            55.71329372388389,
+            13.201415439013124
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T917",
+            "T918"
+        ]
+    },
+    {
+        "location": [
+            55.7238774485637,
+            13.204226427566562
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T919",
+            "T920"
+        ]
+    },
+    {
+        "location": [
+            55.719449201939526,
+            13.152541269014591
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T921",
+            "T922"
+        ]
+    },
+    {
+        "location": [
+            55.68839249094023,
+            13.230689062971797
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T923",
+            "T924"
+        ]
+    },
+    {
+        "location": [
+            55.68104519998312,
+            13.185659871242555
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T925",
+            "T926"
+        ]
+    },
+    {
+        "location": [
+            55.69332202477606,
+            13.185476905066947
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T927",
+            "T928"
+        ]
+    },
+    {
+        "location": [
+            55.729101225064575,
+            13.201521524350028
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T929",
+            "T930"
+        ]
+    },
+    {
+        "location": [
+            55.70513967880939,
+            13.191254484519126
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T931",
+            "T932"
+        ]
+    },
+    {
+        "location": [
+            55.71314006152727,
+            13.17724706286825
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T933",
+            "T934"
+        ]
+    },
+    {
+        "location": [
+            55.685727476313794,
+            13.185802691777983
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T935",
+            "T936"
+        ]
+    },
+    {
+        "location": [
+            55.72345096179789,
+            13.19606969890283
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T937",
+            "T938"
+        ]
+    },
+    {
+        "location": [
+            55.70693645188526,
+            13.235872004313896
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T939",
+            "T940"
+        ]
+    },
+    {
+        "location": [
+            55.695504346388184,
+            13.240483233249138
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T941",
+            "T942"
+        ]
+    },
+    {
+        "location": [
+            55.731807701913,
+            13.2421002842396
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T943",
+            "T944"
+        ]
+    },
+    {
+        "location": [
+            55.717151839276816,
+            13.166552038807193
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T945",
+            "T946"
+        ]
+    },
+    {
+        "location": [
+            55.709772194151704,
+            13.172165716954353
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T947",
+            "T948"
+        ]
+    },
+    {
+        "location": [
+            55.700594657202494,
+            13.160802739446614
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T949",
+            "T950"
+        ]
+    },
+    {
+        "location": [
+            55.72582859598856,
+            13.194381089441881
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T951",
+            "T952"
+        ]
+    },
+    {
+        "location": [
+            55.69165978608606,
+            13.237495340469104
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T953",
+            "T954"
+        ]
+    },
+    {
+        "location": [
+            55.72167789557413,
+            13.240114732358265
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T955",
+            "T956"
+        ]
+    },
+    {
+        "location": [
+            55.69436985298183,
+            13.250463372343129
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T957",
+            "T958"
+        ]
+    },
+    {
+        "location": [
+            55.69685560568859,
+            13.248457873957424
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T959",
+            "T960"
+        ]
+    },
+    {
+        "location": [
+            55.6971968524726,
+            13.245116408880797
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T961",
+            "T962"
+        ]
+    },
+    {
+        "location": [
+            55.73121672910557,
+            13.25704459275455
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T963",
+            "T964"
+        ]
+    },
+    {
+        "location": [
+            55.68117030775312,
+            13.176504952557961
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T965",
+            "T966"
+        ]
+    },
+    {
+        "location": [
+            55.723768610199144,
+            13.20131321692381
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T967",
+            "T968"
+        ]
+    },
+    {
+        "location": [
+            55.69974058914095,
+            13.247942295497934
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T969",
+            "T970"
+        ]
+    },
+    {
+        "location": [
+            55.721129600027524,
+            13.174227201547666
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T971",
+            "T972"
+        ]
+    },
+    {
+        "location": [
+            55.716852889218806,
+            13.172990192141569
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T973",
+            "T974"
+        ]
+    },
+    {
+        "location": [
+            55.71014422280068,
+            13.217333967536348
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T975",
+            "T976"
+        ]
+    },
+    {
+        "location": [
+            55.731339115676825,
+            13.17115194219763
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T977",
+            "T978"
+        ]
+    },
+    {
+        "location": [
+            55.72722709851541,
+            13.175033919304632
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T979",
+            "T980"
+        ]
+    },
+    {
+        "location": [
+            55.7289611404409,
+            13.16704616669687
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T981",
+            "T982"
+        ]
+    },
+    {
+        "location": [
+            55.696646598660166,
+            13.199023221304722
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T983",
+            "T984"
+        ]
+    },
+    {
+        "location": [
+            55.722796381018384,
+            13.236332394474436
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T985",
+            "T986"
+        ]
+    },
+    {
+        "location": [
+            55.71507076240676,
+            13.17472158895133
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T987",
+            "T988"
+        ]
+    },
+    {
+        "location": [
+            55.68447898688327,
+            13.173578179527503
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T989",
+            "T990"
+        ]
+    },
+    {
+        "location": [
+            55.69425019813129,
+            13.230134988800119
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T991",
+            "T992"
+        ]
+    },
+    {
+        "location": [
+            55.71231044364528,
+            13.188939148523517
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T993",
+            "T994"
+        ]
+    },
+    {
+        "location": [
+            55.72068050197658,
+            13.222027922668271
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T995",
+            "T996"
+        ]
+    },
+    {
+        "location": [
+            55.69188637891657,
+            13.247812301388901
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T997",
+            "T998"
+        ]
+    },
+    {
+        "location": [
+            55.70078549728956,
+            13.1888829264522
+        ],
+        "city_name": "Lund",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T999",
+            "T1000"
+        ]
+    }
+]
