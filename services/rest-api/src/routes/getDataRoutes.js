@@ -158,5 +158,12 @@ router.get("/all/trips", async (req, res) => {
     res.json(result);
 });
 
+router.get("/one/trip/", async (req, res) => {
+    const trip = req.query.trip;
+
+    const result = await getCollection('trips').find({ trip_id: trip }).toArray();
+    res.json(result);
+});
+
 
 export default router;
