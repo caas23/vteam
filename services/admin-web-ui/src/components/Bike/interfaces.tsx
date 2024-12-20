@@ -10,6 +10,7 @@ interface Bike {
     in_service: boolean;
   };
   completed_trips: string[];
+  bike_id: string;
 }
 
 interface BikeDetailsProps {
