@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const Payments: React.FC = () => {
 	useEffect(() => {
-		document.title = "Payments - Avec";
+		document.title = "Payments - Solo Scoot";
 }, []);
 	return (
 		<div>

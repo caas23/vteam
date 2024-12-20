@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
 	return (
 		<footer className="footer">
 			<div className="footer-wrapper">
-				<ul>
+				{/* <ul>
 					<li>
 						<a href="">Some link</a>
 					</li>
@@ -21,14 +21,14 @@ const Footer: React.FC = () => {
 						<a href="">Scooter</a>
 					</li>
 					<li>
-						<a href="">About Avec</a>
+						<a href="">About Solo Scoot</a>
 					</li>
 					<li>
 						<a href="">Manage payments</a>
 					</li>
-				</ul>
+				</ul> */}
 			</div>
-            <p>&copy; Copyright 2024 – Avec, Inc.</p>
+            <p>&copy; Copyright 2024 – Solo Scoot</p>
 		</footer>
 	);
 };

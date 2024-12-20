@@ -34,7 +34,6 @@ function App() {
           <Route path="/trip/:trip" element={<Trip />} />
           <Route path="/users" element={<Users />} />
           <Route path="/user/:user" element={<User />} />
-
         </Routes>
       </main>
       <Footer />

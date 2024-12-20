@@ -9,7 +9,7 @@ const Maps: React.FC = () => {
 	const [cities, setCities] = useState<City[]>([]);
 
 	useEffect(() => {
-		document.title = "Maps - Avec";
+		document.title = "Maps - Solo Scoot";
 
 		const fetchAndSetCities = async () => {
 			const result = await fetchCities();

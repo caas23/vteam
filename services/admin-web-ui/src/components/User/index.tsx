@@ -10,7 +10,7 @@ const User: React.FC = () => {
   const [userData, setUserData] = useState< UserInterface | null | undefined >(undefined);
 
   useEffect(() => {
-    document.title = `User ${userId} - Avec`;
+    document.title = `User ${userId} - Solo Scoot`;
 
     const fetchUserData = async () => {
       if (!userId) {

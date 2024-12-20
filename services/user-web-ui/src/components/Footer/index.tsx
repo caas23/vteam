@@ -21,14 +21,14 @@ const Footer: React.FC = () => {
 						<a href="ride-history">Scooter</a>
 					</li>
 					<li>
-						<a href="profile">About Avec</a>
+						<a href="profile">About Solo Scoot</a>
 					</li>
 					<li>
 						<a href="payment">Manage payments</a>
 					</li>
 				</ul>
 			</div>
-            <p>&copy; Copyright 2024 – Avec, Inc.</p>
+            <p>&copy; Copyright 2024 – Solo Scoot, Inc.</p>
 		</footer>
 	);
 };

@@ -14,7 +14,7 @@ const Bike: React.FC = () => {
   // om data faktiskt finns (men den behöver hinna hämtas under ett ögonblick)
 
   useEffect(() => {
-    document.title = `Bike ${bikeId} - Avec`;
+    document.title = `Bike ${bikeId} - Solo Scoot`;
 
     const fetchBikeData = async () => {
       if (!bikeId) {
