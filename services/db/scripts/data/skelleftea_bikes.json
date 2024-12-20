@@ -1,0 +1,8502 @@
+[
+    {
+        "location": [
+            64.74131389234537,
+            20.96982566466943
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2001",
+            "T2002"
+        ]
+    },
+    {
+        "location": [
+            64.74135609793647,
+            21.002511050249378
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2003",
+            "T2004"
+        ]
+    },
+    {
+        "location": [
+            64.7382164362507,
+            20.955672920846382
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2005",
+            "T2006"
+        ]
+    },
+    {
+        "location": [
+            64.73428710549224,
+            20.95629995105051
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2007",
+            "T2008"
+        ]
+    },
+    {
+        "location": [
+            64.73153889546333,
+            20.967649809504277
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2009",
+            "T2010"
+        ]
+    },
+    {
+        "location": [
+            64.7378847725177,
+            20.9674619957152
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2011",
+            "T2012"
+        ]
+    },
+    {
+        "location": [
+            64.73892448364454,
+            20.981928106181275
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2013",
+            "T2014"
+        ]
+    },
+    {
+        "location": [
+            64.74519109770512,
+            20.914172334593932
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2015",
+            "T2016"
+        ]
+    },
+    {
+        "location": [
+            64.74137908023033,
+            20.94898237145336
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2017",
+            "T2018"
+        ]
+    },
+    {
+        "location": [
+            64.7307726357344,
+            20.969554113185865
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2019",
+            "T2020"
+        ]
+    },
+    {
+        "location": [
+            64.73786044551477,
+            20.967667307042866
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2021",
+            "T2022"
+        ]
+    },
+    {
+        "location": [
+            64.74218000450279,
+            21.00641928206442
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2023",
+            "T2024"
+        ]
+    },
+    {
+        "location": [
+            64.74120074449003,
+            20.950879715292423
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2025",
+            "T2026"
+        ]
+    },
+    {
+        "location": [
+            64.74667007707261,
+            20.922684860164093
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2027",
+            "T2028"
+        ]
+    },
+    {
+        "location": [
+            64.73999472614919,
+            20.987588509032584
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2029",
+            "T2030"
+        ]
+    },
+    {
+        "location": [
+            64.73643439981602,
+            20.95206311114316
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2031",
+            "T2032"
+        ]
+    },
+    {
+        "location": [
+            64.74480321499621,
+            20.92849631172062
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2033",
+            "T2034"
+        ]
+    },
+    {
+        "location": [
+            64.74203835720498,
+            20.959325648167695
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2035",
+            "T2036"
+        ]
+    },
+    {
+        "location": [
+            64.73893042384563,
+            20.986279581636747
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2037",
+            "T2038"
+        ]
+    },
+    {
+        "location": [
+            64.74113270716377,
+            20.96006634510054
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2039",
+            "T2040"
+        ]
+    },
+    {
+        "location": [
+            64.7442998018103,
+            20.934318165902397
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2041",
+            "T2042"
+        ]
+    },
+    {
+        "location": [
+            64.74239922864778,
+            20.949686150751766
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2043",
+            "T2044"
+        ]
+    },
+    {
+        "location": [
+            64.73730416430978,
+            20.94264388052856
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2045",
+            "T2046"
+        ]
+    },
+    {
+        "location": [
+            64.73457068546708,
+            20.95283588755275
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2047",
+            "T2048"
+        ]
+    },
+    {
+        "location": [
+            64.74186074670673,
+            20.962767495534223
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2049",
+            "T2050"
+        ]
+    },
+    {
+        "location": [
+            64.74661474984552,
+            20.9148279084222
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2051",
+            "T2052"
+        ]
+    },
+    {
+        "location": [
+            64.74374802292466,
+            20.96501623426597
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2053",
+            "T2054"
+        ]
+    },
+    {
+        "location": [
+            64.73927045933313,
+            20.980199989378832
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2055",
+            "T2056"
+        ]
+    },
+    {
+        "location": [
+            64.73119801305275,
+            20.95784505753996
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2057",
+            "T2058"
+        ]
+    },
+    {
+        "location": [
+            64.74397495374406,
+            20.918154294994505
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2059",
+            "T2060"
+        ]
+    },
+    {
+        "location": [
+            64.74197596751556,
+            20.94555842398209
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2061",
+            "T2062"
+        ]
+    },
+    {
+        "location": [
+            64.73724009146243,
+            20.94428314662369
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2063",
+            "T2064"
+        ]
+    },
+    {
+        "location": [
+            64.74013942454519,
+            20.9742116646825
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2065",
+            "T2066"
+        ]
+    },
+    {
+        "location": [
+            64.7410094628256,
+            20.997876239618574
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2067",
+            "T2068"
+        ]
+    },
+    {
+        "location": [
+            64.74560076457747,
+            20.924935237395232
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2069",
+            "T2070"
+        ]
+    },
+    {
+        "location": [
+            64.74523338413825,
+            20.98038229464209
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2071",
+            "T2072"
+        ]
+    },
+    {
+        "location": [
+            64.74658728111837,
+            20.998187719382816
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2073",
+            "T2074"
+        ]
+    },
+    {
+        "location": [
+            64.73921692131836,
+            20.979886970610725
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2075",
+            "T2076"
+        ]
+    },
+    {
+        "location": [
+            64.7408910843203,
+            20.938962368039164
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2077",
+            "T2078"
+        ]
+    },
+    {
+        "location": [
+            64.74334789299611,
+            20.99611563658891
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2079",
+            "T2080"
+        ]
+    },
+    {
+        "location": [
+            64.73952345321108,
+            20.941768589000212
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2081",
+            "T2082"
+        ]
+    },
+    {
+        "location": [
+            64.74690786723662,
+            20.909957524480124
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2083",
+            "T2084"
+        ]
+    },
+    {
+        "location": [
+            64.73632660241182,
+            20.975101517728106
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2085",
+            "T2086"
+        ]
+    },
+    {
+        "location": [
+            64.73230994843914,
+            20.962078043889992
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2087",
+            "T2088"
+        ]
+    },
+    {
+        "location": [
+            64.74233135718532,
+            20.971083987735405
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2089",
+            "T2090"
+        ]
+    },
+    {
+        "location": [
+            64.73259837580372,
+            20.97060566851698
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2091",
+            "T2092"
+        ]
+    },
+    {
+        "location": [
+            64.74342372969609,
+            20.966821780811372
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2093",
+            "T2094"
+        ]
+    },
+    {
+        "location": [
+            64.74254992778336,
+            20.959006526683247
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2095",
+            "T2096"
+        ]
+    },
+    {
+        "location": [
+            64.73996859692953,
+            20.969743530121185
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2097",
+            "T2098"
+        ]
+    },
+    {
+        "location": [
+            64.74219562869084,
+            20.986940323348875
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2099",
+            "T2100"
+        ]
+    },
+    {
+        "location": [
+            64.74202766026048,
+            20.95908482392147
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2101",
+            "T2102"
+        ]
+    },
+    {
+        "location": [
+            64.7445298775514,
+            20.97411785786463
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2103",
+            "T2104"
+        ]
+    },
+    {
+        "location": [
+            64.73750033713264,
+            20.97181620009247
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2105",
+            "T2106"
+        ]
+    },
+    {
+        "location": [
+            64.74140514616262,
+            21.000901622024486
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2107",
+            "T2108"
+        ]
+    },
+    {
+        "location": [
+            64.73328500643913,
+            20.963002571565735
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2109",
+            "T2110"
+        ]
+    },
+    {
+        "location": [
+            64.74134743181376,
+            20.949657516226956
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2111",
+            "T2112"
+        ]
+    },
+    {
+        "location": [
+            64.74690539277462,
+            20.922998074449843
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2113",
+            "T2114"
+        ]
+    },
+    {
+        "location": [
+            64.73894030452648,
+            20.985954640484124
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2115",
+            "T2116"
+        ]
+    },
+    {
+        "location": [
+            64.74222272197669,
+            20.95512732050278
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2117",
+            "T2118"
+        ]
+    },
+    {
+        "location": [
+            64.74219342317834,
+            20.937486207547682
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2119",
+            "T2120"
+        ]
+    },
+    {
+        "location": [
+            64.7384599378527,
+            20.948583277815608
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2121",
+            "T2122"
+        ]
+    },
+    {
+        "location": [
+            64.73149158973153,
+            20.964463999457152
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2123",
+            "T2124"
+        ]
+    },
+    {
+        "location": [
+            64.74159238877193,
+            20.990337721654328
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2125",
+            "T2126"
+        ]
+    },
+    {
+        "location": [
+            64.74010045380108,
+            20.93123771930707
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2127",
+            "T2128"
+        ]
+    },
+    {
+        "location": [
+            64.73564259460878,
+            20.971677225518413
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2129",
+            "T2130"
+        ]
+    },
+    {
+        "location": [
+            64.73960969825247,
+            20.959468562785997
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2131",
+            "T2132"
+        ]
+    },
+    {
+        "location": [
+            64.73243813677156,
+            20.955703941080213
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2133",
+            "T2134"
+        ]
+    },
+    {
+        "location": [
+            64.74113241631778,
+            20.966619940954747
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2135",
+            "T2136"
+        ]
+    },
+    {
+        "location": [
+            64.74589360667657,
+            20.977141178811497
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2137",
+            "T2138"
+        ]
+    },
+    {
+        "location": [
+            64.73875377988666,
+            20.977027966187364
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2139",
+            "T2140"
+        ]
+    },
+    {
+        "location": [
+            64.741643096463,
+            20.945720698981024
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2141",
+            "T2142"
+        ]
+    },
+    {
+        "location": [
+            64.74272196566226,
+            20.968500929776038
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2143",
+            "T2144"
+        ]
+    },
+    {
+        "location": [
+            64.74395844597996,
+            20.936181963848167
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2145",
+            "T2146"
+        ]
+    },
+    {
+        "location": [
+            64.73254015510837,
+            20.951247418816664
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2147",
+            "T2148"
+        ]
+    },
+    {
+        "location": [
+            64.73206471348047,
+            20.971898147524588
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2149",
+            "T2150"
+        ]
+    },
+    {
+        "location": [
+            64.74499518613727,
+            20.948761505026123
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2151",
+            "T2152"
+        ]
+    },
+    {
+        "location": [
+            64.74175925142312,
+            20.95682495676592
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2153",
+            "T2154"
+        ]
+    },
+    {
+        "location": [
+            64.74373957908968,
+            20.93269616014229
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2155",
+            "T2156"
+        ]
+    },
+    {
+        "location": [
+            64.73926766563143,
+            20.946594809583964
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2157",
+            "T2158"
+        ]
+    },
+    {
+        "location": [
+            64.74347023610524,
+            20.99138029149165
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2159",
+            "T2160"
+        ]
+    },
+    {
+        "location": [
+            64.73984170672648,
+            20.969176990065918
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2161",
+            "T2162"
+        ]
+    },
+    {
+        "location": [
+            64.74437002656457,
+            20.94494830029729
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2163",
+            "T2164"
+        ]
+    },
+    {
+        "location": [
+            64.73594949393474,
+            20.96691131179467
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2165",
+            "T2166"
+        ]
+    },
+    {
+        "location": [
+            64.74146930518576,
+            20.990697411835235
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2167",
+            "T2168"
+        ]
+    },
+    {
+        "location": [
+            64.73713405831379,
+            20.966349177881774
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2169",
+            "T2170"
+        ]
+    },
+    {
+        "location": [
+            64.73955059785557,
+            20.97323998953139
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2171",
+            "T2172"
+        ]
+    },
+    {
+        "location": [
+            64.74435666643261,
+            20.97762841574149
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2173",
+            "T2174"
+        ]
+    },
+    {
+        "location": [
+            64.7366458968916,
+            20.963882076181058
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2175",
+            "T2176"
+        ]
+    },
+    {
+        "location": [
+            64.74301021877777,
+            20.994625710962048
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2177",
+            "T2178"
+        ]
+    },
+    {
+        "location": [
+            64.74594149434064,
+            20.924845526270097
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2179",
+            "T2180"
+        ]
+    },
+    {
+        "location": [
+            64.73996873344838,
+            20.980499890283074
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2181",
+            "T2182"
+        ]
+    },
+    {
+        "location": [
+            64.73337073844813,
+            20.95335023338659
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2183",
+            "T2184"
+        ]
+    },
+    {
+        "location": [
+            64.74260782421922,
+            21.00577641616982
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2185",
+            "T2186"
+        ]
+    },
+    {
+        "location": [
+            64.73943838676637,
+            20.971345050516106
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2187",
+            "T2188"
+        ]
+    },
+    {
+        "location": [
+            64.74293936527269,
+            20.910381199378122
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2189",
+            "T2190"
+        ]
+    },
+    {
+        "location": [
+            64.73840496223468,
+            20.937908745944004
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2191",
+            "T2192"
+        ]
+    },
+    {
+        "location": [
+            64.73793052191583,
+            20.936093955370414
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2193",
+            "T2194"
+        ]
+    },
+    {
+        "location": [
+            64.74270159853634,
+            20.953656787790564
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2195",
+            "T2196"
+        ]
+    },
+    {
+        "location": [
+            64.7452322382487,
+            20.993960018183675
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2197",
+            "T2198"
+        ]
+    },
+    {
+        "location": [
+            64.73572269893658,
+            20.97551463628128
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2199",
+            "T2200"
+        ]
+    },
+    {
+        "location": [
+            64.730472406481,
+            20.965499798604846
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2201",
+            "T2202"
+        ]
+    },
+    {
+        "location": [
+            64.74167427233535,
+            21.004084055779394
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2203",
+            "T2204"
+        ]
+    },
+    {
+        "location": [
+            64.7401423327269,
+            20.97688595140439
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2205",
+            "T2206"
+        ]
+    },
+    {
+        "location": [
+            64.73864110401271,
+            20.93402898082116
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2207",
+            "T2208"
+        ]
+    },
+    {
+        "location": [
+            64.7334104009956,
+            20.970399686125205
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2209",
+            "T2210"
+        ]
+    },
+    {
+        "location": [
+            64.74084397621135,
+            20.99427518078705
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2211",
+            "T2212"
+        ]
+    },
+    {
+        "location": [
+            64.73646199301216,
+            20.937556369480642
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2213",
+            "T2214"
+        ]
+    },
+    {
+        "location": [
+            64.74365186982347,
+            20.91761111429588
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2215",
+            "T2216"
+        ]
+    },
+    {
+        "location": [
+            64.73787732294409,
+            20.981090779969044
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2217",
+            "T2218"
+        ]
+    },
+    {
+        "location": [
+            64.74318530859868,
+            20.965081563254557
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2219",
+            "T2220"
+        ]
+    },
+    {
+        "location": [
+            64.73341633593691,
+            20.97309730018783
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2221",
+            "T2222"
+        ]
+    },
+    {
+        "location": [
+            64.74021128556835,
+            20.963791634961563
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2223",
+            "T2224"
+        ]
+    },
+    {
+        "location": [
+            64.74001463864904,
+            20.991206009537134
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2225",
+            "T2226"
+        ]
+    },
+    {
+        "location": [
+            64.74501247002112,
+            20.99786714746437
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2227",
+            "T2228"
+        ]
+    },
+    {
+        "location": [
+            64.73989782944707,
+            20.930872902662223
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2229",
+            "T2230"
+        ]
+    },
+    {
+        "location": [
+            64.74058911848884,
+            20.936149175811643
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2231",
+            "T2232"
+        ]
+    },
+    {
+        "location": [
+            64.73676032684233,
+            20.958775604054047
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2233",
+            "T2234"
+        ]
+    },
+    {
+        "location": [
+            64.74467943037106,
+            20.981999662015077
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2235",
+            "T2236"
+        ]
+    },
+    {
+        "location": [
+            64.74492256772665,
+            20.98296449936105
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2237",
+            "T2238"
+        ]
+    },
+    {
+        "location": [
+            64.74363781938982,
+            20.98283858257565
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2239",
+            "T2240"
+        ]
+    },
+    {
+        "location": [
+            64.73903618874775,
+            20.96932699354275
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2241",
+            "T2242"
+        ]
+    },
+    {
+        "location": [
+            64.74193750601282,
+            20.93788671369135
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2243",
+            "T2244"
+        ]
+    },
+    {
+        "location": [
+            64.744525248662,
+            20.954725722564
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2245",
+            "T2246"
+        ]
+    },
+    {
+        "location": [
+            64.74197045108413,
+            20.934003753099258
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2247",
+            "T2248"
+        ]
+    },
+    {
+        "location": [
+            64.73581628002349,
+            20.953756879511367
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2249",
+            "T2250"
+        ]
+    },
+    {
+        "location": [
+            64.73595692748549,
+            20.95326441580883
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2251",
+            "T2252"
+        ]
+    },
+    {
+        "location": [
+            64.7418447093576,
+            20.99640888318055
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2253",
+            "T2254"
+        ]
+    },
+    {
+        "location": [
+            64.7408622233877,
+            20.951008976263374
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2255",
+            "T2256"
+        ]
+    },
+    {
+        "location": [
+            64.74107295594158,
+            20.991735629979587
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2257",
+            "T2258"
+        ]
+    },
+    {
+        "location": [
+            64.7401007359471,
+            20.946047214892562
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2259",
+            "T2260"
+        ]
+    },
+    {
+        "location": [
+            64.73779206819086,
+            20.965035300916004
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2261",
+            "T2262"
+        ]
+    },
+    {
+        "location": [
+            64.74598894234249,
+            20.909617876797245
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2263",
+            "T2264"
+        ]
+    },
+    {
+        "location": [
+            64.74468621288375,
+            20.948323864309547
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2265",
+            "T2266"
+        ]
+    },
+    {
+        "location": [
+            64.74019900618273,
+            20.99217989339299
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2267",
+            "T2268"
+        ]
+    },
+    {
+        "location": [
+            64.74433450920687,
+            20.966825744549162
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2269",
+            "T2270"
+        ]
+    },
+    {
+        "location": [
+            64.73480917705466,
+            20.95455323786293
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2271",
+            "T2272"
+        ]
+    },
+    {
+        "location": [
+            64.73256538528395,
+            20.968676206678357
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2273",
+            "T2274"
+        ]
+    },
+    {
+        "location": [
+            64.7463360796387,
+            20.92776660920208
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2275",
+            "T2276"
+        ]
+    },
+    {
+        "location": [
+            64.74634770241529,
+            20.997633862008097
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2277",
+            "T2278"
+        ]
+    },
+    {
+        "location": [
+            64.74200059396696,
+            20.974264761755137
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2279",
+            "T2280"
+        ]
+    },
+    {
+        "location": [
+            64.74080480903109,
+            20.97661568909596
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2281",
+            "T2282"
+        ]
+    },
+    {
+        "location": [
+            64.74427155162002,
+            20.93088656780449
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2283",
+            "T2284"
+        ]
+    },
+    {
+        "location": [
+            64.73989851872274,
+            20.964909924993457
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2285",
+            "T2286"
+        ]
+    },
+    {
+        "location": [
+            64.73032596382677,
+            20.970788440246494
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2287",
+            "T2288"
+        ]
+    },
+    {
+        "location": [
+            64.73985673708563,
+            20.96887414975733
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2289",
+            "T2290"
+        ]
+    },
+    {
+        "location": [
+            64.74745118694224,
+            20.911525649423893
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2291",
+            "T2292"
+        ]
+    },
+    {
+        "location": [
+            64.74236129491698,
+            20.915053019346143
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2293",
+            "T2294"
+        ]
+    },
+    {
+        "location": [
+            64.74240963218007,
+            20.94314743853784
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2295",
+            "T2296"
+        ]
+    },
+    {
+        "location": [
+            64.73917740927337,
+            20.954519910521235
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2297",
+            "T2298"
+        ]
+    },
+    {
+        "location": [
+            64.74132129247616,
+            20.94737634318069
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2299",
+            "T2300"
+        ]
+    },
+    {
+        "location": [
+            64.75552553044106,
+            20.982973358996702
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2301",
+            "T2302"
+        ]
+    },
+    {
+        "location": [
+            64.76765756619169,
+            20.89662955579229
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2303",
+            "T2304"
+        ]
+    },
+    {
+        "location": [
+            64.76038089294799,
+            20.953098920944253
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2305",
+            "T2306"
+        ]
+    },
+    {
+        "location": [
+            64.74604317849479,
+            21.024388948604766
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2307",
+            "T2308"
+        ]
+    },
+    {
+        "location": [
+            64.76933948686488,
+            20.910994805669713
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2309",
+            "T2310"
+        ]
+    },
+    {
+        "location": [
+            64.74918776580162,
+            21.03764686490141
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2311",
+            "T2312"
+        ]
+    },
+    {
+        "location": [
+            64.76526982398228,
+            20.90135989534327
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2313",
+            "T2314"
+        ]
+    },
+    {
+        "location": [
+            64.75076819824689,
+            21.022667434692405
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2315",
+            "T2316"
+        ]
+    },
+    {
+        "location": [
+            64.75213060918377,
+            20.92927242587753
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2317",
+            "T2318"
+        ]
+    },
+    {
+        "location": [
+            64.76110510043141,
+            20.895286720979495
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2319",
+            "T2320"
+        ]
+    },
+    {
+        "location": [
+            64.75168138861129,
+            21.02929694204698
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2321",
+            "T2322"
+        ]
+    },
+    {
+        "location": [
+            64.76092372852308,
+            20.97723699691994
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2323",
+            "T2324"
+        ]
+    },
+    {
+        "location": [
+            64.75968151233324,
+            21.021473100453598
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2325",
+            "T2326"
+        ]
+    },
+    {
+        "location": [
+            64.75642526550918,
+            20.96251505790425
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2327",
+            "T2328"
+        ]
+    },
+    {
+        "location": [
+            64.7594937274732,
+            20.91946834780683
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2329",
+            "T2330"
+        ]
+    },
+    {
+        "location": [
+            64.75521257477898,
+            20.95296137067284
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2331",
+            "T2332"
+        ]
+    },
+    {
+        "location": [
+            64.75848924907422,
+            20.887320528185032
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2333",
+            "T2334"
+        ]
+    },
+    {
+        "location": [
+            64.75859473301246,
+            20.88530014138947
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2335",
+            "T2336"
+        ]
+    },
+    {
+        "location": [
+            64.76013382246751,
+            21.012725293363378
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2337",
+            "T2338"
+        ]
+    },
+    {
+        "location": [
+            64.7697358719783,
+            20.899500371430257
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2339",
+            "T2340"
+        ]
+    },
+    {
+        "location": [
+            64.75145968089805,
+            20.969640136573364
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2341",
+            "T2342"
+        ]
+    },
+    {
+        "location": [
+            64.76294517895576,
+            20.89645943219661
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2343",
+            "T2344"
+        ]
+    },
+    {
+        "location": [
+            64.75783144836109,
+            20.937786018894272
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2345",
+            "T2346"
+        ]
+    },
+    {
+        "location": [
+            64.75067526800072,
+            20.984851813337077
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2347",
+            "T2348"
+        ]
+    },
+    {
+        "location": [
+            64.75588464097211,
+            20.898121583242613
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2349",
+            "T2350"
+        ]
+    },
+    {
+        "location": [
+            64.7223886396393,
+            21.086471118770845
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2351",
+            "T2352"
+        ]
+    },
+    {
+        "location": [
+            64.75878890396248,
+            20.896901579208585
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2353",
+            "T2354"
+        ]
+    },
+    {
+        "location": [
+            64.75695254661863,
+            20.89556008090261
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2355",
+            "T2356"
+        ]
+    },
+    {
+        "location": [
+            64.75500352398561,
+            21.001524708352903
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2357",
+            "T2358"
+        ]
+    },
+    {
+        "location": [
+            64.75515662666275,
+            20.965299316944396
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2359",
+            "T2360"
+        ]
+    },
+    {
+        "location": [
+            64.74519117964944,
+            21.03617285252224
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2361",
+            "T2362"
+        ]
+    },
+    {
+        "location": [
+            64.76012354757535,
+            20.906767517981503
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2363",
+            "T2364"
+        ]
+    },
+    {
+        "location": [
+            64.72674951700981,
+            21.07593134254802
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2365",
+            "T2366"
+        ]
+    },
+    {
+        "location": [
+            64.75678318013755,
+            20.889082721925067
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2367",
+            "T2368"
+        ]
+    },
+    {
+        "location": [
+            64.7524685747934,
+            20.957460324524906
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2369",
+            "T2370"
+        ]
+    },
+    {
+        "location": [
+            64.72782147310556,
+            21.078388199332995
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2371",
+            "T2372"
+        ]
+    },
+    {
+        "location": [
+            64.75616264829648,
+            21.03736447297046
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2373",
+            "T2374"
+        ]
+    },
+    {
+        "location": [
+            64.76075712507148,
+            20.997890988502537
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2375",
+            "T2376"
+        ]
+    },
+    {
+        "location": [
+            64.72487201233115,
+            21.07881863423063
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2377",
+            "T2378"
+        ]
+    },
+    {
+        "location": [
+            64.76349061669416,
+            20.921316286230812
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2379",
+            "T2380"
+        ]
+    },
+    {
+        "location": [
+            64.73725076577304,
+            21.048532418775103
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2381",
+            "T2382"
+        ]
+    },
+    {
+        "location": [
+            64.76081614895305,
+            20.905845621104625
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2383",
+            "T2384"
+        ]
+    },
+    {
+        "location": [
+            64.76625723811223,
+            20.897364227478278
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2385",
+            "T2386"
+        ]
+    },
+    {
+        "location": [
+            64.75943878727185,
+            20.942702024346627
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2387",
+            "T2388"
+        ]
+    },
+    {
+        "location": [
+            64.7218871348592,
+            21.086904379817003
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2389",
+            "T2390"
+        ]
+    },
+    {
+        "location": [
+            64.75952165496277,
+            20.89518293967614
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2391",
+            "T2392"
+        ]
+    },
+    {
+        "location": [
+            64.75009563068505,
+            20.96082246262804
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2393",
+            "T2394"
+        ]
+    },
+    {
+        "location": [
+            64.75486023921898,
+            20.952877983058144
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2395",
+            "T2396"
+        ]
+    },
+    {
+        "location": [
+            64.76169516046699,
+            20.894440450269066
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2397",
+            "T2398"
+        ]
+    },
+    {
+        "location": [
+            64.75682864469498,
+            20.914152642550167
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2399",
+            "T2400"
+        ]
+    },
+    {
+        "location": [
+            64.74179125377418,
+            21.041414135527077
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2401",
+            "T2402"
+        ]
+    },
+    {
+        "location": [
+            64.75565024954959,
+            20.91608664717261
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2403",
+            "T2404"
+        ]
+    },
+    {
+        "location": [
+            64.75301209905624,
+            21.00794556121795
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2405",
+            "T2406"
+        ]
+    },
+    {
+        "location": [
+            64.76131137698108,
+            20.927903611520556
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2407",
+            "T2408"
+        ]
+    },
+    {
+        "location": [
+            64.76334780023775,
+            20.919955317792013
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2409",
+            "T2410"
+        ]
+    },
+    {
+        "location": [
+            64.75138434152711,
+            21.016333684805364
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2411",
+            "T2412"
+        ]
+    },
+    {
+        "location": [
+            64.7449498908768,
+            21.02329353333528
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2413",
+            "T2414"
+        ]
+    },
+    {
+        "location": [
+            64.76298010638278,
+            20.9027796669763
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2415",
+            "T2416"
+        ]
+    },
+    {
+        "location": [
+            64.7201740124517,
+            21.093091212315045
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2417",
+            "T2418"
+        ]
+    },
+    {
+        "location": [
+            64.75325477102425,
+            21.032583106303974
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2419",
+            "T2420"
+        ]
+    },
+    {
+        "location": [
+            64.75723771782798,
+            20.952891612602862
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2421",
+            "T2422"
+        ]
+    },
+    {
+        "location": [
+            64.75763184970621,
+            20.964307500338762
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2423",
+            "T2424"
+        ]
+    },
+    {
+        "location": [
+            64.75796575286934,
+            20.88404131752303
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2425",
+            "T2426"
+        ]
+    },
+    {
+        "location": [
+            64.72176071570945,
+            21.09893186166188
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2427",
+            "T2428"
+        ]
+    },
+    {
+        "location": [
+            64.73824494532334,
+            21.051434813957187
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2429",
+            "T2430"
+        ]
+    },
+    {
+        "location": [
+            64.74218284673046,
+            21.038939409079866
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2431",
+            "T2432"
+        ]
+    },
+    {
+        "location": [
+            64.74054777900137,
+            21.036848578162395
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2433",
+            "T2434"
+        ]
+    },
+    {
+        "location": [
+            64.7523392224424,
+            20.958673954765388
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2435",
+            "T2436"
+        ]
+    },
+    {
+        "location": [
+            64.7520611672641,
+            21.038961703557053
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2437",
+            "T2438"
+        ]
+    },
+    {
+        "location": [
+            64.75931923202957,
+            21.01556202746692
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2439",
+            "T2440"
+        ]
+    },
+    {
+        "location": [
+            64.74884908603674,
+            21.006725514311423
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2441",
+            "T2442"
+        ]
+    },
+    {
+        "location": [
+            64.75822970676532,
+            20.97813408257531
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2443",
+            "T2444"
+        ]
+    },
+    {
+        "location": [
+            64.76408666502992,
+            20.904609847503608
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2445",
+            "T2446"
+        ]
+    },
+    {
+        "location": [
+            64.76102496039574,
+            21.013256056003712
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2447",
+            "T2448"
+        ]
+    },
+    {
+        "location": [
+            64.75672640522677,
+            21.022169687361348
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2449",
+            "T2450"
+        ]
+    },
+    {
+        "location": [
+            64.75975999101664,
+            20.978611287144552
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2451",
+            "T2452"
+        ]
+    },
+    {
+        "location": [
+            64.75041592504108,
+            20.985318691873726
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2453",
+            "T2454"
+        ]
+    },
+    {
+        "location": [
+            64.75747759583132,
+            20.94228635907845
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2455",
+            "T2456"
+        ]
+    },
+    {
+        "location": [
+            64.74973053450088,
+            21.046937259486103
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2457",
+            "T2458"
+        ]
+    },
+    {
+        "location": [
+            64.7720878939184,
+            20.89766484452624
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2459",
+            "T2460"
+        ]
+    },
+    {
+        "location": [
+            64.76087673243181,
+            20.910675124635972
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2461",
+            "T2462"
+        ]
+    },
+    {
+        "location": [
+            64.75575591538606,
+            20.96299668879415
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2463",
+            "T2464"
+        ]
+    },
+    {
+        "location": [
+            64.75053921561256,
+            21.02881454802645
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2465",
+            "T2466"
+        ]
+    },
+    {
+        "location": [
+            64.75635542938558,
+            20.935939587673598
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2467",
+            "T2468"
+        ]
+    },
+    {
+        "location": [
+            64.75583622532565,
+            20.97462245963142
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2469",
+            "T2470"
+        ]
+    },
+    {
+        "location": [
+            64.72778855477279,
+            21.075464246249368
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2471",
+            "T2472"
+        ]
+    },
+    {
+        "location": [
+            64.75849694646706,
+            21.00534120199036
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2473",
+            "T2474"
+        ]
+    },
+    {
+        "location": [
+            64.75021758192581,
+            20.987021034713855
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2475",
+            "T2476"
+        ]
+    },
+    {
+        "location": [
+            64.73679335045655,
+            21.043857617380922
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2477",
+            "T2478"
+        ]
+    },
+    {
+        "location": [
+            64.75054811586095,
+            20.94189248379097
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2479",
+            "T2480"
+        ]
+    },
+    {
+        "location": [
+            64.733722319013,
+            21.056015553448525
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2481",
+            "T2482"
+        ]
+    },
+    {
+        "location": [
+            64.75535880897584,
+            21.009009567062666
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2483",
+            "T2484"
+        ]
+    },
+    {
+        "location": [
+            64.76005593565522,
+            20.971573807596133
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2485",
+            "T2486"
+        ]
+    },
+    {
+        "location": [
+            64.7432340961039,
+            21.03500118367306
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2487",
+            "T2488"
+        ]
+    },
+    {
+        "location": [
+            64.7514841584468,
+            20.955898065642828
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2489",
+            "T2490"
+        ]
+    },
+    {
+        "location": [
+            64.75516859647577,
+            20.970218414372304
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2491",
+            "T2492"
+        ]
+    },
+    {
+        "location": [
+            64.7550493972555,
+            20.90781446791703
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2493",
+            "T2494"
+        ]
+    },
+    {
+        "location": [
+            64.73540391502581,
+            21.052137780388456
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2495",
+            "T2496"
+        ]
+    },
+    {
+        "location": [
+            64.764594325959,
+            20.900740303177784
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2497",
+            "T2498"
+        ]
+    },
+    {
+        "location": [
+            64.75611625613278,
+            21.000785145399266
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2499",
+            "T2500"
+        ]
+    },
+    {
+        "location": [
+            64.72429161182426,
+            21.080254891539873
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2501",
+            "T2502"
+        ]
+    },
+    {
+        "location": [
+            64.75206317998074,
+            21.003556958319944
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2503",
+            "T2504"
+        ]
+    },
+    {
+        "location": [
+            64.75955086554,
+            21.02256430596417
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2505",
+            "T2506"
+        ]
+    },
+    {
+        "location": [
+            64.74835824873907,
+            21.02431875696038
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2507",
+            "T2508"
+        ]
+    },
+    {
+        "location": [
+            64.75552529642694,
+            20.99323277620635
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2509",
+            "T2510"
+        ]
+    },
+    {
+        "location": [
+            64.74940213581057,
+            20.964608911116862
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2511",
+            "T2512"
+        ]
+    },
+    {
+        "location": [
+            64.7232237811757,
+            21.091858042031856
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2513",
+            "T2514"
+        ]
+    },
+    {
+        "location": [
+            64.75044195784717,
+            20.97570896003315
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2515",
+            "T2516"
+        ]
+    },
+    {
+        "location": [
+            64.75293387363558,
+            20.976249210238898
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2517",
+            "T2518"
+        ]
+    },
+    {
+        "location": [
+            64.7639846365297,
+            20.90426880510815
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2519",
+            "T2520"
+        ]
+    },
+    {
+        "location": [
+            64.75521264629263,
+            21.018586895752378
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2521",
+            "T2522"
+        ]
+    },
+    {
+        "location": [
+            64.73768812732357,
+            21.051707076012786
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2523",
+            "T2524"
+        ]
+    },
+    {
+        "location": [
+            64.76352885547526,
+            21.01504484508983
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2525",
+            "T2526"
+        ]
+    },
+    {
+        "location": [
+            64.75955916777518,
+            20.98697551686931
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2527",
+            "T2528"
+        ]
+    },
+    {
+        "location": [
+            64.76107800522901,
+            20.97945939319132
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2529",
+            "T2530"
+        ]
+    },
+    {
+        "location": [
+            64.75321893751713,
+            20.984299735649167
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2531",
+            "T2532"
+        ]
+    },
+    {
+        "location": [
+            64.72487116552432,
+            21.082697285492603
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2533",
+            "T2534"
+        ]
+    },
+    {
+        "location": [
+            64.77638134801393,
+            20.892773572967098
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2535",
+            "T2536"
+        ]
+    },
+    {
+        "location": [
+            64.74096467310576,
+            21.035377535153398
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2537",
+            "T2538"
+        ]
+    },
+    {
+        "location": [
+            64.75664801183868,
+            20.979103324401315
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2539",
+            "T2540"
+        ]
+    },
+    {
+        "location": [
+            64.75373493263824,
+            20.985250926911494
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2541",
+            "T2542"
+        ]
+    },
+    {
+        "location": [
+            64.72713911210043,
+            21.078130874917658
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2543",
+            "T2544"
+        ]
+    },
+    {
+        "location": [
+            64.74653369743382,
+            21.033064229907957
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2545",
+            "T2546"
+        ]
+    },
+    {
+        "location": [
+            64.75716318074457,
+            20.916985617260334
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2547",
+            "T2548"
+        ]
+    },
+    {
+        "location": [
+            64.73679558336923,
+            21.039107918551835
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2549",
+            "T2550"
+        ]
+    },
+    {
+        "location": [
+            64.75363718617434,
+            21.03906822532564
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2551",
+            "T2552"
+        ]
+    },
+    {
+        "location": [
+            64.75958212898425,
+            21.00688915710071
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2553",
+            "T2554"
+        ]
+    },
+    {
+        "location": [
+            64.7391893631386,
+            21.045788219337986
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2555",
+            "T2556"
+        ]
+    },
+    {
+        "location": [
+            64.76181763235404,
+            20.925602281640938
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2557",
+            "T2558"
+        ]
+    },
+    {
+        "location": [
+            64.74969689374606,
+            21.001154535372745
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2559",
+            "T2560"
+        ]
+    },
+    {
+        "location": [
+            64.76976329860457,
+            20.907713602543918
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2561",
+            "T2562"
+        ]
+    },
+    {
+        "location": [
+            64.73361633811213,
+            21.048010188789146
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2563",
+            "T2564"
+        ]
+    },
+    {
+        "location": [
+            64.74945704742122,
+            21.041042595604242
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2565",
+            "T2566"
+        ]
+    },
+    {
+        "location": [
+            64.76849204879184,
+            20.899845062357304
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2567",
+            "T2568"
+        ]
+    },
+    {
+        "location": [
+            64.75956121052445,
+            20.903408881082697
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2569",
+            "T2570"
+        ]
+    },
+    {
+        "location": [
+            64.7603857596794,
+            20.988627294878846
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2571",
+            "T2572"
+        ]
+    },
+    {
+        "location": [
+            64.76701032936147,
+            20.91272739841069
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2573",
+            "T2574"
+        ]
+    },
+    {
+        "location": [
+            64.75359376374871,
+            20.993827957947758
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2575",
+            "T2576"
+        ]
+    },
+    {
+        "location": [
+            64.75367383561388,
+            20.945993198280924
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2577",
+            "T2578"
+        ]
+    },
+    {
+        "location": [
+            64.77615003426462,
+            20.884583987613546
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2579",
+            "T2580"
+        ]
+    },
+    {
+        "location": [
+            64.74873447644805,
+            21.019443687788844
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2581",
+            "T2582"
+        ]
+    },
+    {
+        "location": [
+            64.74936482885143,
+            20.987050663899584
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2583",
+            "T2584"
+        ]
+    },
+    {
+        "location": [
+            64.75593090094779,
+            20.936949131098665
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2585",
+            "T2586"
+        ]
+    },
+    {
+        "location": [
+            64.76457810627163,
+            20.900021853510943
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2587",
+            "T2588"
+        ]
+    },
+    {
+        "location": [
+            64.75478007004195,
+            21.001990978729157
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2589",
+            "T2590"
+        ]
+    },
+    {
+        "location": [
+            64.76793242535781,
+            20.908103006414457
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2591",
+            "T2592"
+        ]
+    },
+    {
+        "location": [
+            64.74703805704037,
+            21.028653999363083
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2593",
+            "T2594"
+        ]
+    },
+    {
+        "location": [
+            64.7227189044088,
+            21.09878892599229
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2595",
+            "T2596"
+        ]
+    },
+    {
+        "location": [
+            64.75230061436001,
+            20.949590966152122
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2597",
+            "T2598"
+        ]
+    },
+    {
+        "location": [
+            64.75459306441533,
+            20.984612232783537
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2599",
+            "T2600"
+        ]
+    },
+    {
+        "location": [
+            64.71934616504063,
+            21.10304870127393
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2601",
+            "T2602"
+        ]
+    },
+    {
+        "location": [
+            64.75871680922059,
+            20.980663565978105
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2603",
+            "T2604"
+        ]
+    },
+    {
+        "location": [
+            64.75136974449842,
+            20.951942193038555
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2605",
+            "T2606"
+        ]
+    },
+    {
+        "location": [
+            64.75459048154119,
+            20.934044511645876
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2607",
+            "T2608"
+        ]
+    },
+    {
+        "location": [
+            64.76641803534406,
+            20.891758890188733
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2609",
+            "T2610"
+        ]
+    },
+    {
+        "location": [
+            64.7557205642671,
+            20.977221484637198
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2611",
+            "T2612"
+        ]
+    },
+    {
+        "location": [
+            64.75182779822781,
+            20.931747781346065
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2613",
+            "T2614"
+        ]
+    },
+    {
+        "location": [
+            64.75752913154808,
+            20.88996711723529
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2615",
+            "T2616"
+        ]
+    },
+    {
+        "location": [
+            64.77580512057152,
+            20.88809325720993
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2617",
+            "T2618"
+        ]
+    },
+    {
+        "location": [
+            64.75048236988121,
+            20.98440889752932
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2619",
+            "T2620"
+        ]
+    },
+    {
+        "location": [
+            64.75546309300685,
+            21.015882728844065
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2621",
+            "T2622"
+        ]
+    },
+    {
+        "location": [
+            64.73417282180057,
+            21.049457838620498
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2623",
+            "T2624"
+        ]
+    },
+    {
+        "location": [
+            64.75527156953859,
+            20.90426894733994
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2625",
+            "T2626"
+        ]
+    },
+    {
+        "location": [
+            64.75149401002433,
+            20.96674402455617
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2627",
+            "T2628"
+        ]
+    },
+    {
+        "location": [
+            64.7617810581817,
+            21.00796830288453
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2629",
+            "T2630"
+        ]
+    },
+    {
+        "location": [
+            64.7524918616943,
+            20.939437309412757
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2631",
+            "T2632"
+        ]
+    },
+    {
+        "location": [
+            64.75000186474152,
+            21.010865768953238
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2633",
+            "T2634"
+        ]
+    },
+    {
+        "location": [
+            64.76268652174289,
+            21.00816549056804
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2635",
+            "T2636"
+        ]
+    },
+    {
+        "location": [
+            64.75439971049629,
+            21.009364349286614
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2637",
+            "T2638"
+        ]
+    },
+    {
+        "location": [
+            64.75878395664891,
+            20.99697964923325
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2639",
+            "T2640"
+        ]
+    },
+    {
+        "location": [
+            64.75350134778388,
+            21.00744777632248
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2641",
+            "T2642"
+        ]
+    },
+    {
+        "location": [
+            64.71993475096187,
+            21.09948122209835
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2643",
+            "T2644"
+        ]
+    },
+    {
+        "location": [
+            64.75269128754593,
+            21.03668897718117
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2645",
+            "T2646"
+        ]
+    },
+    {
+        "location": [
+            64.7521329877021,
+            20.932632570783472
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2647",
+            "T2648"
+        ]
+    },
+    {
+        "location": [
+            64.77731989284737,
+            20.89344786178792
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2649",
+            "T2650"
+        ]
+    },
+    {
+        "location": [
+            64.75520989588281,
+            20.892473802541947
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2651",
+            "T2652"
+        ]
+    },
+    {
+        "location": [
+            64.75809134651838,
+            20.88754422131781
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2653",
+            "T2654"
+        ]
+    },
+    {
+        "location": [
+            64.75821552391588,
+            20.96039883861028
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2655",
+            "T2656"
+        ]
+    },
+    {
+        "location": [
+            64.75674874098597,
+            20.90541359268871
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2657",
+            "T2658"
+        ]
+    },
+    {
+        "location": [
+            64.71989755609668,
+            21.102672065642437
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2659",
+            "T2660"
+        ]
+    },
+    {
+        "location": [
+            64.74979697520561,
+            20.974504105138188
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2661",
+            "T2662"
+        ]
+    },
+    {
+        "location": [
+            64.73824899401365,
+            21.042920264814814
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2663",
+            "T2664"
+        ]
+    },
+    {
+        "location": [
+            64.72279828608931,
+            21.090490390261195
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2665",
+            "T2666"
+        ]
+    },
+    {
+        "location": [
+            64.75724127055913,
+            20.934300634459444
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2667",
+            "T2668"
+        ]
+    },
+    {
+        "location": [
+            64.7504759978038,
+            21.000201713987995
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2669",
+            "T2670"
+        ]
+    },
+    {
+        "location": [
+            64.7550071388548,
+            21.039057663198932
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2671",
+            "T2672"
+        ]
+    },
+    {
+        "location": [
+            64.75020173551592,
+            20.949784727555457
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2673",
+            "T2674"
+        ]
+    },
+    {
+        "location": [
+            64.73454210474094,
+            21.056842510576114
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2675",
+            "T2676"
+        ]
+    },
+    {
+        "location": [
+            64.75624577572412,
+            20.90143865318257
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2677",
+            "T2678"
+        ]
+    },
+    {
+        "location": [
+            64.75036963307193,
+            21.011787947428093
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2679",
+            "T2680"
+        ]
+    },
+    {
+        "location": [
+            64.75275002662936,
+            20.950644212168626
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2681",
+            "T2682"
+        ]
+    },
+    {
+        "location": [
+            64.76141071092806,
+            20.96152598647609
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2683",
+            "T2684"
+        ]
+    },
+    {
+        "location": [
+            64.75577691729956,
+            20.967602796177424
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2685",
+            "T2686"
+        ]
+    },
+    {
+        "location": [
+            64.74543848843797,
+            21.0145127137478
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2687",
+            "T2688"
+        ]
+    },
+    {
+        "location": [
+            64.74972017768428,
+            21.013039978098057
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2689",
+            "T2690"
+        ]
+    },
+    {
+        "location": [
+            64.75020776113087,
+            21.021222174028818
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2691",
+            "T2692"
+        ]
+    },
+    {
+        "location": [
+            64.71735828424642,
+            21.10057275697179
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2693",
+            "T2694"
+        ]
+    },
+    {
+        "location": [
+            64.75724700660433,
+            20.88675636992921
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2695",
+            "T2696"
+        ]
+    },
+    {
+        "location": [
+            64.74838302382484,
+            21.053570749677775
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2697",
+            "T2698"
+        ]
+    },
+    {
+        "location": [
+            64.75373598950532,
+            20.94366008143271
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2699",
+            "T2700"
+        ]
+    },
+    {
+        "location": [
+            64.74239732079292,
+            21.029202064593612
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2701",
+            "T2702"
+        ]
+    },
+    {
+        "location": [
+            64.76899132014289,
+            20.909441195692267
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2703",
+            "T2704"
+        ]
+    },
+    {
+        "location": [
+            64.76130463624713,
+            20.892025276974678
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2705",
+            "T2706"
+        ]
+    },
+    {
+        "location": [
+            64.758452831584,
+            20.98322013805862
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2707",
+            "T2708"
+        ]
+    },
+    {
+        "location": [
+            64.75562562982212,
+            20.97178088342915
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2709",
+            "T2710"
+        ]
+    },
+    {
+        "location": [
+            64.75764022345548,
+            20.944353266312685
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2711",
+            "T2712"
+        ]
+    },
+    {
+        "location": [
+            64.75020172491011,
+            20.96390971527309
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2713",
+            "T2714"
+        ]
+    },
+    {
+        "location": [
+            64.75802332937656,
+            20.96361551470222
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2715",
+            "T2716"
+        ]
+    },
+    {
+        "location": [
+            64.7656762272908,
+            20.896885727137615
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2717",
+            "T2718"
+        ]
+    },
+    {
+        "location": [
+            64.75208295847052,
+            20.94788494737
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2719",
+            "T2720"
+        ]
+    },
+    {
+        "location": [
+            64.75586328457702,
+            21.038918388683687
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2721",
+            "T2722"
+        ]
+    },
+    {
+        "location": [
+            64.72289279507359,
+            21.097233908502577
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2723",
+            "T2724"
+        ]
+    },
+    {
+        "location": [
+            64.76393095480687,
+            20.89547060583547
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2725",
+            "T2726"
+        ]
+    },
+    {
+        "location": [
+            64.7596761800599,
+            21.034188118624186
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2727",
+            "T2728"
+        ]
+    },
+    {
+        "location": [
+            64.76990475285025,
+            20.90458380600316
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2729",
+            "T2730"
+        ]
+    },
+    {
+        "location": [
+            64.7582106313602,
+            20.88372321851927
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2731",
+            "T2732"
+        ]
+    },
+    {
+        "location": [
+            64.74953736631832,
+            20.9557319229447
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2733",
+            "T2734"
+        ]
+    },
+    {
+        "location": [
+            64.75760661492488,
+            20.992487184434122
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2735",
+            "T2736"
+        ]
+    },
+    {
+        "location": [
+            64.7608829878025,
+            20.904495384488687
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2737",
+            "T2738"
+        ]
+    },
+    {
+        "location": [
+            64.75822857418176,
+            20.92500564908103
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2739",
+            "T2740"
+        ]
+    },
+    {
+        "location": [
+            64.74383658238155,
+            21.019157019869773
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2741",
+            "T2742"
+        ]
+    },
+    {
+        "location": [
+            64.7472944995153,
+            21.028470886947325
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2743",
+            "T2744"
+        ]
+    },
+    {
+        "location": [
+            64.75791502154482,
+            20.90789120479542
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2745",
+            "T2746"
+        ]
+    },
+    {
+        "location": [
+            64.75129721507697,
+            21.02604351164057
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2747",
+            "T2748"
+        ]
+    },
+    {
+        "location": [
+            64.74953104743705,
+            20.939897633642378
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2749",
+            "T2750"
+        ]
+    },
+    {
+        "location": [
+            64.75371331842383,
+            20.952020760044178
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2751",
+            "T2752"
+        ]
+    },
+    {
+        "location": [
+            64.75340945997628,
+            21.04034438689333
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2753",
+            "T2754"
+        ]
+    },
+    {
+        "location": [
+            64.75418220207543,
+            20.941200835644217
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2755",
+            "T2756"
+        ]
+    },
+    {
+        "location": [
+            64.74947570486846,
+            21.00035836199765
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2757",
+            "T2758"
+        ]
+    },
+    {
+        "location": [
+            64.76422292620744,
+            20.906951788838253
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2759",
+            "T2760"
+        ]
+    },
+    {
+        "location": [
+            64.75791397575627,
+            20.982229363540085
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2761",
+            "T2762"
+        ]
+    },
+    {
+        "location": [
+            64.75816602569094,
+            20.90036168366136
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2763",
+            "T2764"
+        ]
+    },
+    {
+        "location": [
+            64.75001286038521,
+            20.950642927454965
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2765",
+            "T2766"
+        ]
+    },
+    {
+        "location": [
+            64.76505607975953,
+            20.90415214266972
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2767",
+            "T2768"
+        ]
+    },
+    {
+        "location": [
+            64.75098661337648,
+            21.000316333375693
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2769",
+            "T2770"
+        ]
+    },
+    {
+        "location": [
+            64.75362561173245,
+            20.926209922657893
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2771",
+            "T2772"
+        ]
+    },
+    {
+        "location": [
+            64.76291022552655,
+            21.006951622697763
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2773",
+            "T2774"
+        ]
+    },
+    {
+        "location": [
+            64.75146634945442,
+            20.938013561057897
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2775",
+            "T2776"
+        ]
+    },
+    {
+        "location": [
+            64.74943910086022,
+            20.978796659524832
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2777",
+            "T2778"
+        ]
+    },
+    {
+        "location": [
+            64.73563545112424,
+            21.054639930984155
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2779",
+            "T2780"
+        ]
+    },
+    {
+        "location": [
+            64.76013528268933,
+            20.91401600055085
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2781",
+            "T2782"
+        ]
+    },
+    {
+        "location": [
+            64.74964768593979,
+            20.972516312999865
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2783",
+            "T2784"
+        ]
+    },
+    {
+        "location": [
+            64.76841299707853,
+            20.915137818878048
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2785",
+            "T2786"
+        ]
+    },
+    {
+        "location": [
+            64.75718369177635,
+            20.89282184318444
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2787",
+            "T2788"
+        ]
+    },
+    {
+        "location": [
+            64.73782923245102,
+            21.046956398922504
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2789",
+            "T2790"
+        ]
+    },
+    {
+        "location": [
+            64.75470465084302,
+            21.012183367434346
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2791",
+            "T2792"
+        ]
+    },
+    {
+        "location": [
+            64.75585100616213,
+            20.96993053101857
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2793",
+            "T2794"
+        ]
+    },
+    {
+        "location": [
+            64.75827929368523,
+            20.92076443970982
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2795",
+            "T2796"
+        ]
+    },
+    {
+        "location": [
+            64.7501803135241,
+            20.956208599587217
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2797",
+            "T2798"
+        ]
+    },
+    {
+        "location": [
+            64.75794758671886,
+            20.93062153351464
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2799",
+            "T2800"
+        ]
+    },
+    {
+        "location": [
+            64.75284766931614,
+            20.964840657045603
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2801",
+            "T2802"
+        ]
+    },
+    {
+        "location": [
+            64.75800638748882,
+            20.997562054930835
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2803",
+            "T2804"
+        ]
+    },
+    {
+        "location": [
+            64.7616232068595,
+            20.907893202048545
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2805",
+            "T2806"
+        ]
+    },
+    {
+        "location": [
+            64.75576688814806,
+            20.900174290430506
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2807",
+            "T2808"
+        ]
+    },
+    {
+        "location": [
+            64.75270389846307,
+            20.97785052048526
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2809",
+            "T2810"
+        ]
+    },
+    {
+        "location": [
+            64.74865164869607,
+            21.005650376792275
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2811",
+            "T2812"
+        ]
+    },
+    {
+        "location": [
+            64.76045751360412,
+            20.927960882842072
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2813",
+            "T2814"
+        ]
+    },
+    {
+        "location": [
+            64.75340326757293,
+            21.01994453590241
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2815",
+            "T2816"
+        ]
+    },
+    {
+        "location": [
+            64.75059723279904,
+            20.988622060024085
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2817",
+            "T2818"
+        ]
+    },
+    {
+        "location": [
+            64.75789855988202,
+            20.899094525187277
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2819",
+            "T2820"
+        ]
+    },
+    {
+        "location": [
+            64.77272204809104,
+            20.8923012860848
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2821",
+            "T2822"
+        ]
+    },
+    {
+        "location": [
+            64.75122088928262,
+            20.95171990008989
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2823",
+            "T2824"
+        ]
+    },
+    {
+        "location": [
+            64.7700367291637,
+            21.024218474628917
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2825",
+            "T2826"
+        ]
+    },
+    {
+        "location": [
+            64.75759479146535,
+            20.932617660751248
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2827",
+            "T2828"
+        ]
+    },
+    {
+        "location": [
+            64.7226370806445,
+            21.094650386400723
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2829",
+            "T2830"
+        ]
+    },
+    {
+        "location": [
+            64.75160807394822,
+            20.968093733084654
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2831",
+            "T2832"
+        ]
+    },
+    {
+        "location": [
+            64.72434692909071,
+            21.090559621621903
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2833",
+            "T2834"
+        ]
+    },
+    {
+        "location": [
+            64.77255843532743,
+            20.89440305470469
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2835",
+            "T2836"
+        ]
+    },
+    {
+        "location": [
+            64.73373198073958,
+            21.054606135005677
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2837",
+            "T2838"
+        ]
+    },
+    {
+        "location": [
+            64.74879794282833,
+            21.021874727513907
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2839",
+            "T2840"
+        ]
+    },
+    {
+        "location": [
+            64.76362214181255,
+            20.902347369671705
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2841",
+            "T2842"
+        ]
+    },
+    {
+        "location": [
+            64.75859195797803,
+            20.889874194889284
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2843",
+            "T2844"
+        ]
+    },
+    {
+        "location": [
+            64.75100082038304,
+            21.042026372817368
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2845",
+            "T2846"
+        ]
+    },
+    {
+        "location": [
+            64.74415870042289,
+            21.037101481830355
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2847",
+            "T2848"
+        ]
+    },
+    {
+        "location": [
+            64.77431570186349,
+            20.894543894375968
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2849",
+            "T2850"
+        ]
+    },
+    {
+        "location": [
+            64.75069009045721,
+            20.939102465611807
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2851",
+            "T2852"
+        ]
+    },
+    {
+        "location": [
+            64.76029098121127,
+            20.891201920288072
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2853",
+            "T2854"
+        ]
+    },
+    {
+        "location": [
+            64.75506467158559,
+            21.02154042554552
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2855",
+            "T2856"
+        ]
+    },
+    {
+        "location": [
+            64.76050417320691,
+            20.957754949337577
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2857",
+            "T2858"
+        ]
+    },
+    {
+        "location": [
+            64.75803744680772,
+            20.904556589170163
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2859",
+            "T2860"
+        ]
+    },
+    {
+        "location": [
+            64.72275512551359,
+            21.08952360941737
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2861",
+            "T2862"
+        ]
+    },
+    {
+        "location": [
+            64.75889788723757,
+            20.906646537603695
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2863",
+            "T2864"
+        ]
+    },
+    {
+        "location": [
+            64.72711281157883,
+            21.07267659800946
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2865",
+            "T2866"
+        ]
+    },
+    {
+        "location": [
+            64.75304450658584,
+            20.95902147665774
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2867",
+            "T2868"
+        ]
+    },
+    {
+        "location": [
+            64.75073069044488,
+            21.03235806950556
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2869",
+            "T2870"
+        ]
+    },
+    {
+        "location": [
+            64.75299292240153,
+            21.02752901526336
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2871",
+            "T2872"
+        ]
+    },
+    {
+        "location": [
+            64.74772764453907,
+            21.055052083507437
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2873",
+            "T2874"
+        ]
+    },
+    {
+        "location": [
+            64.76145466299755,
+            20.9715633140982
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2875",
+            "T2876"
+        ]
+    },
+    {
+        "location": [
+            64.77271794453715,
+            20.89501874031355
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2877",
+            "T2878"
+        ]
+    },
+    {
+        "location": [
+            64.75571850969311,
+            21.02953192613227
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2879",
+            "T2880"
+        ]
+    },
+    {
+        "location": [
+            64.75107819293135,
+            21.022124674794753
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2881",
+            "T2882"
+        ]
+    },
+    {
+        "location": [
+            64.75900746239763,
+            20.94979266508679
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2883",
+            "T2884"
+        ]
+    },
+    {
+        "location": [
+            64.75569279404912,
+            20.923616877353812
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2885",
+            "T2886"
+        ]
+    },
+    {
+        "location": [
+            64.76711161337808,
+            20.900681694126906
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2887",
+            "T2888"
+        ]
+    },
+    {
+        "location": [
+            64.76142241186824,
+            21.01373540333902
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2889",
+            "T2890"
+        ]
+    },
+    {
+        "location": [
+            64.76605210430888,
+            20.900911272005313
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2891",
+            "T2892"
+        ]
+    },
+    {
+        "location": [
+            64.76818018793428,
+            20.896626006645146
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2893",
+            "T2894"
+        ]
+    },
+    {
+        "location": [
+            64.7712432891019,
+            20.892226987031655
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2895",
+            "T2896"
+        ]
+    },
+    {
+        "location": [
+            64.75506675573706,
+            20.954293919284034
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2897",
+            "T2898"
+        ]
+    },
+    {
+        "location": [
+            64.77060000104231,
+            20.895604177840298
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2899",
+            "T2900"
+        ]
+    },
+    {
+        "location": [
+            64.75095895466674,
+            20.958626205897488
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2901",
+            "T2902"
+        ]
+    },
+    {
+        "location": [
+            64.75516074882437,
+            20.98838289719527
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2903",
+            "T2904"
+        ]
+    },
+    {
+        "location": [
+            64.74849619788695,
+            21.02417410435786
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2905",
+            "T2906"
+        ]
+    },
+    {
+        "location": [
+            64.76195942512035,
+            20.896875819651502
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2907",
+            "T2908"
+        ]
+    },
+    {
+        "location": [
+            64.75448113455104,
+            20.978230477326022
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2909",
+            "T2910"
+        ]
+    },
+    {
+        "location": [
+            64.76131249156917,
+            20.929199887437292
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2911",
+            "T2912"
+        ]
+    },
+    {
+        "location": [
+            64.75966619930497,
+            21.037156489945986
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2913",
+            "T2914"
+        ]
+    },
+    {
+        "location": [
+            64.75329247332742,
+            20.99362999555742
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2915",
+            "T2916"
+        ]
+    },
+    {
+        "location": [
+            64.7589134118734,
+            20.984007060663348
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2917",
+            "T2918"
+        ]
+    },
+    {
+        "location": [
+            64.75307652750391,
+            20.94710703424726
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2919",
+            "T2920"
+        ]
+    },
+    {
+        "location": [
+            64.7414792586923,
+            21.036356537034624
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2921",
+            "T2922"
+        ]
+    },
+    {
+        "location": [
+            64.74564628013438,
+            21.023157916535148
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2923",
+            "T2924"
+        ]
+    },
+    {
+        "location": [
+            64.75529517704034,
+            20.97997485053134
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2925",
+            "T2926"
+        ]
+    },
+    {
+        "location": [
+            64.77515367868178,
+            20.887174691865685
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2927",
+            "T2928"
+        ]
+    },
+    {
+        "location": [
+            64.75911626610804,
+            21.005674367749307
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2929",
+            "T2930"
+        ]
+    },
+    {
+        "location": [
+            64.7398775147258,
+            21.04588469566052
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2931",
+            "T2932"
+        ]
+    },
+    {
+        "location": [
+            64.75774122870634,
+            20.910987722629507
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2933",
+            "T2934"
+        ]
+    },
+    {
+        "location": [
+            64.76894469759871,
+            20.89054779453548
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2935",
+            "T2936"
+        ]
+    },
+    {
+        "location": [
+            64.75142464345736,
+            20.95389229038811
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2937",
+            "T2938"
+        ]
+    },
+    {
+        "location": [
+            64.74610984327438,
+            21.026691486837628
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2939",
+            "T2940"
+        ]
+    },
+    {
+        "location": [
+            64.75433621273628,
+            20.909117788759332
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2941",
+            "T2942"
+        ]
+    },
+    {
+        "location": [
+            64.76405965487659,
+            20.91229346004204
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2943",
+            "T2944"
+        ]
+    },
+    {
+        "location": [
+            64.75124772163252,
+            21.005365974924835
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2945",
+            "T2946"
+        ]
+    },
+    {
+        "location": [
+            64.73551179559797,
+            21.052078825542676
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2947",
+            "T2948"
+        ]
+    },
+    {
+        "location": [
+            64.76537505012693,
+            20.90373596776644
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2949",
+            "T2950"
+        ]
+    },
+    {
+        "location": [
+            64.75970056907174,
+            20.943816686102277
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2951",
+            "T2952"
+        ]
+    },
+    {
+        "location": [
+            64.75677372692198,
+            20.89911154545838
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2953",
+            "T2954"
+        ]
+    },
+    {
+        "location": [
+            64.72352985504382,
+            21.090588476534833
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2955",
+            "T2956"
+        ]
+    },
+    {
+        "location": [
+            64.74442643828162,
+            21.029492568844894
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2957",
+            "T2958"
+        ]
+    },
+    {
+        "location": [
+            64.71873653403705,
+            21.103106383667626
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2959",
+            "T2960"
+        ]
+    },
+    {
+        "location": [
+            64.75667943600871,
+            21.024787988962423
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2961",
+            "T2962"
+        ]
+    },
+    {
+        "location": [
+            64.76296965436872,
+            20.91520389573889
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2963",
+            "T2964"
+        ]
+    },
+    {
+        "location": [
+            64.75838557638824,
+            21.00661983799415
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2965",
+            "T2966"
+        ]
+    },
+    {
+        "location": [
+            64.75465924815764,
+            20.942681607470075
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2967",
+            "T2968"
+        ]
+    },
+    {
+        "location": [
+            64.75265692905167,
+            20.95693373130524
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2969",
+            "T2970"
+        ]
+    },
+    {
+        "location": [
+            64.72738362097822,
+            21.084016741092185
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2971",
+            "T2972"
+        ]
+    },
+    {
+        "location": [
+            64.7612938809469,
+            20.9107656176093
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2973",
+            "T2974"
+        ]
+    },
+    {
+        "location": [
+            64.7525223205338,
+            21.009306840519116
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2975",
+            "T2976"
+        ]
+    },
+    {
+        "location": [
+            64.77705496529877,
+            20.88974993466542
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2977",
+            "T2978"
+        ]
+    },
+    {
+        "location": [
+            64.74657918714612,
+            21.027468987713736
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2979",
+            "T2980"
+        ]
+    },
+    {
+        "location": [
+            64.76009260480136,
+            20.99441954458627
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2981",
+            "T2982"
+        ]
+    },
+    {
+        "location": [
+            64.76248941908963,
+            20.914087874241325
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2983",
+            "T2984"
+        ]
+    },
+    {
+        "location": [
+            64.73922585656425,
+            21.04012697516318
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2985",
+            "T2986"
+        ]
+    },
+    {
+        "location": [
+            64.73568062100168,
+            21.04665182438094
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2987",
+            "T2988"
+        ]
+    },
+    {
+        "location": [
+            64.77707055505107,
+            20.89042132052904
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2989",
+            "T2990"
+        ]
+    },
+    {
+        "location": [
+            64.76745274044747,
+            20.893020034446444
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2991",
+            "T2992"
+        ]
+    },
+    {
+        "location": [
+            64.75822981923875,
+            20.900780463059867
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2993",
+            "T2994"
+        ]
+    },
+    {
+        "location": [
+            64.75364884588447,
+            20.916740278418605
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2995",
+            "T2996"
+        ]
+    },
+    {
+        "location": [
+            64.76372691406556,
+            20.9295594022894
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2997",
+            "T2998"
+        ]
+    },
+    {
+        "location": [
+            64.7586737958007,
+            20.980751753358906
+        ],
+        "city_name": "Skellefteå",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T2999",
+            "T3000"
+        ]
+    }
+]

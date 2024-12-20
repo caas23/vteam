@@ -1,0 +1,8502 @@
+[
+    {
+        "location": [
+            59.347574988045714,
+            18.001507958519227
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1001",
+            "T1002"
+        ]
+    },
+    {
+        "location": [
+            59.380600961081015,
+            18.00184394030161
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1003",
+            "T1004"
+        ]
+    },
+    {
+        "location": [
+            59.35634528891405,
+            18.02918191813414
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1005",
+            "T1006"
+        ]
+    },
+    {
+        "location": [
+            59.366221199391894,
+            18.021828352489656
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1007",
+            "T1008"
+        ]
+    },
+    {
+        "location": [
+            59.37929851242492,
+            17.999666734920307
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1009",
+            "T1010"
+        ]
+    },
+    {
+        "location": [
+            59.372964492132176,
+            18.003451632637944
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1011",
+            "T1012"
+        ]
+    },
+    {
+        "location": [
+            59.38395561144059,
+            17.998853081571365
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1013",
+            "T1014"
+        ]
+    },
+    {
+        "location": [
+            59.36001682231661,
+            17.984156863348495
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1015",
+            "T1016"
+        ]
+    },
+    {
+        "location": [
+            59.35607911612372,
+            17.98900784203612
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1017",
+            "T1018"
+        ]
+    },
+    {
+        "location": [
+            59.38636646930013,
+            17.991141916060386
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1019",
+            "T1020"
+        ]
+    },
+    {
+        "location": [
+            59.348061459165805,
+            17.982848023305394
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1021",
+            "T1022"
+        ]
+    },
+    {
+        "location": [
+            59.376330773734296,
+            18.039471983559782
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1023",
+            "T1024"
+        ]
+    },
+    {
+        "location": [
+            59.351531488984264,
+            18.01778667958028
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1025",
+            "T1026"
+        ]
+    },
+    {
+        "location": [
+            59.38449987475129,
+            18.019321678826156
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1027",
+            "T1028"
+        ]
+    },
+    {
+        "location": [
+            59.39005555384453,
+            17.99250695474299
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1029",
+            "T1030"
+        ]
+    },
+    {
+        "location": [
+            59.34797816409949,
+            18.02346308741584
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1031",
+            "T1032"
+        ]
+    },
+    {
+        "location": [
+            59.382498885221985,
+            18.034705981175676
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1033",
+            "T1034"
+        ]
+    },
+    {
+        "location": [
+            59.35978503899543,
+            17.986713681466558
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1035",
+            "T1036"
+        ]
+    },
+    {
+        "location": [
+            59.35927665034591,
+            18.02836936935185
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1037",
+            "T1038"
+        ]
+    },
+    {
+        "location": [
+            59.380468468617046,
+            17.987159106893202
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1039",
+            "T1040"
+        ]
+    },
+    {
+        "location": [
+            59.34913460649904,
+            18.015858971025867
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1041",
+            "T1042"
+        ]
+    },
+    {
+        "location": [
+            59.360667255732835,
+            17.997000872066426
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1043",
+            "T1044"
+        ]
+    },
+    {
+        "location": [
+            59.35105384900434,
+            17.999628442146925
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1045",
+            "T1046"
+        ]
+    },
+    {
+        "location": [
+            59.39034422633691,
+            17.981480188778303
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1047",
+            "T1048"
+        ]
+    },
+    {
+        "location": [
+            59.35062359996876,
+            17.98598717792856
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1049",
+            "T1050"
+        ]
+    },
+    {
+        "location": [
+            59.36861843535529,
+            18.02844321320361
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1051",
+            "T1052"
+        ]
+    },
+    {
+        "location": [
+            59.36057461398941,
+            18.01656660598948
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1053",
+            "T1054"
+        ]
+    },
+    {
+        "location": [
+            59.359760653594286,
+            18.02060548869612
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1055",
+            "T1056"
+        ]
+    },
+    {
+        "location": [
+            59.35543778776292,
+            17.996040440805352
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1057",
+            "T1058"
+        ]
+    },
+    {
+        "location": [
+            59.35504611334097,
+            17.978876300163
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1059",
+            "T1060"
+        ]
+    },
+    {
+        "location": [
+            59.3928452459065,
+            17.988814071099345
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1061",
+            "T1062"
+        ]
+    },
+    {
+        "location": [
+            59.370305589736205,
+            18.014060610446766
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1063",
+            "T1064"
+        ]
+    },
+    {
+        "location": [
+            59.35133185650792,
+            18.03260821237827
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1065",
+            "T1066"
+        ]
+    },
+    {
+        "location": [
+            59.35227823593748,
+            17.97636241950495
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1067",
+            "T1068"
+        ]
+    },
+    {
+        "location": [
+            59.35672432423123,
+            18.03471735780847
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1069",
+            "T1070"
+        ]
+    },
+    {
+        "location": [
+            59.35386398562306,
+            18.014824924725477
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1071",
+            "T1072"
+        ]
+    },
+    {
+        "location": [
+            59.3645591177022,
+            17.99367309375193
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1073",
+            "T1074"
+        ]
+    },
+    {
+        "location": [
+            59.359186781313305,
+            18.000657732650293
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1075",
+            "T1076"
+        ]
+    },
+    {
+        "location": [
+            59.35624501022371,
+            17.99351149015222
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1077",
+            "T1078"
+        ]
+    },
+    {
+        "location": [
+            59.389233480663805,
+            17.992095132316226
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1079",
+            "T1080"
+        ]
+    },
+    {
+        "location": [
+            59.37041786640556,
+            18.01158564448573
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1081",
+            "T1082"
+        ]
+    },
+    {
+        "location": [
+            59.38866876383915,
+            17.983534846996214
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1083",
+            "T1084"
+        ]
+    },
+    {
+        "location": [
+            59.36300358486448,
+            17.98846686474343
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1085",
+            "T1086"
+        ]
+    },
+    {
+        "location": [
+            59.36621204271333,
+            17.995535471035367
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1087",
+            "T1088"
+        ]
+    },
+    {
+        "location": [
+            59.37677961827434,
+            18.041926076612484
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1089",
+            "T1090"
+        ]
+    },
+    {
+        "location": [
+            59.38822949407423,
+            18.0036887434911
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1091",
+            "T1092"
+        ]
+    },
+    {
+        "location": [
+            59.34669646303261,
+            18.009174742198326
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1093",
+            "T1094"
+        ]
+    },
+    {
+        "location": [
+            59.36468748240574,
+            18.031598946137546
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1095",
+            "T1096"
+        ]
+    },
+    {
+        "location": [
+            59.36008191824739,
+            18.009676419125608
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1097",
+            "T1098"
+        ]
+    },
+    {
+        "location": [
+            59.38970252687621,
+            18.00394010246463
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1099",
+            "T1100"
+        ]
+    },
+    {
+        "location": [
+            59.36392336641375,
+            18.002242676249484
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1101",
+            "T1102"
+        ]
+    },
+    {
+        "location": [
+            59.34447059823214,
+            18.01705936602524
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1103",
+            "T1104"
+        ]
+    },
+    {
+        "location": [
+            59.38404224451847,
+            18.015979874396344
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1105",
+            "T1106"
+        ]
+    },
+    {
+        "location": [
+            59.3627846588949,
+            18.025004845318332
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1107",
+            "T1108"
+        ]
+    },
+    {
+        "location": [
+            59.382429519825386,
+            17.98748496877691
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1109",
+            "T1110"
+        ]
+    },
+    {
+        "location": [
+            59.39015914410872,
+            18.00566544635668
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1111",
+            "T1112"
+        ]
+    },
+    {
+        "location": [
+            59.34864814183002,
+            18.017821409225103
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1113",
+            "T1114"
+        ]
+    },
+    {
+        "location": [
+            59.363116239600956,
+            18.026664947755155
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1115",
+            "T1116"
+        ]
+    },
+    {
+        "location": [
+            59.35123958485202,
+            18.017631231642095
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1117",
+            "T1118"
+        ]
+    },
+    {
+        "location": [
+            59.360285371672674,
+            18.02193214805217
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1119",
+            "T1120"
+        ]
+    },
+    {
+        "location": [
+            59.34996695687317,
+            18.005113355693776
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1121",
+            "T1122"
+        ]
+    },
+    {
+        "location": [
+            59.36348323103978,
+            18.00884044325787
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1123",
+            "T1124"
+        ]
+    },
+    {
+        "location": [
+            59.350909324594234,
+            17.97741237841033
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1125",
+            "T1126"
+        ]
+    },
+    {
+        "location": [
+            59.36489911203265,
+            18.015736658505517
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1127",
+            "T1128"
+        ]
+    },
+    {
+        "location": [
+            59.396359129924434,
+            17.994378178272154
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1129",
+            "T1130"
+        ]
+    },
+    {
+        "location": [
+            59.36601803810933,
+            18.007213710438755
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1131",
+            "T1132"
+        ]
+    },
+    {
+        "location": [
+            59.3822590988108,
+            17.99447800724117
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1133",
+            "T1134"
+        ]
+    },
+    {
+        "location": [
+            59.3592997696454,
+            17.990491445467033
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1135",
+            "T1136"
+        ]
+    },
+    {
+        "location": [
+            59.3649124210181,
+            18.02220971119334
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1137",
+            "T1138"
+        ]
+    },
+    {
+        "location": [
+            59.36270894612405,
+            18.029912711207043
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1139",
+            "T1140"
+        ]
+    },
+    {
+        "location": [
+            59.38300780426389,
+            18.009963843177722
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1141",
+            "T1142"
+        ]
+    },
+    {
+        "location": [
+            59.35883256794399,
+            18.00446626268706
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1143",
+            "T1144"
+        ]
+    },
+    {
+        "location": [
+            59.34343624922449,
+            18.014774563527165
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1145",
+            "T1146"
+        ]
+    },
+    {
+        "location": [
+            59.37532562592955,
+            17.990748895315946
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1147",
+            "T1148"
+        ]
+    },
+    {
+        "location": [
+            59.353691908112545,
+            18.030251307997016
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1149",
+            "T1150"
+        ]
+    },
+    {
+        "location": [
+            59.376779408171885,
+            18.00529839571068
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1151",
+            "T1152"
+        ]
+    },
+    {
+        "location": [
+            59.35138925164549,
+            17.97797336748746
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1153",
+            "T1154"
+        ]
+    },
+    {
+        "location": [
+            59.37608988824128,
+            17.995626430800996
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1155",
+            "T1156"
+        ]
+    },
+    {
+        "location": [
+            59.3867288550169,
+            17.9816658513475
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1157",
+            "T1158"
+        ]
+    },
+    {
+        "location": [
+            59.37103238486749,
+            18.02517153669185
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1159",
+            "T1160"
+        ]
+    },
+    {
+        "location": [
+            59.35238641089064,
+            17.983343261061865
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1161",
+            "T1162"
+        ]
+    },
+    {
+        "location": [
+            59.38083126759079,
+            18.03186390617467
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1163",
+            "T1164"
+        ]
+    },
+    {
+        "location": [
+            59.38766093776385,
+            18.00067596322305
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1165",
+            "T1166"
+        ]
+    },
+    {
+        "location": [
+            59.3637967887135,
+            17.98789360619304
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1167",
+            "T1168"
+        ]
+    },
+    {
+        "location": [
+            59.38480566861145,
+            18.01327372987951
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1169",
+            "T1170"
+        ]
+    },
+    {
+        "location": [
+            59.36196577030277,
+            18.01240293890065
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1171",
+            "T1172"
+        ]
+    },
+    {
+        "location": [
+            59.36418017235934,
+            18.03387896881785
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1173",
+            "T1174"
+        ]
+    },
+    {
+        "location": [
+            59.362313192672076,
+            18.00574382631063
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1175",
+            "T1176"
+        ]
+    },
+    {
+        "location": [
+            59.34581206289695,
+            18.012573527646133
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1177",
+            "T1178"
+        ]
+    },
+    {
+        "location": [
+            59.38412791258319,
+            18.016864308751536
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1179",
+            "T1180"
+        ]
+    },
+    {
+        "location": [
+            59.364689009887165,
+            17.99456042762131
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1181",
+            "T1182"
+        ]
+    },
+    {
+        "location": [
+            59.37969474465261,
+            17.993220680425825
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1183",
+            "T1184"
+        ]
+    },
+    {
+        "location": [
+            59.35492773527151,
+            18.00656953047965
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1185",
+            "T1186"
+        ]
+    },
+    {
+        "location": [
+            59.38960959196399,
+            17.99148400507234
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1187",
+            "T1188"
+        ]
+    },
+    {
+        "location": [
+            59.36343938515276,
+            18.033422258210773
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1189",
+            "T1190"
+        ]
+    },
+    {
+        "location": [
+            59.35072514618025,
+            18.00856874177962
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1191",
+            "T1192"
+        ]
+    },
+    {
+        "location": [
+            59.357631177844986,
+            17.985550172395907
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1193",
+            "T1194"
+        ]
+    },
+    {
+        "location": [
+            59.366204843742615,
+            17.99713339202153
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1195",
+            "T1196"
+        ]
+    },
+    {
+        "location": [
+            59.35550569838147,
+            17.989951079752366
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1197",
+            "T1198"
+        ]
+    },
+    {
+        "location": [
+            59.39130373045222,
+            17.977992434705975
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1199",
+            "T1200"
+        ]
+    },
+    {
+        "location": [
+            59.387090562282594,
+            17.99388399820033
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1201",
+            "T1202"
+        ]
+    },
+    {
+        "location": [
+            59.3665399844976,
+            17.98613365893304
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1203",
+            "T1204"
+        ]
+    },
+    {
+        "location": [
+            59.38577989339702,
+            18.00809221370978
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1205",
+            "T1206"
+        ]
+    },
+    {
+        "location": [
+            59.39672039809432,
+            17.999802537991666
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1207",
+            "T1208"
+        ]
+    },
+    {
+        "location": [
+            59.36493161697457,
+            17.98316408802882
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1209",
+            "T1210"
+        ]
+    },
+    {
+        "location": [
+            59.35757406921627,
+            17.99282511227261
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1211",
+            "T1212"
+        ]
+    },
+    {
+        "location": [
+            59.35470051922861,
+            18.03677099714877
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1213",
+            "T1214"
+        ]
+    },
+    {
+        "location": [
+            59.368661595501806,
+            18.017202960719573
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1215",
+            "T1216"
+        ]
+    },
+    {
+        "location": [
+            59.382008393483105,
+            18.036291751528427
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1217",
+            "T1218"
+        ]
+    },
+    {
+        "location": [
+            59.39460218139513,
+            17.989779970034725
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1219",
+            "T1220"
+        ]
+    },
+    {
+        "location": [
+            59.37915410843229,
+            17.9961348873309
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1221",
+            "T1222"
+        ]
+    },
+    {
+        "location": [
+            59.37601799797915,
+            18.006958720887166
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1223",
+            "T1224"
+        ]
+    },
+    {
+        "location": [
+            59.38924888917488,
+            17.98655351620091
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1225",
+            "T1226"
+        ]
+    },
+    {
+        "location": [
+            59.34997927929989,
+            18.020602261817693
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1227",
+            "T1228"
+        ]
+    },
+    {
+        "location": [
+            59.34469436193146,
+            18.00876915711385
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1229",
+            "T1230"
+        ]
+    },
+    {
+        "location": [
+            59.3671661105665,
+            17.99381118166561
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1231",
+            "T1232"
+        ]
+    },
+    {
+        "location": [
+            59.38576131342734,
+            17.995493091636387
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1233",
+            "T1234"
+        ]
+    },
+    {
+        "location": [
+            59.38183323907516,
+            18.00433504553962
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1235",
+            "T1236"
+        ]
+    },
+    {
+        "location": [
+            59.39213814578706,
+            18.00226859581098
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1237",
+            "T1238"
+        ]
+    },
+    {
+        "location": [
+            59.39040103182989,
+            17.972738840349507
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1239",
+            "T1240"
+        ]
+    },
+    {
+        "location": [
+            59.39015210248228,
+            17.99265711216331
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1241",
+            "T1242"
+        ]
+    },
+    {
+        "location": [
+            59.38694421905358,
+            18.004102467091098
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1243",
+            "T1244"
+        ]
+    },
+    {
+        "location": [
+            59.36537406135548,
+            18.02857832321476
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1245",
+            "T1246"
+        ]
+    },
+    {
+        "location": [
+            59.37978420670429,
+            18.024661044202393
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1247",
+            "T1248"
+        ]
+    },
+    {
+        "location": [
+            59.36566036323348,
+            18.023599233678212
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1249",
+            "T1250"
+        ]
+    },
+    {
+        "location": [
+            59.37931015010303,
+            18.026607186092022
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1251",
+            "T1252"
+        ]
+    },
+    {
+        "location": [
+            59.388755457863766,
+            18.003255990728775
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1253",
+            "T1254"
+        ]
+    },
+    {
+        "location": [
+            59.3623495372781,
+            17.988442776948947
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1255",
+            "T1256"
+        ]
+    },
+    {
+        "location": [
+            59.36320853055035,
+            18.009808791902053
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1257",
+            "T1258"
+        ]
+    },
+    {
+        "location": [
+            59.3471486325252,
+            17.99274745842171
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1259",
+            "T1260"
+        ]
+    },
+    {
+        "location": [
+            59.35210953687948,
+            18.015546911077596
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1261",
+            "T1262"
+        ]
+    },
+    {
+        "location": [
+            59.35894611417623,
+            18.009172478895216
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1263",
+            "T1264"
+        ]
+    },
+    {
+        "location": [
+            59.36047422980659,
+            18.027033164724095
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1265",
+            "T1266"
+        ]
+    },
+    {
+        "location": [
+            59.381147265193185,
+            17.99708657312996
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1267",
+            "T1268"
+        ]
+    },
+    {
+        "location": [
+            59.38957865385857,
+            18.007957327242877
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1269",
+            "T1270"
+        ]
+    },
+    {
+        "location": [
+            59.35423917779388,
+            18.018503013237595
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1271",
+            "T1272"
+        ]
+    },
+    {
+        "location": [
+            59.3463246060621,
+            18.010587070492313
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1273",
+            "T1274"
+        ]
+    },
+    {
+        "location": [
+            59.38907173074478,
+            17.979845735615058
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1275",
+            "T1276"
+        ]
+    },
+    {
+        "location": [
+            59.3624768899335,
+            18.0069495257993
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1277",
+            "T1278"
+        ]
+    },
+    {
+        "location": [
+            59.37438936594501,
+            17.99046062391498
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1279",
+            "T1280"
+        ]
+    },
+    {
+        "location": [
+            59.34929789151424,
+            17.994441949450557
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1281",
+            "T1282"
+        ]
+    },
+    {
+        "location": [
+            59.38156319992243,
+            18.037175527969314
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1283",
+            "T1284"
+        ]
+    },
+    {
+        "location": [
+            59.36449932946741,
+            18.00855331526974
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1285",
+            "T1286"
+        ]
+    },
+    {
+        "location": [
+            59.35202627126479,
+            18.00802714390951
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1287",
+            "T1288"
+        ]
+    },
+    {
+        "location": [
+            59.35660948460072,
+            17.99626459198439
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1289",
+            "T1290"
+        ]
+    },
+    {
+        "location": [
+            59.35157521823624,
+            18.03443477818418
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1291",
+            "T1292"
+        ]
+    },
+    {
+        "location": [
+            59.381356879583436,
+            18.019593897496442
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1293",
+            "T1294"
+        ]
+    },
+    {
+        "location": [
+            59.35477842140351,
+            18.030027418052267
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1295",
+            "T1296"
+        ]
+    },
+    {
+        "location": [
+            59.36625103910655,
+            18.026035260233684
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1297",
+            "T1298"
+        ]
+    },
+    {
+        "location": [
+            59.35353812242907,
+            18.009446413756383
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1299",
+            "T1300"
+        ]
+    },
+    {
+        "location": [
+            59.36506270989916,
+            17.98241577986425
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1301",
+            "T1302"
+        ]
+    },
+    {
+        "location": [
+            59.378996359075266,
+            17.995120420698594
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1303",
+            "T1304"
+        ]
+    },
+    {
+        "location": [
+            59.35762425583843,
+            17.999050805206075
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1305",
+            "T1306"
+        ]
+    },
+    {
+        "location": [
+            59.37619352814823,
+            18.00149377552142
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1307",
+            "T1308"
+        ]
+    },
+    {
+        "location": [
+            59.37585437083282,
+            18.00887215911991
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1309",
+            "T1310"
+        ]
+    },
+    {
+        "location": [
+            59.3870691081201,
+            18.0113341980094
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1311",
+            "T1312"
+        ]
+    },
+    {
+        "location": [
+            59.380366879266155,
+            18.033541814339618
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1313",
+            "T1314"
+        ]
+    },
+    {
+        "location": [
+            59.35325596787455,
+            18.001527301867785
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1315",
+            "T1316"
+        ]
+    },
+    {
+        "location": [
+            59.37241878390717,
+            18.003403134992418
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1317",
+            "T1318"
+        ]
+    },
+    {
+        "location": [
+            59.36901567986927,
+            17.99275834265944
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1319",
+            "T1320"
+        ]
+    },
+    {
+        "location": [
+            59.38080797706074,
+            18.01337770938144
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1321",
+            "T1322"
+        ]
+    },
+    {
+        "location": [
+            59.3535758619427,
+            18.021752283255516
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1323",
+            "T1324"
+        ]
+    },
+    {
+        "location": [
+            59.34702800823839,
+            18.016730088682714
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1325",
+            "T1326"
+        ]
+    },
+    {
+        "location": [
+            59.37128895654932,
+            18.002889092601855
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1327",
+            "T1328"
+        ]
+    },
+    {
+        "location": [
+            59.39407004823265,
+            17.992244088207453
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1329",
+            "T1330"
+        ]
+    },
+    {
+        "location": [
+            59.38452655117259,
+            18.010063140909615
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1331",
+            "T1332"
+        ]
+    },
+    {
+        "location": [
+            59.36897963068097,
+            18.00958155350691
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1333",
+            "T1334"
+        ]
+    },
+    {
+        "location": [
+            59.36117408077837,
+            17.98282579021124
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1335",
+            "T1336"
+        ]
+    },
+    {
+        "location": [
+            59.35260769056354,
+            18.00904002964063
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1337",
+            "T1338"
+        ]
+    },
+    {
+        "location": [
+            59.353257386507366,
+            18.03142627275621
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1339",
+            "T1340"
+        ]
+    },
+    {
+        "location": [
+            59.35621410827479,
+            17.985711927029946
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1341",
+            "T1342"
+        ]
+    },
+    {
+        "location": [
+            59.393457914746605,
+            17.98883148336236
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1343",
+            "T1344"
+        ]
+    },
+    {
+        "location": [
+            59.37971141791806,
+            18.026969863004314
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1345",
+            "T1346"
+        ]
+    },
+    {
+        "location": [
+            59.39699138406243,
+            17.996197024555897
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1347",
+            "T1348"
+        ]
+    },
+    {
+        "location": [
+            59.38728194735788,
+            17.986155942445905
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1349",
+            "T1350"
+        ]
+    },
+    {
+        "location": [
+            59.38110498279943,
+            18.035765958725854
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1351",
+            "T1352"
+        ]
+    },
+    {
+        "location": [
+            59.381381165658105,
+            17.9935054747945
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1353",
+            "T1354"
+        ]
+    },
+    {
+        "location": [
+            59.34997000683145,
+            18.01404568216173
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1355",
+            "T1356"
+        ]
+    },
+    {
+        "location": [
+            59.37538409586755,
+            18.005308003715992
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1357",
+            "T1358"
+        ]
+    },
+    {
+        "location": [
+            59.36255688370563,
+            17.98158197136366
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1359",
+            "T1360"
+        ]
+    },
+    {
+        "location": [
+            59.36155995765782,
+            18.00063918576892
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1361",
+            "T1362"
+        ]
+    },
+    {
+        "location": [
+            59.360080128381036,
+            17.987114199585506
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1363",
+            "T1364"
+        ]
+    },
+    {
+        "location": [
+            59.39670185968445,
+            17.997334207035216
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1365",
+            "T1366"
+        ]
+    },
+    {
+        "location": [
+            59.376599133982104,
+            18.010268831103225
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1367",
+            "T1368"
+        ]
+    },
+    {
+        "location": [
+            59.382378317529806,
+            17.999742264822565
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1369",
+            "T1370"
+        ]
+    },
+    {
+        "location": [
+            59.34874087500045,
+            17.99020145302709
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1371",
+            "T1372"
+        ]
+    },
+    {
+        "location": [
+            59.368929815928766,
+            18.021576113547926
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1373",
+            "T1374"
+        ]
+    },
+    {
+        "location": [
+            59.36503044679201,
+            18.00469202810547
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1375",
+            "T1376"
+        ]
+    },
+    {
+        "location": [
+            59.346336635825196,
+            18.00782719241708
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1377",
+            "T1378"
+        ]
+    },
+    {
+        "location": [
+            59.36123882934623,
+            17.9882524545842
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1379",
+            "T1380"
+        ]
+    },
+    {
+        "location": [
+            59.37521172037069,
+            18.01081536356831
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1381",
+            "T1382"
+        ]
+    },
+    {
+        "location": [
+            59.35709747842151,
+            18.030299611905573
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1383",
+            "T1384"
+        ]
+    },
+    {
+        "location": [
+            59.38308577743273,
+            18.0055574385205
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1385",
+            "T1386"
+        ]
+    },
+    {
+        "location": [
+            59.35438229273755,
+            17.985884808847743
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1387",
+            "T1388"
+        ]
+    },
+    {
+        "location": [
+            59.39353249128966,
+            17.9982124982995
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1389",
+            "T1390"
+        ]
+    },
+    {
+        "location": [
+            59.36879082940893,
+            17.98844962931959
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1391",
+            "T1392"
+        ]
+    },
+    {
+        "location": [
+            59.35436861280058,
+            17.998758273770928
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1393",
+            "T1394"
+        ]
+    },
+    {
+        "location": [
+            59.34513647378542,
+            18.00905692258312
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1395",
+            "T1396"
+        ]
+    },
+    {
+        "location": [
+            59.361824726210244,
+            18.019401278112642
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1397",
+            "T1398"
+        ]
+    },
+    {
+        "location": [
+            59.362788815172536,
+            18.005378699748267
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1399",
+            "T1400"
+        ]
+    },
+    {
+        "location": [
+            59.36834864576257,
+            18.003175510819865
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1401",
+            "T1402"
+        ]
+    },
+    {
+        "location": [
+            59.36600161449618,
+            18.02939296172238
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1403",
+            "T1404"
+        ]
+    },
+    {
+        "location": [
+            59.353509203542124,
+            18.01818951231253
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1405",
+            "T1406"
+        ]
+    },
+    {
+        "location": [
+            59.392325667652685,
+            17.99446503160283
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1407",
+            "T1408"
+        ]
+    },
+    {
+        "location": [
+            59.3818942240388,
+            18.035333887161364
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1409",
+            "T1410"
+        ]
+    },
+    {
+        "location": [
+            59.36425695918814,
+            18.000245713364926
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1411",
+            "T1412"
+        ]
+    },
+    {
+        "location": [
+            59.38532112137091,
+            17.998076608710118
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1413",
+            "T1414"
+        ]
+    },
+    {
+        "location": [
+            59.35406143472798,
+            18.00136207008476
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1415",
+            "T1416"
+        ]
+    },
+    {
+        "location": [
+            59.375938222467894,
+            18.040670223203154
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1417",
+            "T1418"
+        ]
+    },
+    {
+        "location": [
+            59.35501739577439,
+            18.025100233213266
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1419",
+            "T1420"
+        ]
+    },
+    {
+        "location": [
+            59.35384638264492,
+            17.990204737704644
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1421",
+            "T1422"
+        ]
+    },
+    {
+        "location": [
+            59.37404866722099,
+            17.99202386380415
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1423",
+            "T1424"
+        ]
+    },
+    {
+        "location": [
+            59.38718963808996,
+            17.99544405138335
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1425",
+            "T1426"
+        ]
+    },
+    {
+        "location": [
+            59.36495015740489,
+            17.984591361495074
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1427",
+            "T1428"
+        ]
+    },
+    {
+        "location": [
+            59.36296346705713,
+            17.982843866022378
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1429",
+            "T1430"
+        ]
+    },
+    {
+        "location": [
+            59.361520865496836,
+            17.986638609957286
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1431",
+            "T1432"
+        ]
+    },
+    {
+        "location": [
+            59.37179820537067,
+            18.014133305515458
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1433",
+            "T1434"
+        ]
+    },
+    {
+        "location": [
+            59.35738586361316,
+            18.026336659929953
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1435",
+            "T1436"
+        ]
+    },
+    {
+        "location": [
+            59.366026835663114,
+            17.98651296237446
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1437",
+            "T1438"
+        ]
+    },
+    {
+        "location": [
+            59.34638274830624,
+            18.0035134952816
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1439",
+            "T1440"
+        ]
+    },
+    {
+        "location": [
+            59.38167102828688,
+            18.002560350031327
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1441",
+            "T1442"
+        ]
+    },
+    {
+        "location": [
+            59.38744944527001,
+            17.986775950352293
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1443",
+            "T1444"
+        ]
+    },
+    {
+        "location": [
+            59.35104439466837,
+            18.019628281912283
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1445",
+            "T1446"
+        ]
+    },
+    {
+        "location": [
+            59.36810287272197,
+            18.0255626726275
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1447",
+            "T1448"
+        ]
+    },
+    {
+        "location": [
+            59.35063430648928,
+            18.02036793173259
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1449",
+            "T1450"
+        ]
+    },
+    {
+        "location": [
+            59.359843720312014,
+            18.0338211801997
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1451",
+            "T1452"
+        ]
+    },
+    {
+        "location": [
+            59.3795019564563,
+            18.036845841065002
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1453",
+            "T1454"
+        ]
+    },
+    {
+        "location": [
+            59.37222285834894,
+            18.00223824763659
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1455",
+            "T1456"
+        ]
+    },
+    {
+        "location": [
+            59.387103138298045,
+            18.002563352344506
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1457",
+            "T1458"
+        ]
+    },
+    {
+        "location": [
+            59.381664160994454,
+            18.034633620934958
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1459",
+            "T1460"
+        ]
+    },
+    {
+        "location": [
+            59.38236398663055,
+            17.99391514975857
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1461",
+            "T1462"
+        ]
+    },
+    {
+        "location": [
+            59.348959577118265,
+            17.99425737196443
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1463",
+            "T1464"
+        ]
+    },
+    {
+        "location": [
+            59.387936889970405,
+            17.997733923720965
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1465",
+            "T1466"
+        ]
+    },
+    {
+        "location": [
+            59.35091741710742,
+            18.00264559275955
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1467",
+            "T1468"
+        ]
+    },
+    {
+        "location": [
+            59.390858768202484,
+            17.97183563889617
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1469",
+            "T1470"
+        ]
+    },
+    {
+        "location": [
+            59.36956512213622,
+            18.00038108927447
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1471",
+            "T1472"
+        ]
+    },
+    {
+        "location": [
+            59.354936243360825,
+            18.00518139021714
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1473",
+            "T1474"
+        ]
+    },
+    {
+        "location": [
+            59.3803728984254,
+            18.041883240690865
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1475",
+            "T1476"
+        ]
+    },
+    {
+        "location": [
+            59.36248150316359,
+            17.985146584102505
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1477",
+            "T1478"
+        ]
+    },
+    {
+        "location": [
+            59.38837371865571,
+            18.017453685528878
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1479",
+            "T1480"
+        ]
+    },
+    {
+        "location": [
+            59.39595943839906,
+            17.98887904439525
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1481",
+            "T1482"
+        ]
+    },
+    {
+        "location": [
+            59.36427852041199,
+            18.011146640899476
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1483",
+            "T1484"
+        ]
+    },
+    {
+        "location": [
+            59.38646963141341,
+            18.018272950212385
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1485",
+            "T1486"
+        ]
+    },
+    {
+        "location": [
+            59.34904712241939,
+            18.009493425202884
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1487",
+            "T1488"
+        ]
+    },
+    {
+        "location": [
+            59.36440381888898,
+            18.002625244315112
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1489",
+            "T1490"
+        ]
+    },
+    {
+        "location": [
+            59.34149558430362,
+            18.01461482216177
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1491",
+            "T1492"
+        ]
+    },
+    {
+        "location": [
+            59.36828192698071,
+            18.028871227991097
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1493",
+            "T1494"
+        ]
+    },
+    {
+        "location": [
+            59.36703142239405,
+            18.00656621557171
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1495",
+            "T1496"
+        ]
+    },
+    {
+        "location": [
+            59.35694012771197,
+            17.995602928555446
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1497",
+            "T1498"
+        ]
+    },
+    {
+        "location": [
+            59.36955620790542,
+            18.01911873296464
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1499",
+            "T1500"
+        ]
+    },
+    {
+        "location": [
+            59.36001454891187,
+            18.002147339451334
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1501",
+            "T1502"
+        ]
+    },
+    {
+        "location": [
+            59.35448444475175,
+            18.025041999186705
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1503",
+            "T1504"
+        ]
+    },
+    {
+        "location": [
+            59.38604764901668,
+            18.005374172239307
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1505",
+            "T1506"
+        ]
+    },
+    {
+        "location": [
+            59.364106849639334,
+            17.99901718668447
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1507",
+            "T1508"
+        ]
+    },
+    {
+        "location": [
+            59.3839891979653,
+            18.001592576447212
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1509",
+            "T1510"
+        ]
+    },
+    {
+        "location": [
+            59.35325207453291,
+            17.979368632575476
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1511",
+            "T1512"
+        ]
+    },
+    {
+        "location": [
+            59.361391710530704,
+            18.000019111358878
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1513",
+            "T1514"
+        ]
+    },
+    {
+        "location": [
+            59.35446515601191,
+            17.98773488993852
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1515",
+            "T1516"
+        ]
+    },
+    {
+        "location": [
+            59.38065060425925,
+            18.025744365324677
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1517",
+            "T1518"
+        ]
+    },
+    {
+        "location": [
+            59.36078438396791,
+            18.003748206416414
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1519",
+            "T1520"
+        ]
+    },
+    {
+        "location": [
+            59.368870348347684,
+            17.993305877581083
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1521",
+            "T1522"
+        ]
+    },
+    {
+        "location": [
+            59.35343063801628,
+            18.007689066465684
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1523",
+            "T1524"
+        ]
+    },
+    {
+        "location": [
+            59.34708268221009,
+            18.010529759293227
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1525",
+            "T1526"
+        ]
+    },
+    {
+        "location": [
+            59.35807825632786,
+            18.027123298744048
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1527",
+            "T1528"
+        ]
+    },
+    {
+        "location": [
+            59.367397180449615,
+            18.02746066998481
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1529",
+            "T1530"
+        ]
+    },
+    {
+        "location": [
+            59.36658185199025,
+            17.9869698419582
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1531",
+            "T1532"
+        ]
+    },
+    {
+        "location": [
+            59.35680997761967,
+            17.97807895414859
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1533",
+            "T1534"
+        ]
+    },
+    {
+        "location": [
+            59.34348361674031,
+            18.01962321546284
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1535",
+            "T1536"
+        ]
+    },
+    {
+        "location": [
+            59.34948217279527,
+            17.983656052214897
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1537",
+            "T1538"
+        ]
+    },
+    {
+        "location": [
+            59.35110091421642,
+            18.01206210609505
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1539",
+            "T1540"
+        ]
+    },
+    {
+        "location": [
+            59.36107807357408,
+            17.98267780084292
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1541",
+            "T1542"
+        ]
+    },
+    {
+        "location": [
+            59.359459229840276,
+            18.01930305429398
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1543",
+            "T1544"
+        ]
+    },
+    {
+        "location": [
+            59.382416081228115,
+            18.011794654067074
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1545",
+            "T1546"
+        ]
+    },
+    {
+        "location": [
+            59.35479173127709,
+            17.985311805054174
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1547",
+            "T1548"
+        ]
+    },
+    {
+        "location": [
+            59.368894732300184,
+            18.026097399211082
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1549",
+            "T1550"
+        ]
+    },
+    {
+        "location": [
+            59.362102072266296,
+            18.001644777584545
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1551",
+            "T1552"
+        ]
+    },
+    {
+        "location": [
+            59.353256397274,
+            18.012719644690982
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1553",
+            "T1554"
+        ]
+    },
+    {
+        "location": [
+            59.36967342368826,
+            17.998987199633966
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1555",
+            "T1556"
+        ]
+    },
+    {
+        "location": [
+            59.38781587101064,
+            17.99962110905529
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1557",
+            "T1558"
+        ]
+    },
+    {
+        "location": [
+            59.35072979020305,
+            18.01878791024157
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1559",
+            "T1560"
+        ]
+    },
+    {
+        "location": [
+            59.35350127538569,
+            17.976197226978545
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1561",
+            "T1562"
+        ]
+    },
+    {
+        "location": [
+            59.370637518623404,
+            17.999204691071732
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1563",
+            "T1564"
+        ]
+    },
+    {
+        "location": [
+            59.37092399599761,
+            18.01609151056002
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1565",
+            "T1566"
+        ]
+    },
+    {
+        "location": [
+            59.35363392833559,
+            18.027541311876654
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1567",
+            "T1568"
+        ]
+    },
+    {
+        "location": [
+            59.39115040100353,
+            17.97435622575634
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1569",
+            "T1570"
+        ]
+    },
+    {
+        "location": [
+            59.37866884014042,
+            18.011796597203926
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1571",
+            "T1572"
+        ]
+    },
+    {
+        "location": [
+            59.362837902865785,
+            17.99419696174019
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1573",
+            "T1574"
+        ]
+    },
+    {
+        "location": [
+            59.35360550120752,
+            18.015402523941
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1575",
+            "T1576"
+        ]
+    },
+    {
+        "location": [
+            59.38312898105684,
+            17.998536421066518
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1577",
+            "T1578"
+        ]
+    },
+    {
+        "location": [
+            59.371349260094675,
+            18.009441605493123
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1579",
+            "T1580"
+        ]
+    },
+    {
+        "location": [
+            59.37988096186207,
+            18.034018611862596
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1581",
+            "T1582"
+        ]
+    },
+    {
+        "location": [
+            59.36589294876656,
+            18.005289087098358
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1583",
+            "T1584"
+        ]
+    },
+    {
+        "location": [
+            59.393439243189526,
+            18.00777291391017
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1585",
+            "T1586"
+        ]
+    },
+    {
+        "location": [
+            59.360012600731075,
+            17.97926932786167
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1587",
+            "T1588"
+        ]
+    },
+    {
+        "location": [
+            59.34754958177271,
+            18.02504097033817
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1589",
+            "T1590"
+        ]
+    },
+    {
+        "location": [
+            59.37212835871467,
+            18.01525599237719
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1591",
+            "T1592"
+        ]
+    },
+    {
+        "location": [
+            59.35369239354106,
+            18.035838033634615
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1593",
+            "T1594"
+        ]
+    },
+    {
+        "location": [
+            59.350616305226765,
+            18.027657760201222
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1595",
+            "T1596"
+        ]
+    },
+    {
+        "location": [
+            59.38921127756178,
+            17.986915437014257
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1597",
+            "T1598"
+        ]
+    },
+    {
+        "location": [
+            59.389060689335416,
+            17.98035113885012
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1599",
+            "T1600"
+        ]
+    },
+    {
+        "location": [
+            59.36396293587586,
+            17.990080664726495
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1601",
+            "T1602"
+        ]
+    },
+    {
+        "location": [
+            59.39103584210239,
+            17.980616701515977
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1603",
+            "T1604"
+        ]
+    },
+    {
+        "location": [
+            59.39159018898747,
+            17.99496591534757
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1605",
+            "T1606"
+        ]
+    },
+    {
+        "location": [
+            59.36923269961918,
+            18.015330577845386
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1607",
+            "T1608"
+        ]
+    },
+    {
+        "location": [
+            59.371380254739755,
+            18.003216413616997
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1609",
+            "T1610"
+        ]
+    },
+    {
+        "location": [
+            59.389035534453036,
+            17.990959981466194
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1611",
+            "T1612"
+        ]
+    },
+    {
+        "location": [
+            59.356092558506745,
+            17.99913867638048
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1613",
+            "T1614"
+        ]
+    },
+    {
+        "location": [
+            59.37065607278413,
+            18.01305450842538
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1615",
+            "T1616"
+        ]
+    },
+    {
+        "location": [
+            59.39761150641327,
+            17.993857340964055
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1617",
+            "T1618"
+        ]
+    },
+    {
+        "location": [
+            59.35773512410947,
+            18.010919045685327
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1619",
+            "T1620"
+        ]
+    },
+    {
+        "location": [
+            59.362311242361336,
+            17.98442807313022
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1621",
+            "T1622"
+        ]
+    },
+    {
+        "location": [
+            59.39129115569381,
+            18.003422382135703
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1623",
+            "T1624"
+        ]
+    },
+    {
+        "location": [
+            59.34949464058995,
+            18.01218963824513
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1625",
+            "T1626"
+        ]
+    },
+    {
+        "location": [
+            59.355184706837846,
+            17.974331488082864
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1627",
+            "T1628"
+        ]
+    },
+    {
+        "location": [
+            59.346742403391374,
+            18.00508079205457
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1629",
+            "T1630"
+        ]
+    },
+    {
+        "location": [
+            59.36729444029448,
+            17.99966060529526
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1631",
+            "T1632"
+        ]
+    },
+    {
+        "location": [
+            59.37338036160598,
+            18.007091366324502
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1633",
+            "T1634"
+        ]
+    },
+    {
+        "location": [
+            59.365449396775496,
+            18.03003171365168
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1635",
+            "T1636"
+        ]
+    },
+    {
+        "location": [
+            59.35793981652038,
+            17.997104600320238
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1637",
+            "T1638"
+        ]
+    },
+    {
+        "location": [
+            59.35379085761908,
+            18.03922268992999
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1639",
+            "T1640"
+        ]
+    },
+    {
+        "location": [
+            59.34571838853777,
+            18.023493243217885
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1641",
+            "T1642"
+        ]
+    },
+    {
+        "location": [
+            59.354154218697346,
+            18.019850983346604
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1643",
+            "T1644"
+        ]
+    },
+    {
+        "location": [
+            59.35453788393461,
+            17.98207862230021
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1645",
+            "T1646"
+        ]
+    },
+    {
+        "location": [
+            59.35244467878901,
+            18.03384574658528
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1647",
+            "T1648"
+        ]
+    },
+    {
+        "location": [
+            59.37658963092656,
+            18.03568795982725
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1649",
+            "T1650"
+        ]
+    },
+    {
+        "location": [
+            59.35148855913957,
+            18.027350591548885
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1651",
+            "T1652"
+        ]
+    },
+    {
+        "location": [
+            59.36221196606165,
+            17.987977002867538
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1653",
+            "T1654"
+        ]
+    },
+    {
+        "location": [
+            59.3425808926861,
+            18.020202185350296
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1655",
+            "T1656"
+        ]
+    },
+    {
+        "location": [
+            59.370823586934456,
+            18.01771443625706
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1657",
+            "T1658"
+        ]
+    },
+    {
+        "location": [
+            59.35273085462502,
+            17.994274333973596
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1659",
+            "T1660"
+        ]
+    },
+    {
+        "location": [
+            59.382909836679964,
+            17.994200564263558
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1661",
+            "T1662"
+        ]
+    },
+    {
+        "location": [
+            59.3527981903229,
+            18.02359758582827
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1663",
+            "T1664"
+        ]
+    },
+    {
+        "location": [
+            59.35907005215082,
+            17.999844780169862
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1665",
+            "T1666"
+        ]
+    },
+    {
+        "location": [
+            59.35649249437716,
+            17.99533082829333
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1667",
+            "T1668"
+        ]
+    },
+    {
+        "location": [
+            59.393875058202866,
+            17.987549977602658
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1669",
+            "T1670"
+        ]
+    },
+    {
+        "location": [
+            59.38906658364182,
+            18.014319357196083
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1671",
+            "T1672"
+        ]
+    },
+    {
+        "location": [
+            59.37515347213008,
+            17.995096487639756
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1673",
+            "T1674"
+        ]
+    },
+    {
+        "location": [
+            59.38996426476556,
+            17.967787361794226
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1675",
+            "T1676"
+        ]
+    },
+    {
+        "location": [
+            59.36546145924909,
+            17.988857635824516
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1677",
+            "T1678"
+        ]
+    },
+    {
+        "location": [
+            59.370680073933364,
+            18.025110755398188
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1679",
+            "T1680"
+        ]
+    },
+    {
+        "location": [
+            59.3906156906403,
+            17.98934341756496
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1681",
+            "T1682"
+        ]
+    },
+    {
+        "location": [
+            59.37945993871865,
+            18.007576709317963
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1683",
+            "T1684"
+        ]
+    },
+    {
+        "location": [
+            59.34878847942616,
+            17.993440067285565
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1685",
+            "T1686"
+        ]
+    },
+    {
+        "location": [
+            59.3562385372096,
+            17.99746865991658
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1687",
+            "T1688"
+        ]
+    },
+    {
+        "location": [
+            59.359000402604,
+            18.003006389641076
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1689",
+            "T1690"
+        ]
+    },
+    {
+        "location": [
+            59.3494852092785,
+            18.001468542845814
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1691",
+            "T1692"
+        ]
+    },
+    {
+        "location": [
+            59.372354433858945,
+            18.013130468566224
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1693",
+            "T1694"
+        ]
+    },
+    {
+        "location": [
+            59.36497628406979,
+            18.03502289557901
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1695",
+            "T1696"
+        ]
+    },
+    {
+        "location": [
+            59.34324987548739,
+            18.014292506748323
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1697",
+            "T1698"
+        ]
+    },
+    {
+        "location": [
+            59.34694202652825,
+            18.00025253342278
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1699",
+            "T1700"
+        ]
+    },
+    {
+        "location": [
+            59.376573828857794,
+            17.9902906418479
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1701",
+            "T1702"
+        ]
+    },
+    {
+        "location": [
+            59.381504004940766,
+            18.001479350368896
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1703",
+            "T1704"
+        ]
+    },
+    {
+        "location": [
+            59.35338211191079,
+            18.00129953034211
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1705",
+            "T1706"
+        ]
+    },
+    {
+        "location": [
+            59.36687103148337,
+            18.023564446585247
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1707",
+            "T1708"
+        ]
+    },
+    {
+        "location": [
+            59.35003840504888,
+            17.97813467424989
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1709",
+            "T1710"
+        ]
+    },
+    {
+        "location": [
+            59.38796495231997,
+            18.009210818731678
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1711",
+            "T1712"
+        ]
+    },
+    {
+        "location": [
+            59.381539915094436,
+            18.023613176829492
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1713",
+            "T1714"
+        ]
+    },
+    {
+        "location": [
+            59.34769239252928,
+            17.99421870653864
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1715",
+            "T1716"
+        ]
+    },
+    {
+        "location": [
+            59.36522183581268,
+            18.00014036542433
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1717",
+            "T1718"
+        ]
+    },
+    {
+        "location": [
+            59.34675304419383,
+            17.998353701542566
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1719",
+            "T1720"
+        ]
+    },
+    {
+        "location": [
+            59.37530587279828,
+            18.000381359381684
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1721",
+            "T1722"
+        ]
+    },
+    {
+        "location": [
+            59.36354675374158,
+            17.995391602909397
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1723",
+            "T1724"
+        ]
+    },
+    {
+        "location": [
+            59.37576988786184,
+            18.011786536112773
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1725",
+            "T1726"
+        ]
+    },
+    {
+        "location": [
+            59.35265227963963,
+            17.977175460418028
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1727",
+            "T1728"
+        ]
+    },
+    {
+        "location": [
+            59.347047645099984,
+            18.01112601277431
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1729",
+            "T1730"
+        ]
+    },
+    {
+        "location": [
+            59.37564531978448,
+            17.994700558099183
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1731",
+            "T1732"
+        ]
+    },
+    {
+        "location": [
+            59.3657424699683,
+            18.00795472611483
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1733",
+            "T1734"
+        ]
+    },
+    {
+        "location": [
+            59.356315757760555,
+            18.031714317754716
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1735",
+            "T1736"
+        ]
+    },
+    {
+        "location": [
+            59.36122648416268,
+            18.034198505091076
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1737",
+            "T1738"
+        ]
+    },
+    {
+        "location": [
+            59.355222349357526,
+            18.009287023182544
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1739",
+            "T1740"
+        ]
+    },
+    {
+        "location": [
+            59.34888380573958,
+            18.026595344659757
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1741",
+            "T1742"
+        ]
+    },
+    {
+        "location": [
+            59.38022899074578,
+            18.02345614611902
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1743",
+            "T1744"
+        ]
+    },
+    {
+        "location": [
+            59.35164006894333,
+            17.9758998592157
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1745",
+            "T1746"
+        ]
+    },
+    {
+        "location": [
+            59.38534609484363,
+            17.99363623665747
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1747",
+            "T1748"
+        ]
+    },
+    {
+        "location": [
+            59.34972385119115,
+            18.00186164234908
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1749",
+            "T1750"
+        ]
+    },
+    {
+        "location": [
+            59.37519081654127,
+            17.995576871654823
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1751",
+            "T1752"
+        ]
+    },
+    {
+        "location": [
+            59.38937962875864,
+            18.00650391509439
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1753",
+            "T1754"
+        ]
+    },
+    {
+        "location": [
+            59.389717672981675,
+            17.99218890708916
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1755",
+            "T1756"
+        ]
+    },
+    {
+        "location": [
+            59.36940471008383,
+            18.013749179638463
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1757",
+            "T1758"
+        ]
+    },
+    {
+        "location": [
+            59.37178263536419,
+            18.022559841176744
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1759",
+            "T1760"
+        ]
+    },
+    {
+        "location": [
+            59.37035488833297,
+            18.025616301310976
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1761",
+            "T1762"
+        ]
+    },
+    {
+        "location": [
+            59.369807638536216,
+            17.99641917699259
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1763",
+            "T1764"
+        ]
+    },
+    {
+        "location": [
+            59.35069311729953,
+            17.98052900449968
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1765",
+            "T1766"
+        ]
+    },
+    {
+        "location": [
+            59.345761264728935,
+            18.010484339801938
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1767",
+            "T1768"
+        ]
+    },
+    {
+        "location": [
+            59.34687800002938,
+            18.014616832170308
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1769",
+            "T1770"
+        ]
+    },
+    {
+        "location": [
+            59.34830812405151,
+            18.01544347346209
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1771",
+            "T1772"
+        ]
+    },
+    {
+        "location": [
+            59.368762491194865,
+            17.990262713451475
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1773",
+            "T1774"
+        ]
+    },
+    {
+        "location": [
+            59.35720430290068,
+            17.993234157960952
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1775",
+            "T1776"
+        ]
+    },
+    {
+        "location": [
+            59.35161513173181,
+            18.025660715617587
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1777",
+            "T1778"
+        ]
+    },
+    {
+        "location": [
+            59.3474419707574,
+            18.018168364581246
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1779",
+            "T1780"
+        ]
+    },
+    {
+        "location": [
+            59.359599452043106,
+            18.01112946903474
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1781",
+            "T1782"
+        ]
+    },
+    {
+        "location": [
+            59.383919797437386,
+            17.99147506294038
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1783",
+            "T1784"
+        ]
+    },
+    {
+        "location": [
+            59.34599433376833,
+            18.019086863971165
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1785",
+            "T1786"
+        ]
+    },
+    {
+        "location": [
+            59.34335969838967,
+            18.013457412283156
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1787",
+            "T1788"
+        ]
+    },
+    {
+        "location": [
+            59.35245783916361,
+            17.976589310317248
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1789",
+            "T1790"
+        ]
+    },
+    {
+        "location": [
+            59.35151073129998,
+            17.99925275943982
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1791",
+            "T1792"
+        ]
+    },
+    {
+        "location": [
+            59.357494349690526,
+            18.035277483197767
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1793",
+            "T1794"
+        ]
+    },
+    {
+        "location": [
+            59.38067678405817,
+            18.01376239014831
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1795",
+            "T1796"
+        ]
+    },
+    {
+        "location": [
+            59.356293885914916,
+            17.99752840154634
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1797",
+            "T1798"
+        ]
+    },
+    {
+        "location": [
+            59.37593032723947,
+            18.038953835273006
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1799",
+            "T1800"
+        ]
+    },
+    {
+        "location": [
+            59.39437670185183,
+            18.00289014518704
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1801",
+            "T1802"
+        ]
+    },
+    {
+        "location": [
+            59.396104821601355,
+            17.996768912047344
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1803",
+            "T1804"
+        ]
+    },
+    {
+        "location": [
+            59.35526965673715,
+            18.03709371264163
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1805",
+            "T1806"
+        ]
+    },
+    {
+        "location": [
+            59.391789441995044,
+            18.004213095463655
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1807",
+            "T1808"
+        ]
+    },
+    {
+        "location": [
+            59.35667144463877,
+            17.983411792967868
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1809",
+            "T1810"
+        ]
+    },
+    {
+        "location": [
+            59.35085242626566,
+            18.007461913217075
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1811",
+            "T1812"
+        ]
+    },
+    {
+        "location": [
+            59.351776537526646,
+            18.000887041635373
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1813",
+            "T1814"
+        ]
+    },
+    {
+        "location": [
+            59.35451456037758,
+            17.983340644381656
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1815",
+            "T1816"
+        ]
+    },
+    {
+        "location": [
+            59.35860894727718,
+            18.02835039357041
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1817",
+            "T1818"
+        ]
+    },
+    {
+        "location": [
+            59.36499702827629,
+            17.998213989483006
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1819",
+            "T1820"
+        ]
+    },
+    {
+        "location": [
+            59.37958930974567,
+            18.03002108924125
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1821",
+            "T1822"
+        ]
+    },
+    {
+        "location": [
+            59.38522823618326,
+            18.017913696838903
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1823",
+            "T1824"
+        ]
+    },
+    {
+        "location": [
+            59.379372301540165,
+            18.013004613824492
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1825",
+            "T1826"
+        ]
+    },
+    {
+        "location": [
+            59.3548199255424,
+            18.03730592872545
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1827",
+            "T1828"
+        ]
+    },
+    {
+        "location": [
+            59.35726625620336,
+            17.977062516951705
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1829",
+            "T1830"
+        ]
+    },
+    {
+        "location": [
+            59.374685654088154,
+            18.007285464319885
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1831",
+            "T1832"
+        ]
+    },
+    {
+        "location": [
+            59.39317042733945,
+            17.993320354247984
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1833",
+            "T1834"
+        ]
+    },
+    {
+        "location": [
+            59.38428591121952,
+            17.99101236363978
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1835",
+            "T1836"
+        ]
+    },
+    {
+        "location": [
+            59.357160142285025,
+            18.021158391193868
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1837",
+            "T1838"
+        ]
+    },
+    {
+        "location": [
+            59.38827153320267,
+            17.990152963447233
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1839",
+            "T1840"
+        ]
+    },
+    {
+        "location": [
+            59.366562641279586,
+            18.01024350186175
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1841",
+            "T1842"
+        ]
+    },
+    {
+        "location": [
+            59.35491644564791,
+            17.977341335247633
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1843",
+            "T1844"
+        ]
+    },
+    {
+        "location": [
+            59.378652158769206,
+            18.03861650642966
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1845",
+            "T1846"
+        ]
+    },
+    {
+        "location": [
+            59.38004973337121,
+            18.043161682222458
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1847",
+            "T1848"
+        ]
+    },
+    {
+        "location": [
+            59.36142523073621,
+            18.0139573445788
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1849",
+            "T1850"
+        ]
+    },
+    {
+        "location": [
+            59.38011078643701,
+            17.99600654962138
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1851",
+            "T1852"
+        ]
+    },
+    {
+        "location": [
+            59.349489410599475,
+            18.02455069403356
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1853",
+            "T1854"
+        ]
+    },
+    {
+        "location": [
+            59.35270898726424,
+            18.00551993985135
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1855",
+            "T1856"
+        ]
+    },
+    {
+        "location": [
+            59.35301380528741,
+            18.00924471363862
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1857",
+            "T1858"
+        ]
+    },
+    {
+        "location": [
+            59.36537456771141,
+            18.020685600967127
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1859",
+            "T1860"
+        ]
+    },
+    {
+        "location": [
+            59.38093308613229,
+            17.98576731196934
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1861",
+            "T1862"
+        ]
+    },
+    {
+        "location": [
+            59.35499565780912,
+            17.978868494984933
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1863",
+            "T1864"
+        ]
+    },
+    {
+        "location": [
+            59.35469970699329,
+            18.03591492876929
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1865",
+            "T1866"
+        ]
+    },
+    {
+        "location": [
+            59.366079541300564,
+            17.983528466983216
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1867",
+            "T1868"
+        ]
+    },
+    {
+        "location": [
+            59.37971388602975,
+            18.001567779818714
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1869",
+            "T1870"
+        ]
+    },
+    {
+        "location": [
+            59.35807237361553,
+            18.001024572152712
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1871",
+            "T1872"
+        ]
+    },
+    {
+        "location": [
+            59.34908903277611,
+            17.98289786094799
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1873",
+            "T1874"
+        ]
+    },
+    {
+        "location": [
+            59.36936942044358,
+            17.987220326036937
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1875",
+            "T1876"
+        ]
+    },
+    {
+        "location": [
+            59.38793735060049,
+            18.012405442919505
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1877",
+            "T1878"
+        ]
+    },
+    {
+        "location": [
+            59.36814972706337,
+            18.008521580094865
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1879",
+            "T1880"
+        ]
+    },
+    {
+        "location": [
+            59.34867869259932,
+            17.99342428259855
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1881",
+            "T1882"
+        ]
+    },
+    {
+        "location": [
+            59.3895679815045,
+            17.98740184172477
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1883",
+            "T1884"
+        ]
+    },
+    {
+        "location": [
+            59.35736402988875,
+            18.024386852761378
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1885",
+            "T1886"
+        ]
+    },
+    {
+        "location": [
+            59.36724888503994,
+            18.004632888394976
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1887",
+            "T1888"
+        ]
+    },
+    {
+        "location": [
+            59.36243181460911,
+            17.9899540432359
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1889",
+            "T1890"
+        ]
+    },
+    {
+        "location": [
+            59.382111957314365,
+            18.013964368381515
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1891",
+            "T1892"
+        ]
+    },
+    {
+        "location": [
+            59.34569877678319,
+            17.99691987686164
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1893",
+            "T1894"
+        ]
+    },
+    {
+        "location": [
+            59.35806785575863,
+            18.03470931472682
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1895",
+            "T1896"
+        ]
+    },
+    {
+        "location": [
+            59.39024430312789,
+            18.0117206446761
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1897",
+            "T1898"
+        ]
+    },
+    {
+        "location": [
+            59.38342340901444,
+            18.026530014076535
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1899",
+            "T1900"
+        ]
+    },
+    {
+        "location": [
+            59.37649961406525,
+            17.99912073633297
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1901",
+            "T1902"
+        ]
+    },
+    {
+        "location": [
+            59.38980966612338,
+            18.007806311850512
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1903",
+            "T1904"
+        ]
+    },
+    {
+        "location": [
+            59.380567390884266,
+            18.03133947776302
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1905",
+            "T1906"
+        ]
+    },
+    {
+        "location": [
+            59.38553060284887,
+            18.015711446523884
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1907",
+            "T1908"
+        ]
+    },
+    {
+        "location": [
+            59.39087775464981,
+            18.006669373153123
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1909",
+            "T1910"
+        ]
+    },
+    {
+        "location": [
+            59.35535270783375,
+            17.989140340056032
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1911",
+            "T1912"
+        ]
+    },
+    {
+        "location": [
+            59.34236036705896,
+            18.016440275755368
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1913",
+            "T1914"
+        ]
+    },
+    {
+        "location": [
+            59.37187453186788,
+            18.01241312394614
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1915",
+            "T1916"
+        ]
+    },
+    {
+        "location": [
+            59.35504124727905,
+            17.97849138237683
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1917",
+            "T1918"
+        ]
+    },
+    {
+        "location": [
+            59.384483008247585,
+            17.988630408691794
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1919",
+            "T1920"
+        ]
+    },
+    {
+        "location": [
+            59.34496274600576,
+            18.00740803419168
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1921",
+            "T1922"
+        ]
+    },
+    {
+        "location": [
+            59.35622970262425,
+            18.014691015497625
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1923",
+            "T1924"
+        ]
+    },
+    {
+        "location": [
+            59.36208793890047,
+            18.010247402014084
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1925",
+            "T1926"
+        ]
+    },
+    {
+        "location": [
+            59.365041918885666,
+            17.994048327825162
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1927",
+            "T1928"
+        ]
+    },
+    {
+        "location": [
+            59.38713311390761,
+            18.007809101737788
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1929",
+            "T1930"
+        ]
+    },
+    {
+        "location": [
+            59.39055079303697,
+            17.97765307193952
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1931",
+            "T1932"
+        ]
+    },
+    {
+        "location": [
+            59.38232312649035,
+            17.98613564946877
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1933",
+            "T1934"
+        ]
+    },
+    {
+        "location": [
+            59.37598099013727,
+            18.01052063899568
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1935",
+            "T1936"
+        ]
+    },
+    {
+        "location": [
+            59.354029734850016,
+            17.987861802413466
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1937",
+            "T1938"
+        ]
+    },
+    {
+        "location": [
+            59.37561585516855,
+            17.99073507637162
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1939",
+            "T1940"
+        ]
+    },
+    {
+        "location": [
+            59.39204311227584,
+            17.998365802150026
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1941",
+            "T1942"
+        ]
+    },
+    {
+        "location": [
+            59.37579425152874,
+            18.001261223687514
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1943",
+            "T1944"
+        ]
+    },
+    {
+        "location": [
+            59.39344955111984,
+            17.985701511931396
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1945",
+            "T1946"
+        ]
+    },
+    {
+        "location": [
+            59.37183276840833,
+            18.001791669663852
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1947",
+            "T1948"
+        ]
+    },
+    {
+        "location": [
+            59.363801117021005,
+            18.02989566102417
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1949",
+            "T1950"
+        ]
+    },
+    {
+        "location": [
+            59.35266648594047,
+            18.001954248583058
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1951",
+            "T1952"
+        ]
+    },
+    {
+        "location": [
+            59.393043295864175,
+            17.982540250553317
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1953",
+            "T1954"
+        ]
+    },
+    {
+        "location": [
+            59.38722934851728,
+            17.992902278137425
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1955",
+            "T1956"
+        ]
+    },
+    {
+        "location": [
+            59.38530082509664,
+            17.996476865851864
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1957",
+            "T1958"
+        ]
+    },
+    {
+        "location": [
+            59.38926804074172,
+            17.995326456903317
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1959",
+            "T1960"
+        ]
+    },
+    {
+        "location": [
+            59.347707670677124,
+            17.982904441572668
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1961",
+            "T1962"
+        ]
+    },
+    {
+        "location": [
+            59.38027442499536,
+            18.0407787531425
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1963",
+            "T1964"
+        ]
+    },
+    {
+        "location": [
+            59.35523847932305,
+            17.991664212397364
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1965",
+            "T1966"
+        ]
+    },
+    {
+        "location": [
+            59.36050479414158,
+            18.025230852779504
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1967",
+            "T1968"
+        ]
+    },
+    {
+        "location": [
+            59.34735881954,
+            17.99914160781877
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1969",
+            "T1970"
+        ]
+    },
+    {
+        "location": [
+            59.35519977842858,
+            18.034223908401515
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1971",
+            "T1972"
+        ]
+    },
+    {
+        "location": [
+            59.354887702861916,
+            17.991694226560025
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1973",
+            "T1974"
+        ]
+    },
+    {
+        "location": [
+            59.39571544550353,
+            17.997818942795934
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1975",
+            "T1976"
+        ]
+    },
+    {
+        "location": [
+            59.39530447646797,
+            17.995581493359683
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1977",
+            "T1978"
+        ]
+    },
+    {
+        "location": [
+            59.36122235125895,
+            18.025751141736933
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1979",
+            "T1980"
+        ]
+    },
+    {
+        "location": [
+            59.38102285295212,
+            18.000245292815347
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1981",
+            "T1982"
+        ]
+    },
+    {
+        "location": [
+            59.36201862952599,
+            18.02699621830247
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1983",
+            "T1984"
+        ]
+    },
+    {
+        "location": [
+            59.363608263742734,
+            18.014459563575414
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1985",
+            "T1986"
+        ]
+    },
+    {
+        "location": [
+            59.35451342652906,
+            18.0391245669329
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1987",
+            "T1988"
+        ]
+    },
+    {
+        "location": [
+            59.385997318332485,
+            17.99647235414339
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1989",
+            "T1990"
+        ]
+    },
+    {
+        "location": [
+            59.35618303701408,
+            18.036123535739083
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1991",
+            "T1992"
+        ]
+    },
+    {
+        "location": [
+            59.38431593388592,
+            18.013842278477494
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1993",
+            "T1994"
+        ]
+    },
+    {
+        "location": [
+            59.35875128451915,
+            18.00202514674743
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1995",
+            "T1996"
+        ]
+    },
+    {
+        "location": [
+            59.384836155667884,
+            18.011926759122296
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1997",
+            "T1998"
+        ]
+    },
+    {
+        "location": [
+            59.35723979329299,
+            17.984389030718344
+        ],
+        "city_name": "Solna",
+        "speed": 0,
+        "status": {
+            "available": true,
+            "battery_level": 100,
+            "in_service": false
+        },
+        "completed_trips": [
+            "T1999",
+            "T2000"
+        ]
+    }
+]
