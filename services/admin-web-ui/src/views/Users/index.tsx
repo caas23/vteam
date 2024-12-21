@@ -64,10 +64,6 @@ const Users: React.FC = () => {
 		  nextPage={showNextPage}
 		  prevPage={showPrevPage}
 		/>
-  
-		<a href="/users/add" className="add-btn">
-		  Add new user
-		</a>
 	  </div>
 	);
   };

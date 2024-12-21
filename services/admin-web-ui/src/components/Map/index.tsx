@@ -52,14 +52,13 @@ const Map: React.FC = () => {
 		// hämta nuvaranda stad innan resten av datan hämtas
 		if (!currentCity) return;
 
-		document.title = `Map ${currentCity.display_name} - Avec`;
+		document.title = `Map ${currentCity.display_name} - Solo Scoot`;
 
 		const fetchCityBorders = async (cityName: string) => {
 			try {
 				const response = await fetch(
 					`https://nominatim.openstreetmap.org/search.php?q=${cityName}&polygon_geojson=1&format=json`
 				);
-				console.log(response)
 				if (!response.ok) {
 					throw new Error(`Error: ${response.statusText}`);
 				}
