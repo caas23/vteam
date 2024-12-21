@@ -1,18 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Fugaz+One&family=Oswald:wght@200..700&display=swap');
 
 :root {
-    --color-blue-primary: #2EAE63;
-    --color-blue-light: #57D18A;
-    --color-blue-lighter: #8FE6B3;
-    --color-blue-lightest: #DFF9E9;
-    --color-blue-dark: #1E7743;
-    --color-blue-darker: #1A4D30;
-    --color-blue-darkest: #092A19;
+    --color-blue-primary: #2E6DAE;
+    --color-blue-light: #57A7D1;
+    --color-blue-lighter: #8FBFE6;
+    --color-blue-lightest: #DFF2F9;
+    --color-blue-dark: #1E4977;
+    --color-blue-darker: #1A2E5A;
+    --color-blue-darkest: #09223A;
     --color-gray: #A3A6B1;
     --color-gray-light: #D2D5DA;
     --color-gray-lighter: #EEF0F1;
+    --color-gray-dark: #7f8083;
     --color-black: #2F2F2F;
-
+    --color-red: #f50c0c;
+    --color-red-dark: #dd1b1b;
+    --color-red-darker:#ad1515;
+    
     --h1-font: 'Fugaz One', sans-serif;
     --main-font: 'Oswald', 'Inter', Arial, sans-serif;
+
+    /* --color-green-primary: #2EAE63;
+    --color-green-light: #57D18A;
+    --color-green-lighter: #8FE6B3;
+    --color-green-lightest: #DFF9E9;
+    --color-green-dark: #1E7743;
+    --color-green-darker: #1A4D30;
+    --color-green-darkest: #092A19; */
 }
