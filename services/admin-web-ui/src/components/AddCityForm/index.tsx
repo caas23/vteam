@@ -3,8 +3,10 @@ import { FormData } from "./interfaces";
 import "./index.css";
 import { fetchAddCity } from "../../fetchModels/fetchAddCity";
 import AlertMessage from "../AlertMessage";
+import { useNavigate } from "react-router-dom";
 
 const AddCityForm: React.FC = () => {
+  const navigate = useNavigate();
   const [alertMessage, setAlertMessage] = useState("");
   const [alertBox, setAlertBox] = useState(false);
   const [formData, setFormData] = useState<FormData>({
@@ -38,7 +40,11 @@ const AddCityForm: React.FC = () => {
     try {
       const result = await fetchAddCity(newCity);
       console.log("City added:", result);
-      setAlertMessage("A new city has been added.");
+      setAlertMessage("A new city has been added. You will be redirected to its main page in five seconds...");
+
+      setTimeout(() => {
+        navigate(`/city/${name}`);
+      }, 5000);
     } catch {
       setAlertMessage("Error adding city, no city was added.");
     } finally {
@@ -161,7 +167,7 @@ const AddCityForm: React.FC = () => {
           type="submit"
           disabled={!validForm}
         >
-          Add City
+          Add city
         </button>
       </form>
       <AlertMessage

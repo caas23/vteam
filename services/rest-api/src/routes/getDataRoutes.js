@@ -17,8 +17,13 @@ router.get("/", async (req, res) => {
             "/all/rules": "get all rules",
             "/all/bikes": "get all bikes",
             "/all/bikes/pagination": "get 5 bikes at a time for pagination",
-            "/users": "get all users",
+            "/all/users": "get all users",
+            "/all/users/pagination": "get 5 users at a time for pagination",
+            "/all/trips": "get all trips",
             "/one/bike": "get one bike using its bike_id",
+            "/one/user": "get one user using its user_id",
+            "/one/city": "get one city using its name",
+            "/one/trip": "get one trip using its trip_id",
         }
     }
     res.json(routes);

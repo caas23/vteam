@@ -1,4 +1,5 @@
 import React, { useEffect, useState, useRef } from "react";
+import { useParams } from "react-router-dom";
 import { RowItemProps, ChargingStation, ParkingZone, Rule } from "./interfaces";
 import { fetchUpdateCharging } from "../../fetchModels/fetchUpdateCharging";
 import { fetchUpdateParking } from "../../fetchModels/fetchUpdateParking";
@@ -8,6 +9,7 @@ import ConfirmDelete from "../ConfirmDelete";
 import AlertMessage from "../AlertMessage";
 
 const RowDetails: React.FC<RowItemProps> = ({ item, onDelete }) => {
+	const { city } = useParams<{ city: string }>();
 	const [editing, setEditing] = useState(false);
 	const [formData, setFormData] = useState(item);
 	const [submittedData, setSubmittedData] = useState(item);
@@ -52,7 +54,7 @@ const RowDetails: React.FC<RowItemProps> = ({ item, onDelete }) => {
 			} else if ("parking_id" in formData) {
 				await fetchUpdateParking(formData as ParkingZone);
 				setConfirmBox(false);
-				setAlertMessage("The parking zone has benn updated.");
+				setAlertMessage("The parking zone has been updated.");
 			} else if ("rule_id" in formData) {
 				await fetchUpdateRule(formData as Rule);
 				setConfirmBox(false);
@@ -71,16 +73,16 @@ const RowDetails: React.FC<RowItemProps> = ({ item, onDelete }) => {
 	const openConfirmation = () => setConfirmBox(true);
 	const handleDeletion = async () => {
 		try {
-		if ("charging_id" in item) {
-			await fetchDeleteItem(item.charging_id, "charging");
+		if ("charging_id" in item && city) {
+			await fetchDeleteItem(city, item.charging_id, "charging");
 			setAlertMessage("The charging station has been deleted.");
 			onDelete("charging", item.charging_id);
-		} else if ("parking_id" in item) {
-			await fetchDeleteItem(item.parking_id, "parking");
+		} else if ("parking_id" in item && city) {
+			await fetchDeleteItem(city, item.parking_id, "parking");
 			setAlertMessage("The parking zone has been deleted.");
 			onDelete("parking", item.parking_id);
-		} else if ("rule_id" in item) {
-			await fetchDeleteItem(item.rule_id, "rule");
+		} else if ("rule_id" in item && city) {
+			await fetchDeleteItem(city, item.rule_id, "rule");
 			setAlertMessage("The rule has been deleted.");
 			onDelete("rule", item.rule_id);
 		}
