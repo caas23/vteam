@@ -10,7 +10,6 @@ export const getCollection = (name) => {
   return collection;
 };
 
-
 // Get all collections
 export const getAllCollections = async () => {
   const db = getDatabase();

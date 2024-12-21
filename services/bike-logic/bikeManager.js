@@ -1,5 +1,4 @@
 import { getCollection } from "../db/collections.js"
-import { city } from "../db/cities.js";
 import bike from "./bike.js"
 
 // skapa bike_id för varje ny cykel som läggs till
@@ -38,37 +37,6 @@ const bikeManager = {
         }
     },
 
-    // createManyBikes: async function createManyBikes(bikeArray, cityObject) {
-    //     let bikeCollection = getCollection("bikes");
-
-    //     // Map through the array of bikes and prepare multiple bike documents
-    //     const newBikes = bikeArray.map((bike) => ({
-    //         speed: bike.speed,
-    //         location: bike.location,
-    //         city_id: bike.city_id,
-    //         city_name: bike.city_name,
-    //         status: {
-    //             available: bike.available,
-    //             battery_level: bike.battery_level,
-    //             in_service: bike.in_service,
-    //         }
-    //     }));
-
-    //     try {
-    //         // Insert multiple bikes
-    //         let result = await bikeCollection.insertMany(newBikes);
-    //         // if (result.ok) {
-    //         //     // I am not sure bikes attribute in city is that useful
-    //         //     result = cityManager.addNewBikes(newBikes, data.city_id);
-    //         // }
-
-    //         return result;
-    //     } catch (e) {
-    //         console.error("Error creating multiple new bikes:", e.message || e);
-    //         throw new Error("Failed to add many bikes to bike collection.");
-    //     }
-    // },
-
     getAllBikes: async function getAllBikes() {
         let collection = getCollection("bikes");
     
@@ -99,8 +67,6 @@ const bikeManager = {
         return await bikeCollection.countDocuments(filter);
       },
     
-    // underlätta utveckling, kan behöva ses över innan
-    // användning i systemet, bara använts via url än så länge
     deleteBike: async function deleteBike(bikeId) {
         let bikeCollection = getCollection("bikes");
 
@@ -108,7 +74,7 @@ const bikeManager = {
         try {
 
             const result = await bikeCollection.deleteOne(filter);
-            console.log(`Bike with id ${bikeId} was deleted.`)
+            // console.log(`Bike with id ${bikeId} was deleted.`)
 
         return result;
         } catch (e) {
@@ -164,14 +130,6 @@ const bikeManager = {
         const result = await bike.endService(bikeId)
         return result;
     },
-
-    //maybe this should be elsewhere?
-    findCityId: async function findCityId(cityName) {
-        let cities = await city.getCities();
-        const city = cities.find(city => city.name === cityName);
-        return city._id
-    }
-
 }
 
 export default bikeManager

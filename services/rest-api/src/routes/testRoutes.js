@@ -25,8 +25,6 @@ router.get("/report", async (req, res) => {
 // This should according to SDS first go through Manager
 router.post("/report", async (req, res) => {
     let bikeId = req.body.bike_id;
-    console.log(bikeId);
-
     const result = await bike.reportState(bikeId);
     res.json(result);
 });

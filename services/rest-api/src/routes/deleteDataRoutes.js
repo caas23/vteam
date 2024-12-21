@@ -23,7 +23,6 @@ router.delete("/:city/:type/:id", async (req, res) => {
         parking: "parking_zone",
         rule: "city_rules",
     };
-
     
     const collectionName = collections[type];
     try {
@@ -56,13 +55,12 @@ router.delete("/bike/:bike_id", async (req, res) => {
 
 router.delete("/user/:user_id", async (req, res) => {
     const userId = req.params.user_id;
-    console.log(userId)
     let userCollection = getCollection("users");
 
     try {
         const filter = { user_id: userId }
         const result = await userCollection.deleteOne(filter);
-        console.log(`User with id ${userId} was deleted.`)
+        // console.log(`User with id ${userId} was deleted.`)
 
         res.json(result);
         } catch (e) {

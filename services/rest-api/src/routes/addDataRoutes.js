@@ -27,7 +27,6 @@ router.post("/city", async (req, res) => {
         charging_stations: [],
         parking_zones: [],
         rules: [],
-
     }
     const cityCollection = getCollection("cities");
     const result = await cityCollection.insertOne(addCity)
