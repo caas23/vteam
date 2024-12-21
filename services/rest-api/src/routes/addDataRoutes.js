@@ -108,6 +108,40 @@ router.delete("/bike/delete/:bike_id", async (req, res) => {
     }
 });
 
+router.delete("/user/delete/:user_id", async (req, res) => {
+    const userId = req.params.user_id;
+    console.log(userId)
+    let userCollection = getCollection("users");
+
+    try {
+        const filter = { user_id: userId }
+        const result = await userCollection.deleteOne(filter);
+        console.log(`User with id ${userId} was deleted.`)
+
+        res.json(result);
+        } catch (e) {
+            console.error("Error deleting user:", e.message || e);
+            throw new Error("Failed to delete user from user collection.");
+        }
+});
+
+router.put("/ban/user", async (req, res) => {
+    let userId = req.body.user_id;
+    console.log(userId)
+    let userCollection = getCollection("users");
+
+    const result = await userCollection.updateOne(
+        { user_id: userId },
+        { 
+            $set: { 
+                "banned": true
+            } 
+        },
+        { returnDocument: "after" }
+    );
+    res.json(result);
+});
+
 
 // räcker för att lägga till cykel i city
 // och vice versa

@@ -6,13 +6,13 @@ interface FormData {
   rules: string[];
 }
 
-// interface City {
-//   name: string;
-//   display_name: string;
-//   charging_stations: string[];
-//   parking_zones: string[];
-//   rules: string[];
-// }
+interface City {
+  name: string;
+  display_name: string;
+  charging_stations: string[];
+  parking_zones: string[];
+  rules: string[];
+}
 
 interface ChargingStation {
   _id: string;
@@ -37,7 +37,7 @@ interface Rule {
 }
 export type {
   FormData,
-  // City,
+  City,
   ParkingZone,
   ChargingStation,
   Rule
