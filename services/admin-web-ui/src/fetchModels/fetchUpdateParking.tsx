@@ -1,8 +1,9 @@
 import { ParkingZone } from "../components/AddCityForm/interfaces";
 
 export const fetchUpdateParking = async (zone: ParkingZone) => {
+    // testad
     try {
-      const response = await fetch("http://localhost:1337/add/update/parking", {
+      const response = await fetch("http://localhost:1337/update/parking", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

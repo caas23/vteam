@@ -92,5 +92,53 @@ export const city = {
 
     return rules;
   },
+  
+  updateChargingStations: async (city, stationId) => {
+    const cityCollection = getCollection("cities");
+    const currentCity = await cityCollection.findOne({ name: city });
+
+    const updatedStations = currentCity.charging_stations.filter(
+      (id) => id !== stationId
+    );
+
+    const result = await cityCollection.updateOne(
+      { name: city },
+      { $set: { charging_stations: updatedStations } }
+    );
+
+    return result;
+  },
+  
+  updateParkingZones: async (city, zoneId) => {
+    const cityCollection = getCollection("cities");
+    const currentCity = await cityCollection.findOne({ name: city });
+
+    const updatedZones = currentCity.parking_zones.filter(
+      (id) => id !== zoneId
+    );
+
+    const result = await cityCollection.updateOne(
+      { name: city },
+      { $set: { parking_zones: updatedZones } }
+    );
+
+    return result;
+  },
+  
+  updateRules: async (city, zoneId) => {
+    const cityCollection = getCollection("cities");
+    const currentCity = await cityCollection.findOne({ name: city });
+
+    const updatedRules = currentCity.rules.filter(
+      (id) => id !== zoneId
+    );
+
+    const result = await cityCollection.updateOne(
+      { name: city },
+      { $set: { rules: updatedRules } }
+    );
+
+    return result;
+  },
 }
 

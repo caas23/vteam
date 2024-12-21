@@ -1,6 +1,7 @@
 export const fetchDeleteUser = async (user_id: string) => {
   try {
-    const response = await fetch(`http://localhost:1337/add/user/delete/${user_id}`, {
+    // testad
+    const response = await fetch(`http://localhost:1337/delete/user/${user_id}`, {
       method: "DELETE",
       headers: {
         "Content-Type": "application/json",
