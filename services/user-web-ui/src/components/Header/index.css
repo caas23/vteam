@@ -37,3 +37,20 @@
         }
     }
 }
+
+.logout-btn {
+    display: inline-block;
+    margin-top: 0.25em;
+    text-decoration: none;
+    padding: 0.5em 1.5em;
+    background-color: var(--color-blue-primary);
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 0 var(--color-gray);
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--color-blue-dark)
+    }
+}
