@@ -57,7 +57,6 @@ const UserDetails: React.FC<UserDetailsProps> = ({ data }) => {
     <div>
       <div className="user-details">
         <span>Name: {data.name}</span>
-        <span>Email: {data.email}</span>
         <span>Payment method: {data.payment_method}</span>
         <span>Trips: {data.completed_trips.length}
             <span className="sub-list">
