@@ -1,6 +1,7 @@
 import express from 'express';
 import bikeManager from "../../../bike-logic/bikeManager.js"
 import { getCollection } from '../../../db/collections.js';
+import { checkAuth } from '../auth.js';
 
 const router = express.Router();
 
@@ -15,7 +16,7 @@ router.get("/", async (req, res) => {
     res.json(routes);
 });
 
-router.post("/city", async (req, res) => {
+router.post("/city", checkAuth, async (req, res) => {
     // req.body.city förväntas innehålla name och display_name
     // parkeringar, laddstationer cyklar och regler adderas 
     // i ett senare skede (från city/:city vyn)
@@ -34,7 +35,7 @@ router.post("/city", async (req, res) => {
     res.json(result);
 });
 
-router.post("/bike/to/city", async (req, res) => {
+router.post("/bike/to/city", checkAuth, async (req, res) => {
     let newBike = req.body.bike;
     const result = await bikeManager.createBike(newBike);
     res.json(result);
@@ -80,7 +81,7 @@ router.post("/auth/github", async (req, res) => {
     }
 });
 
-router.post("/user", async (req, res) => {
+router.post("/user", checkAuth, async (req, res) => {
     const { git_id, name } = req.body;
 
     const counterCollection = getCollection('user_id_counter');
