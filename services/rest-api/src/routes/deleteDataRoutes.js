@@ -2,6 +2,7 @@ import express from 'express';
 import bikeManager from "../../../bike-logic/bikeManager.js"
 import { getCollection } from '../../../db/collections.js';
 import { city as cityFunctions } from '../../../db/cities.js';
+import { checkAuth } from '../auth.js';
 
 const router = express.Router();
 
@@ -16,7 +17,7 @@ router.get("/", async (req, res) => {
     res.json(routes);
 });
 
-router.delete("/:city/:type/:id", async (req, res) => {
+router.delete("/:city/:type/:id", checkAuth, async (req, res) => {
     const { city, type, id } = req.params;
     const collections = {
         charging: "charging_station",
@@ -40,7 +41,7 @@ router.delete("/:city/:type/:id", async (req, res) => {
     }
 });
 
-router.delete("/bike/:bike_id", async (req, res) => {
+router.delete("/bike/:bike_id", checkAuth, async (req, res) => {
     const bike_id = req.params.bike_id;
 
     try {
@@ -53,7 +54,7 @@ router.delete("/bike/:bike_id", async (req, res) => {
     }
 });
 
-router.delete("/user/:user_id", async (req, res) => {
+router.delete("/user/:user_id", checkAuth, async (req, res) => {
     const userId = req.params.user_id;
     let userCollection = getCollection("users");
 

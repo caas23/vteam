@@ -4,6 +4,7 @@ import { countUsersPagination, getOneUser, getOneGitUser, getUsers, getUsersPagi
 import bikeManager from "../../../bike-logic/bikeManager.js"
 import bike from '../../../bike-logic/bike.js';
 import { getCollection } from '../../../db/collections.js';
+import { checkAuth } from '../auth.js';
 
 const router = express.Router();
 
@@ -29,28 +30,28 @@ router.get("/", async (req, res) => {
     res.json(routes);
 });
 
-router.get("/all/cities", async (req, res) => {
+router.get("/all/cities", checkAuth, async (req, res) => {
     const result = await city.getCities();
     res.json(result);
 });
 
-router.get("/all/charging", async (req, res) => {
+router.get("/all/charging", checkAuth, async (req, res) => {
     const result = await city.getChargingStations();
     res.json(result);
 });
 
-router.get("/all/charging/in/city", async (req, res) => {
+router.get("/all/charging/in/city", checkAuth, async (req, res) => {
     const cityName = req.query.city;
     const result = await city.getChargingStationsByCity(cityName);
     res.json(result);
 });
 
-router.get("/all/parking", async (req, res) => {
+router.get("/all/parking", checkAuth, async (req, res) => {
     const result = await city.getParkingZones();
     res.json(result);
 });
 
-router.get("/all/parking/in/city", async (req, res) => {
+router.get("/all/parking/in/city", checkAuth, async (req, res) => {
     const cityName = req.query.city;
     let result;
 
@@ -62,24 +63,24 @@ router.get("/all/parking/in/city", async (req, res) => {
     res.json(result);
 });
 
-router.get("/all/rules", async (req, res) => {
+router.get("/all/rules", checkAuth, async (req, res) => {
     const result = await city.getRules();
     res.json(result);
 });
 
-router.get("/all/rules/in/city", async (req, res) => {
+router.get("/all/rules/in/city", checkAuth, async (req, res) => {
     const cityName = req.query.city;
     const result = await city.getRulesByCity(cityName);
     res.json(result);
 });
 
-router.get("/all/bikes", async (req, res) => {
+router.get("/all/bikes", checkAuth, async (req, res) => {
     const result = await bikeManager.getAllBikes();
     res.json(result);
 });
 
 // för /bikes-vyn i admin
-router.get("/all/bikes/pagination", async (req, res) => {
+router.get("/all/bikes/pagination", checkAuth, async (req, res) => {
     const page = req.query.page || 1;
     const search = req.query.search || "";
     const limit = 5; // visa 5 cyklar i taget
@@ -100,13 +101,13 @@ router.get("/all/bikes/pagination", async (req, res) => {
     }
 });
 
-router.get("/all/users", async (req, res) => {
+router.get("/all/users", checkAuth, async (req, res) => {
     const result = await getUsers();
     res.json(result);
 });
 
 // för /users-vyn i admin
-router.get("/all/users/pagination", async (req, res) => {
+router.get("/all/users/pagination", checkAuth, async (req, res) => {
     const page = req.query.page || 1;
     const search = req.query.search || "";
     const limit = 5; // visa 5 användare i taget
@@ -127,32 +128,32 @@ router.get("/all/users/pagination", async (req, res) => {
     }
 });
 
-router.get("/one/user", async (req, res) => {
+router.get("/one/user", checkAuth, async (req, res) => {
     const user_id = req.query.user_id;
     const result = await getOneUser(user_id);
     res.json(result);
 });
 
-router.get("/one/git/user", async (req, res) => {
+router.get("/one/git/user", checkAuth, async (req, res) => {
     const id = req.query.id;
     const result = await getOneGitUser(id);
     res.json(result);
 });
 
-router.get("/all/bikes/in/city", async (req, res) => {
+router.get("/all/bikes/in/city", checkAuth, async (req, res) => {
     const city = req.query.city;
     const result = await bikeManager.getAllBikesInCity(city);
     res.json(result);
 });
 
-router.get("/one/bike/", async (req, res) => {
+router.get("/one/bike/", checkAuth, async (req, res) => {
     const bike_id = req.query.bike_id;
     const result = await bike.reportState(bike_id);
 
     res.json(result);
 });
 
-router.get("/one/city/", async (req, res) => {
+router.get("/one/city/", checkAuth, async (req, res) => {
     const city_name = req.query.city;
     let result;
 
@@ -164,12 +165,12 @@ router.get("/one/city/", async (req, res) => {
     res.json(result);
 });
 
-router.get("/all/trips", async (req, res) => {
+router.get("/all/trips", checkAuth, async (req, res) => {
     const result = await getCollection('trips').find().toArray();
     res.json(result);
 });
 
-router.get("/one/trip/", async (req, res) => {
+router.get("/one/trip/", checkAuth, async (req, res) => {
     const trip = req.query.trip;
 
     const result = await getCollection('trips').find({ trip_id: trip }).toArray();

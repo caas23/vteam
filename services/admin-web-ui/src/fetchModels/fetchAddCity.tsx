@@ -6,17 +6,21 @@ export const fetchAddCity = async (city: City) => {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          "Authorization": `Bearer ${sessionStorage.getItem('access_token')}`,
         },
-        body: JSON.stringify({
-          city
-        }),
+        body: JSON.stringify({ city }),
     });
-  
-    if (!response.ok) {
-        throw new Error(response.statusText);
-    }
-  
-    return await response.json();
+
+      if (response.status === 401) {
+        window.location.href = '/';
+        return;
+      }
+    
+      if (!response.ok) {
+          throw new Error(response.statusText);
+      }
+    
+      return await response.json();
 
     } catch (e) {
         console.error("Error adding bike:", e);

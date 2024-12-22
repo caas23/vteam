@@ -3,9 +3,24 @@ export const fetchOneBike = async (
 ) => {
     try {
       const response = await fetch(
-        `http://localhost:1337/get/one/bike/?bike_id=${bike_id}`
-      );
-      return await response.json();
+        `http://localhost:1337/get/one/bike/?bike_id=${bike_id}`, {
+          method: 'GET',
+          headers: {
+            'Authorization': `Bearer ${sessionStorage.getItem('access_token')}`,
+          },
+      });
+      
+    if (response.status === 401) {
+      window.location.href = '/';
+      return;
+    } 
+  
+    if (!response.ok) {
+        throw new Error(response.statusText);
+    }
+  
+    return await response.json();
+
     } catch (error) {
       console.error(`Error fetching bike ${bike_id}:`, error);
       return;

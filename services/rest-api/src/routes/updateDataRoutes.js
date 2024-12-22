@@ -1,5 +1,6 @@
 import express from 'express';
 import { getCollection } from '../../../db/collections.js';
+import { checkAuth } from '../auth.js';
 
 const router = express.Router();
 
@@ -15,7 +16,7 @@ router.get("/", async (req, res) => {
     res.json(routes);
 });
 
-router.put("/parking", async (req, res) => {
+router.put("/parking", checkAuth, async (req, res) => {
     const updatedZone = req.body;
     const parkingCollection = getCollection("parking_zone");
     const result = await parkingCollection.updateOne(
@@ -27,7 +28,7 @@ router.put("/parking", async (req, res) => {
     res.json(result);
 });
 
-router.put("/charging", async (req, res) => {
+router.put("/charging", checkAuth, async (req, res) => {
     const updatedStation = req.body;
     const cityCollection = getCollection("charging_station");
     const result = await cityCollection.updateOne(
@@ -40,7 +41,7 @@ router.put("/charging", async (req, res) => {
     res.json(result);
 });
 
-router.put("/rule", async (req, res) => {
+router.put("/rule", checkAuth, async (req, res) => {
     const updatedRule = req.body;
     const ruleCollection = getCollection("city_rules");
     const result = await ruleCollection.updateOne(
@@ -53,7 +54,7 @@ router.put("/rule", async (req, res) => {
     res.json(result);
 });
 
-router.put("/user/ban", async (req, res) => {
+router.put("/user/ban", checkAuth, async (req, res) => {
     let userId = req.body.user_id;
     console.log(userId)
     let userCollection = getCollection("users");
