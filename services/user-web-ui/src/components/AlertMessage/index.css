@@ -1,0 +1,55 @@
+.confirmation-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.confirmation-content {
+    font-size: 18px;
+    width: 350px;
+    background: #fff;
+    padding: 0.5em;
+    border-radius: 0.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.confirmation-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 0.5em;
+    margin-top: 0.5em;
+
+    & button {
+        width: 100px;
+        padding: 0.5em;
+        font-size: 16px;
+        margin: 0;
+    }  
+}
+
+.edit-btn {
+    display: inline-block;
+    width: 95px;
+    text-decoration: none;
+    margin-top: 0.25em;
+    padding: 0.25em 0.75em;
+    background-color: var(--color-blue-primary);
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 0 var(--color-gray);
+    margin-right: 0.5em;
+  
+    &:hover {
+        cursor: pointer;
+        background-color: var(--color-blue-dark)
+    }
+}

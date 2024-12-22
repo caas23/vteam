@@ -16,3 +16,22 @@
 	flex-direction: column;
 	gap: 1em;
 }
+
+.auth-btn {
+    display: inline-block;
+    width: fit-content;
+    text-decoration: none;
+    margin-top: 2em;
+    padding: 0.5em 1.25em;
+    font-size: 1em;
+    background-color: var(--color-blue-primary);
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 0 var(--color-gray);
+
+    &:hover {
+        cursor: pointer;
+        background-color: var(--color-blue-dark)
+    }
+}
