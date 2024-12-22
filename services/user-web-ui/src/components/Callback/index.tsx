@@ -42,7 +42,6 @@ const Callback: React.FC<CallbackProps> = ({ updateUserStatus }) => {
                         name: data.user.name
                     }
                     const addedUser = await fetchAddUser(newUser);
-                    console.log(addedUser)
                     if (!addedUser) {
                         setError("Failed to add user to the database.");
                         setLoading(false);
