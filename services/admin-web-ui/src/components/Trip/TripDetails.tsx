@@ -17,12 +17,12 @@ const TripDetails: React.FC<TripDetailsProps> = ({ data }) => {
         <span>End location: [{data.end_location.join(", ")}]</span>
         <span>Start time: {new Date(data.start_time).toLocaleString().split(" ")[1]}</span>
         <span>End time: {new Date(data.end_time).toLocaleString().split(" ")[1]}</span>
-        <span>Total time: {totalMinutes.toFixed()} min {totalSeconds % 60} sec</span>
+        <span>Total time: {totalMinutes.toFixed()} min {(totalSeconds % 60).toFixed()} sec</span>
         {distance !== null && (
           <span>Total distance: {(distance / 1000).toFixed(2)} km</span>
         )}
         {averageSpeed !== null && (
-          <span>Average speed: {averageSpeed.toFixed(2)} km/h</span>
+          <span>Average speed: {averageSpeed.toFixed(1)} km/h</span>
         )}
       </div>
         <TripMap
