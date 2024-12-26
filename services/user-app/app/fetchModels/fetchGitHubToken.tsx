@@ -1,7 +1,7 @@
 export const fetchGitHubAccessToken = async (code: string) => {
-  const type = 'web';
+  const type = 'app';
   try {
-    const response = await fetch("http://localhost:1337/add/auth/github", {
+    const response = await fetch("http://vteambackend.loca.lt/add/auth/github", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -13,9 +13,11 @@ export const fetchGitHubAccessToken = async (code: string) => {
       throw new Error("Failed to fetch access token");
     }
 
-    return await response.json();
+    const data = await response.json();
+    // console.log("Fetched GitHub access token data:", data);
+    return data;
   } catch (error) {
-    console.error("Error fetching GitHub access token:", error);
+    // console.error("Error fetching GitHub access token:", error);
     return null;
   }
 };

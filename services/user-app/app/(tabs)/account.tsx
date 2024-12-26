@@ -1,4 +1,5 @@
-import { Image, StyleSheet, Platform } from 'react-native';
+import React, { useCallback } from 'react';
+import { Alert, Image, StyleSheet, Platform } from 'react-native';
 import { Collapsible } from '@/components/Collapsible';
 import { ExternalLink } from '@/components/ExternalLink';
 import { Colors } from '@/constants/Colors';
@@ -6,9 +7,30 @@ import { Colors } from '@/constants/Colors';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import { useAuth } from '../AuthCheck';
+import { useNavigation, useFocusEffect } from 'expo-router';
 
 
 export default function AccountTab() {
+  const { isAuthenticated } = useAuth();
+  const navigation = useNavigation();
+
+  useFocusEffect(
+      useCallback(() => {
+        if (!isAuthenticated) {
+          navigation.navigate('index' as never);
+          Alert.alert(
+            'Authentication Required',
+            'You need to be logged in to access this page.',
+            [
+              {
+                text: 'OK',
+              },
+            ]
+          );
+        }
+      }, [isAuthenticated, navigation])
+  );
   return (
     <ParallaxScrollView
       headerBackgroundColor={{ 

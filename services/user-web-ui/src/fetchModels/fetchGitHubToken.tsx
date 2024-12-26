@@ -1,11 +1,12 @@
 export const fetchGitHubAccessToken = async (code: string) => {
+  const type = 'web';
   try {
     const response = await fetch("http://localhost:1337/add/auth/github", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify({ code }),
+      body: JSON.stringify({ code, type }),
     });
 
     if (!response.ok) {

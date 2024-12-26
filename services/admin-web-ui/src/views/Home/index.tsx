@@ -45,7 +45,7 @@ const Home: React.FC = () => {
                 <p><i>And remember ...</i></p>
                 <p>Working at Solo Scoot, you will never get tired of putting the time in.</p>
 
-                {!user && <button className="auth-btn" onClick={handleAuth}>Log in with Github</button>}
+                {!user && <button className="auth-btn" onClick={handleAuth}>Log in with GitHub</button>}
             </div>
             <div className="scooter-graphic">
                 <img src={scooterIcon} className="logo" alt="scooter" />

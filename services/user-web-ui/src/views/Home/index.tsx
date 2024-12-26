@@ -42,7 +42,7 @@ const Home: React.FC = () => {
                 </h2>
                 <p>Enjoy some alone time while getting to your next destination safely.</p>
 
-                {!user && <button className="auth-btn" onClick={handleAuth}>Log in with Github</button>}
+                {!user && <button className="auth-btn" onClick={handleAuth}>Log in with GitHub</button>}
             </div>
             <div className="scooter-graphic">
                 <img src={scooterIcon} className="logo" alt="scooter" />
