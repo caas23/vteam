@@ -35,12 +35,18 @@ interface ChargingStation {
 interface ParkingZone {
     parking_id: string;
     area: [number, number][];
-  }
+}
+
+interface AuthContext {
+    isAuthenticated: boolean | null;
+    setIsAuthenticated: React.Dispatch<React.SetStateAction<boolean | null>>;
+}
   
 export type {
     City,
     Bike,
     ChargingStation,
     ParkingZone,
+    AuthContext
 };
   

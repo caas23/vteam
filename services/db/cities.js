@@ -48,6 +48,21 @@ export const city = {
     return chargingStations;
   },
   
+  getChargingStationsByDisplayCity: async (city) => {
+    const result = await getCollection('cities').findOne({ display_name: city });
+    const chargingStationIds = result.charging_stations;
+
+    if (!chargingStationIds || chargingStationIds.length === 0) {
+      return [];
+    }
+
+    const chargingStations = await getCollection('charging_station').find({
+      charging_id: { $in: chargingStationIds }
+    }).toArray();
+
+    return chargingStations;
+  },
+  
   getParkingZonesByCity: async (city) => {
     const result = await getCollection('cities').findOne({ name: city });
     const parkingZoneIds = result.parking_zones;

@@ -42,8 +42,7 @@ router.post("/bike/to/city", checkAuth, async (req, res) => {
 });
 
 router.post("/auth/github", async (req, res) => {
-    const { code } = req.body;
-
+    const { code, type } = req.body;
     try {
         const tokenResponse = await fetch("https://github.com/login/oauth/access_token", {
             method: "POST",
@@ -52,8 +51,8 @@ router.post("/auth/github", async (req, res) => {
                 Accept: "application/json",
             },
             body: JSON.stringify({
-                client_id: process.env.GITHUB_ID,
-                client_secret: process.env.GITHUB_SECRET,
+                client_id: type == 'app' ? process.env.GITHUB_ID_APP : process.env.GITHUB_ID,
+                client_secret: type == 'app' ? process.env.GITHUB_SECRET_APP : process.env.GITHUB_SECRET,
                 code,
             }),
         });

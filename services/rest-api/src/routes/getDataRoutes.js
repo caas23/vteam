@@ -30,6 +30,11 @@ router.get("/", async (req, res) => {
     res.json(routes);
 });
 
+router.get('/callback', (req, res) => {
+    const { code } = req.query;
+    res.redirect(`exp://sbp8ws0-anonymous-8081.exp.direct?code=${code}`);
+});
+
 router.get("/all/cities", checkAuth, async (req, res) => {
     const result = await city.getCities();
     res.json(result);
@@ -42,7 +47,13 @@ router.get("/all/charging", checkAuth, async (req, res) => {
 
 router.get("/all/charging/in/city", checkAuth, async (req, res) => {
     const cityName = req.query.city;
-    const result = await city.getChargingStationsByCity(cityName);
+    let result;
+    
+    if (/^[A-Z]/.test(cityName.split("")[0])) {
+        result = await city.getChargingStationsByDisplayCity(cityName)
+        return res.json(result);
+    } 
+    result = await city.getChargingStationsByCity(cityName);
     res.json(result);
 });
 

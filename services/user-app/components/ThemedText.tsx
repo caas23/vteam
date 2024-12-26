@@ -5,7 +5,7 @@ import { useColorScheme } from 'react-native';
 export type ThemedTextProps = TextProps & {
   lightColor?: string;
   darkColor?: string;
-  type?: 'default' | 'title' | 'defaultSemiBold' | 'subtitle' | 'link';
+  type?: 'default' | 'title' | 'defaultSemiBold' | 'subtitle' | 'link' | 'subsection';
 };
 
 export function ThemedText({
@@ -29,6 +29,7 @@ export function ThemedText({
         type === 'defaultSemiBold' ? styles.defaultSemiBold : undefined,
         type === 'subtitle' ? styles.subtitle : undefined,
         type === 'link' ? { color: linkColor } : undefined,
+        type === 'subsection' ? styles.subsection : undefined,
         style,
       ]}
       {...rest}
@@ -51,7 +52,7 @@ const styles = StyleSheet.create({
   },
   title: {
     fontFamily: 'FugazOne',
-    fontSize: 32,
+    fontSize: 28,
   },
   subtitle: {
     fontSize: 20,
@@ -60,5 +61,8 @@ const styles = StyleSheet.create({
   link: {
     lineHeight: 30,
     fontSize: 16,
+  },
+  subsection: {
+    fontSize: 18,
   },
 });

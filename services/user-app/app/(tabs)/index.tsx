@@ -1,17 +1,104 @@
-import { Image, StyleSheet, Platform } from 'react-native';
-import { Collapsible } from '@/components/Collapsible';
-import { ExternalLink } from '@/components/ExternalLink';
+import React, { useEffect, useState } from 'react';
+import { Image, Linking, StyleSheet, TouchableOpacity, Alert, View, Text, ActivityIndicator } from 'react-native';
 import { Colors } from '@/constants/Colors';
-
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
+import Constants from 'expo-constants';
+import * as SecureStore from 'expo-secure-store';
+import { fetchGitHubAccessToken } from '../fetchModels/fetchGitHubToken';
+import { fetchOneUserByGitId } from '../fetchModels/fetchOneUser';
+import { fetchAddUser } from '../fetchModels/fetchAddUser';
+import { useAuth } from '../AuthCheck';
 
+const { GITHUB_ID } = Constants?.expoConfig?.extra as { GITHUB_ID: string };
 
 export default function HomeTab() {
+  const [buttonPressed, setButtonPressed] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const { isAuthenticated, setIsAuthenticated } = useAuth();
+
+  const githubOAuthUrl = `https://github.com/login/oauth/authorize?client_id=${GITHUB_ID}&scope=read:user,user:email`;
+
+  const handleAuth = async () => {
+    setLoading(true);
+
+    try {
+      if (isAuthenticated) {
+        await SecureStore.deleteItemAsync('access_token');
+        await SecureStore.deleteItemAsync('user');
+
+        setIsAuthenticated(false);
+        Alert.alert("Alert", "You have been logged out.");
+      } else {
+        await Linking.openURL(githubOAuthUrl);
+        // console.log('Redirected to GitHub for authentication');
+      }
+    } catch (error) {
+      Alert.alert("Error", "Failed to open authentication URL.");
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    const handleOAuthCallback = async (url: string) => {
+      const code = new URLSearchParams(url.split('?')[1]).get('code');
+      if (!code) return;
+
+      setLoading(true);
+
+      try {
+        const data = await fetchGitHubAccessToken(code);
+        if (!data) return;
+
+        await SecureStore.setItemAsync('access_token', data.access_token);
+        await SecureStore.setItemAsync('user', JSON.stringify(data.user));
+        setIsAuthenticated(true);
+
+        const existingUser = await fetchOneUserByGitId(data.user.id);
+
+        if (!existingUser.length) {
+            const newUser = {
+                git_id: data.user.id,
+                name: data.user.name
+            }
+            const addedUser = await fetchAddUser(newUser);
+            if (!addedUser) {
+                Alert.alert("Failed to add user to the database.");
+                return;
+            }
+        }
+
+
+      } catch (error) {
+        // console.error("Error fetching access token:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    const getInitialUrl = async () => {
+      const initialUrl = await Linking.getInitialURL();
+      if (initialUrl) {
+        handleOAuthCallback(initialUrl);
+      }
+    };
+
+    getInitialUrl();
+
+    const handleDeepLink = (event: any) => {
+      handleOAuthCallback(event.url);
+    };
+
+    Linking.addEventListener('url', handleDeepLink);
+
+    return;
+  }, [isAuthenticated, setIsAuthenticated]);
+
   return (
     <ParallaxScrollView
-      headerBackgroundColor={{ 
+      headerBackgroundColor={{
         light: Colors.light.headerBackground,
         dark: Colors.dark.headerBackground
       }}
@@ -22,91 +109,41 @@ export default function HomeTab() {
         />
       }>
       <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Home</ThemedText>
+        <ThemedText type="title">Ridin' solo ain't that bad!</ThemedText>
       </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
+      <ThemedView style={styles.subTextContainer}>
         <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12'
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
+          When you want to get from A to B without hassle, Solo Scoot has your back!
         </ThemedText>
       </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
+      <ThemedView style={styles.subTextContainer}>
+        <ThemedText type="subsection">
+          Enjoy some alone time while getting to your next destination safely.
         </ThemedText>
       </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-      <Collapsible title="File-based routing">
-        <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
-        </ThemedText>
-        <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
-        <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
-        </ThemedText>
-      </Collapsible>
-      <Collapsible title="Images">
-        <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
-        </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Custom fonts">
-        <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
-          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
+
+      <TouchableOpacity
+        style={[
+          styles.authButton,
+          buttonPressed ? styles.authButtonPressed : null,
+        ]}
+        onPressIn={() => setButtonPressed(true)}
+        onPressOut={() => setButtonPressed(false)}
+        onPress={handleAuth}
+        disabled={loading}
+      >
+        {loading ? (
+          <ActivityIndicator size="small" color="#fff" />
+        ) : (
+          <ThemedText style={styles.authButtonText}>
+            {isAuthenticated ? 'Log out' : 'Log in with GitHub'}
           </ThemedText>
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Light and dark mode components">
-        <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
+        )}
+      </TouchableOpacity>
+
+      <ThemedView style={styles.imageContainer}>
+        <Image style={styles.soloScootScooter} source={require('@/assets/images/scooter-icon-blue.png')} />
+      </ThemedView>
     </ParallaxScrollView>
   );
 }
@@ -117,7 +154,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     gap: 8,
   },
-  stepContainer: {
+  subTextContainer: {
     gap: 8,
     marginBottom: 8,
   },
@@ -127,5 +164,33 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 25,
     position: 'absolute',
+  },
+  imageContainer: {
+    height: 500,
+  },
+  soloScootScooter: {
+    height: 150,
+    width: 150,
+    top: 250,
+    right: -25,
+    position: 'absolute',
+  },
+  authButton: {
+    backgroundColor: '#2E6DAE',
+    paddingVertical: 10,
+    paddingHorizontal: 20,
+    borderRadius: 5,
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginTop: 20,
+    boxShadow: '2px 2px 3px 0 rgba(0,0,0,0.4)',
+  },
+  authButtonPressed: {
+    backgroundColor: '#09223A',
+  },
+  authButtonText: {
+    color: '#fff',
+    fontWeight: '400',
+    fontSize: 16,
   },
 });
