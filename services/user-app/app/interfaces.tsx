@@ -41,12 +41,55 @@ interface AuthContext {
     isAuthenticated: boolean | null;
     setIsAuthenticated: React.Dispatch<React.SetStateAction<boolean | null>>;
 }
+
+interface User {
+    _id: string;
+    name: string;
+    payment_method: string;
+    banned: boolean;
+    completed_trips: string[];
+    user_id: string;
+    balance: number;
+}
+
+interface UserDetailsProps {
+    user: User;
+    fetchUserData: () => Promise<void>;
+}
+
+interface TripUserDetailsProps {
+    user: User;
+}
+
+interface Trip {
+    start_time: string;
+    end_time: string;
+    start_location: [number, number];
+    end_location: [number, number];
+    trip_id: string;
+}
+  
+interface TripDetailsProps {
+    data: Trip;
+    onClose: () => void;
+}
+
+interface TripMapProps {
+	startLocation: [number, number];
+	endLocation: [number, number];
+	FetchedDistance?: (distance: number) => void;
+}
   
 export type {
     City,
     Bike,
     ChargingStation,
     ParkingZone,
-    AuthContext
+    AuthContext,
+    User,
+    UserDetailsProps,
+    TripUserDetailsProps,
+    TripDetailsProps,
+    TripMapProps
 };
   
