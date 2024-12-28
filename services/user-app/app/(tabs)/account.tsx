@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useCallback } from 'react';
+import React, { useState, useCallback } from 'react';
 import { Alert, Image, StyleSheet, View } from 'react-native';
 import { Collapsible } from '@/components/Collapsible';
 import { Colors } from '@/constants/Colors';
@@ -8,7 +8,7 @@ import { ThemedView } from '@/components/ThemedView';
 import { useAuth } from '../AuthCheck';
 import { useNavigation, useFocusEffect } from 'expo-router';
 import { User as UserInterface } from '../interfaces';
-import { fetchOneUserByGitId } from '../fetchModels/fetchOneUser';
+import fetchOneUserByGitId from '../fetchModels/fetchOneUser';
 import * as SecureStore from 'expo-secure-store';
 import UserDetails from '../UserDetails';
 import TripDetails from '../TripDetails';
@@ -27,6 +27,8 @@ export default function AccountTab() {
 			'You need to be logged in to access this page.',
 			[{ text: 'OK' }]
 			);
+		} else {
+			fetchUserData();
 		}
 		}, [isAuthenticated, navigation])
 	);
@@ -34,16 +36,12 @@ export default function AccountTab() {
 	const fetchUserData = async () => {
 		const storedUser = await SecureStore.getItemAsync('user')
 		try {
-		const result = await fetchOneUserByGitId(storedUser ? JSON.parse(storedUser).id : 0)
-		setUserData(result[0])
+			const result = await fetchOneUserByGitId(storedUser ? JSON.parse(storedUser).id : null)
+			setUserData(result[0])
 		} catch {
-		setUserData(null);
+			setUserData(null);
 		}
 	};
-
-	useEffect(() => {
-		fetchUserData();
-	}, []);
 
 	return (
 		<View style={styles.container}>

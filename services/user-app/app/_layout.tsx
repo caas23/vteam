@@ -6,7 +6,7 @@ import { StatusBar } from 'expo-status-bar';
 import { useEffect } from 'react';
 import 'react-native-reanimated';
 import { useColorScheme } from '@/hooks/useColorScheme';
-import { AuthCheck } from './AuthCheck';
+import AuthCheck from './AuthCheck';
 
 SplashScreen.preventAutoHideAsync();
 

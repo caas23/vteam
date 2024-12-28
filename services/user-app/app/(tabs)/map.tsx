@@ -37,6 +37,8 @@ const MapTab: React.FC = () => {
 					'You need to be logged in to access this page.',
 					[{ text: 'OK' }]
 				);
+			} else {
+				fetchCitiesData();
 			}
 		}, [isAuthenticated, navigation])
 	);
@@ -45,8 +47,7 @@ const MapTab: React.FC = () => {
 		setRegion(newRegion);
 	};
 
-	useEffect(() => {
-		const fetchCitiesData = async () => {
+	const fetchCitiesData = async () => {
 		try {
 			let citiesData = await fetchCities();
 			while (!citiesData) citiesData = await fetchCities();
@@ -63,9 +64,7 @@ const MapTab: React.FC = () => {
 			// console.error('Error fetching cities:', error);
 			return [];
 		}
-		};
-		fetchCitiesData();
-	}, []);
+	};
 
 	const fetchCityCenter = async (cityName: string) => {
 		if (cityName === 'current') {

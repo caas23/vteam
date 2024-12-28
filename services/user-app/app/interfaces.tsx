@@ -79,6 +79,9 @@ interface TripMapProps {
 	endLocation: [number, number];
 	FetchedDistance?: (distance: number) => void;
 }
+
+const interfaces = {};
+export default interfaces;
   
 export type {
     City,

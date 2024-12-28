@@ -6,9 +6,9 @@ import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import Constants from 'expo-constants';
 import * as SecureStore from 'expo-secure-store';
-import { fetchGitHubAccessToken } from '../fetchModels/fetchGitHubToken';
-import { fetchOneUserByGitId } from '../fetchModels/fetchOneUser';
-import { fetchAddUser } from '../fetchModels/fetchAddUser';
+import fetchGitHubAccessToken from '../fetchModels/fetchGitHubToken';
+import fetchOneUserByGitId from '../fetchModels/fetchOneUser';
+import fetchAddUser from '../fetchModels/fetchAddUser';
 import { useAuth } from '../AuthCheck';
 
 const { GITHUB_ID } = Constants?.expoConfig?.extra as { GITHUB_ID: string };
