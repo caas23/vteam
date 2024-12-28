@@ -24,6 +24,7 @@ export default function UserDetails({ user, fetchUserData }: UserDetailsProps) {
 		try {
 			const respone = await fetchUpdateUser(updateUser);
 			if (respone) {
+				setUpdateModalVisible(false);
 				Alert.alert(
 					'Account Updated',
 					`Your account have been updated.`
@@ -34,9 +35,8 @@ export default function UserDetails({ user, fetchUserData }: UserDetailsProps) {
 			)};
 			await fetchUserData();
 		} catch (error) {
-			return [];
-		} finally {
 			setUpdateModalVisible(false);
+			return [];
 		}
 	};
 
@@ -60,13 +60,10 @@ export default function UserDetails({ user, fetchUserData }: UserDetailsProps) {
 		</Text>
 		<View style={styles.buttonContainer}>
 			<TouchableOpacity
-			style={styles.button}
+			style={[styles.button, { flex: 0 }]}
 			onPress={() => setUpdateModalVisible(true)}
 			>
 			<ThemedText style={styles.buttonText}>Update Account</ThemedText>
-			</TouchableOpacity>
-			<TouchableOpacity style={styles.buttonDelete} onPress={() => Alert.alert('Account deleted')}>
-			<ThemedText style={styles.buttonText}>Delete Account</ThemedText>
 			</TouchableOpacity>
 		</View>
 
@@ -80,7 +77,7 @@ export default function UserDetails({ user, fetchUserData }: UserDetailsProps) {
 				<View style={styles.modalOverlay}>
 					<View style={[styles.modalContent, { backgroundColor: themeColor.background }]}>
 						<Text style={[styles.modalTitle, { color: themeColor.text }]}>
-							Update Account Details
+							Update details
 						</Text>
 						<TextInput
 							style={[styles.input, { color: themeColor.text, borderColor: themeColor.border }]}
@@ -151,15 +148,6 @@ const styles = StyleSheet.create({
 	},
 	button: {
 		backgroundColor: '#2E6DAE',
-		paddingVertical: 10,
-		paddingHorizontal: 20,
-		borderRadius: 5,
-		alignItems: 'center',
-		justifyContent: 'center',
-		flex: 1,
-	},
-	buttonDelete: {
-		backgroundColor: '#dd1b1b',
 		paddingVertical: 10,
 		paddingHorizontal: 20,
 		borderRadius: 5,

@@ -4,7 +4,7 @@ import { AuthContext as AuthInterface } from './interfaces';
 
 const AuthContext = createContext<AuthInterface | null>(null);
 
-export const AuthCheck = ({ children }: any) => {
+export default function AuthCheck({ children }: any) {
   const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
 
   const checkAuthStatus = async () => {
