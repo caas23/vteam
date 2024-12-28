@@ -1,153 +1,115 @@
-import React, { useCallback } from 'react';
-import { Alert, Image, StyleSheet, Platform } from 'react-native';
+import React, { useEffect, useState, useCallback } from 'react';
+import { Alert, Image, StyleSheet, View } from 'react-native';
 import { Collapsible } from '@/components/Collapsible';
-import { ExternalLink } from '@/components/ExternalLink';
 import { Colors } from '@/constants/Colors';
-
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
 import { useAuth } from '../AuthCheck';
 import { useNavigation, useFocusEffect } from 'expo-router';
-
+import { User as UserInterface } from '../interfaces';
+import { fetchOneUserByGitId } from '../fetchModels/fetchOneUser';
+import * as SecureStore from 'expo-secure-store';
+import UserDetails from '../UserDetails';
+import TripDetails from '../TripDetails';
 
 export default function AccountTab() {
-  const { isAuthenticated } = useAuth();
-  const navigation = useNavigation();
+	const { isAuthenticated } = useAuth();
+	const navigation = useNavigation();
+	const [userData, setUserData] = useState< UserInterface | null | undefined >(undefined);
 
-  useFocusEffect(
-      useCallback(() => {
-        if (!isAuthenticated) {
-          navigation.navigate('index' as never);
-          Alert.alert(
-            'Authentication Required',
-            'You need to be logged in to access this page.',
-            [
-              {
-                text: 'OK',
-              },
-            ]
-          );
-        }
-      }, [isAuthenticated, navigation])
-  );
-  return (
-    <ParallaxScrollView
-      headerBackgroundColor={{ 
-        light: Colors.light.headerBackground,
-        dark: Colors.dark.headerBackground
-      }}
-      headerImage={
-        <Image
-          source={require('@/assets/images/solo-scoot-logo.png')}
-          style={styles.soloScootLogo}
-        />
-      }>
-      <ThemedView style={styles.titleContainer}>
-        <ThemedText type="title">Account</ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 1: Try it</ThemedText>
-        <ThemedText>
-          Edit <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> to see changes.
-          Press{' '}
-          <ThemedText type="defaultSemiBold">
-            {Platform.select({
-              ios: 'cmd + d',
-              android: 'cmd + m',
-              web: 'F12'
-            })}
-          </ThemedText>{' '}
-          to open developer tools.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 2: Explore</ThemedText>
-        <ThemedText>
-          Tap the Explore tab to learn more about what's included in this starter app.
-        </ThemedText>
-      </ThemedView>
-      <ThemedView style={styles.stepContainer}>
-        <ThemedText type="subtitle">Step 3: Get a fresh start</ThemedText>
-        <ThemedText>
-          When you're ready, run{' '}
-          <ThemedText type="defaultSemiBold">npm run reset-project</ThemedText> to get a fresh{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> directory. This will move the current{' '}
-          <ThemedText type="defaultSemiBold">app</ThemedText> to{' '}
-          <ThemedText type="defaultSemiBold">app-example</ThemedText>.
-        </ThemedText>
-      </ThemedView>
-      <Collapsible title="File-based routing">
-        <ThemedText>
-          This app has two screens:{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/index.tsx</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">app/(tabs)/explore.tsx</ThemedText>
-        </ThemedText>
-        <ThemedText>
-          The layout file in <ThemedText type="defaultSemiBold">app/(tabs)/_layout.tsx</ThemedText>{' '}
-          sets up the tab navigator.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/router/introduction">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Android, iOS, and web support">
-        <ThemedText>
-          You can open this project on Android, iOS, and the web. To open the web version, press{' '}
-          <ThemedText type="defaultSemiBold">w</ThemedText> in the terminal running this project.
-        </ThemedText>
-      </Collapsible>
-      <Collapsible title="Images">
-        <ThemedText>
-          For static images, you can use the <ThemedText type="defaultSemiBold">@2x</ThemedText> and{' '}
-          <ThemedText type="defaultSemiBold">@3x</ThemedText> suffixes to provide files for
-          different screen densities
-        </ThemedText>
-        <Image source={require('@/assets/images/react-logo.png')} style={{ alignSelf: 'center' }} />
-        <ExternalLink href="https://reactnative.dev/docs/images">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Custom fonts">
-        <ThemedText>
-          Open <ThemedText type="defaultSemiBold">app/_layout.tsx</ThemedText> to see how to load{' '}
-          <ThemedText style={{ fontFamily: 'SpaceMono' }}>
-            custom fonts such as this one.
-          </ThemedText>
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/versions/latest/sdk/font">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-      <Collapsible title="Light and dark mode components">
-        <ThemedText>
-          This template has light and dark mode support. The{' '}
-          <ThemedText type="defaultSemiBold">useColorScheme()</ThemedText> hook lets you inspect
-          what the user's current color scheme is, and so you can adjust UI colors accordingly.
-        </ThemedText>
-        <ExternalLink href="https://docs.expo.dev/develop/user-interface/color-themes/">
-          <ThemedText type="link">Learn more</ThemedText>
-        </ExternalLink>
-      </Collapsible>
-    </ParallaxScrollView>
-  );
+	useFocusEffect(
+		useCallback(() => {
+		if (!isAuthenticated) {
+			navigation.navigate('index' as never);
+			Alert.alert(
+			'Authentication Required',
+			'You need to be logged in to access this page.',
+			[{ text: 'OK' }]
+			);
+		}
+		}, [isAuthenticated, navigation])
+	);
+
+	const fetchUserData = async () => {
+		const storedUser = await SecureStore.getItemAsync('user')
+		try {
+		const result = await fetchOneUserByGitId(storedUser ? JSON.parse(storedUser).id : 0)
+		setUserData(result[0])
+		} catch {
+		setUserData(null);
+		}
+	};
+
+	useEffect(() => {
+		fetchUserData();
+	}, []);
+
+	return (
+		<View style={styles.container}>
+		<ParallaxScrollView
+			headerBackgroundColor={{
+			light: Colors.light.headerBackground,
+			dark: Colors.dark.headerBackground,
+			}}
+			headerImage={
+			<Image
+				source={require('@/assets/images/solo-scoot-logo.png')}
+				style={styles.soloScootLogo}
+			/>
+			}>
+			<ThemedView style={styles.titleContainer}>
+			<ThemedText type="title">Account</ThemedText>
+			</ThemedView>
+			<Collapsible title="Trips">
+			{userData ? (
+				<TripDetails user={userData} />
+			) : (
+				<ThemedText>Loading trip data...</ThemedText>
+			)}
+			</Collapsible>
+			<Collapsible title="User">
+			{userData ? (
+				<UserDetails user={userData} fetchUserData={fetchUserData}/>
+			) : (
+				<ThemedText>Loading user data...</ThemedText>
+			)}
+			</Collapsible>
+		</ParallaxScrollView>
+
+		<View style={styles.scooterContainer}>
+			<Image
+			style={styles.soloScootScooter}
+			source={require('@/assets/images/scooter-icon-blue.png')}
+			/>
+		</View>
+		</View>
+	);
 }
 
 const styles = StyleSheet.create({
-  titleContainer: {
-    flexDirection: 'row',
-    alignItems: 'center',
-    gap: 8,
-  },
-  stepContainer: {
-    gap: 8,
-    marginBottom: 8,
-  },
-  soloScootLogo: {
-    height: 50,
-    width: 50,
-    bottom: 0,
-    left: 25,
-    position: 'absolute',
-  },
+	container: {
+		flex: 1,
+	},
+	titleContainer: {
+		flexDirection: 'row',
+		alignItems: 'center',
+		gap: 8,
+	},
+	soloScootLogo: {
+		height: 50,
+		width: 50,
+		bottom: 0,
+		left: 25,
+		position: 'absolute',
+	},
+	scooterContainer: {
+		position: 'absolute',
+		bottom: 87.5,
+		right: 7,
+	},
+	soloScootScooter: {
+		height: 150,
+		width: 150,
+	},
 });

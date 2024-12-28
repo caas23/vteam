@@ -60,11 +60,8 @@ const TripMap: React.FC<TripMapProps> = ({ startLocation, endLocation, FetchedDi
                     const decodedRoute = polyline.decode(encodedRoute);
                     setRoute(decodedRoute);
 
-                    if (data.routes[0]?.summary?.distance) {
-                        const distance = data.routes[0].summary.distance;
-                        if (FetchedDistance) {
-                            FetchedDistance(distance);
-                        }
+                    if (data.routes[0]?.summary?.distance && FetchedDistance) {
+                        FetchedDistance(data.routes[0].summary.distance);
                     }
                 } else {
                     throw new Error("Route data missing");

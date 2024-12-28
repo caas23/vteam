@@ -46,9 +46,9 @@ const styles = StyleSheet.create({
     letterSpacing: 0.5,
   },
   defaultSemiBold: {
-    fontSize: 16,
+    fontSize: 20,
     lineHeight: 24,
-    fontWeight: '600',
+    fontWeight: '500',
   },
   title: {
     fontFamily: 'FugazOne',

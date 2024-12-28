@@ -11,6 +11,7 @@ export default {
     },
     newArchEnabled: true,
     extra: {
+      API_KEY: process.env.API_KEY,
       GITHUB_ID: process.env.GITHUB_ID
     },
     plugins: [

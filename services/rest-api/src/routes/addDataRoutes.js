@@ -93,6 +93,7 @@ router.post("/user", checkAuth, async (req, res) => {
     const addUser = {
         name: name,
         payment_method: "",
+        balance: 0,
         banned: false,
         completed_trips: [],
         git_id: git_id,
