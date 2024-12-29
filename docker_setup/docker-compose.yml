@@ -1,40 +1,47 @@
-networks:
-  vteam:
-
 services:
-  server:
-    image: eckepecke/vteam-server:1.0
-    container_name: "server"
+  admin-web:
+    container_name: admin-web-ui
+    build:
+      context: ../services/admin-web-ui
+    networks:
+      - frontend
     ports:
-      - 8080:8080
+      - "5173:5173"
+  
+  user-web:
+    container_name: user-web-ui
+    build:
+      context: ../services/user-web-ui
+    networks:
+      - frontend
+    ports:
+      - "5174:5174"
+
+  user-app:
+    container_name: user-app
+    build:
+      context: ../services/user-app
+    networks:
+      - frontend
+    environment:
+      - EXPO_PACKAGER_OPTS=--tunnel
+      - EXPO_TUNNEL=true
+    stdin_open: true
+    tty: true
+    
+  api:
+    container_name: api
+    build:
+      context: ../services/rest-api
+    networks:
+      - backend
+      - frontend
     volumes:
-      - "./data/:/data"
-    networks:
-      - vteam
-  customer_webbclient:
-    image: eckepecke/customer-webbclient:1.0
-    container_name: "customer_webbclient"
-    stdin_open: true
-    networks:
-      - vteam
-    links:
-      - server:server
-    command: /bin/bash
-  customer_mobileclient:
-    image: eckepecke/customer-mobileclient:1.0
-    container_name: "customer_mobileclient"
-    stdin_open: true
-    networks:
-      - vteam
-    links:
-      - server:server
-    command: /bin/bash
-  admin_webbclient:
-    image: eckepecke/admin-webbclient:1.0
-    container_name: "admin_webbclient"
-    stdin_open: true
-    networks:
-      - vteam
-    links:
-      - server:server
-    command: /bin/bash
+      - ../services/db:/db
+      - ../services/bike-logic:/bike-logic
+    ports:
+      - "1337:1337"
+
+networks:
+  frontend:
+  backend:
