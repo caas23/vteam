@@ -67,6 +67,7 @@ interface Trip {
     start_location: [number, number];
     end_location: [number, number];
     trip_id: string;
+    price: number;
 }
   
 interface TripDetailsProps {
