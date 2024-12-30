@@ -26,7 +26,7 @@ const Home: React.FC = () => {
         }
     }, [location.state]);
 
-    const GITHUB_ID = import.meta.env.VITE_GITHUB_ID;
+    const GITHUB_ID = import.meta.env.VITE_GITHUB_ID_ADMIN;
     const githubOAuthUrl = `https://github.com/login/oauth/authorize?client_id=${GITHUB_ID}&scope=read:user,user:email`;
 
     const handleAuth = () => {
