@@ -1,0 +1,6 @@
+.big {
+    width: 450px;
+    & pre {
+        text-align: left;
+    }
+}

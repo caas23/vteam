@@ -4,6 +4,7 @@ interface Trip {
   end_time: Date;
   start_location: [number, number];
   end_location: [number, number];
+  price: number;
 }
 
 interface TripDetailsProps {

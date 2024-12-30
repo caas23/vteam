@@ -10,7 +10,7 @@ const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cl
 // Skript för att lägga till/återställa användare i databasen.
 // Totalt 1000 användare läggs till.
 // Användare har delvis skapats med hjälp av material 
-// från kursen vlinux samt slumpgenererade lösenord.
+// från kursen vlinux.
 
 const loadData = async (filePath) => {
   const users = await fs.readFile(filePath, 'utf8');

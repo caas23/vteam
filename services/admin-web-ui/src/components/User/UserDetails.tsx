@@ -52,12 +52,12 @@ const UserDetails: React.FC<UserDetailsProps> = ({ data }) => {
       }
     };
 
-
   return (
     <div>
       <div className="user-details">
         <span>Name: {data.name}</span>
         <span>Payment method: {data.payment_method}</span>
+        <span>{data.payment_method === 'prepaid' ? `Balance: ${data.balance} kr` : ""}</span>
         <span>Trips: {data.completed_trips.length}
             <span className="sub-list">
             {data.completed_trips.map((trip, index) => (
