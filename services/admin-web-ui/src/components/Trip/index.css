@@ -25,3 +25,21 @@
   height: inherit;
   margin-top: -0.8em;
 }
+
+span.trip-price{
+  width: fit-content;
+  text-decoration: underline;
+  border-bottom: 1px solid;
+}
+
+div.price-info {
+  margin-left: 5px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &::before {
+      content: "?";
+      color: var(--color-blue-primary)
+  }
+}
+

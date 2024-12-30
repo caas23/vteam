@@ -6,7 +6,8 @@
     "completed_trips": [
       "T2139",
       "T2941"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sanna Wahlgren",
@@ -15,7 +16,8 @@
     "completed_trips": [
       "T284",
       "T299"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Anni Örn",
@@ -24,7 +26,8 @@
     "completed_trips": [
       "T1130",
       "T388"
-    ]
+    ],
+    "balance": 372
   },
   {
     "name": "Thilda Brandt",
@@ -33,7 +36,8 @@
     "completed_trips": [
       "T1507",
       "T2158"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Alexis Sjödin",
@@ -42,7 +46,8 @@
     "completed_trips": [
       "T024",
       "T875"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Madicken Berg",
@@ -51,7 +56,8 @@
     "completed_trips": [
       "T1553",
       "T2846"
-    ]
+    ],
+    "balance": 554
   },
   {
     "name": "Ingemar Kihlström",
@@ -60,7 +66,8 @@
     "completed_trips": [
       "T758",
       "T2584"
-    ]
+    ],
+    "balance": 734
   },
   {
     "name": "Patricia Sjöö",
@@ -69,7 +76,8 @@
     "completed_trips": [
       "T1094",
       "T490"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Anton Johnson",
@@ -78,7 +86,8 @@
     "completed_trips": [
       "T166",
       "T857"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Rosanna Sjösten",
@@ -87,7 +96,8 @@
     "completed_trips": [
       "T2750",
       "T1389"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Roland Wennerström",
@@ -96,7 +106,8 @@
     "completed_trips": [
       "T2862",
       "T2069"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Zacharias Ferm",
@@ -105,7 +116,8 @@
     "completed_trips": [
       "T1815",
       "T2687"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Camilla Mikaelsson",
@@ -114,7 +126,8 @@
     "completed_trips": [
       "T727",
       "T896"
-    ]
+    ],
+    "balance": 539
   },
   {
     "name": "Carla Nordstrand",
@@ -123,7 +136,8 @@
     "completed_trips": [
       "T2327",
       "T733"
-    ]
+    ],
+    "balance": 261
   },
   {
     "name": "Andrea Hallin",
@@ -132,7 +146,8 @@
     "completed_trips": [
       "T194",
       "T2803"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Leia Bark",
@@ -141,7 +156,8 @@
     "completed_trips": [
       "T1192",
       "T262"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Rickard Källman",
@@ -150,7 +166,8 @@
     "completed_trips": [
       "T2265",
       "T2635"
-    ]
+    ],
+    "balance": 727
   },
   {
     "name": "Thelma Sunesson",
@@ -159,7 +176,8 @@
     "completed_trips": [
       "T375",
       "T2733"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nikki Landström",
@@ -168,7 +186,8 @@
     "completed_trips": [
       "T1935",
       "T2077"
-    ]
+    ],
+    "balance": 518
   },
   {
     "name": "Eira Ivarsson",
@@ -177,7 +196,8 @@
     "completed_trips": [
       "T2279",
       "T481"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Noor Hallberg",
@@ -186,7 +206,8 @@
     "completed_trips": [
       "T192",
       "T2533"
-    ]
+    ],
+    "balance": 392
   },
   {
     "name": "Severin Holmlund",
@@ -195,7 +216,8 @@
     "completed_trips": [
       "T2611",
       "T2403"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Erza Dahlén",
@@ -204,7 +226,8 @@
     "completed_trips": [
       "T1174",
       "T582"
-    ]
+    ],
+    "balance": 717
   },
   {
     "name": "Svante Hammarberg",
@@ -213,7 +236,8 @@
     "completed_trips": [
       "T2010",
       "T300"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Rawan Vallgren",
@@ -222,7 +246,8 @@
     "completed_trips": [
       "T2281",
       "T2111"
-    ]
+    ],
+    "balance": 129
   },
   {
     "name": "Amna Strid",
@@ -231,7 +256,8 @@
     "completed_trips": [
       "T2312",
       "T2519"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Lillie Gren",
@@ -240,7 +266,8 @@
     "completed_trips": [
       "T562",
       "T2586"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Markus Wendel",
@@ -249,7 +276,8 @@
     "completed_trips": [
       "T504",
       "T854"
-    ]
+    ],
+    "balance": 345
   },
   {
     "name": "Fatima Rask",
@@ -258,7 +286,8 @@
     "completed_trips": [
       "T1683",
       "T400"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Hugo Stoltz",
@@ -267,7 +296,8 @@
     "completed_trips": [
       "T077",
       "T2922"
-    ]
+    ],
+    "balance": 431
   },
   {
     "name": "Hillevi Svensk",
@@ -276,7 +306,8 @@
     "completed_trips": [
       "T2250",
       "T1918"
-    ]
+    ],
+    "balance": 454
   },
   {
     "name": "Fiona Birgersson",
@@ -285,7 +316,8 @@
     "completed_trips": [
       "T1809",
       "T2167"
-    ]
+    ],
+    "balance": 374
   },
   {
     "name": "Wilja Almgren",
@@ -294,7 +326,8 @@
     "completed_trips": [
       "T1937",
       "T2948"
-    ]
+    ],
+    "balance": 799
   },
   {
     "name": "Justus Thelin",
@@ -303,7 +336,8 @@
     "completed_trips": [
       "T155",
       "T2694"
-    ]
+    ],
+    "balance": 906
   },
   {
     "name": "Dag Damberg",
@@ -312,7 +346,8 @@
     "completed_trips": [
       "T1217",
       "T1512"
-    ]
+    ],
+    "balance": 927
   },
   {
     "name": "Lorin Wall",
@@ -321,7 +356,8 @@
     "completed_trips": [
       "T1833",
       "T1671"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Wendela Algotsson",
@@ -330,7 +366,8 @@
     "completed_trips": [
       "T1120",
       "T2131"
-    ]
+    ],
+    "balance": 772
   },
   {
     "name": "Jessie Fernström",
@@ -339,7 +376,8 @@
     "completed_trips": [
       "T1336",
       "T313"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Rania Borg",
@@ -348,7 +386,8 @@
     "completed_trips": [
       "T489",
       "T614"
-    ]
+    ],
+    "balance": 276
   },
   {
     "name": "Teo Stenström",
@@ -357,7 +396,8 @@
     "completed_trips": [
       "T942",
       "T515"
-    ]
+    ],
+    "balance": 619
   },
   {
     "name": "Alexia Mörk",
@@ -366,7 +406,8 @@
     "completed_trips": [
       "T1243",
       "T2301"
-    ]
+    ],
+    "balance": 492
   },
   {
     "name": "Valfrid Hultqvist",
@@ -375,7 +416,8 @@
     "completed_trips": [
       "T2510",
       "T1909"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Zeinab Wahlberg",
@@ -384,7 +426,8 @@
     "completed_trips": [
       "T2963",
       "T2570"
-    ]
+    ],
+    "balance": 777
   },
   {
     "name": "Jana Olsén",
@@ -393,7 +436,8 @@
     "completed_trips": [
       "T1561",
       "T2414"
-    ]
+    ],
+    "balance": 357
   },
   {
     "name": "Gert Engberg",
@@ -402,7 +446,8 @@
     "completed_trips": [
       "T510",
       "T2980"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Liam Fagerberg",
@@ -411,7 +456,8 @@
     "completed_trips": [
       "T2196",
       "T625"
-    ]
+    ],
+    "balance": 979
   },
   {
     "name": "Minnah Franzén",
@@ -420,7 +466,8 @@
     "completed_trips": [
       "T1947",
       "T134"
-    ]
+    ],
+    "balance": 969
   },
   {
     "name": "Jana Olausson",
@@ -429,7 +476,8 @@
     "completed_trips": [
       "T153",
       "T1778"
-    ]
+    ],
+    "balance": 121
   },
   {
     "name": "Tore Nylén",
@@ -438,7 +486,8 @@
     "completed_trips": [
       "T1713",
       "T2517"
-    ]
+    ],
+    "balance": 743
   },
   {
     "name": "Jörgen Sturesson",
@@ -447,7 +496,8 @@
     "completed_trips": [
       "T2137",
       "T2761"
-    ]
+    ],
+    "balance": 425
   },
   {
     "name": "Dilan Vestergren",
@@ -456,7 +506,8 @@
     "completed_trips": [
       "T117",
       "T128"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Esra Holmstedt",
@@ -465,7 +516,8 @@
     "completed_trips": [
       "T2096",
       "T1893"
-    ]
+    ],
+    "balance": 298
   },
   {
     "name": "Mirjam Lundstedt",
@@ -474,7 +526,8 @@
     "completed_trips": [
       "T1445",
       "T1483"
-    ]
+    ],
+    "balance": 256
   },
   {
     "name": "Dilan Sjöholm",
@@ -483,7 +536,8 @@
     "completed_trips": [
       "T745",
       "T1078"
-    ]
+    ],
+    "balance": 626
   },
   {
     "name": "Aaron Hagberg",
@@ -492,7 +546,8 @@
     "completed_trips": [
       "T2303",
       "T994"
-    ]
+    ],
+    "balance": 388
   },
   {
     "name": "Elin Danielsson",
@@ -501,7 +556,8 @@
     "completed_trips": [
       "T043",
       "T1047"
-    ]
+    ],
+    "balance": 483
   },
   {
     "name": "Marvin Norling",
@@ -510,7 +566,8 @@
     "completed_trips": [
       "T374",
       "T2415"
-    ]
+    ],
+    "balance": 711
   },
   {
     "name": "Chloe Zackrisson",
@@ -519,7 +576,8 @@
     "completed_trips": [
       "T2083",
       "T2182"
-    ]
+    ],
+    "balance": 620
   },
   {
     "name": "Camilla Ekberg",
@@ -528,7 +586,8 @@
     "completed_trips": [
       "T2741",
       "T2802"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Rahma Sundelin",
@@ -537,7 +596,8 @@
     "completed_trips": [
       "T1509",
       "T1590"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Manne Hallman",
@@ -546,7 +606,8 @@
     "completed_trips": [
       "T2801",
       "T741"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sixten Meijer",
@@ -555,7 +616,8 @@
     "completed_trips": [
       "T567",
       "T1242"
-    ]
+    ],
+    "balance": 958
   },
   {
     "name": "Meya Ahlberg",
@@ -564,7 +626,8 @@
     "completed_trips": [
       "T593",
       "T583"
-    ]
+    ],
+    "balance": 574
   },
   {
     "name": "Emmelie Kvist",
@@ -573,7 +636,8 @@
     "completed_trips": [
       "T1293",
       "T2590"
-    ]
+    ],
+    "balance": 445
   },
   {
     "name": "Arthur Öhrn",
@@ -582,7 +646,8 @@
     "completed_trips": [
       "T890",
       "T726"
-    ]
+    ],
+    "balance": 422
   },
   {
     "name": "Severin Hedman",
@@ -591,7 +656,8 @@
     "completed_trips": [
       "T2138",
       "T064"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Grim Kempe",
@@ -600,7 +666,8 @@
     "completed_trips": [
       "T1916",
       "T659"
-    ]
+    ],
+    "balance": 974
   },
   {
     "name": "Joy Strömgren",
@@ -609,7 +676,8 @@
     "completed_trips": [
       "T1634",
       "T1163"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Lova Lundquist",
@@ -618,7 +686,8 @@
     "completed_trips": [
       "T675",
       "T1493"
-    ]
+    ],
+    "balance": 494
   },
   {
     "name": "Daniel Filipsson",
@@ -627,7 +696,8 @@
     "completed_trips": [
       "T1718",
       "T2032"
-    ]
+    ],
+    "balance": 563
   },
   {
     "name": "Emil Schmidt",
@@ -636,7 +706,8 @@
     "completed_trips": [
       "T2775",
       "T2129"
-    ]
+    ],
+    "balance": 680
   },
   {
     "name": "Louise Lindroth",
@@ -645,7 +716,8 @@
     "completed_trips": [
       "T2430",
       "T270"
-    ]
+    ],
+    "balance": 727
   },
   {
     "name": "Lovisa Carlström",
@@ -654,7 +726,8 @@
     "completed_trips": [
       "T044",
       "T2773"
-    ]
+    ],
+    "balance": 767
   },
   {
     "name": "Thelma Mattiasson",
@@ -663,7 +736,8 @@
     "completed_trips": [
       "T2556",
       "T2288"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Zahra Hällström",
@@ -672,7 +746,8 @@
     "completed_trips": [
       "T1901",
       "T682"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Filippa Kroon",
@@ -681,7 +756,8 @@
     "completed_trips": [
       "T2335",
       "T1990"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Stina Örn",
@@ -690,7 +766,8 @@
     "completed_trips": [
       "T842",
       "T2594"
-    ]
+    ],
+    "balance": 553
   },
   {
     "name": "Melissa Wickström",
@@ -699,7 +776,8 @@
     "completed_trips": [
       "T2645",
       "T2180"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Novalee Sjöstrand",
@@ -708,7 +786,8 @@
     "completed_trips": [
       "T2125",
       "T370"
-    ]
+    ],
+    "balance": 318
   },
   {
     "name": "Tintin Bergmark",
@@ -717,7 +796,8 @@
     "completed_trips": [
       "T2005",
       "T1063"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nellie Gunnarsson",
@@ -726,7 +806,8 @@
     "completed_trips": [
       "T1955",
       "T2870"
-    ]
+    ],
+    "balance": 142
   },
   {
     "name": "Indra Sörensson",
@@ -735,7 +816,8 @@
     "completed_trips": [
       "T2203",
       "T311"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Maryam Carlson",
@@ -744,7 +826,8 @@
     "completed_trips": [
       "T2460",
       "T1681"
-    ]
+    ],
+    "balance": 821
   },
   {
     "name": "Telma Bondesson",
@@ -753,7 +836,8 @@
     "completed_trips": [
       "T1189",
       "T1549"
-    ]
+    ],
+    "balance": 535
   },
   {
     "name": "Maria Grip",
@@ -762,7 +846,8 @@
     "completed_trips": [
       "T057",
       "T1118"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Frej Asplund",
@@ -771,7 +856,8 @@
     "completed_trips": [
       "T618",
       "T821"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Fanny Hemmingsson",
@@ -780,7 +866,8 @@
     "completed_trips": [
       "T2632",
       "T443"
-    ]
+    ],
+    "balance": 216
   },
   {
     "name": "Ofelia Sandell",
@@ -789,7 +876,8 @@
     "completed_trips": [
       "T547",
       "T2682"
-    ]
+    ],
+    "balance": 651
   },
   {
     "name": "Amelia Hall",
@@ -798,7 +886,8 @@
     "completed_trips": [
       "T385",
       "T2238"
-    ]
+    ],
+    "balance": 979
   },
   {
     "name": "Atle Granberg",
@@ -807,7 +896,8 @@
     "completed_trips": [
       "T2501",
       "T2891"
-    ]
+    ],
+    "balance": 508
   },
   {
     "name": "Amelie Nordlund",
@@ -816,7 +906,8 @@
     "completed_trips": [
       "T1875",
       "T346"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Volmar Wiberg",
@@ -825,7 +916,8 @@
     "completed_trips": [
       "T1113",
       "T1945"
-    ]
+    ],
+    "balance": 848
   },
   {
     "name": "Freja Fahlén",
@@ -834,7 +926,8 @@
     "completed_trips": [
       "T2117",
       "T2020"
-    ]
+    ],
+    "balance": 425
   },
   {
     "name": "Adnan Lilja",
@@ -843,7 +936,8 @@
     "completed_trips": [
       "T2315",
       "T1764"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Whilma Bergendahl",
@@ -852,7 +946,8 @@
     "completed_trips": [
       "T033",
       "T1298"
-    ]
+    ],
+    "balance": 370
   },
   {
     "name": "Ingemund Edvinsson",
@@ -861,7 +956,8 @@
     "completed_trips": [
       "T379",
       "T404"
-    ]
+    ],
+    "balance": 634
   },
   {
     "name": "Jill Edlund",
@@ -870,7 +966,8 @@
     "completed_trips": [
       "T1347",
       "T1400"
-    ]
+    ],
+    "balance": 547
   },
   {
     "name": "Iris Rönnberg",
@@ -879,7 +976,8 @@
     "completed_trips": [
       "T1515",
       "T795"
-    ]
+    ],
+    "balance": 308
   },
   {
     "name": "Jonna Östlund",
@@ -888,7 +986,8 @@
     "completed_trips": [
       "T1016",
       "T1883"
-    ]
+    ],
+    "balance": 499
   },
   {
     "name": "Amos Malmqvist",
@@ -897,7 +996,8 @@
     "completed_trips": [
       "T865",
       "T554"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Zeynep Thorsell",
@@ -906,7 +1006,8 @@
     "completed_trips": [
       "T1476",
       "T2820"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sigge Ekström",
@@ -915,7 +1016,8 @@
     "completed_trips": [
       "T1013",
       "T678"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Emelie Liljekvist",
@@ -924,7 +1026,8 @@
     "completed_trips": [
       "T2150",
       "T1485"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Gerda Brink",
@@ -933,7 +1036,8 @@
     "completed_trips": [
       "T2899",
       "T243"
-    ]
+    ],
+    "balance": 363
   },
   {
     "name": "Hadi Wickström",
@@ -942,7 +1046,8 @@
     "completed_trips": [
       "T2456",
       "T524"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Aina Norlander",
@@ -951,7 +1056,8 @@
     "completed_trips": [
       "T2386",
       "T1164"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Fredrik Sjöö",
@@ -960,7 +1066,8 @@
     "completed_trips": [
       "T127",
       "T2968"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Emmy Dahlman",
@@ -969,7 +1076,8 @@
     "completed_trips": [
       "T1516",
       "T798"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Haylie Palm",
@@ -978,7 +1086,8 @@
     "completed_trips": [
       "T1311",
       "T2090"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Henric Leander",
@@ -987,7 +1096,8 @@
     "completed_trips": [
       "T558",
       "T2873"
-    ]
+    ],
+    "balance": 152
   },
   {
     "name": "Jennifer Bergh",
@@ -996,7 +1106,8 @@
     "completed_trips": [
       "T2781",
       "T1750"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Lava Norlander",
@@ -1005,7 +1116,8 @@
     "completed_trips": [
       "T1041",
       "T1926"
-    ]
+    ],
+    "balance": 182
   },
   {
     "name": "Wiktor Hammarlund",
@@ -1014,7 +1126,8 @@
     "completed_trips": [
       "T209",
       "T987"
-    ]
+    ],
+    "balance": 748
   },
   {
     "name": "Tara Valfridsson",
@@ -1023,7 +1136,8 @@
     "completed_trips": [
       "T1527",
       "T1074"
-    ]
+    ],
+    "balance": 582
   },
   {
     "name": "Erland Norström",
@@ -1032,7 +1146,8 @@
     "completed_trips": [
       "T2650",
       "T673"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Claes Tillman",
@@ -1041,7 +1156,8 @@
     "completed_trips": [
       "T1225",
       "T232"
-    ]
+    ],
+    "balance": 817
   },
   {
     "name": "Dahlia Stridh",
@@ -1050,7 +1166,8 @@
     "completed_trips": [
       "T1618",
       "T2480"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sören Wahlgren",
@@ -1059,7 +1176,8 @@
     "completed_trips": [
       "T2186",
       "T2204"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Manda Lans",
@@ -1068,7 +1186,8 @@
     "completed_trips": [
       "T1429",
       "T2780"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Natanael Brännström",
@@ -1077,7 +1196,8 @@
     "completed_trips": [
       "T1246",
       "T2277"
-    ]
+    ],
+    "balance": 420
   },
   {
     "name": "Göran Månsson",
@@ -1086,7 +1206,8 @@
     "completed_trips": [
       "T1135",
       "T991"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Eline Stenman",
@@ -1095,7 +1216,8 @@
     "completed_trips": [
       "T1464",
       "T1175"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Halvard Edvardsson",
@@ -1104,7 +1226,8 @@
     "completed_trips": [
       "T2110",
       "T1829"
-    ]
+    ],
+    "balance": 853
   },
   {
     "name": "Adele Vidén",
@@ -1113,7 +1236,8 @@
     "completed_trips": [
       "T612",
       "T2921"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Samuel Örn",
@@ -1122,7 +1246,8 @@
     "completed_trips": [
       "T816",
       "T833"
-    ]
+    ],
+    "balance": 238
   },
   {
     "name": "Jörgen Kristoffersson",
@@ -1131,7 +1256,8 @@
     "completed_trips": [
       "T2792",
       "T1802"
-    ]
+    ],
+    "balance": 881
   },
   {
     "name": "Lennart Ryberg",
@@ -1140,7 +1266,8 @@
     "completed_trips": [
       "T2815",
       "T1961"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Tess Almström",
@@ -1149,7 +1276,8 @@
     "completed_trips": [
       "T656",
       "T382"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Emy Larsen",
@@ -1158,7 +1286,8 @@
     "completed_trips": [
       "T2713",
       "T2924"
-    ]
+    ],
+    "balance": 387
   },
   {
     "name": "Kenny Edström",
@@ -1167,7 +1296,8 @@
     "completed_trips": [
       "T1188",
       "T1039"
-    ]
+    ],
+    "balance": 852
   },
   {
     "name": "Chanelle Lundahl",
@@ -1176,7 +1306,8 @@
     "completed_trips": [
       "T1914",
       "T2812"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Bernhard Winberg",
@@ -1185,7 +1316,8 @@
     "completed_trips": [
       "T2821",
       "T2194"
-    ]
+    ],
+    "balance": 398
   },
   {
     "name": "Ninni Fast",
@@ -1194,7 +1326,8 @@
     "completed_trips": [
       "T785",
       "T2338"
-    ]
+    ],
+    "balance": 265
   },
   {
     "name": "Ludwig Söderström",
@@ -1203,7 +1336,8 @@
     "completed_trips": [
       "T850",
       "T2877"
-    ]
+    ],
+    "balance": 987
   },
   {
     "name": "Noelia Bergdahl",
@@ -1212,7 +1346,8 @@
     "completed_trips": [
       "T367",
       "T426"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Enzo Thorsson",
@@ -1221,7 +1356,8 @@
     "completed_trips": [
       "T1651",
       "T2400"
-    ]
+    ],
+    "balance": 378
   },
   {
     "name": "Elmedina Olausson",
@@ -1230,7 +1366,8 @@
     "completed_trips": [
       "T2818",
       "T2295"
-    ]
+    ],
+    "balance": 131
   },
   {
     "name": "Moa Henriksson",
@@ -1239,7 +1376,8 @@
     "completed_trips": [
       "T624",
       "T1626"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Hilda Backlund",
@@ -1248,7 +1386,8 @@
     "completed_trips": [
       "T217",
       "T1966"
-    ]
+    ],
+    "balance": 585
   },
   {
     "name": "Isak Grönberg",
@@ -1257,7 +1396,8 @@
     "completed_trips": [
       "T1521",
       "T1212"
-    ]
+    ],
+    "balance": 874
   },
   {
     "name": "Mio Gabrielsson",
@@ -1266,7 +1406,8 @@
     "completed_trips": [
       "T2419",
       "T2626"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Osvald Wickström",
@@ -1275,7 +1416,8 @@
     "completed_trips": [
       "T298",
       "T204"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Atle Brännström",
@@ -1284,7 +1426,8 @@
     "completed_trips": [
       "T2049",
       "T2061"
-    ]
+    ],
+    "balance": 272
   },
   {
     "name": "Arvid Nordahl",
@@ -1293,7 +1436,8 @@
     "completed_trips": [
       "T2906",
       "T1010"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Lars Brändström",
@@ -1302,7 +1446,8 @@
     "completed_trips": [
       "T250",
       "T1962"
-    ]
+    ],
+    "balance": 419
   },
   {
     "name": "Liam Rönnbäck",
@@ -1311,7 +1456,8 @@
     "completed_trips": [
       "T914",
       "T805"
-    ]
+    ],
+    "balance": 880
   },
   {
     "name": "Tintin Flink",
@@ -1320,7 +1466,8 @@
     "completed_trips": [
       "T2923",
       "T1775"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Belinda Nordin",
@@ -1329,7 +1476,8 @@
     "completed_trips": [
       "T858",
       "T2325"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sarah Ahlberg",
@@ -1338,7 +1486,8 @@
     "completed_trips": [
       "T454",
       "T516"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Leonie Månsson",
@@ -1347,7 +1496,8 @@
     "completed_trips": [
       "T2398",
       "T2173"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Kristina Åstrand",
@@ -1356,7 +1506,8 @@
     "completed_trips": [
       "T1729",
       "T2710"
-    ]
+    ],
+    "balance": 941
   },
   {
     "name": "Elena Olsén",
@@ -1365,7 +1516,8 @@
     "completed_trips": [
       "T2216",
       "T2845"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Zacharias Bergendahl",
@@ -1374,7 +1526,8 @@
     "completed_trips": [
       "T362",
       "T2133"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Amos Edgren",
@@ -1383,7 +1536,8 @@
     "completed_trips": [
       "T1302",
       "T2408"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Joakim Svedlund",
@@ -1392,7 +1546,8 @@
     "completed_trips": [
       "T846",
       "T1989"
-    ]
+    ],
+    "balance": 811
   },
   {
     "name": "Evelin Bäckström",
@@ -1401,7 +1556,8 @@
     "completed_trips": [
       "T2787",
       "T982"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Agnes Elfström",
@@ -1410,7 +1566,8 @@
     "completed_trips": [
       "T2561",
       "T666"
-    ]
+    ],
+    "balance": 106
   },
   {
     "name": "Nadin Hall",
@@ -1419,7 +1576,8 @@
     "completed_trips": [
       "T893",
       "T1858"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Liam Bodin",
@@ -1428,7 +1586,8 @@
     "completed_trips": [
       "T021",
       "T2587"
-    ]
+    ],
+    "balance": 881
   },
   {
     "name": "Izabelle Norberg",
@@ -1437,7 +1596,8 @@
     "completed_trips": [
       "T2420",
       "T2413"
-    ]
+    ],
+    "balance": 128
   },
   {
     "name": "Helga Lagerström",
@@ -1446,7 +1606,8 @@
     "completed_trips": [
       "T1800",
       "T1107"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Bob Öhrn",
@@ -1455,7 +1616,8 @@
     "completed_trips": [
       "T1266",
       "T1740"
-    ]
+    ],
+    "balance": 241
   },
   {
     "name": "Wera Wiman",
@@ -1464,7 +1626,8 @@
     "completed_trips": [
       "T533",
       "T411"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Rawan Ekvall",
@@ -1473,7 +1636,8 @@
     "completed_trips": [
       "T1518",
       "T2909"
-    ]
+    ],
+    "balance": 967
   },
   {
     "name": "Harry Mattiasson",
@@ -1482,7 +1646,8 @@
     "completed_trips": [
       "T384",
       "T1939"
-    ]
+    ],
+    "balance": 877
   },
   {
     "name": "Mustafa Rosengren",
@@ -1491,7 +1656,8 @@
     "completed_trips": [
       "T1027",
       "T1658"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Laura Öhlin",
@@ -1500,7 +1666,8 @@
     "completed_trips": [
       "T2717",
       "T2287"
-    ]
+    ],
+    "balance": 516
   },
   {
     "name": "Hassan Welin",
@@ -1509,7 +1676,8 @@
     "completed_trips": [
       "T2042",
       "T2811"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ester Haglund",
@@ -1518,7 +1686,8 @@
     "completed_trips": [
       "T1484",
       "T1122"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Erhard Vernersson",
@@ -1527,7 +1696,8 @@
     "completed_trips": [
       "T080",
       "T1842"
-    ]
+    ],
+    "balance": 342
   },
   {
     "name": "Whilma Burman",
@@ -1536,7 +1706,8 @@
     "completed_trips": [
       "T2628",
       "T1878"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Marina Wallgren",
@@ -1545,7 +1716,8 @@
     "completed_trips": [
       "T2680",
       "T2983"
-    ]
+    ],
+    "balance": 199
   },
   {
     "name": "Moa Selander",
@@ -1554,7 +1726,8 @@
     "completed_trips": [
       "T1728",
       "T1592"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Jenna Bernhardsson",
@@ -1563,7 +1736,8 @@
     "completed_trips": [
       "T2145",
       "T783"
-    ]
+    ],
+    "balance": 939
   },
   {
     "name": "Wendela Berggren",
@@ -1572,7 +1746,8 @@
     "completed_trips": [
       "T139",
       "T2254"
-    ]
+    ],
+    "balance": 930
   },
   {
     "name": "Villemo Wallman",
@@ -1581,7 +1756,8 @@
     "completed_trips": [
       "T006",
       "T2724"
-    ]
+    ],
+    "balance": 487
   },
   {
     "name": "Mio Hällgren",
@@ -1590,7 +1766,8 @@
     "completed_trips": [
       "T669",
       "T2602"
-    ]
+    ],
+    "balance": 930
   },
   {
     "name": "Hassan Hultberg",
@@ -1599,7 +1776,8 @@
     "completed_trips": [
       "T2080",
       "T2195"
-    ]
+    ],
+    "balance": 322
   },
   {
     "name": "Marvin Sjölin",
@@ -1608,7 +1786,8 @@
     "completed_trips": [
       "T2993",
       "T2198"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Vendela Rosenkvist",
@@ -1617,7 +1796,8 @@
     "completed_trips": [
       "T469",
       "T2715"
-    ]
+    ],
+    "balance": 481
   },
   {
     "name": "Maj Sjöstrand",
@@ -1626,7 +1806,8 @@
     "completed_trips": [
       "T1704",
       "T2421"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Salomon Thomasson",
@@ -1635,7 +1816,8 @@
     "completed_trips": [
       "T2264",
       "T310"
-    ]
+    ],
+    "balance": 294
   },
   {
     "name": "Dima Renberg",
@@ -1644,7 +1826,8 @@
     "completed_trips": [
       "T1290",
       "T1070"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Elisia Malmborg",
@@ -1653,7 +1836,8 @@
     "completed_trips": [
       "T004",
       "T1731"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Beatrice Fredin",
@@ -1662,7 +1846,8 @@
     "completed_trips": [
       "T143",
       "T2976"
-    ]
+    ],
+    "balance": 817
   },
   {
     "name": "Alfons Näsström",
@@ -1671,7 +1856,8 @@
     "completed_trips": [
       "T2565",
       "T237"
-    ]
+    ],
+    "balance": 704
   },
   {
     "name": "Karla Björn",
@@ -1680,7 +1866,8 @@
     "completed_trips": [
       "T1455",
       "T1268"
-    ]
+    ],
+    "balance": 253
   },
   {
     "name": "Erik Nyqvist",
@@ -1689,7 +1876,8 @@
     "completed_trips": [
       "T1121",
       "T1964"
-    ]
+    ],
+    "balance": 650
   },
   {
     "name": "Lukas Lindström",
@@ -1698,7 +1886,8 @@
     "completed_trips": [
       "T1202",
       "T1412"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Vidar Nordin",
@@ -1707,7 +1896,8 @@
     "completed_trips": [
       "T342",
       "T2050"
-    ]
+    ],
+    "balance": 300
   },
   {
     "name": "Aaron Klaesson",
@@ -1716,7 +1906,8 @@
     "completed_trips": [
       "T634",
       "T052"
-    ]
+    ],
+    "balance": 386
   },
   {
     "name": "Hanna Malmkvist",
@@ -1725,7 +1916,8 @@
     "completed_trips": [
       "T1912",
       "T1892"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nelia Vestin",
@@ -1734,7 +1926,8 @@
     "completed_trips": [
       "T1232",
       "T2292"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nova-Li Löfdahl",
@@ -1743,7 +1936,8 @@
     "completed_trips": [
       "T1077",
       "T2833"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Rolf Rönn",
@@ -1752,7 +1946,8 @@
     "completed_trips": [
       "T1230",
       "T2023"
-    ]
+    ],
+    "balance": 141
   },
   {
     "name": "Tore Robertsson",
@@ -1761,7 +1956,8 @@
     "completed_trips": [
       "T543",
       "T506"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Laura Ljungkvist",
@@ -1770,7 +1966,8 @@
     "completed_trips": [
       "T1346",
       "T2376"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Madicken Bergkvist",
@@ -1779,7 +1976,8 @@
     "completed_trips": [
       "T1405",
       "T1876"
-    ]
+    ],
+    "balance": 515
   },
   {
     "name": "Alexandra Hermansson",
@@ -1788,7 +1986,8 @@
     "completed_trips": [
       "T2134",
       "T2852"
-    ]
+    ],
+    "balance": 196
   },
   {
     "name": "Azra Edman",
@@ -1797,7 +1996,8 @@
     "completed_trips": [
       "T389",
       "T1088"
-    ]
+    ],
+    "balance": 203
   },
   {
     "name": "Esbjörn Westin",
@@ -1806,7 +2006,8 @@
     "completed_trips": [
       "T2136",
       "T1490"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Avin Persson",
@@ -1815,7 +2016,8 @@
     "completed_trips": [
       "T840",
       "T2631"
-    ]
+    ],
+    "balance": 763
   },
   {
     "name": "Susanna Wirén",
@@ -1824,7 +2026,8 @@
     "completed_trips": [
       "T196",
       "T1735"
-    ]
+    ],
+    "balance": 293
   },
   {
     "name": "Greta Kjellin",
@@ -1833,7 +2036,8 @@
     "completed_trips": [
       "T922",
       "T1231"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Christina Vikman",
@@ -1842,7 +2046,8 @@
     "completed_trips": [
       "T1007",
       "T2816"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Greta Fogelberg",
@@ -1851,7 +2056,8 @@
     "completed_trips": [
       "T1840",
       "T2411"
-    ]
+    ],
+    "balance": 154
   },
   {
     "name": "Arnold Wennberg",
@@ -1860,7 +2066,8 @@
     "completed_trips": [
       "T2929",
       "T476"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sumaya Ingvarsson",
@@ -1869,7 +2076,8 @@
     "completed_trips": [
       "T2520",
       "T1397"
-    ]
+    ],
+    "balance": 106
   },
   {
     "name": "Minelle Björn",
@@ -1878,7 +2086,8 @@
     "completed_trips": [
       "T2547",
       "T340"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Milla Hammarström",
@@ -1887,7 +2096,8 @@
     "completed_trips": [
       "T258",
       "T2026"
-    ]
+    ],
+    "balance": 771
   },
   {
     "name": "Lavin Öberg",
@@ -1896,7 +2106,8 @@
     "completed_trips": [
       "T2079",
       "T2744"
-    ]
+    ],
+    "balance": 605
   },
   {
     "name": "Eva Lindfors",
@@ -1905,7 +2116,8 @@
     "completed_trips": [
       "T1884",
       "T458"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Anders Stoltz",
@@ -1914,7 +2126,8 @@
     "completed_trips": [
       "T2121",
       "T2997"
-    ]
+    ],
+    "balance": 978
   },
   {
     "name": "Jill Lindblad",
@@ -1923,7 +2136,8 @@
     "completed_trips": [
       "T1903",
       "T1724"
-    ]
+    ],
+    "balance": 771
   },
   {
     "name": "Othilia Thor",
@@ -1932,7 +2146,8 @@
     "completed_trips": [
       "T350",
       "T1924"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Odin Kristiansson",
@@ -1941,7 +2156,8 @@
     "completed_trips": [
       "T2655",
       "T1522"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Heidi Karlén",
@@ -1950,7 +2166,8 @@
     "completed_trips": [
       "T715",
       "T2357"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Marielle Östlund",
@@ -1959,7 +2176,8 @@
     "completed_trips": [
       "T2132",
       "T500"
-    ]
+    ],
+    "balance": 878
   },
   {
     "name": "Botvid Christensen",
@@ -1968,7 +2186,8 @@
     "completed_trips": [
       "T907",
       "T2685"
-    ]
+    ],
+    "balance": 391
   },
   {
     "name": "Malva Vikström",
@@ -1977,7 +2196,8 @@
     "completed_trips": [
       "T2770",
       "T330"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Amina Hallgren",
@@ -1986,7 +2206,8 @@
     "completed_trips": [
       "T2253",
       "T825"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Jasmina Rosell",
@@ -1995,7 +2216,8 @@
     "completed_trips": [
       "T2473",
       "T2688"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Alrik Palmqvist",
@@ -2004,7 +2226,8 @@
     "completed_trips": [
       "T1385",
       "T170"
-    ]
+    ],
+    "balance": 519
   },
   {
     "name": "Joseph Långström",
@@ -2013,7 +2236,8 @@
     "completed_trips": [
       "T2805",
       "T2559"
-    ]
+    ],
+    "balance": 452
   },
   {
     "name": "Denise Högström",
@@ -2022,7 +2246,8 @@
     "completed_trips": [
       "T2056",
       "T1627"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Tor Liljekvist",
@@ -2031,7 +2256,8 @@
     "completed_trips": [
       "T2340",
       "T136"
-    ]
+    ],
+    "balance": 579
   },
   {
     "name": "Samir Sjökvist",
@@ -2040,7 +2266,8 @@
     "completed_trips": [
       "T2047",
       "T325"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Caroline Haraldsson",
@@ -2049,7 +2276,8 @@
     "completed_trips": [
       "T2907",
       "T2849"
-    ]
+    ],
+    "balance": 279
   },
   {
     "name": "Lars Bergmark",
@@ -2058,7 +2286,8 @@
     "completed_trips": [
       "T2908",
       "T619"
-    ]
+    ],
+    "balance": 214
   },
   {
     "name": "Petronella Christiansson",
@@ -2067,7 +2296,8 @@
     "completed_trips": [
       "T2214",
       "T2353"
-    ]
+    ],
+    "balance": 614
   },
   {
     "name": "Narin Vesterlund",
@@ -2076,7 +2306,8 @@
     "completed_trips": [
       "T2363",
       "T059"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Andrea Lundbäck",
@@ -2085,7 +2316,8 @@
     "completed_trips": [
       "T883",
       "T2328"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Scott Ragnarsson",
@@ -2094,7 +2326,8 @@
     "completed_trips": [
       "T676",
       "T137"
-    ]
+    ],
+    "balance": 914
   },
   {
     "name": "Tibirtus Hjorth",
@@ -2103,7 +2336,8 @@
     "completed_trips": [
       "T739",
       "T1427"
-    ]
+    ],
+    "balance": 186
   },
   {
     "name": "Elmer Frank",
@@ -2112,7 +2346,8 @@
     "completed_trips": [
       "T256",
       "T1428"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Jimmy Helmersson",
@@ -2121,7 +2356,8 @@
     "completed_trips": [
       "T041",
       "T425"
-    ]
+    ],
+    "balance": 152
   },
   {
     "name": "Örjan Thunberg",
@@ -2130,7 +2366,8 @@
     "completed_trips": [
       "T2829",
       "T2955"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Emy Vestberg",
@@ -2139,7 +2376,8 @@
     "completed_trips": [
       "T998",
       "T019"
-    ]
+    ],
+    "balance": 267
   },
   {
     "name": "Miranda Appelqvist",
@@ -2148,7 +2386,8 @@
     "completed_trips": [
       "T455",
       "T771"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Havanna Åkesson",
@@ -2157,7 +2396,8 @@
     "completed_trips": [
       "T2092",
       "T751"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Isadora Grahn",
@@ -2166,7 +2406,8 @@
     "completed_trips": [
       "T901",
       "T639"
-    ]
+    ],
+    "balance": 620
   },
   {
     "name": "Raoul Lindman",
@@ -2175,7 +2416,8 @@
     "completed_trips": [
       "T819",
       "T1017"
-    ]
+    ],
+    "balance": 876
   },
   {
     "name": "Fannie Sjöstedt",
@@ -2184,7 +2426,8 @@
     "completed_trips": [
       "T610",
       "T2840"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Maximiliam Ahlstrand",
@@ -2193,7 +2436,8 @@
     "completed_trips": [
       "T2954",
       "T359"
-    ]
+    ],
+    "balance": 145
   },
   {
     "name": "Ayla Grönlund",
@@ -2202,7 +2446,8 @@
     "completed_trips": [
       "T629",
       "T791"
-    ]
+    ],
+    "balance": 801
   },
   {
     "name": "Heidi Cederlund",
@@ -2211,7 +2456,8 @@
     "completed_trips": [
       "T2115",
       "T1576"
-    ]
+    ],
+    "balance": 573
   },
   {
     "name": "Sebastian Strömberg",
@@ -2220,7 +2466,8 @@
     "completed_trips": [
       "T1062",
       "T308"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Salomon Blomkvist",
@@ -2229,7 +2476,8 @@
     "completed_trips": [
       "T1660",
       "T065"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Scott Rutgersson",
@@ -2238,7 +2486,8 @@
     "completed_trips": [
       "T085",
       "T548"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sally Rundberg",
@@ -2247,7 +2496,8 @@
     "completed_trips": [
       "T349",
       "T1296"
-    ]
+    ],
+    "balance": 998
   },
   {
     "name": "Kristoffer Sjöö",
@@ -2256,7 +2506,8 @@
     "completed_trips": [
       "T167",
       "T2961"
-    ]
+    ],
+    "balance": 643
   },
   {
     "name": "Lily Lif",
@@ -2265,7 +2516,8 @@
     "completed_trips": [
       "T391",
       "T790"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Joline Fagerlund",
@@ -2274,7 +2526,8 @@
     "completed_trips": [
       "T2904",
       "T429"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Veronika Stålnacke",
@@ -2283,7 +2536,8 @@
     "completed_trips": [
       "T2545",
       "T1276"
-    ]
+    ],
+    "balance": 620
   },
   {
     "name": "Andreas Fahlström",
@@ -2292,7 +2546,8 @@
     "completed_trips": [
       "T2843",
       "T2578"
-    ]
+    ],
+    "balance": 384
   },
   {
     "name": "Boris Sandahl",
@@ -2301,7 +2556,8 @@
     "completed_trips": [
       "T088",
       "T2866"
-    ]
+    ],
+    "balance": 479
   },
   {
     "name": "Mirjam Norrman",
@@ -2310,7 +2566,8 @@
     "completed_trips": [
       "T1159",
       "T2888"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Elwin Lorentzon",
@@ -2319,7 +2576,8 @@
     "completed_trips": [
       "T444",
       "T2063"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Maria Sköld",
@@ -2328,7 +2586,8 @@
     "completed_trips": [
       "T1424",
       "T2289"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ilse Appelgren",
@@ -2337,7 +2596,8 @@
     "completed_trips": [
       "T1614",
       "T1925"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Josephine Edberg",
@@ -2346,7 +2606,8 @@
     "completed_trips": [
       "T1513",
       "T1749"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Elwin Ludvigsson",
@@ -2355,7 +2616,8 @@
     "completed_trips": [
       "T1560",
       "T1134"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nathalie Bergvall",
@@ -2364,7 +2626,8 @@
     "completed_trips": [
       "T2323",
       "T2313"
-    ]
+    ],
+    "balance": 482
   },
   {
     "name": "Amira Vennberg",
@@ -2373,7 +2636,8 @@
     "completed_trips": [
       "T197",
       "T1020"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Meya Wennberg",
@@ -2382,7 +2646,8 @@
     "completed_trips": [
       "T2494",
       "T2987"
-    ]
+    ],
+    "balance": 865
   },
   {
     "name": "Matteus Blomkvist",
@@ -2391,7 +2656,8 @@
     "completed_trips": [
       "T1377",
       "T1294"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Fatma Gren",
@@ -2400,7 +2666,8 @@
     "completed_trips": [
       "T2498",
       "T1494"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Jonas Lind",
@@ -2409,7 +2676,8 @@
     "completed_trips": [
       "T1274",
       "T1638"
-    ]
+    ],
+    "balance": 776
   },
   {
     "name": "Sigge Skoglund",
@@ -2418,7 +2686,8 @@
     "completed_trips": [
       "T257",
       "T1042"
-    ]
+    ],
+    "balance": 116
   },
   {
     "name": "Kasper Stridh",
@@ -2427,7 +2696,8 @@
     "completed_trips": [
       "T1401",
       "T1714"
-    ]
+    ],
+    "balance": 991
   },
   {
     "name": "Rawan Vigren",
@@ -2436,7 +2706,8 @@
     "completed_trips": [
       "T336",
       "T1398"
-    ]
+    ],
+    "balance": 595
   },
   {
     "name": "Agnes Stenmark",
@@ -2445,7 +2716,8 @@
     "completed_trips": [
       "T2725",
       "T605"
-    ]
+    ],
+    "balance": 483
   },
   {
     "name": "Göran Wallén",
@@ -2454,7 +2726,8 @@
     "completed_trips": [
       "T2534",
       "T1813"
-    ]
+    ],
+    "balance": 458
   },
   {
     "name": "Helena Nystedt",
@@ -2463,7 +2736,8 @@
     "completed_trips": [
       "T2722",
       "T2903"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Loke Hällgren",
@@ -2472,7 +2746,8 @@
     "completed_trips": [
       "T2674",
       "T499"
-    ]
+    ],
+    "balance": 342
   },
   {
     "name": "Klara Bohman",
@@ -2481,7 +2756,8 @@
     "completed_trips": [
       "T972",
       "T1572"
-    ]
+    ],
+    "balance": 708
   },
   {
     "name": "Styrbjörn Jarl",
@@ -2490,7 +2766,8 @@
     "completed_trips": [
       "T847",
       "T2536"
-    ]
+    ],
+    "balance": 875
   },
   {
     "name": "Caspar Roos",
@@ -2499,7 +2776,8 @@
     "completed_trips": [
       "T1308",
       "T1034"
-    ]
+    ],
+    "balance": 111
   },
   {
     "name": "Valle Blomgren",
@@ -2508,7 +2786,8 @@
     "completed_trips": [
       "T2931",
       "T759"
-    ]
+    ],
+    "balance": 649
   },
   {
     "name": "Rut Österlund",
@@ -2517,7 +2796,8 @@
     "completed_trips": [
       "T730",
       "T1321"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Fanny Kihlström",
@@ -2526,7 +2806,8 @@
     "completed_trips": [
       "T981",
       "T011"
-    ]
+    ],
+    "balance": 603
   },
   {
     "name": "Klas Mellberg",
@@ -2535,7 +2816,8 @@
     "completed_trips": [
       "T2549",
       "T555"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Carmen Lindström",
@@ -2544,7 +2826,8 @@
     "completed_trips": [
       "T459",
       "T2053"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Lukas Sander",
@@ -2553,7 +2836,8 @@
     "completed_trips": [
       "T303",
       "T947"
-    ]
+    ],
+    "balance": 868
   },
   {
     "name": "Alisa Gradin",
@@ -2562,7 +2846,8 @@
     "completed_trips": [
       "T1436",
       "T2933"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Rune Hellberg",
@@ -2571,7 +2856,8 @@
     "completed_trips": [
       "T647",
       "T2098"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nathaniel Bergendahl",
@@ -2580,7 +2866,8 @@
     "completed_trips": [
       "T1639",
       "T2711"
-    ]
+    ],
+    "balance": 454
   },
   {
     "name": "Noelia Englund",
@@ -2589,7 +2876,8 @@
     "completed_trips": [
       "T1777",
       "T1030"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nikolaus Nyrén",
@@ -2598,7 +2886,8 @@
     "completed_trips": [
       "T1887",
       "T1207"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Charlie Melander",
@@ -2607,7 +2896,8 @@
     "completed_trips": [
       "T2190",
       "T2231"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Samantha Olsén",
@@ -2616,7 +2906,8 @@
     "completed_trips": [
       "T318",
       "T928"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Dana Rydén",
@@ -2625,7 +2916,8 @@
     "completed_trips": [
       "T1741",
       "T1608"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Erza Folkesson",
@@ -2634,7 +2926,8 @@
     "completed_trips": [
       "T1897",
       "T1526"
-    ]
+    ],
+    "balance": 979
   },
   {
     "name": "Zoe Westberg",
@@ -2643,7 +2936,8 @@
     "completed_trips": [
       "T2187",
       "T2779"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Savannah Sjölin",
@@ -2652,7 +2946,8 @@
     "completed_trips": [
       "T1839",
       "T2018"
-    ]
+    ],
+    "balance": 839
   },
   {
     "name": "Joanna Kjellström",
@@ -2661,7 +2956,8 @@
     "completed_trips": [
       "T2601",
       "T1473"
-    ]
+    ],
+    "balance": 310
   },
   {
     "name": "Ali Lindroth",
@@ -2670,7 +2966,8 @@
     "completed_trips": [
       "T1904",
       "T1278"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Madelene Rasmusson",
@@ -2679,7 +2976,8 @@
     "completed_trips": [
       "T2569",
       "T2128"
-    ]
+    ],
+    "balance": 381
   },
   {
     "name": "Amadeus Rundqvist",
@@ -2688,7 +2986,8 @@
     "completed_trips": [
       "T587",
       "T2437"
-    ]
+    ],
+    "balance": 932
   },
   {
     "name": "Anton Törnkvist",
@@ -2697,7 +2996,8 @@
     "completed_trips": [
       "T1596",
       "T1287"
-    ]
+    ],
+    "balance": 177
   },
   {
     "name": "Joseph Leandersson",
@@ -2706,7 +3006,8 @@
     "completed_trips": [
       "T2251",
       "T820"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Melody Niklasson",
@@ -2715,7 +3016,8 @@
     "completed_trips": [
       "T460",
       "T1727"
-    ]
+    ],
+    "balance": 960
   },
   {
     "name": "Sabina Antonsson",
@@ -2724,7 +3026,8 @@
     "completed_trips": [
       "T2897",
       "T1036"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Celine Nylén",
@@ -2733,7 +3036,8 @@
     "completed_trips": [
       "T2326",
       "T386"
-    ]
+    ],
+    "balance": 782
   },
   {
     "name": "Lin Källgren",
@@ -2742,7 +3046,8 @@
     "completed_trips": [
       "T1487",
       "T219"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Finn Lundholm",
@@ -2751,7 +3056,8 @@
     "completed_trips": [
       "T2681",
       "T466"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Belle Bengtsson",
@@ -2760,7 +3066,8 @@
     "completed_trips": [
       "T1160",
       "T1978"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Clara Öst",
@@ -2769,7 +3076,8 @@
     "completed_trips": [
       "T2027",
       "T2093"
-    ]
+    ],
+    "balance": 407
   },
   {
     "name": "Deniz Ljungström",
@@ -2778,7 +3086,8 @@
     "completed_trips": [
       "T1472",
       "T2425"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Matthias Lundgren",
@@ -2787,7 +3096,8 @@
     "completed_trips": [
       "T2166",
       "T1000"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Rahaf Fredriksson",
@@ -2796,7 +3106,8 @@
     "completed_trips": [
       "T2081",
       "T347"
-    ]
+    ],
+    "balance": 841
   },
   {
     "name": "Belle Åström",
@@ -2805,7 +3116,8 @@
     "completed_trips": [
       "T1663",
       "T283"
-    ]
+    ],
+    "balance": 650
   },
   {
     "name": "Adèle Morén",
@@ -2814,7 +3126,8 @@
     "completed_trips": [
       "T442",
       "T728"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Lucas Robertsson",
@@ -2823,7 +3136,8 @@
     "completed_trips": [
       "T1186",
       "T1863"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ella Von",
@@ -2832,7 +3146,8 @@
     "completed_trips": [
       "T638",
       "T1435"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Emina Kjellman",
@@ -2841,7 +3156,8 @@
     "completed_trips": [
       "T1258",
       "T1828"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sandra Gillberg",
@@ -2850,7 +3166,8 @@
     "completed_trips": [
       "T1006",
       "T2239"
-    ]
+    ],
+    "balance": 721
   },
   {
     "name": "Enya Jörgensen",
@@ -2859,7 +3176,8 @@
     "completed_trips": [
       "T866",
       "T030"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nilo Widén",
@@ -2868,7 +3186,8 @@
     "completed_trips": [
       "T1818",
       "T218"
-    ]
+    ],
+    "balance": 749
   },
   {
     "name": "Krister Lindblad",
@@ -2877,7 +3196,8 @@
     "completed_trips": [
       "T2044",
       "T2070"
-    ]
+    ],
+    "balance": 292
   },
   {
     "name": "Tor Lundbäck",
@@ -2886,7 +3206,8 @@
     "completed_trips": [
       "T1142",
       "T2971"
-    ]
+    ],
+    "balance": 753
   },
   {
     "name": "Valfrid Norling",
@@ -2895,7 +3216,8 @@
     "completed_trips": [
       "T141",
       "T1343"
-    ]
+    ],
+    "balance": 743
   },
   {
     "name": "Sigurd Qvist",
@@ -2904,7 +3226,8 @@
     "completed_trips": [
       "T2795",
       "T2898"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Emir Sjöberg",
@@ -2913,7 +3236,8 @@
     "completed_trips": [
       "T2002",
       "T1119"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ella Johansson",
@@ -2922,7 +3246,8 @@
     "completed_trips": [
       "T2243",
       "T1403"
-    ]
+    ],
+    "balance": 213
   },
   {
     "name": "Ossian Dahlin",
@@ -2931,7 +3256,8 @@
     "completed_trips": [
       "T1284",
       "T1993"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Joachim Olausson",
@@ -2940,7 +3266,8 @@
     "completed_trips": [
       "T2894",
       "T238"
-    ]
+    ],
+    "balance": 925
   },
   {
     "name": "Tage Rosenqvist",
@@ -2949,7 +3276,8 @@
     "completed_trips": [
       "T952",
       "T1250"
-    ]
+    ],
+    "balance": 795
   },
   {
     "name": "Evelina Rydell",
@@ -2958,7 +3286,8 @@
     "completed_trips": [
       "T2511",
       "T822"
-    ]
+    ],
+    "balance": 289
   },
   {
     "name": "Manfred Näsström",
@@ -2967,7 +3296,8 @@
     "completed_trips": [
       "T541",
       "T1765"
-    ]
+    ],
+    "balance": 500
   },
   {
     "name": "Alessia Edvardsson",
@@ -2976,7 +3306,8 @@
     "completed_trips": [
       "T1367",
       "T2113"
-    ]
+    ],
+    "balance": 309
   },
   {
     "name": "Arthur Ringdahl",
@@ -2985,7 +3316,8 @@
     "completed_trips": [
       "T223",
       "T464"
-    ]
+    ],
+    "balance": 451
   },
   {
     "name": "Melek Bogren",
@@ -2994,7 +3326,8 @@
     "completed_trips": [
       "T2573",
       "T1291"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Vega Brorsson",
@@ -3003,7 +3336,8 @@
     "completed_trips": [
       "T106",
       "T747"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sanja Appelgren",
@@ -3012,7 +3346,8 @@
     "completed_trips": [
       "T317",
       "T341"
-    ]
+    ],
+    "balance": 438
   },
   {
     "name": "Sigurd Sörensson",
@@ -3021,7 +3356,8 @@
     "completed_trips": [
       "T1588",
       "T177"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ivan Fredin",
@@ -3030,7 +3366,8 @@
     "completed_trips": [
       "T2451",
       "T880"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Tilda Ågren",
@@ -3039,7 +3376,8 @@
     "completed_trips": [
       "T1303",
       "T260"
-    ]
+    ],
+    "balance": 107
   },
   {
     "name": "Liza Ledin",
@@ -3048,7 +3386,8 @@
     "completed_trips": [
       "T2662",
       "T2831"
-    ]
+    ],
+    "balance": 137
   },
   {
     "name": "Josef Holmqvist",
@@ -3057,7 +3396,8 @@
     "completed_trips": [
       "T1856",
       "T451"
-    ]
+    ],
+    "balance": 818
   },
   {
     "name": "Michaela Tell",
@@ -3066,7 +3406,8 @@
     "completed_trips": [
       "T796",
       "T1265"
-    ]
+    ],
+    "balance": 182
   },
   {
     "name": "Mia Bohman",
@@ -3075,7 +3416,8 @@
     "completed_trips": [
       "T2021",
       "T1975"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Rolf Åkesson",
@@ -3084,7 +3426,8 @@
     "completed_trips": [
       "T1054",
       "T962"
-    ]
+    ],
+    "balance": 896
   },
   {
     "name": "Lilith Hedén",
@@ -3093,7 +3436,8 @@
     "completed_trips": [
       "T1169",
       "T1395"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sonia Hedén",
@@ -3102,7 +3446,8 @@
     "completed_trips": [
       "T2885",
       "T475"
-    ]
+    ],
+    "balance": 112
   },
   {
     "name": "Aprilia Cederholm",
@@ -3111,7 +3456,8 @@
     "completed_trips": [
       "T467",
       "T918"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Gottfrid Lantz",
@@ -3120,7 +3466,8 @@
     "completed_trips": [
       "T2244",
       "T1723"
-    ]
+    ],
+    "balance": 319
   },
   {
     "name": "Louisa Hellgren",
@@ -3129,7 +3476,8 @@
     "completed_trips": [
       "T2910",
       "T532"
-    ]
+    ],
+    "balance": 199
   },
   {
     "name": "Liana Kristiansson",
@@ -3138,7 +3486,8 @@
     "completed_trips": [
       "T813",
       "T220"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Vilhelm Österlund",
@@ -3147,7 +3496,8 @@
     "completed_trips": [
       "T1911",
       "T1942"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Konrad Långström",
@@ -3156,7 +3506,8 @@
     "completed_trips": [
       "T2071",
       "T2588"
-    ]
+    ],
+    "balance": 365
   },
   {
     "name": "Milou Landin",
@@ -3165,7 +3516,8 @@
     "completed_trips": [
       "T1755",
       "T1666"
-    ]
+    ],
+    "balance": 615
   },
   {
     "name": "Viking Vilhelmsson",
@@ -3174,7 +3526,8 @@
     "completed_trips": [
       "T1056",
       "T1277"
-    ]
+    ],
+    "balance": 135
   },
   {
     "name": "Emeli Sterner",
@@ -3183,7 +3536,8 @@
     "completed_trips": [
       "T2337",
       "T637"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Malte Back",
@@ -3192,7 +3546,8 @@
     "completed_trips": [
       "T2758",
       "T2334"
-    ]
+    ],
+    "balance": 403
   },
   {
     "name": "Aylin Halvarsson",
@@ -3201,7 +3556,8 @@
     "completed_trips": [
       "T1615",
       "T2743"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nova-Li Lundholm",
@@ -3210,7 +3566,8 @@
     "completed_trips": [
       "T1393",
       "T1151"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Leyla Öström",
@@ -3219,7 +3576,8 @@
     "completed_trips": [
       "T2048",
       "T754"
-    ]
+    ],
+    "balance": 597
   },
   {
     "name": "Sabina Söderkvist",
@@ -3228,7 +3586,8 @@
     "completed_trips": [
       "T1929",
       "T1185"
-    ]
+    ],
+    "balance": 671
   },
   {
     "name": "Jasper Dahlberg",
@@ -3237,7 +3596,8 @@
     "completed_trips": [
       "T2603",
       "T766"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Dan Landin",
@@ -3246,7 +3606,8 @@
     "completed_trips": [
       "T2699",
       "T2579"
-    ]
+    ],
+    "balance": 442
   },
   {
     "name": "Ingvar Hemmingsson",
@@ -3255,7 +3616,8 @@
     "completed_trips": [
       "T1197",
       "T1071"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Pauline Österman",
@@ -3264,7 +3626,8 @@
     "completed_trips": [
       "T943",
       "T2959"
-    ]
+    ],
+    "balance": 239
   },
   {
     "name": "Reinhold Stefansson",
@@ -3273,7 +3636,8 @@
     "completed_trips": [
       "T2998",
       "T927"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Abbe Bohlin",
@@ -3282,7 +3646,8 @@
     "completed_trips": [
       "T718",
       "T1985"
-    ]
+    ],
+    "balance": 210
   },
   {
     "name": "Sophie Ahlgren",
@@ -3291,7 +3656,8 @@
     "completed_trips": [
       "T005",
       "T063"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Gottfrid Brundin",
@@ -3300,7 +3666,8 @@
     "completed_trips": [
       "T1301",
       "T395"
-    ]
+    ],
+    "balance": 966
   },
   {
     "name": "Nanna Ragnarsson",
@@ -3309,7 +3676,8 @@
     "completed_trips": [
       "T246",
       "T644"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Pål Jarl",
@@ -3318,7 +3686,8 @@
     "completed_trips": [
       "T2766",
       "T2405"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Teresia Högman",
@@ -3327,7 +3696,8 @@
     "completed_trips": [
       "T1066",
       "T1161"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Lorena Månsson",
@@ -3336,7 +3706,8 @@
     "completed_trips": [
       "T1525",
       "T2175"
-    ]
+    ],
+    "balance": 136
   },
   {
     "name": "Caspar Norling",
@@ -3345,7 +3716,8 @@
     "completed_trips": [
       "T2878",
       "T312"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Georg Thuresson",
@@ -3354,7 +3726,8 @@
     "completed_trips": [
       "T843",
       "T1048"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Aston Oscarsson",
@@ -3363,7 +3736,8 @@
     "completed_trips": [
       "T851",
       "T2184"
-    ]
+    ],
+    "balance": 841
   },
   {
     "name": "Helmer Lindberg",
@@ -3372,7 +3746,8 @@
     "completed_trips": [
       "T1980",
       "T1600"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Idun Wallberg",
@@ -3381,7 +3756,8 @@
     "completed_trips": [
       "T2161",
       "T434"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Chloe Söderlund",
@@ -3390,7 +3766,8 @@
     "completed_trips": [
       "T2930",
       "T239"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Veronica Sörman",
@@ -3399,7 +3776,8 @@
     "completed_trips": [
       "T315",
       "T1510"
-    ]
+    ],
+    "balance": 863
   },
   {
     "name": "Emilija Almgren",
@@ -3408,7 +3786,8 @@
     "completed_trips": [
       "T661",
       "T1085"
-    ]
+    ],
+    "balance": 367
   },
   {
     "name": "Luna Edberg",
@@ -3417,7 +3796,8 @@
     "completed_trips": [
       "T1181",
       "T641"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ingemar Nyman",
@@ -3426,7 +3806,8 @@
     "completed_trips": [
       "T307",
       "T1218"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nadia Hedström",
@@ -3435,7 +3816,8 @@
     "completed_trips": [
       "T2625",
       "T1667"
-    ]
+    ],
+    "balance": 465
   },
   {
     "name": "Edvard Enqvist",
@@ -3444,7 +3826,8 @@
     "completed_trips": [
       "T1907",
       "T2308"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Knut Nylén",
@@ -3453,7 +3836,8 @@
     "completed_trips": [
       "T2668",
       "T2037"
-    ]
+    ],
+    "balance": 953
   },
   {
     "name": "Staffan Lif",
@@ -3462,7 +3846,8 @@
     "completed_trips": [
       "T738",
       "T2791"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Herman Sunesson",
@@ -3471,7 +3856,8 @@
     "completed_trips": [
       "T2199",
       "T1238"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Åsa Holmlund",
@@ -3480,7 +3866,8 @@
     "completed_trips": [
       "T1628",
       "T945"
-    ]
+    ],
+    "balance": 504
   },
   {
     "name": "Douglas Bengtsson",
@@ -3489,7 +3876,8 @@
     "completed_trips": [
       "T1825",
       "T1536"
-    ]
+    ],
+    "balance": 979
   },
   {
     "name": "Tino Evertsson",
@@ -3498,7 +3886,8 @@
     "completed_trips": [
       "T2429",
       "T630"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Karolina Blomqvist",
@@ -3507,7 +3896,8 @@
     "completed_trips": [
       "T1471",
       "T1228"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sivert Kvarnström",
@@ -3516,7 +3906,8 @@
     "completed_trips": [
       "T1019",
       "T2372"
-    ]
+    ],
+    "balance": 454
   },
   {
     "name": "Evald Jakobsson",
@@ -3525,7 +3916,8 @@
     "completed_trips": [
       "T650",
       "T1621"
-    ]
+    ],
+    "balance": 427
   },
   {
     "name": "Sara Sander",
@@ -3534,7 +3926,8 @@
     "completed_trips": [
       "T1075",
       "T1834"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Arwen Mattsson",
@@ -3543,7 +3936,8 @@
     "completed_trips": [
       "T1430",
       "T2513"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Henning Söderman",
@@ -3552,7 +3946,8 @@
     "completed_trips": [
       "T980",
       "T2368"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Edit Thorén",
@@ -3561,7 +3956,8 @@
     "completed_trips": [
       "T985",
       "T2483"
-    ]
+    ],
+    "balance": 466
   },
   {
     "name": "Oskar Lif",
@@ -3570,7 +3966,8 @@
     "completed_trips": [
       "T1547",
       "T1672"
-    ]
+    ],
+    "balance": 743
   },
   {
     "name": "Smilla Björn",
@@ -3579,7 +3976,8 @@
     "completed_trips": [
       "T781",
       "T2101"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Lykke Ersson",
@@ -3588,7 +3986,8 @@
     "completed_trips": [
       "T557",
       "T2384"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Denniz Zetterlund",
@@ -3597,7 +3996,8 @@
     "completed_trips": [
       "T1035",
       "T1281"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Savannah Kroon",
@@ -3606,7 +4006,8 @@
     "completed_trips": [
       "T2410",
       "T807"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Linus Hedman",
@@ -3615,7 +4016,8 @@
     "completed_trips": [
       "T1198",
       "T2790"
-    ]
+    ],
+    "balance": 857
   },
   {
     "name": "Karim Bergvall",
@@ -3624,7 +4026,8 @@
     "completed_trips": [
       "T545",
       "T2164"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Vidar Lovén",
@@ -3633,7 +4036,8 @@
     "completed_trips": [
       "T1571",
       "T2693"
-    ]
+    ],
+    "balance": 987
   },
   {
     "name": "Angelica Hultman",
@@ -3642,7 +4046,8 @@
     "completed_trips": [
       "T2336",
       "T1814"
-    ]
+    ],
+    "balance": 290
   },
   {
     "name": "Set Holmén",
@@ -3651,7 +4056,8 @@
     "completed_trips": [
       "T523",
       "T2735"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Hailie Zander",
@@ -3660,7 +4066,8 @@
     "completed_trips": [
       "T649",
       "T778"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Betty Östberg",
@@ -3669,7 +4076,8 @@
     "completed_trips": [
       "T205",
       "T2143"
-    ]
+    ],
+    "balance": 887
   },
   {
     "name": "Gottfrid Lagerqvist",
@@ -3678,7 +4086,8 @@
     "completed_trips": [
       "T2759",
       "T1784"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "River Olausson",
@@ -3687,7 +4096,8 @@
     "completed_trips": [
       "T2347",
       "T147"
-    ]
+    ],
+    "balance": 938
   },
   {
     "name": "Molly Stål",
@@ -3696,7 +4106,8 @@
     "completed_trips": [
       "T1837",
       "T182"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Anja Bolin",
@@ -3705,7 +4116,8 @@
     "completed_trips": [
       "T1577",
       "T1597"
-    ]
+    ],
+    "balance": 394
   },
   {
     "name": "Roxanna Fridlund",
@@ -3714,7 +4126,8 @@
     "completed_trips": [
       "T888",
       "T652"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Jolina Söderlund",
@@ -3723,7 +4136,8 @@
     "completed_trips": [
       "T501",
       "T1491"
-    ]
+    ],
+    "balance": 266
   },
   {
     "name": "Aram Björck",
@@ -3732,7 +4146,8 @@
     "completed_trips": [
       "T1178",
       "T056"
-    ]
+    ],
+    "balance": 359
   },
   {
     "name": "Ruben Blomdahl",
@@ -3741,7 +4156,8 @@
     "completed_trips": [
       "T013",
       "T584"
-    ]
+    ],
+    "balance": 882
   },
   {
     "name": "Manfred Hedblom",
@@ -3750,7 +4166,8 @@
     "completed_trips": [
       "T042",
       "T1550"
-    ]
+    ],
+    "balance": 712
   },
   {
     "name": "Åsa Hansson",
@@ -3759,7 +4176,8 @@
     "completed_trips": [
       "T1580",
       "T254"
-    ]
+    ],
+    "balance": 240
   },
   {
     "name": "Alvar Gillberg",
@@ -3768,7 +4186,8 @@
     "completed_trips": [
       "T492",
       "T967"
-    ]
+    ],
+    "balance": 980
   },
   {
     "name": "Elna Blomgren",
@@ -3777,7 +4196,8 @@
     "completed_trips": [
       "T810",
       "T072"
-    ]
+    ],
+    "balance": 962
   },
   {
     "name": "Anas Tillman",
@@ -3786,7 +4206,8 @@
     "completed_trips": [
       "T2884",
       "T1641"
-    ]
+    ],
+    "balance": 207
   },
   {
     "name": "Ronny Berglund",
@@ -3795,7 +4216,8 @@
     "completed_trips": [
       "T800",
       "T1318"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Emina Wallgren",
@@ -3804,7 +4226,8 @@
     "completed_trips": [
       "T2470",
       "T2824"
-    ]
+    ],
+    "balance": 637
   },
   {
     "name": "Natali Hilmersson",
@@ -3813,7 +4236,8 @@
     "completed_trips": [
       "T808",
       "T1685"
-    ]
+    ],
+    "balance": 319
   },
   {
     "name": "Lydia Stenman",
@@ -3822,7 +4246,8 @@
     "completed_trips": [
       "T971",
       "T2412"
-    ]
+    ],
+    "balance": 349
   },
   {
     "name": "Lou Nyström",
@@ -3831,7 +4256,8 @@
     "completed_trips": [
       "T2522",
       "T355"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Blenda Hellberg",
@@ -3840,7 +4266,8 @@
     "completed_trips": [
       "T1920",
       "T1137"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Leo Kling",
@@ -3849,7 +4276,8 @@
     "completed_trips": [
       "T963",
       "T1157"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Emmelie Einarsson",
@@ -3858,7 +4286,8 @@
     "completed_trips": [
       "T1069",
       "T150"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Linda Schröder",
@@ -3867,7 +4296,8 @@
     "completed_trips": [
       "T1508",
       "T655"
-    ]
+    ],
+    "balance": 530
   },
   {
     "name": "Nemi Jernberg",
@@ -3876,7 +4306,8 @@
     "completed_trips": [
       "T1220",
       "T286"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Noak Davidsson",
@@ -3885,7 +4316,8 @@
     "completed_trips": [
       "T938",
       "T712"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Tora Björkman",
@@ -3894,7 +4326,8 @@
     "completed_trips": [
       "T1586",
       "T983"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Christopher Svenningsson",
@@ -3903,7 +4336,8 @@
     "completed_trips": [
       "T2022",
       "T1176"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Wendela Rundberg",
@@ -3912,7 +4346,8 @@
     "completed_trips": [
       "T2925",
       "T2914"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Tanja Eskilsson",
@@ -3921,7 +4356,8 @@
     "completed_trips": [
       "T2912",
       "T222"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Tina Hamrin",
@@ -3930,7 +4366,8 @@
     "completed_trips": [
       "T195",
       "T1150"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Deniz Ekman",
@@ -3939,7 +4376,8 @@
     "completed_trips": [
       "T2493",
       "T1821"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Theodore Fritz",
@@ -3948,7 +4386,8 @@
     "completed_trips": [
       "T2665",
       "T1168"
-    ]
+    ],
+    "balance": 860
   },
   {
     "name": "Vanna Kihlberg",
@@ -3957,7 +4396,8 @@
     "completed_trips": [
       "T2973",
       "T1770"
-    ]
+    ],
+    "balance": 674
   },
   {
     "name": "Anselm Glans",
@@ -3966,7 +4406,8 @@
     "completed_trips": [
       "T2142",
       "T1763"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Luka Göransson",
@@ -3975,7 +4416,8 @@
     "completed_trips": [
       "T2737",
       "T811"
-    ]
+    ],
+    "balance": 717
   },
   {
     "name": "Fatma Harrysson",
@@ -3984,7 +4426,8 @@
     "completed_trips": [
       "T2206",
       "T1052"
-    ]
+    ],
+    "balance": 628
   },
   {
     "name": "Leon Åkerberg",
@@ -3993,7 +4436,8 @@
     "completed_trips": [
       "T130",
       "T891"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Hilding Samuelsson",
@@ -4002,7 +4446,8 @@
     "completed_trips": [
       "T2192",
       "T897"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ingrid Oskarsson",
@@ -4011,7 +4456,8 @@
     "completed_trips": [
       "T651",
       "T2861"
-    ]
+    ],
+    "balance": 892
   },
   {
     "name": "Elmedina Sandberg",
@@ -4020,7 +4466,8 @@
     "completed_trips": [
       "T2684",
       "T1816"
-    ]
+    ],
+    "balance": 461
   },
   {
     "name": "James Sjölin",
@@ -4029,7 +4476,8 @@
     "completed_trips": [
       "T102",
       "T1670"
-    ]
+    ],
+    "balance": 583
   },
   {
     "name": "Amina Olausson",
@@ -4038,7 +4486,8 @@
     "completed_trips": [
       "T912",
       "T2896"
-    ]
+    ],
+    "balance": 595
   },
   {
     "name": "Ibrahim Cederberg",
@@ -4047,7 +4496,8 @@
     "completed_trips": [
       "T589",
       "T1165"
-    ]
+    ],
+    "balance": 530
   },
   {
     "name": "Lorin Ståhl",
@@ -4056,7 +4506,8 @@
     "completed_trips": [
       "T563",
       "T2848"
-    ]
+    ],
+    "balance": 971
   },
   {
     "name": "Heidi Sjöö",
@@ -4065,7 +4516,8 @@
     "completed_trips": [
       "T1252",
       "T2777"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ruth Dahlström",
@@ -4074,7 +4526,8 @@
     "completed_trips": [
       "T1360",
       "T2039"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Dilan Kjellgren",
@@ -4083,7 +4536,8 @@
     "completed_trips": [
       "T2814",
       "T1751"
-    ]
+    ],
+    "balance": 817
   },
   {
     "name": "Benin Forsgren",
@@ -4092,7 +4546,8 @@
     "completed_trips": [
       "T101",
       "T181"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Roger Back",
@@ -4101,7 +4556,8 @@
     "completed_trips": [
       "T839",
       "T288"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Elwira Thor",
@@ -4110,7 +4566,8 @@
     "completed_trips": [
       "T2149",
       "T1664"
-    ]
+    ],
+    "balance": 927
   },
   {
     "name": "Linnea Hultqvist",
@@ -4119,7 +4576,8 @@
     "completed_trips": [
       "T2291",
       "T540"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Rayan Appelqvist",
@@ -4128,7 +4586,8 @@
     "completed_trips": [
       "T496",
       "T699"
-    ]
+    ],
+    "balance": 235
   },
   {
     "name": "Brian Ahlberg",
@@ -4137,7 +4596,8 @@
     "completed_trips": [
       "T121",
       "T573"
-    ]
+    ],
+    "balance": 884
   },
   {
     "name": "Alve Torstensson",
@@ -4146,7 +4606,8 @@
     "completed_trips": [
       "T2598",
       "T964"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Mats Schmidt",
@@ -4155,7 +4616,8 @@
     "completed_trips": [
       "T191",
       "T1162"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Hana Kjellgren",
@@ -4164,7 +4626,8 @@
     "completed_trips": [
       "T1136",
       "T2416"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Miro Enqvist",
@@ -4173,7 +4636,8 @@
     "completed_trips": [
       "T269",
       "T2874"
-    ]
+    ],
+    "balance": 202
   },
   {
     "name": "Lars Söderlund",
@@ -4182,7 +4646,8 @@
     "completed_trips": [
       "T079",
       "T1780"
-    ]
+    ],
+    "balance": 835
   },
   {
     "name": "Jens Oskarsson",
@@ -4191,7 +4656,8 @@
     "completed_trips": [
       "T856",
       "T1461"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ofelia Gran",
@@ -4200,7 +4666,8 @@
     "completed_trips": [
       "T658",
       "T497"
-    ]
+    ],
+    "balance": 673
   },
   {
     "name": "Brynolf Rasmussen",
@@ -4209,7 +4676,8 @@
     "completed_trips": [
       "T2657",
       "T1979"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Vidar Gustavsson",
@@ -4218,7 +4686,8 @@
     "completed_trips": [
       "T806",
       "T814"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Belinda Rönnberg",
@@ -4227,7 +4696,8 @@
     "completed_trips": [
       "T2782",
       "T1910"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Emely Blomdahl",
@@ -4236,7 +4706,8 @@
     "completed_trips": [
       "T1115",
       "T2241"
-    ]
+    ],
+    "balance": 137
   },
   {
     "name": "Zelda Granström",
@@ -4245,7 +4716,8 @@
     "completed_trips": [
       "T450",
       "T2706"
-    ]
+    ],
+    "balance": 697
   },
   {
     "name": "Ebba Ryd",
@@ -4254,7 +4726,8 @@
     "completed_trips": [
       "T2835",
       "T2800"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Vendela Carlsson",
@@ -4263,7 +4736,8 @@
     "completed_trips": [
       "T1506",
       "T2580"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Miro Åslund",
@@ -4272,7 +4746,8 @@
     "completed_trips": [
       "T743",
       "T2492"
-    ]
+    ],
+    "balance": 282
   },
   {
     "name": "Alisa Hägg",
@@ -4281,7 +4756,8 @@
     "completed_trips": [
       "T2943",
       "T2540"
-    ]
+    ],
+    "balance": 416
   },
   {
     "name": "Samira Hård",
@@ -4290,7 +4766,8 @@
     "completed_trips": [
       "T1102",
       "T184"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Maksim Sten",
@@ -4299,7 +4776,8 @@
     "completed_trips": [
       "T900",
       "T939"
-    ]
+    ],
+    "balance": 687
   },
   {
     "name": "Agnes Granath",
@@ -4308,7 +4786,8 @@
     "completed_trips": [
       "T2309",
       "T1021"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Willy Lindmark",
@@ -4317,7 +4796,8 @@
     "completed_trips": [
       "T505",
       "T1648"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Gottfrid Öqvist",
@@ -4326,7 +4806,8 @@
     "completed_trips": [
       "T274",
       "T2832"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Noah Sandell",
@@ -4335,7 +4816,8 @@
     "completed_trips": [
       "T2229",
       "T585"
-    ]
+    ],
+    "balance": 224
   },
   {
     "name": "Hillevi Hallgren",
@@ -4344,7 +4826,8 @@
     "completed_trips": [
       "T207",
       "T1388"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Lorin Skoog",
@@ -4353,7 +4836,8 @@
     "completed_trips": [
       "T1585",
       "T2383"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Hailey Wedin",
@@ -4362,7 +4846,8 @@
     "completed_trips": [
       "T1655",
       "T829"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Lillemor Wikman",
@@ -4371,7 +4856,8 @@
     "completed_trips": [
       "T418",
       "T376"
-    ]
+    ],
+    "balance": 354
   },
   {
     "name": "Hjalmar Göransson",
@@ -4380,7 +4866,8 @@
     "completed_trips": [
       "T040",
       "T158"
-    ]
+    ],
+    "balance": 729
   },
   {
     "name": "Hemming Kjellström",
@@ -4389,7 +4876,8 @@
     "completed_trips": [
       "T210",
       "T1124"
-    ]
+    ],
+    "balance": 666
   },
   {
     "name": "Judit Rönn",
@@ -4398,7 +4886,8 @@
     "completed_trips": [
       "T803",
       "T595"
-    ]
+    ],
+    "balance": 987
   },
   {
     "name": "Claes Krantz",
@@ -4407,7 +4896,8 @@
     "completed_trips": [
       "T2031",
       "T600"
-    ]
+    ],
+    "balance": 117
   },
   {
     "name": "Eila Sjökvist",
@@ -4416,7 +4906,8 @@
     "completed_trips": [
       "T1172",
       "T188"
-    ]
+    ],
+    "balance": 327
   },
   {
     "name": "Ajla Enqvist",
@@ -4425,7 +4916,8 @@
     "completed_trips": [
       "T518",
       "T1419"
-    ]
+    ],
+    "balance": 715
   },
   {
     "name": "Marlon Ålund",
@@ -4434,7 +4926,8 @@
     "completed_trips": [
       "T2767",
       "T2524"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Isadora Carlén",
@@ -4443,7 +4936,8 @@
     "completed_trips": [
       "T1090",
       "T1661"
-    ]
+    ],
+    "balance": 529
   },
   {
     "name": "Emmi Holmlund",
@@ -4452,7 +4946,8 @@
     "completed_trips": [
       "T1593",
       "T1447"
-    ]
+    ],
+    "balance": 440
   },
   {
     "name": "Bertil Åhman",
@@ -4461,7 +4956,8 @@
     "completed_trips": [
       "T776",
       "T1934"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sonia Edström",
@@ -4470,7 +4966,8 @@
     "completed_trips": [
       "T643",
       "T025"
-    ]
+    ],
+    "balance": 648
   },
   {
     "name": "Beata Helgesson",
@@ -4479,7 +4976,8 @@
     "completed_trips": [
       "T1606",
       "T1234"
-    ]
+    ],
+    "balance": 696
   },
   {
     "name": "Celia Sandahl",
@@ -4488,7 +4986,8 @@
     "completed_trips": [
       "T1701",
       "T855"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Junia Brodén",
@@ -4497,7 +4996,8 @@
     "completed_trips": [
       "T789",
       "T2105"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Esaias Falk",
@@ -4506,7 +5006,8 @@
     "completed_trips": [
       "T1691",
       "T2860"
-    ]
+    ],
+    "balance": 928
   },
   {
     "name": "Evin Holmström",
@@ -4515,7 +5016,8 @@
     "completed_trips": [
       "T251",
       "T2718"
-    ]
+    ],
+    "balance": 608
   },
   {
     "name": "Chanel Bratt",
@@ -4524,7 +5026,8 @@
     "completed_trips": [
       "T1014",
       "T507"
-    ]
+    ],
+    "balance": 962
   },
   {
     "name": "Jessika Niemi",
@@ -4533,7 +5036,8 @@
     "completed_trips": [
       "T2652",
       "T2487"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Cindy Bergqvist",
@@ -4542,7 +5046,8 @@
     "completed_trips": [
       "T372",
       "T2189"
-    ]
+    ],
+    "balance": 472
   },
   {
     "name": "Helen Lövgren",
@@ -4551,7 +5056,8 @@
     "completed_trips": [
       "T872",
       "T2454"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Charlotta Forsström",
@@ -4560,7 +5066,8 @@
     "completed_trips": [
       "T1373",
       "T1454"
-    ]
+    ],
+    "balance": 655
   },
   {
     "name": "Emin Wik",
@@ -4569,7 +5076,8 @@
     "completed_trips": [
       "T1605",
       "T1059"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Adriana Rosell",
@@ -4578,7 +5086,8 @@
     "completed_trips": [
       "T1381",
       "T2564"
-    ]
+    ],
+    "balance": 174
   },
   {
     "name": "Emilija Frisk",
@@ -4587,7 +5096,8 @@
     "completed_trips": [
       "T316",
       "T1793"
-    ]
+    ],
+    "balance": 898
   },
   {
     "name": "Mirella Sjödahl",
@@ -4596,7 +5106,8 @@
     "completed_trips": [
       "T498",
       "T2015"
-    ]
+    ],
+    "balance": 955
   },
   {
     "name": "Nour Nordlander",
@@ -4605,7 +5116,8 @@
     "completed_trips": [
       "T974",
       "T1477"
-    ]
+    ],
+    "balance": 999
   },
   {
     "name": "Agaton Hammarström",
@@ -4614,7 +5126,8 @@
     "completed_trips": [
       "T1295",
       "T1630"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Dania Fritz",
@@ -4623,7 +5136,8 @@
     "completed_trips": [
       "T017",
       "T2046"
-    ]
+    ],
+    "balance": 504
   },
   {
     "name": "Madelen Ekholm",
@@ -4632,7 +5146,8 @@
     "completed_trips": [
       "T2679",
       "T2476"
-    ]
+    ],
+    "balance": 289
   },
   {
     "name": "Leija Ringström",
@@ -4641,7 +5156,8 @@
     "completed_trips": [
       "T2823",
       "T993"
-    ]
+    ],
+    "balance": 875
   },
   {
     "name": "Emilija Broström",
@@ -4650,7 +5166,8 @@
     "completed_trips": [
       "T2624",
       "T1589"
-    ]
+    ],
+    "balance": 522
   },
   {
     "name": "Isak Nylander",
@@ -4659,7 +5176,8 @@
     "completed_trips": [
       "T1155",
       "T214"
-    ]
+    ],
+    "balance": 742
   },
   {
     "name": "Athena Kihlström",
@@ -4668,7 +5186,8 @@
     "completed_trips": [
       "T433",
       "T1262"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Amelia Frid",
@@ -4677,7 +5196,8 @@
     "completed_trips": [
       "T1785",
       "T2701"
-    ]
+    ],
+    "balance": 679
   },
   {
     "name": "Mostafa Stridh",
@@ -4686,7 +5206,8 @@
     "completed_trips": [
       "T287",
       "T2116"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Didrik Bodén",
@@ -4695,7 +5216,8 @@
     "completed_trips": [
       "T1587",
       "T519"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Liv Molin",
@@ -4704,7 +5226,8 @@
     "completed_trips": [
       "T615",
       "T2066"
-    ]
+    ],
+    "balance": 262
   },
   {
     "name": "Nikolina Dahl",
@@ -4713,7 +5236,8 @@
     "completed_trips": [
       "T1603",
       "T2613"
-    ]
+    ],
+    "balance": 516
   },
   {
     "name": "Ivan Johannisson",
@@ -4722,7 +5246,8 @@
     "completed_trips": [
       "T668",
       "T684"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Mostafa Sahlström",
@@ -4731,7 +5256,8 @@
     "completed_trips": [
       "T1087",
       "T319"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Amie Åkerlund",
@@ -4740,7 +5266,8 @@
     "completed_trips": [
       "T1850",
       "T2361"
-    ]
+    ],
+    "balance": 365
   },
   {
     "name": "Pär Sonesson",
@@ -4749,7 +5276,8 @@
     "completed_trips": [
       "T1387",
       "T940"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Walter Bergström",
@@ -4758,7 +5286,8 @@
     "completed_trips": [
       "T133",
       "T1210"
-    ]
+    ],
+    "balance": 875
   },
   {
     "name": "Malek Jörgensen",
@@ -4767,7 +5296,8 @@
     "completed_trips": [
       "T2964",
       "T863"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Olof Holmlund",
@@ -4776,7 +5306,8 @@
     "completed_trips": [
       "T691",
       "T1065"
-    ]
+    ],
+    "balance": 749
   },
   {
     "name": "Daisy Brandt",
@@ -4785,7 +5316,8 @@
     "completed_trips": [
       "T799",
       "T687"
-    ]
+    ],
+    "balance": 237
   },
   {
     "name": "Joachim Petersson",
@@ -4794,7 +5326,8 @@
     "completed_trips": [
       "T1544",
       "T2630"
-    ]
+    ],
+    "balance": 565
   },
   {
     "name": "Filiph Thörn",
@@ -4803,7 +5336,8 @@
     "completed_trips": [
       "T2064",
       "T173"
-    ]
+    ],
+    "balance": 921
   },
   {
     "name": "Edith Almgren",
@@ -4812,7 +5346,8 @@
     "completed_trips": [
       "T713",
       "T941"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ayla Bergstrand",
@@ -4821,7 +5356,8 @@
     "completed_trips": [
       "T1480",
       "T291"
-    ]
+    ],
+    "balance": 228
   },
   {
     "name": "Xander Svensson",
@@ -4830,7 +5366,8 @@
     "completed_trips": [
       "T1264",
       "T1682"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Elisa Sahlin",
@@ -4839,7 +5376,8 @@
     "completed_trips": [
       "T2019",
       "T1812"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Jacob Roslund",
@@ -4848,7 +5386,8 @@
     "completed_trips": [
       "T2705",
       "T1725"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Rafael Peterson",
@@ -4857,7 +5396,8 @@
     "completed_trips": [
       "T387",
       "T2029"
-    ]
+    ],
+    "balance": 926
   },
   {
     "name": "Fredric Hamrin",
@@ -4866,7 +5406,8 @@
     "completed_trips": [
       "T1504",
       "T2082"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Glenn Krantz",
@@ -4875,7 +5416,8 @@
     "completed_trips": [
       "T1170",
       "T165"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Bjarne Mattiasson",
@@ -4884,7 +5426,8 @@
     "completed_trips": [
       "T114",
       "T2542"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Niclas Lundahl",
@@ -4893,7 +5436,8 @@
     "completed_trips": [
       "T1037",
       "T2284"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Marlon Forsell",
@@ -4902,7 +5446,8 @@
     "completed_trips": [
       "T1350",
       "T1383"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Tintin Grönqvist",
@@ -4911,7 +5456,8 @@
     "completed_trips": [
       "T390",
       "T271"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ludwig Qvarnström",
@@ -4920,7 +5466,8 @@
     "completed_trips": [
       "T934",
       "T578"
-    ]
+    ],
+    "balance": 504
   },
   {
     "name": "Tilly Sundgren",
@@ -4929,7 +5476,8 @@
     "completed_trips": [
       "T2700",
       "T046"
-    ]
+    ],
+    "balance": 171
   },
   {
     "name": "Julie Lif",
@@ -4938,7 +5486,8 @@
     "completed_trips": [
       "T1734",
       "T1533"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ingemar Hägg",
@@ -4947,7 +5496,8 @@
     "completed_trips": [
       "T420",
       "T1023"
-    ]
+    ],
+    "balance": 296
   },
   {
     "name": "Carl Nylén",
@@ -4956,7 +5506,8 @@
     "completed_trips": [
       "T617",
       "T1323"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Christofer Sandqvist",
@@ -4965,7 +5516,8 @@
     "completed_trips": [
       "T1442",
       "T1835"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Hampus Kling",
@@ -4974,7 +5526,8 @@
     "completed_trips": [
       "T597",
       "T084"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sebastian Öqvist",
@@ -4983,7 +5536,8 @@
     "completed_trips": [
       "T1646",
       "T1300"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Jolene Hällgren",
@@ -4992,7 +5546,8 @@
     "completed_trips": [
       "T1616",
       "T2793"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Chris Medin",
@@ -5001,7 +5556,8 @@
     "completed_trips": [
       "T292",
       "T1415"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Tryggve Molander",
@@ -5010,7 +5566,8 @@
     "completed_trips": [
       "T2853",
       "T235"
-    ]
+    ],
+    "balance": 738
   },
   {
     "name": "Doris Zetterström",
@@ -5019,7 +5576,8 @@
     "completed_trips": [
       "T1108",
       "T357"
-    ]
+    ],
+    "balance": 114
   },
   {
     "name": "Andrea Norling",
@@ -5028,7 +5586,8 @@
     "completed_trips": [
       "T1216",
       "T2157"
-    ]
+    ],
+    "balance": 858
   },
   {
     "name": "Stefan Rosell",
@@ -5037,7 +5596,8 @@
     "completed_trips": [
       "T1001",
       "T956"
-    ]
+    ],
+    "balance": 559
   },
   {
     "name": "Sandra Andersen",
@@ -5046,7 +5606,8 @@
     "completed_trips": [
       "T1249",
       "T1378"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Cornelia Åhs",
@@ -5055,7 +5616,8 @@
     "completed_trips": [
       "T135",
       "T1656"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Tuwa Ljung",
@@ -5064,7 +5626,8 @@
     "completed_trips": [
       "T552",
       "T997"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ida Carlström",
@@ -5073,7 +5636,8 @@
     "completed_trips": [
       "T1379",
       "T435"
-    ]
+    ],
+    "balance": 450
   },
   {
     "name": "Dan Tillberg",
@@ -5082,7 +5646,8 @@
     "completed_trips": [
       "T531",
       "T1636"
-    ]
+    ],
+    "balance": 585
   },
   {
     "name": "Lillemor Halldén",
@@ -5091,7 +5656,8 @@
     "completed_trips": [
       "T221",
       "T2553"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Avin Åslund",
@@ -5100,7 +5666,8 @@
     "completed_trips": [
       "T1968",
       "T574"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Isolde Hellgren",
@@ -5109,7 +5676,8 @@
     "completed_trips": [
       "T509",
       "T462"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Germund Östberg",
@@ -5118,7 +5686,8 @@
     "completed_trips": [
       "T160",
       "T579"
-    ]
+    ],
+    "balance": 781
   },
   {
     "name": "Beata Åkerman",
@@ -5127,7 +5696,8 @@
     "completed_trips": [
       "T1707",
       "T1380"
-    ]
+    ],
+    "balance": 570
   },
   {
     "name": "Natasha Landén",
@@ -5136,7 +5706,8 @@
     "completed_trips": [
       "T051",
       "T2981"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Göran Juhlin",
@@ -5145,7 +5716,8 @@
     "completed_trips": [
       "T648",
       "T1053"
-    ]
+    ],
+    "balance": 671
   },
   {
     "name": "Mika Mårtensson",
@@ -5154,7 +5726,8 @@
     "completed_trips": [
       "T1148",
       "T2530"
-    ]
+    ],
+    "balance": 696
   },
   {
     "name": "Roxanna Jönsson",
@@ -5163,7 +5736,8 @@
     "completed_trips": [
       "T179",
       "T2232"
-    ]
+    ],
+    "balance": 360
   },
   {
     "name": "Sigge Lönnberg",
@@ -5172,7 +5746,8 @@
     "completed_trips": [
       "T1838",
       "T838"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Jon Pihl",
@@ -5181,7 +5756,8 @@
     "completed_trips": [
       "T2990",
       "T2362"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Lillian Lindman",
@@ -5190,7 +5766,8 @@
     "completed_trips": [
       "T075",
       "T594"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Tania Lundvall",
@@ -5199,7 +5776,8 @@
     "completed_trips": [
       "T1737",
       "T2331"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nikolaj Vilhelmsson",
@@ -5208,7 +5786,8 @@
     "completed_trips": [
       "T2374",
       "T1133"
-    ]
+    ],
+    "balance": 646
   },
   {
     "name": "Fabian Svensson",
@@ -5217,7 +5796,8 @@
     "completed_trips": [
       "T2228",
       "T485"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Malek Lantz",
@@ -5226,7 +5806,8 @@
     "completed_trips": [
       "T1807",
       "T2155"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Adriana Sjölund",
@@ -5235,7 +5816,8 @@
     "completed_trips": [
       "T187",
       "T2797"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Juliette Bergström",
@@ -5244,7 +5826,8 @@
     "completed_trips": [
       "T845",
       "T1049"
-    ]
+    ],
+    "balance": 817
   },
   {
     "name": "Kalle Andersson",
@@ -5253,7 +5836,8 @@
     "completed_trips": [
       "T944",
       "T2458"
-    ]
+    ],
+    "balance": 311
   },
   {
     "name": "Alf Dahlqvist",
@@ -5262,7 +5846,8 @@
     "completed_trips": [
       "T2585",
       "T2789"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Kendra Bergendahl",
@@ -5271,7 +5856,8 @@
     "completed_trips": [
       "T331",
       "T1355"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Karla Rosenberg",
@@ -5280,7 +5866,8 @@
     "completed_trips": [
       "T2647",
       "T1361"
-    ]
+    ],
+    "balance": 502
   },
   {
     "name": "Sanna Wallman",
@@ -5289,7 +5876,8 @@
     "completed_trips": [
       "T2034",
       "T1229"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Rebecca Ehn",
@@ -5298,7 +5886,8 @@
     "completed_trips": [
       "T2799",
       "T142"
-    ]
+    ],
+    "balance": 913
   },
   {
     "name": "Embla Boman",
@@ -5307,7 +5896,8 @@
     "completed_trips": [
       "T018",
       "T571"
-    ]
+    ],
+    "balance": 206
   },
   {
     "name": "Tea Kristiansson",
@@ -5316,7 +5906,8 @@
     "completed_trips": [
       "T208",
       "T2141"
-    ]
+    ],
+    "balance": 547
   },
   {
     "name": "Johnny Törnblom",
@@ -5325,7 +5916,8 @@
     "completed_trips": [
       "T2084",
       "T653"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Elena Mellberg",
@@ -5334,7 +5926,8 @@
     "completed_trips": [
       "T1908",
       "T570"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Thor Hedström",
@@ -5343,7 +5936,8 @@
     "completed_trips": [
       "T906",
       "T909"
-    ]
+    ],
+    "balance": 320
   },
   {
     "name": "Kayla Holmstedt",
@@ -5352,7 +5946,8 @@
     "completed_trips": [
       "T1686",
       "T360"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Samuel Örn",
@@ -5361,7 +5956,8 @@
     "completed_trips": [
       "T876",
       "T2548"
-    ]
+    ],
+    "balance": 399
   },
   {
     "name": "Kajsa Bäck",
@@ -5370,7 +5966,8 @@
     "completed_trips": [
       "T1450",
       "T176"
-    ]
+    ],
+    "balance": 492
   },
   {
     "name": "Hassan Vahlberg",
@@ -5379,7 +5976,8 @@
     "completed_trips": [
       "T273",
       "T862"
-    ]
+    ],
+    "balance": 947
   },
   {
     "name": "Idun Forss",
@@ -5388,7 +5986,8 @@
     "completed_trips": [
       "T779",
       "T1125"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Adèle Boström",
@@ -5397,7 +5996,8 @@
     "completed_trips": [
       "T2974",
       "T2672"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Alicia Westin",
@@ -5406,7 +6006,8 @@
     "completed_trips": [
       "T1619",
       "T1275"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ines Henningsson",
@@ -5415,7 +6016,8 @@
     "completed_trips": [
       "T1557",
       "T736"
-    ]
+    ],
+    "balance": 745
   },
   {
     "name": "Eli Rodin",
@@ -5424,7 +6026,8 @@
     "completed_trips": [
       "T477",
       "T457"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Leopold Sundén",
@@ -5433,7 +6036,8 @@
     "completed_trips": [
       "T2850",
       "T2441"
-    ]
+    ],
+    "balance": 114
   },
   {
     "name": "Stephanie Kristoffersson",
@@ -5442,7 +6046,8 @@
     "completed_trips": [
       "T2208",
       "T060"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sabrina Wickman",
@@ -5451,7 +6056,8 @@
     "completed_trips": [
       "T2366",
       "T2571"
-    ]
+    ],
+    "balance": 914
   },
   {
     "name": "Maximillian Törnkvist",
@@ -5460,7 +6066,8 @@
     "completed_trips": [
       "T2371",
       "T801"
-    ]
+    ],
+    "balance": 994
   },
   {
     "name": "Christopher Leijon",
@@ -5469,7 +6076,8 @@
     "completed_trips": [
       "T119",
       "T2300"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Cornelius Hellman",
@@ -5478,7 +6086,8 @@
     "completed_trips": [
       "T062",
       "T2001"
-    ]
+    ],
+    "balance": 530
   },
   {
     "name": "Emilia Nyman",
@@ -5487,7 +6096,8 @@
     "completed_trips": [
       "T2177",
       "T1692"
-    ]
+    ],
+    "balance": 790
   },
   {
     "name": "Gabriel Sörensen",
@@ -5496,7 +6106,8 @@
     "completed_trips": [
       "T304",
       "T1143"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Helin Westerlund",
@@ -5505,7 +6116,8 @@
     "completed_trips": [
       "T2772",
       "T1635"
-    ]
+    ],
+    "balance": 736
   },
   {
     "name": "Destiny Ahlberg",
@@ -5514,7 +6126,8 @@
     "completed_trips": [
       "T023",
       "T2865"
-    ]
+    ],
+    "balance": 691
   },
   {
     "name": "Dina Westin",
@@ -5523,7 +6136,8 @@
     "completed_trips": [
       "T2218",
       "T061"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Esma Wirén",
@@ -5532,7 +6146,8 @@
     "completed_trips": [
       "T633",
       "T1760"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Natanael Kihlberg",
@@ -5541,7 +6156,8 @@
     "completed_trips": [
       "T2222",
       "T1486"
-    ]
+    ],
+    "balance": 936
   },
   {
     "name": "Zahraa Lindman",
@@ -5550,7 +6166,8 @@
     "completed_trips": [
       "T1341",
       "T2271"
-    ]
+    ],
+    "balance": 318
   },
   {
     "name": "Eila Zackrisson",
@@ -5559,7 +6176,8 @@
     "completed_trips": [
       "T1772",
       "T761"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Edwin Häggström",
@@ -5568,7 +6186,8 @@
     "completed_trips": [
       "T322",
       "T2879"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Isolde Sterner",
@@ -5577,7 +6196,8 @@
     "completed_trips": [
       "T2275",
       "T2163"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Carolina Hultman",
@@ -5586,7 +6206,8 @@
     "completed_trips": [
       "T660",
       "T722"
-    ]
+    ],
+    "balance": 277
   },
   {
     "name": "Jasmina Sundman",
@@ -5595,7 +6216,8 @@
     "completed_trips": [
       "T1292",
       "T1080"
-    ]
+    ],
+    "balance": 640
   },
   {
     "name": "Joar Hugosson",
@@ -5604,7 +6226,8 @@
     "completed_trips": [
       "T2622",
       "T511"
-    ]
+    ],
+    "balance": 425
   },
   {
     "name": "Disa Bladh",
@@ -5613,7 +6236,8 @@
     "completed_trips": [
       "T120",
       "T2282"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Edit Henriksson",
@@ -5622,7 +6246,8 @@
     "completed_trips": [
       "T365",
       "T2126"
-    ]
+    ],
+    "balance": 941
   },
   {
     "name": "Aina Josefsson",
@@ -5631,7 +6256,8 @@
     "completed_trips": [
       "T2826",
       "T697"
-    ]
+    ],
+    "balance": 890
   },
   {
     "name": "Rosa Håkansson",
@@ -5640,7 +6266,8 @@
     "completed_trips": [
       "T1394",
       "T2283"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Jan Aronsson",
@@ -5649,7 +6276,8 @@
     "completed_trips": [
       "T1273",
       "T2677"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ayla Lindgren",
@@ -5658,7 +6286,8 @@
     "completed_trips": [
       "T2712",
       "T2359"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Veronika Åkerlund",
@@ -5667,7 +6296,8 @@
     "completed_trips": [
       "T168",
       "T1511"
-    ]
+    ],
+    "balance": 774
   },
   {
     "name": "Hulda Lundén",
@@ -5676,7 +6306,8 @@
     "completed_trips": [
       "T1193",
       "T1794"
-    ]
+    ],
+    "balance": 466
   },
   {
     "name": "Harald Lövgren",
@@ -5685,7 +6316,8 @@
     "completed_trips": [
       "T2939",
       "T1917"
-    ]
+    ],
+    "balance": 900
   },
   {
     "name": "Arnulf Edvardsson",
@@ -5694,7 +6326,8 @@
     "completed_trips": [
       "T694",
       "T2427"
-    ]
+    ],
+    "balance": 987
   },
   {
     "name": "Pål Olausson",
@@ -5703,7 +6336,8 @@
     "completed_trips": [
       "T1449",
       "T2055"
-    ]
+    ],
+    "balance": 704
   },
   {
     "name": "Bartolomeus Kjell",
@@ -5712,7 +6346,8 @@
     "completed_trips": [
       "T253",
       "T2236"
-    ]
+    ],
+    "balance": 857
   },
   {
     "name": "Zeinab Viberg",
@@ -5721,7 +6356,8 @@
     "completed_trips": [
       "T1466",
       "T1796"
-    ]
+    ],
+    "balance": 516
   },
   {
     "name": "Leija Sahlström",
@@ -5730,7 +6366,8 @@
     "completed_trips": [
       "T1002",
       "T2702"
-    ]
+    ],
+    "balance": 854
   },
   {
     "name": "Hanna Lagergren",
@@ -5739,7 +6376,8 @@
     "completed_trips": [
       "T689",
       "T1402"
-    ]
+    ],
+    "balance": 745
   },
   {
     "name": "Milly Hedqvist",
@@ -5748,7 +6386,8 @@
     "completed_trips": [
       "T2889",
       "T2834"
-    ]
+    ],
+    "balance": 121
   },
   {
     "name": "Hakon Granath",
@@ -5757,7 +6396,8 @@
     "completed_trips": [
       "T774",
       "T1465"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Yrsa Engberg",
@@ -5766,7 +6406,8 @@
     "completed_trips": [
       "T2178",
       "T2462"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Berfin Gren",
@@ -5775,7 +6416,8 @@
     "completed_trips": [
       "T1031",
       "T1693"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Tina Kruse",
@@ -5784,7 +6426,8 @@
     "completed_trips": [
       "T2567",
       "T1832"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sara Blomdahl",
@@ -5793,7 +6436,8 @@
     "completed_trips": [
       "T228",
       "T581"
-    ]
+    ],
+    "balance": 668
   },
   {
     "name": "Nikki Lindblad",
@@ -5802,7 +6446,8 @@
     "completed_trips": [
       "T2224",
       "T2841"
-    ]
+    ],
+    "balance": 689
   },
   {
     "name": "Cornelius Sundberg",
@@ -5811,7 +6456,8 @@
     "completed_trips": [
       "T769",
       "T1195"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ina Sander",
@@ -5820,7 +6466,8 @@
     "completed_trips": [
       "T1410",
       "T701"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Fanny Kraft",
@@ -5829,7 +6476,8 @@
     "completed_trips": [
       "T1644",
       "T399"
-    ]
+    ],
+    "balance": 320
   },
   {
     "name": "Alexis Larsson",
@@ -5838,7 +6486,8 @@
     "completed_trips": [
       "T753",
       "T092"
-    ]
+    ],
+    "balance": 767
   },
   {
     "name": "Julie Tillman",
@@ -5847,7 +6496,8 @@
     "completed_trips": [
       "T1203",
       "T1562"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Jonas Fagerberg",
@@ -5856,7 +6506,8 @@
     "completed_trips": [
       "T685",
       "T2378"
-    ]
+    ],
+    "balance": 699
   },
   {
     "name": "Erik Lönn",
@@ -5865,7 +6516,8 @@
     "completed_trips": [
       "T381",
       "T2324"
-    ]
+    ],
+    "balance": 109
   },
   {
     "name": "Kaj Glans",
@@ -5874,7 +6526,8 @@
     "completed_trips": [
       "T1599",
       "T1093"
-    ]
+    ],
+    "balance": 639
   },
   {
     "name": "Kaspar Sköld",
@@ -5883,7 +6536,8 @@
     "completed_trips": [
       "T1519",
       "T1811"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Edvin Källberg",
@@ -5892,7 +6546,8 @@
     "completed_trips": [
       "T172",
       "T1854"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ellis Granath",
@@ -5901,7 +6556,8 @@
     "completed_trips": [
       "T2876",
       "T931"
-    ]
+    ],
+    "balance": 283
   },
   {
     "name": "Douglas Nyman",
@@ -5910,7 +6566,8 @@
     "completed_trips": [
       "T1938",
       "T2950"
-    ]
+    ],
+    "balance": 790
   },
   {
     "name": "Alida Edström",
@@ -5919,7 +6576,8 @@
     "completed_trips": [
       "T681",
       "T2502"
-    ]
+    ],
+    "balance": 215
   },
   {
     "name": "Noelia Wallén",
@@ -5928,7 +6586,8 @@
     "completed_trips": [
       "T185",
       "T1998"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Liva Sjödin",
@@ -5937,7 +6596,8 @@
     "completed_trips": [
       "T929",
       "T2887"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Östen Johannesson",
@@ -5946,7 +6606,8 @@
     "completed_trips": [
       "T881",
       "T2763"
-    ]
+    ],
+    "balance": 774
   },
   {
     "name": "Miran Östman",
@@ -5955,7 +6616,8 @@
     "completed_trips": [
       "T378",
       "T2119"
-    ]
+    ],
+    "balance": 708
   },
   {
     "name": "Majken Rehn",
@@ -5964,7 +6626,8 @@
     "completed_trips": [
       "T1787",
       "T1418"
-    ]
+    ],
+    "balance": 288
   },
   {
     "name": "Carmen Wahlqvist",
@@ -5973,7 +6636,8 @@
     "completed_trips": [
       "T1771",
       "T1632"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Tamara Blomberg",
@@ -5982,7 +6646,8 @@
     "completed_trips": [
       "T470",
       "T2617"
-    ]
+    ],
+    "balance": 311
   },
   {
     "name": "Alisa Wallman",
@@ -5991,7 +6656,8 @@
     "completed_trips": [
       "T723",
       "T1406"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Kristina Christensen",
@@ -6000,7 +6666,8 @@
     "completed_trips": [
       "T1898",
       "T2475"
-    ]
+    ],
+    "balance": 596
   },
   {
     "name": "Ricky Frid",
@@ -6009,7 +6676,8 @@
     "completed_trips": [
       "T2245",
       "T2776"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Angelika Vikström",
@@ -6018,7 +6686,8 @@
     "completed_trips": [
       "T2345",
       "T903"
-    ]
+    ],
+    "balance": 377
   },
   {
     "name": "Sven Malm",
@@ -6027,7 +6696,8 @@
     "completed_trips": [
       "T1127",
       "T073"
-    ]
+    ],
+    "balance": 521
   },
   {
     "name": "Kian Bohlin",
@@ -6036,7 +6706,8 @@
     "completed_trips": [
       "T1774",
       "T295"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Krister Fröberg",
@@ -6045,7 +6716,8 @@
     "completed_trips": [
       "T2154",
       "T2102"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Judith Abrahamsson",
@@ -6054,7 +6726,8 @@
     "completed_trips": [
       "T2985",
       "T1173"
-    ]
+    ],
+    "balance": 492
   },
   {
     "name": "Charlie Mellgren",
@@ -6063,7 +6736,8 @@
     "completed_trips": [
       "T1583",
       "T2223"
-    ]
+    ],
+    "balance": 171
   },
   {
     "name": "Andreas Adamsson",
@@ -6072,7 +6746,8 @@
     "completed_trips": [
       "T1859",
       "T502"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Lillemor Ludvigsson",
@@ -6081,7 +6756,8 @@
     "completed_trips": [
       "T2944",
       "T2597"
-    ]
+    ],
+    "balance": 800
   },
   {
     "name": "Roland Thelin",
@@ -6090,7 +6766,8 @@
     "completed_trips": [
       "T1973",
       "T1315"
-    ]
+    ],
+    "balance": 597
   },
   {
     "name": "Arnulf Hellström",
@@ -6099,7 +6776,8 @@
     "completed_trips": [
       "T2970",
       "T2539"
-    ]
+    ],
+    "balance": 309
   },
   {
     "name": "Tore Östling",
@@ -6108,7 +6786,8 @@
     "completed_trips": [
       "T885",
       "T665"
-    ]
+    ],
+    "balance": 567
   },
   {
     "name": "Philip Selberg",
@@ -6117,7 +6796,8 @@
     "completed_trips": [
       "T1757",
       "T369"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Andreas Grönlund",
@@ -6126,7 +6806,8 @@
     "completed_trips": [
       "T1712",
       "T2615"
-    ]
+    ],
+    "balance": 629
   },
   {
     "name": "Nils Dahlström",
@@ -6135,7 +6816,8 @@
     "completed_trips": [
       "T2913",
       "T1166"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Gudmar Helander",
@@ -6144,7 +6826,8 @@
     "completed_trips": [
       "T2525",
       "T1421"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Fredrik Bohman",
@@ -6153,7 +6836,8 @@
     "completed_trips": [
       "T2472",
       "T520"
-    ]
+    ],
+    "balance": 151
   },
   {
     "name": "Seth Trygg",
@@ -6162,7 +6846,8 @@
     "completed_trips": [
       "T2979",
       "T1338"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Alex Schröder",
@@ -6171,7 +6856,8 @@
     "completed_trips": [
       "T2953",
       "T961"
-    ]
+    ],
+    "balance": 857
   },
   {
     "name": "Blanka Hedén",
@@ -6180,7 +6866,8 @@
     "completed_trips": [
       "T596",
       "T156"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nejla Thuresson",
@@ -6189,7 +6876,8 @@
     "completed_trips": [
       "T103",
       "T2543"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Holger Sahlström",
@@ -6198,7 +6886,8 @@
     "completed_trips": [
       "T2404",
       "T1703"
-    ]
+    ],
+    "balance": 348
   },
   {
     "name": "River Ahl",
@@ -6207,7 +6896,8 @@
     "completed_trips": [
       "T1434",
       "T2614"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ilma Thörn",
@@ -6216,7 +6906,8 @@
     "completed_trips": [
       "T2651",
       "T1103"
-    ]
+    ],
+    "balance": 928
   },
   {
     "name": "Mats Wennerström",
@@ -6225,7 +6916,8 @@
     "completed_trips": [
       "T2654",
       "T1359"
-    ]
+    ],
+    "balance": 222
   },
   {
     "name": "Tibirtus Edvinsson",
@@ -6234,7 +6926,8 @@
     "completed_trips": [
       "T735",
       "T2226"
-    ]
+    ],
+    "balance": 413
   },
   {
     "name": "Liana Karlsson",
@@ -6243,7 +6936,8 @@
     "completed_trips": [
       "T1756",
       "T2321"
-    ]
+    ],
+    "balance": 947
   },
   {
     "name": "Nick Wallberg",
@@ -6252,7 +6946,8 @@
     "completed_trips": [
       "T1736",
       "T1386"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Elisia Kämpe",
@@ -6261,7 +6956,8 @@
     "completed_trips": [
       "T1366",
       "T028"
-    ]
+    ],
+    "balance": 173
   },
   {
     "name": "Titus Vikberg",
@@ -6270,7 +6966,8 @@
     "completed_trips": [
       "T2856",
       "T2753"
-    ]
+    ],
+    "balance": 980
   },
   {
     "name": "My Kron",
@@ -6279,7 +6976,8 @@
     "completed_trips": [
       "T2927",
       "T2106"
-    ]
+    ],
+    "balance": 612
   },
   {
     "name": "Valle Linder",
@@ -6288,7 +6986,8 @@
     "completed_trips": [
       "T1545",
       "T1313"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Vendela Ericsson",
@@ -6297,7 +6996,8 @@
     "completed_trips": [
       "T2017",
       "T200"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Matilde Linde",
@@ -6306,7 +7006,8 @@
     "completed_trips": [
       "T1843",
       "T1191"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ronny Ljungberg",
@@ -6315,7 +7016,8 @@
     "completed_trips": [
       "T797",
       "T1106"
-    ]
+    ],
+    "balance": 876
   },
   {
     "name": "Lina Åstrand",
@@ -6324,7 +7026,8 @@
     "completed_trips": [
       "T1582",
       "T1288"
-    ]
+    ],
+    "balance": 708
   },
   {
     "name": "Nicolai Wennerberg",
@@ -6333,7 +7036,8 @@
     "completed_trips": [
       "T071",
       "T1933"
-    ]
+    ],
+    "balance": 121
   },
   {
     "name": "Allie Käck",
@@ -6342,7 +7046,8 @@
     "completed_trips": [
       "T601",
       "T861"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Vendela Rydström",
@@ -6351,7 +7056,8 @@
     "completed_trips": [
       "T1826",
       "T623"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Lana Sjödahl",
@@ -6360,7 +7066,8 @@
     "completed_trips": [
       "T995",
       "T2858"
-    ]
+    ],
+    "balance": 308
   },
   {
     "name": "Henric Ragnarsson",
@@ -6369,7 +7076,8 @@
     "completed_trips": [
       "T1609",
       "T1221"
-    ]
+    ],
+    "balance": 470
   },
   {
     "name": "Conrad Klang",
@@ -6378,7 +7086,8 @@
     "completed_trips": [
       "T2529",
       "T576"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Loa Lagergren",
@@ -6387,7 +7096,8 @@
     "completed_trips": [
       "T2810",
       "T1556"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Stellan Friberg",
@@ -6396,7 +7106,8 @@
     "completed_trips": [
       "T2736",
       "T1530"
-    ]
+    ],
+    "balance": 220
   },
   {
     "name": "Nelly Klaesson",
@@ -6405,7 +7116,8 @@
     "completed_trips": [
       "T2406",
       "T1029"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Joline Olsen",
@@ -6414,7 +7126,8 @@
     "completed_trips": [
       "T2697",
       "T1709"
-    ]
+    ],
+    "balance": 728
   },
   {
     "name": "Alrik Hammarlund",
@@ -6423,7 +7136,8 @@
     "completed_trips": [
       "T538",
       "T1440"
-    ]
+    ],
+    "balance": 439
   },
   {
     "name": "Torvald Hällgren",
@@ -6432,7 +7146,8 @@
     "completed_trips": [
       "T2364",
       "T2399"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nadine Petersen",
@@ -6441,7 +7156,8 @@
     "completed_trips": [
       "T2749",
       "T2452"
-    ]
+    ],
+    "balance": 450
   },
   {
     "name": "Lex Hjort",
@@ -6450,7 +7166,8 @@
     "completed_trips": [
       "T2900",
       "T622"
-    ]
+    ],
+    "balance": 302
   },
   {
     "name": "Marta Hagberg",
@@ -6459,7 +7176,8 @@
     "completed_trips": [
       "T762",
       "T1334"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Matteo Lif",
@@ -6468,7 +7186,8 @@
     "completed_trips": [
       "T680",
       "T1799"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Valeria Westergren",
@@ -6477,7 +7196,8 @@
     "completed_trips": [
       "T913",
       "T2738"
-    ]
+    ],
+    "balance": 866
   },
   {
     "name": "Amos Sterner",
@@ -6486,7 +7206,8 @@
     "completed_trips": [
       "T432",
       "T1928"
-    ]
+    ],
+    "balance": 149
   },
   {
     "name": "Leila Björnberg",
@@ -6495,7 +7216,8 @@
     "completed_trips": [
       "T1235",
       "T1058"
-    ]
+    ],
+    "balance": 261
   },
   {
     "name": "Ellie Söderberg",
@@ -6504,7 +7226,8 @@
     "completed_trips": [
       "T2346",
       "T1595"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Celia Bergkvist",
@@ -6513,7 +7236,8 @@
     "completed_trips": [
       "T126",
       "T513"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Maximus Vahlberg",
@@ -6522,7 +7246,8 @@
     "completed_trips": [
       "T1697",
       "T2620"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Azra Linde",
@@ -6531,7 +7256,8 @@
     "completed_trips": [
       "T646",
       "T1306"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Alma Kron",
@@ -6540,7 +7266,8 @@
     "completed_trips": [
       "T830",
       "T2434"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Leon Lindmark",
@@ -6549,7 +7276,8 @@
     "completed_trips": [
       "T734",
       "T255"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nicolas Johannesson",
@@ -6558,7 +7286,8 @@
     "completed_trips": [
       "T2527",
       "T1984"
-    ]
+    ],
+    "balance": 979
   },
   {
     "name": "Uma Sjögren",
@@ -6567,7 +7296,8 @@
     "completed_trips": [
       "T773",
       "T2058"
-    ]
+    ],
+    "balance": 232
   },
   {
     "name": "Agaton Van",
@@ -6576,7 +7306,8 @@
     "completed_trips": [
       "T823",
       "T719"
-    ]
+    ],
+    "balance": 829
   },
   {
     "name": "Vilda Filipsson",
@@ -6585,7 +7316,8 @@
     "completed_trips": [
       "T398",
       "T1068"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Atle Sigfridsson",
@@ -6594,7 +7326,8 @@
     "completed_trips": [
       "T2040",
       "T452"
-    ]
+    ],
+    "balance": 457
   },
   {
     "name": "Muhammad Björling",
@@ -6603,7 +7336,8 @@
     "completed_trips": [
       "T306",
       "T2762"
-    ]
+    ],
+    "balance": 498
   },
   {
     "name": "Emre Hjorth",
@@ -6612,7 +7346,8 @@
     "completed_trips": [
       "T428",
       "T2401"
-    ]
+    ],
+    "balance": 804
   },
   {
     "name": "Lucas Schröder",
@@ -6621,7 +7356,8 @@
     "completed_trips": [
       "T1408",
       "T1024"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Patricia Almgren",
@@ -6630,7 +7366,8 @@
     "completed_trips": [
       "T2176",
       "T764"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Seth Hamrin",
@@ -6639,7 +7376,8 @@
     "completed_trips": [
       "T2978",
       "T2769"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Blanka Ringdahl",
@@ -6648,7 +7386,8 @@
     "completed_trips": [
       "T2727",
       "T664"
-    ]
+    ],
+    "balance": 390
   },
   {
     "name": "Gry Ulander",
@@ -6657,7 +7396,8 @@
     "completed_trips": [
       "T2396",
       "T2474"
-    ]
+    ],
+    "balance": 421
   },
   {
     "name": "Harry Schröder",
@@ -6666,7 +7406,8 @@
     "completed_trips": [
       "T2560",
       "T2557"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ture Erlandsson",
@@ -6675,7 +7416,8 @@
     "completed_trips": [
       "T2296",
       "T2465"
-    ]
+    ],
+    "balance": 585
   },
   {
     "name": "Manfred Malmros",
@@ -6684,7 +7426,8 @@
     "completed_trips": [
       "T2233",
       "T1460"
-    ]
+    ],
+    "balance": 145
   },
   {
     "name": "Leon Westberg",
@@ -6693,7 +7436,8 @@
     "completed_trips": [
       "T525",
       "T163"
-    ]
+    ],
+    "balance": 509
   },
   {
     "name": "Rojin Glans",
@@ -6702,7 +7446,8 @@
     "completed_trips": [
       "T1028",
       "T1849"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Telma Björn",
@@ -6711,7 +7456,8 @@
     "completed_trips": [
       "T1076",
       "T1362"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sienna Niemi",
@@ -6720,7 +7466,8 @@
     "completed_trips": [
       "T2673",
       "T1558"
-    ]
+    ],
+    "balance": 739
   },
   {
     "name": "Elma Westlund",
@@ -6729,7 +7476,8 @@
     "completed_trips": [
       "T321",
       "T1629"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Milton Carlberg",
@@ -6738,7 +7486,8 @@
     "completed_trips": [
       "T2842",
       "T1109"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "David Hallman",
@@ -6747,7 +7496,8 @@
     "completed_trips": [
       "T333",
       "T086"
-    ]
+    ],
+    "balance": 172
   },
   {
     "name": "Greger Seger",
@@ -6756,7 +7506,8 @@
     "completed_trips": [
       "T832",
       "T2640"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ove Norberg",
@@ -6765,7 +7516,8 @@
     "completed_trips": [
       "T1322",
       "T2459"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Joel Törnkvist",
@@ -6774,7 +7526,8 @@
     "completed_trips": [
       "T2495",
       "T415"
-    ]
+    ],
+    "balance": 933
   },
   {
     "name": "Agaton Hellberg",
@@ -6783,7 +7536,8 @@
     "completed_trips": [
       "T1451",
       "T2609"
-    ]
+    ],
+    "balance": 967
   },
   {
     "name": "Rosa Vennberg",
@@ -6792,7 +7546,8 @@
     "completed_trips": [
       "T2538",
       "T1050"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Alma Edin",
@@ -6801,7 +7556,8 @@
     "completed_trips": [
       "T1676",
       "T2817"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Thilda Sörensson",
@@ -6810,7 +7566,8 @@
     "completed_trips": [
       "T707",
       "T1171"
-    ]
+    ],
+    "balance": 495
   },
   {
     "name": "Hector Renberg",
@@ -6819,7 +7576,8 @@
     "completed_trips": [
       "T2695",
       "T2607"
-    ]
+    ],
+    "balance": 235
   },
   {
     "name": "Olga Bergkvist",
@@ -6828,7 +7586,8 @@
     "completed_trips": [
       "T2355",
       "T1333"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Reinhold Svanberg",
@@ -6837,7 +7596,8 @@
     "completed_trips": [
       "T494",
       "T1602"
-    ]
+    ],
+    "balance": 771
   },
   {
     "name": "Miliam Falck",
@@ -6846,7 +7606,8 @@
     "completed_trips": [
       "T2439",
       "T2514"
-    ]
+    ],
+    "balance": 756
   },
   {
     "name": "Amelie Halldén",
@@ -6855,7 +7616,8 @@
     "completed_trips": [
       "T2417",
       "T2639"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Cleo Gerdin",
@@ -6864,7 +7626,8 @@
     "completed_trips": [
       "T1896",
       "T966"
-    ]
+    ],
+    "balance": 323
   },
   {
     "name": "Lavin Jarl",
@@ -6873,7 +7636,8 @@
     "completed_trips": [
       "T1241",
       "T2593"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ernst Lidberg",
@@ -6882,7 +7646,8 @@
     "completed_trips": [
       "T2975",
       "T1437"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Adina Nelson",
@@ -6891,7 +7656,8 @@
     "completed_trips": [
       "T529",
       "T180"
-    ]
+    ],
+    "balance": 594
   },
   {
     "name": "Lillie Einarsson",
@@ -6900,7 +7666,8 @@
     "completed_trips": [
       "T667",
       "T1254"
-    ]
+    ],
+    "balance": 417
   },
   {
     "name": "Winston Beckman",
@@ -6909,7 +7676,8 @@
     "completed_trips": [
       "T294",
       "T2242"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Elias Enström",
@@ -6918,7 +7686,8 @@
     "completed_trips": [
       "T1051",
       "T546"
-    ]
+    ],
+    "balance": 868
   },
   {
     "name": "Nelly Brännström",
@@ -6927,7 +7696,8 @@
     "completed_trips": [
       "T921",
       "T008"
-    ]
+    ],
+    "balance": 457
   },
   {
     "name": "Marielle Esbjörnsson",
@@ -6936,7 +7706,8 @@
     "completed_trips": [
       "T1123",
       "T402"
-    ]
+    ],
+    "balance": 297
   },
   {
     "name": "Amie Vikström",
@@ -6945,7 +7716,8 @@
     "completed_trips": [
       "T1657",
       "T860"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Amelie Sahlström",
@@ -6954,7 +7726,8 @@
     "completed_trips": [
       "T1495",
       "T1253"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sumaya Mellgren",
@@ -6963,7 +7736,8 @@
     "completed_trips": [
       "T2692",
       "T2871"
-    ]
+    ],
+    "balance": 120
   },
   {
     "name": "Ted Sjöstedt",
@@ -6972,7 +7746,8 @@
     "completed_trips": [
       "T1665",
       "T053"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Colin Jarl",
@@ -6981,7 +7756,8 @@
     "completed_trips": [
       "T996",
       "T050"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Alvin Gabrielsson",
@@ -6990,7 +7766,8 @@
     "completed_trips": [
       "T2297",
       "T530"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Roy Grönlund",
@@ -6999,7 +7776,8 @@
     "completed_trips": [
       "T1152",
       "T1643"
-    ]
+    ],
+    "balance": 187
   },
   {
     "name": "Olaus Fält",
@@ -7008,7 +7786,8 @@
     "completed_trips": [
       "T1758",
       "T2227"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Johannes Sundström",
@@ -7017,7 +7796,8 @@
     "completed_trips": [
       "T1645",
       "T1885"
-    ]
+    ],
+    "balance": 692
   },
   {
     "name": "Amos Ljung",
@@ -7026,7 +7806,8 @@
     "completed_trips": [
       "T2072",
       "T2918"
-    ]
+    ],
+    "balance": 951
   },
   {
     "name": "Isabelle Vesterberg",
@@ -7035,7 +7816,8 @@
     "completed_trips": [
       "T2360",
       "T2616"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Elvis Andrén",
@@ -7044,7 +7826,8 @@
     "completed_trips": [
       "T1368",
       "T1705"
-    ]
+    ],
+    "balance": 787
   },
   {
     "name": "Waldemar Selberg",
@@ -7053,7 +7836,8 @@
     "completed_trips": [
       "T873",
       "T1662"
-    ]
+    ],
+    "balance": 942
   },
   {
     "name": "Brynolf Fredin",
@@ -7062,7 +7846,8 @@
     "completed_trips": [
       "T1744",
       "T1082"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Mia Sjöö",
@@ -7071,7 +7856,8 @@
     "completed_trips": [
       "T2435",
       "T007"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Kjell Ahlin",
@@ -7080,7 +7866,8 @@
     "completed_trips": [
       "T580",
       "T2381"
-    ]
+    ],
+    "balance": 228
   },
   {
     "name": "Eskil Wallén",
@@ -7089,7 +7876,8 @@
     "completed_trips": [
       "T1733",
       "T2009"
-    ]
+    ],
+    "balance": 415
   },
   {
     "name": "Bjarne Rosenberg",
@@ -7098,7 +7886,8 @@
     "completed_trips": [
       "T1963",
       "T2528"
-    ]
+    ],
+    "balance": 897
   },
   {
     "name": "Ally Fast",
@@ -7107,7 +7896,8 @@
     "completed_trips": [
       "T1214",
       "T2641"
-    ]
+    ],
+    "balance": 142
   },
   {
     "name": "Emilija Bodin",
@@ -7116,7 +7906,8 @@
     "completed_trips": [
       "T301",
       "T1534"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Amel Nielsen",
@@ -7125,7 +7916,8 @@
     "completed_trips": [
       "T437",
       "T430"
-    ]
+    ],
+    "balance": 182
   },
   {
     "name": "Kristin Engvall",
@@ -7134,7 +7926,8 @@
     "completed_trips": [
       "T1722",
       "T1803"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Adriano Fröjd",
@@ -7143,7 +7936,8 @@
     "completed_trips": [
       "T366",
       "T635"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Alrik Ström",
@@ -7152,7 +7946,8 @@
     "completed_trips": [
       "T198",
       "T423"
-    ]
+    ],
+    "balance": 414
   },
   {
     "name": "Filiph Hägg",
@@ -7161,7 +7956,8 @@
     "completed_trips": [
       "T2707",
       "T2477"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Angela Flink",
@@ -7170,7 +7966,8 @@
     "completed_trips": [
       "T2272",
       "T2535"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sakarias Engström",
@@ -7179,7 +7976,8 @@
     "completed_trips": [
       "T027",
       "T164"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Elliot Vikman",
@@ -7188,7 +7986,8 @@
     "completed_trips": [
       "T591",
       "T837"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Romeo Westling",
@@ -7197,7 +7996,8 @@
     "completed_trips": [
       "T171",
       "T2619"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Selina Rosendahl",
@@ -7206,7 +8006,8 @@
     "completed_trips": [
       "T1943",
       "T1209"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Lennox Tjernström",
@@ -7215,7 +8016,8 @@
     "completed_trips": [
       "T1801",
       "T2729"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nemi Svedberg",
@@ -7224,7 +8026,8 @@
     "completed_trips": [
       "T392",
       "T2940"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Veronika Sandgren",
@@ -7233,7 +8036,8 @@
     "completed_trips": [
       "T2999",
       "T2901"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Juni Åhlén",
@@ -7242,7 +8046,8 @@
     "completed_trips": [
       "T183",
       "T1226"
-    ]
+    ],
+    "balance": 881
   },
   {
     "name": "Lowa Källman",
@@ -7251,7 +8056,8 @@
     "completed_trips": [
       "T812",
       "T2482"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Towa Ahl",
@@ -7260,7 +8066,8 @@
     "completed_trips": [
       "T2726",
       "T1767"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Bertil Lagerström",
@@ -7269,7 +8076,8 @@
     "completed_trips": [
       "T118",
       "T1948"
-    ]
+    ],
+    "balance": 738
   },
   {
     "name": "Malek Morén",
@@ -7278,7 +8086,8 @@
     "completed_trips": [
       "T777",
       "T892"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ella Jansson",
@@ -7287,7 +8096,8 @@
     "completed_trips": [
       "T696",
       "T1620"
-    ]
+    ],
+    "balance": 660
   },
   {
     "name": "Kim Albertsson",
@@ -7296,7 +8106,8 @@
     "completed_trips": [
       "T2438",
       "T2945"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Hillevi Bogren",
@@ -7305,7 +8116,8 @@
     "completed_trips": [
       "T577",
       "T2867"
-    ]
+    ],
+    "balance": 997
   },
   {
     "name": "Esbjörn Vestling",
@@ -7314,7 +8126,8 @@
     "completed_trips": [
       "T2485",
       "T1073"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Niki Melin",
@@ -7323,7 +8136,8 @@
     "completed_trips": [
       "T957",
       "T2854"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Liana Rosenkvist",
@@ -7332,7 +8146,8 @@
     "completed_trips": [
       "T2016",
       "T1032"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Isabell Edgren",
@@ -7341,7 +8156,8 @@
     "completed_trips": [
       "T1040",
       "T131"
-    ]
+    ],
+    "balance": 485
   },
   {
     "name": "Gabriella Sundelin",
@@ -7350,7 +8166,8 @@
     "completed_trips": [
       "T393",
       "T491"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Björn Vallin",
@@ -7359,7 +8176,8 @@
     "completed_trips": [
       "T478",
       "T2234"
-    ]
+    ],
+    "balance": 554
   },
   {
     "name": "Lisen Rosén",
@@ -7368,7 +8186,8 @@
     "completed_trips": [
       "T2642",
       "T206"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Amy Boberg",
@@ -7377,7 +8196,8 @@
     "completed_trips": [
       "T1358",
       "T2038"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Elsie Sandgren",
@@ -7386,7 +8206,8 @@
     "completed_trips": [
       "T483",
       "T2720"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Thelise Sandqvist",
@@ -7395,7 +8216,8 @@
     "completed_trips": [
       "T2094",
       "T672"
-    ]
+    ],
+    "balance": 237
   },
   {
     "name": "Samantha Lindén",
@@ -7404,7 +8226,8 @@
     "completed_trips": [
       "T234",
       "T2851"
-    ]
+    ],
+    "balance": 127
   },
   {
     "name": "Arve Petersson",
@@ -7413,7 +8236,8 @@
     "completed_trips": [
       "T1038",
       "T683"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Theodore Stenqvist",
@@ -7422,7 +8246,8 @@
     "completed_trips": [
       "T626",
       "T2172"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Kristin Sjölin",
@@ -7431,7 +8256,8 @@
     "completed_trips": [
       "T1625",
       "T1617"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Hanan Staaf",
@@ -7440,7 +8266,8 @@
     "completed_trips": [
       "T1158",
       "T1759"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Miley Rosander",
@@ -7449,7 +8276,8 @@
     "completed_trips": [
       "T1873",
       "T568"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Dilara Sahlin",
@@ -7458,7 +8286,8 @@
     "completed_trips": [
       "T2555",
       "T1696"
-    ]
+    ],
+    "balance": 953
   },
   {
     "name": "Annie Lindblad",
@@ -7467,7 +8296,8 @@
     "completed_trips": [
       "T711",
       "T2257"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Hoda Berglund",
@@ -7476,7 +8306,8 @@
     "completed_trips": [
       "T2947",
       "T1045"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Marika Sjöberg",
@@ -7485,7 +8316,8 @@
     "completed_trips": [
       "T1206",
       "T1248"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Isadora Ålund",
@@ -7494,7 +8326,8 @@
     "completed_trips": [
       "T090",
       "T082"
-    ]
+    ],
+    "balance": 457
   },
   {
     "name": "Jana Haraldsson",
@@ -7503,7 +8336,8 @@
     "completed_trips": [
       "T950",
       "T1092"
-    ]
+    ],
+    "balance": 114
   },
   {
     "name": "Zanna Sjöstedt",
@@ -7512,7 +8346,8 @@
     "completed_trips": [
       "T965",
       "T2518"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "My André",
@@ -7521,7 +8356,8 @@
     "completed_trips": [
       "T2319",
       "T2051"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Melvin Sundkvist",
@@ -7530,7 +8366,8 @@
     "completed_trips": [
       "T1743",
       "T2246"
-    ]
+    ],
+    "balance": 103
   },
   {
     "name": "Samira Hultman",
@@ -7539,7 +8376,8 @@
     "completed_trips": [
       "T2986",
       "T190"
-    ]
+    ],
+    "balance": 357
   },
   {
     "name": "Veronika Robertsson",
@@ -7548,7 +8386,8 @@
     "completed_trips": [
       "T969",
       "T695"
-    ]
+    ],
+    "balance": 198
   },
   {
     "name": "Jessie Hjelm",
@@ -7557,7 +8396,8 @@
     "completed_trips": [
       "T1259",
       "T1721"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Romeo Fritz",
@@ -7566,7 +8406,8 @@
     "completed_trips": [
       "T1870",
       "T2219"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Thilde Vernersson",
@@ -7575,7 +8416,8 @@
     "completed_trips": [
       "T1478",
       "T1320"
-    ]
+    ],
+    "balance": 211
   },
   {
     "name": "Sakarias Sjögren",
@@ -7584,7 +8426,8 @@
     "completed_trips": [
       "T2596",
       "T2599"
-    ]
+    ],
+    "balance": 546
   },
   {
     "name": "Kevin Elg",
@@ -7593,7 +8436,8 @@
     "completed_trips": [
       "T1543",
       "T216"
-    ]
+    ],
+    "balance": 490
   },
   {
     "name": "Magnus Nordh",
@@ -7602,7 +8446,8 @@
     "completed_trips": [
       "T276",
       "T2719"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ängla Selberg",
@@ -7611,7 +8456,8 @@
     "completed_trips": [
       "T2146",
       "T380"
-    ]
+    ],
+    "balance": 941
   },
   {
     "name": "Elna Helander",
@@ -7620,7 +8466,8 @@
     "completed_trips": [
       "T517",
       "T1742"
-    ]
+    ],
+    "balance": 967
   },
   {
     "name": "Elise Wallman",
@@ -7629,7 +8476,8 @@
     "completed_trips": [
       "T1860",
       "T2269"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Wilma Vikman",
@@ -7638,7 +8486,8 @@
     "completed_trips": [
       "T1190",
       "T1578"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Frej Östergren",
@@ -7647,7 +8496,8 @@
     "completed_trips": [
       "T679",
       "T2202"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Gabrielle Löfstedt",
@@ -7656,7 +8506,8 @@
     "completed_trips": [
       "T932",
       "T422"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Aisha Vestman",
@@ -7665,7 +8516,8 @@
     "completed_trips": [
       "T986",
       "T1033"
-    ]
+    ],
+    "balance": 217
   },
   {
     "name": "Emre Rönnberg",
@@ -7674,7 +8526,8 @@
     "completed_trips": [
       "T852",
       "T2643"
-    ]
+    ],
+    "balance": 365
   },
   {
     "name": "Abdullah Häggström",
@@ -7683,7 +8536,8 @@
     "completed_trips": [
       "T403",
       "T551"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Marion Mårtensson",
@@ -7692,7 +8546,8 @@
     "completed_trips": [
       "T2436",
       "T1877"
-    ]
+    ],
+    "balance": 942
   },
   {
     "name": "Ema Levin",
@@ -7701,7 +8556,8 @@
     "completed_trips": [
       "T2448",
       "T732"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ted Isaksson",
@@ -7710,7 +8566,8 @@
     "completed_trips": [
       "T748",
       "T2356"
-    ]
+    ],
+    "balance": 143
   },
   {
     "name": "Noa Henning",
@@ -7719,7 +8576,8 @@
     "completed_trips": [
       "T108",
       "T2087"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Pär Bark",
@@ -7728,7 +8586,8 @@
     "completed_trips": [
       "T275",
       "T1025"
-    ]
+    ],
+    "balance": 322
   },
   {
     "name": "Philippa Isaksson",
@@ -7737,7 +8596,8 @@
     "completed_trips": [
       "T2576",
       "T1132"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Angelina Malmkvist",
@@ -7746,7 +8606,8 @@
     "completed_trips": [
       "T474",
       "T2683"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Emilie Sörensen",
@@ -7755,7 +8616,8 @@
     "completed_trips": [
       "T1574",
       "T1057"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Cornelius Håkansson",
@@ -7764,7 +8626,8 @@
     "completed_trips": [
       "T1930",
       "T2062"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Joseph Andersen",
@@ -7773,7 +8636,8 @@
     "completed_trips": [
       "T2794",
       "T439"
-    ]
+    ],
+    "balance": 763
   },
   {
     "name": "Thilde Fält",
@@ -7782,7 +8646,8 @@
     "completed_trips": [
       "T314",
       "T1872"
-    ]
+    ],
+    "balance": 223
   },
   {
     "name": "Donia Hedström",
@@ -7791,7 +8656,8 @@
     "completed_trips": [
       "T1309",
       "T1880"
-    ]
+    ],
+    "balance": 704
   },
   {
     "name": "Valeria Andersson",
@@ -7800,7 +8666,8 @@
     "completed_trips": [
       "T2147",
       "T1747"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ninja Sjödin",
@@ -7809,7 +8676,8 @@
     "completed_trips": [
       "T780",
       "T1679"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Kimberly Zetterberg",
@@ -7818,7 +8686,8 @@
     "completed_trips": [
       "T645",
       "T1567"
-    ]
+    ],
+    "balance": 583
   },
   {
     "name": "Muhammed Norberg",
@@ -7827,7 +8696,8 @@
     "completed_trips": [
       "T247",
       "T1211"
-    ]
+    ],
+    "balance": 790
   },
   {
     "name": "Nikolaj Norrman",
@@ -7836,7 +8706,8 @@
     "completed_trips": [
       "T068",
       "T1845"
-    ]
+    ],
+    "balance": 239
   },
   {
     "name": "Nathanael Blomkvist",
@@ -7845,7 +8716,8 @@
     "completed_trips": [
       "T2960",
       "T1779"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Nelli Christensen",
@@ -7854,7 +8726,8 @@
     "completed_trips": [
       "T2028",
       "T368"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Unni Molander",
@@ -7863,7 +8736,8 @@
     "completed_trips": [
       "T1236",
       "T2065"
-    ]
+    ],
+    "balance": 124
   },
   {
     "name": "Daniel Kjellin",
@@ -7872,7 +8746,8 @@
     "completed_trips": [
       "T973",
       "T363"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Celina Asp",
@@ -7881,7 +8756,8 @@
     "completed_trips": [
       "T1457",
       "T2453"
-    ]
+    ],
+    "balance": 199
   },
   {
     "name": "Natali Flodin",
@@ -7890,7 +8766,8 @@
     "completed_trips": [
       "T2076",
       "T1425"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Jonas Hedberg",
@@ -7899,7 +8776,8 @@
     "completed_trips": [
       "T2270",
       "T878"
-    ]
+    ],
+    "balance": 158
   },
   {
     "name": "Sigge Ljungberg",
@@ -7908,7 +8786,8 @@
     "completed_trips": [
       "T1548",
       "T2807"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Julie Lundkvist",
@@ -7917,7 +8796,8 @@
     "completed_trips": [
       "T1270",
       "T1316"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Brian Landén",
@@ -7926,7 +8806,8 @@
     "completed_trips": [
       "T1915",
       "T2486"
-    ]
+    ],
+    "balance": 598
   },
   {
     "name": "Christine Brundin",
@@ -7935,7 +8816,8 @@
     "completed_trips": [
       "T1720",
       "T2444"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Rut Burman",
@@ -7944,7 +8826,8 @@
     "completed_trips": [
       "T2774",
       "T902"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Flora Nyrén",
@@ -7953,7 +8836,8 @@
     "completed_trips": [
       "T037",
       "T2646"
-    ]
+    ],
+    "balance": 324
   },
   {
     "name": "Mustafa Nykvist",
@@ -7962,7 +8846,8 @@
     "completed_trips": [
       "T2754",
       "T1882"
-    ]
+    ],
+    "balance": 302
   },
   {
     "name": "Ida Gren",
@@ -7971,7 +8856,8 @@
     "completed_trips": [
       "T2675",
       "T2423"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Yasmine Henningsson",
@@ -7980,7 +8866,8 @@
     "completed_trips": [
       "T1927",
       "T1482"
-    ]
+    ],
+    "balance": 549
   },
   {
     "name": "Angelina Sundell",
@@ -7989,7 +8876,8 @@
     "completed_trips": [
       "T1700",
       "T2825"
-    ]
+    ],
+    "balance": 448
   },
   {
     "name": "Jim Nordstrand",
@@ -7998,7 +8886,8 @@
     "completed_trips": [
       "T396",
       "T693"
-    ]
+    ],
+    "balance": 547
   },
   {
     "name": "Felicia Wennström",
@@ -8007,7 +8896,8 @@
     "completed_trips": [
       "T2504",
       "T1443"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Juli Hamrin",
@@ -8016,7 +8906,8 @@
     "completed_trips": [
       "T2103",
       "T032"
-    ]
+    ],
+    "balance": 468
   },
   {
     "name": "Joanna Jonsson",
@@ -8025,7 +8916,8 @@
     "completed_trips": [
       "T1537",
       "T445"
-    ]
+    ],
+    "balance": 854
   },
   {
     "name": "Norah Bergsten",
@@ -8034,7 +8926,8 @@
     "completed_trips": [
       "T1475",
       "T671"
-    ]
+    ],
+    "balance": 937
   },
   {
     "name": "Dilara Modig",
@@ -8043,7 +8936,8 @@
     "completed_trips": [
       "T2984",
       "T2261"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Teresia Thorsson",
@@ -8052,7 +8946,8 @@
     "completed_trips": [
       "T1732",
       "T2932"
-    ]
+    ],
+    "balance": 941
   },
   {
     "name": "Noa Stenvall",
@@ -8061,7 +8956,8 @@
     "completed_trips": [
       "T908",
       "T2783"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ester Ehn",
@@ -8070,7 +8966,8 @@
     "completed_trips": [
       "T2221",
       "T1601"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sixten Högström",
@@ -8079,7 +8976,8 @@
     "completed_trips": [
       "T2446",
       "T1205"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Elise Olausson",
@@ -8088,7 +8986,8 @@
     "completed_trips": [
       "T1468",
       "T1566"
-    ]
+    ],
+    "balance": 733
   },
   {
     "name": "Ilse Lager",
@@ -8097,7 +8996,8 @@
     "completed_trips": [
       "T1105",
       "T1653"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Zandra Säfström",
@@ -8106,7 +9006,8 @@
     "completed_trips": [
       "T1307",
       "T2207"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Filippa Malmström",
@@ -8115,7 +9016,8 @@
     "completed_trips": [
       "T2637",
       "T2365"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Sanna Lindman",
@@ -8124,7 +9026,8 @@
     "completed_trips": [
       "T603",
       "T1817"
-    ]
+    ],
+    "balance": 920
   },
   {
     "name": "Haley Wallman",
@@ -8133,7 +9036,8 @@
     "completed_trips": [
       "T2375",
       "T2152"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Marvin Bergqvist",
@@ -8142,7 +9046,8 @@
     "completed_trips": [
       "T527",
       "T2343"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Bodil Carlson",
@@ -8151,7 +9056,8 @@
     "completed_trips": [
       "T1598",
       "T1546"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Gabrielle Hellsten",
@@ -8160,7 +9066,8 @@
     "completed_trips": [
       "T2784",
       "T2097"
-    ]
+    ],
+    "balance": 154
   },
   {
     "name": "Rahaf Meijer",
@@ -8169,7 +9076,8 @@
     "completed_trips": [
       "T1890",
       "T2982"
-    ]
+    ],
+    "balance": 594
   },
   {
     "name": "Vilda Zachrisson",
@@ -8178,7 +9086,8 @@
     "completed_trips": [
       "T2992",
       "T2911"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Terese Norrman",
@@ -8187,7 +9096,8 @@
     "completed_trips": [
       "T2259",
       "T202"
-    ]
+    ],
+    "balance": 910
   },
   {
     "name": "Blanka Fredin",
@@ -8196,7 +9106,8 @@
     "completed_trips": [
       "T784",
       "T916"
-    ]
+    ],
+    "balance": 333
   },
   {
     "name": "Joseph Bogren",
@@ -8205,7 +9116,8 @@
     "completed_trips": [
       "T2605",
       "T1555"
-    ]
+    ],
+    "balance": 189
   },
   {
     "name": "Jessika Edberg",
@@ -8214,7 +9126,8 @@
     "completed_trips": [
       "T344",
       "T2572"
-    ]
+    ],
+    "balance": 331
   },
   {
     "name": "Fanny Stolt",
@@ -8223,7 +9136,8 @@
     "completed_trips": [
       "T2463",
       "T2306"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Håkan Nordstrand",
@@ -8232,7 +9146,8 @@
     "completed_trips": [
       "T1689",
       "T1950"
-    ]
+    ],
+    "balance": 138
   },
   {
     "name": "David Lager",
@@ -8241,7 +9156,8 @@
     "completed_trips": [
       "T2188",
       "T2397"
-    ]
+    ],
+    "balance": 172
   },
   {
     "name": "Nanna Mossberg",
@@ -8250,7 +9166,8 @@
     "completed_trips": [
       "T1633",
       "T109"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Mimmi Roos",
@@ -8259,7 +9176,8 @@
     "completed_trips": [
       "T1640",
       "T2294"
-    ]
+    ],
+    "balance": 689
   },
   {
     "name": "Arne Arnesson",
@@ -8268,7 +9186,8 @@
     "completed_trips": [
       "T1431",
       "T2457"
-    ]
+    ],
+    "balance": 237
   },
   {
     "name": "Milia Adamsson",
@@ -8277,7 +9196,8 @@
     "completed_trips": [
       "T2274",
       "T2123"
-    ]
+    ],
+    "balance": 849
   },
   {
     "name": "Nils Hägglund",
@@ -8286,7 +9206,8 @@
     "completed_trips": [
       "T2595",
       "T424"
-    ]
+    ],
+    "balance": 101
   },
   {
     "name": "Millie Hjelm",
@@ -8295,7 +9216,8 @@
     "completed_trips": [
       "T608",
       "T1283"
-    ]
+    ],
+    "balance": 350
   },
   {
     "name": "Haley Liljedahl",
@@ -8304,7 +9226,8 @@
     "completed_trips": [
       "T1255",
       "T1891"
-    ]
+    ],
+    "balance": 391
   },
   {
     "name": "Carla Johnsson",
@@ -8313,7 +9236,8 @@
     "completed_trips": [
       "T446",
       "T394"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Therese Rosander",
@@ -8322,7 +9246,8 @@
     "completed_trips": [
       "T2658",
       "T438"
-    ]
+    ],
+    "balance": 414
   },
   {
     "name": "Egil Lindmark",
@@ -8331,7 +9256,8 @@
     "completed_trips": [
       "T632",
       "T607"
-    ]
+    ],
+    "balance": 850
   },
   {
     "name": "Ajla Carlström",
@@ -8340,7 +9266,8 @@
     "completed_trips": [
       "T1413",
       "T2863"
-    ]
+    ],
+    "balance": 550
   },
   {
     "name": "Erica Hellman",
@@ -8349,7 +9276,8 @@
     "completed_trips": [
       "T2509",
       "T1196"
-    ]
+    ],
+    "balance": 181
   },
   {
     "name": "Meija Ask",
@@ -8358,7 +9286,8 @@
     "completed_trips": [
       "T2629",
       "T1624"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ragnar Bäck",
@@ -8367,7 +9296,8 @@
     "completed_trips": [
       "T1790",
       "T919"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Helga Hörberg",
@@ -8376,7 +9306,8 @@
     "completed_trips": [
       "T1081",
       "T236"
-    ]
+    ],
+    "balance": 215
   },
   {
     "name": "Dennis Vikström",
@@ -8385,7 +9316,8 @@
     "completed_trips": [
       "T1008",
       "T282"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Karolina Backlund",
@@ -8394,7 +9326,8 @@
     "completed_trips": [
       "T263",
       "T627"
-    ]
+    ],
+    "balance": 215
   },
   {
     "name": "Marta Rosander",
@@ -8403,7 +9336,8 @@
     "completed_trips": [
       "T113",
       "T2025"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Elisia Hellberg",
@@ -8412,7 +9346,8 @@
     "completed_trips": [
       "T2660",
       "T2168"
-    ]
+    ],
+    "balance": 814
   },
   {
     "name": "Mimmi Frick",
@@ -8421,7 +9356,8 @@
     "completed_trips": [
       "T772",
       "T2994"
-    ]
+    ],
+    "balance": 478
   },
   {
     "name": "Rosanna Stark",
@@ -8430,7 +9366,8 @@
     "completed_trips": [
       "T1179",
       "T2883"
-    ]
+    ],
+    "balance": 176
   },
   {
     "name": "Leya Lundström",
@@ -8439,7 +9376,8 @@
     "completed_trips": [
       "T746",
       "T1433"
-    ]
+    ],
+    "balance": 197
   },
   {
     "name": "Izabell Adolfsson",
@@ -8448,7 +9386,8 @@
     "completed_trips": [
       "T2868",
       "T1888"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Hadi Nordvall",
@@ -8457,7 +9396,8 @@
     "completed_trips": [
       "T744",
       "T1488"
-    ]
+    ],
+    "balance": 949
   },
   {
     "name": "Ville Müller",
@@ -8466,7 +9406,8 @@
     "completed_trips": [
       "T1012",
       "T1444"
-    ]
+    ],
+    "balance": 189
   },
   {
     "name": "Malcolm Ros",
@@ -8475,7 +9416,8 @@
     "completed_trips": [
       "T1830",
       "T132"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Gösta Källström",
@@ -8484,7 +9426,8 @@
     "completed_trips": [
       "T1432",
       "T642"
-    ]
+    ],
+    "balance": 578
   },
   {
     "name": "Lea Lindstedt",
@@ -8493,7 +9436,8 @@
     "completed_trips": [
       "T2648",
       "T1919"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Vilhelmina Hellman",
@@ -8502,7 +9446,8 @@
     "completed_trips": [
       "T2043",
       "T2210"
-    ]
+    ],
+    "balance": 544
   },
   {
     "name": "Lorentz Ljungdahl",
@@ -8511,7 +9456,8 @@
     "completed_trips": [
       "T129",
       "T2151"
-    ]
+    ],
+    "balance": 621
   },
   {
     "name": "Alma Modin",
@@ -8520,7 +9466,8 @@
     "completed_trips": [
       "T702",
       "T2358"
-    ]
+    ],
+    "balance": 860
   },
   {
     "name": "Alida Steen",
@@ -8529,7 +9476,8 @@
     "completed_trips": [
       "T1351",
       "T886"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Lucia Krantz",
@@ -8538,7 +9486,8 @@
     "completed_trips": [
       "T1844",
       "T2656"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Börje Helmersson",
@@ -8547,7 +9496,8 @@
     "completed_trips": [
       "T787",
       "T2114"
-    ]
+    ],
+    "balance": 484
   },
   {
     "name": "Jimmie Rosberg",
@@ -8556,7 +9506,8 @@
     "completed_trips": [
       "T2201",
       "T920"
-    ]
+    ],
+    "balance": 525
   },
   {
     "name": "Sigge Vestling",
@@ -8565,7 +9516,8 @@
     "completed_trips": [
       "T564",
       "T1084"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Fritz Liljekvist",
@@ -8574,7 +9526,8 @@
     "completed_trips": [
       "T1310",
       "T706"
-    ]
+    ],
+    "balance": 888
   },
   {
     "name": "Roxanna Stålberg",
@@ -8583,7 +9536,8 @@
     "completed_trips": [
       "T841",
       "T2864"
-    ]
+    ],
+    "balance": 389
   },
   {
     "name": "Matthias Kruse",
@@ -8592,7 +9546,8 @@
     "completed_trips": [
       "T1637",
       "T1808"
-    ]
+    ],
+    "balance": 942
   },
   {
     "name": "Sandy Hellberg",
@@ -8601,7 +9556,8 @@
     "completed_trips": [
       "T2267",
       "T2568"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Israel Staaf",
@@ -8610,7 +9566,8 @@
     "completed_trips": [
       "T1357",
       "T225"
-    ]
+    ],
+    "balance": 834
   },
   {
     "name": "Estelle Ask",
@@ -8619,7 +9576,8 @@
     "completed_trips": [
       "T161",
       "T1043"
-    ]
+    ],
+    "balance": 674
   },
   {
     "name": "Noa Thunberg",
@@ -8628,7 +9586,8 @@
     "completed_trips": [
       "T2488",
       "T1575"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Miran Näslund",
@@ -8637,7 +9596,8 @@
     "completed_trips": [
       "T186",
       "T1194"
-    ]
+    ],
+    "balance": 737
   },
   {
     "name": "Cindy Stefansson",
@@ -8646,7 +9606,8 @@
     "completed_trips": [
       "T009",
       "T884"
-    ]
+    ],
+    "balance": 439
   },
   {
     "name": "Joni Söderholm",
@@ -8655,7 +9616,8 @@
     "completed_trips": [
       "T1349",
       "T1716"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Evelin Rosvall",
@@ -8664,7 +9626,8 @@
     "completed_trips": [
       "T473",
       "T2764"
-    ]
+    ],
+    "balance": 613
   },
   {
     "name": "Elli Lans",
@@ -8673,7 +9636,8 @@
     "completed_trips": [
       "T144",
       "T2409"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Kira Rasmussen",
@@ -8682,7 +9646,8 @@
     "completed_trips": [
       "T1055",
       "T2085"
-    ]
+    ],
+    "balance": 291
   },
   {
     "name": "Rayan Johansen",
@@ -8691,7 +9656,8 @@
     "completed_trips": [
       "T015",
       "T227"
-    ]
+    ],
+    "balance": 756
   },
   {
     "name": "Vera Hellberg",
@@ -8700,7 +9666,8 @@
     "completed_trips": [
       "T2751",
       "T2144"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Kalle Gradin",
@@ -8709,7 +9676,8 @@
     "completed_trips": [
       "T2350",
       "T1650"
-    ]
+    ],
+    "balance": 774
   },
   {
     "name": "Alvar Knutsson",
@@ -8718,7 +9686,8 @@
     "completed_trips": [
       "T2073",
       "T1096"
-    ]
+    ],
+    "balance": 228
   },
   {
     "name": "Freyja Nygren",
@@ -8727,7 +9696,8 @@
     "completed_trips": [
       "T2892",
       "T923"
-    ]
+    ],
+    "balance": 833
   },
   {
     "name": "Carolina Forsmark",
@@ -8736,7 +9706,8 @@
     "completed_trips": [
       "T2478",
       "T606"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Valencia Hedvall",
@@ -8745,7 +9716,8 @@
     "completed_trips": [
       "T471",
       "T1539"
-    ]
+    ],
+    "balance": 594
   },
   {
     "name": "Sanna Petersson",
@@ -8754,7 +9726,8 @@
     "completed_trips": [
       "T2664",
       "T926"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Morgan Bohlin",
@@ -8763,7 +9736,8 @@
     "completed_trips": [
       "T1848",
       "T169"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Hoda Sundén",
@@ -8772,7 +9746,8 @@
     "completed_trips": [
       "T1678",
       "T1991"
-    ]
+    ],
+    "balance": 595
   },
   {
     "name": "Alexsandra Lindén",
@@ -8781,7 +9756,8 @@
     "completed_trips": [
       "T889",
       "T020"
-    ]
+    ],
+    "balance": 939
   },
   {
     "name": "Lowa Zetterlund",
@@ -8790,7 +9766,8 @@
     "completed_trips": [
       "T1064",
       "T792"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Botvid Berglund",
@@ -8799,7 +9776,8 @@
     "completed_trips": [
       "T1669",
       "T560"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Manuel Rosberg",
@@ -8808,7 +9786,8 @@
     "completed_trips": [
       "T2428",
       "T2442"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Donya Wihlborg",
@@ -8817,7 +9796,8 @@
     "completed_trips": [
       "T1674",
       "T1331"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Morgan Lagerström",
@@ -8826,7 +9806,8 @@
     "completed_trips": [
       "T2348",
       "T705"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Kiara Berggren",
@@ -8835,7 +9816,8 @@
     "completed_trips": [
       "T148",
       "T2179"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Noak Lidman",
@@ -8844,7 +9826,8 @@
     "completed_trips": [
       "T2235",
       "T989"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Vilja Nordstrand",
@@ -8853,7 +9836,8 @@
     "completed_trips": [
       "T2819",
       "T1836"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Maryam Hjort",
@@ -8862,7 +9846,8 @@
     "completed_trips": [
       "T1996",
       "T1827"
-    ]
+    ],
+    "balance": 420
   },
   {
     "name": "Lycka Ljungström",
@@ -8871,7 +9856,8 @@
     "completed_trips": [
       "T2443",
       "T146"
-    ]
+    ],
+    "balance": 870
   },
   {
     "name": "Zara Sigfridsson",
@@ -8880,7 +9866,8 @@
     "completed_trips": [
       "T2634",
       "T1981"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Stina Rahm",
@@ -8889,7 +9876,8 @@
     "completed_trips": [
       "T2928",
       "T1187"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Svante Ramberg",
@@ -8898,7 +9886,8 @@
     "completed_trips": [
       "T1314",
       "T859"
-    ]
+    ],
+    "balance": 434
   },
   {
     "name": "Lex Modin",
@@ -8907,7 +9896,8 @@
     "completed_trips": [
       "T2857",
       "T1569"
-    ]
+    ],
+    "balance": 834
   },
   {
     "name": "Danny Åhlander",
@@ -8916,7 +9906,8 @@
     "completed_trips": [
       "T1699",
       "T2506"
-    ]
+    ],
+    "balance": 562
   },
   {
     "name": "Isabel Berglin",
@@ -8925,7 +9916,8 @@
     "completed_trips": [
       "T1086",
       "T2566"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Ingemar Sandell",
@@ -8934,7 +9926,8 @@
     "completed_trips": [
       "T1969",
       "T990"
-    ]
+    ],
+    "balance": 206
   },
   {
     "name": "Joseph Björling",
@@ -8943,7 +9936,8 @@
     "completed_trips": [
       "T1675",
       "T1463"
-    ]
+    ],
+    "balance": 391
   },
   {
     "name": "Linnea Nordvall",
@@ -8952,7 +9946,8 @@
     "completed_trips": [
       "T1363",
       "T2730"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Dania Johansson",
@@ -8961,7 +9956,8 @@
     "completed_trips": [
       "T1902",
       "T112"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Petter Bruhn",
@@ -8970,7 +9966,8 @@
     "completed_trips": [
       "T2934",
       "T1782"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Alvar Kristensson",
@@ -8979,7 +9976,8 @@
     "completed_trips": [
       "T2122",
       "T2322"
-    ]
+    ],
+    "balance": 0
   },
   {
     "name": "Filippa Gidlund",
@@ -8988,7 +9986,8 @@
     "completed_trips": [
       "T879",
       "T2778"
-    ]
+    ],
+    "balance": 532
   },
   {
     "name": "Jens Åkerström",
@@ -8997,6 +9996,7 @@
     "completed_trips": [
       "T2696",
       "T2036"
-    ]
+    ],
+    "balance": 917
   }
 ]
