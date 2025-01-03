@@ -6,69 +6,85 @@ import Constants from 'expo-constants';
 import { TripMapProps } from './interfaces';
 
 
-const TripMap: React.FC<TripMapProps> = ({ startLocation, endLocation, FetchedDistance }) => {
+const TripMap: React.FC<TripMapProps> = ({ data, startLocation, endLocation, FetchedDistance }) => {
 	const [route, setRoute] = useState<LatLng[]>([]);
 	const [region, setRegion] = useState<Region | null>(null);
 	const [loading, setLoading] = useState(true);
 	const mapRef = useRef<MapView | null>(null);
-	const { API_KEY } = Constants?.expoConfig?.extra as { API_KEY: string };
-
+	
 	useEffect(() => {
-		const fetchRoute = async () => {
-		try {
-			const coordinates = [
-			[startLocation[1], startLocation[0]],
-			[endLocation[1], endLocation[0]],
-			];
+		// om rutten inte finns i databasen, hämta via openrouteservice
+		if (!data.route) {
+			const { API_KEY } = Constants?.expoConfig?.extra as { API_KEY: string };
+			
+			const fetchRoute = async () => {
+				try {
+					const coordinates = [
+						[startLocation[1], startLocation[0]],
+						[endLocation[1], endLocation[0]],
+					];
+		
+					const response = await fetch(
+					'https://api.openrouteservice.org/v2/directions/cycling-electric',
+						{
+							method: 'POST',
+							headers: {
+							'Content-Type': 'application/json',
+							Authorization: API_KEY,
+							},
+							body: JSON.stringify({ coordinates }),
+						}
+					);
+		
+					if (!response.ok) {
+						throw new Error('Failed to fetch route.');
+					}
+		
+					const data = await response.json();
 
-			const response = await fetch(
-			'https://api.openrouteservice.org/v2/directions/cycling-electric',
-			{
-				method: 'POST',
-				headers: {
-				'Content-Type': 'application/json',
-				Authorization: API_KEY,
-				},
-				body: JSON.stringify({ coordinates }),
+					if (data.routes && data.routes[0]?.geometry) {
+						const encodedRoute = data.routes[0].geometry;
+						const decodedRoute = polyline.decode(encodedRoute).map(([lat, lon]) => ({
+							latitude: lat,
+							longitude: lon,
+						}));
+						setRoute(decodedRoute);
+				
+						FetchedDistance && FetchedDistance(data.routes[0].summary.distance);
+					}
+				} catch (error) {
+					console.error('Error fetching route:', error);
+				} finally {
+					setLoading(false);
+				}
 			}
-			);
-
-			if (!response.ok) {
-				throw new Error('Failed to fetch route.');
-			}
-
-			const data = await response.json();
-			if (data.routes && data.routes[0]?.geometry) {
-				const encodedRoute = data.routes[0].geometry;
-				const decodedRoute = polyline.decode(encodedRoute).map(([lat, lon]) => ({
+			fetchRoute();
+		// om rutten finns i databasen, använd den datan
+		} else {
+			try {
+				const decodedRoute = data.route.map(([lat, lon]) => ({
 					latitude: lat,
 					longitude: lon,
-				}
-			));
-
-			setRoute(decodedRoute);
-
-			if (data.routes[0]?.summary?.distance && FetchedDistance) {
-				FetchedDistance(data.routes[0].summary.distance);
+				}));
+				
+				setRoute(decodedRoute);
+				FetchedDistance && FetchedDistance(data.distance || 0);
+	
+			} catch (error) {
+				console.error('Error fetching route:', error);
+			} finally {
+				setLoading(false);
 			}
-
-			const newRegion: Region = {
-				latitude: (startLocation[0] + endLocation[0]) / 2,
-				longitude: (startLocation[1] + endLocation[1]) / 2,
-				latitudeDelta: 0.05,
-				longitudeDelta: 0.05,
-			};
-
-			setRegion(newRegion);
-			mapRef.current?.animateToRegion(newRegion, 1000);
-			}
-		} catch (error) {
-			console.error('Error fetching route:', error);
-		} finally {
-			setLoading(false);
 		}
-	};
-	fetchRoute();
+		const newRegion: Region = {
+			latitude: (startLocation[0] + endLocation[0]) / 2,
+			longitude: (startLocation[1] + endLocation[1]) / 2,
+			latitudeDelta: 0.05,
+			longitudeDelta: 0.05,
+		};
+
+		setRegion(newRegion);
+		mapRef.current?.animateToRegion(newRegion, 1000);
 	}, [startLocation, endLocation, FetchedDistance]);
 
 	if (loading || !region) {
