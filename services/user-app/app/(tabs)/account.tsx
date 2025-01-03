@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from 'react';
-import { Alert, Image, StyleSheet, View } from 'react-native';
+import { Alert, Image, StyleSheet, View, Text } from 'react-native';
 import { Collapsible } from '@/components/Collapsible';
 import { Colors } from '@/constants/Colors';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
@@ -45,6 +45,11 @@ export default function AccountTab() {
 
 	return (
 		<View style={styles.container}>
+		{userData?.payment_method == "" && (
+			<View style={styles.banner}>
+				<Text style={styles.bannerText}>Add a payment method to be able to rent a bike</Text>
+			</View>
+		)}
 		<ParallaxScrollView
 			headerBackgroundColor={{
 			light: Colors.light.headerBackground,
@@ -88,6 +93,21 @@ export default function AccountTab() {
 const styles = StyleSheet.create({
 	container: {
 		flex: 1,
+	},
+	banner: {
+		width: '100%',
+		height: '12%',
+		backgroundColor: 'red',
+		padding: 10,
+		alignItems: 'center',
+		justifyContent: 'center',
+	},
+	bannerText: {
+		color: '#fff',
+		fontSize: 16,
+		fontWeight: 'bold',
+		position: 'absolute',
+		bottom: 15,
 	},
 	titleContainer: {
 		flexDirection: 'row',
