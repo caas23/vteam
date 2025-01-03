@@ -3,13 +3,12 @@ import { TripDetailsProps } from "./interfaces";
 import TripMap from "./TripMap";
 import BigAlertMessage from "../BigAlertMessage";
 
-
 const TripDetails: React.FC<TripDetailsProps> = ({ data }) => {
   const [distance, setDistance] = useState<number | null>(null);
   const [alertBox, setAlertBox] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
   const totalSeconds = (new Date(data.end_time).getTime() - new Date(data.start_time).getTime()) / 1000;
-  const totalMinutes =  totalSeconds / 60;
+  const totalMinutes = totalSeconds / 60;
   const averageSpeed = distance !== null && totalSeconds > 0 
     ? (distance / 1000) / (totalSeconds / 3600) : null;
 
@@ -32,11 +31,9 @@ const TripDetails: React.FC<TripDetailsProps> = ({ data }) => {
       If you have questions about your specific trip,
       please submit an email to trips@soloscoot.com
       `);
-
-      
     setAlertBox(true);
   };
-  
+
   return (
     <div className="trip-details-map">
       <div className="trip-details">
@@ -54,19 +51,19 @@ const TripDetails: React.FC<TripDetailsProps> = ({ data }) => {
         )}
         <span className="trip-price">Price: {data.price} kr</span>
         <div onClick={handlePriceInfoClick} className="price-info"></div>
-        
       </div>
-        <TripMap
+      <TripMap
+        data={data}
         startLocation={data.start_location}
         endLocation={data.end_location}
         FetchedDistance={setDistance}
-        />
-        <BigAlertMessage
-				boxOpen={alertBox}
-				onClose={() => setAlertBox(false)}
-				message={alertMessage}
+      />
+      <BigAlertMessage
+        boxOpen={alertBox}
+        onClose={() => setAlertBox(false)}
+        message={alertMessage}
         header={"Pricing"}
-			/>
+      />
     </div>
   );
 };

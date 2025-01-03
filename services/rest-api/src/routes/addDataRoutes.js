@@ -9,8 +9,9 @@ router.get("/", async (req, res) => {
     const routes = {
         "Available routes": {
             "/city": "add city",
-            "/bike/to/city": "add bike to city (and city to bike)",
-            "/auth/github": "Authentication using GitHub OAuth"
+            "/bike/to/city": "add new bike to chosen parking zone in chosen city",
+            "/auth/github": "authentication using GitHub OAuth",
+            "/user": "insert user, if not already in db, when using OAuth"
         }
     }
     res.json(routes);
@@ -43,7 +44,6 @@ router.post("/bike/to/city", checkAuth, async (req, res) => {
 
 router.post("/auth/github", async (req, res) => {
     const { code, type } = req.body;
-    console.log(type)
     try {
         const tokenResponse = await fetch("https://github.com/login/oauth/access_token", {
             method: "POST",
@@ -91,6 +91,8 @@ router.post("/user", checkAuth, async (req, res) => {
         { returnDocument: 'after' }
     );
 
+    // payment_method is per default unset when a new user is added, 
+    // it has to be updated by the user before renting a bike.
     const addUser = {
         name: name,
         payment_method: "",
