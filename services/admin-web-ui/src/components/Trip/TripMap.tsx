@@ -60,16 +60,16 @@ const TripMap: React.FC<TripMapProps> = ({ data, startLocation, endLocation, Fet
                         const encodedRoute = data.routes[0].geometry;
                         const decodedRoute = polyline.decode(encodedRoute);
                         setRoute(decodedRoute);
-
-                    FetchedDistance && FetchedDistance(data.routes[0]?.summary?.distance);
+                        
+                        FetchedDistance && FetchedDistance(data.routes[0]?.summary?.distance);
                     } else {
                         throw new Error("Route data missing");
                     }
-            } catch (error) {
-                console.error("Error fetching route:", error);
-            }
-        };
-        fetchRoute();
+                } catch (error) {
+                    console.error("Error fetching route:", error);
+                }
+            };
+            fetchRoute();
         // om rutten finns i databasen, använd den datan
         } else {
             setRoute(data.route);

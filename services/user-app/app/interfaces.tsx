@@ -62,12 +62,15 @@ interface TripUserDetailsProps {
 }
 
 interface Trip {
-    start_time: string;
-    end_time: string;
+    _id: string;
+    start_time: Date;
+    end_time: Date;
     start_location: [number, number];
     end_location: [number, number];
-    trip_id: string;
     price: number;
+    route: [number, number][];
+    distance: number;
+    trip_id: string;
 }
   
 interface TripDetailsProps {
@@ -76,6 +79,7 @@ interface TripDetailsProps {
 }
 
 interface TripMapProps {
+    data: Trip;
 	startLocation: [number, number];
 	endLocation: [number, number];
 	FetchedDistance?: (distance: number) => void;

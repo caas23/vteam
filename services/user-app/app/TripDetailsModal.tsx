@@ -76,6 +76,7 @@ If you have questions about your specific trip, please submit an email to trips@
 					</View>
 					<View style={styles.mapContainer}>
 						<TripMap
+						data={data}
 						startLocation={data.start_location}
 						endLocation={data.end_location}
 						FetchedDistance={(fetchedDistance) => setDistance(fetchedDistance)}
