@@ -8,7 +8,7 @@ dotenv.config({ path: '../.env' });
 const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.yjhm6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
 // Skript för att lägga till/återställa cyklar i databasen.
-// Totalt 500 cyklar/stad läggs till.
+// Totalt 1000 cyklar/stad läggs till, med en genomförd resa per cykel.
 
 const loadData = async (filePath) => {
   const bikes = await fs.readFile(filePath, 'utf8');
