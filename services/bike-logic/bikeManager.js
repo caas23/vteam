@@ -100,24 +100,24 @@ const bikeManager = {
             throw new Error(`Failed to retrieve bikes in ${cityName}.`);
         }
     },
-        // Not yet refactored
-    startBike: async function startBike(bikeId) {
-        // For now this only makes the bike unavailable 
-        const result = await bike.start(bikeId)
 
+    startBike: async function startBike(bikeId) {
+        const result = await bike.start(bikeId)
+        return result;
+    },
+    
+    updateBikePosition: async function updateBikePosition(bikeId, newPosition) {
+        const result = await bike.move(bikeId, newPosition)
+        return result;
+    },
+    
+    updateCompletedTrips: async function updateCompletedTrips(bikeId, tripId) {
+        const result = await bike.updateTrips(bikeId, tripId)
         return result;
     },
 
-    // Not yet refactored
     stopBike: async function stopBike(bikeId) {
-        // For now this only makes the bike available and returns the location
-        // assuming the trip logic i handled elsewhere and just needs
-        // bike parking coordinates
-
         const result = await bike.stop(bikeId)
-
-        // We should consider where to put the trip logic, ex:
-        // await trip.end(tripId)
         return result;
     },
 

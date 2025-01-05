@@ -20,6 +20,7 @@ const bike = {
 
     start : async function start(bikeId) {
         let bikeCollection = getCollection("bikes");
+
         try {
             const result = await bikeCollection.updateOne(
                 { bike_id: bikeId },
@@ -100,8 +101,6 @@ const bike = {
         let bikeCollection = getCollection("bikes");
 
         try {
-
-            // Then update `status.in_service`
             const result = await bikeCollection.updateOne(
                 { bike_id: bikeId },
                 { 
@@ -120,7 +119,7 @@ const bike = {
         }
     },
 
-    endService: async function serviceCompleted(bikeId) {
+    endService: async function endService(bikeId) {
         let bikeCollection = getCollection("bikes");
 
         try {
@@ -138,9 +137,53 @@ const bike = {
             return result;
         } catch (e) {
             console.error(e);
-            throw new Error(`Failed to ebd service for bike with bike_id: ${bikeId}.`);
+            throw new Error(`Failed to end service for bike with bike_id: ${bikeId}.`);
         }
-    }
+    },
+    
+    // update bike location
+    move: async function move(bikeId, newPosition) {
+        let bikeCollection = getCollection("bikes");
+
+        try {
+            const result = await bikeCollection.updateOne(
+                { bike_id: bikeId },
+                { 
+                    $set: { 
+                        "location": newPosition,
+                    } 
+                },
+                { returnDocument: "after" }
+            );
+
+            return result;
+        } catch (e) {
+            console.error(e);
+            throw new Error(`Failed to update location for bike with bike_id: ${bikeId}.`);
+        }
+    },
+    
+    // update completed_trips
+    updateTrips: async function updateTrips(bikeId, tripId) {
+        let bikeCollection = getCollection("bikes");
+    
+        try {
+            const result = await bikeCollection.updateOne(
+                { bike_id: bikeId },
+                { 
+                    $push: { 
+                        "completed_trips": tripId,
+                    } 
+                },
+                { returnDocument: "after" }
+            );
+
+            return result;
+        } catch (e) {
+            console.error(e);
+            throw new Error(`Failed to update completed trips for bike with bike_id: ${bikeId}.`);
+        }
+    },
 }
 
 export default bike;

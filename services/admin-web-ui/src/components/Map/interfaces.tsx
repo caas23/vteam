@@ -35,12 +35,31 @@ interface ChargingStation {
 interface ParkingZone {
     parking_id: string;
     area: [number, number][];
-  }
+}
+
+interface Route {
+	_id: string;
+	route_id: string;
+	route: [number, number][];
+	distance: number;
+}
+
+interface Trip {
+	start_time: Date;
+	end_time: Date;
+	start_location: [number, number];
+	end_location: [number, number];
+	price: number;
+	route: [number, number][];
+	distance: number;
+}
   
 export type {
     City,
     Bike,
     ChargingStation,
     ParkingZone,
+    Route,
+    Trip
 };
   
