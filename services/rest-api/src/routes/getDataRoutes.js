@@ -21,6 +21,7 @@ router.get("/", async (req, res) => {
             "/all/users": "get all users",
             "/all/users/pagination": "get 5 users at a time for pagination",
             "/all/trips": "get all trips",
+            "/all/routes": "get all routes",
             "/one/bike": "get one bike using its bike_id",
             "/one/user": "get one user using its user_id",
             "/one/city": "get one city using its name",
@@ -178,6 +179,11 @@ router.get("/one/city/", checkAuth, async (req, res) => {
 
 router.get("/all/trips", checkAuth, async (req, res) => {
     const result = await getCollection('trips').find().toArray();
+    res.json(result);
+});
+
+router.get("/all/routes", checkAuth, async (req, res) => {
+    const result = await getCollection('routes').find().toArray();
     res.json(result);
 });
 
