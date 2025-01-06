@@ -1,4 +1,5 @@
 .bike-in-use-marker img {
+    margin-top: 1em;
     transform: scale(0.7);
     border-radius: 50%;
     animation: blink-in-use 2s infinite;
@@ -19,10 +20,10 @@
 .bike-in-use-low-battery img {
     transform: scale(0.7);
     border-radius: 50%;
-    animation: blink-in-use 2s infinite;
+    animation: bike-in-use-low-battery 2s infinite;
 }
 
-@keyframes blink-in-use {
+@keyframes bike-in-use-low-battery {
     0% {
         background-color: var(--color-red-dark);
     }
@@ -40,20 +41,19 @@
     background-color: var(--color-red-dark);
 }
 
-/* .bike-low-battery-marker img {
-    transform: scale(0.85);
-    border-radius: 50%;
-    animation: blink-low-battery 2s infinite;
+.force-stop-btn {
+    display: inline-block;
+    width: 100%;
+    margin-top: 0.25em;
+    padding: 0.25em 0;
+    background-color: var(--color-red-dark);
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 3px 0 var(--color-gray);
+  
+    &:hover {
+        cursor: pointer;
+        background-color: var(--color-red-darker)
+    }
 }
-
-@keyframes blink-low-battery {
-    0% {
-        background-color: transparent;
-    }
-    50% {
-        background-color: var(--color-red-dark);
-    }
-    100% {
-        background-color: transparent;
-    }
-} */

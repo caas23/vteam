@@ -16,6 +16,7 @@ import "./index.css";
 // simulera en varierande hastighet med viss hänsyn till kurvor etc,
 // parkera cykel, göra den tillgänglig, spara resan i db,
 // lägga till resan i completed_trips för given cykel
+// admin kan tvinga ett stopp för en pågående resa, av någon given anledning
 // fungerar nu att lämna vyn/ladda om sidan utan att cyklarna
 // försöker hämta en ny rutt (om de redan följer en)
 
@@ -26,7 +27,6 @@ import "./index.css";
 /*** 
  *
  *  ATT FUNDERA PÅ (antingen för frontend- eller backend-hantering)
- * - Hur simulera batteriåtgång? (vad är rimlig minskning per tidsenhet/hastighet?)
  * - Hur hantera resor som görs i realtid via appen, i denna vy? (nuvarande kod hanterar bara simulerade turer)
  * - Se till så att appen och denna vy samspelar väl i realtid (när någon hyr i app --> direkt spegling i denna vy)
  * - Hur klarar systemet en större load? (enbart testat för fåtal cyklar i samtidig rörelse)
@@ -185,11 +185,71 @@ const MapComponent: React.FC = () => {
 				)
 			);
 		});
+		
+		socket.current?.on("tripForceStop", ( data : { 
+			bike: Bike;
+			reason: string;
+			distance: number;
+			route: [number, number][];
+		}) => {
+			if (!bikeTrips.has(data.bike.bike_id)) return;
+			const bikeTrip = bikeTrips.get(data.bike.bike_id);
+
+			// för att urskilja en avbruten resa mot en "vanlig", adderas en avgift om
+			// admin anser att användaren kört på ett farligt eller misstänksamt sätt.
+			const fee = ["Dangerous driving", "Suspicious behavior"].includes(data.reason) ? 25 : 0;
+
+			const endTime = new Date();
+			const startTime = new Date(bikeTrip && bikeTrip.start_time || endTime);
+			const totalTimeMinutes = (endTime.getTime() - startTime.getTime()) / 60000;
+			const price = (totalTimeMinutes * 2.5 + 10 + fee).toFixed(2);
+	
+			// använd socket för att alerta backenden att resan ska sparas,
+			// i backenden kommer även en slumpmässig användare
+			// behöva hämtas, för att koppla genomförd resa till en användare
+			socket.current?.emit("finishRoute", {
+				bike: data.bike,
+				trip: {
+					start_time: bikeTrip && bikeTrip.start_time,
+					end_time: endTime,
+					start_location: bikeTrip && bikeTrip.start_location,
+					end_location: data.bike.location,
+					price,
+					route: data.route,
+					distance: data.distance,
+				},
+				reason: data.reason,
+				fee: fee
+			});
+	
+			// efter genomförd resa tas temporärt sparad data bort från localstorage
+			setBikeTrips((prev) => {
+				const updatedTrips = new Map(prev);
+				updatedTrips.delete(data.bike.bike_id);
+				return updatedTrips;
+			});
+	
+			setBikeRoutes((prev) => {
+				const updatedRoutes = new Map(prev);
+				updatedRoutes.delete(data.bike.bike_id);
+				return updatedRoutes;
+			});
+	
+			// cykeln gör tillgänglig igen
+			setBikesInCity((prevBikes) =>
+				prevBikes.map((b) =>
+					b.bike_id === data.bike.bike_id
+					? { ...b, status: { ...b.status, available: true } }
+					: b
+				)
+			);
+		});
 
 		return () => {
 			socket.current?.off("bikeInUse");
+			socket.current?.off("forceStop");
 		};
-	}, [currentCity, city, routesLoaded]);
+	}, [currentCity, city, routesLoaded, bikeTrips]);
 
 	// hämta en rutt genom att matcha nuvaranda position
 	// mot antingen första eller sista koordinaterna för en rutt.
@@ -341,7 +401,7 @@ const MapComponent: React.FC = () => {
 			/>
 			<ShowParkingZones zones={availableZones} />
 			<ShowChargingStations stations={availableStations} />
-			<ShowBikes bikes={bikesInCity} />
+			<ShowBikes bikes={bikesInCity} socket={socket}/>
 			{cityBorders && (
 				<GeoJSON
 					data={cityBorders}
