@@ -76,12 +76,17 @@ io.on("connection", (socket) => {
 
         // update location
         await bikeManager.updateBikePosition(data.bike.bike_id, data.bike.location);
+        
+        // set speed to 0
+        await bikeManager.updateBikeSpeed(data.bike.bike_id, 0);
 
         // set bike status to "available: true"
         await bikeManager.stopBike(data.bike.bike_id);
 
         /*** 
+         * ===============================================
          * remember to connect each trip to a user as well
+         * ===============================================
         ***/
     });
 
@@ -91,22 +96,144 @@ io.on("connection", (socket) => {
     });
 });
 
+// avståndet mellan två koordinater (Haversine)
+// troligen hade även Pythagoras varit god nog i detta fall, 
+// givet att avståndet mellan varje koordinat är litet och det
+// kan anses finnas lite spelrum vad gäller hastigheten (som avståndet används till)
+const calculateDistance = (coord1, coord2) => {
+    const R = 6371; // jordens radie 
+    const toRad = (deg) => (deg * Math.PI) / 180;
+
+    const dLat = toRad(coord2[0] - coord1[0]);
+    const dLon = toRad(coord2[1] - coord1[1]);
+
+    const lat1 = toRad(coord1[0]);
+    const lat2 = toRad(coord2[0]);
+
+    const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+              Math.cos(lat1) * Math.cos(lat2) * 
+              Math.sin(dLon / 2) * Math.sin(dLon / 2);
+
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return R * c; // avstånd i km
+};
+
+// vinkeln mellan två koordinater används för att kunna avgöra om sväng kommer,
+// och i så fall kan hastigheten minskas för att simulera inbromsning 
+function calculateAngle(coord1, coord2, coord3) {
+    const vector12 = [coord2[0] - coord1[0], coord2[1] - coord1[1]]; // vektor från koordinat 1 -> 2
+    const vector23 = [coord3[0] - coord2[0], coord3[1] - coord2[1]]; // vektor från koordinat 2 -> 3
+
+    // skalärprodukten
+    const dotProduct = vector12[0] * vector23[0] + vector12[1] * vector23[1];
+
+    // längden på vektorerna
+    const magnitude12 = Math.sqrt(vector12[0] ** 2 + vector12[1] ** 2);
+    const magnitude23 = Math.sqrt(vector23[0] ** 2 + vector23[1] ** 2);
+
+    // cosinus av vinkeln
+    const cosAngle = dotProduct / (magnitude12 * magnitude23);
+
+    // vinkeln i radianer
+    const angle = Math.acos(Math.min(Math.max(cosAngle, -1), 1));
+
+    // vinkeln i grader
+    return angle * (180 / Math.PI);
+}
+
 function simulateBikeInUse(bikeId, route) {
+    /*** 
+     * För att kontinuerligt uppdatera cykelns position med ett fast intervall (2 s),
+     * används segment för att fastställa cykelns position inom intervallet.
+     * På så sätt kan cykelns position uppdateras med givna mellanrum, samtidigt som avstånd och hastighet
+     * baseras på ruttens faktiska värden (totalavstånd och givet intervall för cykelns varierande hastighet)
+     * ***/
     let index = 0;
-    const interval = setInterval(async () => {
-        if (index < route.length) {
-            // update position of bike each time it moves
-            await bikeManager.updateBikePosition(bikeId, route[index]);
-            io.emit("bikeInUse", {
-                bikeId,
-                position: route[index],
-            });
-            index++;
+    let speed = 0;
+    let segmentDistance = 0; // avstånd för givet segment
+    let segmentTraveled = 0; // avstånd färdat inom givet segment
+    const interval = 2000; // intervall för hur ofta cykelns position uppdateras på kartan
+
+    const moveBike = async () => {
+        if (index < route.length - 1) {
+            // nuvarande och nästa koordinat för rutten
+            const current = route[index];
+            const next = route[index + 1];
+            const nextNext = route[index + 2]; // för att beräkna vinkel
+
+            // beräkna vinkel för kommande del av rutt
+            const turnAngle = next && nextNext && calculateAngle(current, next, nextNext);
+
+            // för varje segment, beräkna avståndet och sätt en slumpad hastighet
+            if (segmentTraveled === 0) {
+                segmentDistance = calculateDistance(current, next);
+                // om cykeln närmar sig slutet av rutten, eller om en kurva närmar sig,
+                // minska hastigheten för att simulera inbromsning
+                /*** 
+                 * =================================================================
+                 * Beräkningen av hastighet pga kurvor är inte helt ideal,
+                 * men ger en uppfattning om hur hastigheten varierar genom resan.
+                 * 
+                 * !!! Optimera om tid finns !!!
+                 * 
+                 * =================================================================
+                 * ***/
+                if (route.length - index <= 2) {
+                    speed = Math.random() * (4 - 2) + 2; // slumpmässig hastighet mellan 2-4 km/h
+                } else if (turnAngle > 70 && turnAngle <= 90) {
+                    speed = Math.random() * (8 - 4) + 4; // slumpmässig hastighet mellan 4-8 km/h
+                } else if (turnAngle > 45 && turnAngle <= 70) {
+                    speed = Math.random() * (12 - 8) + 8; // slumpmässig hastighet mellan 8-12 km/h
+                } else if (turnAngle > 20 && turnAngle <= 45) {
+                    speed = Math.random() * (16 - 12) + 12; // slumpmässig hastighet mellan 12-16 km/h
+                } else {
+                    speed = Math.random() * (20 - 16) + 16; // slumpmässig hastighet mellan 16-20 km/h
+                }
+            }
+
+            // beräkna färdat avstånd inom givet intervall, addera till färdad sträcka av segmentet
+            const distanceCovered = (speed / 3600) * (interval / 1000);
+            segmentTraveled += distanceCovered;
+
+            // om färdad sträcka är mer än eller lika med distansen, är segmentet avklarat
+            if (segmentTraveled >= segmentDistance) {
+                // uppdatera cykelns position och hastighet och skicka data till frontenden
+                await bikeManager.updateBikePosition(bikeId, next);
+                await bikeManager.updateBikeSpeed(bikeId, speed.toFixed(1)); // onödigt att spara till db? eller behövs det någonstans?
+
+                io.emit("bikeInUse", { 
+                    bikeId, 
+                    position: next, 
+                    speed: speed.toFixed(1) 
+                });
+
+                // återställ färdad sträcka för att påbörja nytt segment
+                segmentTraveled = 0;
+                index++;
+            } else {
+                // om segmentet inte är avklarat, beräkna nästa position inom segmentet för att
+                // kunna rita ut cykeln på rätt plats på kartan
+                const segmentProgress = segmentTraveled / segmentDistance;
+                const prorgessLat = current[0] + segmentProgress * (next[0] - current[0]);
+                const prorgessLng = current[1] + segmentProgress * (next[1] - current[1]);
+
+                const prorgessPosition = [prorgessLat, prorgessLng];
+                // uppdatera cykelns position och hastighet och skicka data till frontenden
+                await bikeManager.updateBikePosition(bikeId, prorgessPosition);
+                await bikeManager.updateBikeSpeed(bikeId, speed.toFixed(1)); // onödigt att spara till db? eller behövs det någonstans?
+                io.emit("bikeInUse", { 
+                    bikeId, 
+                    position: prorgessPosition, 
+                    speed: speed.toFixed(1) 
+                });
+            }
         } else {
-            clearInterval(interval);
-            console.log(`Finished route for bikeId: ${bikeId}`);
+            console.log(`Bike ${bikeId} finished route.`);
+            clearInterval(move);
         }
-    }, 2000); // vad är rimligt intervall? behöver det vara dynamiskt för att kunna visa på olika (rimliga) hastigheter?
+    };
+
+    const move = setInterval(moveBike, interval);
 }
 
 const startServer = async () => {

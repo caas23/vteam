@@ -111,6 +111,11 @@ const bikeManager = {
         return result;
     },
     
+    updateBikeSpeed: async function updateBikeSpeed(bikeId, currentSpeed) {
+        const result = await bike.speed(bikeId, currentSpeed)
+        return result;
+    },
+    
     updateCompletedTrips: async function updateCompletedTrips(bikeId, tripId) {
         const result = await bike.updateTrips(bikeId, tripId)
         return result;
