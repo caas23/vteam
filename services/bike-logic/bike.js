@@ -163,6 +163,27 @@ const bike = {
         }
     },
     
+    speed: async function speed(bikeId, speed) {
+        let bikeCollection = getCollection("bikes");
+
+        try {
+            const result = await bikeCollection.updateOne(
+                { bike_id: bikeId },
+                { 
+                    $set: { 
+                        "speed": parseFloat(speed),
+                    } 
+                },
+                { returnDocument: "after" }
+            );
+
+            return result;
+        } catch (e) {
+            console.error(e);
+            throw new Error(`Failed to update speed for bike with bike_id: ${bikeId}.`);
+        }
+    },
+    
     // update completed_trips
     updateTrips: async function updateTrips(bikeId, tripId) {
         let bikeCollection = getCollection("bikes");

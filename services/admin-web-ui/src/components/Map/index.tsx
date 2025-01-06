@@ -13,6 +13,7 @@ import "./index.css";
 
 // fungerande kod än så länge
 // kan flytta en cykel enligt en fördefinierad rutt,
+// simulera en varierande hastighet med viss hänsyn till kurvor etc,
 // parkera cykel, göra den tillgänglig, spara resan i db,
 // lägga till resan i completed_trips för given cykel
 // fungerar nu att lämna vyn/ladda om sidan utan att cyklarna
@@ -24,10 +25,7 @@ import "./index.css";
 
 /*** 
  *
- *  ATT FUNDERA PÅ (antingen för frontend- eller backend-hantering) 
- * - Hur hanteras hastighet på ett bra sätt? 
- * --- justera intervall i backend på nåt sätt? Hur bestämma intervall i så fall för att få hastighet runt 8-18 km/h?
- * --- på något sätt beräkna avstånd mellan koordinater för att få en sträcka och på så sätt ett rimligt intervall?
+ *  ATT FUNDERA PÅ (antingen för frontend- eller backend-hantering)
  * - Hur simulera batteriåtgång? (vad är rimlig minskning per tidsenhet/hastighet?)
  * - Hur hantera resor som görs i realtid via appen, i denna vy? (nuvarande kod hanterar bara simulerade turer)
  * - Se till så att appen och denna vy samspelar väl i realtid (när någon hyr i app --> direkt spegling i denna vy)
@@ -68,8 +66,6 @@ const MapComponent: React.FC = () => {
 		);
 		setBikeTrips(savedTrips);
 		setBikeRoutes(savedRoutes);
-		console.log(savedTrips)
-		console.log(savedRoutes)
 	}, []);
 
 	// uppdatera localstorage när bikeTrips eller bikeRoutes ändras
@@ -174,10 +170,10 @@ const MapComponent: React.FC = () => {
 		};
 		fetchAndSetBikes();
 
-		socket.current?.on("bikeInUse", (data: { bikeId: string; position: [number, number] }) => {
+		socket.current?.on("bikeInUse", (data: { bikeId: string; position: [number, number]; speed: number }) => {
 			setBikesInCity((prevBikes) =>
 				prevBikes.map((bike) =>
-					bike.bike_id === data.bikeId ? { ...bike, location: data.position } : bike
+					bike.bike_id === data.bikeId ? { ...bike, location: data.position, speed: data.speed } : bike
 				)
 			);
 		});
@@ -277,8 +273,6 @@ const MapComponent: React.FC = () => {
 				// hämta en resa enbart om cykeln är upptagen
 				// men inte har någon rutt kopplad till sig ännu
 				if (!bikeTrip && !bike.status.available) {
-					console.log(`bikeTrip: ${bikeTrip}`)
-					console.log(`!bikeTrip: ${!bikeTrip}`)
 					const matchedRoute = findRoute(bike.location);
 			
 					if (matchedRoute) {
