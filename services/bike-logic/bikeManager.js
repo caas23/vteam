@@ -116,6 +116,11 @@ const bikeManager = {
         return result;
     },
     
+    updateBikeBattery: async function updateBikeBattery(bikeId, currentBattery) {
+        const result = await bike.battery(bikeId, currentBattery)
+        return result;
+    },
+    
     updateCompletedTrips: async function updateCompletedTrips(bikeId, tripId) {
         const result = await bike.updateTrips(bikeId, tripId)
         return result;

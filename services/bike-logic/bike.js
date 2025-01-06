@@ -183,6 +183,27 @@ const bike = {
             throw new Error(`Failed to update speed for bike with bike_id: ${bikeId}.`);
         }
     },
+
+    battery: async function battery(bikeId, battery) {
+        let bikeCollection = getCollection("bikes");
+
+        try {
+            const result = await bikeCollection.updateOne(
+                { bike_id: bikeId },
+                { 
+                    $set: { 
+                        "status.battery_level": parseFloat(battery),
+                    } 
+                },
+                { returnDocument: "after" }
+            );
+
+            return result;
+        } catch (e) {
+            console.error(e)
+            throw new Error(`Failed to update battery level for bike with bike_id: ${bikeId}.`);
+        }
+    },
     
     // update completed_trips
     updateTrips: async function updateTrips(bikeId, tripId) {

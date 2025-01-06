@@ -55,7 +55,7 @@ io.on("connection", (socket) => {
     // console.log("New client connected", socket.id);
 
     // start bike movement simulation
-    socket.on("startbikeInUse", async ({ bikeId, route }) => {
+    socket.on("startbikeInUse", async ({ bikeId, route, battery }) => {
         if (!Array.isArray(route) || route.length === 0) {
             console.log("Invalid route data");
             return;
@@ -63,7 +63,7 @@ io.on("connection", (socket) => {
 
         console.log(`Starting bike movement for bikeId: ${bikeId}`);
         await bikeManager.startBike(bikeId); // set bike status to "available: false"
-        simulateBikeInUse(bikeId, route); // simulate movement
+        simulateBikeInUse(bikeId, route, battery); // simulate movement
     });
 
     socket.on("finishRoute", async (data) => {
@@ -141,7 +141,64 @@ function calculateAngle(coord1, coord2, coord3) {
     return angle * (180 / Math.PI);
 }
 
-function simulateBikeInUse(bikeId, route) {
+function calculateBatteryDrain(speed) {
+    // riktvärden för batteriåtgång per minut vid givna hastigheter
+    // senare införd restriktion på maxhastighet kan komma att ändra detta
+    /***
+     * ======================================================================================
+     * Batteriåtgången kan troligen finliras lite, olika källor ger olika riktlinjer för 
+     * hur snabbt batterinivån minskar, där wattal är en faktor. Hastighet, terräng,
+     * vikt på förare, väder och vind, är några andra nämnda faktorer. 
+     * 
+     * Här tas endast hänsyn till hastighet, där en viss minskning sker i relation till
+     * given hastighet. Troligen kan detta optimeras, men nuvarande beräkningssätt 
+     * ger en uppskattning och en faktisk minskning av batteri, vilket ses som gott nog. 
+     * ======================================================================================
+     ***/
+    if (speed <= 5) {
+        return 0.1; // 0.1% per minut för hastighet upp till 5 km/h
+    } else if (speed <= 15) {
+        return 0.2; // 0.2% per minut för hastighet upp till 15 km/h
+    } else if (speed <= 20) {
+        return 0.3; // 0.3% per minut för hastighet upp till 20 km/h
+    } else {
+        return 0.5; // 0.5% per minut för hastighet över 20 km/h
+    }
+}
+
+function calculateCurveSpeed(route, index, turnAngle) {
+    /*** 
+     * ======================================================================================
+     * Beräkningen av hastighet pga kurvor är inte helt ideal,
+     * men ger en uppfattning om hur hastigheten varierar genom resan.
+     * 
+     * Det vore troligen bra att implementera någon funktion som ser till
+     * att ändring i hastighet sker linjärt för att eliminera "hopp" i hastighet.
+     * Rent simuleringsmässigt sker dock uppdatering på kartan med tvåsekundersintervall,
+     * så man kan ju argumentera för att en mer linjär ändring i hastighet hypotetiskt sker,
+     * men att den inte nödvändigtvis reflekteras direkt pga tidsintervallet.
+     * 
+     * !!! Optimera om tid finns !!!
+     * 
+     * ======================================================================================
+     * ***/
+    let speed;
+    if (route.length - index <= 2) {
+        speed = Math.random() * (4 - 2) + 2; // slumpmässig hastighet mellan 2-4 km/h
+    } else if (turnAngle > 70 && turnAngle <= 90) {
+        speed = Math.random() * (8 - 4) + 4; // slumpmässig hastighet mellan 4-8 km/h
+    } else if (turnAngle > 45 && turnAngle <= 70) {
+        speed = Math.random() * (12 - 8) + 8; // slumpmässig hastighet mellan 8-12 km/h
+    } else if (turnAngle > 20 && turnAngle <= 45) {
+        speed = Math.random() * (16 - 12) + 12; // slumpmässig hastighet mellan 12-16 km/h
+    } else {
+        speed = Math.random() * (20 - 16) + 16; // slumpmässig hastighet mellan 16-20 km/h
+    }
+    return speed;
+}
+
+
+function simulateBikeInUse(bikeId, route, battery) {
     /*** 
      * För att kontinuerligt uppdatera cykelns position med ett fast intervall (2 s),
      * används segment för att fastställa cykelns position inom intervallet.
@@ -150,6 +207,7 @@ function simulateBikeInUse(bikeId, route) {
      * ***/
     let index = 0;
     let speed = 0;
+    let batteryLevel =  battery;
     let segmentDistance = 0; // avstånd för givet segment
     let segmentTraveled = 0; // avstånd färdat inom givet segment
     const interval = 2000; // intervall för hur ofta cykelns position uppdateras på kartan
@@ -169,42 +227,31 @@ function simulateBikeInUse(bikeId, route) {
                 segmentDistance = calculateDistance(current, next);
                 // om cykeln närmar sig slutet av rutten, eller om en kurva närmar sig,
                 // minska hastigheten för att simulera inbromsning
-                /*** 
-                 * =================================================================
-                 * Beräkningen av hastighet pga kurvor är inte helt ideal,
-                 * men ger en uppfattning om hur hastigheten varierar genom resan.
-                 * 
-                 * !!! Optimera om tid finns !!!
-                 * 
-                 * =================================================================
-                 * ***/
-                if (route.length - index <= 2) {
-                    speed = Math.random() * (4 - 2) + 2; // slumpmässig hastighet mellan 2-4 km/h
-                } else if (turnAngle > 70 && turnAngle <= 90) {
-                    speed = Math.random() * (8 - 4) + 4; // slumpmässig hastighet mellan 4-8 km/h
-                } else if (turnAngle > 45 && turnAngle <= 70) {
-                    speed = Math.random() * (12 - 8) + 8; // slumpmässig hastighet mellan 8-12 km/h
-                } else if (turnAngle > 20 && turnAngle <= 45) {
-                    speed = Math.random() * (16 - 12) + 12; // slumpmässig hastighet mellan 12-16 km/h
-                } else {
-                    speed = Math.random() * (20 - 16) + 16; // slumpmässig hastighet mellan 16-20 km/h
-                }
+                speed = calculateCurveSpeed(route, index, turnAngle)
             }
 
             // beräkna färdat avstånd inom givet intervall, addera till färdad sträcka av segmentet
             const distanceCovered = (speed / 3600) * (interval / 1000);
             segmentTraveled += distanceCovered;
 
+            const batteryDrain = calculateBatteryDrain(speed);
+            const timeInMinutes = interval / 1000 / 60; // interval in minutes
+            batteryLevel -= batteryDrain * timeInMinutes; // Decrease battery based on speed
+            console.log(batteryLevel.toFixed(1))
+
+
             // om färdad sträcka är mer än eller lika med distansen, är segmentet avklarat
             if (segmentTraveled >= segmentDistance) {
-                // uppdatera cykelns position och hastighet och skicka data till frontenden
+                // uppdatera cykelns position, batterinivå och hastighet och skicka data till frontenden
                 await bikeManager.updateBikePosition(bikeId, next);
+                await bikeManager.updateBikeBattery(bikeId, batteryLevel.toFixed(1));
                 await bikeManager.updateBikeSpeed(bikeId, speed.toFixed(1)); // onödigt att spara till db? eller behövs det någonstans?
 
                 io.emit("bikeInUse", { 
                     bikeId, 
                     position: next, 
-                    speed: speed.toFixed(1) 
+                    speed: speed.toFixed(1),
+                    battery: batteryLevel.toFixed(1)
                 });
 
                 // återställ färdad sträcka för att påbörja nytt segment
@@ -218,13 +265,15 @@ function simulateBikeInUse(bikeId, route) {
                 const prorgessLng = current[1] + segmentProgress * (next[1] - current[1]);
 
                 const prorgessPosition = [prorgessLat, prorgessLng];
-                // uppdatera cykelns position och hastighet och skicka data till frontenden
+                // uppdatera cykelns position, batterinivå och hastighet och skicka data till frontenden
                 await bikeManager.updateBikePosition(bikeId, prorgessPosition);
+                await bikeManager.updateBikeBattery(bikeId, batteryLevel.toFixed(1));
                 await bikeManager.updateBikeSpeed(bikeId, speed.toFixed(1)); // onödigt att spara till db? eller behövs det någonstans?
                 io.emit("bikeInUse", { 
                     bikeId, 
                     position: prorgessPosition, 
-                    speed: speed.toFixed(1) 
+                    speed: speed.toFixed(1),
+                    battery: batteryLevel.toFixed(1)
                 });
             }
         } else {

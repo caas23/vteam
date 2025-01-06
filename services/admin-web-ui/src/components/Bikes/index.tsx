@@ -25,9 +25,9 @@ const ShowBikes: React.FC<{ bikes: Bike[] }> = ({ bikes }) => {
 		});
 	};
 
-	const createInUseBikeMarker = () => {
+	const createCustomMarker  = (className: string) => {
 		return L.divIcon({
-		className: 'bike-in-use-marker',
+		className,
 		html: `<img src="${scooterIcon}" style="width: 50px; height: 50px; padding: 0.3em;" />`,
 		iconSize: [50, 50],
 		iconAnchor: [25, 50],
@@ -42,11 +42,13 @@ const ShowBikes: React.FC<{ bikes: Bike[] }> = ({ bikes }) => {
 		<>
 		<MarkerClusterGroup iconCreateFunction={() => createClusterMarker()}>
 			{availableBikes.map((bike) => {
+				const lowBattery = bike.status.battery_level < 20;
+				const className = lowBattery ? "bike-available-low-battery" : "bike-marker";
 				return (
 					<Marker
 					key={bike.bike_id}
 					position={bike.location}
-					icon={bikeMarker}
+					icon={lowBattery ? createCustomMarker(className) : bikeMarker}
 					>
 					<Popup>
 						<strong>{bike.bike_id}</strong><br />
@@ -60,17 +62,20 @@ const ShowBikes: React.FC<{ bikes: Bike[] }> = ({ bikes }) => {
 		
 		{/* om cykeln används, visa alltid separat utan cluster (problematiskt om alla används?) */}
 		{inUseBikes.map((bike) => {
+			const lowBattery = bike.status.battery_level < 20;
+			const className = lowBattery ? "bike-in-use-low-battery" : "bike-in-use-marker";
+
 			return (
 			<Marker
 				key={bike.bike_id}
 				position={bike.location}
-				icon={createInUseBikeMarker()}
+				icon={createCustomMarker(className)}
 			>
 				<Popup>
 					<strong>{bike.bike_id}</strong><br />
 					<strong>Speed:</strong> {bike.speed} km/h<br />
 					<strong>Battery:</strong> {bike.status.battery_level}%<br />
-					<strong>Status:</strong> {bike.status.available ? "Available" : "In use"}
+					<strong>Status:</strong> {bike.status.available ? "Available" : "In use"}<br />
 				</Popup>
 			</Marker>
 			);

@@ -16,6 +16,30 @@
     }
 }
 
+.bike-in-use-low-battery img {
+    transform: scale(0.7);
+    border-radius: 50%;
+    animation: blink-in-use 2s infinite;
+}
+
+@keyframes blink-in-use {
+    0% {
+        background-color: var(--color-red-dark);
+    }
+    50% {
+        background-color: var(--color-green);
+    }
+    100% {
+        background-color: var(--color-red-dark);
+    }
+}
+
+.bike-available-low-battery img {
+    transform: scale(0.7);
+    border-radius: 50%;
+    background-color: var(--color-red-dark);
+}
+
 /* .bike-low-battery-marker img {
     transform: scale(0.85);
     border-radius: 50%;
