@@ -170,10 +170,18 @@ const MapComponent: React.FC = () => {
 		};
 		fetchAndSetBikes();
 
-		socket.current?.on("bikeInUse", (data: { bikeId: string; position: [number, number]; speed: number }) => {
+		socket.current?.on("bikeInUse", (data: { bikeId: string; position: [number, number]; speed: number, battery: number }) => {
 			setBikesInCity((prevBikes) =>
 				prevBikes.map((bike) =>
-					bike.bike_id === data.bikeId ? { ...bike, location: data.position, speed: data.speed } : bike
+					bike.bike_id === data.bikeId ? { 
+						...bike,
+						location: data.position,
+						speed: data.speed,
+						status: { 
+							...bike.status,
+							battery_level: data.battery
+						} 
+					} : bike
 				)
 			);
 		});
@@ -307,6 +315,7 @@ const MapComponent: React.FC = () => {
 						socket.current?.emit("startbikeInUse", {
 							bikeId: bike.bike_id,
 							route: matchedRoute.route,
+							battery: bike.status.battery_level,
 						});
 					}
 				}
