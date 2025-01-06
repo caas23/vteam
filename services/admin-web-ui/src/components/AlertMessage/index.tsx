@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import { AlertProps } from "./interfaces";
 
-const AlterMessage: React.FC<AlertProps> = ({
+const AlertMessage: React.FC<AlertProps> = ({
   boxOpen,
   onClose,
   header = "Alert",
@@ -25,4 +25,4 @@ const AlterMessage: React.FC<AlertProps> = ({
   );
 };
 
-export default AlterMessage;
+export default AlertMessage;
