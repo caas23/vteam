@@ -3,12 +3,17 @@ import { Marker, Popup } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import L from "leaflet";
 import { Bike } from "./interfaces";
+import { Socket } from "socket.io-client";
 import scooterIcon from "/src/assets/scooter-pin-blue.png";
 import clusterIcon from "/src/assets/multiple-scooter-pin-blue.png";
 import ForceStopMessage from "../ForceStopMessage";
 import "./index.css";
 
-const ShowBikes: React.FC<{ bikes: Bike[], socket: any}> = ({ bikes, socket }) => {
+const ShowBikes: React.FC<{ 
+	bikes: Bike[], 
+	users: Map<string, string | null>, 
+	socket: React.MutableRefObject<Socket | null>;
+}> = ({ bikes, users, socket }) => {
 	const [forceStopMessage, setForceStopMessage] = useState("");
 	const [alertBox, setAlertBox] = useState(false);
 	const [currentBike, setCurrentBike] = useState<Bike | null>(null);
@@ -42,14 +47,14 @@ const ShowBikes: React.FC<{ bikes: Bike[], socket: any}> = ({ bikes, socket }) =
 
 	const handleForceStop = (bike: Bike) => {
 		setCurrentBike(bike);
-		setForceStopMessage(`Bike ${bike.bike_id} stopped.`);
+		setForceStopMessage(`for bike ${bike.bike_id}, rented by user ${users.get(bike.bike_id)}`);
 		setAlertBox(true);
 	};
 
 	const handleSubmitReason = (reason: string) => {
 		if (currentBike) {
-			console.log(socket.current.connected)
-			socket.current?.emit("forceStop", { bike: currentBike, reason });
+			const user = users.get(currentBike.bike_id);
+			socket.current?.emit("forceStop", { bike: currentBike, reason, user: user });
 			setAlertBox(false);
 			setCurrentBike(null);
 		}
@@ -96,6 +101,7 @@ const ShowBikes: React.FC<{ bikes: Bike[], socket: any}> = ({ bikes, socket }) =
 					<strong>Speed:</strong> {bike.speed} km/h<br />
 					<strong>Battery:</strong> {bike.status.battery_level}%<br />
 					<strong>Status:</strong> {bike.status.available ? "Available" : "In use"}<br />
+					<strong>User:</strong> {users.get(bike.bike_id)}<br />
 					<button className="force-stop-btn" onClick={() => handleForceStop(bike)}>Force stop</button>
 				</Popup>
 			</Marker>

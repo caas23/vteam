@@ -13,6 +13,7 @@ import http from "http";
 import { Server } from "socket.io";
 import bikeManager from "../../bike-logic/bikeManager.js";
 import { saveTrip } from "./trip.js";
+import { updateTrips } from "../../db/users.js";
 
 dotenv.config();
 
@@ -55,7 +56,7 @@ io.on("connection", (socket) => {
     // console.log("New client connected", socket.id);
 
     // start bike movement simulation
-    socket.on("startbikeInUse", async ({ bikeId, route, battery }) => {
+    socket.on("startBikeInUse", async ({ bikeId, route, battery }) => {
         if (!Array.isArray(route) || route.length === 0) {
             console.log("Invalid route data");
             return;
@@ -83,11 +84,8 @@ io.on("connection", (socket) => {
         // set bike status to "available: true"
         await bikeManager.stopBike(data.bike.bike_id);
 
-        /*** 
-         * ===============================================
-         * remember to connect each trip to a user as well
-         * ===============================================
-        ***/
+        // connect trip to the user
+        await updateTrips(data.user, tripId)
     });
     
 
@@ -95,9 +93,7 @@ io.on("connection", (socket) => {
     // lägg till senare om tid finns
     socket.on("forceStop", async (data) => {
         const bikeId = data.bike.bike_id;
-        console.log(`Forced stop for bike: ${bikeId}`);
-
-        const tmp = tempData[bikeId]
+        const tmp = tempData[bikeId];
 
         if (tmp && tmp.moveInterval) {
             clearInterval(tmp.moveInterval);
@@ -107,7 +103,8 @@ io.on("connection", (socket) => {
         io.emit("tripForceStop", { 
             bike: {
                 ...data.bike,
-                speed: 0,
+                location: tmp.position,
+                speed: 0
             }, 
             reason: data.reason,
             distance: tmp.distance,
@@ -251,6 +248,7 @@ function simulateBikeInUse(bikeId, route, battery) {
     tempData[bikeId] = {
         distance: 0,
         route: routeTraveled,
+        position: undefined
     };
 
     const moveBike = async () => {
@@ -295,6 +293,8 @@ function simulateBikeInUse(bikeId, route, battery) {
                     battery: batteryLevel.toFixed(1),
                 });
 
+                tempData[bikeId].position = next;
+
                 // återställ färdad sträcka för att påbörja nytt segment
                 segmentTraveled = 0;
                 index++;
@@ -305,7 +305,7 @@ function simulateBikeInUse(bikeId, route, battery) {
                 const prorgessLat = current[0] + segmentProgress * (next[0] - current[0]);
                 const prorgessLng = current[1] + segmentProgress * (next[1] - current[1]);
 
-                const prorgessPosition = [prorgessLat, prorgessLng];
+                const prorgessPosition = [prorgessLat.toFixed(4), prorgessLng.toFixed(4)];
                 // uppdatera cykelns position, batterinivå och hastighet och skicka data till frontenden
                 await bikeManager.updateBikePosition(bikeId, prorgessPosition);
                 await bikeManager.updateBikeBattery(bikeId, batteryLevel.toFixed(1));
@@ -317,15 +317,14 @@ function simulateBikeInUse(bikeId, route, battery) {
                     battery: batteryLevel.toFixed(1),
                 });
 
+                tempData[bikeId].position = prorgessPosition;
                 tempData[bikeId].distance = totalDistanceTraveled.toFixed(2);
             }
         } else {
             console.log(`Bike ${bikeId} finished route.`);
             clearInterval(move);
         }
-
     };
-    
     const move = setInterval(moveBike, interval);
     tempData[bikeId].moveInterval = move;
 }

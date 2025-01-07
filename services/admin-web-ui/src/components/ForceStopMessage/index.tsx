@@ -5,7 +5,7 @@ import { AlertProps } from "./interfaces";
 const ForceStopMessage: React.FC<AlertProps> = ({
 	boxOpen,
 	onClose,
-	header = "Alert",
+	header = "Stop trip",
 	message = "",
 	onSubmitReason,
 }) => {
