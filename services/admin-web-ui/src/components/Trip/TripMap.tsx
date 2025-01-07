@@ -98,7 +98,7 @@ const TripMap: React.FC<TripMapProps> = ({ data, startLocation, endLocation, Fet
             <Marker position={endLocation} icon={endLocationMarker}>
             <Popup>End location</Popup>
             </Marker>
-            {route.length > 0 && <Polyline positions={route} color="#2E6DAE" weight={4} />}
+            {route.length > 0 && <Polyline positions={[...route, endLocation]} color="#2E6DAE" weight={4} />}
         </MapContainer>
     </div>
   );

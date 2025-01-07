@@ -52,6 +52,12 @@ const TripDetails: React.FC<TripDetailsProps> = ({ data }) => {
         <span className="trip-price">Price: {data.price} kr</span>
         <div onClick={handlePriceInfoClick} className="price-info"></div>
       </div>
+      {data.trip_info && (
+      <div className="trip-info">
+        <span>{data.trip_info}</span>
+        {data.fee && <span>{data.fee}</span> }
+      </div>
+      )}
       <TripMap
         data={data}
         startLocation={data.start_location}

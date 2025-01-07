@@ -32,6 +32,17 @@ span.trip-price{
   border-bottom: 1px solid;
 }
 
+.trip-info {
+  text-align: center;
+  padding: 0.5em;
+  border: 2px dashed var(--color-red-dark);
+  margin-bottom: 0.5em;
+
+  & span {
+    display: block;
+  }
+}
+
 div.price-info {
   margin-left: 5px;
   font-weight: bold;
@@ -42,4 +53,3 @@ div.price-info {
       color: var(--color-blue-primary)
   }
 }
-
