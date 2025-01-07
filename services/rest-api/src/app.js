@@ -107,7 +107,7 @@ io.on("connection", (socket) => {
                 speed: 0
             }, 
             reason: data.reason,
-            distance: tmp.distance,
+            distance: parseFloat(tmp.distance * 1000), // i meter
             route: tmp.route
         });
         
@@ -305,7 +305,7 @@ function simulateBikeInUse(bikeId, route, battery) {
                 const prorgessLat = current[0] + segmentProgress * (next[0] - current[0]);
                 const prorgessLng = current[1] + segmentProgress * (next[1] - current[1]);
 
-                const prorgessPosition = [prorgessLat.toFixed(4), prorgessLng.toFixed(4)];
+                const prorgessPosition = [parseFloat(prorgessLat.toFixed(4)), parseFloat(prorgessLng.toFixed(4))];
                 // uppdatera cykelns position, batterinivå och hastighet och skicka data till frontenden
                 await bikeManager.updateBikePosition(bikeId, prorgessPosition);
                 await bikeManager.updateBikeBattery(bikeId, batteryLevel.toFixed(1));
