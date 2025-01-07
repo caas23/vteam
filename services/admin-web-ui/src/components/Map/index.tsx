@@ -15,7 +15,8 @@ import "./index.css";
 // kan flytta en cykel enligt en fördefinierad rutt,
 // simulera en varierande hastighet med viss hänsyn till kurvor etc,
 // parkera cykel, göra den tillgänglig, spara resan i db,
-// lägga till resan i completed_trips för given cykel
+// lägga till resan i completed_trips för given cykel,
+// lägga till resan i completed_trips för en slumpad användare,
 // admin kan tvinga ett stopp för en pågående resa, av någon given anledning
 // fungerar nu att lämna vyn/ladda om sidan utan att cyklarna
 // försöker hämta en ny rutt (om de redan följer en)
@@ -50,7 +51,7 @@ const MapComponent: React.FC = () => {
 	// cykel försöker följa flera rutter, dels för att kunna spara undan när resan är avslutad.
 	const [bikeTrips, setBikeTrips] = useState<Map<string, Trip | null>>(new Map());
 	const [bikeRoutes, setBikeRoutes] = useState<Map<string, Route | null>>(new Map());
-
+	const [bikeUsers, setBikeUsers] = useState<Map<string, string | null>>(new Map());
 	
 	// hämta sparade (pågående) rutter för att undvika att en cykel försöker hämta en ny rutt
 	useEffect(() => {
@@ -64,11 +65,17 @@ const MapComponent: React.FC = () => {
 				([key, value]) => [key, value as Route | null]
 			)
 		);
+		const savedUsers = new Map<string, string | null>(
+			Object.entries(JSON.parse(localStorage.getItem("bikeUsers") || "{}")).map(
+				([key, value]) => [key, value as string | null]
+			)
+		);
 		setBikeTrips(savedTrips);
 		setBikeRoutes(savedRoutes);
+		setBikeUsers(savedUsers);
 	}, []);
 
-	// uppdatera localstorage när bikeTrips eller bikeRoutes ändras
+	// uppdatera localstorage när bikeTrips, bikeRoutes och/eller bikeUsers ändras
 	useEffect(() => {
 		localStorage.setItem("bikeTrips", JSON.stringify(Object.fromEntries(bikeTrips)));
 	}, [bikeTrips]);
@@ -76,6 +83,10 @@ const MapComponent: React.FC = () => {
 	useEffect(() => {
 		localStorage.setItem("bikeRoutes", JSON.stringify(Object.fromEntries(bikeRoutes)));
 	}, [bikeRoutes]);
+
+	useEffect(() => {
+		localStorage.setItem("bikeUsers", JSON.stringify(Object.fromEntries(bikeUsers)));
+	}, [bikeUsers]);
 
 	useEffect(() => {
 		if (!socket.current) {
@@ -170,7 +181,12 @@ const MapComponent: React.FC = () => {
 		};
 		fetchAndSetBikes();
 
-		socket.current?.on("bikeInUse", (data: { bikeId: string; position: [number, number]; speed: number, battery: number }) => {
+		socket.current?.on("bikeInUse", (data: { 
+			bikeId: string;
+			position: [number, number];
+			speed: number;
+			battery: number;
+		}) => {
 			setBikesInCity((prevBikes) =>
 				prevBikes.map((bike) =>
 					bike.bike_id === data.bikeId ? { 
@@ -194,6 +210,7 @@ const MapComponent: React.FC = () => {
 		}) => {
 			if (!bikeTrips.has(data.bike.bike_id)) return;
 			const bikeTrip = bikeTrips.get(data.bike.bike_id);
+			const bikeUser = bikeUsers.get(data.bike.bike_id)
 
 			// för att urskilja en avbruten resa mot en "vanlig", adderas en avgift om
 			// admin anser att användaren kört på ett farligt eller misstänksamt sätt.
@@ -219,7 +236,8 @@ const MapComponent: React.FC = () => {
 					distance: data.distance,
 				},
 				reason: data.reason,
-				fee: fee
+				fee: fee,
+				user: bikeUser
 			});
 	
 			// efter genomförd resa tas temporärt sparad data bort från localstorage
@@ -234,6 +252,12 @@ const MapComponent: React.FC = () => {
 				updatedRoutes.delete(data.bike.bike_id);
 				return updatedRoutes;
 			});
+			
+			setBikeUsers((prev) => {
+				const updatedUsers = new Map(prev);
+				updatedUsers.delete(data.bike.bike_id);
+				return updatedUsers;
+			});
 	
 			// cykeln gör tillgänglig igen
 			setBikesInCity((prevBikes) =>
@@ -247,7 +271,7 @@ const MapComponent: React.FC = () => {
 
 		return () => {
 			socket.current?.off("bikeInUse");
-			socket.current?.off("forceStop");
+			socket.current?.off("tripForceStop");
 		};
 	}, [currentCity, city, routesLoaded, bikeTrips]);
 
@@ -288,6 +312,7 @@ const MapComponent: React.FC = () => {
 			// hämta sparade rutter om de finns
 			const bikeTrip = bikeTrips.get(bike.bike_id);
 			const bikeRoute = bikeRoutes.get(bike.bike_id);
+			const bikeUser = bikeUsers.get(bike.bike_id)
 			
 			// om en rutt är avslutad, spara undan detaljer i db och ta bort från 
 			// temporärt sparade rutter/resor i localstorage
@@ -312,6 +337,7 @@ const MapComponent: React.FC = () => {
 						route: bikeRoute.route,
 						distance: bikeRoute.distance,
 					},
+					user: bikeUser
 				});
 		
 				// efter genomförd resa tas temporärt sparad data bort från localstorage
@@ -325,6 +351,12 @@ const MapComponent: React.FC = () => {
 					const updatedRoutes = new Map(prev);
 					updatedRoutes.delete(bike.bike_id);
 					return updatedRoutes;
+				});
+
+				setBikeUsers((prev) => {
+					const updatedUsers = new Map(prev);
+					updatedUsers.delete(bike.bike_id);
+					return updatedUsers;
 				});
 		
 				// cykeln gör tillgänglig igen
@@ -371,8 +403,20 @@ const MapComponent: React.FC = () => {
 							updatedTrips.set(bike.bike_id, trip);
 							return updatedTrips;
 						});
+						
+						setBikeUsers((prev) => {
+							const updatedTrips = new Map(prev);
+							let user;
+							// se till så att en användare bara kan använda en cykel samtidigt
+							do {
+								const randomNumber = Math.floor(Math.random() * 1000) + 1;
+								user = `U${randomNumber.toString().padStart(3, '0')}`;
+							} while ([...bikeUsers.values()].includes(user));
+							updatedTrips.set(bike.bike_id, user);
+							return updatedTrips;
+						});
 			
-						socket.current?.emit("startbikeInUse", {
+						socket.current?.emit("startBikeInUse", {
 							bikeId: bike.bike_id,
 							route: matchedRoute.route,
 							battery: bike.status.battery_level,
@@ -401,7 +445,7 @@ const MapComponent: React.FC = () => {
 			/>
 			<ShowParkingZones zones={availableZones} />
 			<ShowChargingStations stations={availableStations} />
-			<ShowBikes bikes={bikesInCity} socket={socket}/>
+			<ShowBikes bikes={bikesInCity} users={bikeUsers} socket={socket}/>
 			{cityBorders && (
 				<GeoJSON
 					data={cityBorders}
