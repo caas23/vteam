@@ -106,6 +106,11 @@ const bikeManager = {
         return result;
     },
     
+    updateBikeState: async function updateBikeState(bikeData) {
+        const result = await bike.updateBike(bikeData)
+        return result;
+    },
+    
     updateBikePosition: async function updateBikePosition(bikeId, newPosition) {
         const result = await bike.move(bikeId, newPosition)
         return result;

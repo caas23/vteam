@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import { Marker, Popup } from "react-leaflet";
 import MarkerClusterGroup from "react-leaflet-markercluster";
 import L from "leaflet";
@@ -17,6 +17,8 @@ const ShowBikes: React.FC<{
 	const [forceStopMessage, setForceStopMessage] = useState("");
 	const [alertBox, setAlertBox] = useState(false);
 	const [currentBike, setCurrentBike] = useState<Bike | null>(null);
+	const [openBikeId, setOpenBikeId] = useState<string | null>(null);
+	const markerRefs = useRef<Map<string, L.Marker>>(new Map());
 
 	const bikeMarker = L.icon({
 		iconUrl: scooterIcon,
@@ -25,23 +27,23 @@ const ShowBikes: React.FC<{
 		popupAnchor: [0, -40],
 	});
 
-	const createClusterMarker = () => {
-		return L.icon({
-		iconUrl: clusterIcon,
-		iconSize: [50, 50],
-		iconAnchor: [25, 50],
-		popupAnchor: [0, -40],
-
+	const createClusterMarker = (className: string) => {
+		return L.divIcon({
+			className, 
+			html: `<img src="${clusterIcon}" style="width: 55px; height: 55px; padding: 0.3em;" />`,
+			iconSize: [50, 50],
+			iconAnchor: [25, 50],
+			popupAnchor: [0, -40],
 		});
 	};
 
 	const createCustomMarker  = (className: string) => {
 		return L.divIcon({
-		className,
-		html: `<img src="${scooterIcon}" style="width: 50px; height: 50px; padding: 0.3em;" />`,
-		iconSize: [50, 50],
-		iconAnchor: [25, 50],
-		popupAnchor: [0, -40],
+			className,
+			html: `</>`,
+			iconSize: [10, 10],
+			iconAnchor: [5, 45],
+			popupAnchor: [0, -40],
 		});
 	};
 
@@ -60,20 +62,34 @@ const ShowBikes: React.FC<{
 		}
 	};
 
+	useEffect(() => {
+		if (openBikeId) {
+		  const marker = markerRefs.current.get(openBikeId);
+		  if (marker) {
+			marker.openPopup();
+		  }
+		}
+	}, [bikes]);
+
 	const availableBikes = bikes.filter((bike) => bike.status.available);
 	const inUseBikes = bikes.filter((bike) => !bike.status.available);
 
 	return (
 		<>
-		<MarkerClusterGroup iconCreateFunction={() => createClusterMarker()}>
+		<MarkerClusterGroup iconCreateFunction={() => createClusterMarker("bike-marker")}>
 			{availableBikes.map((bike) => {
 				const lowBattery = bike.status.battery_level < 20;
 				const className = lowBattery ? "bike-available-low-battery" : "bike-marker";
 				return (
 					<Marker
-					key={bike.bike_id}
-					position={bike.location}
-					icon={lowBattery ? createCustomMarker(className) : bikeMarker}
+						key={bike.bike_id}
+						position={bike.location}
+						icon={lowBattery ? createCustomMarker(className) : bikeMarker}
+						ref={(marker) => marker && markerRefs.current.set(bike.bike_id, marker)}
+						eventHandlers={{
+							popupopen: () => setOpenBikeId(bike.bike_id),
+							popupclose: () => setOpenBikeId(null),
+						}}
 					>
 					<Popup>
 						<strong>{bike.bike_id}</strong><br />
@@ -84,6 +100,34 @@ const ShowBikes: React.FC<{
 				);
 			})}
 		</MarkerClusterGroup>
+		
+		{/* <MarkerClusterGroup iconCreateFunction={() => createClusterMarker("bike-in-use-marker")}>
+			{inUseBikes.map((bike) => {
+				const lowBattery = bike.status.battery_level < 20;
+				const className = lowBattery ? "bike-in-use-low-battery" : "bike-in-use-marker";
+				return (
+					<Marker
+						key={bike.bike_id}
+						position={bike.location}
+						icon={createCustomMarker(className)}
+						ref={(marker) => marker && markerRefs.current.set(bike.bike_id, marker)}
+						eventHandlers={{
+							popupopen: () => setOpenBikeId(bike.bike_id),
+							popupclose: () => setOpenBikeId(null),
+						}}
+					>
+					<Popup>
+						<strong>{bike.bike_id}</strong><br />
+						<strong>Speed:</strong> {bike.speed} km/h<br />
+						<strong>Battery:</strong> {bike.status.battery_level}%<br />
+						<strong>Status:</strong> {bike.status.available ? "Available" : "In use"}<br />
+						<strong>User:</strong> {users.get(bike.bike_id)}<br />
+						<button className="force-stop-btn" onClick={() => handleForceStop(bike)}>Force stop</button>
+					</Popup>
+					</Marker>
+				);
+			})}
+		</MarkerClusterGroup> */}
 		
 		{/* om cykeln används, visa alltid separat utan cluster (problematiskt om alla används?) */}
 		{inUseBikes.map((bike) => {
@@ -106,13 +150,13 @@ const ShowBikes: React.FC<{
 				</Popup>
 			</Marker>
 			);
-			})}
-			<ForceStopMessage
-				boxOpen={alertBox}
-				onClose={() => setAlertBox(false)}
-				message={forceStopMessage}
-				onSubmitReason={handleSubmitReason}
-			/>
+		})}
+		<ForceStopMessage
+			boxOpen={alertBox}
+			onClose={() => setAlertBox(false)}
+			message={forceStopMessage}
+			onSubmitReason={handleSubmitReason}
+		/>
 		</>
 	);
 };
