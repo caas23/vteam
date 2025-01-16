@@ -1,3 +1,5 @@
+import { Socket } from "socket.io-client";
+
 interface City {
     _id: string;
     name: string;
@@ -53,6 +55,11 @@ interface Trip {
 	route: [number, number][];
 	distance: number;
 }
+
+interface BikeUsersProps {
+    bikeUsers: Map<string, string | null>;
+    socket: React.MutableRefObject<Socket | null>
+  }
   
 export type {
     City,
@@ -60,6 +67,7 @@ export type {
     ChargingStation,
     ParkingZone,
     Route,
-    Trip
+    Trip,
+    BikeUsersProps
 };
   

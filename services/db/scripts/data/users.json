@@ -9998,5 +9998,5005 @@
       "T2036"
     ],
     "balance": 917
+  },
+  {
+    "name": "Embla Kristoffersson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1684",
+      "T2082"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Emre Källman",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T974",
+      "T1211"
+    ],
+    "balance": 695
+  },
+  {
+    "name": "Nick Lövgren",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2451",
+      "T395"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "My Malmqvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1554",
+      "T1751"
+    ],
+    "balance": 981
+  },
+  {
+    "name": "Kendra Ahlberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2308",
+      "T2899"
+    ],
+    "balance": 674
+  },
+  {
+    "name": "Andreas Karlsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T446",
+      "T2788"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Laura Wennerström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1984",
+      "T2921"
+    ],
+    "balance": 970
+  },
+  {
+    "name": "Michaela Örn",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T504",
+      "T2588"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Bartolomeus Thor",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2817",
+      "T1556"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Azra Jönsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1272",
+      "T2950"
+    ],
+    "balance": 795
+  },
+  {
+    "name": "Evin Bergsten",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2188",
+      "T151"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Hana Svensson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T335",
+      "T410"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Pål Sandell",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2746",
+      "T1544"
+    ],
+    "balance": 388
+  },
+  {
+    "name": "Maria Tillberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T644",
+      "T435"
+    ],
+    "balance": 987
+  },
+  {
+    "name": "Malva Nylén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1750",
+      "T362"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Haley Henningsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1662",
+      "T1729"
+    ],
+    "balance": 255
+  },
+  {
+    "name": "Judith Kempe",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2641",
+      "T2790"
+    ],
+    "balance": 231
+  },
+  {
+    "name": "Mio Stenström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1965",
+      "T765"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Wendela Persson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2015",
+      "T2149"
+    ],
+    "balance": 821
+  },
+  {
+    "name": "Fatima Johansson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1139",
+      "T1186"
+    ],
+    "balance": 996
+  },
+  {
+    "name": "Helen Wendel",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T708",
+      "T645"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Noak Björn",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1038",
+      "T1334"
+    ],
+    "balance": 497
+  },
+  {
+    "name": "Gottfrid Lundahl",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2925",
+      "T2822"
+    ],
+    "balance": 969
+  },
+  {
+    "name": "Nikolaj Vikman",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T306",
+      "T1788"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Maximillian Glans",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T545",
+      "T227"
+    ],
+    "balance": 315
+  },
+  {
+    "name": "Elna Sandell",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2467",
+      "T1162"
+    ],
+    "balance": 906
+  },
+  {
+    "name": "Ebba Hjorth",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T953",
+      "T1887"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Wendela Hultman",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2165",
+      "T713"
+    ],
+    "balance": 936
+  },
+  {
+    "name": "Anja Hedblom",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2005",
+      "T2908"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Set Lagerström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T081",
+      "T2322"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Muhammed Wallman",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2172",
+      "T752"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Aina Brink",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2366",
+      "T1340"
+    ],
+    "balance": 868
+  },
+  {
+    "name": "Cindy Kristiansson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T649",
+      "T1749"
+    ],
+    "balance": 551
+  },
+  {
+    "name": "Valle Åhs",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1142",
+      "T2419"
+    ],
+    "balance": 480
+  },
+  {
+    "name": "Gry Öst",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T734",
+      "T2906"
+    ],
+    "balance": 617
+  },
+  {
+    "name": "Joel Lidberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2276",
+      "T2858"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Sanna Edgren",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2727",
+      "T2155"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Jens Brorsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2498",
+      "T1695"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Ilse Christensen",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1709",
+      "T751"
+    ],
+    "balance": 362
+  },
+  {
+    "name": "Destiny Öqvist",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1279",
+      "T2267"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Hjalmar Hellberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T468",
+      "T2363"
+    ],
+    "balance": 797
+  },
+  {
+    "name": "Amel Sjöstrand",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1617",
+      "T1054"
+    ],
+    "balance": 900
+  },
+  {
+    "name": "Alvar Wallgren",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T728",
+      "T2142"
+    ],
+    "balance": 502
+  },
+  {
+    "name": "Kaspar Schröder",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2678",
+      "T1301"
+    ],
+    "balance": 719
+  },
+  {
+    "name": "Zeinab Johannesson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2203",
+      "T2314"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Jens Brorsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2396",
+      "T1967"
+    ],
+    "balance": 397
+  },
+  {
+    "name": "Tintin Månsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1438",
+      "T2146"
+    ],
+    "balance": 252
+  },
+  {
+    "name": "Helga Peterson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T288",
+      "T048"
+    ],
+    "balance": 690
+  },
+  {
+    "name": "Svante Vikberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2159",
+      "T819"
+    ],
+    "balance": 702
+  },
+  {
+    "name": "Miliam Zetterström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T747",
+      "T1577"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Greta Sjösten",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2808",
+      "T1170"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Leila Lindström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T753",
+      "T1658"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Melody Landén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2404",
+      "T1043"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Jessika Back",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2920",
+      "T634"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Malek Hägg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T131",
+      "T386"
+    ],
+    "balance": 753
+  },
+  {
+    "name": "Karla Stål",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1584",
+      "T633"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Kasper Bratt",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2645",
+      "T772"
+    ],
+    "balance": 753
+  },
+  {
+    "name": "Juliette Örn",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1200",
+      "T794"
+    ],
+    "balance": 214
+  },
+  {
+    "name": "Botvid Backlund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T839",
+      "T2489"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Marlon Ryberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T521",
+      "T2570"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lavin Johannesson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T748",
+      "T2478"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Milia Kristiansson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2956",
+      "T1173"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Hadi Rosell",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1500",
+      "T519"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Elias Källberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2394",
+      "T1963"
+    ],
+    "balance": 271
+  },
+  {
+    "name": "Sigge Nylén",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1217",
+      "T1245"
+    ],
+    "balance": 749
+  },
+  {
+    "name": "Allie Åkesson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2728",
+      "T1470"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Noelia Thorsell",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1490",
+      "T1338"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Zacharias Törnblom",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T986",
+      "T485"
+    ],
+    "balance": 890
+  },
+  {
+    "name": "Malek Östman",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1877",
+      "T2651"
+    ],
+    "balance": 200
+  },
+  {
+    "name": "Sara Nyman",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T216",
+      "T2975"
+    ],
+    "balance": 501
+  },
+  {
+    "name": "Elliot Gabrielsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2836",
+      "T021"
+    ],
+    "balance": 291
+  },
+  {
+    "name": "Nikolina Åhlén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2100",
+      "T1602"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Philippa Müller",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T921",
+      "T2116"
+    ],
+    "balance": 331
+  },
+  {
+    "name": "Dania Engström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1914",
+      "T1371"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Sandy Rydén",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1923",
+      "T2236"
+    ],
+    "balance": 461
+  },
+  {
+    "name": "Sandra Haglund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2405",
+      "T1325"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Madelene Bohman",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1077",
+      "T507"
+    ],
+    "balance": 954
+  },
+  {
+    "name": "My Hedén",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1894",
+      "T475"
+    ],
+    "balance": 269
+  },
+  {
+    "name": "Helga Jarl",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T014",
+      "T2327"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lillemor Berglin",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2420",
+      "T800"
+    ],
+    "balance": 714
+  },
+  {
+    "name": "Liana Stefansson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2622",
+      "T448"
+    ],
+    "balance": 351
+  },
+  {
+    "name": "Carla Sandell",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T434",
+      "T1172"
+    ],
+    "balance": 874
+  },
+  {
+    "name": "Elliot Sigfridsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1087",
+      "T217"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Kian Lindén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T031",
+      "T343"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Ida Nordlander",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T757",
+      "T322"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Esbjörn Vikström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T182",
+      "T1349"
+    ],
+    "balance": 717
+  },
+  {
+    "name": "Kaspar Lantz",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2539",
+      "T2978"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Roland Ekvall",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1956",
+      "T2340"
+    ],
+    "balance": 937
+  },
+  {
+    "name": "Frej Örn",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T303",
+      "T654"
+    ],
+    "balance": 502
+  },
+  {
+    "name": "Olga Zetterlund",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1294",
+      "T2557"
+    ],
+    "balance": 545
+  },
+  {
+    "name": "Lillie Ragnarsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1001",
+      "T005"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Knut Wirén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1064",
+      "T2749"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Thilda Grönlund",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T844",
+      "T1212"
+    ],
+    "balance": 726
+  },
+  {
+    "name": "Jimmy Grönqvist",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1845",
+      "T2663"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lillian Vikman",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T226",
+      "T600"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Agnes Törnkvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2718",
+      "T513"
+    ],
+    "balance": 953
+  },
+  {
+    "name": "Melissa Helin",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2032",
+      "T1548"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Malek Hemmingsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1457",
+      "T050"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Holger Åström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T692",
+      "T2349"
+    ],
+    "balance": 309
+  },
+  {
+    "name": "Sandra Mårtensson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1300",
+      "T2633"
+    ],
+    "balance": 379
+  },
+  {
+    "name": "Narin Rosén",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2079",
+      "T1397"
+    ],
+    "balance": 482
+  },
+  {
+    "name": "Estelle Westerlund",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2676",
+      "T2887"
+    ],
+    "balance": 262
+  },
+  {
+    "name": "Alve Mårtensson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2893",
+      "T2982"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lisen Åkerlund",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2860",
+      "T2659"
+    ],
+    "balance": 254
+  },
+  {
+    "name": "Joachim Kroon",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1659",
+      "T2954"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Carla Bergström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1660",
+      "T843"
+    ],
+    "balance": 223
+  },
+  {
+    "name": "Wendela Rehn",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2321",
+      "T927"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Carla Hedström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2238",
+      "T2737"
+    ],
+    "balance": 443
+  },
+  {
+    "name": "Leopold Ros",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T811",
+      "T1810"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Fanny Vikström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2234",
+      "T1071"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Christopher Engvall",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1406",
+      "T775"
+    ],
+    "balance": 857
+  },
+  {
+    "name": "Loke Bergkvist",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1758",
+      "T2470"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Thelma Kling",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1276",
+      "T2315"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Amelie Jansson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T463",
+      "T1010"
+    ],
+    "balance": 258
+  },
+  {
+    "name": "Jenna Rasmusson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1741",
+      "T1513"
+    ],
+    "balance": 254
+  },
+  {
+    "name": "Susanna Einarsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1886",
+      "T2434"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Pål Fritz",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T874",
+      "T1798"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Krister Thörn",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2766",
+      "T2354"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Alessia Forsell",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1313",
+      "T2338"
+    ],
+    "balance": 984
+  },
+  {
+    "name": "Joseph Westin",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T133",
+      "T1089"
+    ],
+    "balance": 549
+  },
+  {
+    "name": "Marika Sundkvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1867",
+      "T1538"
+    ],
+    "balance": 717
+  },
+  {
+    "name": "Jimmy Sahlin",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2511",
+      "T2229"
+    ],
+    "balance": 769
+  },
+  {
+    "name": "Winston Wallberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1682",
+      "T1993"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Caspar Wallberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2112",
+      "T2071"
+    ],
+    "balance": 446
+  },
+  {
+    "name": "Hillevi Blomdahl",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2202",
+      "T114"
+    ],
+    "balance": 992
+  },
+  {
+    "name": "Liana Åslund",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T670",
+      "T659"
+    ],
+    "balance": 545
+  },
+  {
+    "name": "Natasha Ahlberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T314",
+      "T2590"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Liana Bergendahl",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1474",
+      "T1147"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Edith Åhlén",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1419",
+      "T1365"
+    ],
+    "balance": 276
+  },
+  {
+    "name": "Miran Ludvigsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T928",
+      "T1076"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Manda Törnkvist",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2750",
+      "T833"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Eila Frid",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1912",
+      "T222"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Kaj Vikman",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T405",
+      "T773"
+    ],
+    "balance": 485
+  },
+  {
+    "name": "Cornelius Edberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1410",
+      "T923"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Cornelius Göransson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1668",
+      "T1905"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Dan Svensson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1163",
+      "T552"
+    ],
+    "balance": 862
+  },
+  {
+    "name": "Therese Nordlund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1926",
+      "T1606"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Emir Sander",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1420",
+      "T2699"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Hulda Hellberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T313",
+      "T688"
+    ],
+    "balance": 841
+  },
+  {
+    "name": "Rayan Ros",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1767",
+      "T1258"
+    ],
+    "balance": 879
+  },
+  {
+    "name": "Dennis Sandahl",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2903",
+      "T1509"
+    ],
+    "balance": 920
+  },
+  {
+    "name": "Egil Seger",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T683",
+      "T2476"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Vidar Holmlund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T636",
+      "T2802"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Linus Englund",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2872",
+      "T1320"
+    ],
+    "balance": 952
+  },
+  {
+    "name": "Tuwa Lindfors",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1884",
+      "T300"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Nour Sjöstedt",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T746",
+      "T1820"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Ajla Rosendahl",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1765",
+      "T972"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Malek Ahlberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T276",
+      "T776"
+    ],
+    "balance": 927
+  },
+  {
+    "name": "Zeinab Åkesson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T799",
+      "T140"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Marielle Thorsell",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2851",
+      "T2701"
+    ],
+    "balance": 429
+  },
+  {
+    "name": "Pål Bergström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1318",
+      "T195"
+    ],
+    "balance": 360
+  },
+  {
+    "name": "Petter Edlund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2934",
+      "T2190"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Malek Zachrisson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2361",
+      "T2335"
+    ],
+    "balance": 826
+  },
+  {
+    "name": "Oskar Stenman",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T801",
+      "T2258"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Alexis Norling",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1113",
+      "T866"
+    ],
+    "balance": 226
+  },
+  {
+    "name": "Allie Roos",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2013",
+      "T936"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Athena Wennström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1569",
+      "T792"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Miranda Carlén",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1563",
+      "T2312"
+    ],
+    "balance": 687
+  },
+  {
+    "name": "Eila Thunberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T512",
+      "T2250"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Karolina Olsen",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2889",
+      "T124"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Bodil Ragnarsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1127",
+      "T1661"
+    ],
+    "balance": 681
+  },
+  {
+    "name": "Hassan Wickström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2611",
+      "T2156"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Knut Hjorth",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2077",
+      "T2359"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Josef Rosenkvist",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2050",
+      "T367"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lukas Sjödahl",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2607",
+      "T1232"
+    ],
+    "balance": 731
+  },
+  {
+    "name": "Melissa Lidberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1790",
+      "T2949"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Terese Åhs",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2918",
+      "T837"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Carolina Bark",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T232",
+      "T054"
+    ],
+    "balance": 935
+  },
+  {
+    "name": "Severin Wirén",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T724",
+      "T2228"
+    ],
+    "balance": 531
+  },
+  {
+    "name": "Erza Söderkvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1859",
+      "T1883"
+    ],
+    "balance": 241
+  },
+  {
+    "name": "Adriana Seger",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2060",
+      "T1593"
+    ],
+    "balance": 618
+  },
+  {
+    "name": "Didrik Edvinsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T717",
+      "T192"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Terese Evertsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1117",
+      "T2288"
+    ],
+    "balance": 661
+  },
+  {
+    "name": "Ingemund Gidlund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T525",
+      "T2432"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Evelin Brännström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T173",
+      "T2616"
+    ],
+    "balance": 792
+  },
+  {
+    "name": "Erhard Thunberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T599",
+      "T912"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Emina Lindström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T916",
+      "T1942"
+    ],
+    "balance": 876
+  },
+  {
+    "name": "Joakim Fröberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1647",
+      "T677"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Marielle Leander",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T315",
+      "T474"
+    ],
+    "balance": 513
+  },
+  {
+    "name": "Alex Wickström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T769",
+      "T2560"
+    ],
+    "balance": 968
+  },
+  {
+    "name": "Rolf Andersson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T570",
+      "T2760"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Mustafa Svensk",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T309",
+      "T2273"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Alexandra Månsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1793",
+      "T893"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Eila Lindmark",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T934",
+      "T2826"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lydia Hamrin",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2568",
+      "T1763"
+    ],
+    "balance": 381
+  },
+  {
+    "name": "Valencia Lif",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2180",
+      "T887"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Jill Brorsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1181",
+      "T1464"
+    ],
+    "balance": 377
+  },
+  {
+    "name": "Aina Hamrin",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T880",
+      "T2885"
+    ],
+    "balance": 636
+  },
+  {
+    "name": "Hillevi Vennberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T725",
+      "T2856"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lillie Hansson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1957",
+      "T701"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Markus Liljekvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T211",
+      "T2990"
+    ],
+    "balance": 218
+  },
+  {
+    "name": "Sanna Hultman",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2516",
+      "T2301"
+    ],
+    "balance": 730
+  },
+  {
+    "name": "Andreas Lovén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2230",
+      "T602"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Adriano Jönsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1944",
+      "T2789"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Tino Fahlén",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T424",
+      "T2582"
+    ],
+    "balance": 823
+  },
+  {
+    "name": "Elma Fritz",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T489",
+      "T1447"
+    ],
+    "balance": 724
+  },
+  {
+    "name": "Emilija Högström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2732",
+      "T270"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Meija Persson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2436",
+      "T865"
+    ],
+    "balance": 676
+  },
+  {
+    "name": "Pauline Lovén",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T404",
+      "T1265"
+    ],
+    "balance": 439
+  },
+  {
+    "name": "Isadora Hedman",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T506",
+      "T2936"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Greta Arnesson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2483",
+      "T2562"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Jens Kämpe",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2669",
+      "T2296"
+    ],
+    "balance": 307
+  },
+  {
+    "name": "Leija Göransson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T481",
+      "T394"
+    ],
+    "balance": 780
+  },
+  {
+    "name": "Brian Nykvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1254",
+      "T496"
+    ],
+    "balance": 330
+  },
+  {
+    "name": "Amelia Roslund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T171",
+      "T1382"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lana Edin",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1780",
+      "T422"
+    ],
+    "balance": 265
+  },
+  {
+    "name": "Roy Wiberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1388",
+      "T1324"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Josephine Wihlborg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1782",
+      "T1689"
+    ],
+    "balance": 385
+  },
+  {
+    "name": "Valeria Palmqvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2319",
+      "T006"
+    ],
+    "balance": 377
+  },
+  {
+    "name": "Deniz Sundén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2370",
+      "T016"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Emmelie Hammarlund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2249",
+      "T895"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Rania Sterner",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2307",
+      "T829"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Bjarne Christensen",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1968",
+      "T2152"
+    ],
+    "balance": 479
+  },
+  {
+    "name": "Lycka Blomdahl",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2107",
+      "T577"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Idun Olausson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T560",
+      "T2723"
+    ],
+    "balance": 905
+  },
+  {
+    "name": "James Enqvist",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1068",
+      "T123"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Joline Sahlström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T175",
+      "T2563"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Sanna Selberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2417",
+      "T1505"
+    ],
+    "balance": 420
+  },
+  {
+    "name": "Disa Hallman",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T167",
+      "T2610"
+    ],
+    "balance": 646
+  },
+  {
+    "name": "Jolina Hultberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T246",
+      "T1735"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Luka Renberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T630",
+      "T1697"
+    ],
+    "balance": 207
+  },
+  {
+    "name": "Zahraa Österman",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T732",
+      "T2108"
+    ],
+    "balance": 365
+  },
+  {
+    "name": "Maximillian Valfridsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T615",
+      "T2838"
+    ],
+    "balance": 919
+  },
+  {
+    "name": "Stellan Vallin",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2696",
+      "T141"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Emelie Häggström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T198",
+      "T1553"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Elmer Lönn",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T909",
+      "T279"
+    ],
+    "balance": 372
+  },
+  {
+    "name": "Hakon Åslund",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T505",
+      "T1932"
+    ],
+    "balance": 284
+  },
+  {
+    "name": "Lucas Hedén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T932",
+      "T1366"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lucia Nordstrand",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T892",
+      "T1551"
+    ],
+    "balance": 932
+  },
+  {
+    "name": "River Edman",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T533",
+      "T2926"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Ida Edvinsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2446",
+      "T1188"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Denniz Antonsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2791",
+      "T075"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Marvin Jonsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1384",
+      "T2543"
+    ],
+    "balance": 612
+  },
+  {
+    "name": "Manuel Lif",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2445",
+      "T2269"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Noa Cederlund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1896",
+      "T671"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Scott Boström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T555",
+      "T215"
+    ],
+    "balance": 236
+  },
+  {
+    "name": "Jenna Carlström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T740",
+      "T388"
+    ],
+    "balance": 609
+  },
+  {
+    "name": "Mimmi Ljungdahl",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1516",
+      "T112"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Petronella André",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1428",
+      "T2567"
+    ],
+    "balance": 200
+  },
+  {
+    "name": "Arwen Öhrn",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1521",
+      "T2774"
+    ],
+    "balance": 563
+  },
+  {
+    "name": "Ebba Stefansson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2199",
+      "T038"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Germund Sandell",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T565",
+      "T1439"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Tina Steen",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T737",
+      "T2596"
+    ],
+    "balance": 504
+  },
+  {
+    "name": "Halvard Sundgren",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T488",
+      "T1781"
+    ],
+    "balance": 350
+  },
+  {
+    "name": "Joseph Norlander",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2937",
+      "T656"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Henning Öberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2931",
+      "T1865"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Carolina Sahlström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1721",
+      "T1145"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Krister Dahlén",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T835",
+      "T1100"
+    ],
+    "balance": 257
+  },
+  {
+    "name": "Melody Fredin",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T357",
+      "T1083"
+    ],
+    "balance": 724
+  },
+  {
+    "name": "Lycka Häggström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T358",
+      "T318"
+    ],
+    "balance": 201
+  },
+  {
+    "name": "Alrik Robertsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1115",
+      "T1356"
+    ],
+    "balance": 579
+  },
+  {
+    "name": "Emmelie Petersson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T563",
+      "T1390"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Moa Thorén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1819",
+      "T2256"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Dag Sundén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T919",
+      "T980"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Marvin Wall",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1546",
+      "T1983"
+    ],
+    "balance": 723
+  },
+  {
+    "name": "Emilija Qvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T696",
+      "T181"
+    ],
+    "balance": 977
+  },
+  {
+    "name": "Aston Gunnarsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1252",
+      "T1310"
+    ],
+    "balance": 291
+  },
+  {
+    "name": "Niki Gren",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T018",
+      "T672"
+    ],
+    "balance": 953
+  },
+  {
+    "name": "Sabina Lundbäck",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2293",
+      "T976"
+    ],
+    "balance": 341
+  },
+  {
+    "name": "Isabell Hammarström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1111",
+      "T2742"
+    ],
+    "balance": 349
+  },
+  {
+    "name": "Thilde Westin",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T462",
+      "T1110"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Nadine Morén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2656",
+      "T907"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Emelie Söderlund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2241",
+      "T2777"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Emina Hellman",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2134",
+      "T1484"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Gottfrid Lidberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2681",
+      "T2300"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Harald Jörgensen",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T426",
+      "T707"
+    ],
+    "balance": 927
+  },
+  {
+    "name": "Rawan Granström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2559",
+      "T1314"
+    ],
+    "balance": 809
+  },
+  {
+    "name": "Nikolaj Fritz",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2389",
+      "T1692"
+    ],
+    "balance": 565
+  },
+  {
+    "name": "Valfrid Olausson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1540",
+      "T2855"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Joanna Roslund",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1579",
+      "T590"
+    ],
+    "balance": 706
+  },
+  {
+    "name": "Mika Berglund",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1283",
+      "T1704"
+    ],
+    "balance": 269
+  },
+  {
+    "name": "Pål Hägg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2240",
+      "T193"
+    ],
+    "balance": 750
+  },
+  {
+    "name": "Ingemar Olsen",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2693",
+      "T1067"
+    ],
+    "balance": 342
+  },
+  {
+    "name": "Miro Bergh",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2957",
+      "T2549"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Linnea Rosvall",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1061",
+      "T1832"
+    ],
+    "balance": 809
+  },
+  {
+    "name": "Herman Wennström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T727",
+      "T1621"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Ayla Malmkvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2857",
+      "T1185"
+    ],
+    "balance": 466
+  },
+  {
+    "name": "Novalee Källman",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1130",
+      "T1105"
+    ],
+    "balance": 708
+  },
+  {
+    "name": "Emmi Haraldsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T694",
+      "T2477"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Leija Asp",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T281",
+      "T2302"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Alisa Petersson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T821",
+      "T2350"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Liam Dahlström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1041",
+      "T1128"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Tintin Malm",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1694",
+      "T967"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Anas Wahlqvist",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2383",
+      "T2811"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Gottfrid Lindblad",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1487",
+      "T1971"
+    ],
+    "balance": 733
+  },
+  {
+    "name": "Isolde Örn",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2665",
+      "T369"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Rolf Christensen",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2243",
+      "T948"
+    ],
+    "balance": 561
+  },
+  {
+    "name": "Liam Rosenberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1332",
+      "T679"
+    ],
+    "balance": 614
+  },
+  {
+    "name": "Rafael Nelson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2986",
+      "T2355"
+    ],
+    "balance": 434
+  },
+  {
+    "name": "Lars Wallman",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T228",
+      "T2703"
+    ],
+    "balance": 690
+  },
+  {
+    "name": "Emilija Lind",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2042",
+      "T2561"
+    ],
+    "balance": 248
+  },
+  {
+    "name": "Georg Hammarlund",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T382",
+      "T2403"
+    ],
+    "balance": 924
+  },
+  {
+    "name": "Mats Tillman",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T609",
+      "T239"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Sakarias Dahlström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T096",
+      "T1198"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Noa Johannesson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T055",
+      "T2123"
+    ],
+    "balance": 426
+  },
+  {
+    "name": "Lillemor Mårtensson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1708",
+      "T166"
+    ],
+    "balance": 859
+  },
+  {
+    "name": "Malcolm Appelgren",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2685",
+      "T144"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "River Haraldsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1840",
+      "T2260"
+    ],
+    "balance": 311
+  },
+  {
+    "name": "Wera Bodin",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1834",
+      "T339"
+    ],
+    "balance": 461
+  },
+  {
+    "name": "Beatrice Bohlin",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1839",
+      "T1597"
+    ],
+    "balance": 485
+  },
+  {
+    "name": "Caspar Cederberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1718",
+      "T2035"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Elsie Vesterlund",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1230",
+      "T1019"
+    ],
+    "balance": 975
+  },
+  {
+    "name": "Jörgen Grönlund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2573",
+      "T1873"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Rune Fahlén",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T898",
+      "T2764"
+    ],
+    "balance": 481
+  },
+  {
+    "name": "Mirjam Kristoffersson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T798",
+      "T2880"
+    ],
+    "balance": 992
+  },
+  {
+    "name": "Lukas Bohlin",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1870",
+      "T808"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Zelda Stålnacke",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2618",
+      "T2692"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Carla Thörn",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T675",
+      "T2069"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Azra Lundén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T364",
+      "T393"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Rut Söderberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2853",
+      "T1866"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Andrea Burman",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1003",
+      "T1398"
+    ],
+    "balance": 995
+  },
+  {
+    "name": "Edvard Lindman",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T063",
+      "T1990"
+    ],
+    "balance": 447
+  },
+  {
+    "name": "Danny Långström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T036",
+      "T266"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Georg Glans",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1510",
+      "T1149"
+    ],
+    "balance": 707
+  },
+  {
+    "name": "Marielle Blomkvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2427",
+      "T1278"
+    ],
+    "balance": 360
+  },
+  {
+    "name": "Erland Leander",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2215",
+      "T1880"
+    ],
+    "balance": 397
+  },
+  {
+    "name": "Jens Lif",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T834",
+      "T293"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Sigurd Ivarsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2115",
+      "T1070"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Joanna Erlandsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1789",
+      "T408"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Nikolina Fredin",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1048",
+      "T1413"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Nikki Hallin",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2277",
+      "T824"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Germund Östberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1151",
+      "T1825"
+    ],
+    "balance": 447
+  },
+  {
+    "name": "Marika Norberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T665",
+      "T492"
+    ],
+    "balance": 711
+  },
+  {
+    "name": "Tage Stridh",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2501",
+      "T1852"
+    ],
+    "balance": 302
+  },
+  {
+    "name": "Malek Niklasson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T002",
+      "T2231"
+    ],
+    "balance": 829
+  },
+  {
+    "name": "Henning Palm",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2024",
+      "T2518"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Carmen Björn",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2185",
+      "T933"
+    ],
+    "balance": 447
+  },
+  {
+    "name": "Lykke Gabrielsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2326",
+      "T714"
+    ],
+    "balance": 869
+  },
+  {
+    "name": "Hulda Jarl",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2067",
+      "T813"
+    ],
+    "balance": 981
+  },
+  {
+    "name": "Tibirtus Vikström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T810",
+      "T2806"
+    ],
+    "balance": 415
+  },
+  {
+    "name": "Göran Kjellgren",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1492",
+      "T2078"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Åsa Sjöstedt",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T943",
+      "T1286"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Chloe Johannisson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1665",
+      "T1961"
+    ],
+    "balance": 604
+  },
+  {
+    "name": "Rosanna Österlund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1263",
+      "T2825"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Ragnar Juhlin",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1706",
+      "T635"
+    ],
+    "balance": 414
+  },
+  {
+    "name": "Maximillian Sandqvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2271",
+      "T199"
+    ],
+    "balance": 450
+  },
+  {
+    "name": "Arnulf Norberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2824",
+      "T2018"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Gottfrid Stridh",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1047",
+      "T924"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Miro Leander",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1416",
+      "T1347"
+    ],
+    "balance": 811
+  },
+  {
+    "name": "Emmy Sandgren",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2168",
+      "T1444"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lorena Lager",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T157",
+      "T442"
+    ],
+    "balance": 936
+  },
+  {
+    "name": "Maksim Berggren",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1219",
+      "T1262"
+    ],
+    "balance": 397
+  },
+  {
+    "name": "Meya Engberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T416",
+      "T1098"
+    ],
+    "balance": 962
+  },
+  {
+    "name": "Sigge Svedberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T913",
+      "T187"
+    ],
+    "balance": 310
+  },
+  {
+    "name": "Wilja Sjöberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2375",
+      "T643"
+    ],
+    "balance": 756
+  },
+  {
+    "name": "Lana Hultqvist",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T186",
+      "T2474"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Leia Brännström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T455",
+      "T524"
+    ],
+    "balance": 296
+  },
+  {
+    "name": "Chloe Sander",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1479",
+      "T2460"
+    ],
+    "balance": 896
+  },
+  {
+    "name": "Angela Vestin",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1838",
+      "T1595"
+    ],
+    "balance": 248
+  },
+  {
+    "name": "Celia Fröberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2493",
+      "T120"
+    ],
+    "balance": 641
+  },
+  {
+    "name": "Zeinab Tillman",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T536",
+      "T957"
+    ],
+    "balance": 368
+  },
+  {
+    "name": "Maximus Fröjd",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2270",
+      "T1937"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Kimberly Roos",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T581",
+      "T1615"
+    ],
+    "balance": 608
+  },
+  {
+    "name": "Angelika Åstrand",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T456",
+      "T1204"
+    ],
+    "balance": 968
+  },
+  {
+    "name": "Ville Filipsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1456",
+      "T2757"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Ivan Edvinsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T047",
+      "T2052"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Jörgen Nielsen",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T848",
+      "T2859"
+    ],
+    "balance": 868
+  },
+  {
+    "name": "Alrik Hellström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1385",
+      "T559"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Filippa Halvarsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T897",
+      "T411"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Mimmi Norberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T855",
+      "T690"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Angelina Oskarsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2724",
+      "T491"
+    ],
+    "balance": 823
+  },
+  {
+    "name": "Vidar Kjellström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2919",
+      "T2884"
+    ],
+    "balance": 912
+  },
+  {
+    "name": "Thilde Sjöstrand",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2329",
+      "T1796"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Leonie Seger",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1154",
+      "T2673"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Hoda Nylén",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1669",
+      "T022"
+    ],
+    "balance": 576
+  },
+  {
+    "name": "Sigge Sundström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T906",
+      "T2295"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lex Lundholm",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2579",
+      "T1619"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Josef Wennerström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2647",
+      "T503"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Meya Stefansson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1234",
+      "T613"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Jana Appelqvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T132",
+      "T1058"
+    ],
+    "balance": 816
+  },
+  {
+    "name": "Arthur Holmlund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1885",
+      "T1568"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Molly Niemi",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1144",
+      "T1857"
+    ],
+    "balance": 706
+  },
+  {
+    "name": "Maximillian Ekström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1472",
+      "T009"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Disa Svanberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1491",
+      "T2952"
+    ],
+    "balance": 985
+  },
+  {
+    "name": "Thilde Öberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1901",
+      "T1367"
+    ],
+    "balance": 808
+  },
+  {
+    "name": "Isolde Zetterberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1261",
+      "T2039"
+    ],
+    "balance": 297
+  },
+  {
+    "name": "Arnold Sandgren",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T576",
+      "T2195"
+    ],
+    "balance": 732
+  },
+  {
+    "name": "Savannah Blomkvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2751",
+      "T245"
+    ],
+    "balance": 721
+  },
+  {
+    "name": "Vilhelm Folkesson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2316",
+      "T1494"
+    ],
+    "balance": 928
+  },
+  {
+    "name": "Zelda Hugosson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2096",
+      "T1454"
+    ],
+    "balance": 319
+  },
+  {
+    "name": "Lova Wallman",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2580",
+      "T1275"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lydia Granberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2169",
+      "T1826"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lavin Burman",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2657",
+      "T1634"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Rafael Boberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T604",
+      "T1297"
+    ],
+    "balance": 324
+  },
+  {
+    "name": "Arnulf Frid",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T051",
+      "T069"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Sabina Frick",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1696",
+      "T657"
+    ],
+    "balance": 323
+  },
+  {
+    "name": "Melvin Appelqvist",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2435",
+      "T1218"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Osvald Henningsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T444",
+      "T1982"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Glenn Johnsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2576",
+      "T1743"
+    ],
+    "balance": 818
+  },
+  {
+    "name": "Madelen Palmqvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2469",
+      "T2343"
+    ],
+    "balance": 463
+  },
+  {
+    "name": "Romeo Oskarsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2848",
+      "T2330"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Hilda Söderlund",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2121",
+      "T1421"
+    ],
+    "balance": 341
+  },
+  {
+    "name": "Valeria Rundqvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2787",
+      "T802"
+    ],
+    "balance": 208
+  },
+  {
+    "name": "Valle Thor",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1576",
+      "T332"
+    ],
+    "balance": 535
+  },
+  {
+    "name": "Zandra Haglund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2726",
+      "T2421"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Nathalie Lindén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2494",
+      "T2930"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Nadine Fritz",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T484",
+      "T759"
+    ],
+    "balance": 730
+  },
+  {
+    "name": "Viking Sjöstedt",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2365",
+      "T2845"
+    ],
+    "balance": 759
+  },
+  {
+    "name": "Gabrielle Flink",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T366",
+      "T621"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Samira Lindroth",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2495",
+      "T2595"
+    ],
+    "balance": 511
+  },
+  {
+    "name": "Denniz Söderström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1432",
+      "T2778"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Kaspar Gren",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T113",
+      "T1381"
+    ],
+    "balance": 881
+  },
+  {
+    "name": "Erik Öqvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2552",
+      "T2395"
+    ],
+    "balance": 872
+  },
+  {
+    "name": "Tea Haraldsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2379",
+      "T1618"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Cindy Wickström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T170",
+      "T888"
+    ],
+    "balance": 249
+  },
+  {
+    "name": "Jasmina Niemi",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1643",
+      "T353"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Natasha Bergdahl",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1626",
+      "T1378"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lorentz Carlström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1374",
+      "T1121"
+    ],
+    "balance": 522
+  },
+  {
+    "name": "Edwin Wiberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T383",
+      "T064"
+    ],
+    "balance": 420
+  },
+  {
+    "name": "Athena Strid",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1445",
+      "T553"
+    ],
+    "balance": 639
+  },
+  {
+    "name": "Agnes Nylén",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T938",
+      "T2847"
+    ],
+    "balance": 628
+  },
+  {
+    "name": "Justus Hallin",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2514",
+      "T1614"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Erza Kristoffersson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1740",
+      "T1251"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Åsa Åhlander",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T616",
+      "T574"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lorin Sahlström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1502",
+      "T664"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Seth Kraft",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T478",
+      "T766"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Nikolaus Göransson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1157",
+      "T2425"
+    ],
+    "balance": 653
+  },
+  {
+    "name": "Tanja Christensen",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T256",
+      "T786"
+    ],
+    "balance": 873
+  },
+  {
+    "name": "Miro Bäckström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2914",
+      "T787"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Jens Tjernström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T023",
+      "T1523"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Daniel Åhs",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T104",
+      "T042"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Hjalmar Thor",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2636",
+      "T1095"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Erland Wennerström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2386",
+      "T1881"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Juli Sjölin",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1086",
+      "T920"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Sandy Stoltz",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1989",
+      "T702"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Natali Söderlund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2801",
+      "T1244"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Sara Folkesson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T076",
+      "T2194"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Douglas Brändström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2821",
+      "T2012"
+    ],
+    "balance": 485
+  },
+  {
+    "name": "Leopold Mattiasson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1632",
+      "T2970"
+    ],
+    "balance": 515
+  },
+  {
+    "name": "Josephine Blomqvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1084",
+      "T429"
+    ],
+    "balance": 290
+  },
+  {
+    "name": "Emilija Edberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1960",
+      "T1402"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Thelma Danielsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1752",
+      "T2062"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Greta Franzén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2841",
+      "T1915"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Marika Sjöberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2070",
+      "T689"
+    ],
+    "balance": 763
+  },
+  {
+    "name": "Malte Grönqvist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2046",
+      "T1609"
+    ],
+    "balance": 356
+  },
+  {
+    "name": "Wilma Ljungström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1362",
+      "T043"
+    ],
+    "balance": 580
+  },
+  {
+    "name": "Vendela Svedlund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T968",
+      "T174"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Sakarias Kjell",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2940",
+      "T1006"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lennart Edberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2265",
+      "T709"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Seth Holmlund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2043",
+      "T1376"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Maksim Fritz",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T498",
+      "T2102"
+    ],
+    "balance": 434
+  },
+  {
+    "name": "Lana Wahlqvist",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2529",
+      "T1072"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Philip Frid",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1288",
+      "T2820"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Valencia Carlström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1508",
+      "T1379"
+    ],
+    "balance": 946
+  },
+  {
+    "name": "Jana Flink",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1488",
+      "T1022"
+    ],
+    "balance": 936
+  },
+  {
+    "name": "Caspar Holmström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2785",
+      "T431"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Emmy Sjödin",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T500",
+      "T1656"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Nadia Lundquist",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T594",
+      "T1707"
+    ],
+    "balance": 661
+  },
+  {
+    "name": "Lillie Olausson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1995",
+      "T1526"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Alexsandra Kvarnström",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T106",
+      "T1422"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Karolina Svensk",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T477",
+      "T2486"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Bjarne Fröjd",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T052",
+      "T1120"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Kristoffer Levin",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T414",
+      "T304"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Jon Hjorth",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T755",
+      "T1703"
+    ],
+    "balance": 809
+  },
+  {
+    "name": "Wilja Rosander",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2173",
+      "T2739"
+    ],
+    "balance": 780
+  },
+  {
+    "name": "Aprilia Bergendahl",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T595",
+      "T1108"
+    ],
+    "balance": 209
+  },
+  {
+    "name": "Joline Sundgren",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1537",
+      "T2106"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Romeo Müller",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1380",
+      "T2263"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Camilla Vallin",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1213",
+      "T1589"
+    ],
+    "balance": 863
+  },
+  {
+    "name": "Gottfrid Thuresson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T289",
+      "T963"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Hampus Håkansson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2346",
+      "T1997"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Fredrik Albertsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2756",
+      "T2643"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Ofelia Karlsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1653",
+      "T764"
+    ],
+    "balance": 405
+  },
+  {
+    "name": "Salma Hellberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2099",
+      "T2664"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Harry Seger",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T658",
+      "T164"
+    ],
+    "balance": 591
+  },
+  {
+    "name": "Iris Abrahamsson",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1599",
+      "T1220"
+    ],
+    "balance": 203
+  },
+  {
+    "name": "Mia Lif",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2225",
+      "T188"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Abdullah Norström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T465",
+      "T2989"
+    ],
+    "balance": 692
+  },
+  {
+    "name": "Stina Ahlin",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2680",
+      "T1453"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Miro Holmlund",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1676",
+      "T2339"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Emin Stenström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1345",
+      "T233"
+    ],
+    "balance": 302
+  },
+  {
+    "name": "Kalle Thelin",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T083",
+      "T1823"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Noelia Rosander",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1150",
+      "T286"
+    ],
+    "balance": 909
+  },
+  {
+    "name": "Hassan Dahlman",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T985",
+      "T2812"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Jana Norberg",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1387",
+      "T2891"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Nemi Sjöstrand",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T925",
+      "T809"
+    ],
+    "balance": 768
+  },
+  {
+    "name": "Magnus Leander",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T744",
+      "T961"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Sanna Norling",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1354",
+      "T2759"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Chris Widén",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T527",
+      "T1683"
+    ],
+    "balance": 438
+  },
+  {
+    "name": "Elliot Sjöö",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2336",
+      "T1394"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Camilla Hellberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2027",
+      "T1734"
+    ],
+    "balance": 825
+  },
+  {
+    "name": "Linnea Haraldsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1705",
+      "T2564"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Elisia Abrahamsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2793",
+      "T2877"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Louisa Ahl",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2283",
+      "T606"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Jon Hedén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2996",
+      "T1949"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Ruben Hammarström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1624",
+      "T2830"
+    ],
+    "balance": 807
+  },
+  {
+    "name": "Hassan Peterson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T2512",
+      "T2272"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Nemi Persson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1031",
+      "T650"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Telma Bergmark",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T072",
+      "T1908"
+    ],
+    "balance": 718
+  },
+  {
+    "name": "Tore Brännström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1970",
+      "T1311"
+    ],
+    "balance": 835
+  },
+  {
+    "name": "Tamara Filipsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1193",
+      "T2466"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Havanna Sterner",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T990",
+      "T201"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Lova Lagergren",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T1424",
+      "T2279"
+    ],
+    "balance": 503
+  },
+  {
+    "name": "Angelica Tillman",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2735",
+      "T1281"
+    ],
+    "balance": 667
+  },
+  {
+    "name": "Alve Adolfsson",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1013",
+      "T864"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Dania Wallberg",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2946",
+      "T2528"
+    ],
+    "balance": 470
+  },
+  {
+    "name": "Samuel Nyrén",
+    "payment_method": "monthly",
+    "banned": false,
+    "completed_trips": [
+      "T1635",
+      "T2755"
+    ],
+    "balance": 0
+  },
+  {
+    "name": "Sixten Haglund",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2687",
+      "T2844"
+    ],
+    "balance": 690
+  },
+  {
+    "name": "Rosa Ehn",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T979",
+      "T693"
+    ],
+    "balance": 240
+  },
+  {
+    "name": "Dan Vikström",
+    "payment_method": "prepaid",
+    "banned": false,
+    "completed_trips": [
+      "T2767",
+      "T324"
+    ],
+    "balance": 709
   }
 ]

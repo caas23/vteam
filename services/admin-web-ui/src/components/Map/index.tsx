@@ -1,41 +1,24 @@
-import React, { useEffect, useMemo, useState, useRef } from "react";
+import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import { MapContainer, TileLayer, GeoJSON } from "react-leaflet";
+import { MapContainer, TileLayer, GeoJSON, useMap, useMapEvent } from "react-leaflet";
+import L from "leaflet";
 import ShowParkingZones from "../ParkingZones";
 import ShowChargingStations from "../ChargingStations";
 import ShowBikes from "../Bikes";
-import { City as CityInterface, ParkingZone, ChargingStation, Bike, Route, Trip } from "./interfaces";
+import { City as CityInterface, ParkingZone, ChargingStation, Bike, BikeUsersProps } from "./interfaces";
 import { fetchOneCity } from "../../fetchModels/fetchOneCity";
 import { fetchCityProps } from "../../fetchModels/fetchCityProps";
-import { fetchRoutes } from "../../fetchModels/fetchRoutes";
-import io from "socket.io-client";
 import "./index.css";
-
-// fungerande kod än så länge
-// kan flytta en cykel enligt en fördefinierad rutt,
-// simulera en varierande hastighet med viss hänsyn till kurvor etc,
-// parkera cykel, göra den tillgänglig, spara resan i db,
-// lägga till resan i completed_trips för given cykel,
-// lägga till resan i completed_trips för en slumpad användare,
-// admin kan tvinga ett stopp för en pågående resa, av någon given anledning
-// fungerar nu att lämna vyn/ladda om sidan utan att cyklarna
-// försöker hämta en ny rutt (om de redan följer en)
-
-// eventuellt, om jag har tid, kan logiken för bikeTrips och bikeRoutes justeras något,
-// för att enbart låta t.ex. bikeRoutes styra om en cykel har en rutt eller inte, och enbart
-// spara den informationen till localstorage, och inte använda bikeTrips för den logiken.
 
 /*** 
  *
  *  ATT FUNDERA PÅ (antingen för frontend- eller backend-hantering)
  * - Hur hantera resor som görs i realtid via appen, i denna vy? (nuvarande kod hanterar bara simulerade turer)
  * - Se till så att appen och denna vy samspelar väl i realtid (när någon hyr i app --> direkt spegling i denna vy)
- * - Hur klarar systemet en större load? (enbart testat för fåtal cyklar i samtidig rörelse)
  * 
  * ***/
 
-
-const MapComponent: React.FC = () => {
+const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 	const { city } = useParams<{ city: string }>();
 	const [currentCity, setCurrentCity] = useState<CityInterface | null>(null);
 	const [cityBorders, setCityBorders] = useState<any>(null);
@@ -43,78 +26,8 @@ const MapComponent: React.FC = () => {
 	const [availableZones, setAvailableZones] = useState<ParkingZone[]>([]);
 	const [availableStations, setAvailableStations] = useState<ChargingStation[]>([]);
 	const [bikesInCity, setBikesInCity] = useState<Bike[]>([]);
-	const [routes, setRoutes] = useState<Route[]>([]);
-	const [routesLoaded, setRoutesLoaded] = useState<boolean>(false);
-	const socket = useRef<ReturnType<typeof io> | null>(null);
-
-	// för att hålla koll på pågående rutter och resor, dels för att undvika att en 
-	// cykel försöker följa flera rutter, dels för att kunna spara undan när resan är avslutad.
-	const [bikeTrips, setBikeTrips] = useState<Map<string, Trip | null>>(new Map());
-	const [bikeRoutes, setBikeRoutes] = useState<Map<string, Route | null>>(new Map());
-	const [bikeUsers, setBikeUsers] = useState<Map<string, string | null>>(new Map());
+	const [bikesInViewport, setBikesInViewport] = useState<Bike[]>([]);
 	
-	// hämta sparade (pågående) rutter för att undvika att en cykel försöker hämta en ny rutt
-	useEffect(() => {
-		const savedTrips = new Map<string, Trip | null>(
-			Object.entries(JSON.parse(localStorage.getItem("bikeTrips") || "{}")).map(
-				([key, value]) => [key, value as Trip | null]
-			)
-		);
-		const savedRoutes = new Map<string, Route | null>(
-			Object.entries(JSON.parse(localStorage.getItem("bikeRoutes") || "{}")).map(
-				([key, value]) => [key, value as Route | null]
-			)
-		);
-		const savedUsers = new Map<string, string | null>(
-			Object.entries(JSON.parse(localStorage.getItem("bikeUsers") || "{}")).map(
-				([key, value]) => [key, value as string | null]
-			)
-		);
-		setBikeTrips(savedTrips);
-		setBikeRoutes(savedRoutes);
-		setBikeUsers(savedUsers);
-	}, []);
-
-	// uppdatera localstorage när bikeTrips, bikeRoutes och/eller bikeUsers ändras
-	useEffect(() => {
-		localStorage.setItem("bikeTrips", JSON.stringify(Object.fromEntries(bikeTrips)));
-	}, [bikeTrips]);
-	
-	useEffect(() => {
-		localStorage.setItem("bikeRoutes", JSON.stringify(Object.fromEntries(bikeRoutes)));
-	}, [bikeRoutes]);
-
-	useEffect(() => {
-		localStorage.setItem("bikeUsers", JSON.stringify(Object.fromEntries(bikeUsers)));
-	}, [bikeUsers]);
-
-	useEffect(() => {
-		if (!socket.current) {
-			socket.current = io("http://localhost:1337");
-		}
-
-		return () => {
-			if (socket.current) {
-				socket.current.disconnect();
-				socket.current = null;
-			}
-		};
-	}, []);
-
-	useEffect(() => {
-		const fetchAndSetRoutes = async () => {
-			try {
-				const result = await fetchRoutes();
-				setRoutes(result);
-				setRoutesLoaded(true);
-			} catch (error) {
-				console.error("Failed to fetch routes:", error);
-				setRoutesLoaded(true);
-			}
-		};
-		fetchAndSetRoutes();
-	}, []);
-
 	useEffect(() => {
 		const fetchAndSetCity = async () => {
 			const result = await fetchOneCity(city || "");
@@ -144,7 +57,7 @@ const MapComponent: React.FC = () => {
 	}, [city]);
 
 	useEffect(() => {
-		if (!currentCity || !routesLoaded) return;
+		if (!currentCity) return;
 
 		document.title = `Map ${currentCity.display_name} - Solo Scoot`;
 
@@ -169,7 +82,7 @@ const MapComponent: React.FC = () => {
 			}
 		};
 		
-		city ? fetchCityBorders(city) : "";
+		city && fetchCityBorders(city);
 
 		const fetchAndSetBikes = async () => {
 			try {
@@ -181,263 +94,99 @@ const MapComponent: React.FC = () => {
 		};
 		fetchAndSetBikes();
 
+	}, [currentCity]);
+
+	// kolla om cykeln är i viewporten för att enbart uppdatera dessa,
+	// skapar dock viss fördröjning vid utzoomning, accepterbart?
+	const isBikeInViewport = (bikeLocation: [number, number], bounds: L.LatLngBounds) => {
+		const latLng = L.latLng(bikeLocation);
+		return bounds.contains(latLng);
+	};
+	
+	// måste vara en child component för att funka
+	const BikeViewportUpdater: React.FC = () => {
+		const map = useMap();
+		useMapEvent('moveend', () => {
+			const bounds = map.getBounds();
+			const bikesInView = bikesInCity.filter(bike => isBikeInViewport(bike.location, bounds));
+			setBikesInViewport(bikesInView);
+		});
+		return null;
+	};
+
+	useEffect(() => {
+		if (!socket.current) return;
+
 		socket.current?.on("bikeInUse", (data: { 
 			bikeId: string;
 			position: [number, number];
 			speed: number;
 			battery: number;
 		}) => {
-			setBikesInCity((prevBikes) =>
-				prevBikes.map((bike) =>
-					bike.bike_id === data.bikeId ? { 
-						...bike,
-						location: data.position,
-						speed: data.speed,
-						status: { 
-							...bike.status,
-							battery_level: data.battery
-						} 
-					} : bike
-				)
-			);
+			// uppdatera bara cyklar som är i nuvarande viewport
+			if (bikesInViewport.some(bike => bike.bike_id === data.bikeId)) {
+				setBikesInCity(prevBikes =>
+					prevBikes.map(bike =>
+						bike.bike_id === data.bikeId ? { 
+							...bike,
+							location: data.position,
+							speed: data.speed,
+							status: {
+								...bike.status,
+								battery_level: data.battery 
+							}
+						} : bike
+					)
+				);
+			}
 		});
 		
-		socket.current?.on("tripForceStop", ( data : { 
-			bike: Bike;
-			reason: string;
-			distance: number;
-			route: [number, number][];
+		socket.current?.on("bikeNotInUse", (data: { 
+			bikeId: string;
+			position: [number, number];
+			battery: number;
 		}) => {
-			if (!bikeTrips.has(data.bike.bike_id)) return;
-			const bikeTrip = bikeTrips.get(data.bike.bike_id);
-			const bikeUser = bikeUsers.get(data.bike.bike_id)
-
-			// för att urskilja en avbruten resa mot en "vanlig", adderas en avgift om
-			// admin anser att användaren kört på ett farligt eller misstänksamt sätt.
-			const fee = ["Dangerous driving", "Suspicious behavior"].includes(data.reason) ? 25 : 0;
-
-			const endTime = new Date();
-			const startTime = new Date(bikeTrip && bikeTrip.start_time || endTime);
-			const totalTimeMinutes = (endTime.getTime() - startTime.getTime()) / 60000;
-			const price = (totalTimeMinutes * 2.5 + 10 + fee).toFixed(2);
-	
-			// använd socket för att alerta backenden att resan ska sparas,
-			// i backenden kommer även en slumpmässig användare
-			// behöva hämtas, för att koppla genomförd resa till en användare
-			socket.current?.emit("finishRoute", {
-				bike: data.bike,
-				trip: {
-					start_time: bikeTrip && bikeTrip.start_time,
-					end_time: endTime,
-					start_location: bikeTrip && bikeTrip.start_location,
-					end_location: data.bike.location,
-					price,
-					route: data.route,
-					distance: data.distance,
-				},
-				reason: data.reason,
-				fee: fee,
-				user: bikeUser
-			});
-	
-			// efter genomförd resa tas temporärt sparad data bort från localstorage
-			setBikeTrips((prev) => {
-				const updatedTrips = new Map(prev);
-				updatedTrips.delete(data.bike.bike_id);
-				return updatedTrips;
-			});
-	
-			setBikeRoutes((prev) => {
-				const updatedRoutes = new Map(prev);
-				updatedRoutes.delete(data.bike.bike_id);
-				return updatedRoutes;
-			});
-			
-			setBikeUsers((prev) => {
-				const updatedUsers = new Map(prev);
-				updatedUsers.delete(data.bike.bike_id);
-				return updatedUsers;
-			});
-	
-			// cykeln gör tillgänglig igen
-			setBikesInCity((prevBikes) =>
-				prevBikes.map((b) =>
-					b.bike_id === data.bike.bike_id
-					? { ...b, status: { ...b.status, available: true } }
-					: b
-				)
-			);
+			// uppdatera bara cyklar som är i nuvarande viewport
+			if (bikesInViewport.some(bike => bike.bike_id === data.bikeId)) {
+				setBikesInCity(prevBikes =>
+					prevBikes.map(bike =>
+						bike.bike_id === data.bikeId ? { 
+							...bike,
+							location: data.position,
+							speed: 0,
+							status: {
+								...bike.status,
+								battery_level: data.battery,
+								available: true 
+							}
+						} : bike
+					)
+				);
+			}
 		});
+
 
 		return () => {
 			socket.current?.off("bikeInUse");
-			socket.current?.off("tripForceStop");
+			socket.current?.off("bikeNotInUse");
 		};
-	}, [currentCity, city, routesLoaded, bikeTrips]);
+	}, [bikesInViewport, socket]);
 
-	// hämta en rutt genom att matcha nuvaranda position
-	// mot antingen första eller sista koordinaterna för en rutt.
-	const findRoute = useMemo(() => {
-		return (bikeLocation: [number, number]) => {
-			const matchingRoute = routes.find(
-				(route) => route.route?.[0]?.[0] === bikeLocation[0] && route.route?.[0]?.[1] === bikeLocation[1]
-			);
-			if (matchingRoute) return matchingRoute;
-			const reverseMatchingRoute = routes.find(
-				(route) =>
-					route.route?.[route.route.length - 1]?.[0] === bikeLocation[0] &&
-					route.route?.[route.route.length - 1]?.[1] === bikeLocation[1]
-			);
-			if (reverseMatchingRoute) {
-				return {
-					...reverseMatchingRoute,
-					route: reverseMatchingRoute.route.reverse(),
-				};
-			}
-		};
-	}, [routes]);
-
-
-  	// kolla om en cykel har avslutat en rutt genom att jämföra dess position med sista koordinaterna för rutten
-	const hasCompletedRoute = (bike: Bike, route: Route) => {
-		const lastPoint = route.route[route.route.length - 1];
-		return bike.location[0] === lastPoint[0] && bike.location[1] === lastPoint[1];
-	};
-
-	useEffect(() => {
-		// invänta rutter och eventuellt sparade rutter och resor
-		if (!routesLoaded || !bikeTrips || !bikeRoutes) return;
-	  
-		bikesInCity.forEach((bike) => {
-			// hämta sparade rutter om de finns
-			const bikeTrip = bikeTrips.get(bike.bike_id);
-			const bikeRoute = bikeRoutes.get(bike.bike_id);
-			const bikeUser = bikeUsers.get(bike.bike_id)
-			
-			// om en rutt är avslutad, spara undan detaljer i db och ta bort från 
-			// temporärt sparade rutter/resor i localstorage
-			if (bikeTrip && bikeRoute && hasCompletedRoute(bike, bikeRoute)) {
-				// beräkna total tid och pris för att skicka med till backenden
-				const endTime = new Date();
-				const startTime = new Date(bikeTrip.start_time || endTime);
-				const totalTimeMinutes = (endTime.getTime() - startTime.getTime()) / 60000;
-				const price = (totalTimeMinutes * 2.5 + 10).toFixed(2);
-		
-				// använd socket för att alerta backenden att resan ska sparas
-				// i backenden kommer även en slumpmässig användare
-				// behöva hämtas, för att koppla genomförd resa till en användare
-				socket.current?.emit("finishRoute", {
-					bike: bike,
-					trip: {
-						start_time: bikeTrip.start_time,
-						end_time: endTime,
-						start_location: bikeTrip.start_location,
-						end_location: bike.location,
-						price,
-						route: bikeRoute.route,
-						distance: bikeRoute.distance,
-					},
-					user: bikeUser
-				});
-		
-				// efter genomförd resa tas temporärt sparad data bort från localstorage
-				setBikeTrips((prev) => {
-					const updatedTrips = new Map(prev);
-					updatedTrips.delete(bike.bike_id);
-					return updatedTrips;
-				});
-		
-				setBikeRoutes((prev) => {
-					const updatedRoutes = new Map(prev);
-					updatedRoutes.delete(bike.bike_id);
-					return updatedRoutes;
-				});
-
-				setBikeUsers((prev) => {
-					const updatedUsers = new Map(prev);
-					updatedUsers.delete(bike.bike_id);
-					return updatedUsers;
-				});
-		
-				// cykeln gör tillgänglig igen
-				setBikesInCity((prevBikes) =>
-					prevBikes.map((b) =>
-						b.bike_id === bike.bike_id
-						? { ...b, status: { ...b.status, available: true } }
-						: b
-					)
-				);
-		
-		
-			} else {
-				// hämta en resa enbart om cykeln är upptagen
-				// men inte har någon rutt kopplad till sig ännu
-				if (!bikeTrip && !bike.status.available) {
-					const matchedRoute = findRoute(bike.location);
-			
-					if (matchedRoute) {
-						const startTime = new Date();
-			
-						// spara temporärt rutten i localstorage 
-						// (används för att undvika dubbelfetchning om sidan lämnas/laddas om)
-						setBikeRoutes((prev) => {
-							const updatedRoutes = new Map(prev);
-							updatedRoutes.set(bike.bike_id, matchedRoute);
-							return updatedRoutes;
-						});
-			
-						const trip: Trip = {
-							start_time: startTime,
-							end_time: new Date(),
-							start_location: bike.location,
-							end_location: bike.location,
-							price: 0,
-							route: matchedRoute.route,
-							distance: matchedRoute.distance,
-						};
-			
-						// spara temporärt resan i localstorage 
-						// (används för att undvika dubbelfetchning om sidan lämnas/laddas om)
-						setBikeTrips((prev) => {
-							const updatedTrips = new Map(prev);
-							updatedTrips.set(bike.bike_id, trip);
-							return updatedTrips;
-						});
-						
-						setBikeUsers((prev) => {
-							const updatedTrips = new Map(prev);
-							let user;
-							// se till så att en användare bara kan använda en cykel samtidigt
-							do {
-								const randomNumber = Math.floor(Math.random() * 1000) + 1;
-								user = `U${randomNumber.toString().padStart(3, '0')}`;
-							} while ([...bikeUsers.values()].includes(user));
-							updatedTrips.set(bike.bike_id, user);
-							return updatedTrips;
-						});
-			
-						socket.current?.emit("startBikeInUse", {
-							bikeId: bike.bike_id,
-							route: matchedRoute.route,
-							battery: bike.status.battery_level,
-						});
-					}
-				}
-		 	}
-		});
-	}, [bikesInCity, routesLoaded, bikeTrips, bikeRoutes]);
-	  
 
 	if (!cityCenter) {
 		return (
-			<div>
-				<h1>{currentCity ? currentCity.display_name : ""}</h1>
+			<>
+			<h1>{currentCity ? currentCity.display_name : ""}</h1>
+			<div className="map-loading">
 				<p className="map-loading-msg">Loading map ...</p>
 			</div>
+			</>
 		);
 	}
 
 	return (
+		<>
+		<h1>{currentCity ? currentCity.display_name : ""}</h1>
 		<MapContainer center={cityCenter} zoom={12}>
 			<TileLayer
 				attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -455,8 +204,10 @@ const MapComponent: React.FC = () => {
 						fillOpacity: 0.0,
 					}}
 				/>
-			)};
+			)}
+			<BikeViewportUpdater />
 		</MapContainer>
+		</>
 	);
 };
 

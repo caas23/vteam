@@ -226,6 +226,32 @@ const bike = {
             throw new Error(`Failed to update completed trips for bike with bike_id: ${bikeId}.`);
         }
     },
+
+    updateBike: async function updateBike(bikeData) {
+        let bikeCollection = getCollection("bikes");
+    
+        try {
+            const result = await bikeCollection.updateOne(
+                { bike_id: bikeData.bikeId },
+                {
+                    $set: {
+                        "location": bikeData.location,
+                        "status.battery_level": parseFloat(bikeData.battery_level),
+                        "speed": parseFloat(bikeData.speed)
+                    },
+                    $push: {
+                        "completed_trips": bikeData.tripId
+                    }
+                },
+                { returnDocument: "after" }
+            );
+    
+            return result;
+        } catch (e) {
+            console.error(e);
+            throw new Error(`Failed to update bike with bike_id: ${bikeData.bikeId}.`);
+        }
+    }
 }
 
 export default bike;

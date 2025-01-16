@@ -5,9 +5,16 @@ const isAuthenticated = () => {
   return sessionStorage.getItem("access_token") !== null;
 };
 
-const ProtectedRoute: React.FC<{ component: React.ComponentType }> = ({
+interface ProtectedRouteProps<P> {
+  component: React.ComponentType<P>;
+  // props som skickas via ProtectedRoute skickas vidare till componenten
+  [key: string]: any;
+}
+
+const ProtectedRoute = <P extends object>({
   component: Component,
-}) => {
+  ...props
+}: ProtectedRouteProps<P>) => {
   if (!isAuthenticated()) {
     return (
       <Navigate
@@ -17,7 +24,7 @@ const ProtectedRoute: React.FC<{ component: React.ComponentType }> = ({
     );
   }
 
-  return <Component />;
+  return <Component {...props as P} />;
 };
 
 export default ProtectedRoute;
