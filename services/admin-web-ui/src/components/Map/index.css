@@ -28,3 +28,47 @@ p.map-loading-msg {
 .bold {
     font-weight: 400;
 }
+
+.return-content {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5em;
+}
+.map-div {
+    display: block;
+    padding-bottom: 0.5em;
+    width: 85%;
+    padding-right: 0.75em;
+    border-right: 2px dashed var(--color-blue-primary);
+
+}
+
+.color-div {
+    display: block;
+
+    & h2 {
+        color: var(--color-blue-primary);
+        font-weight: 400;
+        margin-bottom: 0.5em;
+    }
+}
+.color-codes {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+    justify-content: space-around;
+    margin-top: 0.5em;
+}
+
+.color-code {
+   display: flex;
+   flex-direction: row;
+
+   & span {
+    padding: 0.5em 0;
+   }
+}
+.color-icon {
+    width: 40px;
+    height: 40px;
+}

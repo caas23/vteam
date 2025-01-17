@@ -4,7 +4,10 @@ import MarkerClusterGroup from "react-leaflet-markercluster";
 import L from "leaflet";
 import { Bike } from "./interfaces";
 import { Socket } from "socket.io-client";
-import scooterIcon from "/src/assets/scooter-pin-blue.png";
+import scooterIconBlue from "/src/assets/scooter-pin-blue.png";
+import scooterIconGreen from "/src/assets/scooter-pin-green.png";
+import scooterIconOrange from "/src/assets/scooter-pin-orange.png";
+import scooterIconRed from "/src/assets/scooter-pin-red.png";
 import clusterIcon from "/src/assets/multiple-scooter-pin-blue.png";
 import ForceStopMessage from "../ForceStopMessage";
 import "./index.css";
@@ -20,12 +23,37 @@ const ShowBikes: React.FC<{
 	const [openBikeId, setOpenBikeId] = useState<string | null>(null);
 	const markerRefs = useRef<Map<string, L.Marker>>(new Map());
 
-	const bikeMarker = L.icon({
-		iconUrl: scooterIcon,
-		iconSize: [50, 50],
-		iconAnchor: [25, 50],
-		popupAnchor: [0, -40],
-	});
+	const bikeIcon = (bike: Bike) => {
+		if (bike.status.available) {
+		  return L.icon({
+			iconUrl: scooterIconBlue,
+			iconSize: [40, 40],
+			iconAnchor: [20, 45],
+			popupAnchor: [0, -40],
+		  });
+		} else if (bike.status.battery_level > 30) {
+		  return L.icon({
+			iconUrl: scooterIconGreen,
+			iconSize: [40, 40],
+			iconAnchor: [20, 45],
+			popupAnchor: [0, -40],
+		  });
+		} else if (bike.status.battery_level >= 15 && bike.status.battery_level <= 30) {
+		  return L.icon({
+			iconUrl: scooterIconOrange,
+			iconSize: [40, 40],
+			iconAnchor: [20, 45],
+			popupAnchor: [0, -40],
+		  });
+		} else {
+		  return L.icon({
+			iconUrl: scooterIconRed,
+			iconSize: [40, 40],
+			iconAnchor: [20, 45],
+			popupAnchor: [0, -40],
+		  });
+		}
+	};
 
 	const createClusterMarker = (className: string) => {
 		return L.divIcon({
@@ -33,16 +61,6 @@ const ShowBikes: React.FC<{
 			html: `<img src="${clusterIcon}" style="width: 55px; height: 55px; padding: 0.3em;" />`,
 			iconSize: [50, 50],
 			iconAnchor: [25, 50],
-			popupAnchor: [0, -40],
-		});
-	};
-
-	const createCustomMarker  = (className: string) => {
-		return L.divIcon({
-			className,
-			html: `</>`,
-			iconSize: [10, 10],
-			iconAnchor: [5, 45],
 			popupAnchor: [0, -40],
 		});
 	};
@@ -78,13 +96,11 @@ const ShowBikes: React.FC<{
 		<>
 		<MarkerClusterGroup iconCreateFunction={() => createClusterMarker("bike-marker")}>
 			{availableBikes.map((bike) => {
-				const lowBattery = bike.status.battery_level < 20;
-				const className = lowBattery ? "bike-available-low-battery" : "bike-marker";
 				return (
 					<Marker
 						key={bike.bike_id}
 						position={bike.location}
-						icon={lowBattery ? createCustomMarker(className) : bikeMarker}
+						icon={bikeIcon(bike)}
 						ref={(marker) => marker && markerRefs.current.set(bike.bike_id, marker)}
 						eventHandlers={{
 							popupopen: () => setOpenBikeId(bike.bike_id),
@@ -101,44 +117,14 @@ const ShowBikes: React.FC<{
 			})}
 		</MarkerClusterGroup>
 		
-		{/* <MarkerClusterGroup iconCreateFunction={() => createClusterMarker("bike-in-use-marker")}>
-			{inUseBikes.map((bike) => {
-				const lowBattery = bike.status.battery_level < 20;
-				const className = lowBattery ? "bike-in-use-low-battery" : "bike-in-use-marker";
-				return (
-					<Marker
-						key={bike.bike_id}
-						position={bike.location}
-						icon={createCustomMarker(className)}
-						ref={(marker) => marker && markerRefs.current.set(bike.bike_id, marker)}
-						eventHandlers={{
-							popupopen: () => setOpenBikeId(bike.bike_id),
-							popupclose: () => setOpenBikeId(null),
-						}}
-					>
-					<Popup>
-						<strong>{bike.bike_id}</strong><br />
-						<strong>Speed:</strong> {bike.speed} km/h<br />
-						<strong>Battery:</strong> {bike.status.battery_level}%<br />
-						<strong>Status:</strong> {bike.status.available ? "Available" : "In use"}<br />
-						<strong>User:</strong> {users.get(bike.bike_id)}<br />
-						<button className="force-stop-btn" onClick={() => handleForceStop(bike)}>Force stop</button>
-					</Popup>
-					</Marker>
-				);
-			})}
-		</MarkerClusterGroup> */}
-		
-		{/* om cykeln används, visa alltid separat utan cluster (problematiskt om alla används?) */}
+		{/* visa alltid separat utan cluster om cykeln används, detta för att
+		minimera de upplevda "hopp" som uppstår när cyklar clustras/"av-clustras" */}
 		{inUseBikes.map((bike) => {
-			const lowBattery = bike.status.battery_level < 20;
-			const className = lowBattery ? "bike-in-use-low-battery" : "bike-in-use-marker";
-
 			return (
 			<Marker
 				key={bike.bike_id}
 				position={bike.location}
-				icon={createCustomMarker(className)}
+				icon={bikeIcon(bike)}
 			>
 				<Popup>
 					<strong>{bike.bike_id}</strong><br />
