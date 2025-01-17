@@ -8,6 +8,10 @@ import ShowBikes from "../Bikes";
 import { City as CityInterface, ParkingZone, ChargingStation, Bike, BikeUsersProps } from "./interfaces";
 import { fetchOneCity } from "../../fetchModels/fetchOneCity";
 import { fetchCityProps } from "../../fetchModels/fetchCityProps";
+import scooterIconBlue from "/src/assets/scooter-pin-blue.png";
+import scooterIconGreen from "/src/assets/scooter-pin-green.png";
+import scooterIconOrange from "/src/assets/scooter-pin-orange.png";
+import scooterIconRed from "/src/assets/scooter-pin-red.png";
 import "./index.css";
 
 /*** 
@@ -187,6 +191,8 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 	return (
 		<>
 		<h1>{currentCity ? currentCity.display_name : ""}</h1>
+		<div className="return-content">
+		<div className="map-div">
 		<MapContainer center={cityCenter} zoom={12}>
 			<TileLayer
 				attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
@@ -207,6 +213,29 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 			)}
 			<BikeViewportUpdater />
 		</MapContainer>
+		</div>
+		<div className="color-div">
+			<h2>Color codes</h2>
+			<div className="color-codes">
+				<div className="color-code">
+					<img src={scooterIconBlue} alt="Blue Icon" className="color-icon" />
+					<span> = Available</span>
+				</div>
+				<div className="color-code">
+					<img src={scooterIconGreen} alt="Green Icon" className="color-icon" />
+					<span> = In use, battery &gt; 30%</span>
+				</div>
+				<div className="color-code">
+					<img src={scooterIconOrange} alt="Orange Icon" className="color-icon" />
+					<span> = In use, battery 15% - 30%</span>
+				</div>
+				<div className="color-code">
+					<img src={scooterIconRed} alt="Red Icon" className="color-icon" />
+					<span> = In use, battery &lt; 15%</span>
+				</div>
+			</div>
+		</div>
+		</div>
 		</>
 	);
 };
