@@ -56,7 +56,6 @@ function App() {
 
     window.addEventListener("bikeUserStorage", handleBikeUsers);
 
-    // Initial load from localStorage
     updateBikeUsers();
 
     return () => {

@@ -1,9 +1,12 @@
 import * as SecureStore from 'expo-secure-store';
+import Constants from 'expo-constants';
 
 export default async function fetchOneUserByGitId(id: number) {
 	const token = await SecureStore.getItemAsync('access_token')
+	const { BACKEND_URL } = Constants?.expoConfig?.extra as { BACKEND_URL: string };
+	
 	try {
-		const response = await fetch(`http://vteambackend.loca.lt/get/one/git/user/?id=${id}`, {
+		const response = await fetch(`${BACKEND_URL}/get/one/git/user/?id=${id}`, {
 		method: 'GET',
 		headers: {
 			'Authorization': `Bearer ${token}`,

@@ -7,14 +7,18 @@ import fetchCityProps from '../fetchModels/fetchCityProps';
 import ShowParkingZones from '../ParkingZones';
 import ShowChargingStations from '../ChargingStations';
 import ShowBikes from '../Bikes';
-import { City } from '../interfaces';
+import { City, User as UserInterface } from '../interfaces';
 import { useAuth } from '../AuthCheck';
 import { useNavigation, useFocusEffect } from 'expo-router';
+import io from 'socket.io-client';
+import fetchOneUserByGitId from '../fetchModels/fetchOneUser';
+import * as SecureStore from 'expo-secure-store';
+import Constants from 'expo-constants';
 
 const MapTab: React.FC = () => {
 	const { isAuthenticated } = useAuth();
 	const navigation = useNavigation();
-
+	const socket = useRef<ReturnType<typeof io> | null>(null);
 	const [cities, setCities] = useState<{ name: string; value: string }[]>([]);
 	const [cityCenter, setCityCenter] = useState<LatLng | null>(null);
 	const [availableZones, setAvailableZones] = useState<any[]>([]);
@@ -27,6 +31,93 @@ const MapTab: React.FC = () => {
 	const [loadingCities, setLoadingCities] = useState<boolean>(true);
 	const [region, setRegion] = useState<Region | null>(null);
 	const mapRef = useRef<MapView | null>(null);
+	const [userData, setUserData] = useState< UserInterface | null | undefined >(undefined);
+
+	const { BACKEND_URL } = Constants?.expoConfig?.extra as { BACKEND_URL: string };
+
+	const fetchUserData = async () => {
+		const storedUser = await SecureStore.getItemAsync('user')
+		try {
+			const result = await fetchOneUserByGitId(storedUser ? JSON.parse(storedUser).id : null)
+			setUserData(result[0])
+		} catch {
+			setUserData(null);
+		}
+	};
+
+	useEffect(() => {
+        if (!socket.current) {
+			socket.current = io(BACKEND_URL);
+		}
+        
+		const isBikeInViewport = (bikeLocation: [number, number], region: Region) => {
+			const latMin = region.latitude - region.latitudeDelta / 2;
+			const latMax = region.latitude + region.latitudeDelta / 2;
+			const lonMin = region.longitude - region.longitudeDelta / 2;
+			const lonMax = region.longitude + region.longitudeDelta / 2;
+	
+			return (
+				bikeLocation[0] >= latMin &&
+				bikeLocation[0] <= latMax &&
+				bikeLocation[1] >= lonMin &&
+				bikeLocation[1] <= lonMax
+			);
+		};
+
+		// lägg till tillgängliga cyklar på kartan
+        socket.current.on('bikeOnAppMap', (data: {
+			bikeId: string;
+			position: [number, number];
+			battery: number;
+		}) => {
+			// uppdatera bara cyklar som är i nuvarande viewport
+			if (region && isBikeInViewport(data.position, region)) {
+				setBikesInCity((prevBikes) =>
+					prevBikes.map((bike) =>
+						bike.bike_id === data.bikeId ? {
+							...bike,
+							location: data.position,
+							speed: 0,
+							status: {
+								...bike.status,
+								battery_level: data.battery,
+								available: true,
+							}
+						} : bike
+					)
+				);
+			}
+        });
+        
+		// ta bort hyrda cyklar från kartan
+		socket.current.on('bikeOffAppMap', (data: {
+			bikeId: string;
+			position: [number, number];
+			forceUpdate?: boolean;
+		}) => {
+			// uppdatera bara cyklar som är i nuvarande viewport
+			// eller om det specifikt angetts att en cykel ska uppdateras (via forceUpdate)
+			if ((region && isBikeInViewport(data.position, region)) || data.forceUpdate) {
+				setBikesInCity((prevBikes) =>
+					prevBikes.map((bike) =>
+						bike.bike_id === data.bikeId ? {
+							...bike,
+							status: {
+								...bike.status,
+								available: false 
+							}
+						} : bike
+					)
+				);
+			}
+        });
+
+        return () => {
+			socket.current?.off("bikeOnAppMap");
+			socket.current?.off("bikeOffAppMap");
+            socket.current?.disconnect();
+        };
+    }, []);
 
 	useFocusEffect(
 		useCallback(() => {
@@ -39,6 +130,7 @@ const MapTab: React.FC = () => {
 				);
 			} else {
 				fetchCitiesData();
+				fetchUserData();
 			}
 		}, [isAuthenticated, navigation])
 	);
@@ -68,45 +160,45 @@ const MapTab: React.FC = () => {
 
 	const fetchCityCenter = async (cityName: string) => {
 		if (cityName === 'current') {
-		try {
-			const { status } = await Location.requestForegroundPermissionsAsync();
-				if (status !== 'granted') {
-					console.error('Permission to access location denied.');
-					return;
-				}
-				const { coords } = await Location.getCurrentPositionAsync({});
-				const newCenter: LatLng = { latitude: coords.latitude, longitude: coords.longitude };
+			try {
+				const { status } = await Location.requestForegroundPermissionsAsync();
+					if (status !== 'granted') {
+						console.error('Permission to access location denied.');
+						return;
+					}
+					const { coords } = await Location.getCurrentPositionAsync({});
+					const newCenter: LatLng = { latitude: coords.latitude, longitude: coords.longitude };
+					setCityCenter(newCenter);
+					mapRef.current?.animateToRegion({
+						...newCenter,
+						latitudeDelta: 0.0922,
+						longitudeDelta: 0.0421,
+					});
+			} catch (error) {
+				return [];
+			}
+		} else {
+			try {
+				const response = await fetch(
+				`https://nominatim.openstreetmap.org/search.php?q=${cityName}&countrycodes=se&format=json&addressdetails=1&limit=1`
+				);
+				const data = await response.json();
+				if (data?.length) {
+					const cityData = data[0];
+					const newCenter: LatLng = {
+					latitude: parseFloat(cityData.lat),
+					longitude: parseFloat(cityData.lon)
+				};
 				setCityCenter(newCenter);
 				mapRef.current?.animateToRegion({
 					...newCenter,
 					latitudeDelta: 0.0922,
 					longitudeDelta: 0.0421,
 				});
-		} catch (error) {
-			return [];
-		}
-		} else {
-		try {
-			const response = await fetch(
-			`https://nominatim.openstreetmap.org/search.php?q=${cityName}&countrycodes=se&format=json&addressdetails=1&limit=1`
-			);
-			const data = await response.json();
-			if (data?.length) {
-				const cityData = data[0];
-				const newCenter: LatLng = {
-				latitude: parseFloat(cityData.lat),
-				longitude: parseFloat(cityData.lon)
-			};
-			setCityCenter(newCenter);
-			mapRef.current?.animateToRegion({
-				...newCenter,
-				latitudeDelta: 0.0922,
-				longitudeDelta: 0.0421,
-			});
+				}
+			} catch (error) {
+				return [];
 			}
-		} catch (error) {
-			return [];
-		}
 		}
 	};
 
@@ -141,17 +233,17 @@ const MapTab: React.FC = () => {
 
 	useEffect(() => {
 		Animated.spring(animationValue, {
-		toValue: isDropdownVisible ? 1 : 0,
-		useNativeDriver: true,
+			toValue: isDropdownVisible ? 1 : 0,
+			useNativeDriver: true,
 		}).start();
 	}, [isDropdownVisible]);
 
 	const closeModal = () => {
 		Animated.spring(animationValue, {
-		toValue: 0,
-		useNativeDriver: true,
+			toValue: 0,
+			useNativeDriver: true,
 		}).start(() => setDropdownVisible(false));
-	};
+	};	
 
 	if (loadingCities || loading || !cityCenter) {
 		return (
@@ -164,21 +256,36 @@ const MapTab: React.FC = () => {
 
 	return (
 		<View style={styles.container}>
+		{userData?.payment_method == "" && (
+			<View style={styles.banner}>
+				<Text style={styles.bannerText}>Add a payment method to be able to rent a bike</Text>
+			</View>
+		)}
+		{userData?.banned && (
+			<View style={styles.banner}>
+				<Text style={styles.bannerText}>You are not able to rent any bikes, contact account@soloscoot.com for more information.</Text>
+			</View>
+		)}
 		<Image source={require('@/assets/images/solo-scoot-logo.png')} style={styles.soloScootLogo} />
 		<MapView
 			ref={mapRef}
 			style={styles.map}
 			region={{
-			latitude: cityCenter.latitude,
-			longitude: cityCenter.longitude,
-			latitudeDelta: 0.0922,
-			longitudeDelta: 0.0421,
+				latitude: cityCenter.latitude,
+				longitude: cityCenter.longitude,
+				latitudeDelta: 0.0922,
+				longitudeDelta: 0.0421,
 			}}
 			onRegionChangeComplete={handleRegionChangeComplete}
 		>
 			<ShowParkingZones zones={availableZones} />
 			<ShowChargingStations stations={availableStations} />
-			{bikesInCity.length > 0 && region && <ShowBikes bikes={bikesInCity} region={region} />}
+			{bikesInCity.length > 0 && region && userData &&
+				<ShowBikes
+					bikes={bikesInCity.filter((bike) => bike.status.available)}
+					region={region}
+					userData={userData}
+				/>}
 		</MapView>
 		<TouchableOpacity
 			style={styles.dropdownButton}
@@ -225,6 +332,23 @@ const styles = StyleSheet.create({
 	},
 	map: {
 		flex: 1
+	},
+	banner: {
+		width: '100%',
+		height: '12%',
+		backgroundColor: 'red',
+		padding: 10,
+		alignItems: 'center',
+		justifyContent: 'center',
+		zIndex: 1000
+	},
+	bannerText: {
+		color: '#fff',
+		fontSize: 16,
+		fontWeight: 'bold',
+		position: 'absolute',
+		bottom: 15,
+		textAlign: 'center'
 	},
 	loadingContainer: {
 		flex: 1,

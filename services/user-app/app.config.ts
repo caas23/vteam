@@ -12,7 +12,8 @@ export default {
     newArchEnabled: true,
     extra: {
       API_KEY: process.env.API_KEY,
-      GITHUB_ID: process.env.GITHUB_ID
+      GITHUB_ID: process.env.GITHUB_ID,
+      BACKEND_URL: process.env.BACKEND_URL
     },
     plugins: [
         "expo-secure-store"

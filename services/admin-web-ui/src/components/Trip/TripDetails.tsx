@@ -8,9 +8,9 @@ const TripDetails: React.FC<TripDetailsProps> = ({ data }) => {
   const [alertBox, setAlertBox] = useState(false);
   const [alertMessage, setAlertMessage] = useState("");
   const totalSeconds = (new Date(data.end_time).getTime() - new Date(data.start_time).getTime()) / 1000;
-  const totalMinutes = totalSeconds / 60;
-  const averageSpeed = distance !== null && totalSeconds > 0 
-    ? (distance / 1000) / (totalSeconds / 3600) : null;
+  const totalMinutes = Math.floor(totalSeconds / 60);
+  const averageSpeed = distance && totalSeconds > 0 
+    ? (distance / 1000) / (totalSeconds / 3600) : 0;
 
   const handlePriceInfoClick = () => {
     setAlertMessage(`
@@ -43,12 +43,10 @@ const TripDetails: React.FC<TripDetailsProps> = ({ data }) => {
         <span>Start time: {new Date(data.start_time).toLocaleString().split(" ")[1]}</span>
         <span>End time: {new Date(data.end_time).toLocaleString().split(" ")[1]}</span>
         <span>Total time: {totalMinutes.toFixed()} min {(totalSeconds % 60).toFixed()} sec</span>
-        {distance !== null && (
+        {distance ? (
           <span>Total distance: {(distance / 1000).toFixed(2)} km</span>
-        )}
-        {averageSpeed !== null && (
-          <span>Average speed: {averageSpeed.toFixed(1)} km/h</span>
-        )}
+        ) : <span>Total distance: 0 km</span>}
+        <span>Average speed: {averageSpeed.toFixed(1)} km/h</span>
         <span className="trip-price">Price: {data.price} kr</span>
         <div onClick={handlePriceInfoClick} className="price-info"></div>
       </div>
