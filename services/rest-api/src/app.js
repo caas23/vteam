@@ -13,7 +13,7 @@ import http from "http";
 import { Server } from "socket.io";
 import bikeManager from "../../bike-logic/bikeManager.js";
 import { saveStartedTrip, saveFinishedTrip, getRoutes } from "./trip.js";
-import { updateTrips } from "../../db/users.js";
+import { updateTrips, getOneGitUser } from "../../db/users.js";
 
 dotenv.config();
 
@@ -97,8 +97,68 @@ io.on("connection", (socket) => {
         await bikeManager.stopBike(bikeId);
         await bikeManager.updateBikeState(bike);
         await updateTrips(userId, tmp.trip_id)
-        io.emit("bikeNotInUse", { bikeId, battery, position })
-        io.emit("routeFinished", { bikeId });       
+        io.emit("bikeNotInUse", { bikeId, battery, position });
+        io.emit("routeFinished", { bikeId, battery, position })
+        io.emit("bikeOnAppMap", { bikeId, battery, position });
+    });
+
+    
+    socket.on("bikeInUseApp", async (data) => {    
+        io.emit("bikeOffAppMap", { bikeId: data.bikeId, position: data.position, forceUpdate: true })
+        io.emit("bikeInUse", { 
+            bikeId: data.bikeId, 
+            position: data.position, 
+            speed: data.speed,
+            battery: data.battery,
+        });
+        
+        const trip = {
+            start_time: data.startTime,
+            start_location: data.position,
+        };
+
+        const { tripId, _ } = await saveStartedTrip(trip);
+
+        tempData[data.bikeId] = {
+            trip_id: tripId,
+            start_time: data.startTime,
+        };
+
+    });
+    
+    socket.on("bikeNotInUseApp", async (data) => {
+        io.emit("bikeNotInUse", { 
+            bikeId: data.bikeId,
+            position: data.position, 
+            battery: data.battery,
+        });
+        io.emit("routeFinished", { bikeId: data.bikeId });
+        io.emit("bikeOnAppMap", { 
+            bikeId: data.bikeId,
+            position: data.position,
+            battery: data.battery,
+        })
+        
+        const trip = {
+            end_time: data.endTime,
+            end_location: data.position,
+            price: data.price,
+            trip_id: tempData[data.bikeId].trip_id,
+        }
+
+        const bike = {
+            bikeId: data.bikeId,
+            tripId: tempData[data.bikeId].trip_id,
+            location: data.position,
+            battery_level: data.battery,
+            speed: 0
+        }
+
+        await saveFinishedTrip(trip);
+        await bikeManager.stopBike(data.bikeId);
+        await bikeManager.updateBikeState(bike);
+        const user = await getOneGitUser(data.gitId)
+        await updateTrips(user[0].user_id, tempData[data.bikeId].trip_id) 
     });
 
     socket.on("disconnect", () => {
@@ -165,16 +225,11 @@ function calculateBatteryDrain(speed) {
      * ger en uppskattning och en faktisk minskning av batteri, vilket ses som gott nog. 
      * ======================================================================================
      ***/
-    if (speed <= 5) {
-        return 0.1; // 0.1% per minut för hastighet upp till 5 km/h
-    } else if (speed <= 15) {
-        return 0.2; // 0.2% per minut för hastighet upp till 15 km/h
-    } else if (speed <= 20) {
-        return 0.3; // 0.3% per minut för hastighet upp till 20 km/h
-    } else {
-        return 0.5; // 0.5% per minut för hastighet över 20 km/h
+    if (speed <= 5) return 0.1; // 0.1% per minut för hastighet upp till 5 km/h
+    else if (speed <= 15) return 0.2; // 0.2% per minut för hastighet upp till 15 km/h
+    else if (speed <= 20) return 0.3; // 0.3% per minut för hastighet upp till 20 km/h
+    else return 0.5; // 0.5% per minut för hastighet över 20 km/h
     }
-}
 
 function calculateCurveSpeed(route, index, turnAngle) {
     /*** 
@@ -219,6 +274,7 @@ async function startSimulation () {
     let currentBike;
     for (const route of routes) {
         currentBike = bikes.filter((bike) => bike.bike_id == route.bike_id)[0]
+        if (!currentBike) continue;
         
         /* skapa en ny resa */
         const trip = {
@@ -246,6 +302,7 @@ async function startSimulation () {
         /* emitta till frontend att resan har startats */
         // skicka med bike_id och user_id för att spara i bikeUsers
         io.emit("routeStarted", { bikeId, user });
+        io.emit("bikeOffAppMap", { bikeId, position: currentBike.location })
 
         const simulationData = {
             bikeId,
@@ -382,6 +439,7 @@ function simulateBikeInUse(simulationData) {
             await updateTrips(user, tripId)
             io.emit("bikeNotInUse", { bikeId, battery, position })
             io.emit("routeFinished", { bikeId });
+            io.emit("bikeOnAppMap", { bikeId, battery, position })
         }
     };
     const move = setInterval(moveBike, interval);
@@ -392,7 +450,7 @@ const startServer = async () => {
     try {
         const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.yjhm6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
         await connectToDatabase(mongoUri);
-
+        
         const port = process.env.PORT || 1338;
         httpServer.listen(port, '0.0.0.0', () => {
             console.log(`Server is running on port ${port}`);
@@ -401,6 +459,10 @@ const startServer = async () => {
         console.error('Error starting server:', error);
     }
 };
+
+export async function startTripRealTime (bikeId, user) {
+    io.emit("routeStarted", { bikeId, user });
+}
 
 await startServer();
 await startSimulation();

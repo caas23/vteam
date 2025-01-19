@@ -137,7 +137,8 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 							speed: data.speed,
 							status: {
 								...bike.status,
-								battery_level: data.battery 
+								battery_level: data.battery,
+								available: false
 							}
 						} : bike
 					)
@@ -175,7 +176,6 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 			socket.current?.off("bikeNotInUse");
 		};
 	}, [bikesInViewport, socket]);
-
 
 	if (!cityCenter) {
 		return (

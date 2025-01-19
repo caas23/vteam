@@ -10,8 +10,8 @@ const TripDetailsModal: React.FC<TripDetailsProps> = ({ data, onClose }) => {
 	const totalSeconds = (new Date(data.end_time).getTime() - new Date(data.start_time).getTime()) / 1000;
 	const totalMinutes = Math.floor(totalSeconds / 60);
 	const remainingSeconds = Math.floor(totalSeconds % 60);
-	const averageSpeed = distance !== null && totalSeconds > 0
-		? distance / 1000 / (totalSeconds / 3600) : null;
+	const averageSpeed = distance && totalSeconds > 0
+		? distance / 1000 / (totalSeconds / 3600) : 0;
 
 	const priceDetails = `
 Every trip has a set start fee, and a set price per minute.
@@ -64,12 +64,12 @@ If you have questions about your specific trip, please submit an email to trips@
 					<Text><Text style={styles.boldText}>Start time: </Text>{new Date(data.start_time).toLocaleTimeString()}</Text>
 					<Text><Text style={styles.boldText}>End time: </Text>{new Date(data.end_time).toLocaleTimeString()}</Text>
 					<Text><Text style={styles.boldText}>Total time: </Text>{totalMinutes} min {remainingSeconds} sec</Text>
-					{distance !== null && (
+					{distance ? (
 						<Text><Text style={styles.boldText}>Total distance: </Text>{(distance / 1000).toFixed(2)} km</Text>
+					) : (
+						<Text><Text style={styles.boldText}>Total distance: </Text>0 km</Text>
 					)}
-					{averageSpeed !== null && (
-						<Text><Text style={styles.boldText}>Average speed: </Text>{averageSpeed.toFixed(1)} km/h</Text>
-					)}
+					<Text><Text style={styles.boldText}>Average speed: </Text>{averageSpeed.toFixed(1)} km/h</Text>
 					<View style={styles.priceContainer}>
 						<Text><Text style={styles.boldText}>Price: </Text>{data.price} kr</Text>
 						<TouchableOpacity onPress={() => setPriceInfoVisible(true)} style={styles.questionMark}><Text style={styles.questionMarkText}>?</Text></TouchableOpacity>

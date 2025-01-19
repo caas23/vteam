@@ -1,10 +1,12 @@
 import * as SecureStore from 'expo-secure-store';
+import Constants from 'expo-constants';
 
 export default async function fetchCities() {
-    const token = await SecureStore.getItemAsync('access_token')
+	const token = await SecureStore.getItemAsync('access_token')
+	const { BACKEND_URL } = Constants?.expoConfig?.extra as { BACKEND_URL: string };
     
 	try {
-        const response = await fetch('http://vteambackend.loca.lt/get/all/cities', {
+        const response = await fetch(`${BACKEND_URL}/get/all/cities`, {
 		method: 'GET',
 		headers: {
 			'Authorization': `Bearer ${token}`,

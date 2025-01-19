@@ -1,8 +1,11 @@
+import Constants from 'expo-constants';
+
 export default async function fetchGitHubAccessToken(code: string) {
-  	const type = 'app';
+	const type = 'app';
+	const { BACKEND_URL } = Constants?.expoConfig?.extra as { BACKEND_URL: string };
 	
 	try {
-		const response = await fetch("http://vteambackend.loca.lt/add/auth/github", {
+		const response = await fetch(`${BACKEND_URL}/add/auth/github`, {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",

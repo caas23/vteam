@@ -10,9 +10,9 @@ export const getOneUser = async (user) => {
   return users;
 };
 
-export const getOneGitUser = async (user) => {
-  const users = await getCollection('users').find({ git_id: parseInt(user) }).toArray();
-  return users;
+export const getOneGitUser = async (gitId) => {
+  const user = await getCollection('users').find({ git_id: parseInt(gitId) }).toArray();
+  return user;
 };
 
 export const getUsersPagination =  async (filter = {}, skip = 0, limit = 5) => {

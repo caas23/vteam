@@ -1,16 +1,19 @@
 import * as SecureStore from 'expo-secure-store';
+import Constants from 'expo-constants';
 
 export default async function fetchUpdateUse (data: object) {
-    const token = await SecureStore.getItemAsync('access_token');
-    try {
-      const response = await fetch("http://vteambackend.loca.lt/update/user/payment", {
-        method: "PUT",
-        headers: {
-          "Content-Type": "application/json",
-          "Authorization": `Bearer ${token}`,
-        },
-        body: JSON.stringify(data),
-    });
+  const token = await SecureStore.getItemAsync('access_token');
+  const { BACKEND_URL } = Constants?.expoConfig?.extra as { BACKEND_URL: string };
+  
+  try {
+      const response = await fetch(`${BACKEND_URL}/update/user/payment`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+            "Authorization": `Bearer ${token}`,
+          },
+          body: JSON.stringify(data),
+      });
 
 	if (!response.ok) {
 		throw new Error(response.statusText);
