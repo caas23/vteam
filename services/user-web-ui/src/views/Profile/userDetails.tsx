@@ -56,7 +56,7 @@ const UserDetails: React.FC<UserDetailsProps> = ({ data }) => {
             <div className="user-details">
                 <span>Name: {data.name}</span>
                 <span>Payment method: {newPaymentMethod ? newPaymentMethod : data.payment_method}</span>
-                <span>{(newPaymentMethod && newPaymentMethod.toLowerCase() == 'prepaid' || data.payment_method.toLowerCase() == 'prepaid') ? `Balance: ${newBalance ? newBalance : data.balance} kr` : ""}</span>
+                <span>{(newPaymentMethod && newPaymentMethod.toLowerCase() == 'prepaid' || data.payment_method.toLowerCase() == 'prepaid') ? `Balance: ${newBalance ? newBalance.toFixed(2) : data.balance.toFixed(2)} kr` : ""}</span>
 
                 {(newPaymentMethod && newPaymentMethod.toLowerCase() == 'prepaid' || data.payment_method.toLowerCase() == 'prepaid') && (
                     <button className="edit-btn blue" onClick={handleRefillClick}>

@@ -13,7 +13,8 @@ import http from "http";
 import { Server } from "socket.io";
 import bikeManager from "../../bike-logic/bikeManager.js";
 import { saveStartedTrip, saveFinishedTrip, getRoutes } from "./trip.js";
-import { updateTrips, getOneGitUser } from "../../db/users.js";
+import { paymentStatusTrip, monthlyPayment } from "./payment.js";
+import { updateTrips, getOneGitUser, getPaymentMethod, updateBalance } from "../../db/users.js";
 
 dotenv.config();
 
@@ -110,11 +111,13 @@ io.on("connection", (socket) => {
 
         io.emit("bikeNotInUse", { bikeId, battery, position });
         io.emit("routeFinished", { bikeId, battery, position })
-        io.emit("bikeOnAppMap", { bikeId, battery, position });
+        io.emit("bikeOnAppMap", { bikeId, battery, position });      
+        
         await saveFinishedTrip(trip);
         await bikeManager.stopBike(bikeId);
         await bikeManager.updateBikeState(bike);
         await updateTrips(userId, tmp.trip_id)
+        await handlePayment(userId, price, tmp.trip_id)
     });
 
     
@@ -172,14 +175,43 @@ io.on("connection", (socket) => {
         await saveFinishedTrip(trip);
         await bikeManager.stopBike(data.bikeId);
         await bikeManager.updateBikeState(bike);
-        const user = await getOneGitUser(data.gitId)
-        await updateTrips(user[0].user_id, tempData[data.bikeId].trip_id) 
+        const user = await getOneGitUser(data.gitId);
+        await updateTrips(user[0].user_id, tempData[data.bikeId].trip_id);
+        await handlePayment(user[0].user_id, data.price, tempData[data.bikeId].trip_id)
     });
 
     socket.on("disconnect", () => {
         // console.log("Client disconnected", socket.id);
     });
 });
+
+// hantera betalning vid slutet av en resa
+const handlePayment = async (userId, cost, tripId) => {
+    try {
+        /* kolla vilken betalmetod kunden har, och agera därefter */
+        const method = (await getPaymentMethod(userId)).toLowerCase();
+        let success = false;
+    
+        if (method === "prepaid") {
+            // om prepaid, dra pengar från kontot
+            success = await updateBalance(userId, cost);
+    
+            if (success) {
+                // markera resan som betald
+                return await paymentStatusTrip(tripId, true, method);
+            }
+        }
+        // om månatlig (eller problem med prepaid),
+        // spara beloppet för dragning den 27:e (eller dylikt)
+        await monthlyPayment(userId, tripId, cost);
+    
+        // markera resan som obetald
+        await paymentStatusTrip(tripId, false, "monthly");
+    } catch (error) {
+        console.error(`Error handling payment for user ${userId} and trip ${tripId}:`, error);
+    }
+};
+  
 
 // avståndet mellan två koordinater (Haversine)
 // troligen hade även Pythagoras varit god nog i detta fall, 
@@ -404,7 +436,6 @@ async function startSimulation () {
     simulateBatch();
 }
 
-
 const tempData = {};
 function simulateBikeInUse(simulationData) {
     /*** 
@@ -522,13 +553,16 @@ function simulateBikeInUse(simulationData) {
                 battery_level: battery,
                 speed: 0
             }
+
             io.emit("bikeNotInUse", { bikeId, battery, position })
             io.emit("routeFinished", { bikeId });
             io.emit("bikeOnAppMap", { bikeId, battery, position })
             await saveFinishedTrip(trip);
             await bikeManager.stopBike(bikeId);
             await bikeManager.updateBikeState(bike);
-            await updateTrips(user, tripId)
+            await updateTrips(user, tripId);
+            await handlePayment(user, price, tripId)
+
         }
     };
     const move = setInterval(moveBike, interval);
@@ -554,4 +588,4 @@ export async function startTripRealTime (bikeId, user) {
 }
 
 await startServer();
-// await startSimulation();
+await startSimulation();
