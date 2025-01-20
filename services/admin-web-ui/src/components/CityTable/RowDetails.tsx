@@ -104,8 +104,8 @@ const RowDetails: React.FC<RowItemProps> = ({ item, onDelete }) => {
 			<span>
 				<strong>Bike #{item.bike_id}</strong>
 			</span>
-			<span>Status: {item.status.in_service ? "In Service" : item.status.available ? "Available" : "Occupied"}</span>
-			<span>Location: [{item.location.join(", ")}]</span>
+			{/* <span>Status: {item.status.in_service ? "In Service" : item.status.available ? "Available" : "In use"}</span> */}
+			{/* <span>Location: [{item.location.join(", ")}]</span> */}
 			<span className="more-details"><a href={`/bike/${item.bike_id}`}>View more details</a></span>
 		</div>
 		);
@@ -148,16 +148,16 @@ const RowDetails: React.FC<RowItemProps> = ({ item, onDelete }) => {
 			) : (
 				<div>
 					<span>Area: {readOnlyArea(submittedData.area)}</span>
-					<span>Plugs: {item.plugs.length}
+					{/* <span>Plugs: {item.plugs.length}
 						<span className="sub-list">
 						{item.plugs.map((plug, index) => (
 							<div key={index}>
 							<span className="sub-level-arrow">&#8618; </span> 
-								Plug #{plug.id}: {plug.available ? "Available" : "Occupied"}
+								Plug #{plug.id}: {plug.available ? "Available" : "In use"}
 							</div>
 						))}
 						</span>
-					</span>
+					</span> */}
 				</div>
 
 			)}
