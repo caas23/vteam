@@ -58,11 +58,10 @@ const BikeDetails: React.FC<BikeDetailsProps> = ({ data }) => {
   
   return (
     <div className="bike-details">
-        <span>Location: [{data.location.join(", ")}]</span>
+        {formData.status.available && <span>Location: [{data.location.join(", ")}]</span>}
         <span>City: {data.city_name}</span>
-        <span>Speed: {data.speed} km/h</span>
         <span>Status: {formData.status.in_service ? "In Service" : formData.status.available ? "Available" : "In use"}</span>
-        <span>Battery: {data.status.battery_level} %</span>
+        {formData.status.available && <span>Battery: {data.status.battery_level} %</span>}
         <span>Trips: {data.completed_trips.length}</span>
         <span className="sub-list">
           {data.completed_trips.map((trip, index) => (
@@ -75,6 +74,10 @@ const BikeDetails: React.FC<BikeDetailsProps> = ({ data }) => {
             </div>
           ))}
         </span>
+        {!formData.status.available && !formData.status.in_service &&
+          <span className="bike-ongoing-trip">
+            Head over to the <a href={`/map/${data.city_name.toLowerCase()}`}>map for {data.city_name}</a> to see this bike in action!
+          </span>}
         {!formData.status.in_service && formData.status.available && 
         <>
         <button className="edit-btn bike service" onClick={handleRequestService}>

@@ -554,4 +554,4 @@ export async function startTripRealTime (bikeId, user) {
 }
 
 await startServer();
-await startSimulation();
+// await startSimulation();
