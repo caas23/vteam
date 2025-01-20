@@ -71,6 +71,22 @@ router.put("/user/ban", checkAuth, async (req, res) => {
     res.json(result);
 });
 
+router.put("/user/removeban", checkAuth, async (req, res) => {
+    let userId = req.body.user_id;
+    let userCollection = getCollection("users");
+
+    const result = await userCollection.updateOne(
+        { user_id: userId },
+        { 
+            $set: { 
+                "banned": false
+            } 
+        },
+        { returnDocument: "after" }
+    );
+    res.json(result);
+});
+
 router.put("/user/payment", checkAuth, async (req, res) => {
     let { user_id, name, method } = req.body;
     let userCollection = getCollection("users");
