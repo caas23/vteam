@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { UserDetailsProps } from "./interfaces";
 import { fetchBanUser } from "../../fetchModels/fetchBanUser";
+import { fetchRemoveBanUser } from "../../fetchModels/fetchRemoveBanUser";
 import { fetchDeleteUser } from "../../fetchModels/fetchDeleteUser";
 
 import ConfirmDelete from "../ConfirmDelete";
@@ -28,6 +29,24 @@ const UserDetails: React.FC<UserDetailsProps> = ({ data }) => {
       } catch (error) {
         console.error("Error banning user:", error);
         setAlertMessage("Error banning user.");
+        setAlertBox(true);
+      }
+  };
+  
+  const handleRemoveBanUser = async () => {
+      try {
+        const updatedData = {
+          ...formData,
+          banned: false
+        };
+  
+        setFormData(updatedData);
+        await fetchRemoveBanUser(data.user_id);
+        setAlertMessage("The user will now be able to rent bikes.");
+        setAlertBox(true);
+      } catch (error) {
+        console.error("Error rmoving ban for user:", error);
+        setAlertMessage("Error rmoving ban for user.");
         setAlertBox(true);
       }
   };
@@ -75,8 +94,11 @@ const UserDetails: React.FC<UserDetailsProps> = ({ data }) => {
         {!formData.banned ? 
         <button className="edit-btn bike service" onClick={handleBanUser}>
           Ban user
+        </button> : 
+        <button className="edit-btn bike service" onClick={handleRemoveBanUser}>
+          Remove ban
         </button>
-        : ""}
+        }
         <button className="edit-btn bike red" onClick={openConfirmation}>
             Delete user
         </button>
