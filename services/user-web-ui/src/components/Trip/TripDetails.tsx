@@ -50,6 +50,16 @@ const TripDetails: React.FC<TripDetailsProps> = ({ data }) => {
           <span>Average speed: {averageSpeed.toFixed(1)} km/h</span>
           <span className="trip-price">Price: {data.price} kr</span>
           <div onClick={handlePriceInfoClick} className="price-info"></div>
+          {data.payed && (
+          <div className="payed">
+            <span>Payed &#10003;</span>
+          </div>
+          )}
+          {!data.payed && (
+          <div className="not-payed">
+            <span>Awaiting monthly payment ...</span>
+          </div>
+          )}
         </div>
         <div className="trip-map-ref">
           <div>
