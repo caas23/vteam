@@ -14,6 +14,22 @@
     }
 }
 
+.bike-ongoing-trip {
+  display: block;
+  border: 2px dashed var(--color-blue-primary);
+  padding: 0.25em;
+  margin-top: 0.5em;
+  max-width: fit-content;
+
+  & a {
+    color: var(--color-blue-primary)
+  }
+  
+  & a:hover {
+    color: var(--color-blue-dark)
+  }
+}
+
 .more-details a:hover {
     cursor: pointer;
     color: var(--color-blue-primary);

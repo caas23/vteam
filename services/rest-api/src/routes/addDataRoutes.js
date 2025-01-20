@@ -4,7 +4,6 @@ import { getCollection } from '../../../db/collections.js';
 import { checkAuth } from '../auth.js';
 import { getOneGitUser } from '../../../db/users.js';
 import { startTripRealTime } from '../app.js';
-import { saveStartedTrip } from '../trip.js';
 
 const router = express.Router();
 
@@ -39,6 +38,12 @@ router.post("/city", checkAuth, async (req, res) => {
     res.json(result);
 });
 
+router.post("/bike/to/city", async (req, res) => {
+    let newBike = req.body.bike;
+
+    const result = await bikeManager.createBike(newBike);
+    res.json(result);
+});
 
 router.post("/rent/bike", checkAuth, async (req, res) => {
     const bike = req.body.bike;
