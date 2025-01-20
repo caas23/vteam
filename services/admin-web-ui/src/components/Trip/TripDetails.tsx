@@ -53,7 +53,7 @@ const TripDetails: React.FC<TripDetailsProps> = ({ data }) => {
       {data.trip_info && (
       <div className="trip-info">
         <span>{data.trip_info}</span>
-        {data.fee && <span>{data.fee}</span> }
+        {data.fee != 0 && <span>{data.fee}</span> }
       </div>
       )}
       <TripMap

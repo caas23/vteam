@@ -74,7 +74,12 @@ If you have questions about your specific trip, please submit an email to trips@
 						<Text><Text style={styles.boldText}>Price: </Text>{data.price} kr</Text>
 						<TouchableOpacity onPress={() => setPriceInfoVisible(true)} style={styles.questionMark}><Text style={styles.questionMarkText}>?</Text></TouchableOpacity>
 					</View>
-					<View style={styles.mapContainer}>
+					{data.trip_info && (
+					<View style={styles.feeContainer}>
+						<Text style={styles.feeText}>{data.trip_info} 25 kr was added to the price.</Text>
+					</View>
+					)}
+					<View style={!data.trip_info ? styles.mapContainer : styles.mapContainerFee}>
 						<TripMap
 						data={data}
 						startLocation={data.start_location}
@@ -131,13 +136,16 @@ const styles = StyleSheet.create({
 	boldText: {
 		fontWeight: 'bold',
 	},
+	mapContainerFee: {
+		height: '57%',
+		borderRadius: 10,
+	},
 	mapContainer: {
-		height: '60%',
-		marginTop: 10,
+		height: '65%',
 		borderRadius: 10,
 	},
 	closeButton: {
-		marginTop: 25,
+		marginTop: 15,
 		backgroundColor: '#2E6DAE',
 		padding: 10,
 		borderRadius: 5,
@@ -166,7 +174,7 @@ const styles = StyleSheet.create({
 	},
 	priceInfoModal: {
 		width: '85%',
-		height: '75%',
+		height: '77%',
 		backgroundColor: '#fff',
 		borderRadius: 10,
 		padding: 20,
@@ -174,6 +182,18 @@ const styles = StyleSheet.create({
 	priceInfoText: {
 		fontSize: 16,
 		marginBottom: 20,
+	},
+	feeContainer: {
+		alignItems: 'center',
+		padding: 5,
+		borderWidth: 2,
+		borderColor: '#dd1b1b',
+		borderStyle: 'dashed',
+		marginTop: 10,
+	},
+	feeText: {
+		fontSize: 12,
+		textAlign: 'center',
 	},
 });
 
