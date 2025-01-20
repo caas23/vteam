@@ -31,6 +31,23 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
             socket.current = io(BACKEND_URL);
         }
 
+        socket.current.on('forceStopApp', () => {
+            setOverlayVisible(false);
+            try {
+                setTripStartTime(null);
+                setTimeElapsed(0);
+        
+                if (locationSubscription.current) {
+                    clearInterval(locationSubscription.current);
+                    locationSubscription.current = null;
+                }
+            } catch (e) {
+                alert(`An error occurred: ${e}`);
+            } finally {
+                alert("Your trip was stopped by admin, contact support for more info.")
+            }
+        });
+
         const getUserInfo = async () => {
             const location = await Location.getCurrentPositionAsync({ 
                 accuracy: Location.Accuracy.High 
@@ -211,7 +228,7 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
 
                 const price = (elapsedSeconds / 60) * 2.5 + 10;
                 setEstimatedPrice(price);
-            }, 1000);
+            }, 200);
 
             return () => clearInterval(timer);
         }

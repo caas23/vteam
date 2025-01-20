@@ -62,27 +62,42 @@ io.on("connection", (socket) => {
         const tmp = tempData[bikeId];
         const userId = data.user;
 
+        
         if (tmp && tmp.moveInterval) {
             clearInterval(tmp.moveInterval);
             delete tmp.moveInterval;
+        } else {
+            io.emit("forceStopApp")
         }
-
+        
         const endTime = new Date();
-        const totalTimeMinutes = (endTime.getTime() - tmp.start_time.getTime()) / 60000;
+        const totalTimeMinutes = (endTime.getTime() - tmp.start_time) / 60000;
         const fee = ["Dangerous driving", "Suspicious behavior"].includes(data.reason) ? 25 : 0;
         const price = (totalTimeMinutes * 2.5 + 10 + fee).toFixed(2);
-        const battery = tmp.battery_level.toFixed(1);
-        const position = tmp.position;
+        const battery = tmp.battery_level?.toFixed(1) || data.bike.status.battery_level;
+        const position = tmp?.position || data.bike.location;
 
-        const trip = {
-            end_time: new Date(),
-            end_location: tmp.position,
-            price: price,
-            distance: parseFloat(tmp.distance * 1000), // i meter
-            route: tmp.route,
-            trip_id: tmp.trip_id,
-            reason: data.reason,
-            fee: fee
+        let trip;
+        if (tmp.route && tmp.distance) {
+            trip = {
+                end_time: endTime,
+                end_location: position,
+                price: price,
+                distance: parseFloat(tmp.distance * 1000), // i meter
+                route: tmp.route,
+                trip_id: tmp.trip_id,
+                reason: data.reason,
+                fee: fee
+            }
+        } else {
+            trip = {
+                end_time: endTime,
+                end_location: position,
+                price: price,
+                trip_id: tmp.trip_id,
+                reason: data.reason,
+                fee: fee
+            }
         }
 
         const bike = {
@@ -93,13 +108,13 @@ io.on("connection", (socket) => {
             speed: 0
         }
 
+        io.emit("bikeNotInUse", { bikeId, battery, position });
+        io.emit("routeFinished", { bikeId, battery, position })
+        io.emit("bikeOnAppMap", { bikeId, battery, position });
         await saveFinishedTrip(trip);
         await bikeManager.stopBike(bikeId);
         await bikeManager.updateBikeState(bike);
         await updateTrips(userId, tmp.trip_id)
-        io.emit("bikeNotInUse", { bikeId, battery, position });
-        io.emit("routeFinished", { bikeId, battery, position })
-        io.emit("bikeOnAppMap", { bikeId, battery, position });
     });
 
     
@@ -113,7 +128,7 @@ io.on("connection", (socket) => {
         });
         
         const trip = {
-            start_time: data.startTime,
+            start_time: new Date(data.startTime),
             start_location: data.position,
         };
 
@@ -121,7 +136,7 @@ io.on("connection", (socket) => {
 
         tempData[data.bikeId] = {
             trip_id: tripId,
-            start_time: data.startTime,
+            start_time: new Date(data.startTime),
         };
 
     });
@@ -263,58 +278,132 @@ function calculateCurveSpeed(route, index, turnAngle) {
 }
 
 let generatedUsers = new Set();
+// async function startSimulation () {
+//     /* hämta alla cyklar */
+//     const bikes = await bikeManager.getAllBikes();
+
+//     /* hämta alla rutter */
+//     const routes = (await getRoutes()).filter(route => route.bike_id);
+    
+//     /* matcha cykel och rutt */
+//     let currentBike;
+//     for (const route of routes) {
+//         currentBike = bikes.filter((bike) => bike.bike_id == route.bike_id)[0]
+//         if (!currentBike) continue;
+        
+//         /* skapa en ny resa */
+//         const trip = {
+//             start_time: new Date(),
+//             start_location: currentBike.location,
+//         };
+
+//         const { tripId, startTime } = await saveStartedTrip(trip);
+
+//         /* generera en användare som kan kopplas till resan */
+//         let user;
+//         do {
+//             const randomNumber = Math.floor(Math.random() * 1500) + 1;
+//             user = `U${randomNumber.toString().padStart(3, '0')}`;
+//         } while (generatedUsers.has(user));
+//         generatedUsers.add(user)
+        
+//         let bikeId = currentBike.bike_id;
+//         let battery = currentBike.status.battery_level
+        
+//         /* starta resan */
+//         console.log(`Starting bike: ${bikeId}`);
+//         await bikeManager.startBike(bikeId);
+        
+//         /* emitta till frontend att resan har startats */
+//         // skicka med bike_id och user_id för att spara i bikeUsers
+//         io.emit("routeStarted", { bikeId, user });
+//         io.emit("bikeOffAppMap", { bikeId, position: currentBike.location })
+
+//         const simulationData = {
+//             bikeId,
+//             route: route.route,
+//             battery,
+//             user,
+//             tripId,
+//             startTime
+//         }
+//         simulateBikeInUse(simulationData); // simulate movement
+//     }
+// }
+
 async function startSimulation () {
     /* hämta alla cyklar */
     const bikes = await bikeManager.getAllBikes();
 
     /* hämta alla rutter */
     const routes = (await getRoutes()).filter(route => route.bike_id);
-    
-    /* matcha cykel och rutt */
-    let currentBike;
-    for (const route of routes) {
-        currentBike = bikes.filter((bike) => bike.bike_id == route.bike_id)[0]
-        if (!currentBike) continue;
-        
-        /* skapa en ny resa */
-        const trip = {
-            start_time: new Date(),
-            start_location: currentBike.location,
-        };
 
-        const { tripId, startTime } = await saveStartedTrip(trip);
+    /* lägg till cyklar stötvis för att simulera ett längre flöde */
+    const batchSize = 50;
+    let currentBatchIndex = 0;
 
-        /* generera en användare som kan kopplas till resan */
-        let user;
-        do {
-            const randomNumber = Math.floor(Math.random() * 1500) + 1;
-            user = `U${randomNumber.toString().padStart(3, '0')}`;
-        } while (generatedUsers.has(user));
-        generatedUsers.add(user)
-        
-        let bikeId = currentBike.bike_id;
-        let battery = currentBike.status.battery_level
-        
-        /* starta resan */
-        console.log(`Starting bike: ${bikeId}`);
-        await bikeManager.startBike(bikeId);
-        
-        /* emitta till frontend att resan har startats */
-        // skicka med bike_id och user_id för att spara i bikeUsers
-        io.emit("routeStarted", { bikeId, user });
-        io.emit("bikeOffAppMap", { bikeId, position: currentBike.location })
+    const simulateBatch = async () => {
+        let currentBike;
 
-        const simulationData = {
-            bikeId,
-            route: route.route,
-            battery,
-            user,
-            tripId,
-            startTime
+        // 50 cyklar i taget för jämnare flöde
+        const batch = routes.slice(currentBatchIndex * batchSize, (currentBatchIndex + 1) * batchSize);
+
+        for (const route of batch) {
+            currentBike = bikes.filter((bike) => bike.bike_id == route.bike_id)[0]
+            if (!currentBike || !currentBike.status.available) continue;
+            
+            /* skapa en ny resa */
+            const trip = {
+                start_time: new Date(),
+                start_location: currentBike.location,
+            };
+
+            const { tripId, startTime } = await saveStartedTrip(trip);
+
+            /* generera en användare som kan kopplas till resan */
+            let user;
+            do {
+                const randomNumber = Math.floor(Math.random() * 1500) + 1;
+                user = `U${randomNumber.toString().padStart(3, '0')}`;
+            } while (generatedUsers.has(user));
+            generatedUsers.add(user)
+            
+            let bikeId = currentBike.bike_id;
+            let battery = currentBike.status.battery_level;
+            
+            /* starta resan */
+            console.log(`Starting bike: ${bikeId}`);
+            await bikeManager.startBike(bikeId);
+            
+            /* emitta till frontend att resan har startats */
+            // skicka med bike_id och user_id för att spara i bikeUsers
+            io.emit("routeStarted", { bikeId, user });
+            io.emit("bikeOffAppMap", { bikeId, position: currentBike.location })
+
+            const simulationData = {
+                bikeId,
+                route: route.route,
+                battery,
+                user,
+                tripId,
+                startTime
+            }
+            simulateBikeInUse(simulationData); // simulate movement
         }
-        simulateBikeInUse(simulationData); // simulate movement
+
+        currentBatchIndex++;
+
+
+        if (currentBatchIndex * batchSize < routes.length) {
+            // pausa innan nästa omgång adderas
+            setTimeout(simulateBatch, 15000);
+        }
     }
+
+    // Start the simulation
+    simulateBatch();
 }
+
 
 const tempData = {};
 function simulateBikeInUse(simulationData) {
@@ -433,13 +522,13 @@ function simulateBikeInUse(simulationData) {
                 battery_level: battery,
                 speed: 0
             }
+            io.emit("bikeNotInUse", { bikeId, battery, position })
+            io.emit("routeFinished", { bikeId });
+            io.emit("bikeOnAppMap", { bikeId, battery, position })
             await saveFinishedTrip(trip);
             await bikeManager.stopBike(bikeId);
             await bikeManager.updateBikeState(bike);
             await updateTrips(user, tripId)
-            io.emit("bikeNotInUse", { bikeId, battery, position })
-            io.emit("routeFinished", { bikeId });
-            io.emit("bikeOnAppMap", { bikeId, battery, position })
         }
     };
     const move = setInterval(moveBike, interval);
