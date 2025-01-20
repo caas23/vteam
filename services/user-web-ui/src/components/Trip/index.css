@@ -1,0 +1,87 @@
+.trip-overview {
+  display: flex; 
+  flex-direction: column;
+  margin-top: 0.5em;
+}
+
+.trip-details {
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  margin-top: 0.5em;
+}
+
+.trip-summary {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  gap: 0.1em;
+  padding: 0 0 0.15em 0.25em;
+  margin-bottom: 0.5em;
+
+  & span {
+    font-size: 16px;
+    font-weight: 350;
+    color: #000;
+    width: 100%;
+  }
+}
+
+.trip-map-ref {
+  display: flex;
+  flex-wrap: wrap;
+  width: 40%;
+  margin-bottom: 5em;
+
+  & div {
+    display: block;
+    width: 55%;
+    border: 2px solid var(--color-blue-primary);
+    border-radius: 50%;
+    align-content: center;
+    text-align: center;
+    transform: rotate(12deg);
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  & span {
+    display: block;
+    font-size: 20px;
+    font-weight: 350;
+    color: #000;
+  }
+
+  & span.app {
+    display: inline;
+    font-weight: bold;
+    color: var(--color-blue-primary);
+  }
+}
+
+span.trip-price{
+  width: fit-content;
+  text-decoration: underline;
+  border-bottom: 1px solid;
+}
+
+.trip-info {
+  text-align: center;
+  padding: 0.5em;
+  border: 2px dashed var(--color-red-dark);
+  margin-bottom: 0.5em;
+
+  & span {
+    display: block;
+  }
+}
+
+div.price-info {
+  margin-left: 5px;
+  font-weight: bold;
+  cursor: pointer;
+
+  &::before {
+      content: "?";
+      color: var(--color-blue-primary)
+  }
+}

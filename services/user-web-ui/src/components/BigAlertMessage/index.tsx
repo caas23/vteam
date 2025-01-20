@@ -2,7 +2,7 @@ import React from "react";
 import "./index.css";
 import { AlertProps } from "./interfaces";
 
-const AlertMessage: React.FC<AlertProps> = ({
+const BigAlertMessage: React.FC<AlertProps> = ({
   boxOpen,
   onClose,
   header = "Alert",
@@ -12,9 +12,9 @@ const AlertMessage: React.FC<AlertProps> = ({
 
   return (
     <div className="confirmation-overlay">
-      <div className="confirmation-content">
+      <div className="confirmation-content big">
         <p>{header}</p>
-        {message}
+        <pre>{message}</pre>
         <div className="confirmation-buttons">
           <button className="edit-btn blue" onClick={onClose}>
           Close
@@ -25,4 +25,4 @@ const AlertMessage: React.FC<AlertProps> = ({
   );
 };
 
-export default AlertMessage;
+export default BigAlertMessage;

@@ -1,14 +1,40 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
+import "./index.css";
+import { User as UserInterface } from "./interfaces";
+import UserDetails from "./userDetails";
+import { fetchOneUserByGitId } from "../../fetchModels/fetchOneUser";
 
-const RideHistory: React.FC = () => {
+const Profile: React.FC = () => {
+	const [userData, setUserData] = useState< UserInterface | null | undefined >(undefined);
+
+	const storedUser = sessionStorage.getItem("user");
+	const gitId = storedUser && JSON.parse(storedUser).id
+	
 	useEffect(() => {
 		document.title = "Profile - Solo Scoot";
-}, []);
-	return (
-		<div>
-			<h1>Profile</h1>
-		</div>
-	);
+		
+		const fetchUserData = async () => {
+			try {
+				const result = await fetchOneUserByGitId(gitId);
+				setUserData(result[0]);
+			} catch {
+			  	setUserData(null);
+			}
+		};
+		  
+		fetchUserData();
+	}, []);
+
+	if (userData != null) {
+		return (
+			<div>
+				<h1>Profile</h1>
+				<UserDetails data={userData} />
+				{/* <UserDetails data={userData} onUpdate={(id: string, newBalance: number) => {  handle update  }} /> */}
+
+			</div>
+		);
+	}
 };
 
-export default RideHistory;
+export default Profile;

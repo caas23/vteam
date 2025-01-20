@@ -15,19 +15,19 @@ const Header: React.FC<HeaderProps> = ({ user, updateUserStatus }) => {
 			<div className="header-wrapper">
 				<div className="logo">
 					<a href="/">
-						<img src="src/assets/solo-scoot-logo.png" alt="Logo" />
+						<img src="/src/assets/solo-scoot-logo.png" alt="Logo" />
 					</a>
 				</div>
 				{user ? <nav className="navigation">
 					<ul>
 						<li>
-							<a href="ride-history">Ride History</a>
+							<a href="/trips">Trips</a>
 						</li>
 						<li>
-							<a href="profile">Profile</a>
+							<a href="/profile">Profile</a>
 						</li>
 						<li>
-							<a href="payments">Payments</a>
+							<a href="/payments">Payments</a>
 						</li>
 						<li>
 							<button className="logout-btn" onClick={handleLogout}>Log out</button>
