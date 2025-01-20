@@ -82,6 +82,18 @@ div.price-info {
 
   &::before {
       content: "?";
-      color: var(--color-blue-primary)
+      color: var(--color-blue-primary);
+      margin-right: 0.25em;
   }
+
+}
+
+.payed span {
+  font-weight: 400;
+  color: #006400;
+}
+
+.not-payed span {
+  font-weight: 400;
+  color: #808080;
 }

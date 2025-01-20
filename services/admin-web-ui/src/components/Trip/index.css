@@ -53,3 +53,14 @@ div.price-info {
       color: var(--color-blue-primary)
   }
 }
+
+
+.payed span {
+  font-weight: 400;
+  color: #006400;
+}
+
+.not-payed span {
+  font-weight: 400;
+  color: #808080;
+}

@@ -73,6 +73,12 @@ If you have questions about your specific trip, please submit an email to trips@
 					<View style={styles.priceContainer}>
 						<Text><Text style={styles.boldText}>Price: </Text>{data.price} kr</Text>
 						<TouchableOpacity onPress={() => setPriceInfoVisible(true)} style={styles.questionMark}><Text style={styles.questionMarkText}>?</Text></TouchableOpacity>
+						{data.payed && (
+						<Text><Text style={styles.boldGreenText}>Payed &#10003;</Text></Text>
+						)}
+						{!data.payed && (
+						<Text><Text style={styles.boldGrayText}>Awaiting monthly payment ...</Text></Text>
+						)}
 					</View>
 					{data.trip_info && (
 					<View style={styles.feeContainer}>
@@ -136,6 +142,14 @@ const styles = StyleSheet.create({
 	boldText: {
 		fontWeight: 'bold',
 	},
+	boldGreenText: {
+		fontWeight: 'bold',
+		color: '#006400',
+	},
+	boldGrayText: {
+		fontWeight: 'bold',
+		color: '#808080',
+	},
 	mapContainerFee: {
 		height: '57%',
 		borderRadius: 10,
@@ -161,6 +175,7 @@ const styles = StyleSheet.create({
 	},
 	questionMark: {
 		marginLeft: 5,
+		marginRight: 5,
 		backgroundColor: '#2E6DAE',
 		width: 20,
 		height: 20,
