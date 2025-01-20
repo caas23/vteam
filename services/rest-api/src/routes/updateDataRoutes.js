@@ -88,4 +88,20 @@ router.put("/user/payment", checkAuth, async (req, res) => {
     res.json(result);
 });
 
+router.put("/user/balance", checkAuth, async (req, res) => {
+    let { user_id, newBalance } = req.body;
+    let userCollection = getCollection("users");
+
+    const result = await userCollection.updateOne(
+        { user_id: user_id },
+        { 
+            $set: { 
+                "balance": newBalance
+            } 
+        },
+        { returnDocument: "after" }
+    );
+    res.json(result);
+});
+
 export default router;

@@ -5,7 +5,8 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Callback from "./components/Callback";
 import Home from "./views/Home";
-import RideHistory from "./views/RideHistory";
+import Trips from "./views/Trips";
+import Trip from './components/Trip';
 import Profile from "./views/Profile";
 import Payments from "./views/Payments";
 import ProtectedRoute from "./components/AuthCheck";
@@ -40,7 +41,8 @@ function App() {
 				<Routes>
 					<Route path="/" element={<Home />} />
 					<Route path="/callback" element={<Callback updateUserStatus={updateUserStatus} />} />
-					<Route path="/ride-history" element={<ProtectedRoute component={RideHistory} />} />
+					<Route path="/trip/:trip" element={<ProtectedRoute component={Trip} />} />
+					<Route path="/trips" element={<ProtectedRoute component={Trips} />} />
 					<Route path="/profile" element={<ProtectedRoute component={Profile} />} />
 					<Route path="/payments" element={<ProtectedRoute component={Payments} />} />
 				</Routes>
