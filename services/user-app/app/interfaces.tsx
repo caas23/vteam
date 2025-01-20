@@ -71,6 +71,8 @@ interface Trip {
     route: [number, number][];
     distance: number;
     trip_id: string;
+    trip_info: string;
+    fee: number;
 }
   
 interface TripDetailsProps {
