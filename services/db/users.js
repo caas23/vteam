@@ -47,6 +47,38 @@ export const updateTrips = async (userId, tripId) => {
   }
 };
 
+export const getPaymentMethod = async (userId) => {
+  const user = await getCollection('users').find({ user_id: userId }).toArray();
+  return user[0].payment_method;
+};
+
+export const updateBalance = async (userId, cost) => {
+  const usersCollection = getCollection("users");
+
+  try {
+    const user = await usersCollection.findOne({ user_id: userId });
+    if (user.balance < cost) {
+      return false;
+    }
+
+    const result = await usersCollection.updateOne(
+      { user_id: userId },
+      { 
+        $inc: { 
+          "balance": -cost 
+        } 
+      },
+      { returnDocument: "after" }
+    );
+
+    return result.modifiedCount > 0; // true
+  } catch (e) {
+    console.error(e);
+    throw new Error(`Failed to update balance for user with user_id: ${userId}.`);
+  }
+};
+
+
 // för /users-vyn i admin, returnerar antal användare
 // baserat på en sökning (används för sidnumrering)
 export const countUsersPagination = async (filter = {}) => {

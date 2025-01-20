@@ -1,6 +1,5 @@
 import { getCollection } from "../../db/collections.js";
 
-// to save a (as of now) simulated trip run from admin component "MapComponent"
 export const saveStartedTrip = async (data) => {
     try {
         const counterCollection = getCollection('trip_id_counter');
@@ -22,35 +21,39 @@ export const saveStartedTrip = async (data) => {
 
         return { tripId: trip_id, startTime: data.start_time }
     } catch (e) {
-        console.log(e)
+        console.error(e)
     }
 };
 
 export const saveFinishedTrip = async (data) => {
     const tripCollection = getCollection('trips');
-    const trip = await tripCollection.findOne({ trip_id: data.trip_id });
 
-    const updateTrip = {
-        ...trip,
-        ...data
+    try {
+        const trip = await tripCollection.findOne({ trip_id: data.trip_id });
+        const updateTrip = {
+            ...trip,
+            ...data
+        }
+    
+        if (data.reason) {
+            updateTrip.trip_info = `This trip was stopped by admin due to reason: ${data.reason}.`;
+        }
+        if (data.fee) {
+            updateTrip.fee = `An additional fee (${data.fee} kr) was added to the price due to the reason stated above.`;
+        }
+    
+        return await tripCollection.updateOne(
+            { trip_id: data.trip_id },
+            { 
+                $set: {
+                    ...updateTrip
+                } 
+            },
+            { returnDocument: "after" }
+        );
+    } catch (e) {
+        console.error(e)
     }
-
-    if (data.reason) {
-        updateTrip.trip_info = `This trip was stopped by admin due to reason: ${data.reason}.`;
-    }
-    if (data.fee) {
-        updateTrip.fee = `An additional fee (${data.fee} kr) was added to the price due to the reason stated above.`;
-    }
-
-    return await tripCollection.updateOne(
-        { trip_id: data.trip_id },
-        { 
-            $set: {
-                ...updateTrip
-            } 
-        },
-        { returnDocument: "after" }
-    );
 };
 
 export const getRoutes = async () => {

@@ -56,7 +56,7 @@ export default function UserDetails({ user, fetchUserData }: UserDetailsProps) {
 			Payment method: {updatedPaymentMethod || user.payment_method}
 		</Text>
 		<Text style={[styles.detailText, { color: themeColor.text }]}>
-			{user.payment_method === 'Prepaid' || updatedPaymentMethod === 'Prepaid' ? `Balance: ${user.balance}` : ""}
+			{user.payment_method === 'Prepaid' || updatedPaymentMethod === 'Prepaid' ? `Balance: ${user.balance.toFixed(2)} kr` : ""}
 		</Text>
 		<View style={styles.buttonContainer}>
 			<TouchableOpacity
