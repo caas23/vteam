@@ -2,6 +2,7 @@ import React, { useState, useCallback } from 'react';
 import { Alert, Image, StyleSheet, View, Text } from 'react-native';
 import { Collapsible } from '@/components/Collapsible';
 import { Colors } from '@/constants/Colors';
+import { useColorScheme } from '@/hooks/useColorScheme';
 import ParallaxScrollView from '@/components/ParallaxScrollView';
 import { ThemedText } from '@/components/ThemedText';
 import { ThemedView } from '@/components/ThemedView';
@@ -14,6 +15,8 @@ import UserDetails from '../UserDetails';
 import TripDetails from '../TripDetails';
 
 export default function AccountTab() {
+	const colorScheme = useColorScheme();
+	const themeColor = Colors[colorScheme ?? 'light'];
 	const { isAuthenticated } = useAuth();
 	const navigation = useNavigation();
 	const [userData, setUserData] = useState< UserInterface | null | undefined >(undefined);
@@ -78,6 +81,7 @@ export default function AccountTab() {
 				<ThemedText>Loading user data...</ThemedText>
 			)}
 			</Collapsible>
+			<Text style={{ color: themeColor.text, fontStyle: 'italic' }}>To handle payments, please visit the website.</Text>
 		</ParallaxScrollView>
 
 		<View style={styles.scooterContainer}>
@@ -130,4 +134,8 @@ const styles = StyleSheet.create({
 		height: 150,
 		width: 150,
 	},
+	paymentMsg: {
+		fontStyle: 'italic',
+		
+	}
 });
