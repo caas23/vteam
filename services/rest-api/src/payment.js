@@ -1,6 +1,6 @@
 import { getCollection } from "../../db/collections.js";
 
-export const paymentStatusTrip = async (tripId, payed, method) => {
+export const paymentStatusTrip = async (tripId, paid) => {
     const tripCollection = getCollection('trips');
   
     try {
@@ -8,8 +8,7 @@ export const paymentStatusTrip = async (tripId, payed, method) => {
             { trip_id: tripId },
             { 
             $set: {
-                payed: payed,
-                payment_method: method
+                paid: paid,
             } 
             },
             { returnDocument: "after" }
@@ -21,15 +20,21 @@ export const paymentStatusTrip = async (tripId, payed, method) => {
     }
 };
 
-export const monthlyPayment = async (userId, tripId, cost) => {
-    const monthCollection = getCollection('monthly_payments');
+export const Payments = async (userId, tripId, cost, paid, method) => {
+    const monthCollection = getCollection('payments');
     
     try {
       const result = await monthCollection.updateOne(
         { user_id: userId },
         { 
           $push: { 
-            trips: { trip_id: tripId, cost: cost }
+            trips: {
+              trip_id: tripId,
+              cost,
+              paid,
+              method,
+              date: new Date()
+            }
           } 
         },
         { upsert: true }
@@ -42,5 +47,24 @@ export const monthlyPayment = async (userId, tripId, cost) => {
     }
 };
 
+export const updatePaymentStatusMonthly = async (tripId) => {
+  const monthCollection = getCollection('payments');
+
+  try {
+      const result = await monthCollection.updateOne(
+        { "trips.trip_id": tripId },
+        {
+          $set: {
+            "trips.$.paid": true,
+          },
+        },
+        { returnDocument: "after" }
+      );
+
+      return result;
+  } catch (e) {
+      console.error(e);
+  }
+};
 
   

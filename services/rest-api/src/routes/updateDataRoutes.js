@@ -1,6 +1,7 @@
 import express from 'express';
 import { getCollection } from '../../../db/collections.js';
 import { checkAuth } from '../auth.js';
+import { paymentStatusTrip, updatePaymentStatusMonthly } from '../payment.js';
 
 const router = express.Router();
 
@@ -102,6 +103,13 @@ router.put("/user/payment", checkAuth, async (req, res) => {
         { returnDocument: "after" }
     );
     res.json(result);
+});
+
+router.put("/user/paymentstatus", checkAuth, async (req, res) => {
+    let { trip_id, paid, method } = req.body;
+    
+    await paymentStatusTrip(trip_id, paid, method)
+    return await updatePaymentStatusMonthly(trip_id)
 });
 
 router.put("/user/balance", checkAuth, async (req, res) => {

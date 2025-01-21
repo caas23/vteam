@@ -1,7 +1,6 @@
 .trip-overview {
   display: flex; 
   flex-direction: column;
-  margin-top: 0.5em;
 }
 
 .trip-details {
@@ -16,8 +15,6 @@
   flex-wrap: wrap;
   width: 50%;
   gap: 0.1em;
-  padding: 0 0 0.15em 0.25em;
-  margin-bottom: 0.5em;
 
   & span {
     font-size: 16px;
@@ -88,12 +85,12 @@ div.price-info {
 
 }
 
-.payed span {
+.paid span {
   font-weight: 400;
   color: #006400;
 }
 
-.not-payed span {
+.not-paid span {
   font-weight: 400;
   color: #808080;
 }

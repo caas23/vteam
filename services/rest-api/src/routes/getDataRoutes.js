@@ -194,5 +194,12 @@ router.get("/one/trip/", checkAuth, async (req, res) => {
     res.json(result);
 });
 
+router.get("/payments/", checkAuth, async (req, res) => {
+    const user = req.query.user;
+
+    const result = await getCollection('payments').find({ user_id: user }).toArray();
+    res.json(result);
+});
+
 
 export default router;

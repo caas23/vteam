@@ -73,10 +73,10 @@ If you have questions about your specific trip, please submit an email to trips@
 					<View style={styles.priceContainer}>
 						<Text><Text style={styles.boldText}>Price: </Text>{data.price} kr</Text>
 						<TouchableOpacity onPress={() => setPriceInfoVisible(true)} style={styles.questionMark}><Text style={styles.questionMarkText}>?</Text></TouchableOpacity>
-						{data.payed && (
-						<Text><Text style={styles.boldGreenText}>Payed &#10003;</Text></Text>
+						{data.paid && (
+						<Text><Text style={styles.boldGreenText}>Paid &#10003;</Text></Text>
 						)}
-						{!data.payed && (
+						{!data.paid && (
 						<Text><Text style={styles.boldGrayText}>Awaiting monthly payment ...</Text></Text>
 						)}
 					</View>
