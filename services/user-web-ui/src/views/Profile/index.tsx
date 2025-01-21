@@ -30,8 +30,6 @@ const Profile: React.FC = () => {
 			<div>
 				<h1>Profile</h1>
 				<UserDetails data={userData} />
-				{/* <UserDetails data={userData} onUpdate={(id: string, newBalance: number) => {  handle update  }} /> */}
-
 			</div>
 		);
 	}

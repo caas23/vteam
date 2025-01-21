@@ -13,7 +13,7 @@ import http from "http";
 import { Server } from "socket.io";
 import bikeManager from "../../bike-logic/bikeManager.js";
 import { saveStartedTrip, saveFinishedTrip, getRoutes } from "./trip.js";
-import { paymentStatusTrip, monthlyPayment } from "./payment.js";
+import { paymentStatusTrip, Payments } from "./payment.js";
 import { updateTrips, getOneGitUser, getPaymentMethod, updateBalance } from "../../db/users.js";
 
 dotenv.config();
@@ -191,22 +191,26 @@ const handlePayment = async (userId, cost, tripId) => {
         /* kolla vilken betalmetod kunden har, och agera därefter */
         const method = (await getPaymentMethod(userId)).toLowerCase();
         let success = false;
+        let paid = false;
     
         if (method === "prepaid") {
             // om prepaid, dra pengar från kontot
             success = await updateBalance(userId, cost);
     
             if (success) {
+                paid = true;
                 // markera resan som betald
-                return await paymentStatusTrip(tripId, true, method);
+                await Payments(userId, tripId, cost, paid, method);
             }
         }
         // om månatlig (eller problem med prepaid),
-        // spara beloppet för dragning den 27:e (eller dylikt)
-        await monthlyPayment(userId, tripId, cost);
+        // spara beloppet för dragning den 27:e
+        if (!success) {
+            await Payments(userId, tripId, cost, paid, "monthly");
+        }
     
-        // markera resan som obetald
-        await paymentStatusTrip(tripId, false, "monthly");
+        // lägg till betalstatus för resan
+        await paymentStatusTrip(tripId, paid);
     } catch (error) {
         console.error(`Error handling payment for user ${userId} and trip ${tripId}:`, error);
     }

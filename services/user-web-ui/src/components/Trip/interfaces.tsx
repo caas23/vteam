@@ -10,7 +10,7 @@ interface Trip {
   trip_id: string;
   trip_info: string;
   fee: number;
-  payed: boolean,
+  paid: boolean,
   payment_method: string;
 }
 

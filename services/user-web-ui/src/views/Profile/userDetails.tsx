@@ -37,8 +37,10 @@ const UserDetails: React.FC<UserDetailsProps> = ({ data }) => {
     };
 
     const handlePaymentModeClick = () => setPaymentMode(true);
-    const handlePaymentModeCancel = () => setPaymentMode(false);
-
+    const handlePaymentModeCancel = () => {
+        setPaymentMode(false);
+        setNewPaymentMethod(data.payment_method)
+    }
     const handlePaymentModeSubmit = async () => {
         try {
             await fetchUpdatePayment(data.user_id, data.name, newPaymentMethod);
@@ -92,6 +94,7 @@ const UserDetails: React.FC<UserDetailsProps> = ({ data }) => {
                         value={newPaymentMethod}
                         onChange={(e) => setNewPaymentMethod(e.target.value)}
                     >
+                        <option value="" hidden>Payment method...</option>
                         <option value="Prepaid">Prepaid</option>
                         <option value="Monthly">Monthly</option>
                     </select>

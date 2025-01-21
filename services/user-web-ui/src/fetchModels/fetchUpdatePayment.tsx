@@ -21,6 +21,6 @@ export const fetchUpdatePayment = async (user_id: string, name: string, method: 
       return await response.json();
 
     } catch (e) {
-        console.error("Error banning user:", e);
+        console.error("Error updating payment method:", e);
     }
 };
