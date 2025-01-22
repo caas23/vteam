@@ -4,11 +4,15 @@ Below are instructions to get started and run the entire _Solo Scoot_ system.
 
 ## Running the system
 
-The system is started using _Docker Compose_ and _Localtunnel_, to easily allow the app communicate with the backend when you run it on your actual phone device (more on that note later).
+The system is started using _Docker Compose_ and _ngrok_, to easily allow the app communicate with the backend when you run it on your actual phone device (more on that note later).
 
 To get the system up and running, simply navigate to this folder and run
 
 `./system_up.bash`
+
+If you wish to reset the system and database to its initial state, run
+
+`./system_up.bash --reset`
 
 ## Accessing clients
 
@@ -27,7 +31,7 @@ Accessing the user app requires `Expo Go` and an actual phone. Please note that 
 - Download `Expo Go` on your phone (no registration required).
 - Start the system as shown at the top.
 - Scan the QR code that appears in the terminal when the system is running.
-    - Thanks to the localtunnel, the app will now be able to communicate with the backend that has been fired up on your computer's localhost.
+    - Thanks to ngrok, the app will now be able to communicate with the backend that has been fired up on your computer's localhost.
 - Explore the app on your actual phone!
 
 For more information about each individual client, navigate to its folder under `~/vteam/services`.
