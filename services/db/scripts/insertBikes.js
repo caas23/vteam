@@ -21,6 +21,7 @@ const addBikes = async () => {
         client = await connectToDatabase(mongoUri);
 
         const lundBikes = await loadData("./data/lund_bikes.json");
+        const lundBikesTest = await loadData("./data/lund_bikes_test.json");
         const solnaBikes = await loadData("./data/solna_bikes.json");
         const skellefteaBikes = await loadData("./data/skelleftea_bikes.json");
 

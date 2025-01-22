@@ -35,7 +35,7 @@ const addRoutes = async () => {
         
         const RouteCollection = getCollection('routes');
         const result = await RouteCollection.insertMany(allRoutes);
-        console.log(`Added ${result.insertedCount} routes.`);
+        // console.log(`Added ${result.insertedCount} routes.`);
 
     } catch (error) {
         console.error('Error adding routes:', error);
