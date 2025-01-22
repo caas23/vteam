@@ -12,6 +12,11 @@ import scooterIconBlue from "/src/assets/scooter-pin-blue.png";
 import scooterIconGreen from "/src/assets/scooter-pin-green.png";
 import scooterIconOrange from "/src/assets/scooter-pin-orange.png";
 import scooterIconRed from "/src/assets/scooter-pin-red.png";
+import scooterIconCharging from "/src/assets/scooter-pin-charging.png";
+import scooterIconParking from "/src/assets/scooter-pin-parking.png";
+import clusterIcon from "/src/assets/multiple-scooter-pin-blue.png";
+import clusterIconCharging from "/src/assets/multiple-scooter-pin-charging.png";
+import clusterIconParking from "/src/assets/multiple-scooter-pin-parking.png";
 import "./index.css";
 
 /*** 
@@ -31,6 +36,16 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 	const [availableStations, setAvailableStations] = useState<ChargingStation[]>([]);
 	const [bikesInCity, setBikesInCity] = useState<Bike[]>([]);
 	const [bikesInViewport, setBikesInViewport] = useState<Bike[]>([]);
+
+	// för att kunna filtrera på kategori (batterinivå, parkering etc)
+	const [filters, setFilters] = useState({
+        available: true,
+        green: true,
+        orange: true,
+        red: true,
+        charging: true,
+        parking: true,
+    });
 	
 	useEffect(() => {
 		const fetchAndSetCity = async () => {
@@ -99,6 +114,26 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 		fetchAndSetBikes();
 
 	}, [currentCity]);
+
+	// för att kunna filtrera på kategori (batterinivå, parkering etc)
+	const filteredBikes = bikesInCity.filter((bike) => {
+		if (bike.status.charging && filters.charging) return true;
+		if (bike.status.parking && filters.parking) return true;
+        if (!bike.status.parking && bike.status.available && filters.available) return true;
+        if (!bike.status.available && !bike.status.charging) {
+            if (bike.status.battery_level > 30 && filters.green) return true;
+            if (bike.status.battery_level <= 30 && bike.status.battery_level > 15 && filters.orange) return true;
+            if (bike.status.battery_level <= 15 && filters.red) return true;
+        }
+        return false;
+    });
+
+	const toggleFilter = (key: keyof typeof filters) => {
+        setFilters((prevFilters) => ({
+            ...prevFilters,
+            [key]: !prevFilters[key],
+        }));
+    };
 
 	// kolla om cykeln är i viewporten för att enbart uppdatera dessa,
 	// skapar dock viss fördröjning vid utzoomning, accepterbart?
@@ -203,7 +238,7 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 			/>
 			<ShowParkingZones zones={availableZones} />
 			<ShowChargingStations stations={availableStations} />
-			<ShowBikes bikes={bikesInCity} users={bikeUsers} socket={socket}/>
+			<ShowBikes bikes={filteredBikes} users={bikeUsers} socket={socket}/>
 			{cityBorders && (
 				<GeoJSON
 					data={cityBorders}
@@ -219,22 +254,64 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 		</div>
 		<div className="color-div">
 			<h2>Color codes</h2>
+			<span className="color-code-msg">Use the checkboxes to filter bikes</span>
 			<div className="color-codes">
 				<div className="color-code">
-					<img src={scooterIconBlue} alt="Blue Icon" className="color-icon" />
-					<span> = Available</span>
-				</div>
-				<div className="color-code">
+					<input
+						type="checkbox"
+						checked={filters.green}
+						onChange={() => toggleFilter("green")}
+					/>
 					<img src={scooterIconGreen} alt="Green Icon" className="color-icon" />
 					<span> = In use, battery &gt; 30%</span>
 				</div>
 				<div className="color-code">
+					<input
+						type="checkbox"
+						checked={filters.orange}
+						onChange={() => toggleFilter("orange")}
+					/>
 					<img src={scooterIconOrange} alt="Orange Icon" className="color-icon" />
 					<span> = In use, battery 15% - 30%</span>
 				</div>
 				<div className="color-code">
+					<input
+						type="checkbox"
+						checked={filters.red}
+						onChange={() => toggleFilter("red")}
+					/>
 					<img src={scooterIconRed} alt="Red Icon" className="color-icon" />
 					<span> = In use, battery &lt; 15%</span>
+				</div>
+				<div className="color-code">
+					<input
+						type="checkbox"
+						checked={filters.available}
+						onChange={() => toggleFilter("available")}
+					/>
+					<img src={clusterIcon} alt="Blue Icon" className="color-icon" />
+					<img src={scooterIconBlue} alt="Blue Icon" className="color-icon" />
+					<span> = Available</span>
+				</div>
+				<div className="color-code">
+					<input
+						type="checkbox"
+						checked={filters.charging}
+						onChange={() => toggleFilter("charging")}
+					/>
+					<img src={clusterIconCharging} alt="Charging Icon" className="color-icon" />
+					<img src={scooterIconCharging} alt="Charging Icon" className="color-icon" />
+					<span> = Charging</span>
+				</div>
+				<div className="color-code">
+					<input
+						type="checkbox"
+						checked={filters.parking}
+						onChange={() => toggleFilter("parking")}
+					/>
+					<img src={clusterIconParking} alt="Parking Icon" className="color-icon" />
+					<img src={scooterIconParking} alt="Parking Icon" className="color-icon" />
+					<span> = Parking</span>
 				</div>
 			</div>
 		</div>

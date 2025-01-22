@@ -37,7 +37,7 @@ p.map-loading-msg {
 .map-div {
     display: block;
     padding-bottom: 0.5em;
-    width: 85%;
+    width: 80%;
     padding-right: 0.75em;
     border-right: 2px dashed var(--color-blue-primary);
 
@@ -49,7 +49,6 @@ p.map-loading-msg {
     & h2 {
         color: var(--color-blue-primary);
         font-weight: 400;
-        margin-bottom: 0.5em;
     }
 }
 .color-codes {
@@ -67,7 +66,18 @@ p.map-loading-msg {
    & span {
     padding: 0.5em 0;
    }
+
+   & input {
+    accent-color: var(--color-blue-primary);
+    margin-right: 0.5em;
+   }
 }
+
+span.color-code-msg {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
 .color-icon {
     width: 40px;
     height: 40px;
