@@ -8,7 +8,11 @@ import scooterIconBlue from "/src/assets/scooter-pin-blue.png";
 import scooterIconGreen from "/src/assets/scooter-pin-green.png";
 import scooterIconOrange from "/src/assets/scooter-pin-orange.png";
 import scooterIconRed from "/src/assets/scooter-pin-red.png";
+import scooterIconCharing from "/src/assets/scooter-pin-charging.png";
+import scooterIconParking from "/src/assets/scooter-pin-parking.png";
 import clusterIcon from "/src/assets/multiple-scooter-pin-blue.png";
+import clusterIconCharging from "/src/assets/multiple-scooter-pin-charging.png";
+import clusterIconParking from "/src/assets/multiple-scooter-pin-parking.png";
 import ForceStopMessage from "../ForceStopMessage";
 import "./index.css";
 
@@ -24,7 +28,21 @@ const ShowBikes: React.FC<{
 	const markerRefs = useRef<Map<string, L.Marker>>(new Map());
 
 	const bikeIcon = (bike: Bike) => {
-		if (bike.status.available) {
+		if (bike.status.charging) {
+		  return L.icon({
+			iconUrl: scooterIconCharing,
+			iconSize: [40, 40],
+			iconAnchor: [20, 45],
+			popupAnchor: [0, -40],
+		  });
+		} else if (bike.status.parking) {
+		  return L.icon({
+			iconUrl: scooterIconParking,
+			iconSize: [40, 40],
+			iconAnchor: [20, 45],
+			popupAnchor: [0, -40],
+		  });
+		} else if (bike.status.available) {
 		  return L.icon({
 			iconUrl: scooterIconBlue,
 			iconSize: [40, 40],
@@ -55,10 +73,30 @@ const ShowBikes: React.FC<{
 		}
 	};
 
-	const createClusterMarker = (className: string) => {
+	const activeCluster = () => {
 		return L.divIcon({
-			className, 
+			className: "bike-marker",
 			html: `<img src="${clusterIcon}" style="width: 55px; height: 55px; padding: 0.3em;" />`,
+			iconSize: [50, 50],
+			iconAnchor: [25, 50],
+			popupAnchor: [0, -40],
+		});
+	};
+	
+	const chargingCluster = () => {
+		return L.divIcon({
+			className: "bike-marker", 
+			html: `<img src="${clusterIconCharging}" style="width: 55px; height: 55px; padding: 0.3em;" />`,
+			iconSize: [50, 50],
+			iconAnchor: [25, 50],
+			popupAnchor: [0, -40],
+		});
+	};
+	
+	const parkingCluster = () => {
+		return L.divIcon({
+			className: "bike-marker", 
+			html: `<img src="${clusterIconParking}" style="width: 55px; height: 55px; padding: 0.3em;" />`,
 			iconSize: [50, 50],
 			iconAnchor: [25, 50],
 			popupAnchor: [0, -40],
@@ -89,12 +127,21 @@ const ShowBikes: React.FC<{
 		}
 	}, [bikes]);
 
-	const availableBikes = bikes.filter((bike) => bike.status.available);
-	const inUseBikes = bikes.filter((bike) => !bike.status.available);
+	const availableBikes = bikes.filter((bike) => bike.status.available && !bike.status.charging && !bike.status.parking);
+	const inUseBikes = bikes.filter((bike) => !bike.status.available &&! bike.status.charging);
+	const chargingBikes = bikes.filter((bike) => bike.status.charging);
+	const parkingBikes = bikes.filter((bike) => bike.status.parking);
+
+	const getBikeStatus = (bike: Bike) => {
+		if (bike.status.charging) return "Charging";
+		else if (bike.status.in_service) return "In Service";
+		else if (bike.status.available) return "Available";
+		else return "In use";
+	};
 
 	return (
 		<>
-		<MarkerClusterGroup iconCreateFunction={() => createClusterMarker("bike-marker")}>
+		<MarkerClusterGroup iconCreateFunction={() => activeCluster()}>
 			{availableBikes.map((bike) => {
 				return (
 					<Marker
@@ -110,7 +157,7 @@ const ShowBikes: React.FC<{
 					<Popup>
 						<strong>{bike.bike_id}</strong><br />
 						<strong>Battery:</strong> {bike.status.battery_level}%<br />
-						<strong>Status:</strong> {bike.status.available ? "Available" : "In use"}
+						<strong>Status:</strong> {getBikeStatus(bike)}
 					</Popup>
 					</Marker>
 				);
@@ -137,6 +184,40 @@ const ShowBikes: React.FC<{
 			</Marker>
 			);
 		})}
+
+		<MarkerClusterGroup iconCreateFunction={() => chargingCluster()}>
+			{chargingBikes.map((bike) => (
+			<Marker
+				key={bike.bike_id}
+				position={bike.location}
+				icon={bikeIcon(bike)}
+			>
+				<Popup>
+				<strong>{bike.bike_id}</strong><br />
+				<strong>Battery:</strong> {bike.status.battery_level}%<br />
+				<strong>Status:</strong> {getBikeStatus(bike)}
+				</Popup>
+			</Marker>
+			))}
+      	</MarkerClusterGroup>
+		
+		<MarkerClusterGroup iconCreateFunction={() => parkingCluster()}>
+			{parkingBikes.map((bike) => (
+			<Marker
+				key={bike.bike_id}
+				position={bike.location}
+				icon={bikeIcon(bike)}
+			>
+				<Popup>
+				<strong>{bike.bike_id}</strong><br />
+				<strong>Battery:</strong> {bike.status.battery_level}%<br />
+				<strong>Status:</strong> {getBikeStatus(bike)}
+				</Popup>
+			</Marker>
+			))}
+      	</MarkerClusterGroup>
+
+
 		<ForceStopMessage
 			boxOpen={alertBox}
 			onClose={() => setAlertBox(false)}

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { BikeDetailsProps } from "./interfaces";
+import { Bike, BikeDetailsProps } from "./interfaces";
 import { fetchServiceBike } from "../../fetchModels/fetchServiceBike";
 import { fetchDeleteBike } from "../../fetchModels/fetchDeleteBike";
 import ConfirmDelete from "../ConfirmDelete";
@@ -55,12 +55,18 @@ const BikeDetails: React.FC<BikeDetailsProps> = ({ data }) => {
     }
   };
 
-  
+  const getBikeStatus = (bike: Bike) => {
+    if (bike.status.charging) return "Charging";
+    else if (bike.status.in_service) return "In Service";
+    else if (bike.status.available) return "Available";
+    else return "In use";
+  };
+
   return (
     <div className="bike-details">
         {formData.status.available && <span>Location: [{data.location.join(", ")}]</span>}
         <span>City: {data.city_name}</span>
-        <span>Status: {formData.status.in_service ? "In Service" : formData.status.available ? "Available" : "In use"}</span>
+        <span>Status: {getBikeStatus(data)}</span>
         {formData.status.available && <span>Battery: {data.status.battery_level} %</span>}
         <span>Trips: {data.completed_trips.length}</span>
         <span className="sub-list">

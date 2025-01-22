@@ -19,6 +19,8 @@ interface Bike {
       available: boolean;
       battery_level: number;
       in_service: boolean;
+      charging: boolean;
+      parking: boolean;
     };
     completed_trips: string[];
     bike_id: string;
