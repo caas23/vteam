@@ -27,6 +27,7 @@ const addTrips = async () => {
         const allTrips = [...lundTrips, ...solnaTrips, ...skellefteaTrips];
         
         await clearTrips();
+        await clearPayments();
         await resetTripIdCounter();
 
         for (const trip of allTrips) {
@@ -35,7 +36,7 @@ const addTrips = async () => {
         
         const TripCollection = getCollection('trips');
         const result = await TripCollection.insertMany(allTrips);
-        console.log(`Added ${result.insertedCount} trips.`);
+        // console.log(`Added ${result.insertedCount} trips.`);
 
     } catch (error) {
         console.error('Error adding trips:', error);
@@ -53,6 +54,17 @@ const clearTrips = async () => {
       // console.log('All trips cleared');
     } catch (error) {
       console.error('Error clearing trips:', error);
+    }
+};
+
+const clearPayments = async () => {
+    try {
+      const PaymentsCollection = getCollection('payments');
+      await PaymentsCollection.deleteMany({});
+  
+      // console.log('All payments cleared');
+    } catch (error) {
+      console.error('Error clearing payments:', error);
     }
 };
 

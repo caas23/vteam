@@ -4,3 +4,6 @@ services/admin-web-ui/.env
 services/user-web-ui/.env
 services/db/.env
 services/user-app/.env
+services/db/scripts/data/*test.json
+services/db/scripts/data/*old.json
+services/db/scripts/bikesToParkingCharging.js
