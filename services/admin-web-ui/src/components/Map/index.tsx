@@ -121,6 +121,8 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 	useEffect(() => {
 		if (!socket.current) return;
 
+		socket.current?.emit("mapConnected");
+
 		socket.current?.on("bikeInUse", (data: { 
 			bikeId: string;
 			position: [number, number];
@@ -174,6 +176,7 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 		return () => {
 			socket.current?.off("bikeInUse");
 			socket.current?.off("bikeNotInUse");
+			socket.current?.emit("mapDisconnected");
 		};
 	}, [bikesInViewport, socket]);
 

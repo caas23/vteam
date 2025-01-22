@@ -53,8 +53,26 @@ app.get("/", (req, res) => {
     res.json(routes);
 });
 
+const unsentBikeUsers = new Map();
+let frontendListening = false;
+
 io.on("connection", (socket) => {
-    // console.log("New client connected", socket.id);
+    
+    socket.on("mapConnected", () => {
+        frontendListening = true;
+        // skicka lagrade bikeUsers för uppdatering i storage
+        if (unsentBikeUsers.size > 0) {
+            for (const [bikeId, user] of unsentBikeUsers) {
+                socket.emit("routeStarted", { bikeId, user });
+            }
+            unsentBikeUsers.clear();
+        }
+    })
+    
+    socket.on("mapDisconnected", () => {
+        frontendListening = false;
+    })
+
 
     // just nu finns ingen logik för att göra en inbromsning vid tvingat stopp,
     // lägg till senare om tid finns
@@ -413,7 +431,13 @@ async function startSimulation () {
             
             /* emitta till frontend att resan har startats */
             // skicka med bike_id och user_id för att spara i bikeUsers
-            io.emit("routeStarted", { bikeId, user });
+            // io.emit("routeStarted", { bikeId, user });
+            if (frontendListening) {
+                io.emit("routeStarted", { bikeId, user });
+            } else {
+                unsentBikeUsers.set(bikeId, user);
+            }
+
             io.emit("bikeOffAppMap", { bikeId, position: currentBike.location })
 
             const simulationData = {
