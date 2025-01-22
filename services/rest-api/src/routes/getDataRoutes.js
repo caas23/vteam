@@ -33,7 +33,7 @@ router.get("/", async (req, res) => {
 
 router.get('/callback', (req, res) => {
     const { code } = req.query;
-    res.redirect(`exp://sbp8ws0-anonymous-8081.exp.direct?code=${code}`);
+    res.redirect(`exp://8f0zqw4-anonymous-8081.exp.direct?code=${code}`);
 });
 
 router.get("/all/cities", checkAuth, async (req, res) => {
