@@ -8,6 +8,7 @@ import Constants from 'expo-constants';
 import * as SecureStore from 'expo-secure-store';
 import fetchGitHubAccessToken from '../fetchModels/fetchGitHubToken';
 import fetchOneUserByGitId from '../fetchModels/fetchOneUser';
+import fetchRegisterCallback from '../fetchModels/fetchRegisterCallback';
 import fetchAddUser from '../fetchModels/fetchAddUser';
 import { useAuth } from '../AuthCheck';
 
@@ -81,8 +82,13 @@ export default function HomeTab() {
     const getInitialUrl = async () => {
 		const initialUrl = await Linking.getInitialURL();
 		if (initialUrl) {
+			const parsedUrl = new URL(initialUrl);
+			const hostname = parsedUrl.hostname;
+			const urlId = hostname.split('-')[0];
+
+			await fetchRegisterCallback(urlId);
 			handleOAuthCallback(initialUrl);
-		}
+		}	
     };
 
     getInitialUrl();
