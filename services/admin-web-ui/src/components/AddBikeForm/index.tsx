@@ -71,6 +71,8 @@ const AddBikeForm: React.FC = () => {
         available: true,
         battery_level: 100,
         in_service: false,
+        parking: true,
+        charging: false,
       },
       completed_trips: []
     };

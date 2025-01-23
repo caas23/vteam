@@ -128,7 +128,7 @@ io.on("connection", (socket) => {
         }
 
         io.emit("bikeNotInUse", { bikeId, battery, position });
-        io.emit("routeFinished", { bikeId, battery, position })
+        io.emit("routeFinished", { bikeId })
         io.emit("bikeOnAppMap", { bikeId, battery, position });      
         
         await saveFinishedTrip(trip);
@@ -137,10 +137,15 @@ io.on("connection", (socket) => {
         await updateTrips(userId, tmp.trip_id)
         await handlePayment(userId, price, tmp.trip_id)
     });
-
     
-    socket.on("bikeInUseApp", async (data) => {    
-        io.emit("bikeOffAppMap", { bikeId: data.bikeId, position: data.position, forceUpdate: true })
+    socket.on("bikeInUseApp", async (data) => {   
+
+        io.emit("bikeOffAppMap", {
+            bikeId: data.bikeId,
+            position: data.position,
+            forceUpdate: true 
+        })
+        
         io.emit("bikeInUse", { 
             bikeId: data.bikeId, 
             position: data.position, 
@@ -158,27 +163,48 @@ io.on("connection", (socket) => {
         tempData[data.bikeId] = {
             trip_id: tripId,
             start_time: new Date(data.startTime),
+            parked_start: data.parking, // bool, om true -> parkerad, annars fri
         };
 
     });
     
     socket.on("bikeNotInUseApp", async (data) => {
+        
         io.emit("bikeNotInUse", { 
             bikeId: data.bikeId,
             position: data.position, 
             battery: data.battery,
         });
+
         io.emit("routeFinished", { bikeId: data.bikeId });
+        
         io.emit("bikeOnAppMap", { 
             bikeId: data.bikeId,
             position: data.position,
             battery: data.battery,
+            forceUpdate: true 
         })
-        
+
+        // om cykeln hämtas på fri parkering och återlämnas på parkerings- eller laddplats --> avdrag 5 kr
+        // om cykeln återlämnas utanför ovanstående platser --> tillägg 5 kr
+
+        const free_start = !tempData[data.bikeId].parked_start;
+        const parked_end = data.parking;
+        const charging_end = data.charging;
+        const free_end = !parked_end && !charging_end;
+        let priceAdjustment = 0;
+
+        if (free_end) {
+            priceAdjustment = 5;
+        } else if ((free_start && parked_end) || (free_start && charging_end)) {
+            priceAdjustment = -5;
+        } 
+
+        const finalPrice = (parseFloat(data.price) + priceAdjustment).toFixed(2);
         const trip = {
             end_time: data.endTime,
-            end_location: data.position,
-            price: data.price,
+            end_location: [data.position[0].toFixed(5), data.position[1].toFixed(5)],
+            price: finalPrice,
             trip_id: tempData[data.bikeId].trip_id,
         }
 
@@ -187,15 +213,16 @@ io.on("connection", (socket) => {
             tripId: tempData[data.bikeId].trip_id,
             location: data.position,
             battery_level: data.battery,
+            parking: parked_end,
+            charging: charging_end,
             speed: 0
         }
 
         await saveFinishedTrip(trip);
         await bikeManager.stopBike(data.bikeId);
         await bikeManager.updateBikeState(bike);
-        const user = await getOneGitUser(data.gitId);
-        await updateTrips(user[0].user_id, tempData[data.bikeId].trip_id);
-        await handlePayment(user[0].user_id, data.price, tempData[data.bikeId].trip_id)
+        await updateTrips(data.userId, tempData[data.bikeId].trip_id);
+        await handlePayment(data.userId, data.price, tempData[data.bikeId].trip_id)
     });
 
     socket.on("disconnect", () => {
@@ -230,7 +257,7 @@ const handlePayment = async (userId, cost, tripId) => {
         // lägg till betalstatus för resan
         await paymentStatusTrip(tripId, paid);
     } catch (error) {
-        console.error(`Error handling payment for user ${userId} and trip ${tripId}:`, error);
+        // console.error(`Error handling payment for user ${userId} and trip ${tripId}:`, error);
     }
 };
   
@@ -453,7 +480,6 @@ async function startSimulation () {
 
         currentBatchIndex++;
 
-
         if (currentBatchIndex * batchSize < routes.length) {
             // pausa innan nästa omgång adderas
             setTimeout(simulateBatch, 15000);
@@ -556,7 +582,7 @@ function simulateBikeInUse(simulationData) {
                 tmp.distance = totalDistanceTraveled.toFixed(2);
             }
         } else {
-            console.log(`Bike ${bikeId} finished route.`);
+            // console.log(`Bike ${bikeId} finished route.`);
             clearInterval(move);
 
             const endTime = new Date();
@@ -584,7 +610,7 @@ function simulateBikeInUse(simulationData) {
 
             io.emit("bikeNotInUse", { bikeId, battery, position })
             io.emit("routeFinished", { bikeId });
-            io.emit("bikeOnAppMap", { bikeId, battery, position })
+            io.emit("bikeOnAppMap", { bikeId, position, battery })
             await saveFinishedTrip(trip);
             await bikeManager.stopBike(bikeId);
             await bikeManager.updateBikeState(bike);
