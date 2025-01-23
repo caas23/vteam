@@ -30,12 +30,12 @@ const addBikes = async () => {
         await clearBikes();
         await resetBikeIdCounter();
 
-        for (const bike of allBikes) {
+        for (const bike of lundBikesTest) {
           bike.bike_id = await generateBikeId();
         }
         
         const BikeCollection = getCollection('bikes');
-        const result = await BikeCollection.insertMany(allBikes);
+        const result = await BikeCollection.insertMany(lundBikesTest);
         // console.log(`Added ${result.insertedCount} bikes.`);
 
     } catch (error) {

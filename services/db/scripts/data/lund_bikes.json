@@ -241,7 +241,7 @@
     "city_name": "Lund",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 22,
       "in_service": false,
       "parking": false,
@@ -3481,7 +3481,7 @@
     "city_name": "Lund",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 19,
       "in_service": false,
       "parking": false,
@@ -3787,7 +3787,7 @@
     "city_name": "Lund",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 45,
       "in_service": false,
       "parking": false,
@@ -5605,7 +5605,7 @@
     "city_name": "Lund",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 72,
       "in_service": false,
       "parking": false,
@@ -6145,7 +6145,7 @@
     "city_name": "Lund",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 27,
       "in_service": false,
       "parking": false,
@@ -8089,7 +8089,7 @@
     "city_name": "Lund",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 49,
       "in_service": false,
       "parking": false,
@@ -10069,7 +10069,7 @@
     "city_name": "Lund",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 86,
       "in_service": false,
       "parking": false,
@@ -11617,7 +11617,7 @@
     "city_name": "Lund",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 59,
       "in_service": false,
       "parking": false,
@@ -11797,7 +11797,7 @@
     "city_name": "Lund",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 39,
       "in_service": false,
       "parking": false,
@@ -11941,7 +11941,7 @@
     "city_name": "Lund",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 42,
       "in_service": false,
       "parking": false,
@@ -12517,7 +12517,7 @@
     "city_name": "Lund",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 76,
       "in_service": false,
       "parking": false,
@@ -13993,7 +13993,7 @@
     "city_name": "Lund",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 22,
       "in_service": false,
       "parking": false,
@@ -16153,7 +16153,7 @@
     "city_name": "Lund",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 28,
       "in_service": false,
       "parking": false,
@@ -16837,7 +16837,7 @@
     "city_name": "Lund",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 42,
       "in_service": false,
       "parking": false,

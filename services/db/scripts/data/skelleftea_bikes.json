@@ -205,7 +205,7 @@
     "city_name": "Skellefteå",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 54,
       "in_service": false,
       "parking": false,
@@ -925,7 +925,7 @@
     "city_name": "Skellefteå",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 61,
       "in_service": false,
       "parking": false,
@@ -4813,7 +4813,7 @@
     "city_name": "Skellefteå",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 78,
       "in_service": false,
       "parking": false,
@@ -7765,7 +7765,7 @@
     "city_name": "Skellefteå",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 27,
       "in_service": false,
       "parking": false,
@@ -8053,7 +8053,7 @@
     "city_name": "Skellefteå",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 30,
       "in_service": false,
       "parking": false,
@@ -11977,7 +11977,7 @@
     "city_name": "Skellefteå",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 56,
       "in_service": false,
       "parking": false,
@@ -12409,7 +12409,7 @@
     "city_name": "Skellefteå",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 78,
       "in_service": false,
       "parking": false,
@@ -15649,7 +15649,7 @@
     "city_name": "Skellefteå",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 54,
       "in_service": false,
       "parking": false,
@@ -15793,7 +15793,7 @@
     "city_name": "Skellefteå",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 55,
       "in_service": false,
       "parking": false,
@@ -16909,7 +16909,7 @@
     "city_name": "Skellefteå",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 19,
       "in_service": false,
       "parking": false,
