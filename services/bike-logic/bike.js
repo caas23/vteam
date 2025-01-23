@@ -26,7 +26,9 @@ const bike = {
                 { bike_id: bikeId },
                 {
                     $set: {
-                        "status.available": false
+                        "status.available": false,
+                        "status.parking": false,
+                        "status.charging": false
                     }
                 },
                 { returnDocument: "after" }
@@ -106,6 +108,8 @@ const bike = {
                 { 
                     $set: { 
                         "status.available": false,
+                        "status.parking": false,
+                        "status.charging": false,
                         "status.in_service": true
                     } 
                 },
@@ -237,6 +241,8 @@ const bike = {
                     $set: {
                         "location": bikeData.location,
                         "status.battery_level": parseFloat(bikeData.battery_level),
+                        "status.parking": bikeData.parking || false,
+                        "status.charging": bikeData.charging || false,
                         "speed": parseFloat(bikeData.speed)
                     },
                     $push: {

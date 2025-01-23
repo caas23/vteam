@@ -1,12 +1,13 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { Marker, Callout } from 'react-native-maps';
 import { Text, StyleSheet, Image, View, TouchableOpacity, Modal, Alert } from 'react-native';
-import { Bike, User } from './interfaces';
+import { Bike, User, ParkingZone, ChargingStation } from './interfaces';
 import fetchRentBike from './fetchModels/fetchRentBike';
+import fetchZones from './fetchModels/fetchZones';
 import * as Location from 'expo-location';
-import * as SecureStore from 'expo-secure-store';
 import Constants from 'expo-constants';
 import { io, Socket } from 'socket.io-client';
+import robustPointInPolygon from 'robust-point-in-polygon';
 
 const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ bikes, region, userData }) => {
     // custom cluster då built in varianterna inte fungerade som önskat
@@ -16,13 +17,14 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
     const [timeElapsed, setTimeElapsed] = useState<number>(0);
     const [estimatedPrice, setEstimatedPrice] = useState<number>(10);
     const [currentBatteryLevel, setCurrentBatteryLevel] = useState<number | null>();
-    const [currentBikeId, setCurrentBikeId] = useState<string | null>();
+    const [currentBike, setCurrentBike] = useState<Bike>();
     const [userLocation, setUserLocation] = useState<Location.LocationObject | null>();
     const [userId, setUserId] = useState<string>();
+    const [parkingZones, setParkingZones] = useState<ParkingZone[]>([]);
+    const [chargingZones, setChargingZones] = useState<ChargingStation[]>([]);
     
     const locationSubscription = useRef<any>(null);
-    const socket = useRef<Socket | null>(null);
-    
+    const socket = useRef<Socket | null>(null); 
 
 	const { BACKEND_URL } = Constants?.expoConfig?.extra as { BACKEND_URL: string };
 
@@ -53,17 +55,45 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
                 accuracy: Location.Accuracy.High 
             });
             setUserLocation(location);
-            const storedUser = await SecureStore.getItemAsync('user')
-            const gitId = storedUser && JSON.parse(storedUser).id;
-            setUserId(gitId)
+            setUserId(userData.user_id)
 
         }
+        
+        const getParkingZones = async () => {
+            const parking = await fetchZones('parking');
+            setParkingZones(parking)
+        }
+        
+        const getChargingZones = async () => {
+            const charging = await fetchZones('charging');
+            setChargingZones(charging)
+        }
+        
+        getParkingZones();
+        getChargingZones();
         
         getUserInfo();
         return () => {
             socket.current?.disconnect();
         };
+
     }, []);
+
+    const bikeInParkingZone = (position: [number, number]) => {
+        for (const zone of parkingZones) {
+            const result = robustPointInPolygon(zone.area, position)
+            if (result != 1) return true
+        }
+        return false
+    }
+    
+    const bikeInChargingZone = (position: [number, number]) => {
+        for (const zone of chargingZones) {
+            const result = robustPointInPolygon(zone.area, position)
+            if (result != 1) return true
+        }
+        return false
+    }
 
     const getClusterThreshold = (latitudeDelta: number) => {
         if (latitudeDelta < 0.02) return 0.005;
@@ -116,7 +146,7 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
         else return 0.5;
     }
 
-    const emitBikeData = async (bikeId: string, startTime: number) => {
+    const emitBikeData = async (bike: Bike, startTime: number) => {
         if (userLocation) {
             const { latitude, longitude, speed } = userLocation.coords;
             const position = [parseFloat(latitude.toFixed(5)), parseFloat(longitude.toFixed(5))];
@@ -128,7 +158,8 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
                 if (prevBatteryLevel) {
                     const newBatteryLevel = Math.max(0, prevBatteryLevel - batteryDrain);
                     socket.current?.emit('bikeInUseApp', {
-                        bikeId,
+                        bikeId: bike.bike_id,
+                        parking: bike.status.parking,
                         startTime: new Date(startTime),
                         position,
                         speed: speedInKmH,
@@ -157,13 +188,13 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
                         setOverlayVisible(true);
                         try {
                             setCurrentBatteryLevel(bike.status.battery_level);
-                            setCurrentBikeId(bike.bike_id);
+                            setCurrentBike(bike);
                             const startTime = Date.now();
-                            emitBikeData(bike.bike_id, startTime);
+                            emitBikeData(bike, startTime);
     
                             // Start interval for emitting bike data
                             locationSubscription.current = setInterval(() => {
-                                emitBikeData(bike.bike_id, startTime);
+                                emitBikeData(bike, startTime);
                             }, 1000);
     
                             setTripStartTime(startTime);
@@ -180,7 +211,7 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
     const handleReturnBike = () => {
         Alert.alert(
             "Return bike",
-            `Your chosen location for parking might affect the price of the trip, do you wish to park here?`,
+            `Your chosen location for parking can affect the price of the trip, do you want to park here?`,
             [
                 { text: "Cancel", style: "cancel" },
                 { text: "Park", onPress: () => {
@@ -194,17 +225,26 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
                                 clearInterval(locationSubscription.current);
                                 locationSubscription.current = null;
                             }
-                            if (userLocation && currentBikeId && userId) {
+                            if (userLocation && currentBike && userId) {
                                 const { latitude, longitude } = userLocation.coords;
-                                const position = [parseFloat(latitude.toFixed(5)), parseFloat(longitude.toFixed(5))];
+                                const position = [latitude, longitude];
+                                // const testCoords: [number, number] = [
+                                //     55.72353153463535,
+                                //     13.15622403622112
+                                // ]
+                                // kolla om position är inom någon parkerings- eller laddzon
+                                const atParking = bikeInParkingZone([latitude, longitude])
+                                const atCharging = bikeInChargingZone([latitude, longitude])
                                 
                                 socket.current?.emit('bikeNotInUseApp', {
-                                    bikeId: currentBikeId,
+                                    bikeId: currentBike.bike_id,
+                                    parking: atParking,
+                                    charging: atCharging,
                                     endTime: new Date(endTime),
                                     position,
                                     price: estimatedPrice.toFixed(2),
                                     battery: currentBatteryLevel?.toFixed(1),
-                                    gitId: userId
+                                    userId
                                 });
                             }
                     

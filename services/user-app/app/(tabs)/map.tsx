@@ -69,9 +69,11 @@ const MapTab: React.FC = () => {
 			bikeId: string;
 			position: [number, number];
 			battery: number;
+            forceUpdate?: boolean; 
 		}) => {
 			// uppdatera bara cyklar som är i nuvarande viewport
-			if (region && isBikeInViewport(data.position, region)) {
+			// eller om det specifikt angetts att en cykel ska uppdateras (via forceUpdate)
+			if ((region && isBikeInViewport(data.position, region)) || data.forceUpdate) {
 				setBikesInCity((prevBikes) =>
 					prevBikes.map((bike) =>
 						bike.bike_id === data.bikeId ? {
