@@ -31,9 +31,16 @@ router.get("/", async (req, res) => {
     res.json(routes);
 });
 
+let callbackUrlId;
+
+router.post('/register/callback', (req, res) => {
+    const { urlId } = req.body;
+    callbackUrlId = urlId
+});
+
 router.get('/callback', (req, res) => {
     const { code } = req.query;
-    res.redirect(`exp://8f0zqw4-anonymous-8081.exp.direct?code=${code}`);
+    res.redirect(`exp://${callbackUrlId}-anonymous-8081.exp.direct?code=${code}`);
 });
 
 router.get("/all/cities", checkAuth, async (req, res) => {
