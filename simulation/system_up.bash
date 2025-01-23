@@ -27,7 +27,7 @@ echo "Starting system..."
 sleep 10
 
 # silence output but save PID for termination later
-ngrok http --url=wasp-romantic-crow.ngrok-free.app 1337 > /dev/null &
+ngrok http --url=bulldog-master-distinctly.ngrok-free.app 1337 > /dev/null &
 NGROK_PID=$!
 echo "ngrok process started"
 

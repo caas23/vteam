@@ -1789,7 +1789,7 @@
     "city_name": "Solna",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 81,
       "in_service": false,
       "parking": false,
@@ -8953,7 +8953,7 @@
     "city_name": "Solna",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 18,
       "in_service": false,
       "parking": false,
@@ -9997,7 +9997,7 @@
     "city_name": "Solna",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 55,
       "in_service": false,
       "parking": false,
@@ -10393,7 +10393,7 @@
     "city_name": "Solna",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 90,
       "in_service": false,
       "parking": false,
@@ -12481,7 +12481,7 @@
     "city_name": "Solna",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 62,
       "in_service": false,
       "parking": false,
@@ -12661,7 +12661,7 @@
     "city_name": "Solna",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 85,
       "in_service": false,
       "parking": false,
@@ -14461,7 +14461,7 @@
     "city_name": "Solna",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 83,
       "in_service": false,
       "parking": false,
@@ -14677,7 +14677,7 @@
     "city_name": "Solna",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 26,
       "in_service": false,
       "parking": false,
@@ -14821,7 +14821,7 @@
     "city_name": "Solna",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 25,
       "in_service": false,
       "parking": false,
@@ -17485,7 +17485,7 @@
     "city_name": "Solna",
     "speed": 0,
     "status": {
-      "available": true,
+      "available": false,
       "battery_level": 23,
       "in_service": false,
       "parking": false,
