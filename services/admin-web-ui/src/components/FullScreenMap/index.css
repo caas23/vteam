@@ -1,0 +1,28 @@
+.fullscreen-map-container {
+    position: fixed;
+    top: -12px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10000;
+    background: white;
+}
+  
+.close-fullscreen {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    z-index: 11000;
+    background: var(--color-red-dark);
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.close-fullscreen:hover {
+    background: var(--color-red-darker)
+}
+  
+  
