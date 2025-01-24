@@ -15,7 +15,7 @@ router.put("/bike", checkAuth, async (req, res) => {
     res.json(result);
 });
 
-router.post("/complete/bike", checkAuth, async (req, res) => {
+router.put("/complete/bike", checkAuth, async (req, res) => {
     let bikeId = req.body.bike_id;
     const result = await bikeManager.bikeEndService(bikeId);
 

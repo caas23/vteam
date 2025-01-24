@@ -40,3 +40,13 @@
   padding: 0.5em;
   width: 100px;
 }
+
+.end-service-info {
+  color: var(--color-gray-dark);
+  font-weight: 350;
+  width: 100%;
+
+  & strong {
+    color: var(--color-gray-dark);
+  }
+}

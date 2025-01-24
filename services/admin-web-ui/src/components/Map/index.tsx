@@ -112,7 +112,7 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 		if (bike.status.charging && filters.charging) return true;
 		if (bike.status.parking && filters.parking) return true;
         if (!bike.status.parking && bike.status.available && filters.available) return true;
-        if (!bike.status.available && !bike.status.charging) {
+        if (!bike.status.available && !bike.status.charging && !bike.status.in_service) {
             if (bike.status.battery_level > 30 && filters.green) return true;
             if (bike.status.battery_level <= 30 && bike.status.battery_level > 15 && filters.orange) return true;
             if (bike.status.battery_level <= 15 && filters.red) return true;
