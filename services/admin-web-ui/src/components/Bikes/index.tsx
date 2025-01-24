@@ -202,7 +202,12 @@ const ShowBikes: React.FC<{
 				<strong>{bike.bike_id}</strong><br />
 				<strong>Battery:</strong> {bike.status.battery_level.toFixed(2)}%<br />
 				<strong>Status:</strong> {getBikeStatus(bike)}<br />
-				<strong>Minutes left: </strong> {timeLeftInMinutes}
+				<strong>Estimated time</strong><br />
+				{timeLeftInMinutes > 1 ? (
+					<><strong>left: </strong> {timeLeftInMinutes} minutes</>
+				) : (
+					<><strong>left: </strong> {timeLeftInMinutes} minute</>
+				)}
 				</Popup>
 			</Marker>
 			);
