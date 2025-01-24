@@ -17,8 +17,8 @@ const TripDetails: React.FC<TripDetailsProps> = ({ data }) => {
       Every trip has a set start fee, and a set price per minute.
       If a bike is left outside a parking or charging zone,
       a fee is added to the total price.
-      If a bike is picked up outside a parking or charging zone,
-      and then parked at one of those zones, you get a discount.
+      If a bike is picked up outside a parking zone, and then parked
+      at one of those or at a charging station, a discount is applied.
       
       - Start fee: 10 kr
       - Price per minute: 2,50 kr
@@ -26,10 +26,10 @@ const TripDetails: React.FC<TripDetailsProps> = ({ data }) => {
       - Basic discount: -5 kr
 
       Please note that these are general prices,
-      your specific trip may have additional fees or discounts.
+      a specific trip may have additional fees or discounts.
 
-      If you have questions about your specific trip,
-      please submit an email to trips@soloscoot.com
+      If a customer has any questions about their specific trip,
+      please refer them to custom support at trips@soloscoot.com.
       `);
     setAlertBox(true);
   };

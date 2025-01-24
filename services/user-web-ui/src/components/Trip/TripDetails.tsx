@@ -17,9 +17,9 @@ const TripDetails: React.FC<TripDetailsProps> = ({ data }) => {
       Every trip has a set start fee, and a set price per minute.
       If a bike is left outside a parking or charging zone,
       a fee is added to the total price.
-      If a bike is picked up outside a parking or charging zone,
-      and then parked at one of those zones, you get a discount.
-      
+      If a bike is picked up outside a parking zone, and then parked
+      at one of those or at a charging station, you get a discount.
+
       - Start fee: 10 kr
       - Price per minute: 2,50 kr
       - Basic fee: +5 kr
