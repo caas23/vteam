@@ -1,5 +1,4 @@
 interface User {
-  _id: string;
   name: string;
   payment_method: string;
   banned: boolean;

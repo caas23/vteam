@@ -1,5 +1,4 @@
 interface Trip {
-  _id: string;
   start_time: Date;
   end_time: Date;
   start_location: [number, number];

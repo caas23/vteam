@@ -148,16 +148,6 @@ const RowDetails: React.FC<RowItemProps> = ({ item, onDelete }) => {
 			) : (
 				<div>
 					<span>Area: {readOnlyArea(submittedData.area)}</span>
-					{/* <span>Plugs: {item.plugs.length}
-						<span className="sub-list">
-						{item.plugs.map((plug, index) => (
-							<div key={index}>
-							<span className="sub-level-arrow">&#8618; </span> 
-								Plug #{plug.id}: {plug.available ? "Available" : "In use"}
-							</div>
-						))}
-						</span>
-					</span> */}
 				</div>
 
 			)}

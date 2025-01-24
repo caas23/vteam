@@ -36,7 +36,7 @@ const insertStation = async (stations, type) => {
     inserts = stations.map(station => ({
       updateOne: {
         filter: { [`${type}_id`]: station.id },
-        update: { $setOnInsert: { area: station.area, [`${type}_id`]: station.id, plugs: station.plugs } },
+        update: { $setOnInsert: { area: station.area, [`${type}_id`]: station.id } },
         upsert: true,
       }
     }));
