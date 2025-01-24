@@ -34,23 +34,47 @@ p.map-loading-msg {
     flex-direction: row;
     gap: 0.5em;
 }
+
 .map-div {
     display: block;
     padding-bottom: 0.5em;
     width: 80%;
     padding-right: 0.75em;
     border-right: 2px dashed var(--color-blue-primary);
+}
 
+.fullscreen-toggle {
+    position: relative;
+    top: 5.5em;
+    left: 4em;
+    z-index: 1100;
+    background-color: var(--color-blue-primary);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.fullscreen-toggle:hover {
+    background-color: var(--color-blue-dark);
 }
 
 .color-div {
     display: block;
+    z-index: 2000000;
+    border-radius: 15px;
+    padding: 0.75em;
+    background-color: var(--color-blue-lightest);
+    height: fit-content;
+    width: fit-content;
 
     & h2 {
         color: var(--color-blue-primary);
         font-weight: 400;
     }
 }
+
 .color-codes {
     display: flex;
     flex-direction: column;

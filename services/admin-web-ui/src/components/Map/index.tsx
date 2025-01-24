@@ -17,6 +17,7 @@ import scooterIconParking from "/src/assets/scooter-pin-parking.png";
 import clusterIcon from "/src/assets/multiple-scooter-pin-blue.png";
 import clusterIconCharging from "/src/assets/multiple-scooter-pin-charging.png";
 import clusterIconParking from "/src/assets/multiple-scooter-pin-parking.png";
+import FullScreenMap from "../FullScreenMap";
 import "./index.css";
 
 const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
@@ -28,6 +29,7 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 	const [availableStations, setAvailableStations] = useState<ChargingStation[]>([]);
 	const [bikesInCity, setBikesInCity] = useState<Bike[]>([]);
 	const [bikesInViewport, setBikesInViewport] = useState<Bike[]>([]);
+	const [bigMapOpen, setBigMapOpen] = useState(false);
 
 	// för att kunna filtrera på kategori (batterinivå, parkering etc)
 	const [filters, setFilters] = useState({
@@ -266,6 +268,9 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 	return (
 		<>
 		<h1>{currentCity ? currentCity.display_name : ""}</h1>
+		<button className="fullscreen-toggle" onClick={() => setBigMapOpen(true)}>
+			Fullscreen mode
+		</button>
 		<div className="return-content">
 		<div className="map-div">
 		<MapContainer center={cityCenter} zoom={12}>
@@ -353,6 +358,18 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 			</div>
 		</div>
 		</div>
+		<FullScreenMap
+			boxOpen={bigMapOpen}
+			onClose={() => setBigMapOpen(false)}
+			cityCenter={cityCenter}
+			cityBorders={cityBorders}
+			bikes={bikesInCity}
+			users={bikeUsers}
+			socket={socket}
+			availableZones={availableZones}
+			availableStations={availableStations}
+			filters={filters}
+		/>
 		</>
 	);
 };
