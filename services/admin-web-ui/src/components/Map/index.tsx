@@ -19,14 +19,6 @@ import clusterIconCharging from "/src/assets/multiple-scooter-pin-charging.png";
 import clusterIconParking from "/src/assets/multiple-scooter-pin-parking.png";
 import "./index.css";
 
-/*** 
- *
- *  ATT FUNDERA PÅ (antingen för frontend- eller backend-hantering)
- * - Hur hantera resor som görs i realtid via appen, i denna vy? (nuvarande kod hanterar bara simulerade turer)
- * - Se till så att appen och denna vy samspelar väl i realtid (när någon hyr i app --> direkt spegling i denna vy)
- * 
- * ***/
-
 const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 	const { city } = useParams<{ city: string }>();
 	const [currentCity, setCurrentCity] = useState<CityInterface | null>(null);
@@ -176,6 +168,51 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 								...bike.status,
 								battery_level: data.battery,
 								available: false
+							}
+						} : bike
+					)
+				);
+			}
+		});
+		
+		socket.current?.on("chargingStatus", (data: { 
+			bikeId: string;
+			battery: number;
+		}) => {
+			// uppdatera bara cyklar som är i nuvarande viewport
+			if (bikesInViewport.some(bike => bike.bike_id === data.bikeId)) {
+				setBikesInCity(prevBikes =>
+					prevBikes.map(bike =>
+						bike.bike_id === data.bikeId ? { 
+							...bike,
+							status: {
+								...bike.status,
+								battery_level: data.battery,
+							}
+						} : bike
+					)
+				);
+			}
+		});
+		
+		socket.current?.on("chargingFinished", (data: { 
+			bikeId: string;
+			location: [number, number];
+		}) => {
+			// uppdatera bara cyklar som är i nuvarande viewport
+			console.log("chargingFinished", data)
+			if (bikesInViewport.some(bike => bike.bike_id === data.bikeId)) {
+				setBikesInCity(prevBikes =>
+					prevBikes.map(bike =>
+						bike.bike_id === data.bikeId ? { 
+							...bike,
+							location: data.location,
+							status: {
+								...bike.status,
+								available: true,
+								battery_level: 100,
+								parking: true,
+								charging: false
 							}
 						} : bike
 					)
