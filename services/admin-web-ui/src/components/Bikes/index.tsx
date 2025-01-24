@@ -184,9 +184,15 @@ const ShowBikes: React.FC<{
 			</Marker>
 			);
 		})}
-
+		
 		<MarkerClusterGroup iconCreateFunction={() => chargingCluster()}>
-			{chargingBikes.map((bike) => (
+		{chargingBikes.map((bike) => {
+			
+			const remainingBattery = 100 - bike.status.battery_level;
+			// 150 minuter till full laddning, enligt den setup som körs i backenden
+			const timeLeftInMinutes = Math.ceil((remainingBattery / 100) * 150);
+
+			return (
 			<Marker
 				key={bike.bike_id}
 				position={bike.location}
@@ -194,13 +200,15 @@ const ShowBikes: React.FC<{
 			>
 				<Popup>
 				<strong>{bike.bike_id}</strong><br />
-				<strong>Battery:</strong> {bike.status.battery_level}%<br />
-				<strong>Status:</strong> {getBikeStatus(bike)}
+				<strong>Battery:</strong> {bike.status.battery_level.toFixed(2)}%<br />
+				<strong>Status:</strong> {getBikeStatus(bike)}<br />
+				<strong>Minutes left: </strong> {timeLeftInMinutes}
 				</Popup>
 			</Marker>
-			))}
-      	</MarkerClusterGroup>
-		
+			);
+		})}
+		</MarkerClusterGroup>
+
 		<MarkerClusterGroup iconCreateFunction={() => parkingCluster()}>
 			{parkingBikes.map((bike) => (
 			<Marker

@@ -14,7 +14,9 @@ import { Server } from "socket.io";
 import bikeManager from "../../bike-logic/bikeManager.js";
 import { saveStartedTrip, saveFinishedTrip, getRoutes } from "./trip.js";
 import { paymentStatusTrip, Payments } from "./payment.js";
-import { updateTrips, getOneGitUser, getPaymentMethod, updateBalance } from "../../db/users.js";
+import { updateTrips, getPaymentMethod, updateBalance } from "../../db/users.js";
+import { EventEmitter } from "events";
+import bike from "../../bike-logic/bike.js";
 
 dotenv.config();
 
@@ -218,6 +220,7 @@ io.on("connection", (socket) => {
             speed: 0
         }
 
+        charging_end && addBikeToCharging(bike)
         await saveFinishedTrip(trip);
         await bikeManager.stopBike(data.bikeId);
         await bikeManager.updateBikeState(bike);
@@ -305,7 +308,7 @@ function calculateAngle(coord1, coord2, coord3) {
 
     // vinkeln i grader
     return angle * (180 / Math.PI);
-}
+};
 
 function calculateBatteryDrain(speed) {
     // riktvärden för batteriåtgång per minut vid givna hastigheter
@@ -325,7 +328,7 @@ function calculateBatteryDrain(speed) {
     else if (speed <= 15) return 0.2; // 0.2% per minut för hastighet upp till 15 km/h
     else if (speed <= 20) return 0.3; // 0.3% per minut för hastighet upp till 20 km/h
     else return 0.5; // 0.5% per minut för hastighet över 20 km/h
-    }
+};
 
 function calculateCurveSpeed(route, index, turnAngle) {
     /*** 
@@ -356,7 +359,73 @@ function calculateCurveSpeed(route, index, turnAngle) {
         speed = Math.random() * (20 - 16) + 16; // slumpmässig hastighet mellan 16-20 km/h
     }
     return speed;
-}
+};
+
+
+const chargingEmitter = new EventEmitter();
+let charging_bikes = [];
+
+// Emit event when a bike is added to `charging_bikes`
+function addBikeToCharging(bike) {
+    charging_bikes.push(bike);
+    chargingEmitter.emit("bikeAdded", bike);
+};
+
+// Emit event when a bike is removed from `charging_bikes`
+async function removeBikeFromCharging(bike) {
+    const bikeId = bike.bike_id;
+    charging_bikes = charging_bikes.filter(b => b.bike_id !== bikeId);
+    
+    // givna positioner för att göra cykel tillgänglig efter laddning,
+    // mer optimalt vore att inte sätta en fast position, men denna
+    // säkertsäller att cykeln hamnar på en parkeringsplats och görs tillgänglig.
+    // Fixa snyggare lösning i mån av tid.
+    let parkingZoneCoords;
+    
+    if (bike.city_name = "Lund") {
+        parkingZoneCoords = [55.718602783353155, 13.234730936932685]      
+    } else if (bike.city_name = "Solna") {
+        parkingZoneCoords = [59.35132432239902, 18.030919368279744]
+    } else if (bike.city_name = "Skellefteå") {
+        parkingZoneCoords = [64.75504581618314, 20.916070159284185]
+    }
+    const updateBike = {
+        bikeId,
+        location: parkingZoneCoords,
+    }
+    
+    chargingEmitter.emit("bikeRemoved", bikeId);
+    io.emit("chargingFinished", updateBike);
+    await bikeManager.updateChargedBike(updateBike)
+};
+
+function simulateCharging() {
+    /*** 
+     * ======================================================================================
+    * Simulera att batterinivån ökar med viss procent per tidsenhet.
+    * Laddningshastigheten baseras på antagandet att laddning från 0 --> 100 tar 2.5 h.
+    * ======================================================================================
+    * ***/
+    chargingEmitter.on("bikeAdded", (bike) => {
+        console.log(`Bike ${bike.bike_id} started charging.`);
+        bike.chargingInterval = setInterval(() => {
+            bike.status.battery_level = Math.min(bike.status.battery_level + 1 / 3, 100);
+            console.log(`Bike ${bike.bike_id} charging... Battery level: ${bike.status.battery_level}%`);
+            io.emit("chargingStatus", { bikeId: bike.bike_id, battery: bike.status.battery_level });
+
+            if (bike.status.battery_level >= 100) {
+                clearInterval(bike.chargingInterval);
+                console.log(`Bike ${bike.bike_id} fully charged.`);
+                removeBikeFromCharging(bike);
+            }
+        }, 30000); // Charging interval (30 seconds)
+    });
+
+    // Listen for bike removals
+    chargingEmitter.on("bikeRemoved", (bikeId) => {
+        console.log(`Bike ${bikeId} stopped charging.`);
+    });
+};
 
 let generatedUsers = new Set();
 // async function startSimulation () {
@@ -413,8 +482,18 @@ let generatedUsers = new Set();
 // }
 
 async function startSimulation () {
+    /* starta simulering av batteriladdning */
+    simulateCharging();
+
     /* hämta alla cyklar */
     const bikes = await bikeManager.getAllBikes();
+
+    /* filtrera ut cyklar som laddas */
+    const chargingBikes = bikes.filter(bike => bike.status.charging);
+
+    for (const chargingBike of chargingBikes) {
+        addBikeToCharging(chargingBike);
+    }
 
     /* hämta alla rutter */
     const routes = (await getRoutes()).filter(route => route.bike_id);
@@ -488,7 +567,7 @@ async function startSimulation () {
 
     // Start the simulation
     simulateBatch();
-}
+};
 
 const tempData = {};
 function simulateBikeInUse(simulationData) {
@@ -621,7 +700,7 @@ function simulateBikeInUse(simulationData) {
     };
     const move = setInterval(moveBike, interval);
     tmp.moveInterval = move;
-}
+};
 
 const startServer = async () => {
     try {
@@ -639,7 +718,7 @@ const startServer = async () => {
 
 export async function startTripRealTime (bikeId, user) {
     io.emit("routeStarted", { bikeId, user });
-}
+};
 
 await startServer();
 await startSimulation();
