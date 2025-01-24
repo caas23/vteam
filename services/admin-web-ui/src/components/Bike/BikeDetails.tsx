@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Bike, BikeDetailsProps } from "./interfaces";
 import { fetchServiceBike } from "../../fetchModels/fetchServiceBike";
+import { fetchEndServiceBike } from "../../fetchModels/fetchEndServiceBike";
 import { fetchDeleteBike } from "../../fetchModels/fetchDeleteBike";
 import ConfirmDelete from "../ConfirmDelete";
 import AlertMessage from "../AlertMessage";
@@ -31,6 +32,28 @@ const BikeDetails: React.FC<BikeDetailsProps> = ({ data }) => {
     } catch (error) {
       console.error("Error requesting service:", error);
       setAlertMessage("Error requesting service.");
+      setAlertBox(true);
+    }
+  };
+  
+  const handleEndService = async () => {
+    try {
+      const updatedData = {
+        ...formData,
+        status: {
+          ...formData.status,
+          in_service: false,
+          available: true,
+        },
+      };
+
+      setFormData(updatedData);
+      await fetchEndServiceBike(data.bike_id);
+      setAlertMessage("Service ended. The bike is out on the streets again!");
+      setAlertBox(true);
+    } catch (error) {
+      console.error("Error ending service:", error);
+      setAlertMessage("Error ending service.");
       setAlertBox(true);
     }
   };
@@ -92,6 +115,14 @@ const BikeDetails: React.FC<BikeDetailsProps> = ({ data }) => {
         <button className="edit-btn bike red" onClick={openConfirmation}>
             Delete bike
         </button>
+        </>
+        }
+        {formData.status.in_service && 
+        <>
+        <button className="edit-btn bike service" onClick={handleEndService}>
+          Service complete
+        </button>
+        <i className="end-service-info">Remember to <strong>await confirmation</strong> from the workshop before marking service as completed.</i>
         </>
         }
 

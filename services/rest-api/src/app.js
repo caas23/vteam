@@ -407,15 +407,12 @@ function simulateCharging() {
     * ======================================================================================
     * ***/
     chargingEmitter.on("bikeAdded", (bike) => {
-        console.log(`Bike ${bike.bike_id} started charging.`);
         bike.chargingInterval = setInterval(() => {
             bike.status.battery_level = Math.min(bike.status.battery_level + 1 / 3, 100);
-            console.log(`Bike ${bike.bike_id} charging... Battery level: ${bike.status.battery_level}%`);
             io.emit("chargingStatus", { bikeId: bike.bike_id, battery: bike.status.battery_level });
 
             if (bike.status.battery_level >= 100) {
                 clearInterval(bike.chargingInterval);
-                console.log(`Bike ${bike.bike_id} fully charged.`);
                 removeBikeFromCharging(bike);
             }
         }, 30000); // Charging interval (30 seconds)
@@ -532,7 +529,7 @@ async function startSimulation () {
             let battery = currentBike.status.battery_level;
             
             /* starta resan */
-            console.log(`Starting bike: ${bikeId}`);
+            // console.log(`Starting bike: ${bikeId}`);
             await bikeManager.startBike(bikeId);
             
             /* emitta till frontend att resan har startats */
