@@ -1,5 +1,4 @@
 interface City {
-    _id: string;
     name: string;
     display_name: string;
     bikes: string[];
@@ -9,7 +8,6 @@ interface City {
 }
 
 interface Bike {
-    _id: string;
     location: [number, number];
     city_name: string;
     speed: number;
@@ -23,17 +21,11 @@ interface Bike {
 }
 
 interface ChargingStation {
-    _id: string;
     charging_id: string;
     area: [number, number][];
-    plugs: {
-      id: number;
-      available: boolean;
-    }[];
 }
 
 interface ParkingZone {
-    _id: string;
     parking_id: string;
     area: [number, number][];
 }

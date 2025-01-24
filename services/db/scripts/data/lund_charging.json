@@ -21,29 +21,6 @@
         55.72317516211305,
         13.202491122912846
       ]
-    ],
-    "plugs": [
-      {
-        "id": "CP001",
-        "available": false,
-        "bike_id": "B646"
-      },
-      {
-        "id": "CP002",
-        "available": true
-      },
-      {
-        "id": "CP003",
-        "available": true
-      },
-      {
-        "id": "CP004",
-        "available": true
-      },
-      {
-        "id": "CP005",
-        "available": true
-      }
     ]
   },
   {
@@ -68,30 +45,6 @@
         55.71224791295782,
         13.203932273104812
       ]
-    ],
-    "plugs": [
-      {
-        "id": "CP006",
-        "available": false,
-        "bike_id": "B664"
-      },
-      {
-        "id": "CP007",
-        "available": false,
-        "bike_id": "B342"
-      },
-      {
-        "id": "CP008",
-        "available": true
-      },
-      {
-        "id": "CP009",
-        "available": true
-      },
-      {
-        "id": "CP010",
-        "available": true
-      }
     ]
   },
   {
@@ -116,31 +69,6 @@
         55.70612426464518,
         13.241490750007728
       ]
-    ],
-    "plugs": [
-      {
-        "id": "CP011",
-        "available": false,
-        "bike_id": "B936"
-      },
-      {
-        "id": "CP012",
-        "available": false,
-        "bike_id": "B778"
-      },
-      {
-        "id": "CP013",
-        "available": false,
-        "bike_id": "B194"
-      },
-      {
-        "id": "CP014",
-        "available": true
-      },
-      {
-        "id": "CP015",
-        "available": true
-      }
     ]
   },
   {
@@ -165,32 +93,6 @@
         55.69442603526787,
         13.166170529296295
       ]
-    ],
-    "plugs": [
-      {
-        "id": "CP016",
-        "available": false,
-        "bike_id": "B014"
-      },
-      {
-        "id": "CP017",
-        "available": false,
-        "bike_id": "B312"
-      },
-      {
-        "id": "CP018",
-        "available": false,
-        "bike_id": "B560"
-      },
-      {
-        "id": "CP019",
-        "available": false,
-        "bike_id": "B211"
-      },
-      {
-        "id": "CP020",
-        "available": true
-      }
     ]
   },
   {
@@ -215,32 +117,6 @@
         55.68559659015449,
         13.225292703860845
       ]
-    ],
-    "plugs": [
-      {
-        "id": "CP021",
-        "available": false,
-        "bike_id": "B656"
-      },
-      {
-        "id": "CP022",
-        "available": false,
-        "bike_id": "B450"
-      },
-      {
-        "id": "CP023",
-        "available": false,
-        "bike_id": "B696"
-      },
-      {
-        "id": "CP024",
-        "available": false,
-        "bike_id": "B898"
-      },
-      {
-        "id": "CP025",
-        "available": true
-      }
     ]
   }
 ]

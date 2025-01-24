@@ -1,5 +1,4 @@
 interface Bike {
-  _id: string;
   location: [number, number];
   city_name: string;
   speed: number;
