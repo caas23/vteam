@@ -19,10 +19,11 @@ const PaymentDetails: React.FC<{ userId: string }> = ({ userId }) => {
 			try {
 				const result = await fetchPayments(userId);
 				const paymentData = result[0] || { trips: [] };
+				const currentDate = (new Date()).getDate();
 	
 				const updatedTrips = await Promise.all(
 					paymentData.trips.map(async (trip: Payment) => {
-						if (!trip.paid && new Date(trip.date).getDate() >= 27) {
+						if (!trip.paid && currentDate >= 27) {
 							await updatePaymentStatus(trip.trip_id);
 							return { ...trip, paid: true };
 						}

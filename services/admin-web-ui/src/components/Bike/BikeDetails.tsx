@@ -56,9 +56,9 @@ const BikeDetails: React.FC<BikeDetailsProps> = ({ data }) => {
   };
 
   const getBikeStatus = (bike: Bike) => {
-    if (bike.status.charging) return "Charging";
-    else if (bike.status.in_service) return "In Service";
-    else if (bike.status.available) return "Available";
+    if (formData.status.charging || bike.status.charging) return "Charging";
+    else if (formData.status.in_service || bike.status.in_service) return "In Service";
+    else if (formData.status.available || bike.status.available) return "Available";
     else return "In use";
   };
 
