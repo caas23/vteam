@@ -7,7 +7,6 @@ import get from './routes/getDataRoutes.js';
 import add from './routes/addDataRoutes.js';
 import update from './routes/updateDataRoutes.js';
 import del from './routes/deleteDataRoutes.js';
-import test from './routes/testRoutes.js';
 import service from './routes/serviceRoutes.js';
 import http from "http";
 import { Server } from "socket.io";
@@ -16,7 +15,6 @@ import { saveStartedTrip, saveFinishedTrip, getRoutes } from "./trip.js";
 import { paymentStatusTrip, Payments } from "./payment.js";
 import { updateTrips, getPaymentMethod, updateBalance } from "../../db/users.js";
 import { EventEmitter } from "events";
-import bike from "../../bike-logic/bike.js";
 
 dotenv.config();
 
@@ -39,7 +37,6 @@ app.use('/add', add);
 app.use('/update', update);
 app.use('/delete', del);
 app.use('/service', service);
-app.use('/test', test);
 
 app.get("/", (req, res) => {
     const routes = {
@@ -49,7 +46,6 @@ app.get("/", (req, res) => {
             "/update": "put routes",
             "/delete": "delete routes",
             "/service": "service routes",
-            "/test": "test routes"
         }
     }
     res.json(routes);
@@ -699,13 +695,14 @@ function simulateBikeInUse(simulationData) {
     tmp.moveInterval = move;
 };
 
+let server;
 const startServer = async () => {
     try {
         const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.yjhm6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
         await connectToDatabase(mongoUri);
         
         const port = process.env.PORT || 1338;
-        httpServer.listen(port, '0.0.0.0', () => {
+        server = httpServer.listen(port, '0.0.0.0', () => {
             console.log(`Server is running on port ${port}`);
         });
     } catch (error) {
@@ -717,5 +714,11 @@ export async function startTripRealTime (bikeId, user) {
     io.emit("routeStarted", { bikeId, user });
 };
 
-await startServer();
-await startSimulation();
+const startApp = async () => {
+    await startServer();
+    await startSimulation();
+};
+
+startApp();
+
+export { app, server }
