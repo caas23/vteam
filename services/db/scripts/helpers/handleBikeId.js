@@ -6,6 +6,7 @@ export const resetBikeIdCounter = async () => {
       await counterCollection.updateOne(
         { _id: 'counter' },
         { $set: { counter_value: 0 } },
+        { upsert: true }
       );
     } catch (error) {
       console.error('Error resetting bike_id_counter:', error);

@@ -5,7 +5,8 @@ export const resetIdCounters = async () => {
         const counterCollection = getCollection('charging_id_counter');
         await counterCollection.updateOne(
             { _id: 'counter' },
-            { $set: { counter_value: 0 } }
+            { $set: { counter_value: 0 } },
+            { upsert: true }
         );
     
         const parkingCounterCollection = getCollection('parking_id_counter');
