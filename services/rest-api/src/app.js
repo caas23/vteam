@@ -2,7 +2,7 @@ import express from "express";
 import * as dotenv from "dotenv";
 import cors from "cors";
 import helmet from "helmet";
-import { connectToDatabase } from "../../db/db.js";
+import { connectToDatabase, connectToTestDatabase } from "../../db/db.js";
 import get from './routes/getDataRoutes.js';
 import add from './routes/addDataRoutes.js';
 import update from './routes/updateDataRoutes.js';
@@ -697,16 +697,30 @@ function simulateBikeInUse(simulationData) {
 
 let server;
 const startServer = async () => {
+    if (server) {
+        return server;
+    }
     try {
         const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.yjhm6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
-        await connectToDatabase(mongoUri);
+        // fullösning som löser problem med db tills vidare, lös snyggare om tid finns
+        process.env.NODE_ENV == 'test' && await connectToTestDatabase(mongoUri);
+        process.env.NODE_ENV != 'test' && await connectToDatabase(mongoUri);
         
         const port = process.env.PORT || 1338;
         server = httpServer.listen(port, '0.0.0.0', () => {
             console.log(`Server is running on port ${port}`);
         });
+
+        return server;
     } catch (error) {
         console.error('Error starting server:', error);
+    }
+};
+
+const closeServer = async () => {
+    if (server) {
+        await server.close();
+        server = null;
     }
 };
 
@@ -719,6 +733,8 @@ const startApp = async () => {
     await startSimulation();
 };
 
-startApp();
+if (process.env.NODE_ENV != 'test') {
+    startApp();
+}
 
-export { app, server }
+export default { startServer, closeServer, app };
