@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node src/app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "NODE_ENV=test && NODE_NO_WARNINGS=1 && NODE_OPTIONS=--no-warnings node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand --forceExit --coverage"
   },
   "keywords": [],
   "author": "",
@@ -17,5 +17,18 @@
     "helmet": "^8.0.0",
     "socket.io": "^4.8.1"
   },
-  "type": "module"
+  "type": "module",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-fetch-mock": "^3.0.3",
+    "node-mocks-http": "^1.16.2",
+    "supertest": "^7.0.0"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "transform": {},
+    "globals": {
+      "jest": "jest"
+    }
+  }
 }

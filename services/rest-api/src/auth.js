@@ -1,4 +1,4 @@
-const validateGithubToken = async (token) => {
+export const validateGithubToken = async (token) => {
   const response = await fetch('https://api.github.com/user', {
     headers: {
       Authorization: `Bearer ${token}`,

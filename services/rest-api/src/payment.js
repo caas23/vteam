@@ -21,10 +21,10 @@ export const paymentStatusTrip = async (tripId, paid) => {
 };
 
 export const Payments = async (userId, tripId, cost, paid, method) => {
-    const monthCollection = getCollection('payments');
+    const paymentCollection = getCollection('payments');
     
     try {
-      const result = await monthCollection.updateOne(
+      const result = await paymentCollection.updateOne(
         { user_id: userId },
         { 
           $push: { 
@@ -48,10 +48,10 @@ export const Payments = async (userId, tripId, cost, paid, method) => {
 };
 
 export const updatePaymentStatusMonthly = async (tripId) => {
-  const monthCollection = getCollection('payments');
+  const paymentCollection = getCollection('payments');
 
   try {
-      const result = await monthCollection.updateOne(
+      const result = await paymentCollection.updateOne(
         { "trips.trip_id": tripId },
         {
           $set: {
