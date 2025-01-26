@@ -6,6 +6,7 @@ export const resetRouteIdCounter = async () => {
       await counterCollection.updateOne(
         { _id: 'counter' },
         { $set: { counter_value: 0 } },
+        { upsert: true }
       );
     } catch (error) {
       console.error('Error resetting route_id_counter:', error);

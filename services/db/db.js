@@ -8,8 +8,9 @@ const connectToDatabase = async (uri) => {
   try {
     await client.connect();
     
-    // vteam eller test
+    // vteam eller vteam_test
     db = client.db("vteam");
+    // db = client.db("vteam_test");
     
     // console.log('Connected to database');
     return client;
