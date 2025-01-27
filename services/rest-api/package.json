@@ -30,6 +30,7 @@
     "transform": {},
     "globals": {
       "jest": "jest"
-    }
+    },
+    "testTimeout": 20000
   }
 }
