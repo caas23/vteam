@@ -31,6 +31,6 @@
     "globals": {
       "jest": "jest"
     },
-    "testTimeout": 20000
+    "testTimeout": 15000
   }
 }
