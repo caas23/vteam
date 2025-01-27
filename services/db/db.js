@@ -17,8 +17,8 @@ const connectToDatabase = async (uri) => {
   }
 };
 
-// problem med att använda samma funktion oavsett db,
-// temporär lösning att använda två olika funktioner 
+// problem with using the same function regardless of db,
+// temporary solution to use two different functions 
 const connectToTestDatabase = async (uri) => {
   const client = new MongoClient(uri);
   

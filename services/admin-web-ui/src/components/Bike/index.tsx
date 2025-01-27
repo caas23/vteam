@@ -9,10 +9,6 @@ const Bike: React.FC = () => {
   const { bike: bikeId } = useParams<{ bike: string }>();
   const [bikeData, setBikeData] = useState< BikeInterface | null | undefined >(undefined);
 
-  // lagt till lite extra hantering av bikeData för att sköta vyn snyggt
-  // utan att få millisekunder långa (korta) flashes av "no data"-meddelandet 
-  // om data faktiskt finns (men den behöver hinna hämtas under ett ögonblick)
-
   useEffect(() => {
     document.title = `Bike ${bikeId} - Solo Scoot`;
 
@@ -23,9 +19,9 @@ const Bike: React.FC = () => {
       }
       try {
         const result = bikeId ? await fetchOneBike(bikeId) : "";
-        setBikeData(result ?? null); //null om data saknas
+        setBikeData(result ?? null); //null if no data
       } catch {
-        setBikeData(null); // null om error
+        setBikeData(null); // null if error
       }
     };
     
@@ -33,7 +29,7 @@ const Bike: React.FC = () => {
 
   }, [bikeId]);
 
-  // undefined tills result hämtats
+  // undefined until result fetched
   if (bikeData === undefined) return;
 
   if (bikeData === null) {

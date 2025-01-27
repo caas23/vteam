@@ -23,7 +23,7 @@ const City: React.FC = () => {
 	}, [city]);
 
 	useEffect(() => {
-		// hämta nuvaranda stad innan resten av datan hämtas
+		// get current city before the rest of the data is fetched
 		if (!currentCity) return;
 
 		document.title = `City ${currentCity.display_name} - Solo Scoot`;
@@ -61,7 +61,7 @@ const City: React.FC = () => {
 		{ category: "Rules", count: rules.length, data: rules },
 	];
 
-	// för att uppdatera tabellen så fort något raderas, utan sidomladdning
+	// to update the table as soon as something is deleted, without page reload
 	const handleDelete = (category: string, id: string) => {
 		switch (category) {
 		  case "Bikes":

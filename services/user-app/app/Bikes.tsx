@@ -10,7 +10,7 @@ import { io, Socket } from 'socket.io-client';
 import robustPointInPolygon from 'robust-point-in-polygon';
 
 const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ bikes, region, userData }) => {
-    // custom cluster då built in varianterna inte fungerade som önskat
+    // custom cluster as the built in variants did not work as desired
     const [clusters, setClusters] = useState<any[]>([]);
     const [overlayVisible, setOverlayVisible] = useState(false);
     const [tripStartTime, setTripStartTime] = useState<number | null>(null);
@@ -192,7 +192,7 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
                             const startTime = Date.now();
                             emitBikeData(bike, startTime);
     
-                            // Start interval for emitting bike data
+                            // start interval for emitting bike data
                             locationSubscription.current = setInterval(() => {
                                 emitBikeData(bike, startTime);
                             }, 1000);
@@ -228,11 +228,7 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
                             if (userLocation && currentBike && userId) {
                                 const { latitude, longitude } = userLocation.coords;
                                 const position = [latitude, longitude];
-                                // const testCoords: [number, number] = [
-                                //     55.72353153463535,
-                                //     13.15622403622112
-                                // ]
-                                // kolla om position är inom någon parkerings- eller laddzon
+          
                                 const atParking = bikeInParkingZone([latitude, longitude])
                                 const atCharging = bikeInChargingZone([latitude, longitude])
                                 

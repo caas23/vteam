@@ -26,12 +26,10 @@ export default async function fetchRentBike(data: object) {
 		throw new Error(response.statusText);
 	}
 	const result = await response.json();
-	console.log(result) 
 	return result
 
 
 	} catch (error) {
-		// console.error("Error renting bike:", error);
 		return;
 	}
 };

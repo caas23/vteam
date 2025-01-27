@@ -61,7 +61,6 @@ router.delete("/user/:user_id", checkAuth, async (req, res) => {
     try {
         const filter = { user_id: userId }
         const result = await userCollection.deleteOne(filter);
-        // console.log(`User with id ${userId} was deleted.`)
 
         res.json(result);
         } catch (e) {

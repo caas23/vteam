@@ -65,8 +65,8 @@ function App() {
 
   const socket = useRef<ReturnType<typeof io> | null>(null);
 
-  // hantera nya och avslutade rutter här, så att localstorage
-  // uppdateras med cykel+användare oavsett vilken vy som är öppen
+  // handle new and completed routes here, so that localstorage
+  // is updated with bike+user regardless of which view is open
   useEffect(() => {
     if (!socket.current) {
       socket.current = io("http://localhost:1337");
@@ -116,7 +116,7 @@ function App() {
           <Route path="/cities/add" element={<ProtectedRoute component={AddCity} />} />
           <Route path="/city/:city" element={<ProtectedRoute component={City} />} />
           <Route path="/maps" element={<ProtectedRoute component={Maps} />} />
-          {/* skicka med socket till kartvyn --> behöver inte initera ny anslutning i vyn */}
+          {/* send socket to map view --> no need to initiate new connection in view */}
           <Route path="/map/:city" element={<ProtectedRoute component={MapComponent} bikeUsers={bikeUsers} socket={socket} />} />
           <Route path="/trip/:trip" element={<ProtectedRoute component={Trip} />} />
           <Route path="/users" element={<ProtectedRoute component={Users} />} />

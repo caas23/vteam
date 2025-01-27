@@ -7,8 +7,8 @@ import { resetRouteIdCounter, generateRouteId } from './helpers/handleRouteId.js
 dotenv.config({ path: '../.env' });
 const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.yjhm6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
-// Skript för att lägga till/återställa rutter i databasen.
-// Totalt 3000 rutter läggs till.
+// Script to add/restore routes to the database.
+// A total of 3000 routes are added.
 
 const loadData = async (filePath) => {
   const routes = await fs.readFile(filePath, 'utf8');
@@ -34,8 +34,7 @@ const addRoutes = async () => {
         }
         
         const RouteCollection = getCollection('routes');
-        const result = await RouteCollection.insertMany(allRoutes);
-        // console.log(`Added ${result.insertedCount} routes.`);
+        await RouteCollection.insertMany(allRoutes);
 
     } catch (error) {
         console.error('Error adding routes:', error);
@@ -50,7 +49,6 @@ const clearRoutes = async () => {
       const RouteCollection = getCollection('routes');
       await RouteCollection.deleteMany({});
   
-      // console.log('All routes cleared');
     } catch (error) {
       console.error('Error clearing routes:', error);
     }

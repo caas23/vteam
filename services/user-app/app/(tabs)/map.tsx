@@ -64,15 +64,15 @@ const MapTab: React.FC = () => {
 			);
 		};
 
-		// lägg till tillgängliga cyklar på kartan
+		// add available bikes to the map
         socket.current.on('bikeOnAppMap', (data: {
 			bikeId: string;
 			position: [number, number];
 			battery: number;
             forceUpdate?: boolean; 
 		}) => {
-			// uppdatera bara cyklar som är i nuvarande viewport
-			// eller om det specifikt angetts att en cykel ska uppdateras (via forceUpdate)
+			// only update bikes that are in the current viewport
+			// or if it is specifically stated that a bike should be updated (via forceUpdate)
 			if ((region && isBikeInViewport(data.position, region)) || data.forceUpdate) {
 				setBikesInCity((prevBikes) =>
 					prevBikes.map((bike) =>
@@ -91,14 +91,14 @@ const MapTab: React.FC = () => {
 			}
         });
         
-		// ta bort hyrda cyklar från kartan
+		// remove rented bikes from the map
 		socket.current.on('bikeOffAppMap', (data: {
 			bikeId: string;
 			position: [number, number];
 			forceUpdate?: boolean;
 		}) => {
-			// uppdatera bara cyklar som är i nuvarande viewport
-			// eller om det specifikt angetts att en cykel ska uppdateras (via forceUpdate)
+			// only update bikes that are in the current viewport
+			// or if it is specifically stated that a bike should be updated (via forceUpdate)
 			if ((region && isBikeInViewport(data.position, region)) || data.forceUpdate) {
 				setBikesInCity((prevBikes) =>
 					prevBikes.map((bike) =>

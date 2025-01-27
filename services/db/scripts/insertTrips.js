@@ -7,8 +7,8 @@ import { resetTripIdCounter, generateTripId } from './helpers/handleTripId.js';
 dotenv.config({ path: '../.env' });
 const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.yjhm6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
-// Skript för att lägga till/återställa resor i databasen.
-// Totalt 1000 resor/stad läggs till.
+// Script to add/reset trips to the database.
+// A total of 1000 trips/city are added.
 
 const loadData = async (filePath) => {
   const trips = await fs.readFile(filePath, 'utf8');
@@ -35,8 +35,7 @@ const addTrips = async () => {
         }
         
         const TripCollection = getCollection('trips');
-        const result = await TripCollection.insertMany(allTrips);
-        // console.log(`Added ${result.insertedCount} trips.`);
+        await TripCollection.insertMany(allTrips);
 
     } catch (error) {
         console.error('Error adding trips:', error);
@@ -51,7 +50,6 @@ const clearTrips = async () => {
       const TripCollection = getCollection('trips');
       await TripCollection.deleteMany({});
   
-      // console.log('All trips cleared');
     } catch (error) {
       console.error('Error clearing trips:', error);
     }
@@ -62,7 +60,6 @@ const clearPayments = async () => {
       const PaymentsCollection = getCollection('payments');
       await PaymentsCollection.deleteMany({});
   
-      // console.log('All payments cleared');
     } catch (error) {
       console.error('Error clearing payments:', error);
     }

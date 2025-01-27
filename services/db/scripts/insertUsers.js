@@ -7,10 +7,8 @@ import { resetUserIdCounter, generateUserId } from './helpers/handleUserId.js';
 dotenv.config({ path: '../.env' });
 const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.yjhm6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
-// Skript för att lägga till/återställa användare i databasen.
-// Totalt 1000 användare läggs till.
-// Användare har delvis skapats med hjälp av material 
-// från kursen vlinux.
+// Script to add/reset users, 1500 users are added,
+// Users created using material from Vlinux course
 
 const loadData = async (filePath) => {
   const users = await fs.readFile(filePath, 'utf8');
@@ -32,8 +30,7 @@ const addUsers = async () => {
         }
         
         const userCollection = getCollection('users');
-        const result = await userCollection.insertMany(users);
-        // console.log(`Added ${result.insertedCount} users.`);
+        await userCollection.insertMany(users);
 
     } catch (error) {
         console.error('Error adding users:', error);
@@ -48,7 +45,6 @@ const clearUsers = async () => {
       const userCollection = getCollection('users');
       await userCollection.deleteMany({});
   
-      // console.log('All users cleared');
     } catch (error) {
       console.error('Error clearing users:', error);
     }

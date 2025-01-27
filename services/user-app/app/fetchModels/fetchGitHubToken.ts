@@ -18,11 +18,9 @@ export default async function fetchGitHubAccessToken(code: string) {
 	}
 
 	const data = await response.json();
-	// console.log("Fetched GitHub access token data:", data);
 	return data;
 
 	} catch (error) {
-		// console.error("Error fetching GitHub access token:", error);
 		return;
 	}
 };

@@ -104,8 +104,6 @@ const RowDetails: React.FC<RowItemProps> = ({ item, onDelete }) => {
 			<span>
 				<strong>Bike #{item.bike_id}</strong>
 			</span>
-			{/* <span>Status: {item.status.in_service ? "In Service" : item.status.available ? "Available" : "In use"}</span> */}
-			{/* <span>Location: [{item.location.join(", ")}]</span> */}
 			<span className="more-details"><a href={`/bike/${item.bike_id}`}>View more details</a></span>
 		</div>
 		);

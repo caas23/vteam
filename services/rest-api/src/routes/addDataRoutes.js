@@ -20,9 +20,6 @@ router.get("/", async (req, res) => {
 });
 
 router.post("/city", checkAuth, async (req, res) => {
-    // req.body.city förväntas innehålla name och display_name
-    // parkeringar, laddstationer cyklar och regler adderas 
-    // i ett senare skede (från city/:city vyn)
     const city = req.body.city;
 
     const addCity = {

@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "node src/app.js",
-    "test": "NODE_ENV=test && NODE_NO_WARNINGS=1 && NODE_OPTIONS=--no-warnings node --experimental-vm-modules node_modules/jest/bin/jest.js --forceExit",
-    "test:coverage": "NODE_ENV=test && NODE_NO_WARNINGS=1 && NODE_OPTIONS=--no-warnings node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand --forceExit --coverage"
+    "test": "NODE_ENV=test && NODE_NO_WARNINGS=1 && NODE_OPTIONS=--no-warnings node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand --forceExit --coverage"
   },
   "keywords": [],
   "author": "",

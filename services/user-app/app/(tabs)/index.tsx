@@ -33,7 +33,6 @@ export default function HomeTab() {
 			Alert.alert("Alert", "You have been logged out.");
 		} else {
 			await Linking.openURL(githubOAuthUrl);
-			// console.log('Redirected to GitHub for authentication');
 		}
 		} catch (error) {
 			Alert.alert("Error", "Failed to open authentication URL.");

@@ -7,8 +7,7 @@ import { resetRuleIdCounter, addUniqueId } from './helpers/handleRuleId.js';
 dotenv.config({ path: '../.env' });
 const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.yjhm6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
-// Skript för att lägga till/återställa regler i Lund, Solna och Skellefteå.
-
+// Script to add/reset rules in Lund, Solna and Skellefteå.
 const loadData = async (filePath) => {
   const rules = await fs.readFile(filePath, 'utf8');
   return JSON.parse(rules);
@@ -26,7 +25,6 @@ const insertRules = async (rules) => {
 const updateCityRules = async (cityName, ruleIds) => {
   const cityCollection = getCollection('cities');
   await cityCollection.updateOne({ name: cityName }, { $set: { rules: ruleIds } });
-  // console.log(`Updated rules for ${cityName}`);
 };
 
 const addRulesToCities = async () => {
@@ -67,7 +65,6 @@ const clearCityRules = async () => {
 
     const rulesCollection = getCollection('city_rules');
     await rulesCollection.deleteMany({});
-    // console.log('Cleared rules for all cities');
   } catch (error) {
     console.error('Error clearing rules:', error);
   }

@@ -9,7 +9,6 @@ import { checkAuth } from '../auth.js';
 const router = express.Router();
 
 router.get("/", async (req, res) => {
-    // uppdatera denna med alla routes
     const routes = {
         "Available routes": {
             "/all/cities": "get all cities",
@@ -98,19 +97,17 @@ router.get("/all/bikes", checkAuth, async (req, res) => {
     res.json(result);
 });
 
-// för /bikes-vyn i admin
 router.get("/all/bikes/pagination", checkAuth, async (req, res) => {
     const page = req.query.page || 1;
     const search = req.query.search || "";
-    const limit = 5; // visa 5 cyklar i taget
+    const limit = 5;
     const skip = (page - 1) * limit;
   
-    // om sökord finns används inbyggda regex och case-insensitive för att söka i db
     const filter = search ? { bike_id: { $regex: search, $options: "i" } } : {};
 
     try {
       const bikes = await bikeManager.getBikesPagination(filter, skip, limit);
-      const totalBikes = await bikeManager.countBikesPagination(filter); // totala antal cyklar baserat på sökning
+      const totalBikes = await bikeManager.countBikesPagination(filter);
       const totalPages = Math.ceil(totalBikes / limit);
   
       res.json({ bikes, totalPages });
@@ -125,19 +122,17 @@ router.get("/all/users", checkAuth, async (req, res) => {
     res.json(result);
 });
 
-// för /users-vyn i admin
 router.get("/all/users/pagination", checkAuth, async (req, res) => {
     const page = req.query.page || 1;
     const search = req.query.search || "";
-    const limit = 5; // visa 5 användare i taget
+    const limit = 5;
     const skip = (page - 1) * limit;
   
-    // om sökord finns används inbyggda regex och case-insensitive för att söka i db
     const filter = search ? { user_id: { $regex: search, $options: "i" } } : {};
 
     try {
       const users = await getUsersPagination(filter, skip, limit);
-      const totalUsers = await countUsersPagination(filter); // totala antal användare baserat på sökning
+      const totalUsers = await countUsersPagination(filter);
       const totalPages = Math.ceil(totalUsers / limit);
   
       res.json({ users, totalPages });

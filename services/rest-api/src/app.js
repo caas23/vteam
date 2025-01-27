@@ -58,7 +58,7 @@ io.on("connection", (socket) => {
     
     socket.on("mapConnected", () => {
         frontendListening = true;
-        // skicka lagrade bikeUsers för uppdatering i storage
+        // send stored bikeUsers for update in storage
         if (unsentBikeUsers.size > 0) {
             for (const [bikeId, user] of unsentBikeUsers) {
                 socket.emit("routeStarted", { bikeId, user });
@@ -72,8 +72,6 @@ io.on("connection", (socket) => {
     })
 
 
-    // just nu finns ingen logik för att göra en inbromsning vid tvingat stopp,
-    // lägg till senare om tid finns
     socket.on("forceStop", async (data) => {
         const bikeId = data.bike.bike_id;
         const tmp = tempData[bikeId];
@@ -100,7 +98,7 @@ io.on("connection", (socket) => {
                 end_time: endTime,
                 end_location: position,
                 price: price,
-                distance: parseFloat(tmp.distance * 1000), // i meter
+                distance: parseFloat(tmp.distance * 1000),
                 route: tmp.route,
                 trip_id: tmp.trip_id,
                 reason: data.reason,
@@ -161,7 +159,7 @@ io.on("connection", (socket) => {
         tempData[data.bikeId] = {
             trip_id: tripId,
             start_time: new Date(data.startTime),
-            parked_start: data.parking, // bool, om true -> parkerad, annars fri
+            parked_start: data.parking, // bool
         };
 
     });
@@ -182,9 +180,6 @@ io.on("connection", (socket) => {
             battery: data.battery,
             forceUpdate: true 
         })
-
-        // om cykeln hämtas på fri parkering och återlämnas på parkerings- eller laddplats --> avdrag 5 kr
-        // om cykeln återlämnas utanför ovanstående platser --> tillägg 5 kr
 
         const free_start = !tempData[data.bikeId].parked_start;
         const parked_end = data.parking;
@@ -224,36 +219,34 @@ io.on("connection", (socket) => {
         await handlePayment(data.userId, data.price, tempData[data.bikeId].trip_id)
     });
 
-    socket.on("disconnect", () => {
-        // console.log("Client disconnected", socket.id);
-    });
+    socket.on("disconnect", () => {});
 });
 
-// hantera betalning vid slutet av en resa
+// handle payment at the end of a trip
 const handlePayment = async (userId, cost, tripId) => {
     try {
-        /* kolla vilken betalmetod kunden har, och agera därefter */
+        // check which payment method the customer has, and act accordingly
         const method = (await getPaymentMethod(userId)).toLowerCase();
         let success = false;
         let paid = false;
     
         if (method === "prepaid") {
-            // om prepaid, dra pengar från kontot
+            // if prepaid, withdraw money from the account
             success = await updateBalance(userId, cost);
     
             if (success) {
                 paid = true;
-                // markera resan som betald
+                // mark trip as paid
                 await Payments(userId, tripId, cost, paid, method);
             }
         }
-        // om månatlig (eller problem med prepaid),
-        // spara beloppet för dragning den 27:e
+        // if monthly (or prepaid problem),
+        // save the amount for withdrawal on the 27th
         if (!success) {
             await Payments(userId, tripId, cost, paid, "monthly");
         }
     
-        // lägg till betalstatus för resan
+        // add payment status for the trip
         await paymentStatusTrip(tripId, paid);
     } catch (error) {
         // console.error(`Error handling payment for user ${userId} and trip ${tripId}:`, error);
@@ -261,12 +254,12 @@ const handlePayment = async (userId, cost, tripId) => {
 };
   
 
-// avståndet mellan två koordinater (Haversine)
-// troligen hade även Pythagoras varit god nog i detta fall, 
-// givet att avståndet mellan varje koordinat är litet och det
-// kan anses finnas lite spelrum vad gäller hastigheten (som avståndet används till)
+// the distance between two coordinates (Haversine)
+// probably even Pythagoras would have been good enough in this case,
+// given that the distance between each coordinate is small and there
+// can be considered to be some leeway regarding the speed (which the distance is used for)
 const calculateDistance = (coord1, coord2) => {
-    const R = 6371; // jordens radie 
+    const R = 6371; // earth radius
     const toRad = (deg) => (deg * Math.PI) / 180;
 
     const dLat = toRad(coord2[0] - coord1[0]);
@@ -280,79 +273,75 @@ const calculateDistance = (coord1, coord2) => {
               Math.sin(dLon / 2) * Math.sin(dLon / 2);
 
     const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
-    return R * c; // avstånd i km
+    return R * c; // distance in km
 };
 
-// vinkeln mellan två koordinater används för att kunna avgöra om sväng kommer,
-// och i så fall kan hastigheten minskas för att simulera inbromsning 
+// the angle between two coordinates is used to determine if a turn is coming,
+// and if so, the speed can be reduced to simulate braking
 function calculateAngle(coord1, coord2, coord3) {
-    const vector12 = [coord2[0] - coord1[0], coord2[1] - coord1[1]]; // vektor från koordinat 1 -> 2
-    const vector23 = [coord3[0] - coord2[0], coord3[1] - coord2[1]]; // vektor från koordinat 2 -> 3
+    const vector12 = [coord2[0] - coord1[0], coord2[1] - coord1[1]]; //vector from coordinate 1 -> 2
+    const vector23 = [coord3[0] - coord2[0], coord3[1] - coord2[1]]; //vector from coordinate 2 -> 3
 
-    // skalärprodukten
+    // dot product
     const dotProduct = vector12[0] * vector23[0] + vector12[1] * vector23[1];
 
-    // längden på vektorerna
+    // length of vectors
     const magnitude12 = Math.sqrt(vector12[0] ** 2 + vector12[1] ** 2);
     const magnitude23 = Math.sqrt(vector23[0] ** 2 + vector23[1] ** 2);
 
-    // cosinus av vinkeln
+    // cosine of the angle
     const cosAngle = dotProduct / (magnitude12 * magnitude23);
 
-    // vinkeln i radianer
+    // angle in radians
     const angle = Math.acos(Math.min(Math.max(cosAngle, -1), 1));
 
-    // vinkeln i grader
+    // angle in degrees
     return angle * (180 / Math.PI);
 };
 
 function calculateBatteryDrain(speed) {
-    // riktvärden för batteriåtgång per minut vid givna hastigheter
-    // senare införd restriktion på maxhastighet kan komma att ändra detta
     /***
      * ======================================================================================
-     * Batteriåtgången kan troligen finliras lite, olika källor ger olika riktlinjer för 
-     * hur snabbt batterinivån minskar, där wattal är en faktor. Hastighet, terräng,
-     * vikt på förare, väder och vind, är några andra nämnda faktorer. 
-     * 
-     * Här tas endast hänsyn till hastighet, där en viss minskning sker i relation till
-     * given hastighet. Troligen kan detta optimeras, men nuvarande beräkningssätt 
-     * ger en uppskattning och en faktisk minskning av batteri, vilket ses som gott nog. 
+     * Battery consumption can probably be refined a bit, different sources give different guidelines for
+     * how quickly the battery level decreases, where wattage is a factor. Speed, terrain,
+     * weight of the driver, weather and wind, are some other factors mentioned.
+     *
+     * Here, only speed is taken into account, where a certain reduction occurs in relation to
+     * given speed. This can probably be optimized, but the current calculation method
+     * gives an estimate and an actual reduction of battery, which is seen as good enough.
      * ======================================================================================
      ***/
-    if (speed <= 5) return 0.1; // 0.1% per minut för hastighet upp till 5 km/h
-    else if (speed <= 15) return 0.2; // 0.2% per minut för hastighet upp till 15 km/h
-    else if (speed <= 20) return 0.3; // 0.3% per minut för hastighet upp till 20 km/h
-    else return 0.5; // 0.5% per minut för hastighet över 20 km/h
+    
+    if (speed <= 5) return 0.1; // 0.1% per minute for speed up to 5 km/h
+    else if (speed <= 15) return 0.2; // 0.2% per minute for speed up to 15 km/h
+    else if (speed <= 20) return 0.3; // 0.3% per minute for speed up to 20 km/h
+    else return 0.5; // 0.5% per minute for speed over 20 km/h
 };
 
 function calculateCurveSpeed(route, index, turnAngle) {
     /*** 
      * ======================================================================================
-     * Beräkningen av hastighet pga kurvor är inte helt ideal,
-     * men ger en uppfattning om hur hastigheten varierar genom resan.
-     * 
-     * Det vore troligen bra att implementera någon funktion som ser till
-     * att ändring i hastighet sker linjärt för att eliminera "hopp" i hastighet.
-     * Rent simuleringsmässigt sker dock uppdatering på kartan med tvåsekundersintervall,
-     * så man kan ju argumentera för att en mer linjär ändring i hastighet hypotetiskt sker,
-     * men att den inte nödvändigtvis reflekteras direkt pga tidsintervallet.
-     * 
-     * !!! Optimera om tid finns !!!
-     * 
+     * The calculation of speed due to curves is not entirely ideal,
+     * but gives an idea of ​​how the speed varies throughout the journey.
+     *
+     * It would probably be good to implement some function that ensures
+     * that the change in speed occurs linearly to eliminate "jumps" in speed.
+     * In terms of simulation, however, the map is updated at two-second intervals,
+     * so one could argue that a more linear change in speed hypothetically occurs,
+     * but that it is not necessarily reflected directly due to the time interval.
      * ======================================================================================
      * ***/
     let speed;
     if (route.length - index <= 2) {
-        speed = Math.random() * (4 - 2) + 2; // slumpmässig hastighet mellan 2-4 km/h
+        speed = Math.random() * (4 - 2) + 2; // random speed between 2-4 km/h
     } else if (turnAngle > 70 && turnAngle <= 90) {
-        speed = Math.random() * (8 - 4) + 4; // slumpmässig hastighet mellan 4-8 km/h
+        speed = Math.random() * (8 - 4) + 4; // random speed between 4-8 km/h
     } else if (turnAngle > 45 && turnAngle <= 70) {
-        speed = Math.random() * (12 - 8) + 8; // slumpmässig hastighet mellan 8-12 km/h
+        speed = Math.random() * (12 - 8) + 8; // random speed between 8-12 km/h
     } else if (turnAngle > 20 && turnAngle <= 45) {
-        speed = Math.random() * (16 - 12) + 12; // slumpmässig hastighet mellan 12-16 km/h
+        speed = Math.random() * (16 - 12) + 12; // random speed between 12-16 km/h
     } else {
-        speed = Math.random() * (20 - 16) + 16; // slumpmässig hastighet mellan 16-20 km/h
+        speed = Math.random() * (20 - 16) + 16; // random speed between 16-20 km/h
     }
     return speed;
 };
@@ -361,21 +350,20 @@ function calculateCurveSpeed(route, index, turnAngle) {
 const chargingEmitter = new EventEmitter();
 let charging_bikes = [];
 
-// Emit event when a bike is added to `charging_bikes`
+// emit event when a bike is added to `charging_bikes`
 function addBikeToCharging(bike) {
     charging_bikes.push(bike);
     chargingEmitter.emit("bikeAdded", bike);
 };
 
-// Emit event when a bike is removed from `charging_bikes`
+// emit event when a bike is removed from `charging_bikes`
 async function removeBikeFromCharging(bike) {
     const bikeId = bike.bike_id;
     charging_bikes = charging_bikes.filter(b => b.bike_id !== bikeId);
     
-    // givna positioner för att göra cykel tillgänglig efter laddning,
-    // mer optimalt vore att inte sätta en fast position, men denna
-    // säkertsäller att cykeln hamnar på en parkeringsplats och görs tillgänglig.
-    // Fixa snyggare lösning i mån av tid.
+    // given positions to make the bike available after charging,
+    // it would be more optimal not to set a fixed position, but this at least
+    // ensures that the bike ends up in a parking space and is made available.
     let parkingZoneCoords;
     
     if (bike.city_name = "Lund") {
@@ -398,10 +386,10 @@ async function removeBikeFromCharging(bike) {
 function simulateCharging() {
     /*** 
      * ======================================================================================
-    * Simulera att batterinivån ökar med viss procent per tidsenhet.
-    * Laddningshastigheten baseras på antagandet att laddning från 0 --> 100 tar 2.5 h.
-    * ======================================================================================
-    * ***/
+     * Simulate the battery level increasing by a certain percentage per unit of time.
+     * Charging speed is based on the assumption that charging from 0 --> 100 takes 2.5 h.
+     * ======================================================================================
+     * ***/
     chargingEmitter.on("bikeAdded", (bike) => {
         bike.chargingInterval = setInterval(() => {
             bike.status.battery_level = Math.min(bike.status.battery_level + 1 / 3, 100);
@@ -414,98 +402,44 @@ function simulateCharging() {
         }, 30000); // Charging interval (30 seconds)
     });
 
-    // Listen for bike removals
-    chargingEmitter.on("bikeRemoved", (bikeId) => {
-        console.log(`Bike ${bikeId} stopped charging.`);
-    });
+    // listen for bike removals
+    chargingEmitter.on("bikeRemoved", () => {});
 };
 
 let generatedUsers = new Set();
-// async function startSimulation () {
-//     /* hämta alla cyklar */
-//     const bikes = await bikeManager.getAllBikes();
-
-//     /* hämta alla rutter */
-//     const routes = (await getRoutes()).filter(route => route.bike_id);
-    
-//     /* matcha cykel och rutt */
-//     let currentBike;
-//     for (const route of routes) {
-//         currentBike = bikes.filter((bike) => bike.bike_id == route.bike_id)[0]
-//         if (!currentBike) continue;
-        
-//         /* skapa en ny resa */
-//         const trip = {
-//             start_time: new Date(),
-//             start_location: currentBike.location,
-//         };
-
-//         const { tripId, startTime } = await saveStartedTrip(trip);
-
-//         /* generera en användare som kan kopplas till resan */
-//         let user;
-//         do {
-//             const randomNumber = Math.floor(Math.random() * 1500) + 1;
-//             user = `U${randomNumber.toString().padStart(3, '0')}`;
-//         } while (generatedUsers.has(user));
-//         generatedUsers.add(user)
-        
-//         let bikeId = currentBike.bike_id;
-//         let battery = currentBike.status.battery_level
-        
-//         /* starta resan */
-//         console.log(`Starting bike: ${bikeId}`);
-//         await bikeManager.startBike(bikeId);
-        
-//         /* emitta till frontend att resan har startats */
-//         // skicka med bike_id och user_id för att spara i bikeUsers
-//         io.emit("routeStarted", { bikeId, user });
-//         io.emit("bikeOffAppMap", { bikeId, position: currentBike.location })
-
-//         const simulationData = {
-//             bikeId,
-//             route: route.route,
-//             battery,
-//             user,
-//             tripId,
-//             startTime
-//         }
-//         simulateBikeInUse(simulationData); // simulate movement
-//     }
-// }
 
 async function startSimulation () {
-    /* starta simulering av batteriladdning */
+    /* start battery charging simulation */
     simulateCharging();
 
-    /* hämta alla cyklar */
+    /* fetch bikes */
     const bikes = await bikeManager.getAllBikes();
 
-    /* filtrera ut cyklar som laddas */
+    /* filter out bikes that are being charged */
     const chargingBikes = bikes.filter(bike => bike.status.charging);
 
     for (const chargingBike of chargingBikes) {
         addBikeToCharging(chargingBike);
     }
 
-    /* hämta alla rutter */
+    /* fecth routes */
     const routes = (await getRoutes()).filter(route => route.bike_id);
 
-    /* lägg till cyklar stötvis för att simulera ett längre flöde */
+    /* add cycles in batches to simulate a longer flow */
     const batchSize = 50;
     let currentBatchIndex = 0;
 
     const simulateBatch = async () => {
         let currentBike;
 
-        // 50 cyklar i taget för jämnare flöde
+        // 50 cycles at a time for a more even flow
         const batch = routes.slice(currentBatchIndex * batchSize, (currentBatchIndex + 1) * batchSize);
 
         for (const route of batch) {
             currentBike = bikes.filter((bike) => bike.bike_id == route.bike_id)[0]
             if (!currentBike || !currentBike.status.available) continue;
             
-            /* skapa en ny resa */
+            /* create a new trip */
             const trip = {
                 start_time: new Date(),
                 start_location: currentBike.location,
@@ -513,7 +447,7 @@ async function startSimulation () {
 
             const { tripId, startTime } = await saveStartedTrip(trip);
 
-            /* generera en användare som kan kopplas till resan */
+            /* generate a user that can be linked to the trip */
             let user;
             do {
                 const randomNumber = Math.floor(Math.random() * 1500) + 1;
@@ -524,13 +458,10 @@ async function startSimulation () {
             let bikeId = currentBike.bike_id;
             let battery = currentBike.status.battery_level;
             
-            /* starta resan */
-            // console.log(`Starting bike: ${bikeId}`);
+            /* start trip */
             await bikeManager.startBike(bikeId);
             
-            /* emitta till frontend att resan har startats */
-            // skicka med bike_id och user_id för att spara i bikeUsers
-            // io.emit("routeStarted", { bikeId, user });
+            /* emit to frontend that the trip has started */
             if (frontendListening) {
                 io.emit("routeStarted", { bikeId, user });
             } else {
@@ -553,33 +484,33 @@ async function startSimulation () {
         currentBatchIndex++;
 
         if (currentBatchIndex * batchSize < routes.length) {
-            // pausa innan nästa omgång adderas
+            // pause before next batch is added
             setTimeout(simulateBatch, 15000);
         }
     }
 
-    // Start the simulation
+    // start simulation
     simulateBatch();
 };
 
 const tempData = {};
 function simulateBikeInUse(simulationData) {
     /*** 
-     * För att kontinuerligt uppdatera cykelns position med ett fast intervall (2 s),
-     * används segment för att fastställa cykelns position inom intervallet.
-     * På så sätt kan cykelns position uppdateras med givna mellanrum, samtidigt som avstånd och hastighet
-     * baseras på ruttens faktiska värden (totalavstånd och givet intervall för cykelns varierande hastighet)
+     * To continuously update the bike's position at a fixed interval (2 s),
+     * segments are used to determine the bike's position within the interval.
+     * This way, the bike's position can be updated at given intervals, while the distance and speed
+     * are based on the actual values ​​of the route (total distance and given interval for the bike's varying speed)
      * ***/
     const { bikeId, route, battery, user, tripId, startTime } = simulationData;
     let index = 0;
     let speed = 0;
     let batteryLevel =  battery;
-    let segmentDistance = 0; // avstånd för givet segment
-    let segmentTraveled = 0; // avstånd färdat inom givet segment
-    let totalDistanceTraveled = 0; // totalt avstånd färdat
-    let routeTraveled = []; // rutt som färdats
-    const interval = 2000; // intervall för hur ofta cykelns position uppdateras på kartan
-
+    let segmentDistance = 0; // distance for given segment
+    let segmentTraveled = 0; // distance traveled within given segment
+    let totalDistanceTraveled = 0; // total distance traveled
+    let routeTraveled = []; // route traveled
+    const interval = 2000; // interval for how often the bike's position is updated on the map
+    
     tempData[bikeId] = {
         distance: 0,
         route: routeTraveled,
@@ -592,36 +523,35 @@ function simulateBikeInUse(simulationData) {
 
     const moveBike = async () => {
         if (index < route.length - 1) {
-            // nuvarande och nästa koordinat för rutten
+            // current and next coordinates of the route
             const current = route[index];
             const next = route[index + 1];
-            const nextNext = route[index + 2]; // för att beräkna vinkel
+            const nextNext = route[index + 2]; // to calculate angle
 
-            // beräkna vinkel för kommande del av rutt
+            // calculate angle for next part of route
             const turnAngle = next && nextNext && calculateAngle(current, next, nextNext);
 
-            // för varje segment, beräkna avståndet och sätt en slumpad hastighet
+            // for each segment, calculate the distance and set a random speed
             if (segmentTraveled === 0) {
                 segmentDistance = calculateDistance(current, next);
-                // om cykeln närmar sig slutet av rutten, eller om en kurva närmar sig,
-                // minska hastigheten för att simulera inbromsning
+                // if the bike is approaching the end of the route, or if a curve is approaching,
+                // reduce speed to simulate braking
                 speed = calculateCurveSpeed(route, index, turnAngle)
             }
 
-            // beräkna färdat avstånd inom givet intervall, addera till färdad sträcka av segmentet
+            // calculate distance traveled within given interval, add to traveled distance of segment
             const distanceCovered = (speed / 3600) * (interval / 1000);
             segmentTraveled += distanceCovered;
             totalDistanceTraveled += distanceCovered;
-            routeTraveled.push(current); // för avbruten sträcka?
-            // tmp.route.push(current)
+            routeTraveled.push(current); // for interrupted route
 
 
             const batteryDrain = calculateBatteryDrain(speed);
             const timeInMinutes = interval / 1000 / 60;
-            batteryLevel -= batteryDrain * timeInMinutes; // minska batterinivå baserat på
+            batteryLevel -= batteryDrain * timeInMinutes;
             tmp.battery_level = batteryLevel
 
-            // om färdad sträcka är mer än eller lika med distansen, är segmentet avklarat
+            // if distance traveled is greater than or equal to distance, the segment is completed
             if (segmentTraveled >= segmentDistance) {
                 io.emit("bikeInUse", { 
                     bikeId, 
@@ -632,12 +562,12 @@ function simulateBikeInUse(simulationData) {
 
                 tmp.position = next;
 
-                // återställ färdad sträcka för att påbörja nytt segment
+                // reset distance traveled to start new segment
                 segmentTraveled = 0;
                 index++;
             } else {
-                // om segmentet inte är avklarat, beräkna nästa position inom segmentet för att
-                // kunna rita ut cykeln på rätt plats på kartan
+                // if the segment is not completed, calculate the next position within the segment to
+                // be able to draw the bike in the correct place on the map
                 const segmentProgress = segmentTraveled / segmentDistance;
                 const prorgessLat = current[0] + segmentProgress * (next[0] - current[0]);
                 const prorgessLng = current[1] + segmentProgress * (next[1] - current[1]);
@@ -654,7 +584,6 @@ function simulateBikeInUse(simulationData) {
                 tmp.distance = totalDistanceTraveled.toFixed(2);
             }
         } else {
-            // console.log(`Bike ${bikeId} finished route.`);
             clearInterval(move);
 
             const endTime = new Date();
@@ -702,7 +631,6 @@ const startServer = async () => {
     }
     try {
         const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.yjhm6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
-        // fullösning som löser problem med db tills vidare, lös snyggare om tid finns
         process.env.NODE_ENV == 'test' && await connectToTestDatabase(mongoUri);
         process.env.NODE_ENV != 'test' && await connectToDatabase(mongoUri);
         

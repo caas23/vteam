@@ -74,7 +74,6 @@ const bikeManager = {
         try {
 
             const result = await bikeCollection.deleteOne(filter);
-            // console.log(`Bike with id ${bikeId} was deleted.`)
 
         return result;
         } catch (e) {

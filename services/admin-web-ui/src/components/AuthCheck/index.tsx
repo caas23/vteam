@@ -7,7 +7,7 @@ const isAuthenticated = () => {
 
 interface ProtectedRouteProps<P> {
   component: React.ComponentType<P>;
-  // props som skickas via ProtectedRoute skickas vidare till componenten
+  // props sent via ProtectedRoute are passed on to the component
   [key: string]: any;
 }
 

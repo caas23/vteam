@@ -3,7 +3,7 @@ import { TripMapProps } from "./interfaces";
 
 const TripDistance: React.FC<TripMapProps> = ({ data, startLocation, endLocation, FetchedDistance }) => {
     useEffect(() => {
-        // om rutten inte finns i databasen, hämta via openrouteservice
+        // if the route is not in the database, get via openrouteservice
         if (!data.route) {
             const API_KEY = import.meta.env.VITE_API_KEY;
 
@@ -42,7 +42,7 @@ const TripDistance: React.FC<TripMapProps> = ({ data, startLocation, endLocation
                 }
             };
             fetchRoute();
-        // om rutten finns i databasen, använd den datan
+        // if route is in database, use that data
         } else {
             FetchedDistance && FetchedDistance(data.distance || 0);
         }
