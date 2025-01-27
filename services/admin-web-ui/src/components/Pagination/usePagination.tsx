@@ -7,7 +7,7 @@ export const usePagination = () => {
 
   const handleListSearch = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearchQuery(e.target.value);
-    setCurrentPage(1); // för att få rätt numrering vid sökning
+    setCurrentPage(1); // to get the correct numbering when searching
   };
 
   const showNextPage = () => {

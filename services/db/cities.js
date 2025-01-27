@@ -1,7 +1,5 @@
 import { getCollection } from './collections.js';
 
-// lägg till felhantering för dessa
-
 export const city = {
   getCities: async () => {
     const result = await getCollection('cities').find().toArray();

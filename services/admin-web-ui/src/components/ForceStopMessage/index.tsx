@@ -22,8 +22,6 @@ const ForceStopMessage: React.FC<AlertProps> = ({
 		}
 	};
 
-	// om tid, lägg till möjlighet att manuellt ange en anledning,
-	// eller kräv specificering om "Other" väljs
 	return (
 		<div className="confirmation-overlay">
 			<div className="confirmation-content">

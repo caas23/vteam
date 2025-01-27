@@ -1,4 +1,4 @@
-// ta fram polygonens geometriska centrum
+// get the geometric center of the polygon
 export default function calculateCentroid(area: [number, number][]): [number, number] {
     let x = 0;
     let y = 0;

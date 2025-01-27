@@ -25,7 +25,6 @@ export const getUsersPagination =  async (filter = {}, skip = 0, limit = 5) => {
     .toArray();
 };
 
-// update completed_trips
 export const updateTrips = async (userId, tripId) => {
   const usersColletion = getCollection("users");
 
@@ -78,9 +77,6 @@ export const updateBalance = async (userId, cost) => {
   }
 };
 
-
-// för /users-vyn i admin, returnerar antal användare
-// baserat på en sökning (används för sidnumrering)
 export const countUsersPagination = async (filter = {}) => {
   const usersColletion = getCollection("users");
   return await usersColletion.countDocuments(filter);

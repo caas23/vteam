@@ -7,11 +7,8 @@ import { resetIdCounters, addUniqueId } from './helpers/handleStationId.js';
 dotenv.config({ path: '../.env' });
 const mongoUri = `mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@cluster0.yjhm6.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0`;
 
-// Skript för att lägga till/återställa parkerings- och laddstationer
-// i Lund, Solna och Skellefteå. Varje stad har fem stationer av vardera sort.
-// Varje station bör optimalt vara placerad på så sätt att den INTE blockerar vägar/ligger på
-// byggnader/i vattnet eller andra icke-logiska platser. Justeras i mån av tid.
-// https://geojson.io/ <-- rita ut polygoner för mer precisa stationsplaceringar.
+// Script to add/reset parking and charging stations
+// in Lund, Solna and Skellefteå. Each city has five stations of each type.
 
 const loadData = async (filePath) => {
   const stations = await fs.readFile(filePath, 'utf8');
@@ -65,7 +62,6 @@ const updateCityStations = async (cityName, parkingStations, chargingStations) =
         }
       }
     );
-    // console.log(`Added stations for ${cityName}`);
   } catch (error) {
     console.error(`Error adding stations to ${cityName}:`, error);
   }
@@ -118,7 +114,6 @@ const clearCityStations = async () => {
         }
       );
   
-      // console.log('Cleared stations for all cities');
     } catch (error) {
       console.error('Error clearing stations:', error);
     }

@@ -164,8 +164,8 @@ const ShowBikes: React.FC<{
 			})}
 		</MarkerClusterGroup>
 		
-		{/* visa alltid separat utan cluster om cykeln används, detta för att
-		minimera de upplevda "hopp" som uppstår när cyklar clustras/"av-clustras" */}
+		{/* always show separately without cluster if the cycle is used, this is to
+		minimize the perceived "jumps" that occur when cycles are clustered/"un-clustered" */}
 		{inUseBikes.map((bike) => {
 			return (
 			<Marker
@@ -189,7 +189,7 @@ const ShowBikes: React.FC<{
 		{chargingBikes.map((bike) => {
 			
 			const remainingBattery = 100 - bike.status.battery_level;
-			// 150 minuter till full laddning, enligt den setup som körs i backenden
+			// 150 minutes to full charge, to align with setup running in the backend
 			const timeLeftInMinutes = Math.ceil((remainingBattery / 100) * 150);
 
 			return (

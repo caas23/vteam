@@ -1,5 +1,4 @@
 export const fetchDeleteBike = async (bike_id: string) => {
-  // testad
   try {
     const response = await fetch(`http://localhost:1337/delete/bike/${bike_id}`, {
       method: "DELETE",

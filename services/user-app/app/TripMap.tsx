@@ -13,7 +13,7 @@ const TripMap: React.FC<TripMapProps> = ({ data, startLocation, endLocation, Fet
 	const mapRef = useRef<MapView | null>(null);
 	
 	useEffect(() => {
-		// om rutten inte finns i databasen, hämta via openrouteservice
+		// if the route is not in the database, get via openrouteservice
 		if (!data.route) {
 			const { API_KEY } = Constants?.expoConfig?.extra as { API_KEY: string };
 			
@@ -59,7 +59,7 @@ const TripMap: React.FC<TripMapProps> = ({ data, startLocation, endLocation, Fet
 				}
 			}
 			fetchRoute();
-		// om rutten finns i databasen, använd den datan
+		// if route is in database, use that data
 		} else {
 			try {
 				const decodedRoute = data.route.map(([lat, lon]) => ({

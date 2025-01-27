@@ -78,8 +78,7 @@ const AddBikeForm: React.FC = () => {
     };
 
     try {
-      const result = await fetchAddbikeToCity(newBike);
-      console.log("Bike added:", result);
+      await fetchAddbikeToCity(newBike);
       setAlertMessage("A new bike has been added.");
     } catch {
       setAlertMessage("Error adding bike, no bike was added.");
@@ -88,8 +87,8 @@ const AddBikeForm: React.FC = () => {
     }
   };
 
-  // check för att visuellt kunna visa att det inte går att
-  // addera en cykel utan att först välja stad och parkeringszon
+  // check to visually show that it is not possible to
+  // add a bike without first selecting a city and parking zone
   const validForm = formData.cityName && formData.parkingZone;
 
   return (

@@ -31,7 +31,7 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 	const [bikesInViewport, setBikesInViewport] = useState<Bike[]>([]);
 	const [bigMapOpen, setBigMapOpen] = useState(false);
 
-	// för att kunna filtrera på kategori (batterinivå, parkering etc)
+	// to be able to filter by category (battery level, parking etc)
 	const [filters, setFilters] = useState({
         available: true,
         green: true,
@@ -109,7 +109,7 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 
 	}, [currentCity]);
 
-	// för att kunna filtrera på kategori (batterinivå, parkering etc)
+	// to be able to filter by category (battery level, parking etc)
 	const filteredBikes = bikesInCity.filter((bike) => {
 		if (bike.status.charging && filters.charging) return true;
 		if (bike.status.parking && filters.parking) return true;
@@ -129,14 +129,13 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
         }));
     };
 
-	// kolla om cykeln är i viewporten för att enbart uppdatera dessa,
-	// skapar dock viss fördröjning vid utzoomning, accepterbart?
+	// check if the bike is in the viewport to only update these
 	const isBikeInViewport = (bikeLocation: [number, number], bounds: L.LatLngBounds) => {
 		const latLng = L.latLng(bikeLocation);
 		return bounds.contains(latLng);
 	};
 	
-	// måste vara en child component för att funka
+	// has to be a child component to work
 	const BikeViewportUpdater: React.FC = () => {
 		const map = useMap();
 		useMapEvent('moveend', () => {
@@ -158,7 +157,7 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 			speed: number;
 			battery: number;
 		}) => {
-			// uppdatera bara cyklar som är i nuvarande viewport
+			// only update bikes that are in the current viewport
 			if (bikesInViewport.some(bike => bike.bike_id === data.bikeId)) {
 				setBikesInCity(prevBikes =>
 					prevBikes.map(bike =>
@@ -181,7 +180,7 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 			bikeId: string;
 			battery: number;
 		}) => {
-			// uppdatera bara cyklar som är i nuvarande viewport
+			// only update bikes that are in the current viewport
 			if (bikesInViewport.some(bike => bike.bike_id === data.bikeId)) {
 				setBikesInCity(prevBikes =>
 					prevBikes.map(bike =>
@@ -201,8 +200,7 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 			bikeId: string;
 			location: [number, number];
 		}) => {
-			// uppdatera bara cyklar som är i nuvarande viewport
-			console.log("chargingFinished", data)
+			// only update bikes that are in the current viewport
 			if (bikesInViewport.some(bike => bike.bike_id === data.bikeId)) {
 				setBikesInCity(prevBikes =>
 					prevBikes.map(bike =>
@@ -227,7 +225,7 @@ const MapComponent: React.FC<BikeUsersProps> = ({ bikeUsers, socket }) => {
 			position: [number, number];
 			battery: number;
 		}) => {
-			// uppdatera bara cyklar som är i nuvarande viewport
+			// only update bikes that are in the current viewport
 			if (bikesInViewport.some(bike => bike.bike_id === data.bikeId)) {
 				setBikesInCity(prevBikes =>
 					prevBikes.map(bike =>
