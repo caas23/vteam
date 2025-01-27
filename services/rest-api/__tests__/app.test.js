@@ -4,7 +4,7 @@ import { jest } from '@jest/globals';
 
 const { app, startServer, closeServer } = appModule;
  
-describe('app.js/', () => {
+describe('app.js', () => {
     let server;
     let logs;
 
@@ -22,7 +22,7 @@ describe('app.js/', () => {
         server = await startServer();
     });
 
-    it('should return available routes', async () => {
+    it('GET / - should return available routes', async () => {
         const response = await request(app).get('/');
         
         // ensure routes description is returned

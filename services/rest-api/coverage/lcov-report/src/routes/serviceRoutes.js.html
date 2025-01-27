@@ -23,9 +23,9 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">36.36% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>4/11</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
@@ -37,16 +37,16 @@
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">0% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>0/3</span>
+                <span class='fraction'>3/3</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">36.36% </span>
+                <span class="strong">100% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>4/11</span>
+                <span class='fraction'>11/11</span>
             </div>
         
             
@@ -61,7 +61,7 @@
             </div>
         </template>
     </div>
-    <div class='status-line low'></div>
+    <div class='status-line high'></div>
     <pre><table class="coverage">
 <tr><td class="line-count quiet"><a name='L1'></a><a href='#L1'>1</a>
 <a name='L2'></a><a href='#L2'>2</a>
@@ -92,24 +92,24 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">8x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">8x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -119,22 +119,22 @@ import { checkAuth } from '../auth.js';
 &nbsp;
 const router = express.Router();
 &nbsp;
-router.get("/", <span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
-<span class="cstat-no" title="statement not covered" >    res.json("Routes for handling bike service.");</span>
+router.get("/", async (req, res) =&gt; {
+    res.json("Routes for handling bike service.");
 });
 &nbsp;
-router.put("/bike", checkAuth, <span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
-    let bikeId = <span class="cstat-no" title="statement not covered" >req.body.bike_id;</span>
-    const result = <span class="cstat-no" title="statement not covered" >await bikeManager.bikeToService(bikeId);</span>
+router.put("/bike", checkAuth, async (req, res) =&gt; {
+    let bikeId = req.body.bike_id;
+    const result = await bikeManager.bikeToService(bikeId);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    res.json(result);</span>
+    res.json(result);
 });
 &nbsp;
-router.put("/complete/bike", checkAuth, <span class="fstat-no" title="function not covered" >as</span>ync (req, res) =&gt; {
-    let bikeId = <span class="cstat-no" title="statement not covered" >req.body.bike_id;</span>
-    const result = <span class="cstat-no" title="statement not covered" >await bikeManager.bikeEndService(bikeId);</span>
+router.put("/complete/bike", checkAuth, async (req, res) =&gt; {
+    let bikeId = req.body.bike_id;
+    const result = await bikeManager.bikeEndService(bikeId);
 &nbsp;
-<span class="cstat-no" title="statement not covered" >    res.json(result);</span>
+    res.json(result);
 });
 &nbsp;
 export default router;
@@ -145,7 +145,7 @@ export default router;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-01-26T23:41:58.115Z
+                at 2025-01-27T16:46:36.658Z
             </div>
         <script src="../../prettify.js"></script>
         <script>

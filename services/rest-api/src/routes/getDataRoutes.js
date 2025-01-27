@@ -197,14 +197,14 @@ router.get("/all/routes", checkAuth, async (req, res) => {
 router.get("/one/trip/", checkAuth, async (req, res) => {
     const trip = req.query.trip;
 
-    const result = await getCollection('trips').find({ trip_id: trip }).toArray();
+    const result = await getCollection('trips').findOne({ trip_id: trip });
     res.json(result);
 });
 
 router.get("/payments/", checkAuth, async (req, res) => {
     const user = req.query.user;
 
-    const result = await getCollection('payments').find({ user_id: user }).toArray();
+    const result = await getCollection('payments').findOne({ user_id: user });
     res.json(result);
 });
 

@@ -29,7 +29,8 @@ describe('auth.js', () => {
         });
         const res = createResponse();
 
-        await checkAuth(req, res, () => {});
+        const runTest = true;
+        await checkAuth(req, res, runTest, () => {});
 
         expect(res.statusCode).toBe(401);
         expect(res._getData()).toEqual(JSON.stringify({ error: 'No token provided' }));
@@ -48,7 +49,8 @@ describe('auth.js', () => {
         });
         const res = createResponse();
 
-        await checkAuth(req, res, () => {});
+        const runTest = true;
+        await checkAuth(req, res, runTest, () => {});
 
         expect(res.statusCode).toBe(401);
         expect(res._getData()).toEqual(JSON.stringify({ error: 'Invalid token' }));
@@ -74,7 +76,8 @@ describe('auth.js', () => {
         // mock next function to ensure it is called
         const next = jest.fn();
 
-        await checkAuth(req, res, next);
+        const runTest = true;
+        await checkAuth(req, res, next, runTest);
 
         // ensure user was added to the request
         expect(req.user).toEqual(mockUser);

@@ -38,7 +38,7 @@ router.post("/city", checkAuth, async (req, res) => {
     res.json(result);
 });
 
-router.post("/bike/to/city", async (req, res) => {
+router.post("/bike/to/city", checkAuth, async (req, res) => {
     let newBike = req.body.bike;
 
     const result = await bikeManager.createBike(newBike);
