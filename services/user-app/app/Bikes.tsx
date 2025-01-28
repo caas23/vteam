@@ -5,6 +5,7 @@ import { Bike, User, ParkingZone, ChargingStation } from './interfaces';
 import fetchRentBike from './fetchModels/fetchRentBike';
 import fetchZones from './fetchModels/fetchZones';
 import * as Location from 'expo-location';
+import { useNavigation } from 'expo-router';
 import Constants from 'expo-constants';
 import { io, Socket } from 'socket.io-client';
 import robustPointInPolygon from 'robust-point-in-polygon';
@@ -22,7 +23,7 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
     const [userId, setUserId] = useState<string>();
     const [parkingZones, setParkingZones] = useState<ParkingZone[]>([]);
     const [chargingZones, setChargingZones] = useState<ChargingStation[]>([]);
-    
+    const navigation = useNavigation();
     const locationSubscription = useRef<any>(null);
     const socket = useRef<Socket | null>(null); 
 
@@ -46,7 +47,15 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
             } catch (e) {
                 alert(`An error occurred: ${e}`);
             } finally {
-                alert("Your trip was stopped by admin, contact support for more info.")
+                Alert.alert(
+                    'Trip force stopped',
+`Your trip was stopped by admin, contact support for more info.
+You will be redirected to your trips, 
+and be able to see a summary of this trip, in just a moment...`,
+                [{ text: 'Close' }]);
+                setTimeout(() => {
+                    navigation.navigate('account' as never);
+                }, 5000);
             }
         });
 
@@ -175,9 +184,9 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
     const handleRent = async (bike: Bike) => {
         let message;
         if (userData.payment_method == "Monthly") {
-            message = `Your chosen payment method is monthly billing, you will receive an invoice for the trip at the end of the month.`
+            message = `Your chosen payment method is monthly payment, you will be charged for the trip at the end of the month.`
         } else {
-            message = `Your chosen payment method is prepayment, if your current balance does not cover the cost of the trip you will instead receive an invoice.`
+            message = `Your chosen payment method is prepayment, if your current balance does not cover the cost of the trip you will instead be charged for the trip at the end of the month.`
         }
         Alert.alert(
             "Terms for bike rental",
@@ -243,6 +252,15 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
                                     userId
                                 });
                             }
+
+                            Alert.alert(
+                                'Trip finished',
+`You will be redirected to your trips, 
+and be able to see a summary of this trip, in just a moment...`,
+                            [{ text: 'Close' }]);
+                            setTimeout(() => {
+                                navigation.navigate('account' as never);
+                            }, 5000);
                     
                         }  catch (e) {
                             alert(`An error occurred: ${e}`);
@@ -252,8 +270,6 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
             ], { cancelable: false }
         );
     };
-
-    const timerRef = useRef<NodeJS.Timer | null>(null);
     
     useEffect(() => {
         if (overlayVisible && tripStartTime) {
@@ -314,7 +330,7 @@ const ShowBikes: React.FC<{ bikes: Bike[]; region: any; userData: User }> = ({ b
                 );
             }
         })}
-        <Modal visible={overlayVisible} transparent>
+        <Modal visible={overlayVisible} transparent animationType='slide'>
             <View style={styles.overlayContainer}>
                 <Text style={styles.overlayHeader}>You are renting a bike ...</Text>
                 <Text style={styles.overlayItalic}>Drive safe!</Text>
