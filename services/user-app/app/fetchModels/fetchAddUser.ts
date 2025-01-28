@@ -6,7 +6,7 @@ export default async function fetchAddUser(userData: object) {
 	const { BACKEND_URL } = Constants?.expoConfig?.extra as { BACKEND_URL: string };
   
 	try {
-		const response = await fetch(`${BACKEND_URL}/add/user`, {
+		const response = await fetch(`${BACKEND_URL}/v1/add/user`, {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",

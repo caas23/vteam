@@ -13,7 +13,7 @@ export default async function fetchRentBike(data: object) {
 	}
   
 	try {
-		const response = await fetch(`${BACKEND_URL}/add/rent/bike`, {
+		const response = await fetch(`${BACKEND_URL}/v1/add/rent/bike`, {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",

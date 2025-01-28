@@ -3,7 +3,7 @@ export const fetchOneTrip = async (
 ) => {
   try {
     const response = await fetch(
-      `http://localhost:1337/get/one/trip/?trip=${trip_id}`, {
+      `http://localhost:1337/v1/get/one/trip/?trip=${trip_id}`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${sessionStorage.getItem('access_token')}`,

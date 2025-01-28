@@ -32,20 +32,28 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(helmet());
 
-app.use('/get', get);
-app.use('/add', add);
-app.use('/update', update);
-app.use('/delete', del);
-app.use('/service', service);
+app.use('/v1/get', get);
+app.use('/v1/add', add);
+app.use('/v1/update', update);
+app.use('/v1/delete', del);
+app.use('/v1/service', service);
 
 app.get("/", (req, res) => {
+    const msg = {
+        "Available versions": {
+            "/v1": "Version 1.0.0",        }
+    }
+    res.json(msg);
+});
+
+app.get("/v1", (req, res) => {
     const routes = {
         "Available routes": {
-            "/get": "get routes",
-            "/add": "post routes",
-            "/update": "put routes",
-            "/delete": "delete routes",
-            "/service": "service routes",
+            "/v1/get": "get routes",
+            "/v1/add": "post routes",
+            "/v1/update": "put routes",
+            "/v1/delete": "delete routes",
+            "/v1/service": "service routes",
         }
     }
     res.json(routes);

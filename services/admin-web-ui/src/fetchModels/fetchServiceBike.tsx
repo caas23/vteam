@@ -1,6 +1,6 @@
 export const fetchServiceBike = async (bike_id: string) => {
     try {
-      const response = await fetch("http://localhost:1337/service/bike", {
+      const response = await fetch("http://localhost:1337/v1/service/bike", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

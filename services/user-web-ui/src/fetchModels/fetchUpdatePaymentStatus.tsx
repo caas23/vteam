@@ -1,6 +1,6 @@
 export const fetchUpdatePaymentStatus = async (trip_id: string, paid: boolean, method: string) => {
   try {
-    const response = await fetch("http://localhost:1337/update/user/paymentstatus", {
+    const response = await fetch("http://localhost:1337/v1/update/user/paymentstatus", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

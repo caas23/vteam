@@ -4,7 +4,7 @@ export default async function fetchRegisterCallback(urlId: string) {
 	const { BACKEND_URL } = Constants?.expoConfig?.extra as { BACKEND_URL: string };
   
 	try {
-		const response = await fetch(`${BACKEND_URL}/get/register/callback`, {
+		const response = await fetch(`${BACKEND_URL}/v1/get/register/callback`, {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",

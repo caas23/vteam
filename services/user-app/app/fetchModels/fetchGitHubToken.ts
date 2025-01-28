@@ -5,7 +5,7 @@ export default async function fetchGitHubAccessToken(code: string) {
 	const { BACKEND_URL } = Constants?.expoConfig?.extra as { BACKEND_URL: string };
 	
 	try {
-		const response = await fetch(`${BACKEND_URL}/add/auth/github`, {
+		const response = await fetch(`${BACKEND_URL}/v1/add/auth/github`, {
 		method: "POST",
 		headers: {
 			"Content-Type": "application/json",
