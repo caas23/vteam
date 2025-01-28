@@ -1,7 +1,7 @@
 import { getCollection } from "../db/collections.js"
 import bike from "./bike.js"
 
-// skapa bike_id för varje ny cykel som läggs till
+// generate new bike_id for every bike that is added
 const generateBikeId = async () => {
     const counterCollection = getCollection("bike_id_counter")
     const counter = await counterCollection.findOneAndUpdate(
@@ -49,7 +49,6 @@ const bikeManager = {
         }
     },
 
-    // för /bikes-vyn i admin
     getBikesPagination: async (filter = {}, skip = 0, limit = 5) => {
         const bikeCollection = getCollection("bikes");
       
@@ -60,8 +59,6 @@ const bikeManager = {
           .toArray();
     },
 
-    // för /bikes-vyn i admin, returnerar antal cyklar
-    // baserat på en sökning (används för sidnumrering)
     countBikesPagination: async (filter = {}) => {
         const bikeCollection = getCollection("bikes");
         return await bikeCollection.countDocuments(filter);
