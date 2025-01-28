@@ -1,3 +1,8 @@
+/**
+ * @namespace addDataRoutes
+ * @description Logic for handling POST routes.
+ */
+
 import express from 'express';
 import bikeManager from "../../../bike-logic/bikeManager.js"
 import { getCollection } from '../../../db/collections.js';
@@ -7,6 +12,13 @@ import { startTripRealTime } from '../app.js';
 
 const router = express.Router();
 
+/**
+ * Add-route handler. Describes available POST routes.
+ * @route GET /add
+ * @typedef {GET} /add
+ * @memberof addDataRoutes
+ * @returns {Object} Available POST routes.
+ */
 router.get("/", async (req, res) => {
     const routes = {
         "Available routes": {
@@ -19,6 +31,17 @@ router.get("/", async (req, res) => {
     res.json(routes);
 });
 
+/**
+ * Adds a new city to the database.
+ * Requires authentication.
+ * @route POST /city
+ * @typedef {POST} /city
+ * @memberof addDataRoutes
+ * @param {Object} req.body.city
+ * @param {string} req.body.city.name - [a-z] name of city.
+ * @param {string} req.body.city.display_name - Display name for city.
+ * @returns {Object}
+ */
 router.post("/city", checkAuth, async (req, res) => {
     const city = req.body.city;
 
@@ -35,6 +58,15 @@ router.post("/city", checkAuth, async (req, res) => {
     res.json(result);
 });
 
+/**
+ * Adds a new bike to the database, at given parking zone.
+ * Requires authentication.
+ * @route POST /bike/to/city
+ * @typedef {POST} /bike/to/city
+ * @memberof addDataRoutes
+ * @param {Object} req.body.bike - Bike to be inserted
+ * @returns {Object}
+ */
 router.post("/bike/to/city", checkAuth, async (req, res) => {
     let newBike = req.body.bike;
 
@@ -42,6 +74,16 @@ router.post("/bike/to/city", checkAuth, async (req, res) => {
     res.json(result);
 });
 
+/**
+ * Starts renting a bike.
+ * Requires authentication.
+ * @route POST /rent/bike
+ * @typedef {POST} /rent/bike
+ * @memberof addDataRoutes
+ * @param {Object} req.body.bike - Bike to be rented
+ * @param {string} req.body.git_id - GitHub Id of the user
+ * @returns {Promise}
+ */
 router.post("/rent/bike", checkAuth, async (req, res) => {
     const bike = req.body.bike;
     const gitId = req.body.git_id;
@@ -51,6 +93,16 @@ router.post("/rent/bike", checkAuth, async (req, res) => {
     return await startTripRealTime(bike.bike_id, user[0].user_id)
 });
 
+/**
+ * Handles GitHub OAuth authentication.
+ * Exchanges authorization code for access token and user data.
+ * @route POST /auth/github
+ * @typedef {POST} /auth/github
+ * @memberof addDataRoutes
+ * @param {string} req.body.code - Authorization code from GitHub.
+ * @param {string} req.body.type - Type of authentication (app/admin/user).
+ * @returns {Object} Access token and user information.
+ */
 router.post("/auth/github", async (req, res) => {
     const { code, type } = req.body;
     try {
@@ -90,6 +142,16 @@ router.post("/auth/github", async (req, res) => {
     }
 });
 
+/**
+ * Adds new user to the database.
+ * Requires authentication.
+ * @route POST /user
+ * @typedef {POST} /user
+ * @memberof addDataRoutes
+ * @param {string} req.body.git_id - GitHub ID of the user.
+ * @param {string} req.body.name - Name of the user.
+ * @returns {Object}
+ */
 router.post("/user", checkAuth, async (req, res) => {
     const { git_id, name } = req.body;
 

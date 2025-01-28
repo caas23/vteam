@@ -1,3 +1,8 @@
+/**
+ * @namespace getDataRoutes
+ * @description Logic for handling GET routes.
+ */
+
 import express from 'express';
 import { city } from '../../../db/cities.js';
 import { countUsersPagination, getOneUser, getOneGitUser, getUsers, getUsersPagination } from '../../../db/users.js';
@@ -8,6 +13,13 @@ import { checkAuth } from '../auth.js';
 
 const router = express.Router();
 
+/**
+ * Get-route handler. Describes available GET routes.
+ * @route GET /get
+ * @typedef {GET} /get
+ * @memberof getDataRoutes
+ * @returns {Object} - Available GET routes.
+ */
 router.get("/", async (req, res) => {
     const routes = {
         "Available routes": {
@@ -32,26 +44,65 @@ router.get("/", async (req, res) => {
 
 let callbackUrlId;
 
+/**
+ * Register a callback URL for authentication.
+ * @route POST /register/callback
+ * @typedef {POST} /register/callback
+ * @memberof getDataRoutes
+ * @param {string} urlId - URL to register.
+ */
 router.post('/register/callback', (req, res) => {
     const { urlId } = req.body;
     callbackUrlId = urlId
 });
 
+/**
+ * Redirect callback for authentication.
+ * @route GET /callback
+ * @typedef {GET} /callback
+ * @memberof getDataRoutes
+ * @param {string} code - Authorization code from query.
+ */
 router.get('/callback', (req, res) => {
     const { code } = req.query;
     res.redirect(`exp://${callbackUrlId}-anonymous-8081.exp.direct?code=${code}`);
 });
 
+/**
+ * Get all cities.
+ * Requires authentication.
+ * @route GET /all/cities
+ * @typedef {GET} /all/cities
+ * @memberof getDataRoutes
+ * @returns {Array} - List of all cities.
+ */
 router.get("/all/cities", checkAuth, async (req, res) => {
     const result = await city.getCities();
     res.json(result);
 });
 
+/**
+ * Get all charging stations.
+ * Requires authentication.
+ * @route GET /all/charging
+ * @typedef {GET} /all/charging
+ * @memberof getDataRoutes
+ * @returns {Array} - List of all charging stations.
+ */
 router.get("/all/charging", checkAuth, async (req, res) => {
     const result = await city.getChargingStations();
     res.json(result);
 });
 
+/**
+ * Get charging stations in a specific city.
+ * Requires authentication.
+ * @route GET /all/charging/in/city
+ * @typedef {GET} /all/charging/in/city
+ * @memberof getDataRoutes
+ * @param {string} city - Name of city to search.
+ * @returns {Array} - List of charging stations in the city.
+ */
 router.get("/all/charging/in/city", checkAuth, async (req, res) => {
     const cityName = req.query.city;
     let result;
@@ -64,11 +115,28 @@ router.get("/all/charging/in/city", checkAuth, async (req, res) => {
     res.json(result);
 });
 
+/**
+ * Get all parking zones.
+ * Requires authentication.
+ * @route GET /all/parking
+ * @typedef {GET} /all/parking
+ * @memberof getDataRoutes
+ * @returns {Array} - List of all parking zones.
+ */
 router.get("/all/parking", checkAuth, async (req, res) => {
     const result = await city.getParkingZones();
     res.json(result);
 });
 
+/**
+ * Get parking zones in a specific city.
+ * Requires authentication.
+ * @route GET /all/parking/in/city
+ * @typedef {GET} /all/parking/in/city
+ * @memberof getDataRoutes
+ * @param {string} city - Name of city to search.
+ * @returns {Array} - List of parking zones in the city.
+ */
 router.get("/all/parking/in/city", checkAuth, async (req, res) => {
     const cityName = req.query.city;
     let result;
@@ -81,22 +149,57 @@ router.get("/all/parking/in/city", checkAuth, async (req, res) => {
     res.json(result);
 });
 
+/**
+ * Get all rules
+ * Requires authentication.
+ * @route GET /all/rules
+ * @typedef {GET} /all/rules
+ * @memberof getDataRoutes
+ * @returns {Array} - List of all rules
+ */
 router.get("/all/rules", checkAuth, async (req, res) => {
     const result = await city.getRules();
     res.json(result);
 });
 
+/**
+ * Get rules in a specific city.
+ * Requires authentication.
+ * @route GET /all/rules/in/city
+ * @typedef {GET} /all/rules/in/city
+ * @memberof getDataRoutes
+ * @param {string} city - Name of city to search.
+ * @returns {Array} - List of rules in the city.
+ */
 router.get("/all/rules/in/city", checkAuth, async (req, res) => {
     const cityName = req.query.city;
     const result = await city.getRulesByCity(cityName);
     res.json(result);
 });
 
+/**
+ * Get all bikes.
+ * Requires authentication.
+ * @route GET /all/bikes
+ * @typedef {GET} /all/bikes
+ * @memberof getDataRoutes
+ * @returns {Array} - List of all bikes.
+ */
 router.get("/all/bikes", checkAuth, async (req, res) => {
     const result = await bikeManager.getAllBikes();
     res.json(result);
 });
 
+/**
+ * Get bikes with pagination.
+ * Requires authentication.
+ * @route GET /all/bikes/pagination
+ * @typedef {GET} /all/bikes/pagination
+ * @memberof getDataRoutes
+ * @param {number} [page=1] - Page number for pagination.
+ * @param {string} [search=""] - Search keyword.
+ * @returns {Object} - Paginated result of bikes and total pages.
+ */
 router.get("/all/bikes/pagination", checkAuth, async (req, res) => {
     const page = req.query.page || 1;
     const search = req.query.search || "";
@@ -117,11 +220,29 @@ router.get("/all/bikes/pagination", checkAuth, async (req, res) => {
     }
 });
 
+/**
+ * Get all users.
+ * Requires authentication.
+ * @route GET /all/users
+ * @typedef {GET} /all/users
+ * @memberof getDataRoutes
+ * @returns {Array} - List of all users.
+ */
 router.get("/all/users", checkAuth, async (req, res) => {
     const result = await getUsers();
     res.json(result);
 });
 
+/**
+ * Get users with pagination.
+ * Requires authentication.
+ * @route GET /all/users/pagination
+ * @typedef {GET} /all/users/pagination
+ * @memberof getDataRoutes
+ * @param {number} [page=1] - Page number for pagination.
+ * @param {string} [search=""] - Search keyword.
+ * @returns {Object} - Paginated result of users and total pages.
+ */
 router.get("/all/users/pagination", checkAuth, async (req, res) => {
     const page = req.query.page || 1;
     const search = req.query.search || "";
@@ -142,24 +263,60 @@ router.get("/all/users/pagination", checkAuth, async (req, res) => {
     }
 });
 
+/**
+ * Get one user by user_id.
+ * Requires authentication.
+ * @route GET /one/user
+ * @typedef {GET} /one/user
+ * @memberof getDataRoutes
+ * @param {string} user_id - Id of user to get.
+ * @returns {Object} - User information.
+ */
 router.get("/one/user", checkAuth, async (req, res) => {
     const user_id = req.query.user_id;
     const result = await getOneUser(user_id);
     res.json(result);
 });
 
+/**
+ * Get one user by git_id.
+ * Requires authentication.
+ * @route GET /one/git/user
+ * @typedef {GET} /one/git/user
+ * @memberof getDataRoutes
+ * @param {string} id - Id of user to get.
+ * @returns {Object} - User information.
+ */
 router.get("/one/git/user", checkAuth, async (req, res) => {
     const id = req.query.id;
     const result = await getOneGitUser(id);
     res.json(result);
 });
 
+/**
+ * Get bikes in a specific city.
+ * Requires authentication.
+ * @route GET /all/bikes/in/city
+ * @typedef {GET} /all/bikes/in/city
+ * @memberof getDataRoutes
+ * @param {string} city - Name of city to search.
+ * @returns {Array} - List of bikes in the city.
+ */
 router.get("/all/bikes/in/city", checkAuth, async (req, res) => {
     const city = req.query.city;
     const result = await bikeManager.getAllBikesInCity(city);
     res.json(result);
 });
 
+/**
+ * Get one bike by bike_id.
+ * Requires authentication.
+ * @route GET /one/bike
+ * @typedef {GET} /one/bike
+ * @memberof getDataRoutes
+ * @param {string} bike_id - Id of bike to get.
+ * @returns {Object} - Bike information.
+ */
 router.get("/one/bike/", checkAuth, async (req, res) => {
     const bike_id = req.query.bike_id;
     const result = await bike.reportState(bike_id);
@@ -167,6 +324,15 @@ router.get("/one/bike/", checkAuth, async (req, res) => {
     res.json(result);
 });
 
+/**
+ * Get one city by city_id.
+ * Requires authentication.
+ * @route GET /one/city
+ * @typedef {GET} /one/city
+ * @memberof getDataRoutes
+ * @param {string} city_name - Name of city to get.
+ * @returns {Object} - City information.
+ */
 router.get("/one/city/", checkAuth, async (req, res) => {
     const city_name = req.query.city;
     let result;
@@ -179,24 +345,58 @@ router.get("/one/city/", checkAuth, async (req, res) => {
     res.json(result);
 });
 
+/**
+ * Get all trips.
+ * Requires authentication.
+ * @route GET /all/trips
+ * @typedef {GET} /all/trips
+ * @memberof getDataRoutes
+ * @returns {Array} - List of all trips.
+ */
 router.get("/all/trips", checkAuth, async (req, res) => {
     const result = await getCollection('trips').find().toArray();
     res.json(result);
 });
 
+/**
+ * Get all routes.
+ * Requires authentication.
+ * @route GET /all/routes
+ * @typedef {GET} /all/routes
+ * @memberof getDataRoutes
+ * @returns {Array} - List of all routes.
+ */
 router.get("/all/routes", checkAuth, async (req, res) => {
     const result = await getCollection('routes').find().toArray();
     res.json(result);
 });
 
-router.get("/one/trip/", checkAuth, async (req, res) => {
+/**
+ * Get one trip by trip_id.
+ * Requires authentication.
+ * @route GET /one/trip
+ * @typedef {GET} /one/trip
+ * @memberof getDataRoutes
+ * @param {string} trip_name - Name of trip to get.
+ * @returns {Object} - Trip information.
+ */
+router.get("/one/trip", checkAuth, async (req, res) => {
     const trip = req.query.trip;
 
     const result = await getCollection('trips').findOne({ trip_id: trip });
     res.json(result);
 });
 
-router.get("/payments/", checkAuth, async (req, res) => {
+/**
+ * Get all payments for user.
+ * Requires authentication.
+ * @route GET /payments
+ * @typedef {GET} /payments
+ * @memberof getDataRoutes
+ * @param {string} user - User to get payments for.
+ * @returns {Object} - Payments information.
+ */
+router.get("/payments", checkAuth, async (req, res) => {
     const user = req.query.user;
 
     const result = await getCollection('payments').findOne({ user_id: user });

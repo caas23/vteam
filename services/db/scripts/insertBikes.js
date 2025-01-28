@@ -30,12 +30,12 @@ const addBikes = async () => {
         await clearBikes();
         await resetBikeIdCounter();
 
-        for (const bike of allBikes) {
+        for (const bike of lundBikesTest) {
           bike.bike_id = await generateBikeId();
         }
         
         const BikeCollection = getCollection('bikes');
-        await BikeCollection.insertMany(allBikes);
+        await BikeCollection.insertMany(lundBikesTest);
 
     } catch (error) {
         console.error('Error adding bikes:', error);

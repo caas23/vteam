@@ -1,0 +1,11 @@
+{
+    "source": {
+        "include": ["./src/routes", "./src/app.js"]
+    },
+    "opts": {
+        "encoding": "utf8",
+        "recurse": true,
+        "destination": "./docs"
+    }
+}
+  
