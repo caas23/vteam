@@ -1,3 +1,8 @@
+/**
+ * @namespace deleteDataRoutes
+ * @description Logic for handling DELETE routes.
+ */
+
 import express from 'express';
 import bikeManager from "../../../bike-logic/bikeManager.js"
 import { getCollection } from '../../../db/collections.js';
@@ -6,6 +11,13 @@ import { checkAuth } from '../auth.js';
 
 const router = express.Router();
 
+/**
+ * Delete-route handler. Describes available DELETE routes.
+ * @route GET /delete
+ * @typedef {GET} /delete
+ * @memberof addDataRoutes
+ * @returns {Object} Available DELETE routes.
+ */
 router.get("/", async (req, res) => {
     const routes = {
         "Available routes": {
@@ -17,6 +29,17 @@ router.get("/", async (req, res) => {
     res.json(routes);
 });
 
+/**
+ * Delete a specific item (parking, charging, or rule) from a city.
+ * Requires authentication.
+ * @route DELETE /:city/:type/:id
+ * @typedef {DELETE} /:city/:type/:id
+ * @memberof deleteDataRoutes
+ * @param {string} city - Name of the city.
+ * @param {string} type - Type of item to delete.
+ * @param {string} id - Id of the item to delete.
+ * @returns {Object}
+ */
 router.delete("/:city/:type/:id", checkAuth, async (req, res) => {
     const { city, type, id } = req.params;
     const collections = {
@@ -41,6 +64,15 @@ router.delete("/:city/:type/:id", checkAuth, async (req, res) => {
     }
 });
 
+/**
+ * Delete a specific bike by its id.
+ * Requires authentication.
+ * @route DELETE /bike/:bike_id
+ * @typedef {DELETE} /bike/:bike_id
+ * @memberof deleteDataRoutes
+ * @param {string} bike_id - Id of the bike to delete.
+ * @returns {Object}
+ */
 router.delete("/bike/:bike_id", checkAuth, async (req, res) => {
     const bike_id = req.params.bike_id;
 
@@ -54,6 +86,15 @@ router.delete("/bike/:bike_id", checkAuth, async (req, res) => {
     }
 });
 
+/**
+ * Delete a specific user by their id.
+ * Requires authentication.
+ * @route DELETE /user/:user_id
+ * @typedef {DELETE} /user/:user_id
+ * @memberof routes/deleteRoutes
+ * @param {string} user_id - Id of the user to delete.
+ * @returns {Object}
+ */
 router.delete("/user/:user_id", checkAuth, async (req, res) => {
     const userId = req.params.user_id;
     let userCollection = getCollection("users");
