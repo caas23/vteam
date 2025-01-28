@@ -15,7 +15,7 @@ const Trip: React.FC = () => {
 
     const fetchAndSetTrip = async () => {
           const result = await fetchOneTrip(trip ? trip : "");
-          setCurrentTrip(result[0]);
+          setCurrentTrip(result);
         };
         fetchAndSetTrip();
   }, [trip]);
