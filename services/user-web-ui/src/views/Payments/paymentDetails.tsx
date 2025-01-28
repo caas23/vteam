@@ -18,12 +18,14 @@ const PaymentDetails: React.FC<{ userId: string }> = ({ userId }) => {
 		const fetchPaymentDetails = async () => {
 			try {
 				const result = await fetchPayments(userId);
-				const paymentData = result[0] || { trips: [] };
+				const paymentData = result || { trips: [] };
+				const currentMonth = parseInt(((new Date()).toISOString()).split('-')[1]);
 				const currentDate = (new Date()).getDate();
-	
+
 				const updatedTrips = await Promise.all(
 					paymentData.trips.map(async (trip: Payment) => {
-						if (!trip.paid && currentDate >= 27) {
+						const tripMonth = parseInt(trip.date.toString().split('-')[1])
+						if (!trip.paid && currentDate >= 27 && currentMonth != tripMonth) {
 							await updatePaymentStatus(trip.trip_id);
 							return { ...trip, paid: true };
 						}

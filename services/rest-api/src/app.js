@@ -196,7 +196,7 @@ io.on("connection", (socket) => {
         const finalPrice = (parseFloat(data.price) + priceAdjustment).toFixed(2);
         const trip = {
             end_time: data.endTime,
-            end_location: [data.position[0].toFixed(5), data.position[1].toFixed(5)],
+            end_location: [parseFloat(data.position[0].toFixed(5)), parseFloat(data.position[1].toFixed(5))],
             price: finalPrice,
             trip_id: tempData[data.bikeId].trip_id,
         }
@@ -658,7 +658,7 @@ export async function startTripRealTime (bikeId, user) {
 
 const startApp = async () => {
     await startServer();
-    await startSimulation();
+    // await startSimulation();
 };
 
 if (process.env.NODE_ENV != 'test') {

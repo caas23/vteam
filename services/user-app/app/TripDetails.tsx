@@ -18,7 +18,7 @@ export default function TripDetails({ user }: TripUserDetailsProps) {
 		try {
 			let tripDetails = await fetchOneTrip(trip);
 			while (!tripDetails) tripDetails = await fetchOneTrip(trip);
-			setCurrentTrip(tripDetails[0]);
+			setCurrentTrip(tripDetails);
 			setModalVisible(true);
 		} catch (error) {
 			Alert.alert('Error', 'Failed to fetch trip details');
