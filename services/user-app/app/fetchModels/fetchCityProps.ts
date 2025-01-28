@@ -6,7 +6,7 @@ export default async function fetchCityProps( city: string, type: string ) {
 	const { BACKEND_URL } = Constants?.expoConfig?.extra as { BACKEND_URL: string };
     
 	try {
-        const response = await fetch(`${BACKEND_URL}/get/all/${type}/in/city?city=${city}`, {
+        const response = await fetch(`${BACKEND_URL}/v1/get/all/${type}/in/city?city=${city}`, {
 		method: 'GET',
 		headers: {
 			'Authorization': `Bearer ${token}`,

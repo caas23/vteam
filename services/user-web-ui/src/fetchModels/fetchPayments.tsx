@@ -3,7 +3,7 @@ export const fetchPayments = async (
 ) => {
   try {
     const response = await fetch(
-      `http://localhost:1337/get/payments?user=${user_id}`, {
+      `http://localhost:1337/v1/get/payments?user=${user_id}`, {
         method: 'GET',
         headers: {
           'Authorization': `Bearer ${sessionStorage.getItem('access_token')}`,

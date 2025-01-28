@@ -2,7 +2,7 @@ import { Rule } from "../components/AddCityForm/interfaces";
 
 export const fetchUpdateRule = async (rule: Rule) => {
     try {
-      const response = await fetch("http://localhost:1337/update/rule", {
+      const response = await fetch("http://localhost:1337/v1/update/rule", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

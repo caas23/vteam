@@ -1,6 +1,6 @@
 export const fetchUpdateBalance = async (user_id: string, newBalance: number) => {
     try {
-      const response = await fetch("http://localhost:1337/update/user/balance", {
+      const response = await fetch("http://localhost:1337/v1/update/user/balance", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

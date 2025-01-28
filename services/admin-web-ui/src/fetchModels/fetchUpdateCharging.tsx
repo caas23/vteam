@@ -2,7 +2,7 @@ import { ChargingStation } from "../components/AddCityForm/interfaces";
 
 export const fetchUpdateCharging = async (station: ChargingStation) => {
     try {
-      const response = await fetch("http://localhost:1337/update/charging", {
+      const response = await fetch("http://localhost:1337/v1/update/charging", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

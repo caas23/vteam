@@ -3,7 +3,7 @@ export const fetchOneBike = async (
 ) => {
     try {
       const response = await fetch(
-        `http://localhost:1337/get/one/bike/?bike_id=${bike_id}`, {
+        `http://localhost:1337/v1/get/one/bike/?bike_id=${bike_id}`, {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${sessionStorage.getItem('access_token')}`,

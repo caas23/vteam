@@ -2,7 +2,7 @@ import { City } from "../components/AddCityForm/interfaces";
 
 export const fetchAddCity = async (city: City) => {
     try {
-      const response = await fetch("http://localhost:1337/add/city", {
+      const response = await fetch("http://localhost:1337/v1/add/city", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

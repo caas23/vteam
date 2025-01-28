@@ -1,7 +1,7 @@
 export const fetchCities = async () => {
     try {
       const response = await fetch(
-        'http://localhost:1337/get/all/cities', {
+        'http://localhost:1337/v1/get/all/cities', {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${sessionStorage.getItem('access_token')}`,

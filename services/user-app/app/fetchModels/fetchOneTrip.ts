@@ -6,7 +6,7 @@ export default async function fetchOneTrip(trip_id: string) {
 	const { BACKEND_URL } = Constants?.expoConfig?.extra as { BACKEND_URL: string };
 	
 	try {
-		const response = await fetch(`${BACKEND_URL}/get/one/trip/?trip=${trip_id}`, {
+		const response = await fetch(`${BACKEND_URL}/v1/get/one/trip/?trip=${trip_id}`, {
 		method: 'GET',
 		headers: {
 			'Authorization': `Bearer ${token}`,

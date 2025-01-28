@@ -1,6 +1,6 @@
 export const fetchAddUser = async (userData: object) => {
   try {
-    const response = await fetch("http://localhost:1337/add/user", {
+    const response = await fetch("http://localhost:1337/v1/add/user", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

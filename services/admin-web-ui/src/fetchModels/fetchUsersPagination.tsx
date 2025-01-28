@@ -4,7 +4,7 @@ export const fetchUsersPagination = async (
 ) => {
     try {
       const response = await fetch(
-        `http://localhost:1337/get/all/users/pagination?page=${page}&search=${userSearch}`, {
+        `http://localhost:1337/v1/get/all/users/pagination?page=${page}&search=${userSearch}`, {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${sessionStorage.getItem('access_token')}`,

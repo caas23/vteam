@@ -1,6 +1,6 @@
 export const fetchBanUser = async (user_id: string) => {
     try {
-      const response = await fetch("http://localhost:1337/update/user/ban", {
+      const response = await fetch("http://localhost:1337/v1/update/user/ban", {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

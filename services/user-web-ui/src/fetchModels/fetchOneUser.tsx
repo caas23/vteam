@@ -1,6 +1,6 @@
 export const fetchOneUserByGitId = async (id: number) => {
   try {
-    const response = await fetch(`http://localhost:1337/get/one/git/user/?id=${id}`, {
+    const response = await fetch(`http://localhost:1337/v1/get/one/git/user/?id=${id}`, {
       method: 'GET',
       headers: {
         'Authorization': `Bearer ${sessionStorage.getItem('access_token')}`,

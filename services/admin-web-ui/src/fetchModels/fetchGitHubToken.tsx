@@ -1,7 +1,7 @@
 export const fetchGitHubAccessToken = async (code: string) => {
   const type = 'admin';
   try {
-    const response = await fetch("http://localhost:1337/add/auth/github", {
+    const response = await fetch("http://localhost:1337/v1/add/auth/github", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

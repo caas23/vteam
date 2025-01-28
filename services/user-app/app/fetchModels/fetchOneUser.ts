@@ -6,7 +6,7 @@ export default async function fetchOneUserByGitId(id: number) {
 	const { BACKEND_URL } = Constants?.expoConfig?.extra as { BACKEND_URL: string };
 	
 	try {
-		const response = await fetch(`${BACKEND_URL}/get/one/git/user/?id=${id}`, {
+		const response = await fetch(`${BACKEND_URL}/v1/get/one/git/user/?id=${id}`, {
 		method: 'GET',
 		headers: {
 			'Authorization': `Bearer ${token}`,

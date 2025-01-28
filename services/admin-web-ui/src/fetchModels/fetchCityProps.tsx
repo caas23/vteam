@@ -4,7 +4,7 @@ export const fetchCityProps = async (
 ) => {
   try {
       const response = await fetch(
-        `http://localhost:1337/get/all/${type}/in/city?city=${city}`, {
+        `http://localhost:1337/v1/get/all/${type}/in/city?city=${city}`, {
           method: 'GET',
           headers: {
             'Authorization': `Bearer ${sessionStorage.getItem('access_token')}`,

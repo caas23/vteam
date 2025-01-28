@@ -6,7 +6,7 @@ export default async function fetchUpdateUse (data: object) {
   const { BACKEND_URL } = Constants?.expoConfig?.extra as { BACKEND_URL: string };
   
   try {
-      const response = await fetch(`${BACKEND_URL}/update/user/payment`, {
+      const response = await fetch(`${BACKEND_URL}/v1/update/user/payment`, {
           method: "PUT",
           headers: {
             "Content-Type": "application/json",
