@@ -14,7 +14,7 @@ const TripMap: React.FC<TripMapProps> = ({ data, startLocation, endLocation, Fet
 	
 	useEffect(() => {
 		// if the route is not in the database, get via openrouteservice
-		if (!data.route) {
+		if (!data.route && !(startLocation[0] == endLocation[0]) && !(startLocation[1] == endLocation[1])) {
 			const { API_KEY } = Constants?.expoConfig?.extra as { API_KEY: string };
 			
 			const fetchRoute = async () => {
@@ -62,12 +62,16 @@ const TripMap: React.FC<TripMapProps> = ({ data, startLocation, endLocation, Fet
 		// if route is in database, use that data
 		} else {
 			try {
-				const decodedRoute = data.route.map(([lat, lon]) => ({
-					latitude: lat,
-					longitude: lon,
-				}));
-				
-				setRoute(decodedRoute);
+				if (data.route) {
+					const decodedRoute = data.route.map(([lat, lon]) => ({
+						latitude: lat,
+						longitude: lon,
+					}));
+					
+					setRoute(decodedRoute);
+				} else {
+					setRoute([{ latitude: startLocation[0], longitude: startLocation[1] }])
+				}
 				FetchedDistance && FetchedDistance(data.distance || 0);
 	
 			} catch (error) {
@@ -104,7 +108,7 @@ const TripMap: React.FC<TripMapProps> = ({ data, startLocation, endLocation, Fet
 			initialRegion={region}
 			onRegionChangeComplete={(newRegion) => setRegion(newRegion)}
 		>
-			{route.length > 0 && <Polyline coordinates={route} strokeColor="#2E6DAE" strokeWidth={4} />}
+			{route.length > 2 && <Polyline coordinates={route} strokeColor="#2E6DAE" strokeWidth={4} />}
 			<Marker coordinate={{
 				latitude: startLocation[0],
 				longitude: startLocation[1] 

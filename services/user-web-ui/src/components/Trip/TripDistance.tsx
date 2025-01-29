@@ -4,7 +4,7 @@ import { TripMapProps } from "./interfaces";
 const TripDistance: React.FC<TripMapProps> = ({ data, startLocation, endLocation, FetchedDistance }) => {
     useEffect(() => {
         // if the route is not in the database, get via openrouteservice
-        if (!data.route) {
+        if (!data.route && !(startLocation[0] == endLocation[0]) && !(startLocation[1] == endLocation[1])) {
             const API_KEY = import.meta.env.VITE_API_KEY;
 
             const fetchRoute = async () => {
