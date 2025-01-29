@@ -6,6 +6,8 @@ _The user's mobile application for the vteam project._
 
 Via the app, the user can first and foremost rent electric scooters via _Solo Scoot_. In addition, the user can view and manage their account and view their previous trips. To access the application, authentication via Github OAuth is required.
 
+The app can be run in both light mode and dark mode and automatically adapts to your phone's settings.
+
 ### Running
 
 To run as part of the entire project, see [simulation](https://github.com/caas23/vteam/tree/main/simulation).
