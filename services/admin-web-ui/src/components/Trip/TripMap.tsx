@@ -28,7 +28,7 @@ const TripMap: React.FC<TripMapProps> = ({ data, startLocation, endLocation, Fet
 
     useEffect(() => {
         // if the route is not in the database, get it via openrouteservice
-        if (!data.route) {
+        if (!data.route && !(startLocation[0] == endLocation[0]) && !(startLocation[1] == endLocation[1])) {
             const API_KEY = import.meta.env.VITE_API_KEY;
 
             const fetchRoute = async () => {
@@ -72,7 +72,7 @@ const TripMap: React.FC<TripMapProps> = ({ data, startLocation, endLocation, Fet
             fetchRoute();
         // if route is in database, use that data
         } else {
-            setRoute(data.route);
+            setRoute(data.route || startLocation);
             FetchedDistance && FetchedDistance(data.distance || 0);
         }
     }, [startLocation, endLocation, data, FetchedDistance]);
@@ -98,7 +98,7 @@ const TripMap: React.FC<TripMapProps> = ({ data, startLocation, endLocation, Fet
             <Marker position={endLocation} icon={endLocationMarker}>
             <Popup>End location</Popup>
             </Marker>
-            {route.length > 0 && <Polyline positions={[...route, endLocation]} color="#2E6DAE" weight={4} />}
+            {route.length > 2 && <Polyline positions={[...route, endLocation]} color="#2E6DAE" weight={4} />}
         </MapContainer>
     </div>
   );
