@@ -151,18 +151,32 @@ export async function startTripRealTime (bikeId, user) {
 };
 
 /**
- * Starts the app by initializing server and socket connections.
+ * Starts the app by initializing server.
  * @async
  * @memberof app
  */
 const startApp = async () => {
     await startServer();
+};
+
+/**
+ * Starts the app with simulation by initializing server and socket connections.
+ * @async
+ * @memberof app
+ */
+const startAppSimulation = async () => {
+    await startServer();
     initSockets(io);
 };
 
-// Start the app unless in test environment
-if (process.env.NODE_ENV != 'test') {
+// Start without running simualtion
+if (process.env.NODE_ENV == 'dev') {
     startApp();
+}
+
+// Start with simulation
+if (process.env.NODE_ENV == 'simulation') {
+    startAppSimulation();
 }
 
 export default { startServer, closeServer, app };
