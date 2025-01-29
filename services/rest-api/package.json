@@ -4,7 +4,8 @@
   "description": "*RESTful Express/Node API.*",
   "main": "index.js",
   "scripts": {
-    "dev": "node src/app.js",
+    "dev": "NODE_ENV=dev node src/app.js",
+    "simulation": "NODE_ENV=simulation node src/app.js",
     "test": "NODE_ENV=test && NODE_NO_WARNINGS=1 && NODE_OPTIONS=--no-warnings node --experimental-vm-modules node_modules/jest/bin/jest.js --runInBand --forceExit --coverage",
     "docs": "npx jsdoc -c jsdoc.json"
   },

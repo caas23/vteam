@@ -10,4 +10,4 @@ COPY . ./
 
 EXPOSE 1337
 
-CMD ["npm", "run", "dev", "--host"]
+CMD ["npm", "run", "simulation", "--host"]
