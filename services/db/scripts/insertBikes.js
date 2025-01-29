@@ -21,7 +21,6 @@ const addBikes = async () => {
         client = await connectToDatabase(mongoUri);
 
         const lundBikes = await loadData("./data/lund_bikes.json");
-        const lundBikesTest = await loadData("./data/lund_bikes_test.json");
         const solnaBikes = await loadData("./data/solna_bikes.json");
         const skellefteaBikes = await loadData("./data/skelleftea_bikes.json");
 
@@ -30,12 +29,12 @@ const addBikes = async () => {
         await clearBikes();
         await resetBikeIdCounter();
 
-        for (const bike of lundBikesTest) {
+        for (const bike of allBikes) {
           bike.bike_id = await generateBikeId();
         }
         
         const BikeCollection = getCollection('bikes');
-        await BikeCollection.insertMany(lundBikesTest);
+        await BikeCollection.insertMany(allBikes);
 
     } catch (error) {
         console.error('Error adding bikes:', error);
