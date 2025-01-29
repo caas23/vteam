@@ -25,7 +25,9 @@ The administrator website can be found at `http://localhost:5173`
 
 The user website can be found at `http://localhost:5174`
 
-Accessing the user app requires `Expo Go` and an actual phone. Please note that the app is **not** compatible to run on the web, as it's a native app developed for phone devices only.
+Accessing the user app requires `Expo Go` and an actual phone*. Please note that the app is **not** compatible to run on the web, as it's a _native app_ developed for phone devices only.
+
+_* Other options would be to run with [Android Emulator](https://docs.expo.dev/workflow/android-studio-emulator/) or [iOS Simulator](https://docs.expo.dev/workflow/ios-simulator/), see documentation for more information on how to set up such environments_
 
 #### Steps to get the user app up and running
 - Download `Expo Go` on your phone (no registration required).
