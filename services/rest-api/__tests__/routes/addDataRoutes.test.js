@@ -30,7 +30,7 @@ describe('addDataRoutes.js', () => {
     });
     
     it('GET / - should return available add routes', async () => {
-        const response = await request(app).get('/add');
+        const response = await request(app).get('/v1/add');
         
         // ensure routes description is returned
         expect(response.status).toBe(200);
@@ -44,14 +44,14 @@ describe('addDataRoutes.js', () => {
         });
     });
 
-    it('POST /city - should add a new city', async () => {
+    it('POST /v1/city - should add a new city', async () => {
         const city = { name: 'TestCity', display_name: 'Test City' };
 
         const cityCollection = await getCollection('cities');
         
         // insert the city
         await request(server)
-            .post('/add/city')
+            .post('/v1/add/city')
             .send({ city })
             .expect(200);
 
@@ -72,7 +72,7 @@ describe('addDataRoutes.js', () => {
         await cityCollection.deleteOne({ name: 'TestCity' });
     });
 
-    it('POST /bike/to/city - should add a new bike to a city', async () => {
+    it('POST /v1/bike/to/city - should add a new bike to a city', async () => {
         const newBike = {
             location: [0, 0],
             city_name: 'Lund',
@@ -89,7 +89,7 @@ describe('addDataRoutes.js', () => {
 
         // insert bike
         const response = await request(server)
-            .post('/add/bike/to/city')
+            .post('/v1/add/bike/to/city')
             .send({ bike: newBike })
             .expect(200);
 
@@ -110,7 +110,7 @@ describe('addDataRoutes.js', () => {
         await bikesCollection.deleteOne({ bike_id: insertedBike.bike_id });
     });
 
-    it('POST /user - should add a new user', async () => {
+    it('POST /v1/user - should add a new user', async () => {
         const gitId = 'mock-git-id';
         const name = 'Test User';
 
@@ -118,7 +118,7 @@ describe('addDataRoutes.js', () => {
 
         // insert user
         const response = await request(server)
-            .post('/add/user')
+            .post('/v1/add/user')
             .send({ git_id: gitId, name })
             .expect(200);
 

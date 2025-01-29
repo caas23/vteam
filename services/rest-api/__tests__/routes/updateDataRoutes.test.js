@@ -29,7 +29,7 @@ describe('updateDataRoutes.js', () => {
     });
     
     it('GET / - should return available update routes', async () => {
-        const response = await request(app).get('/update');
+        const response = await request(app).get('/v1/update');
         expect(response.status).toBe(200);
         expect(response.body).toHaveProperty('Available routes');
         expect(response.body['Available routes']).toHaveProperty('/parking');
@@ -39,7 +39,7 @@ describe('updateDataRoutes.js', () => {
         expect(response.body['Available routes']).toHaveProperty('/user/payment');
     });
 
-    it('PUT /parking - should update parking zone', async () => {
+    it('PUT /v1/parking - should update parking zone', async () => {
         const parkingCollection = await getCollection('parking_zone');
         const parkingId = "P016";
         const insertedParking = await parkingCollection.insertOne({ parking_id: parkingId });
@@ -50,7 +50,7 @@ describe('updateDataRoutes.js', () => {
         const mockParkingData = { parking_id: parkingId, area: [0, 0] };
     
         const response = await request(app)
-          .put('/update/parking')
+          .put('/v1/update/parking')
           .send(mockParkingData);
     
         expect(response.status).toBe(200);
@@ -63,7 +63,7 @@ describe('updateDataRoutes.js', () => {
         await parkingCollection.deleteOne({ parking_id: parkingId });
     });
     
-    it('PUT /parking - should update charging station', async () => {
+    it('PUT /v1/parking - should update charging station', async () => {
         const chargingCollection = await getCollection('charging_station');
         const chargingId = "C016";
         const insertedCharging = await chargingCollection.insertOne({ charging_id: chargingId });
@@ -74,7 +74,7 @@ describe('updateDataRoutes.js', () => {
         const mockChargingData = { charging_id: chargingId, area: [0, 0] };
     
         const response = await request(app)
-          .put('/update/charging')
+          .put('/v1/update/charging')
           .send(mockChargingData);
     
         expect(response.status).toBe(200);
@@ -87,7 +87,7 @@ describe('updateDataRoutes.js', () => {
         await chargingCollection.deleteOne({ charging_id: chargingId });
     });
     
-    it('PUT /rule - should update rule', async () => {
+    it('PUT /v1/rule - should update rule', async () => {
         const rulesCollection = await getCollection('city_rules');
         const ruleId = "R010";
         const insertedRule = await rulesCollection.insertOne({ rule_id: ruleId });
@@ -98,7 +98,7 @@ describe('updateDataRoutes.js', () => {
         const mockRuleData = { rule_id: ruleId, descripton: "Updated rule" };
     
         const response = await request(app)
-          .put('/update/rule')
+          .put('/v1/update/rule')
           .send(mockRuleData);
     
         expect(response.status).toBe(200);
@@ -111,7 +111,7 @@ describe('updateDataRoutes.js', () => {
         await rulesCollection.deleteOne({ rule_id: ruleId });
     });
 
-    it('PUT /user/ban - should ban user', async () => {
+    it('PUT /v1/user/ban - should ban user', async () => {
         const usersCollection = await getCollection('users');
         const userId = "U5000";
         const insertedUser = await usersCollection.insertOne({ user_id: userId });
@@ -120,7 +120,7 @@ describe('updateDataRoutes.js', () => {
         expect(insertedUser).toMatchObject({ acknowledged: true });
     
         const response = await request(server)
-          .put('/update/user/ban')
+          .put('/v1/update/user/ban')
           .send({ user_id: userId });
     
         expect(response.status).toBe(200);
@@ -133,7 +133,7 @@ describe('updateDataRoutes.js', () => {
         await usersCollection.deleteOne({ user_id: userId });
     });
 
-    it('PUT /user/removeban - should remove user ban', async () => {
+    it('PUT /v1/user/removeban - should remove user ban', async () => {
         const usersCollection = await getCollection('users');
         const userId = "U5000";
         const insertedUser = await usersCollection.insertOne({ user_id: userId });
@@ -143,7 +143,7 @@ describe('updateDataRoutes.js', () => {
  
     
         const response = await request(server)
-          .put('/update/user/removeban')
+          .put('/v1/update/user/removeban')
           .send({ user_id: userId });
     
         expect(response.status).toBe(200);
@@ -156,7 +156,7 @@ describe('updateDataRoutes.js', () => {
         await usersCollection.deleteOne({ user_id: userId });
     });
 
-    it('PUT /user/payment - should update user payment method', async () => {
+    it('PUT /v1/user/payment - should update user payment method', async () => {
         const usersCollection = await getCollection('users');
         const userId = "U5000";
         const insertedUser = await usersCollection.insertOne({
@@ -169,7 +169,7 @@ describe('updateDataRoutes.js', () => {
         expect(insertedUser).toMatchObject({ acknowledged: true });
 
         const response = await request(server)
-          .put('/update/user/payment')
+          .put('/v1/update/user/payment')
           .send({
             user_id: userId,
             name: "Test",
@@ -186,7 +186,7 @@ describe('updateDataRoutes.js', () => {
         await usersCollection.deleteOne({ user_id: userId });
     });
 
-    it('PUT /user/balance - should update user balance', async () => {
+    it('PUT /v1/user/balance - should update user balance', async () => {
         const usersCollection = await getCollection('users');
         const userId = "U5000";
         const newBalance = 100;
@@ -196,7 +196,7 @@ describe('updateDataRoutes.js', () => {
         expect(insertedUser).toMatchObject({ acknowledged: true });
      
         const response = await request(server)
-          .put('/update/user/balance')
+          .put('/v1/update/user/balance')
           .set('Authorization', 'Bearer valid-token')
           .send({ user_id: userId, newBalance });
     

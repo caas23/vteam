@@ -24,7 +24,7 @@ describe('auth.js', () => {
     it('should return "No token provided"', async () => {
         const req = createRequest({
             method: 'GET',
-            url: '/get/all/users',
+            url: '/v1/get/all/users',
             headers: {},
         });
         const res = createResponse();
@@ -42,7 +42,7 @@ describe('auth.js', () => {
 
         const req = createRequest({
             method: 'GET',
-            url: '/get/all/users',
+            url: '/v1/get/all/users',
             headers: {
                 authorization: 'Bearer invalid_token',
             },
@@ -66,7 +66,7 @@ describe('auth.js', () => {
 
         const req = createRequest({
             method: 'GET',
-            url: '/get/all/users',
+            url: '/v1/get/all/users',
             headers: {
                 authorization: 'Bearer valid_token',
             },
