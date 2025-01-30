@@ -170,7 +170,7 @@ export const initSockets = (io) => {
             await bikeManager.stopBike(data.bikeId);
             await bikeManager.updateBikeState(bike);
             await updateTrips(data.userId, tempData[data.bikeId].trip_id);
-            await handlePayment(data.userId, data.price, tempData[data.bikeId].trip_id)
+            await handlePayment(data.userId, finalPrice, tempData[data.bikeId].trip_id)
         });
     
         socket.on("disconnect", () => {});

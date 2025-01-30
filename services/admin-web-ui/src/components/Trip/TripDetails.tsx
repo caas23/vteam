@@ -12,6 +12,13 @@ const TripDetails: React.FC<TripDetailsProps> = ({ data }) => {
   const averageSpeed = distance && totalSeconds > 0 
     ? (distance / 1000) / (totalSeconds / 3600) : 0;
 
+  const currentDate = (new Date()).getDate();
+  const currentMonth = parseInt(((new Date()).toISOString()).split('-')[1]);
+  const currentYear = (new Date()).getFullYear();
+
+  const tripMonth = parseInt(data.end_time.toString().split('-')[1])
+  const tripYear = parseInt(data.end_time.toString().split('-')[0])
+
   const handlePriceInfoClick = () => {
     setAlertMessage(`
       Every trip has a set start fee, and a set price per minute.
@@ -49,12 +56,12 @@ const TripDetails: React.FC<TripDetailsProps> = ({ data }) => {
         <span>Average speed: {averageSpeed.toFixed(1)} km/h</span>
         <span className="trip-price">Price: {data.price} kr</span>
         <div onClick={handlePriceInfoClick} className="price-info"></div>
-        {data.paid && (
+        {(data.paid || currentYear > tripYear || (currentDate >= 27 && currentMonth != tripMonth)) && (
         <div className="paid">
           <span>Paid &#10003;</span>
         </div>
         )}
-        {!data.paid && (
+        {!data.paid && (!(currentYear > tripYear) || (currentDate < 27 && currentMonth == tripMonth)) && (
         <div className="not-paid">
           <span>Awaiting monthly payment ...</span>
         </div>
